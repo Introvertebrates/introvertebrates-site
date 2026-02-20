@@ -19,26 +19,27 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  justify-content: center;
+  padding: 40px 20px;
 }
 
 .logo {
-  width: 520px;
-  max-width: 90%;
-  margin-bottom: 70px;
-  filter: drop-shadow(0 0 35px rgba(0, 200, 255, 0.25));
+  width: 600px;
+  max-width: 95%;
+  margin-bottom: 80px;
+  filter: drop-shadow(0 0 40px rgba(0, 200, 255, 0.25));
 }
 
 .button-group {
   display: flex;
-  gap: 28px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .button {
-  padding: 14px 38px;
+  padding: 14px 40px;
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
@@ -50,13 +51,13 @@ body {
 
 .button:hover {
   background: rgba(0, 200, 255, 0.15);
-  box-shadow: 0 0 20px rgba(0, 200, 255, 0.3);
+  box-shadow: 0 0 22px rgba(0, 200, 255, 0.3);
   transform: translateY(-3px);
 }
 
 footer {
   opacity: 0.4;
-  padding-bottom: 40px;
+  font-size: 0.85rem;
 }
 </style>
 </head>
@@ -65,6 +66,7 @@ footer {
 
 <div class="main-wrapper">
 
+  <!-- Combined logo image only -->
   <img src="Introvertebrates.png" alt="Introvertebrates Logo" class="logo">
 
   <div class="button-group">

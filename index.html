@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Introvertebrates</title>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -26,7 +31,7 @@ body {
 .logo {
   width: 650px;
   max-width: 95%;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   filter: drop-shadow(0 0 40px rgba(0, 200, 255, 0.25));
 }
 
@@ -35,7 +40,7 @@ body {
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .button {
@@ -58,6 +63,27 @@ body {
   transform: translateY(-3px);
 }
 
+.about {
+  max-width: 600px;
+  margin: 40px 20px 80px 20px;
+  opacity: 0.75;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: rgba(0, 200, 255, 0.9);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
 footer {
   opacity: 0.4;
   font-size: 0.85rem;
@@ -69,12 +95,10 @@ footer {
 
 <div class="main-wrapper">
 
-  <!-- FULL COMBINED LOGO -->
   <img src="Color logo - no background.png" alt="Introvertebrates Logo" class="logo">
 
   <div class="button-group">
 
-    <!-- YOUTUBE BUTTON -->
     <a href="https://www.youtube.com/@Introvertebrates" class="button" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
         <path d="M23.5 6.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.3-1C17.2 2.5 12 2.5 12 2.5h0s-5.2 0-8.3.3c-.4 0-1.4 0-2.3 1C.7 4.5.5 6.2.5 6.2S.2 8 .2 9.8v1.4C.2 13 .5 14.8.5 14.8s.2 1.7.9 2.4c.9.9 2.1.9 2.6 1 1.9.2 8 .3 8 .3s5.2 0 8.3-.3c.4 0 1.4 0 2.3-1 .7-.7.9-2.4.9-2.4s.3-1.8.3-3.6V9.8c0-1.8-.3-3.6-.3-3.6zM9.8 14.6V7.9l6.4 3.4-6.4 3.3z"/>
@@ -82,7 +106,6 @@ footer {
       <span>YouTube</span>
     </a>
 
-    <!-- INSTAGRAM BUTTON -->
     <a href="https://www.instagram.com/introvertebrates_yt/" class="button" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
         <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm6.2-.7a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1zM12 9a3 3 0 1 0 3 3 3 3 0 0 0-3-3z"/>
@@ -90,11 +113,20 @@ footer {
       <span>Instagram</span>
     </a>
 
-    <!-- CODEX BUTTON -->
     <a href="#" class="button">
       <span>Introvertebrates Codex</span>
     </a>
 
+  </div>
+
+  <div class="about">
+    <p>
+      Introvertebrates explores the beauty, biology and misunderstood nature
+      of invertebrates through education, media and digital tools.
+    </p>
+    <a href="mailto:contact@introvertebrates.com" class="contact-link">
+      contact@introvertebrates.com
+    </a>
   </div>
 
   <footer>

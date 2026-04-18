@@ -33,7 +33,7 @@
     .page {
       min-height: 100vh;
       width: 100%;
-      max-width: 860px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 72px 24px 48px;
     }
@@ -60,7 +60,7 @@
     }
 
     .intro {
-      max-width: 680px;
+      max-width: 700px;
       margin: 0 0 42px;
       font-size: 1rem;
       line-height: 1.8;
@@ -70,21 +70,83 @@
     .entry-list {
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 20px;
     }
 
     .entry {
-      border: 1px solid rgba(0, 190, 255, 0.10);
-      background: rgba(255, 255, 255, 0.025);
-      border-radius: 16px;
+      border: 1px solid rgba(0, 190, 255, 0.12);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.035) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+      );
+      border-radius: 18px;
       padding: 22px 20px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.01) inset;
+    }
+
+    .entry-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .entry-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .entry-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 190, 255, 0.08);
+      border: 1px solid rgba(0, 190, 255, 0.14);
+      color: rgba(0, 190, 255, 0.9);
+      flex-shrink: 0;
     }
 
     .entry h2 {
-      margin: 0 0 10px;
+      margin: 0;
       font-size: 1.15rem;
       font-weight: 600;
       color: #d9ecf4;
+      line-height: 1.35;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.73rem;
+      font-weight: 600;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      border: 1px solid rgba(0, 190, 255, 0.16);
+      background: rgba(0, 190, 255, 0.08);
+      color: #8fd4e8;
+    }
+
+    .badge.behavior {
+      border-color: rgba(87, 200, 255, 0.18);
+      background: rgba(87, 200, 255, 0.09);
+      color: #a9e6ff;
+    }
+
+    .badge.taxonomy {
+      border-color: rgba(0, 220, 180, 0.18);
+      background: rgba(0, 220, 180, 0.08);
+      color: #9df0de;
     }
 
     .entry p {
@@ -97,14 +159,23 @@
       margin-bottom: 0;
     }
 
+    .entry strong {
+      color: #b7d7e4;
+    }
+
     .entry a {
-      color: rgba(0, 190, 255, 0.85);
+      color: rgba(0, 190, 255, 0.88);
       text-decoration: none;
     }
 
     .entry a:hover {
       color: rgba(0, 190, 255, 1);
       text-decoration: underline;
+    }
+
+    .meta {
+      font-size: 0.92rem;
+      color: #6f93a6;
     }
 
     footer {
@@ -123,6 +194,19 @@
       .entry {
         padding: 18px 16px;
       }
+
+      .entry-header {
+        align-items: flex-start;
+      }
+
+      .entry h2 {
+        font-size: 1.05rem;
+      }
+
+      .entry-icon {
+        width: 30px;
+        height: 30px;
+      }
     }
   </style>
 </head>
@@ -138,17 +222,29 @@
 
     <section class="entry-list">
       <article class="entry">
-        <h2>Tarantulas may be better navigators than most people assume</h2>
+        <div class="entry-header">
+          <div class="entry-title-wrap">
+            <div class="entry-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2a1 1 0 0 1 1 1v1.06a8 8 0 0 1 6.94 6.94H21a1 1 0 1 1 0 2h-1.06a8 8 0 0 1-6.94 6.94V21a1 1 0 1 1-2 0v-1.06a8 8 0 0 1-6.94-6.94H3a1 1 0 1 1 0-2h1.06A8 8 0 0 1 11 4.06V3a1 1 0 0 1 1-1Zm0 4a6 6 0 1 0 0 12a6 6 0 0 0 0-12Zm0 2.5a1 1 0 0 1 1 1v1.88l1.56.9a1 1 0 1 1-1 1.74l-2.06-1.2A1 1 0 0 1 11 12V9.5a1 1 0 0 1 1-1Z"/>
+              </svg>
+            </div>
+            <h2>Tarantulas may be better navigators than most people assume</h2>
+          </div>
+          <span class="badge behavior">Behavior</span>
+        </div>
+
         <p>
           A recent study highlighted by Nautilus suggests that tarantulas are capable of learned spatial orientation in the wild.
           In other words, they may not just wander and react — they can remember useful information about their surroundings and use it to return to retreats or profitable hunting spots.
         </p>
+
         <p>
           <strong>Why it matters:</strong> This pushes back against the idea that tarantulas are simple, purely instinct-driven animals.
           It adds to the growing picture that they can show more flexible and purposeful behaviour than many people expect.
         </p>
-        <p>
-          <strong>Category:</strong> Behavior<br>
+
+        <p class="meta">
           <strong>Source:</strong>
           <a href="https://nautil.us/arachnophobes-beware-tarantulas-are-way-smarter-than-you-think-1279979" target="_blank" rel="noopener noreferrer">
             Read article
@@ -157,18 +253,30 @@
       </article>
 
       <article class="entry">
-        <h2>Researchers describe two new jumping spider species from India</h2>
+        <div class="entry-header">
+          <div class="entry-title-wrap">
+            <div class="entry-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3c2.76 0 5 2.24 5 5c0 3.87-5 10-5 10S7 11.87 7 8c0-2.76 2.24-5 5-5Zm0 2.2A2.8 2.8 0 1 0 12 10.8A2.8 2.8 0 0 0 12 5.2Zm7.2 11.5c.5 0 .8.47.62.93C18.9 20 15.8 22 12 22s-6.9-2-7.82-4.37a.68.68 0 0 1 .62-.93h14.4Z"/>
+              </svg>
+            </div>
+            <h2>Researchers describe two new jumping spider species from India</h2>
+          </div>
+          <span class="badge taxonomy">New species / Taxonomy</span>
+        </div>
+
         <p>
           Researchers working in Western India have described two new jumping spider species in the genus <em>Mogrus</em>:
           <em>Mogrus shushka</em> and <em>Mogrus pune</em>.
           The work also reported the first record of <em>Mogrus larisae</em> in India and the first formal description of the male of <em>Mogrus rajasthanensis</em>.
         </p>
+
         <p>
           <strong>Why it matters:</strong> It is a reminder that spider diversity is still under-documented, even in places shaped by dryland conditions and urban pressure.
           New species discoveries like this help fill in the real picture of regional biodiversity instead of the one we assume we already know.
         </p>
-        <p>
-          <strong>Category:</strong> New species / Taxonomy<br>
+
+        <p class="meta">
           <strong>Source:</strong>
           <a href="https://researchmatters.in/news/researchers-discover-two-new-species-jumping-spiders-indias-arid-drylands-and-urban-parks" target="_blank" rel="noopener noreferrer">
             Read article

@@ -80,6 +80,40 @@
       text-decoration: underline;
     }
 
+        .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 0 28px;
+    }
+
+    .filter-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(0, 190, 255, 0.14);
+      background: rgba(0, 190, 255, 0.05);
+      color: #8fc6d8;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.25px;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+    }
+
+    .filter-chip:hover {
+      border-color: rgba(0, 190, 255, 0.34);
+      background: rgba(0, 190, 255, 0.10);
+      color: #d6ecf5;
+    }
+
+    .filter-chip.active {
+      border-color: rgba(0, 190, 255, 0.28);
+      background: rgba(0, 190, 255, 0.12);
+      color: #dff3fa;
+    }
+
     .entry-list {
       display: flex;
       flex-direction: column;
@@ -260,12 +294,18 @@
     </p>
 
     <a href="mailto:erlend@introvertebrates.com?subject=Research%20paper%20suggestion%20for%20Introvertebrates" class="suggest-link">
-      Suggest a paper →
-    </a>
+  Suggest a paper →
+</a>
 
-    <section class="entry-list">
+<div class="filter-row" aria-label="Research categories">
+  <a href="research.html" class="filter-chip active">All</a>
+  <a href="research.html#behavior" class="filter-chip">Behavior</a>
+  <a href="research.html#taxonomy" class="filter-chip">Taxonomy</a>
+</div>
 
-      <article class="entry">
+<section class="entry-list">
+
+      <article class="entry" id="behavior">
         <div class="entry-dates">
           <span class="entry-date-item">
             <span class="entry-date-label">Posted:</span>
@@ -307,7 +347,7 @@
         </p>
       </article>
 
-      <article class="entry">
+      <article class="entry" id="taxonomy">
         <div class="entry-dates">
           <span class="entry-date-item">
             <span class="entry-date-label">Posted:</span>

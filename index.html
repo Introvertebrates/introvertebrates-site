@@ -37,14 +37,14 @@ body {
 
 .button-group {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .button {
-  padding: 14px 40px;
+  padding: 14px 36px;
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
@@ -64,29 +64,83 @@ body {
 }
 
 .about {
-  max-width: 600px;
-  margin: 40px 20px 80px 20px;
-  opacity: 0.75;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  max-width: 700px;
+  margin: 10px 20px 50px 20px;
+  opacity: 0.82;
+  font-size: 0.98rem;
+  line-height: 1.7;
 }
 
 .contact-link {
   display: inline-block;
-  margin-top: 15px;
-  color: rgba(0, 200, 255, 0.9);
+  margin-top: 16px;
+  color: rgba(0, 200, 255, 0.95);
   text-decoration: none;
   font-weight: 500;
-  transition: 0.2s ease;
 }
 
 .contact-link:hover {
   text-decoration: underline;
 }
 
+.future-section {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 20px 70px 20px;
+  padding: 24px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+}
+
+.future-title {
+  margin: 0 0 16px 0;
+  font-size: 0.95rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.future-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.future-item {
+  padding: 14px 12px;
+  border-radius: 14px;
+  background: rgba(0, 200, 255, 0.05);
+  border: 1px solid rgba(0, 200, 255, 0.12);
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
 footer {
   opacity: 0.4;
   font-size: 0.85rem;
+  padding-bottom: 24px;
+}
+
+@media (max-width: 640px) {
+  .logo {
+    margin-bottom: 50px;
+  }
+
+  .button-group {
+    gap: 14px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .about {
+    font-size: 0.94rem;
+  }
 }
 </style>
 </head>
@@ -100,14 +154,14 @@ footer {
   <div class="button-group">
 
     <a href="https://www.youtube.com/@Introvertebrates" class="button" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
         <path d="M23.5 6.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.3-1C17.2 2.5 12 2.5 12 2.5h0s-5.2 0-8.3.3c-.4 0-1.4 0-2.3 1C.7 4.5.5 6.2.5 6.2S.2 8 .2 9.8v1.4C.2 13 .5 14.8.5 14.8s.2 1.7.9 2.4c.9.9 2.1.9 2.6 1 1.9.2 8 .3 8 .3s5.2 0 8.3-.3c.4 0 1.4 0 2.3-1 .7-.7.9-2.4.9-2.4s.3-1.8.3-3.6V9.8c0-1.8-.3-3.6-.3-3.6zM9.8 14.6V7.9l6.4 3.4-6.4 3.3z"/>
       </svg>
       <span>YouTube</span>
     </a>
 
     <a href="https://www.instagram.com/introvertebrates_yt/" class="button" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
         <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm6.2-.7a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1zM12 9a3 3 0 1 0 3 3 3 3 0 0 0-3-3z"/>
       </svg>
       <span>Instagram</span>
@@ -121,12 +175,24 @@ footer {
 
   <div class="about">
     <p>
-      Introvertebrates explores the beauty, biology and misunderstood nature
-      of invertebrates through education, media and digital tools.
+      Introvertebrates explores the beauty, biology, and misunderstood nature of invertebrates through education, media, and digital tools.
+      What starts as a minimal landing page will gradually expand into species pages, care resources, collection profiles, articles, and the growing Introvertebrates Codex ecosystem.
     </p>
     <a href="mailto:erlend@introvertebrates.com" class="contact-link">
-  erlend@introvertebrates.com
-</a>
+      erlend@introvertebrates.com
+    </a>
+  </div>
+
+  <div class="future-section">
+    <p class="future-title">Planned expansion</p>
+    <div class="future-grid">
+      <div class="future-item">Species pages</div>
+      <div class="future-item">Care sheets</div>
+      <div class="future-item">Collection profiles</div>
+      <div class="future-item">Articles & updates</div>
+      <div class="future-item">Introvertebrates Codex</div>
+      <div class="future-item">Future store</div>
+    </div>
   </div>
 
   <footer>

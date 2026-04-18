@@ -1,205 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Introvertebrates</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introvertebrates</title>
+  <meta name="description" content="Exploring the biology, behaviour, and care of invertebrates — through video, writing, and digital tools.">
+  <meta property="og:title" content="Introvertebrates">
+  <meta property="og:description" content="Exploring the biology, behaviour, and care of invertebrates — through video, writing, and digital tools.">
+  <meta property="og:url" content="https://introvertebrates.com">
+  <meta name="theme-color" content="#06101d">
 
-<style>
-* {
-  box-sizing: border-box;
-}
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: radial-gradient(circle at center, #0f1c2e 0%, #050b15 75%);
-  color: white;
-  text-align: center;
-}
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
 
-.main-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-}
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+      background-color: #05101c;
+      background-image:
+        radial-gradient(ellipse 140% 65% at 50% 10%, #0d2040 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 50% 95%, rgba(0, 15, 32, 0.8) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 30% at 50% 48%, rgba(0, 40, 70, 0.18) 0%, transparent 60%);
+      color: #c8dde8;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-.logo {
-  width: 650px;
-  max-width: 95%;
-  margin-bottom: 70px;
-  filter: drop-shadow(0 0 40px rgba(0, 200, 255, 0.25));
-}
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 72px 28px 52px;
+    }
 
-.button-group {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+    /* ── Logo ── */
 
-.button {
-  padding: 14px 36px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  color: white;
-  border: 1px solid rgba(0, 200, 255, 0.4);
-  background: rgba(0, 200, 255, 0.05);
-  transition: all 0.25s ease;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+    @keyframes glow-breathe {
+      0%, 100% { filter: drop-shadow(0 0 55px rgba(0, 190, 255, 0.17)) drop-shadow(0 0 18px rgba(0, 190, 255, 0.09)); }
+      50%       { filter: drop-shadow(0 0 72px rgba(0, 190, 255, 0.27)) drop-shadow(0 0 26px rgba(0, 190, 255, 0.14)); }
+    }
 
-.button:hover {
-  background: rgba(0, 200, 255, 0.15);
-  box-shadow: 0 0 22px rgba(0, 200, 255, 0.3);
-  transform: translateY(-3px);
-}
+    .logo {
+      width: 520px;
+      max-width: 88vw;
+      display: block;
+      filter: drop-shadow(0 0 55px rgba(0, 190, 255, 0.17)) drop-shadow(0 0 18px rgba(0, 190, 255, 0.09));
+      animation: glow-breathe 7s ease-in-out infinite;
+      margin-bottom: 52px;
+    }
 
-.about {
-  max-width: 700px;
-  margin: 10px 20px 50px 20px;
-  opacity: 0.82;
-  font-size: 0.98rem;
-  line-height: 1.7;
-}
+    @media (prefers-reduced-motion: reduce) {
+      .logo { animation: none; }
+    }
 
-.contact-link {
-  display: inline-block;
-  margin-top: 16px;
-  color: rgba(0, 200, 255, 0.95);
-  text-decoration: none;
-  font-weight: 500;
-}
+    /* ── Buttons ── */
 
-.contact-link:hover {
-  text-decoration: underline;
-}
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 56px;
+    }
 
-.future-section {
-  max-width: 760px;
-  width: 100%;
-  margin: 0 20px 70px 20px;
-  padding: 24px 22px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 18px;
-  backdrop-filter: blur(6px);
-}
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 11px 26px;
+      border-radius: 999px;
+      border: 1px solid rgba(0, 190, 255, 0.22);
+      background: rgba(0, 190, 255, 0.05);
+      color: #aacfde;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s, color 0.2s, box-shadow 0.2s;
+    }
 
-.future-title {
-  margin: 0 0 16px 0;
-  font-size: 0.95rem;
-  letter-spacing: 1.6px;
-  text-transform: uppercase;
-  opacity: 0.72;
-}
+    .btn:hover {
+      border-color: rgba(0, 190, 255, 0.5);
+      background: rgba(0, 190, 255, 0.10);
+      color: #d6ecf5;
+      box-shadow: 0 0 24px rgba(0, 190, 255, 0.14);
+    }
 
-.future-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px;
-}
+    .btn svg {
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
 
-.future-item {
-  padding: 14px 12px;
-  border-radius: 14px;
-  background: rgba(0, 200, 255, 0.05);
-  border: 1px solid rgba(0, 200, 255, 0.12);
-  opacity: 0.9;
-  font-size: 0.95rem;
-}
+    .btn:hover svg {
+      opacity: 1;
+    }
 
-footer {
-  opacity: 0.4;
-  font-size: 0.85rem;
-  padding-bottom: 24px;
-}
+    @media (prefers-reduced-motion: reduce) {
+      .btn { transition: none; }
+    }
 
-@media (max-width: 640px) {
-  .logo {
-    margin-bottom: 50px;
-  }
+    /* ── About ── */
 
-  .button-group {
-    gap: 14px;
-  }
+    .about {
+      max-width: 440px;
+      font-size: 0.92rem;
+      line-height: 1.85;
+      color: #7a9eb2;
+      margin: 0 auto 22px;
+    }
 
-  .button {
-    width: 100%;
-    max-width: 320px;
-    justify-content: center;
-  }
+    /* ── Email ── */
 
-  .about {
-    font-size: 0.94rem;
-  }
-}
-</style>
+    .email {
+      display: inline-block;
+      font-size: 0.82rem;
+      color: rgba(0, 190, 255, 0.55);
+      text-decoration: none;
+      letter-spacing: 0.2px;
+      transition: color 0.2s;
+      margin-bottom: 72px;
+    }
+
+    .email:hover {
+      color: rgba(0, 190, 255, 0.9);
+    }
+
+    /* ── Footer ── */
+
+    footer {
+      font-size: 0.78rem;
+      color: #263d4d;
+      letter-spacing: 0.4px;
+    }
+
+    /* ── Mobile ── */
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 60px 20px 40px;
+      }
+
+      .logo {
+        margin-bottom: 44px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 48px;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 260px;
+        justify-content: center;
+        padding: 13px 24px;
+      }
+
+      .about {
+        font-size: 0.9rem;
+      }
+
+      .email {
+        margin-bottom: 56px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="main-wrapper">
+<main class="page">
 
-  <img src="Color logo - no background.png" alt="Introvertebrates Logo" class="logo">
+  <img
+    src="Color logo - no background.png"
+    alt="Introvertebrates"
+    class="logo"
+    width="520"
+  >
 
-  <div class="button-group">
+  <nav class="buttons" aria-label="Main links">
 
-    <a href="https://www.youtube.com/@Introvertebrates" class="button" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-        <path d="M23.5 6.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.3-1C17.2 2.5 12 2.5 12 2.5h0s-5.2 0-8.3.3c-.4 0-1.4 0-2.3 1C.7 4.5.5 6.2.5 6.2S.2 8 .2 9.8v1.4C.2 13 .5 14.8.5 14.8s.2 1.7.9 2.4c.9.9 2.1.9 2.6 1 1.9.2 8 .3 8 .3s5.2 0 8.3-.3c.4 0 1.4 0 2.3-1 .7-.7.9-2.4.9-2.4s.3-1.8.3-3.6V9.8c0-1.8-.3-3.6-.3-3.6zM9.8 14.6V7.9l6.4 3.4-6.4 3.3z"/>
+    <a href="https://www.youtube.com/@Introvertebrates" class="btn" target="_blank" rel="noopener noreferrer">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+        <path d="M23.5 6.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.3-1C17.2 2.5 12 2.5 12 2.5s-5.2 0-8.3.3c-.4 0-1.4 0-2.3 1C.7 4.5.5 6.2.5 6.2S.2 8 .2 9.8v1.4C.2 13 .5 14.8.5 14.8s.2 1.7.9 2.4c.9.9 2.1.9 2.6 1 1.9.2 8 .3 8 .3s5.2 0 8.3-.3c.4 0 1.4 0 2.3-1 .7-.7.9-2.4.9-2.4s.3-1.8.3-3.6V9.8c0-1.8-.3-3.6-.3-3.6zM9.8 14.6V7.9l6.4 3.4-6.4 3.3z"/>
       </svg>
-      <span>YouTube</span>
+      YouTube
     </a>
 
-    <a href="https://www.instagram.com/introvertebrates_yt/" class="button" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+    <a href="https://www.instagram.com/introvertebrates_yt/" class="btn" target="_blank" rel="noopener noreferrer">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
         <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm6.2-.7a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1zM12 9a3 3 0 1 0 3 3 3 3 0 0 0-3-3z"/>
       </svg>
-      <span>Instagram</span>
+      Instagram
     </a>
 
-    <a href="#" class="button">
-      <span>Introvertebrates Codex</span>
+    <a href="#" class="btn">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+        <path d="M19 2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-1 18H7a1 1 0 0 1 0-2h11v2zm0-4H7a3 3 0 0 0-2 .78V5a1 1 0 0 1 1-1h12v12z"/>
+      </svg>
+      Codex
     </a>
 
-  </div>
+  </nav>
 
-  <div class="about">
-    <p>
-      Introvertebrates explores the beauty, biology, and misunderstood nature of invertebrates through education, media, and digital tools.
-      What starts as a minimal landing page will gradually expand into species pages, care resources, collection profiles, articles, and the growing Introvertebrates Codex ecosystem.
-    </p>
-    <a href="mailto:erlend@introvertebrates.com" class="contact-link">
-      erlend@introvertebrates.com
-    </a>
-  </div>
+  <p class="about">
+    Most people have never really looked at a spider.
+    Introvertebrates is about the animals that get flinched at, misread, and underestimated —
+    explored through video, writing, and tools for people who find them genuinely fascinating.
+  </p>
 
-  <div class="future-section">
-    <p class="future-title">Planned expansion</p>
-    <div class="future-grid">
-      <div class="future-item">Species pages</div>
-      <div class="future-item">Care sheets</div>
-      <div class="future-item">Collection profiles</div>
-      <div class="future-item">Articles & updates</div>
-      <div class="future-item">Introvertebrates Codex</div>
-      <div class="future-item">Future store</div>
-    </div>
-  </div>
+  <a href="mailto:erlend@introvertebrates.com" class="email">
+    erlend@introvertebrates.com
+  </a>
 
-  <footer>
-    © 2026 Introvertebrates
-  </footer>
+  <footer>© 2026 Introvertebrates</footer>
 
-</div>
+</main>
 
 </body>
 </html>

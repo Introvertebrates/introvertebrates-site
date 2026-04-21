@@ -88,16 +88,25 @@
       color: #8d9aaa;
     }
 
-        .filter-row {
+          .controls {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
       margin: 0 0 28px;
     }
 
-           .filter-chip {
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .filter-chip {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       padding: 8px 12px;
       border-radius: 999px;
       border: 1px solid rgba(20, 241, 196, 0.22);
@@ -107,6 +116,7 @@
       font-weight: 600;
       letter-spacing: 0.25px;
       text-decoration: none;
+      cursor: pointer;
       transition: border-color 0.2s, background 0.2s, color 0.2s;
     }
 
@@ -124,6 +134,24 @@
         rgba(31, 162, 255, 0.12)
       );
       color: #f5f7fb;
+    }
+
+    .sort-control {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #c3cfdb;
+      font-size: 0.84rem;
+      font-weight: 500;
+    }
+
+    .sort-control select {
+      background: rgba(255, 255, 255, 0.03);
+      color: #f5f7fb;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 8px 12px;
+      font-size: 0.84rem;
     }
 
     .entry-list {
@@ -319,16 +347,28 @@
   Summaries may be assisted by AI, but all entries are selected, reviewed, and curated for Introvertebrates.
 </p>
 
-<div class="filter-row" aria-label="Research categories">
-   <a href="research.html" class="filter-chip active">All</a>
-  <a href="research.html#behavior" class="filter-chip">Behavior</a>
-  <a href="research.html#taxonomy" class="filter-chip">Taxonomy</a>
-  <a href="research.html#general" class="filter-chip">General</a>
+<div class="controls" aria-label="Research controls">
+  <div class="filter-row" aria-label="Research categories">
+    <button type="button" class="filter-chip active" data-filter="all">All</button>
+    <button type="button" class="filter-chip" data-filter="behavior">Behavior</button>
+    <button type="button" class="filter-chip" data-filter="taxonomy">Taxonomy</button>
+    <button type="button" class="filter-chip" data-filter="general">General</button>
+  </div>
+
+  <label class="sort-control">
+    <span>Sort by</span>
+    <select id="sort-select">
+      <option value="source-desc">Newest source date</option>
+      <option value="source-asc">Oldest source date</option>
+      <option value="posted-desc">Newest posted date</option>
+      <option value="posted-asc">Oldest posted date</option>
+    </select>
+  </label>
 </div>
 
-<section class="entry-list">
+<section class="entry-list" id="entry-list">
 
-      <article class="entry" id="behavior">
+      <article class="entry" data-category="behavior" data-posted-date="2026-04-18" data-source-date="2026-04-17">
         <div class="entry-dates">
           <span class="entry-date-item">
             <span class="entry-date-label">Posted:</span>
@@ -370,7 +410,7 @@
         </p>
       </article>
 
-           <article class="entry" id="taxonomy">
+           <article class="entry" data-category="taxonomy" data-posted-date="2026-04-18" data-source-date="2026-04-18">
         <div class="entry-dates">
           <span class="entry-date-item">
             <span class="entry-date-label">Posted:</span>
@@ -413,7 +453,7 @@
         </p>
       </article>
 
-      <article class="entry" id="general">
+     <article class="entry" data-category="general" data-posted-date="2026-04-18" data-source-date="2026-04-18">
         <div class="entry-dates">
           <span class="entry-date-item">
             <span class="entry-date-label">Posted:</span>
@@ -454,7 +494,7 @@
         </p>
       </article>
 
-      <article class="entry" id="taxonomy">
+    <article class="entry" data-category="taxonomy" data-posted-date="2026-04-18" data-source-date="2026-04-17">  
         <div class="entry-dates">
           <span class="entry-date-item">
             <span class="entry-date-label">Posted:</span>
@@ -500,5 +540,63 @@
 
     <footer>© 2026 Introvertebrates</footer>
   </main>
+  <script>
+    const entryList = document.getElementById('entry-list');
+    const entries = Array.from(entryList.querySelectorAll('.entry'));
+    const filterButtons = Array.from(document.querySelectorAll('.filter-chip'));
+    const sortSelect = document.getElementById('sort-select');
+
+    let activeFilter = 'all';
+    let activeSort = 'source-desc';
+
+    function sortEntries(items, sortValue) {
+      return [...items].sort((a, b) => {
+        const sourceA = a.dataset.sourceDate;
+        const sourceB = b.dataset.sourceDate;
+        const postedA = a.dataset.postedDate;
+        const postedB = b.dataset.postedDate;
+
+        if (sortValue === 'source-desc') return sourceB.localeCompare(sourceA);
+        if (sortValue === 'source-asc') return sourceA.localeCompare(sourceB);
+        if (sortValue === 'posted-desc') return postedB.localeCompare(postedA);
+        if (sortValue === 'posted-asc') return postedA.localeCompare(postedB);
+        return 0;
+      });
+    }
+
+    function renderEntries() {
+      const filtered = entries.filter((entry) => {
+        if (activeFilter === 'all') return true;
+        return entry.dataset.category === activeFilter;
+      });
+
+      const sorted = sortEntries(filtered, activeSort);
+
+      entries.forEach((entry) => {
+        entry.style.display = 'none';
+      });
+
+      sorted.forEach((entry) => {
+        entry.style.display = '';
+        entryList.appendChild(entry);
+      });
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter;
+        filterButtons.forEach((btn) => btn.classList.remove('active'));
+        button.classList.add('active');
+        renderEntries();
+      });
+    });
+
+    sortSelect.addEventListener('change', (event) => {
+      activeSort = event.target.value;
+      renderEntries();
+    });
+
+    renderEntries();
+  </script>
 </body>
 </html>

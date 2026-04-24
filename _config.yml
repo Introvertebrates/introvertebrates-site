@@ -1,0 +1,16 @@
+title: Introvertebrates
+description: Exploring the biology, behaviour, and care of invertebrates through video, writing, and digital tools.
+url: "https://introvertebrates.com"
+markdown: kramdown
+
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: research_article

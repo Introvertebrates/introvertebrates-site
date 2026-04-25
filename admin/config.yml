@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: E-Knu/introvertebrates-site
+  repo: Introvertebrates/introvertebrates-site
   branch: cms-migration
 
 media_folder: "assets/uploads"

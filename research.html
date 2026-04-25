@@ -442,11 +442,34 @@
           <strong>Why it matters:</strong> ${escapeHtml(entry.why_it_matters || '')}
         </p>
 
-        <p class="meta">
+              <p class="meta">
           <strong>Source:</strong>
           <a href="${escapeHtml(entry.source_url || '#')}" target="_blank" rel="noopener noreferrer">Read article</a>
         </p>
+
+        ${
+          entry.body
+            ? `<button type="button" class="expand-button">Read more</button>
+               <div class="entry-body" hidden>${entry.body}</div>`
+            : ''
+        }
       `;
+
+      const expandButton = article.querySelector('.expand-button');
+      const entryBody = article.querySelector('.entry-body');
+
+      if (expandButton && entryBody) {
+        expandButton.addEventListener('click', () => {
+          const isHidden = entryBody.hasAttribute('hidden');
+          if (isHidden) {
+            entryBody.removeAttribute('hidden');
+            expandButton.textContent = 'Show less';
+          } else {
+            entryBody.setAttribute('hidden', '');
+            expandButton.textContent = 'Read more';
+          }
+        });
+      }
 
       return article;
     }

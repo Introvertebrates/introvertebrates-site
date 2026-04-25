@@ -490,7 +490,9 @@
   </script>
 
   <script>
-    const entryList = document.getElementById('entry-list');
+       const entryList = document.getElementById('entry-list');
+    const detailEntryList = document.getElementById('detail-entry-list');
+    const detailSection = document.getElementById('detailed-summaries');
     const filterButtons = Array.from(document.querySelectorAll('.filter-chip'));
     const sortSelect = document.getElementById('sort-select');
     const sourceData = Array.isArray(window.researchEntries) ? window.researchEntries : [];

@@ -19,13 +19,29 @@ source_name: Nautilus
 
 <p>
 
-  Research highlighted by Nautilus suggests that tarantulas may be capable of learned spatial orientation in the wild, rather than moving only through simple instinct and immediate reaction.
+  Research discussed by Nautilus suggests that tarantulas may be capable of learned spatial orientation in the wild. In other words, they may do more than simply react moment to moment to whatever is directly in front of them.
 
 </p>
 
 <p>
 
-  The idea is that they may be able to use information about their surroundings when moving between places that matter, such as shelters or productive hunting areas.
+  The broader idea is that tarantulas may be able to gather useful information about their surroundings and use it when moving between important locations, such as retreats, shelter sites, or productive hunting areas.
+
+</p>
+
+
+
+<h2>What makes that interesting</h2>
+
+<p>
+
+  Tarantulas are often treated as if their behaviour is almost entirely automatic: detect stimulus, react, repeat. But research like this points toward a more flexible picture, where movement may sometimes involve memory-like use of environmental information rather than pure reflex.
+
+</p>
+
+<p>
+
+  That does not mean tarantulas think in the same way mammals or birds do, and it does not mean every deliberate-looking movement is evidence of high intelligence. What it does mean is that the usual “large fuzzy robot” stereotype may be too simplistic.
 
 </p>
 
@@ -35,12 +51,12 @@ source_name: Nautilus
 
 <p>
 
-  This pushes back against the common assumption that tarantulas are behaviorally simple animals with very limited flexibility.
+  This matters because it changes how people interpret tarantula behaviour. If these spiders are capable of a more directed and informed way of navigating than many people assume, then they deserve to be taken more seriously as behaviourally capable animals.
 
 </p>
 
 <p>
 
-  It also fits what many keepers and observers already suspect: tarantulas may not be “smart” in a human sense, but they can be more purposeful and environmentally responsive than they are usually given credit for.
+  For keepers, it also fits a pattern many people already suspect from observation: tarantulas may respond to enclosure structure, routine, and spatial consistency in ways that are more purposeful than they are usually given credit for.
 
 </p>

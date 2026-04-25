@@ -567,7 +567,43 @@
       return article;
     }
 
+    function buildDetailEntry(entry) {
+      if (!entry.body || !entry.slug) return null;
+
+      const section = document.createElement('article');
+      section.className = 'detail-entry';
+      section.id = entry.slug;
+
+      section.innerHTML = `
+        <h2>${escapeHtml(entry.title || '')}</h2>
+
+        <div class="detail-entry-meta">
+          <span>Posted: ${escapeHtml(entry.posted_date || '')}</span>
+          <span>Source: ${escapeHtml(entry.source_date || '')}</span>
+          <span>${escapeHtml(entry.category || '')}</span>
+        </div>
+
+        <p>${escapeHtml(entry.summary || '')}</p>
+
+        <p>
+          <strong>Why it matters:</strong> ${escapeHtml(entry.why_it_matters || '')}
+        </p>
+
+        <p class="meta">
+          <strong>Source:</strong>
+          <a href="${escapeHtml(entry.source_url || '#')}" target="_blank" rel="noopener noreferrer">Read article</a>
+        </p>
+
+        <div class="detail-entry-body">${entry.body}</div>
+
+        <a href="#top" class="back-to-top">↑ Back to top</a>
+      `;
+
+      return section;
+    }
+
     const entries = sourceData.map(buildEntry);
+    const detailEntries = sourceData.map(buildDetailEntry).filter(Boolean);
 
     function sortEntries(items, sortValue) {
       return [...items].sort((a, b) => {

@@ -562,14 +562,76 @@
 
     <footer>© 2026 Introvertebrates</footer>
   </main>
-  <script>
+    <script>
     const entryList = document.getElementById('entry-list');
-    const entries = Array.from(entryList.querySelectorAll('.entry'));
     const filterButtons = Array.from(document.querySelectorAll('.filter-chip'));
     const sortSelect = document.getElementById('sort-select');
+    const sourceData = Array.isArray(window.researchEntries) ? window.researchEntries : [];
 
     let activeFilter = 'all';
     let activeSort = 'source-desc';
+
+    function categoryToSlug(category) {
+      if (category === 'Behavior') return 'behavior';
+      if (category === 'New species / Taxonomy') return 'taxonomy';
+      if (category === 'General arachnology news') return 'general';
+      if (category === 'Ecology') return 'ecology';
+      if (category === 'Venom') return 'venom';
+      if (category === 'Captive relevance') return 'captive';
+      return 'general';
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
+    }
+
+    function buildEntry(entry) {
+      const article = document.createElement('article');
+      article.className = 'entry';
+      article.dataset.category = categoryToSlug(entry.category);
+      article.dataset.postedDate = entry.posted_date || '';
+      article.dataset.sourceDate = entry.source_date || '';
+
+      article.innerHTML = `
+        <div class="entry-dates">
+          <span class="entry-date-item">
+            <span class="entry-date-label">Posted:</span>
+            <span>${escapeHtml(entry.posted_date || '')}</span>
+          </span>
+          <span class="entry-date-item">
+            <span class="entry-date-label">Source:</span>
+            <span>${escapeHtml(entry.source_date || '')}</span>
+          </span>
+        </div>
+
+        <div class="entry-header">
+          <div class="entry-title-wrap">
+            <h2>${escapeHtml(entry.title || '')}</h2>
+          </div>
+          <span class="badge">${escapeHtml(entry.category || '')}</span>
+        </div>
+
+        <p>${escapeHtml(entry.summary || '')}</p>
+
+        <p>
+          <strong>Why it matters:</strong> ${escapeHtml(entry.why_it_matters || '')}
+        </p>
+
+        <p class="meta">
+          <strong>Source:</strong>
+          <a href="${escapeHtml(entry.source_url || '#')}" target="_blank" rel="noopener noreferrer">Read article</a>
+        </p>
+      `;
+
+      return article;
+    }
+
+    const entries = sourceData.map(buildEntry);
 
     function sortEntries(items, sortValue) {
       return [...items].sort((a, b) => {
@@ -593,13 +655,9 @@
       });
 
       const sorted = sortEntries(filtered, activeSort);
-
-      entries.forEach((entry) => {
-        entry.style.display = 'none';
-      });
+      entryList.innerHTML = '';
 
       sorted.forEach((entry) => {
-        entry.style.display = '';
         entryList.appendChild(entry);
       });
     }
@@ -620,8 +678,5 @@
 
     renderEntries();
   </script>
-  <script>
-  window.researchEntries = {{ site.data.research.entries | jsonify }};
-</script>
 </body>
 </html>

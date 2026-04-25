@@ -460,16 +460,17 @@
           <strong>Why it matters:</strong> ${escapeHtml(entry.why_it_matters || '')}
         </p>
 
-                      <p class="meta">
+                           <p class="meta">
+          ${
+            entry.body
+              ? `<strong>Summary:</strong>
+                 <a href="#${escapeHtml(entry.slug || '')}">Read full summary</a>
+                 <br>`
+              : ''
+          }
           <strong>Source:</strong>
           <a href="${escapeHtml(entry.source_url || '#')}" target="_blank" rel="noopener noreferrer">Read article</a>
         </p>
-
-        ${
-          entry.body
-            ? `<div class="entry-body">${entry.body}</div>`
-            : ''
-        }
       `;
 
       return article;

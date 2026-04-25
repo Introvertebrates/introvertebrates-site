@@ -19,13 +19,29 @@ source_name: Research Matters
 
 <p>
 
-  Researchers working in Western India described two new jumping spider species in the genus <em>Mogrus</em>: <em>Mogrus shushka</em> and <em>Mogrus pune</em>.
+  Researchers working in Western India described two new jumping spider species in the genus <em>Mogrus</em>: <em>Mogrus shushka</em> and <em>Mogrus pune</em>. The same study also added a new India record for <em>Mogrus larisae</em> and provided the first formal description of the male of <em>Mogrus rajasthanensis</em>.
 
 </p>
 
 <p>
 
-  The same work also added a new India record for <em>Mogrus larisae</em> and provided the first formal description of the male of <em>Mogrus rajasthanensis</em>.
+  That means the paper did more than add two new names. It also improved the broader picture of what is known about the genus in the region by refining identification and distribution knowledge.
+
+</p>
+
+
+
+<h2>What makes that interesting</h2>
+
+<p>
+
+  Jumping spiders are among the most familiar and charismatic spider groups, but even in well-liked groups there are still major gaps in basic documentation. Work like this shows that “known” spider diversity is still incomplete.
+
+</p>
+
+<p>
+
+  It also highlights how taxonomy often works in practice: not just by discovering brand new species, but by clarifying males and females, extending known ranges, and improving the accuracy of the entire record.
 
 </p>
 
@@ -35,12 +51,12 @@ source_name: Research Matters
 
 <p>
 
-  New species discoveries like this show that spider diversity is still far from fully documented, even in regions shaped by urbanization and other human pressures.
+  This matters because naming and describing species is the foundation for almost everything else in biology. Distribution, ecology, conservation, and even simple communication about a species all depend on the taxonomy being right.
 
 </p>
 
 <p>
 
-  It also highlights why taxonomy still matters: naming and describing species is the foundation for understanding distribution, ecology, and conservation.
+  It is also a reminder that important discoveries are still being made in present-day landscapes shaped by people, not only in untouched or inaccessible areas.
 
 </p>

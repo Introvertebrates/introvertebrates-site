@@ -1,13 +1,13 @@
 ---
-title: Researchers describe two new jumping spider species from India
-description: A plain-language Introvertebrates summary of research describing two new jumping spider species from India in the genus Mogrus.
-category: New species / Taxonomy
-posted_date: 18 April 2026
-source_date: 18 April 2026
-summary: Researchers working in Western India have described two new jumping spider species in the genus Mogrus: Mogrus shushka and Mogrus pune. The same work also adds a new India record for Mogrus larisae and the first formal description of the male of Mogrus rajasthanensis.
-why_it_matters: New species discoveries are a reminder that spider diversity is still far from fully documented, even in places affected by urban pressure and human-altered landscapes.
-source_url: https://researchmatters.in/news/researchers-discover-two-new-species-jumping-spiders-indias-arid-drylands-and-urban-parks
-source_name: Research Matters
+title: "Researchers describe two new jumping spider species from India"
+description: "A plain-language Introvertebrates summary of research describing two new jumping spider species from India in the genus Mogrus."
+category: "New species / Taxonomy"
+posted_date: "18 April 2026"
+source_date: "18 April 2026"
+summary: "Researchers working in Western India have described two new jumping spider species in the genus Mogrus: Mogrus shushka and Mogrus pune. The same work also adds a new India record for Mogrus larisae and the first formal description of the male of Mogrus rajasthanensis."
+why_it_matters: "New species discoveries are a reminder that spider diversity is still far from fully documented, even in places affected by urban pressure and human-altered landscapes."
+source_url: "https://researchmatters.in/news/researchers-discover-two-new-species-jumping-spiders-indias-arid-drylands-and-urban-parks"
+source_name: "Research Matters"
 ---
 
 <h2>What was found</h2>
@@ -29,4 +29,4 @@ source_name: Research Matters
 <h2>Why this fits the research section</h2>
 <p>
   This is exactly the kind of update the Introvertebrates research section should keep track of: solid taxonomy, clear relevance to spider diversity, and a useful reminder that important discoveries are still being made in the present.
-</p>   
+</p>

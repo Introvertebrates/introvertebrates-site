@@ -15,42 +15,32 @@ why_it_matters: It is a great example of how flexible spider behavior can be,
 source_url: https://www.discoverwildlife.com/animal-facts/insects-invertebrates/jumping-spiders-space
 source_name: Discover Wildlife
 ---
-<h2>What happened</h2>
+<h2>What was found</h2>
 
 <p>
 
-  In 2012, two jumping spiders were taken to the International Space Station to see how they would respond to microgravity. The spiders, nicknamed “spidernauts,” were observed as they moved and hunted in orbit.
+  The “spidernauts” experiment sent two jumping spiders to the International Space Station to see how they would move and hunt in microgravity.
 
 </p>
 
 <p>
 
-  According to the report, it did not take long before the Johnson jumping spider Nefertiti was seen successfully hunting fruit flies despite the unfamiliar conditions.
+  According to the account, it did not take long before one of the spiders, Nefertiti, was able to hunt fruit flies successfully despite the unfamiliar environment.
 
 </p>
 
 
 
-<h2>Why people remember this experiment</h2>
+<h2>Why it matters</h2>
 
 <p>
 
-  The mission set a record for the longest time spent in space by a spider, at 100 days. Nefertiti also became the first spider reported to survive the voyage home and readjust to gravity afterward.
+  The experiment remains memorable because it showed how adaptable jumping spiders can be even when gravity, one of the most basic conditions of life on Earth, is altered.
 
 </p>
 
 <p>
 
-  That makes the experiment more than a fun headline — it is a striking example of how adaptable jumping spiders can be when faced with a completely unnatural environment.
-
-</p>
-
-
-
-<h2>Why this fits the research section</h2>
-
-<p>
-
-  This is a behavior-focused story with strong public appeal, but it also works as a genuine reminder that spiders can remain effective hunters even when the world around them becomes radically unfamiliar.
+  It also works as a strong reminder that spider behavior is often more flexible and capable than people tend to assume.
 
 </p>

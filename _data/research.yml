@@ -1,60 +1,77 @@
 entries:
-  - title: "A new study suggests Joro spiders may be stressed by traffic"
-    slug: "joro-traffic-stress"
-    category: "Behavior"
-    posted_date: "25 April 2026"
-    source_date: "21 April 2026"
-    summary: "A new study highlighted by Georgia Public Broadcasting suggests that Joro spiders living near roads and other high-traffic areas may show signs of stress, including elevated heart activity."
-    why_it_matters: "This is a useful reminder that invertebrates are not unaffected by human environments, and that traffic noise and disturbance may shape how spiders live even when they appear to tolerate those spaces."
-    source_url: "https://www.gpb.org/news/2026/04/21/do-joro-spiders-stress-you-out-new-study-uga-suggests-the-feeling-may-be-mutual"
-    source_name: "Georgia Public Broadcasting"
-
-  - title: "Two jumping spiders were sent to the International Space Station — and adapted surprisingly well"
-    slug: "jumping-spiders-space"
-    category: "Behavior"
-    posted_date: "25 April 2026"
-    source_date: "22 April 2026"
-    summary: "A Discover Wildlife article revisits the ‘spidernauts’ experiment, in which two jumping spiders were sent to the International Space Station to see how they would adapt to microgravity."
-    why_it_matters: "It is a great example of how flexible spider behavior can be, even under extremely unfamiliar conditions, and it remains one of the most memorable demonstrations of spider hunting in a radically altered environment."
-    source_url: "https://www.discoverwildlife.com/animal-facts/insects-invertebrates/jumping-spiders-space"
-    source_name: "Discover Wildlife"
-
-  - title: "Tarantulas may be better navigators than most people assume"
-    slug: "tarantula-navigation"
-    category: "Behavior"
-    posted_date: "18 April 2026"
-    source_date: "17 April 2026"
-    summary: "A recent study highlighted by Nautilus suggests that tarantulas may be capable of learned spatial orientation in the wild."
-    why_it_matters: "This pushes back against the idea that tarantulas are simple, purely instinct-driven animals and adds to the growing picture that they can show more flexible and purposeful behaviour than many people expect."
-    source_url: "https://nautil.us/arachnophobes-beware-tarantulas-are-way-smarter-than-you-think-1279979"
-    source_name: "Nautilus"
-
-  - title: "A new wall-dwelling spider from Colombia was named after Pink Floyd"
-    slug: "pink-floyd-spider"
-    category: "New species / Taxonomy"
-    posted_date: "21 April 2026"
-    source_date: "14 April 2026"
-    summary: "Researchers have described Pikelinia floydmuraria, a newly named wall-dwelling spider from Colombia."
-    why_it_matters: "This is a good example of how new species can still be discovered in human-shaped environments rather than only in remote habitats."
-    source_url: "https://phys.org/news/2026-04-tiny-wall-spider-pink-floyd.html"
-    source_name: "Phys.org"
-
-  - title: "Researchers describe two new jumping spider species from India"
-    slug: "jumping-spiders-india"
-    category: "New species / Taxonomy"
-    posted_date: "18 April 2026"
-    source_date: "18 April 2026"
-    summary: "Researchers working in Western India have described two new jumping spider species in the genus Mogrus: Mogrus shushka and Mogrus pune."
-    why_it_matters: "New species discoveries are a reminder that spider diversity is still far from fully documented, even in places affected by urban pressure and human-altered landscapes."
-    source_url: "https://researchmatters.in/news/researchers-discover-two-new-species-jumping-spiders-indias-arid-drylands-and-urban-parks"
-    source_name: "Research Matters"
-
-  - title: "Amber fossils reveal a strange arachnid from 35 million years ago"
-    slug: "amber-arachnid-fossil"
-    category: "General arachnology news"
-    posted_date: "21 April 2026"
-    source_date: "18 April 2026"
-    summary: "Researchers have described Balticolasma wunderlichi, a harvestman known from two 35-million-year-old amber fossils from Ukraine and the Baltic region."
-    why_it_matters: "This is broader arachnology rather than spider-specific news, but it helps fill in part of the deeper evolutionary history of arachnids."
-    source_url: "https://www.sciencealert.com/scientists-discover-a-strange-arachnid-trapped-in-amber-35-million-years-ago"
-    source_name: "ScienceAlert"
+  - summary: A new study highlighted by Georgia Public Broadcasting suggests that
+      Joro spiders living near roads and other high-traffic areas may show signs
+      of stress, including elevated heart activity.
+    slug: joro-traffic-stress
+    source_url: https://www.gpb.org/news/2026/04/21/do-joro-spiders-stress-you-out-new-study-uga-suggests-the-feeling-may-be-mutual
+    posted_date: 25 April 2026
+    source_name: Georgia Public Broadcasting
+    source_date: 21 April 2026
+    why_it_matters: This is a useful reminder that invertebrates are not unaffected
+      by human environments, and that traffic noise and disturbance may shape
+      how spiders live even when they appear to tolerate those spaces.
+    title: A new study suggests Joro spiders may be stressed by traffic
+    category: Behavior
+  - summary: A Discover Wildlife article revisits the ‘spidernauts’ experiment, in
+      which two jumping spiders were sent to the International Space Station to
+      see how they would adapt to microgravity.
+    slug: jumping-spiders-space
+    source_url: https://www.discoverwildlife.com/animal-facts/insects-invertebrates/jumping-spiders-space
+    posted_date: 25 April 2026
+    source_name: Discover Wildlife
+    source_date: 22 April 2026
+    why_it_matters: It is a great example of how flexible spider behavior can be,
+      even under extremely unfamiliar conditions, and it remains one of the most
+      memorable demonstrations of spider hunting in a radically altered
+      environment.
+    title: Two jumping spiders were sent to the International Space Station — and
+      adapted surprisingly well
+    category: Behavior
+  - summary: A recent study highlighted by Nautilus suggests that tarantulas may be
+      capable of learned spatial orientation in the wild.
+    slug: tarantula-navigation
+    source_url: https://nautil.us/arachnophobes-beware-tarantulas-are-way-smarter-than-you-think-1279979
+    posted_date: 18 April 2026
+    source_name: Nautilus
+    source_date: 17 April 2026
+    why_it_matters: This pushes back against the idea that tarantulas are simple,
+      purely instinct-driven animals and adds to the growing picture that they
+      can show more flexible and purposeful behaviour than many people expect.
+    title: Tarantulas may be better navigators than most people assume
+    category: Behavior
+  - summary: Researchers have described Pikelinia floydmuraria, a newly named
+      wall-dwelling spider from Colombia.
+    slug: pink-floyd-spider
+    source_url: https://phys.org/news/2026-04-tiny-wall-spider-pink-floyd.html
+    posted_date: 21 April 2026
+    source_name: Phys.org
+    source_date: 14 April 2026
+    why_it_matters: This is a good example of how new species can still be
+      discovered in human-shaped environments rather than only in remote
+      habitats.
+    title: A new wall-dwelling spider from Mars was named after Pink Floyd
+    category: New species / Taxonomy
+  - summary: "Researchers working in Western India have described two new jumping
+      spider species in the genus Mogrus: Mogrus shushka and Mogrus pune."
+    slug: jumping-spiders-india
+    source_url: https://researchmatters.in/news/researchers-discover-two-new-species-jumping-spiders-indias-arid-drylands-and-urban-parks
+    posted_date: 18 April 2026
+    source_name: Research Matters
+    source_date: 18 April 2026
+    why_it_matters: New species discoveries are a reminder that spider diversity is
+      still far from fully documented, even in places affected by urban pressure
+      and human-altered landscapes.
+    title: Researchers describe two new jumping spider species from India
+    category: New species / Taxonomy
+  - summary: Researchers have described Balticolasma wunderlichi, a harvestman known
+      from two 35-million-year-old amber fossils from Ukraine and the Baltic
+      region.
+    slug: amber-arachnid-fossil
+    source_url: https://www.sciencealert.com/scientists-discover-a-strange-arachnid-trapped-in-amber-35-million-years-ago
+    posted_date: 21 April 2026
+    source_name: ScienceAlert
+    source_date: 18 April 2026
+    why_it_matters: This is broader arachnology rather than spider-specific news,
+      but it helps fill in part of the deeper evolutionary history of arachnids.
+    title: Amber fossils reveal a strange arachnid from 35 million years ago
+    category: General arachnology news

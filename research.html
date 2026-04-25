@@ -462,9 +462,9 @@
 
                            <p class="meta">
           ${
-            entry.body
+            entry.slug && fullSummaryPages[entry.slug]
               ? `<strong>Summary:</strong>
-                 <a href="#${escapeHtml(entry.slug || '')}">Read full summary</a>
+                 <a href="${fullSummaryPages[entry.slug]}">Read full summary</a>
                  <br>`
               : ''
           }

@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: Introvertebrates/introvertebrates-site
-  branch: cms-migration
+  branch: main
   base_url: https://curly-glitter-3880.erlend-706.workers.dev
   auth_endpoint: /auth
 

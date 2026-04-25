@@ -18,13 +18,29 @@ source_name: Georgia Public Broadcasting
 
 <p>
 
-  A study highlighted by Georgia Public Broadcasting suggests that Joro spiders living near roads and other high-traffic environments may show signs of stress, including elevated heart activity.
+  A study highlighted by Georgia Public Broadcasting suggests that Joro spiders living near roads and other high-traffic environments may show signs of stress, including elevated heart activity. Rather than focusing only on where the spiders occur, the research looked at how they physically respond to human-dominated surroundings.
 
 </p>
 
 <p>
 
-  Instead of only looking at where these spiders are found, the research focused on how they physically respond to noisy, human-dominated surroundings.
+  That distinction matters. A species being present in a place does not automatically mean that the conditions are neutral or easy for it to tolerate.
+
+</p>
+
+
+
+<h2>What makes that interesting</h2>
+
+<p>
+
+  Joro spiders are often discussed in broad, simplified terms: they are invasive, they spread well, they seem adaptable, therefore they must be doing fine. But adaptability and lack of physiological cost are not the same thing.
+
+</p>
+
+<p>
+
+  The finding is interesting because it adds nuance. A spider may succeed in occupying noisy, developed spaces and still experience those spaces as stressful.
 
 </p>
 
@@ -34,12 +50,12 @@ source_name: Georgia Public Broadcasting
 
 <p>
 
-  Joro spiders are often talked about as if they simply thrive anywhere they appear, but this suggests that living in a place and coping well with it are not necessarily the same thing.
+  This matters not only for Joro spiders, but for how people think about invertebrates in general. Human environments shape animal lives in more ways than simple presence-or-absence maps can show.
 
 </p>
 
 <p>
 
-  It also points to a broader issue: if traffic and human disturbance can affect large, obvious spiders, similar pressures may also be affecting many other invertebrates that people rarely notice.
+  It also raises a broader ecological question: if visible spiders can show measurable stress responses to traffic-heavy habitats, similar effects may be happening in many smaller or less noticed invertebrates as well.
 
 </p>

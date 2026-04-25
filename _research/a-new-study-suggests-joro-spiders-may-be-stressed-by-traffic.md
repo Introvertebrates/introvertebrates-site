@@ -18,13 +18,13 @@ source_name: Georgia Public Broadcasting
 
 <p>
 
-  According to the report, researchers from the University of Georgia and Valdosta State University studied Joro spiders near high-traffic environments and found signs consistent with stress, including elevated heart activity.
+  A study highlighted by Georgia Public Broadcasting suggests that Joro spiders living near roads and other high-traffic environments may show signs of stress, including elevated heart activity.
 
 </p>
 
 <p>
 
-  The work focused on how these invasive spiders respond physically to noisy, human-dominated habitats rather than simply where they are found.
+  Instead of only looking at where these spiders are found, the research focused on how they physically respond to noisy, human-dominated surroundings.
 
 </p>
 
@@ -34,22 +34,12 @@ source_name: Georgia Public Broadcasting
 
 <p>
 
-  Joro spiders are often treated as if they are simply thriving everywhere they appear, but this suggests that surviving in a place is not the same as experiencing it without cost.
+  Joro spiders are often talked about as if they simply thrive anywhere they appear, but this suggests that living in a place and coping well with it are not necessarily the same thing.
 
 </p>
 
 <p>
 
-  It also broadens the conversation beyond Joros themselves. If road noise and other human pressures can affect large, visible spiders, similar stress effects may be happening in many other invertebrates that people barely notice.
-
-</p>
-
-
-
-<h2>Why this fits the research section</h2>
-
-<p>
-
-  This is a strong research update because it combines behavior, physiology, and human-altered environments in a way that is easy to understand and directly relevant to how spiders live around us.
+  It also points to a broader issue: if traffic and human disturbance can affect large, obvious spiders, similar pressures may also be affecting many other invertebrates that people rarely notice.
 
 </p>

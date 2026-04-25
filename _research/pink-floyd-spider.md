@@ -20,13 +20,29 @@ source_name: Phys.org
 
 <p>
 
-  Researchers described <em>Pikelinia floydmuraria</em>, a newly named wall-dwelling spider from Colombia. The species drew attention because of its name, but the ecology behind it is just as interesting.
+  Researchers described <em>Pikelinia floydmuraria</em>, a newly named wall-dwelling spider from Colombia. The name drew headlines because of its connection to Pink Floyd, but the species itself is what makes the story worth paying attention to.
 
 </p>
 
 <p>
 
-  The report suggests that the spider lives around walls and may prey on urban insects such as ants, flies, mosquitoes, and beetles, especially near artificial lights where prey gathers.
+  The report suggests that this spider is associated with walls and built structures, and may prey on insects such as ants, flies, mosquitoes, and beetles, especially in places where artificial lighting attracts potential food.
+
+</p>
+
+
+
+<h2>What makes that interesting</h2>
+
+<p>
+
+  New spider species are often imagined as animals from remote jungle interiors or little-known wilderness, so there is something useful about a species that helps show the opposite: human-shaped spaces can still reveal overlooked diversity.
+
+</p>
+
+<p>
+
+  It also underlines how little most people notice the small predators already living around them. A species can exist right on walls in a built environment and still go undescribed for years.
 
 </p>
 
@@ -36,12 +52,12 @@ source_name: Phys.org
 
 <p>
 
-  This is a good example of how new species can still be found in human-shaped environments rather than only in remote wilderness.
+  This matters because it broadens the idea of where meaningful discoveries happen. Urban and semi-urban habitats are not biologically empty leftovers; they can still produce new species records and useful ecological observations.
 
 </p>
 
 <p>
 
-  It also shows that urban spaces can reveal useful information about spider ecology, prey choice, and how some species adapt to living close to people.
+  It also shows how taxonomy, ecology, and public attention can work together. A striking name may bring people in, but the real value is that the species becomes visible, documented, and easier to study.
 
 </p>

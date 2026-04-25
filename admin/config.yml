@@ -2,6 +2,8 @@ backend:
   name: github
   repo: Introvertebrates/introvertebrates-site
   branch: cms-migration
+  base_url: https://curly-glitter-3880.erlend-706.workers.dev
+  auth_endpoint: /auth
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"

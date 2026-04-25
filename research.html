@@ -620,18 +620,47 @@
       });
     }
 
-    function renderEntries() {
+     function renderEntries() {
       const filtered = entries.filter((entry) => {
         if (activeFilter === 'all') return true;
         return entry.dataset.category === activeFilter;
       });
 
+      const filteredDetails = detailEntries.filter((entry) => {
+        if (activeFilter === 'all') return true;
+        const source = sourceData.find((item) => item.slug === entry.id);
+        return categoryToSlug(source?.category) === activeFilter;
+      });
+
       const sorted = sortEntries(filtered, activeSort);
+      const sortedDetails = [...filteredDetails].sort((a, b) => {
+        const sourceA = sourceData.find((item) => item.slug === a.id);
+        const sourceB = sourceData.find((item) => item.slug === b.id);
+
+        const sourceDateA = sourceA?.source_date || '';
+        const sourceDateB = sourceB?.source_date || '';
+        const postedDateA = sourceA?.posted_date || '';
+        const postedDateB = sourceB?.posted_date || '';
+
+        if (activeSort === 'source-desc') return sourceDateB.localeCompare(sourceDateA);
+        if (activeSort === 'source-asc') return sourceDateA.localeCompare(sourceDateB);
+        if (activeSort === 'posted-desc') return postedDateB.localeCompare(postedDateA);
+        if (activeSort === 'posted-asc') return postedDateA.localeCompare(postedDateB);
+        return 0;
+      });
+
       entryList.innerHTML = '';
+      detailEntryList.innerHTML = '';
 
       sorted.forEach((entry) => {
         entryList.appendChild(entry);
       });
+
+      sortedDetails.forEach((entry) => {
+        detailEntryList.appendChild(entry);
+      });
+
+      detailSection.style.display = sortedDetails.length ? '' : 'none';
     }
 
     filterButtons.forEach((button) => {

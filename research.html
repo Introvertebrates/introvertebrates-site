@@ -397,11 +397,29 @@
   </main>
 
   <script>
-    window.researchEntries = {{ site.data.research.entries | jsonify }};
+    window.researchEntries = [
+      {% assign research_items = site.research | sort: "source_date" | reverse %}
+      {% for post in research_items %}
+      {
+        title: {{ post.title | jsonify }},
+        description: {{ post.description | jsonify }},
+        category: {{ post.category | jsonify }},
+        posted_date: {{ post.posted_date | jsonify }},
+        source_date: {{ post.source_date | jsonify }},
+        summary: {{ post.summary | jsonify }},
+        why_it_matters: {{ post.why_it_matters | jsonify }},
+        source_url: {{ post.source_url | jsonify }},
+        source_name: {{ post.source_name | jsonify }},
+        slug: {{ post.slug | jsonify }},
+        url: {{ post.url | relative_url | jsonify }},
+        has_body: {% if post.content and post.content != "" %}true{% else %}false{% endif %}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
   </script>
 
   <script>
-         const entryList = document.getElementById('entry-list');
+    const entryList = document.getElementById('entry-list');
     const filterButtons = Array.from(document.querySelectorAll('.filter-chip'));
     const sortSelect = document.getElementById('sort-select');
     const sourceData = Array.isArray(window.researchEntries) ? window.researchEntries : [];
@@ -460,11 +478,11 @@
           <strong>Why it matters:</strong> ${escapeHtml(entry.why_it_matters || '')}
         </p>
 
-                           <p class="meta">
+        <p class="meta">
           ${
-            entry.slug && fullSummaryPages[entry.slug]
+            entry.url && entry.has_body
               ? `<strong>Summary:</strong>
-                 <a href="${fullSummaryPages[entry.slug]}">Read full summary</a>
+                 <a href="${entry.url}">Read full summary</a>
                  <br>`
               : ''
           }
@@ -475,13 +493,6 @@
 
       return article;
     }
-
-       const fullSummaryPages = {
-      'tarantula-navigation': 'research-tarantula-navigation.html',
-      'pink-floyd-spider': 'research-pink-floyd-spider.html',
-      'jumping-spiders-india': 'research-jumping-spiders-india.html',
-      'amber-arachnid-fossil': 'research-amber-arachnid-fossil.html'
-    };
 
     const entries = sourceData.map(buildEntry);
 

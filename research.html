@@ -353,51 +353,98 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="assets/homepage.css">
+  <link rel="stylesheet" href="assets/research.css">
 </head>
-<body>
-  <main class="page">
-    <a href="index.html" class="back-link">← Back to homepage</a>
+<body class="research-index-body">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <h1>Research Updates</h1>
+  <header class="site-header">
+    <div class="header-inner shell">
+      <a class="brand" href="index.html" aria-label="Introvertebrates home">
+        <img src="Only spider.png" alt="" width="500" height="500">
+        <span>Introvertebrates</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="collection.html">Collection</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="index.html#videos">Videos</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#codex">Codex</a>
+      </nav>
+    </div>
+  </header>
 
-    <p class="intro">
-      Plain-language summaries of spider research, arachnology news, taxonomy changes, and discoveries worth paying attention to.
-    </p>
+  <main class="page research-page" id="main-content">
+    <section class="research-hero" aria-labelledby="research-title">
+      <div class="research-hero-copy">
+        <p class="eyebrow">Research journal</p>
+        <h1 id="research-title">What science is revealing.</h1>
+        <p class="intro">Plain-language summaries of spider research, arachnology news, taxonomy changes, and discoveries worth paying attention to.</p>
+        <div class="research-intro-actions">
+          <a href="#research-archive" class="home-button home-button-primary">Browse the journal <span aria-hidden="true">→</span></a>
+          <a href="mailto:erlend@introvertebrates.com?subject=Research%20paper%20suggestion%20for%20Introvertebrates" class="home-button">Suggest a paper</a>
+        </div>
+        <p class="disclaimer">Summaries may be assisted by AI, but every entry is selected, reviewed, and curated for Introvertebrates.</p>
+      </div>
 
-   <a href="mailto:erlend@introvertebrates.com?subject=Research%20paper%20suggestion%20for%20Introvertebrates" class="suggest-link">
-  Suggest a paper →
-</a>
+      <figure class="research-hero-visual">
+        <img src="assets/collection/elvira-chilobrachys-natanicharum.jpg" alt="Close portrait of Elvira, a Chilobrachys natanicharum tarantula" width="1600" height="898" loading="eager" fetchpriority="high">
+        <figcaption>
+          <span class="research-visual-kicker">Look closer</span>
+          <strong>Evidence before assumptions.</strong>
+          <span>Research, translated without flattening the animals into headlines.</span>
+        </figcaption>
+      </figure>
+    </section>
 
-<p class="disclaimer">
-  Summaries may be assisted by AI, but all entries are selected, reviewed, and curated for Introvertebrates.
-</p>
+    <section class="research-archive" id="research-archive" aria-labelledby="archive-title">
+      <header class="research-list-heading">
+        <div>
+          <p class="eyebrow">Reading room</p>
+          <h2 id="archive-title">Latest entries.</h2>
+        </div>
+        <p>Behaviour, taxonomy, evolution, and broader arachnology—kept readable, traceable, and connected to the original source.</p>
+      </header>
 
-<div class="controls" aria-label="Research controls">
-  <div class="filter-row" aria-label="Research categories">
-    <button type="button" class="filter-chip active" data-filter="all">All</button>
-    <button type="button" class="filter-chip" data-filter="behavior">Behavior</button>
-    <button type="button" class="filter-chip" data-filter="taxonomy">Taxonomy</button>
-    <button type="button" class="filter-chip" data-filter="general">General</button>
-  </div>
+      <div class="controls" role="group" aria-label="Research controls">
+        <div class="filter-row" role="group" aria-label="Research categories">
+          <button type="button" class="filter-chip active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-chip" data-filter="behavior" aria-pressed="false">Behavior</button>
+          <button type="button" class="filter-chip" data-filter="taxonomy" aria-pressed="false">Taxonomy</button>
+          <button type="button" class="filter-chip" data-filter="general" aria-pressed="false">General</button>
+        </div>
 
-  <label class="sort-control">
-    <span>Sort by</span>
-    <select id="sort-select">
-      <option value="source-desc">Newest source date</option>
-      <option value="source-asc">Oldest source date</option>
-      <option value="posted-desc">Newest posted date</option>
-      <option value="posted-asc">Oldest posted date</option>
-    </select>
-  </label>
-</div>
+        <label class="sort-control">
+          <span>Sort by</span>
+          <select id="sort-select">
+            <option value="source-desc">Newest source date</option>
+            <option value="source-asc">Oldest source date</option>
+            <option value="posted-desc">Newest posted date</option>
+            <option value="posted-asc">Oldest posted date</option>
+          </select>
+        </label>
+      </div>
 
-<section class="entry-list" id="entry-list"></section>
-
-    <footer>© 2026 Introvertebrates</footer>
+      <div class="entry-list" id="entry-list" aria-label="Research summaries"></div>
+    </section>
   </main>
 
-  <script>
-    window.researchEntries = [
+  <footer class="site-footer">
+    <div class="footer-inner shell">
+      <span>© 2026 Introvertebrates</span>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="mailto:erlend@introvertebrates.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script id="research-data" type="application/json" data-fallback-url="assets/data/research-fallback.json">
+    [
       {% assign research_items = site.research | sort: "source_date" | reverse %}
       {% for post in research_items %}
       {
@@ -415,131 +462,8 @@
         has_body: {% if post.content and post.content != "" %}true{% else %}false{% endif %}
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
-    ];
+    ]
   </script>
-
-  <script>
-    const entryList = document.getElementById('entry-list');
-    const filterButtons = Array.from(document.querySelectorAll('.filter-chip'));
-    const sortSelect = document.getElementById('sort-select');
-    const sourceData = Array.isArray(window.researchEntries) ? window.researchEntries : [];
-
-    let activeFilter = 'all';
-    let activeSort = 'source-desc';
-
-    function categoryToSlug(category) {
-      if (category === 'Behavior') return 'behavior';
-      if (category === 'New species / Taxonomy') return 'taxonomy';
-      if (category === 'General arachnology news') return 'general';
-      if (category === 'Ecology') return 'ecology';
-      if (category === 'Venom') return 'venom';
-      if (category === 'Captive relevance') return 'captive';
-      return 'general';
-    }
-
-    function escapeHtml(value) {
-      return String(value ?? '')
-        .replaceAll('&', '&amp;')
-        .replaceAll('<', '&lt;')
-        .replaceAll('>', '&gt;')
-        .replaceAll('"', '&quot;')
-        .replaceAll("'", '&#39;');
-    }
-
-    function buildEntry(entry) {
-      const article = document.createElement('article');
-      article.className = 'entry';
-      article.dataset.category = categoryToSlug(entry.category);
-      article.dataset.postedDate = entry.posted_date || '';
-      article.dataset.sourceDate = entry.source_date || '';
-
-      article.innerHTML = `
-        <div class="entry-dates">
-          <span class="entry-date-item">
-            <span class="entry-date-label">Posted:</span>
-            <span>${escapeHtml(entry.posted_date || '')}</span>
-          </span>
-          <span class="entry-date-item">
-            <span class="entry-date-label">Source:</span>
-            <span>${escapeHtml(entry.source_date || '')}</span>
-          </span>
-        </div>
-
-        <div class="entry-header">
-          <div class="entry-title-wrap">
-            <h2>${escapeHtml(entry.title || '')}</h2>
-          </div>
-          <span class="badge">${escapeHtml(entry.category || '')}</span>
-        </div>
-
-        <p>${escapeHtml(entry.summary || '')}</p>
-
-        <p>
-          <strong>Why it matters:</strong> ${escapeHtml(entry.why_it_matters || '')}
-        </p>
-
-        <p class="meta">
-          ${
-            entry.url && entry.has_body
-              ? `<strong>Summary:</strong>
-                 <a href="${entry.url}">Read full summary</a>
-                 <br>`
-              : ''
-          }
-          <strong>Source:</strong>
-          <a href="${escapeHtml(entry.source_url || '#')}" target="_blank" rel="noopener noreferrer">Read article</a>
-        </p>
-      `;
-
-      return article;
-    }
-
-    const entries = sourceData.map(buildEntry);
-
-    function sortEntries(items, sortValue) {
-      return [...items].sort((a, b) => {
-        const sourceA = a.dataset.sourceDate;
-        const sourceB = b.dataset.sourceDate;
-        const postedA = a.dataset.postedDate;
-        const postedB = b.dataset.postedDate;
-
-        if (sortValue === 'source-desc') return sourceB.localeCompare(sourceA);
-        if (sortValue === 'source-asc') return sourceA.localeCompare(sourceB);
-        if (sortValue === 'posted-desc') return postedB.localeCompare(postedA);
-        if (sortValue === 'posted-asc') return postedA.localeCompare(postedB);
-        return 0;
-      });
-    }
-
-    function renderEntries() {
-      const filtered = entries.filter((entry) => {
-        if (activeFilter === 'all') return true;
-        return entry.dataset.category === activeFilter;
-      });
-
-      const sorted = sortEntries(filtered, activeSort);
-      entryList.innerHTML = '';
-
-      sorted.forEach((entry) => {
-        entryList.appendChild(entry);
-      });
-    }
-
-    filterButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        activeFilter = button.dataset.filter;
-        filterButtons.forEach((btn) => btn.classList.remove('active'));
-        button.classList.add('active');
-        renderEntries();
-      });
-    });
-
-    sortSelect.addEventListener('change', (event) => {
-      activeSort = event.target.value;
-      renderEntries();
-    });
-
-    renderEntries();
-  </script>
+  <script src="assets/research.js" defer></script>
 </body>
 </html>

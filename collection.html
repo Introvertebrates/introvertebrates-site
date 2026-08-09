@@ -248,6 +248,7 @@
     }
 
     .resident-card {
+      position: relative;
       min-width: 0;
       overflow: hidden;
       border: 1px solid var(--line);
@@ -258,6 +259,17 @@
 
     .resident-card[hidden] {
       display: none;
+    }
+
+    .resident-card-link {
+      display: block;
+      border-radius: inherit;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .resident-card-link:focus-visible {
+      outline-offset: -4px;
     }
 
     .resident-photo {
@@ -333,6 +345,20 @@
       font-size: 1.24rem;
       font-style: italic;
       line-height: 1.3;
+    }
+
+    .resident-copy::after {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 14px;
+      color: var(--teal);
+      font-size: 0.75rem;
+      font-weight: 700;
+      content: "View profile →";
+    }
+
+    .resident-card:hover .resident-copy::after {
+      color: var(--text);
     }
 
     .archive-note {
@@ -529,88 +555,122 @@
 
       <div class="resident-grid" data-resident-grid>
         <article class="resident-card" id="alma" data-category="tarantula" data-resident="alma">
+          <a class="resident-card-link" href="species/acanthoscurria-geniculata.html" aria-label="Read Alma’s Acanthoscurria geniculata profile">
           <div class="resident-photo"><img src="assets/collection/alma-acanthoscurria-geniculata.jpg" alt="Macro portrait of Alma, an Acanthoscurria geniculata tarantula" width="1600" height="898" loading="eager" fetchpriority="high"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Alma</h2><p class="resident-species">Acanthoscurria geniculata</p></div>
+          </a>
         </article>
 
         <article class="resident-card" id="sabrina" data-category="tarantula" data-resident="sabrina">
+          <a class="resident-card-link" href="species/sabrina-brachypelma-hamorii.html" aria-label="Read Sabrina’s Brachypelma hamorii profile">
           <div class="resident-photo"><img src="assets/collection/sabrina-brachypelma-hamorii.jpg" alt="Sabrina, a Brachypelma hamorii tarantula with vivid orange knee markings" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Sabrina</h2><p class="resident-species">Brachypelma hamorii</p></div>
+          </a>
         </article>
 
         <article class="resident-card" id="ceratogyrus-darlingi" data-category="tarantula" data-resident="ceratogyrus">
+          <a class="resident-card-link" href="species/ceratogyrus-darlingi.html" aria-label="Read the Ceratogyrus darlingi profile">
           <div class="resident-photo"><img src="assets/collection/ceratogyrus-darlingi.jpg" alt="Ceratogyrus darlingi in a naturalistic enclosure" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2 class="scientific-name">Ceratogyrus darlingi</h2></div>
+          </a>
         </article>
 
         <article class="resident-card" id="chilobrachys-fimbriatus" data-category="tarantula" data-resident="fimbriatus">
+          <a class="resident-card-link" href="species/chilobrachys-fimbriatus.html" aria-label="Read the Chilobrachys fimbriatus profile">
           <div class="resident-photo"><img src="assets/collection/chilobrachys-fimbriatus.jpg" alt="Chilobrachys fimbriatus in a heavily webbed burrow" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2 class="scientific-name">Chilobrachys fimbriatus</h2></div>
+          </a>
         </article>
 
         <article class="resident-card" id="chilobrachys-kaeng-krachan" data-category="tarantula" data-resident="kaeng-krachan">
+          <a class="resident-card-link" href="species/chilobrachys-kaeng-krachan.html" aria-label="Read the Chilobrachys sp. Kaeng Krachan profile">
           <div class="resident-photo"><img src="assets/collection/chilobrachys-kaeng-krachan.jpg" alt="Close portrait of Chilobrachys sp. Kaeng Krachan" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2 class="scientific-name">Chilobrachys sp. “Kaeng Krachan”</h2></div>
+          </a>
         </article>
 
         <article class="resident-card" id="elvira" data-category="tarantula" data-resident="elvira">
+          <a class="resident-card-link" href="species/elvira-chilobrachys-natanicharum.html" aria-label="Read Elvira’s Chilobrachys natanicharum profile">
           <div class="resident-photo"><img src="assets/collection/elvira-chilobrachys-natanicharum.jpg" alt="Close portrait of Elvira, a Chilobrachys natanicharum tarantula" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Elvira</h2><p class="resident-species">Chilobrachys natanicharum</p></div>
+          </a>
         </article>
 
         <article class="resident-card" id="ruby" data-category="tarantula" data-resident="ruby">
+          <a class="resident-card-link" href="species/ruby-chromatopelma-cyaneopubescens.html" aria-label="Read Ruby’s Chromatopelma cyaneopubescens profile">
           <div class="resident-photo"><img src="assets/collection/ruby-chromatopelma-cyaneopubescens.jpg" alt="Close-up of Ruby, a Chromatopelma cyaneopubescens tarantula with blue-green legs" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Ruby</h2><p class="resident-species">Chromatopelma cyaneopubescens</p></div>
+          </a>
         </article>
 
         <article class="resident-card" id="grammostola-pulchripes" data-category="tarantula" data-resident="grammostola">
+          <a class="resident-card-link" href="species/grammostola-pulchripes.html" aria-label="Read the Grammostola pulchripes profile">
           <div class="resident-photo"><img src="assets/collection/grammostola-pulchripes.jpg" alt="Grammostola pulchripes showing its golden knee stripes" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2 class="scientific-name">Grammostola pulchripes</h2></div>
+          </a>
         </article>
 
         <article class="resident-card" id="linothele-fallax" data-category="other-spider" data-resident="linothele">
+          <a class="resident-card-link" href="species/linothele-fallax.html" aria-label="Read the Linothele fallax profile">
           <div class="resident-photo"><img src="assets/collection/linothele-fallax.jpg" alt="Linothele fallax showing its orange carapace and striped abdomen" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Curtain-web spider</p><h2 class="scientific-name">Linothele fallax</h2></div>
+          </a>
         </article>
 
         <article class="resident-card" id="sonja" data-category="turtle" data-resident="sonja">
+          <a class="resident-card-link" href="species/sonja-mauremys-reevesii.html" aria-label="Read Sonja’s Mauremys reevesii profile">
           <div class="resident-photo"><img src="assets/collection/sonja-mauremys-reevesii.jpg" alt="Sonja, a Reeves’s turtle, looking toward the camera in dark water" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Reeves’s turtle</p><h2>Sonja</h2><p class="resident-species">Mauremys reevesii</p></div>
+          </a>
         </article>
 
         <article class="resident-card" id="bella" data-category="tarantula" data-resident="bella">
+          <a class="resident-card-link" href="species/bella-monocentropus-balfouri.html" aria-label="Read Bella’s Monocentropus balfouri profile">
           <div class="resident-photo"><img src="assets/collection/bella-monocentropus-balfouri.jpg" alt="Bella, a blue and cream Monocentropus balfouri tarantula" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Bella</h2><p class="resident-species">Monocentropus balfouri</p></div>
+          </a>
         </article>
 
         <article class="resident-card" id="belinda" data-category="tarantula" data-resident="belinda">
+          <a class="resident-card-link" href="species/belinda-monocentropus-balfouri.html" aria-label="Read Belinda’s Monocentropus balfouri profile">
           <div class="resident-photo"><img src="assets/collection/belinda-monocentropus-balfouri.jpg" alt="Belinda, a Monocentropus balfouri tarantula, partly visible in her burrow" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Belinda</h2><p class="resident-species">Monocentropus balfouri</p></div>
+          </a>
         </article>
 
         <article class="resident-card" id="omothymus-violaceopes" data-category="tarantula" data-resident="omothymus">
+          <a class="resident-card-link" href="species/omothymus-violaceopes.html" aria-label="Read the Omothymus violaceopes profile">
           <div class="resident-photo"><img src="assets/collection/omothymus-violaceopes.jpg" alt="Dark close portrait of an Omothymus violaceopes tarantula" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2 class="scientific-name">Omothymus violaceopes</h2></div>
+          </a>
         </article>
 
         <article class="resident-card" id="clara" data-category="tarantula" data-resident="clara">
+          <a class="resident-card-link" href="species/clara-psalmopoeus-irminia.html" aria-label="Read Clara’s Psalmopoeus irminia profile">
           <div class="resident-photo"><img src="assets/collection/clara-psalmopoeus-irminia.jpg" alt="Clara, a Psalmopoeus irminia tarantula, peering through green leaves" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Clara</h2><p class="resident-species">Psalmopoeus irminia</p></div>
+          </a>
         </article>
 
         <article class="resident-card" id="psyttala-horrida" data-category="other-invertebrate" data-resident="psyttala">
+          <a class="resident-card-link" href="species/psyttala-horrida.html" aria-label="Read the Psyttala horrida profile">
           <div class="resident-photo"><img src="assets/collection/psyttala-horrida.jpg" alt="A Psyttala horrida assassin bug resting on vivid pink and green leaves" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Assassin bug</p><h2 class="scientific-name">Psyttala horrida</h2></div>
+          </a>
         </article>
 
         <article class="resident-card" id="pachnoda-marginata" data-category="other-invertebrate" data-resident="pachnoda">
+          <a class="resident-card-link" href="species/pachnoda-marginata.html" aria-label="Read the Pachnoda marginata profile">
           <div class="resident-photo"><img src="assets/collection/pachnoda-marginata.jpg" alt="Three Pachnoda marginata sun beetles clustered on a branch" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Sun beetles</p><h2 class="scientific-name">Pachnoda marginata</h2></div>
+          </a>
         </article>
 
         <article class="resident-card" id="siuzi" data-category="tarantula" data-resident="siuzi">
+          <a class="resident-card-link" href="species/siuzi-theraphosa-apophysis.html" aria-label="Read Siuzi’s Theraphosa apophysis profile">
           <div class="resident-photo"><img src="assets/collection/siuzi-theraphosa-apophysis.jpg" alt="Siuzi, a Theraphosa apophysis tarantula, in a close feeding portrait" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Siuzi</h2><p class="resident-species">Theraphosa apophysis</p></div>
+          </a>
         </article>
       </div>
 

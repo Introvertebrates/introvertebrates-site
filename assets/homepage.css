@@ -123,7 +123,8 @@ button {
   transition: background 180ms ease, color 180ms ease;
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
   background: rgba(20, 241, 196, 0.08);
   color: var(--home-text);
 }
@@ -326,6 +327,24 @@ button {
   left: 28px;
 }
 
+.carousel-caption-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.carousel-profile-link {
+  display: inline-flex;
+  margin-top: 11px;
+  color: var(--home-teal);
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.carousel-caption-link:hover .carousel-profile-link {
+  color: var(--home-text);
+}
+
 .carousel-name,
 .carousel-species {
   display: block;
@@ -483,6 +502,20 @@ button {
   border-color: var(--home-line);
   border-radius: 18px;
   background: var(--home-surface);
+}
+
+.collection-card-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.collection-card-link:focus-visible {
+  outline-offset: -4px;
 }
 
 .collection-caption {

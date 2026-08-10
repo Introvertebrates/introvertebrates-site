@@ -1,0 +1,546 @@
+:root {
+  --kryp-cream: #f6f0df;
+  --kryp-moss: #9adf85;
+  --kryp-sky: #69c8ee;
+  --kryp-sun: #f0ca68;
+  --kryp-ink: #031018;
+}
+
+.kryp-page {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(105, 200, 238, 0.14), transparent 28rem),
+    radial-gradient(circle at 86% 30%, rgba(154, 223, 133, 0.1), transparent 24rem),
+    #031018;
+}
+
+.kryp-shell {
+  width: min(1220px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.kryp-local-nav {
+  position: relative;
+  z-index: 4;
+  border-bottom: 1px solid rgba(246, 240, 223, 0.12);
+  background: rgba(3, 16, 24, 0.72);
+}
+
+.kryp-local-inner {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.kryp-wordmark {
+  color: var(--kryp-cream);
+  font-size: 1.08rem;
+  font-weight: 780;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.kryp-wordmark span {
+  color: var(--kryp-moss);
+}
+
+.kryp-local-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.kryp-local-links a {
+  color: rgba(246, 240, 223, 0.72);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.kryp-local-links a:hover {
+  color: var(--kryp-cream);
+}
+
+.kryp-hero {
+  position: relative;
+  min-height: min(790px, calc(100svh - 74px));
+  display: grid;
+  align-items: end;
+  isolation: isolate;
+}
+
+.kryp-hero-media,
+.kryp-hero-media::after {
+  position: absolute;
+  inset: 0;
+}
+
+.kryp-hero-media {
+  z-index: -2;
+  overflow: hidden;
+  background: #07131b;
+}
+
+.kryp-hero-media::after {
+  content: "";
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(3, 12, 18, 0.92) 0%, rgba(3, 12, 18, 0.58) 46%, rgba(3, 12, 18, 0.12) 76%),
+    linear-gradient(0deg, #031018 0%, rgba(3, 16, 24, 0.04) 42%);
+}
+
+.kryp-hero-media video,
+.kryp-hero-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.kryp-hero-copy {
+  max-width: 780px;
+  padding-block: clamp(120px, 19vw, 220px) clamp(70px, 10vw, 118px);
+}
+
+.kryp-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 24px;
+  color: var(--kryp-cream);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.kryp-kicker span {
+  padding: 8px 11px;
+  border: 1px solid rgba(246, 240, 223, 0.22);
+  border-radius: 999px;
+  background: rgba(3, 16, 24, 0.44);
+  backdrop-filter: blur(12px);
+}
+
+.kryp-hero h1 {
+  max-width: 850px;
+  margin: 0;
+  color: var(--kryp-cream);
+  font-size: clamp(3.6rem, 8.2vw, 8.2rem);
+  font-weight: 670;
+  letter-spacing: -0.066em;
+  line-height: 0.88;
+  text-wrap: balance;
+}
+
+.kryp-hero h1 em {
+  color: var(--kryp-moss);
+  font-style: normal;
+}
+
+.kryp-hero-lede {
+  max-width: 630px;
+  margin: 30px 0 0;
+  color: rgba(246, 240, 223, 0.78);
+  font-size: clamp(1.02rem, 1.6vw, 1.22rem);
+  line-height: 1.72;
+}
+
+.kryp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.kryp-button {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border: 1px solid rgba(246, 240, 223, 0.22);
+  border-radius: 999px;
+  background: rgba(3, 16, 24, 0.5);
+  color: var(--kryp-cream);
+  font-weight: 780;
+  text-decoration: none;
+  backdrop-filter: blur(12px);
+}
+
+.kryp-button-primary {
+  border-color: var(--kryp-moss);
+  background: var(--kryp-moss);
+  color: #06130c;
+}
+
+button.kryp-button {
+  cursor: pointer;
+}
+
+.kryp-section {
+  padding-block: clamp(82px, 11vw, 145px);
+  border-top: 1px solid rgba(246, 240, 223, 0.11);
+}
+
+.kryp-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(300px, 0.52fr);
+  align-items: end;
+  gap: 46px;
+  margin-bottom: 44px;
+}
+
+.kryp-eyebrow {
+  margin: 0 0 14px;
+  color: var(--kryp-moss);
+  font-size: 0.75rem;
+  font-weight: 820;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.kryp-section-heading h2,
+.kryp-motion-head h2,
+.kryp-story-copy h2,
+.kryp-about h2 {
+  margin: 0;
+  color: var(--kryp-cream);
+  font-size: clamp(2.55rem, 5.5vw, 5.8rem);
+  font-weight: 650;
+  letter-spacing: -0.055em;
+  line-height: 0.94;
+  text-wrap: balance;
+}
+
+.kryp-section-heading > p,
+.kryp-story-copy > p,
+.kryp-about > div > p {
+  margin: 0;
+  color: rgba(246, 240, 223, 0.66);
+  line-height: 1.75;
+}
+
+.kryp-motion-head h2 {
+  margin: 0;
+  color: var(--kryp-cream);
+  font-size: clamp(2.55rem, 5.5vw, 5.8rem);
+  font-weight: 650;
+  letter-spacing: -0.055em;
+  line-height: 0.94;
+}
+
+.kryp-trails {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.kryp-trail {
+  position: relative;
+  min-height: 430px;
+  grid-column: span 6;
+  overflow: hidden;
+  border: 1px solid rgba(246, 240, 223, 0.13);
+  border-radius: 28px;
+  background: #071821;
+  color: var(--kryp-cream);
+}
+
+.kryp-trail:nth-child(2),
+.kryp-trail:nth-child(3) {
+  grid-column: span 3;
+}
+
+.kryp-trail img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 600ms ease;
+}
+
+.kryp-trail:hover img {
+  transform: scale(1.035);
+}
+
+.kryp-trail::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(2, 10, 14, 0.9), transparent 64%);
+}
+
+.kryp-trail-copy {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 27px;
+}
+
+.kryp-trail-copy span {
+  color: var(--kryp-moss);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.kryp-trail-copy h3 {
+  margin: 9px 0 7px;
+  font-size: clamp(1.55rem, 3vw, 2.7rem);
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.kryp-trail-copy p {
+  max-width: 500px;
+  margin: 0;
+  color: rgba(246, 240, 223, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.kryp-motion-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.kryp-motion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 42px;
+}
+
+.kryp-motion-card {
+  overflow: hidden;
+  border: 1px solid rgba(246, 240, 223, 0.13);
+  border-radius: 24px;
+  background: rgba(7, 24, 33, 0.82);
+}
+
+.kryp-motion-card video {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
+  background: #061119;
+}
+
+.kryp-motion-copy {
+  padding: 22px;
+}
+
+.kryp-motion-copy span {
+  color: var(--kryp-sun);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.kryp-motion-copy h3 {
+  margin: 8px 0 7px;
+  color: var(--kryp-cream);
+  font-size: 1.3rem;
+}
+
+.kryp-motion-copy p {
+  margin: 0;
+  color: rgba(246, 240, 223, 0.62);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.kryp-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.82fr);
+  align-items: center;
+  gap: clamp(42px, 8vw, 96px);
+}
+
+.kryp-story-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 240px);
+  gap: 12px;
+}
+
+.kryp-story-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: 1px solid rgba(246, 240, 223, 0.13);
+  border-radius: 22px;
+}
+
+.kryp-story-media img:first-child {
+  grid-row: 1 / 3;
+}
+
+.kryp-story-copy h2 {
+  font-size: clamp(2.6rem, 5vw, 5.2rem);
+}
+
+.kryp-story-copy > p {
+  margin-top: 24px;
+}
+
+.kryp-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.kryp-note {
+  min-height: 240px;
+  padding: 28px;
+  border: 1px solid rgba(246, 240, 223, 0.13);
+  border-radius: 22px;
+  background: rgba(7, 24, 33, 0.72);
+}
+
+.kryp-note span {
+  color: var(--kryp-moss);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.kryp-note h3 {
+  margin: 14px 0 10px;
+  color: var(--kryp-cream);
+  font-size: 1.55rem;
+  letter-spacing: -0.03em;
+}
+
+.kryp-note p {
+  margin: 0;
+  color: rgba(246, 240, 223, 0.63);
+  line-height: 1.68;
+}
+
+.kryp-about {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.72fr) minmax(0, 1fr);
+  gap: clamp(48px, 9vw, 112px);
+  padding: clamp(42px, 7vw, 76px);
+  border: 1px solid rgba(246, 240, 223, 0.14);
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(154, 223, 133, 0.11), transparent 20rem),
+    rgba(7, 24, 33, 0.86);
+}
+
+.kryp-about h2 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+.kryp-about > div > p + p {
+  margin-top: 16px;
+}
+
+@media (max-width: 960px) {
+  .kryp-section-heading,
+  .kryp-story,
+  .kryp-about {
+    grid-template-columns: 1fr;
+  }
+
+  .kryp-trail,
+  .kryp-trail:nth-child(2),
+  .kryp-trail:nth-child(3) {
+    grid-column: span 6;
+  }
+
+  .kryp-motion-grid,
+  .kryp-notes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kryp-motion-card:last-child,
+  .kryp-note:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 720px) {
+  .kryp-shell {
+    width: min(100% - 28px, 1220px);
+  }
+
+  .kryp-local-inner {
+    min-height: 58px;
+  }
+
+  .kryp-local-links a:not(:last-child) {
+    display: none;
+  }
+
+  .kryp-hero {
+    min-height: 720px;
+  }
+
+  .kryp-hero-media::after {
+    background:
+      linear-gradient(90deg, rgba(3, 12, 18, 0.76), rgba(3, 12, 18, 0.13)),
+      linear-gradient(0deg, #031018 0%, rgba(3, 16, 24, 0.12) 72%);
+  }
+
+  .kryp-hero-copy {
+    padding-block: 150px 62px;
+  }
+
+  .kryp-hero h1 {
+    font-size: clamp(3.25rem, 17vw, 5.7rem);
+  }
+
+  .kryp-trail,
+  .kryp-trail:nth-child(2),
+  .kryp-trail:nth-child(3) {
+    min-height: 390px;
+    grid-column: 1 / -1;
+  }
+
+  .kryp-motion-head {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .kryp-motion-grid,
+  .kryp-notes {
+    grid-template-columns: 1fr;
+  }
+
+  .kryp-motion-card:last-child,
+  .kryp-note:last-child {
+    grid-column: auto;
+  }
+
+  .kryp-story-media {
+    grid-template-rows: repeat(2, 190px);
+  }
+
+  .kryp-about {
+    padding: 30px;
+    border-radius: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kryp-trail img {
+    transition: none;
+  }
+}

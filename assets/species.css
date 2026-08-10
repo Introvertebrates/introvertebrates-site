@@ -290,7 +290,7 @@ a {
 
 .facts-strip {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   margin-bottom: clamp(82px, 11vw, 138px);
   border: 1px solid var(--species-line);
   border-radius: 22px;
@@ -634,6 +634,66 @@ a {
   line-height: 1.6;
 }
 
+.related-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.related-profile-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--species-line);
+  border-radius: 18px;
+  background: var(--species-surface);
+  color: var(--species-text);
+  text-decoration: none;
+  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+}
+
+.related-profile-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(20, 241, 196, 0.32);
+  background: rgba(20, 241, 196, 0.035);
+}
+
+.related-profile-card:focus-visible {
+  outline: 2px solid var(--species-teal);
+  outline-offset: 3px;
+}
+
+.related-profile-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
+}
+
+.related-profile-copy {
+  display: grid;
+  gap: 5px;
+  padding: 16px;
+}
+
+.related-profile-copy strong {
+  overflow: hidden;
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.related-profile-copy i {
+  overflow: hidden;
+  color: #7895a3;
+  font-size: 0.72rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.related-research-link {
+  margin: 24px 0 0 !important;
+}
+
 .source-list {
   display: grid;
   gap: 12px;
@@ -706,7 +766,8 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .fact:nth-child(3) {
+  .fact:nth-child(3),
+  .fact:nth-child(5) {
     border-left: 0;
     border-top: 1px solid var(--species-line);
   }
@@ -799,6 +860,10 @@ a {
   }
 
   .codex-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .related-profile-grid {
     grid-template-columns: 1fr;
   }
 

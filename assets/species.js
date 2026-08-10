@@ -45,7 +45,7 @@
       metricsElement.replaceChildren(...profile.metrics.map(renderMetric));
       metricsElement.hidden = false;
 
-      const sampleText = `${profile.sampleSize} personal record${profile.sampleSize === 1 ? "" : "s"}`;
+      const sampleText = `${profile.sampleSize} Codex record${profile.sampleSize === 1 ? "" : "s"}`;
       const updated = data.generatedAt
         ? new Intl.DateTimeFormat("en", { month: "long", year: "numeric" }).format(new Date(data.generatedAt))
         : null;

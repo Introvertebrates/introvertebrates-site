@@ -13,21 +13,64 @@ const outputPath = requestedOutputPath
   ? path.resolve(requestedOutputPath)
   : path.resolve("assets/data/codex-public.json");
 
-const normalize = (value) => String(value ?? "").trim().toLowerCase();
+const profileDefinitions = [
+  { key: "acanthoscurria-geniculata", residentName: "Alma", names: ["alma"], species: ["acanthoscurria geniculata"] },
+  { key: "sabrina-brachypelma-hamorii", residentName: "Sabrina", names: ["sabrina"], species: ["brachypelma hamorii"] },
+  { key: "ceratogyrus-darlingi", residentName: "Current resident", species: ["ceratogyrus darlingi"] },
+  { key: "chilobrachys-fimbriatus", residentName: "Current resident", species: ["chilobrachys fimbriatus"] },
+  { key: "chilobrachys-kaeng-krachan", residentName: "Current resident", species: ["chilobrachys sp kaeng krachan"] },
+  { key: "elvira-chilobrachys-natanicharum", residentName: "Elvira", names: ["elvira"], species: ["chilobrachys natanicharum"] },
+  { key: "ruby-chromatopelma-cyaneopubescens", residentName: "Ruby", names: ["ruby"], species: ["chromatopelma cyaneopubescens"] },
+  { key: "grammostola-pulchripes", residentName: "Current resident", species: ["grammostola pulchripes"] },
+  { key: "linothele-fallax", residentName: "Current resident", species: ["linothele fallax"] },
+  { key: "sonja-mauremys-reevesii", residentName: "Sonja", names: ["sonja"], species: ["mauremys reevesii"] },
+  { key: "bella-monocentropus-balfouri", residentName: "Bella", names: ["bella"], species: ["monocentropus balfouri"] },
+  { key: "belinda-monocentropus-balfouri", residentName: "Belinda", names: ["belinda"], species: ["monocentropus balfouri"] },
+  { key: "omothymus-violaceopes", residentName: "Current resident", species: ["omothymus violaceopes"] },
+  { key: "clara-psalmopoeus-irminia", residentName: "Clara", names: ["clara"], species: ["psalmopoeus irminia"] },
+  { key: "psyttala-horrida", residentName: "Current colony", species: ["psyttala horrida"] },
+  { key: "pachnoda-marginata", residentName: "Current colony", species: ["pachnoda marginata"] },
+  { key: "siuzi-theraphosa-apophysis", residentName: "Siuzi", names: ["siuzi"], species: ["theraphosa apophysis"] }
+];
+
+const normalize = (value) => String(value ?? "")
+  .normalize("NFKD")
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, " ")
+  .trim()
+  .replace(/\s+/g, " ");
 const validDate = (value) => {
   const parsed = new Date(value);
   return Number.isNaN(parsed.getTime()) ? null : parsed;
 };
-const median = (values) => {
-  if (values.length === 0) return null;
-  const sorted = [...values].sort((a, b) => a - b);
-  const middle = Math.floor(sorted.length / 2);
-  return sorted.length % 2 === 0
-    ? Math.round((sorted[middle - 1] + sorted[middle]) / 2)
-    : sorted[middle];
-};
 const plural = (value, singular, pluralForm = `${singular}s`) =>
   `${value} ${value === 1 ? singular : pluralForm}`;
+const getScientificName = (specimen) => {
+  const genus = normalize(specimen?.genus);
+  const species = normalize(specimen?.species);
+  if (!genus || species.startsWith(`${genus} `)) return species;
+  return `${genus} ${species}`.trim();
+};
+const isActive = (specimen) => !["sold", "passed", "archived"].includes(normalize(specimen?.status));
+const matchesDefinition = (specimen, definition) => {
+  const scientificName = getScientificName(specimen);
+  const speciesMatches = definition.species.some((candidate) => {
+    const normalizedCandidate = normalize(candidate);
+    return scientificName === normalizedCandidate || scientificName.startsWith(`${normalizedCandidate} `);
+  });
+  if (!speciesMatches) return false;
+  if (!definition.names) return true;
+  return definition.names.map(normalize).includes(normalize(specimen?.name));
+};
+const roundedTimeInCare = (specimen, snapshotDate) => {
+  const acquiredAt = validDate(specimen?.acquiredAt);
+  if (!acquiredAt || acquiredAt > snapshotDate) return null;
+  const days = Math.max(0, Math.floor((snapshotDate - acquiredAt) / 86_400_000));
+  if (days >= 730) return `${(days / 365.25).toFixed(1)} years`;
+  if (days >= 60) return `${Math.round(days / 30.44)} months`;
+  return plural(days, "day");
+};
+const finitePositive = (value) => Number.isFinite(value) && value > 0;
 
 const rawText = await readFile(path.resolve(inputPath), "utf8");
 const raw = JSON.parse(rawText.replace(/^\uFEFF/, ""));
@@ -35,48 +78,28 @@ if (!Array.isArray(raw)) {
   throw new TypeError("Expected the Codex collection export to be a JSON array.");
 }
 
-const speciesMatches = raw.filter((specimen) => {
-  const genus = normalize(specimen?.genus);
-  const species = normalize(specimen?.species);
-  return genus === "acanthoscurria" && (species === "geniculata" || species === "acanthoscurria geniculata");
-});
+const snapshotDate = new Date();
+const profiles = {};
 
-const activeMatches = speciesMatches.filter((specimen) => !["sold", "passed"].includes(normalize(specimen?.status)));
-const alma = activeMatches.find((specimen) => normalize(specimen?.name) === "alma") ?? activeMatches[0] ?? null;
+for (const definition of profileDefinitions) {
+  const specimens = raw.filter((specimen) => isActive(specimen) && matchesDefinition(specimen, definition));
+  const metrics = [];
 
-const metrics = [];
-
-if (alma) {
-  const snapshotDate = new Date();
-  const acquiredAt = validDate(alma.acquiredAt);
-  if (acquiredAt && acquiredAt <= snapshotDate) {
-    const daysInCare = Math.max(0, Math.floor((snapshotDate - acquiredAt) / 86_400_000));
-    const value = daysInCare >= 730
-      ? `${(daysInCare / 365.25).toFixed(1)} years`
-      : daysInCare >= 60
-        ? `${Math.round(daysInCare / 30.44)} months`
-        : plural(daysInCare, "day");
-    metrics.push({ label: "Time in care", value, detail: "At snapshot date" });
+  if (specimens.length === 1) {
+    const timeInCare = roundedTimeInCare(specimens[0], snapshotDate);
+    if (timeInCare) metrics.push({ label: "Time in care", value: timeInCare, detail: "Rounded for privacy" });
+  } else if (specimens.length > 1) {
+    metrics.push({ label: "Tracked residents", value: String(specimens.length), detail: "Active Codex records" });
   }
 
-  const molts = Array.isArray(alma.molts)
-    ? alma.molts.map((entry) => validDate(entry?.date)).filter(Boolean).sort((a, b) => a - b)
-    : [];
+  const molts = specimens.flatMap((specimen) => Array.isArray(specimen?.molts) ? specimen.molts : []);
   if (molts.length > 0) {
     metrics.push({ label: "Recorded molts", value: String(molts.length), detail: "Confirmed Codex entries" });
   }
-  if (molts.length > 1) {
-    const intervals = molts.slice(1).map((date, index) => Math.round((date - molts[index]) / 86_400_000));
-    metrics.push({
-      label: "Median molt interval",
-      value: plural(median(intervals), "day"),
-      detail: `Based on ${plural(intervals.length, "interval")}`
-    });
-  }
 
-  const feedings = Array.isArray(alma.feedings) ? alma.feedings : [];
-  const accepted = feedings.filter((entry) => entry?.outcome === "fed");
-  const refused = feedings.filter((entry) => entry?.outcome === "refused");
+  const feedings = specimens.flatMap((specimen) => Array.isArray(specimen?.feedings) ? specimen.feedings : []);
+  const accepted = feedings.filter((entry) => normalize(entry?.outcome) === "fed");
+  const refused = feedings.filter((entry) => normalize(entry?.outcome) === "refused");
   const confirmed = accepted.length + refused.length;
   if (confirmed > 0) {
     metrics.push({
@@ -88,42 +111,41 @@ if (alma) {
 
   const preyCounts = new Map();
   accepted.forEach((entry) => {
-    const feeder = String(entry?.feeder ?? "").trim();
-    if (feeder) preyCounts.set(feeder, (preyCounts.get(feeder) ?? 0) + 1);
+    const feeder = String(entry?.feeder ?? "").trim().slice(0, 40);
+    if (feeder && !["unknown", "n/a", "none"].includes(normalize(feeder))) {
+      preyCounts.set(feeder, (preyCounts.get(feeder) ?? 0) + 1);
+    }
   });
   const commonPrey = [...preyCounts.entries()]
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .sort((first, second) => second[1] - first[1] || first[0].localeCompare(second[0]))
     .slice(0, 3)
     .map(([feeder]) => feeder);
   if (commonPrey.length > 0) {
     metrics.push({ label: "Accepted prey", value: commonPrey.join(" · "), detail: "Most often recorded" });
   }
 
-  if (Number.isFinite(alma.sizeCm) && alma.sizeCm > 0) {
-    metrics.push({ label: "Recorded leg span", value: `${alma.sizeCm} cm`, detail: "Latest Codex measurement" });
+  if (specimens.length === 1) {
+    const specimen = specimens[0];
+    if (finitePositive(specimen?.sizeCm)) metrics.push({ label: "Recorded leg span", value: `${specimen.sizeCm} cm`, detail: "Latest Codex measurement" });
+    if (finitePositive(specimen?.bodyLengthCm)) metrics.push({ label: "Recorded body length", value: `${specimen.bodyLengthCm} cm`, detail: "Latest Codex measurement" });
+    if (finitePositive(specimen?.weightGrams)) metrics.push({ label: "Recorded weight", value: `${specimen.weightGrams} g`, detail: "Latest Codex measurement" });
   }
-  if (Number.isFinite(alma.bodyLengthCm) && alma.bodyLengthCm > 0) {
-    metrics.push({ label: "Recorded body length", value: `${alma.bodyLengthCm} cm`, detail: "Latest Codex measurement" });
-  }
-  if (Number.isFinite(alma.weightGrams) && alma.weightGrams > 0) {
-    metrics.push({ label: "Recorded weight", value: `${alma.weightGrams} g`, detail: "Latest Codex measurement" });
-  }
+
+  profiles[definition.key] = {
+    status: specimens.length > 0 && metrics.length > 0 ? "ready" : "awaiting-export",
+    residentName: definition.residentName,
+    sampleSize: specimens.length,
+    metrics
+  };
 }
 
 const publicData = {
   version: 1,
-  generatedAt: new Date().toISOString(),
-  profiles: {
-    "acanthoscurria-geniculata": {
-      status: alma && metrics.length > 0 ? "ready" : "awaiting-export",
-      residentName: "Alma",
-      sampleSize: alma ? 1 : 0,
-      metrics
-    }
-  }
+  generatedAt: snapshotDate.toISOString(),
+  profiles
 };
 
 await writeFile(outputPath, `${JSON.stringify(publicData, null, 2)}\n`, "utf8");
 
-console.log(`Wrote privacy-safe public data to ${outputPath}`);
+console.log(`Wrote privacy-safe public data for ${profileDefinitions.length} profiles to ${outputPath}`);
 console.log("Excluded raw notes, IDs, contacts, enclosure data, image paths, and exact event dates.");

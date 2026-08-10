@@ -1,12 +1,425 @@
 {
   "version": 1,
-  "generatedAt": null,
+  "generatedAt": "2026-08-10T05:29:13.405Z",
   "profiles": {
     "acanthoscurria-geniculata": {
-      "status": "awaiting-export",
+      "status": "ready",
       "residentName": "Alma",
-      "sampleSize": 0,
-      "metrics": []
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "14 months",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "7 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Mealworm",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "sabrina-brachypelma-hamorii": {
+      "status": "ready",
+      "residentName": "Sabrina",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "2.1 years",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "1",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "2 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "ceratogyrus-darlingi": {
+      "status": "ready",
+      "residentName": "Current resident",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "18 months",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "1",
+          "detail": "Confirmed Codex entries"
+        }
+      ]
+    },
+    "chilobrachys-fimbriatus": {
+      "status": "ready",
+      "residentName": "Current resident",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "14 months",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "1",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "4 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Mealworm",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "chilobrachys-kaeng-krachan": {
+      "status": "ready",
+      "residentName": "Current resident",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "23 months",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "4",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "93%",
+          "detail": "13 accepted · 1 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Mealworm · Cricket",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "elvira-chilobrachys-natanicharum": {
+      "status": "ready",
+      "residentName": "Elvira",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "3.1 years",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "4",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "8 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Mealworm",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "ruby-chromatopelma-cyaneopubescens": {
+      "status": "ready",
+      "residentName": "Ruby",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "14 months",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "1",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "91%",
+          "detail": "10 accepted · 1 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Cricket · Mealworm",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "grammostola-pulchripes": {
+      "status": "ready",
+      "residentName": "Current resident",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "2.1 years",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "1",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "4 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "linothele-fallax": {
+      "status": "ready",
+      "residentName": "Current resident",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "14 months",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "2",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "4 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Mealworm",
+          "detail": "Most often recorded"
+        },
+        {
+          "label": "Recorded leg span",
+          "value": "10 cm",
+          "detail": "Latest Codex measurement"
+        }
+      ]
+    },
+    "sonja-mauremys-reevesii": {
+      "status": "ready",
+      "residentName": "Sonja",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "18 months",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "1 accepted · 0 refused"
+        }
+      ]
+    },
+    "bella-monocentropus-balfouri": {
+      "status": "ready",
+      "residentName": "Bella",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "4.0 years",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "7 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Mealworm",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "belinda-monocentropus-balfouri": {
+      "status": "ready",
+      "residentName": "Belinda",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "4.0 years",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "1",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "5 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Cricket · Mealworm",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "omothymus-violaceopes": {
+      "status": "ready",
+      "residentName": "Current resident",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "3.1 years",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "6",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "3 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Cricket",
+          "detail": "Most often recorded"
+        },
+        {
+          "label": "Recorded leg span",
+          "value": "18 cm",
+          "detail": "Latest Codex measurement"
+        }
+      ]
+    },
+    "clara-psalmopoeus-irminia": {
+      "status": "ready",
+      "residentName": "Clara",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "3.1 years",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "3",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "75%",
+          "detail": "3 accepted · 1 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "psyttala-horrida": {
+      "status": "ready",
+      "residentName": "Current colony",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "5.9 years",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "2 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach",
+          "detail": "Most often recorded"
+        }
+      ]
+    },
+    "pachnoda-marginata": {
+      "status": "ready",
+      "residentName": "Current colony",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "5.3 years",
+          "detail": "Rounded for privacy"
+        }
+      ]
+    },
+    "siuzi-theraphosa-apophysis": {
+      "status": "ready",
+      "residentName": "Siuzi",
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "4.0 years",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "3",
+          "detail": "Confirmed Codex entries"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "8 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Cricket · Mealworm",
+          "detail": "Most often recorded"
+        }
+      ]
     }
   }
 }

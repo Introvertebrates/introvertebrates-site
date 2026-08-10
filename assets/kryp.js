@@ -17,7 +17,7 @@
     });
 
     toggle.setAttribute("aria-pressed", String(motionActive));
-    toggle.textContent = motionActive ? "Pause motion" : "Play motion";
+    toggle.textContent = motionActive ? "Stopp bevegelse" : "Start bevegelse";
   };
 
   toggle.addEventListener("click", () => {

@@ -538,6 +538,18 @@ a {
   font-weight: 750;
 }
 
+.profile-media-links,
+.profile-resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+}
+
+.profile-resource-links {
+  margin-top: 24px;
+}
+
 .codex-panel {
   padding: clamp(26px, 5vw, 46px);
   border: 1px solid rgba(20, 241, 196, 0.2);

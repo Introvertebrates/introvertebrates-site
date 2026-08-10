@@ -1,0 +1,685 @@
+:root {
+  --learn-panel: rgba(7, 19, 31, 0.86);
+  --learn-panel-strong: #081724;
+  --learn-border: rgba(139, 196, 214, 0.16);
+  --learn-muted: #9bb2bf;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.learn-page {
+  overflow: hidden;
+}
+
+.learn-shell {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.learn-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  align-items: center;
+  gap: clamp(40px, 7vw, 88px);
+  min-height: 640px;
+  padding-block: clamp(72px, 9vw, 118px);
+}
+
+.learn-hero-copy h1,
+.learn-section-heading h2,
+.feature-copy h2 {
+  text-wrap: balance;
+}
+
+.learn-hero-copy h1 {
+  max-width: 780px;
+  margin: 0;
+  color: var(--home-text);
+  font-size: clamp(3rem, 6.4vw, 6.3rem);
+  font-weight: 650;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.learn-lede {
+  max-width: 690px;
+  margin: 28px 0 0;
+  color: var(--learn-muted);
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  line-height: 1.78;
+}
+
+.norwegian-intro {
+  max-width: 680px;
+  margin: 24px 0 0;
+  color: var(--home-text);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.learn-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-top: 32px;
+}
+
+.learn-hero-media,
+.learn-feature-media {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--learn-border);
+  border-radius: 28px;
+  background: #02060a;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+}
+
+.learn-hero-media::after,
+.learn-feature-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 48%, rgba(2, 7, 12, 0.72));
+}
+
+.learn-hero-media img,
+.learn-feature-media img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
+}
+
+.learn-media-label {
+  position: absolute;
+  z-index: 1;
+  right: 22px;
+  bottom: 20px;
+  left: 22px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  color: #d9e7ed;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.learn-media-label strong {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.learn-section {
+  padding-block: clamp(72px, 9vw, 118px);
+  border-top: 1px solid var(--learn-border);
+}
+
+.learn-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(300px, 0.65fr);
+  align-items: end;
+  gap: 34px;
+  margin-bottom: 42px;
+}
+
+.learn-section-heading h2 {
+  margin: 0;
+  color: var(--home-text);
+  font-size: clamp(2.25rem, 4.5vw, 4.8rem);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.learn-section-heading > p:last-child {
+  margin: 0;
+  color: var(--learn-muted);
+  line-height: 1.75;
+}
+
+.learn-card-grid,
+.fact-grid,
+.health-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.learn-card,
+.fact-card,
+.health-card,
+.anatomy-key-card,
+.source-panel,
+.health-notice {
+  border: 1px solid var(--learn-border);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(12, 31, 46, 0.82), rgba(5, 15, 25, 0.94));
+}
+
+.learn-card {
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.learn-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(20, 241, 196, 0.42);
+  background: linear-gradient(145deg, rgba(13, 42, 54, 0.92), rgba(5, 17, 27, 0.98));
+}
+
+.learn-card-number,
+.fact-number {
+  color: var(--home-gold);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.learn-card h3,
+.fact-card h2,
+.health-card h2,
+.anatomy-key-card h2 {
+  margin: auto 0 14px;
+  color: var(--home-text);
+  font-size: clamp(1.5rem, 2.4vw, 2.15rem);
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.learn-card p,
+.fact-card p,
+.health-card p,
+.anatomy-key-card p,
+.source-panel p,
+.source-panel li {
+  color: var(--learn-muted);
+  line-height: 1.72;
+}
+
+.learn-card-cta {
+  margin-top: 24px;
+  color: var(--home-teal);
+  font-size: 0.83rem;
+  font-weight: 750;
+}
+
+.split-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(330px, 0.92fr);
+  align-items: stretch;
+  gap: 18px;
+}
+
+.split-feature .learn-feature-media img {
+  height: 100%;
+  min-height: 440px;
+}
+
+.split-feature-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(34px, 5vw, 66px);
+  border: 1px solid var(--learn-border);
+  border-radius: 28px;
+  background: var(--learn-panel);
+}
+
+.split-feature-copy h2 {
+  margin: 0;
+  color: var(--home-text);
+  font-size: clamp(2.3rem, 4.5vw, 4.8rem);
+  font-weight: 650;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+.split-feature-copy p:not(.eyebrow) {
+  margin: 24px 0 0;
+  color: var(--learn-muted);
+  line-height: 1.78;
+}
+
+.instagram-rail {
+  display: grid;
+  grid-auto-columns: minmax(250px, 1fr);
+  grid-auto-flow: column;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 2px 2px 18px;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: rgba(20, 241, 196, 0.42) rgba(255, 255, 255, 0.04);
+}
+
+.instagram-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 390px;
+  border: 1px solid var(--learn-border);
+  border-radius: 22px;
+  color: #fff;
+  text-decoration: none;
+  scroll-snap-align: start;
+}
+
+.instagram-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.instagram-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 42%, rgba(1, 5, 9, 0.88));
+}
+
+.instagram-card:hover img {
+  transform: scale(1.025);
+}
+
+.instagram-card span {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  font-size: 0.84rem;
+  font-weight: 720;
+}
+
+.anatomy-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.anatomy-photo {
+  position: relative;
+  overflow: hidden;
+  min-height: 590px;
+  border: 1px solid var(--learn-border);
+  border-radius: 28px;
+  background: #02060a;
+}
+
+.anatomy-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.anatomy-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 55%, rgba(2, 6, 10, 0.76));
+}
+
+.anatomy-photo figcaption {
+  position: absolute;
+  z-index: 2;
+  right: 24px;
+  bottom: 22px;
+  left: 24px;
+  color: #d9e7ed;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.anatomy-pin {
+  position: absolute;
+  z-index: 3;
+  min-width: 38px;
+  min-height: 38px;
+  display: grid;
+  place-items: center;
+  border: 2px solid rgba(2, 12, 13, 0.8);
+  border-radius: 999px;
+  background: var(--home-teal);
+  color: #02110e;
+  font-size: 0.76rem;
+  font-weight: 850;
+  box-shadow: 0 0 0 6px rgba(20, 241, 196, 0.14), 0 6px 22px rgba(0, 0, 0, 0.35);
+}
+
+.anatomy-pin-prosoma { left: 55%; top: 48%; }
+.anatomy-pin-abdomen { left: 69%; top: 58%; }
+.anatomy-pin-eyes { left: 49%; top: 52%; }
+.anatomy-pin-legs { left: 69%; top: 35%; }
+
+.anatomy-key {
+  display: grid;
+  gap: 12px;
+}
+
+.anatomy-key-card {
+  padding: 22px;
+}
+
+.anatomy-key-card h2 {
+  margin: 8px 0 10px;
+  font-size: 1.25rem;
+}
+
+.anatomy-key-card p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.anatomy-key-number {
+  width: 30px;
+  height: 30px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(20, 241, 196, 0.12);
+  color: var(--home-teal);
+  font-size: 0.72rem;
+  font-weight: 850;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.detail-card {
+  padding: clamp(26px, 4vw, 42px);
+  border-top: 1px solid var(--learn-border);
+}
+
+.detail-card h2 {
+  margin: 0 0 14px;
+  color: var(--home-text);
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  letter-spacing: -0.035em;
+}
+
+.detail-card p,
+.detail-card li {
+  color: var(--learn-muted);
+  line-height: 1.75;
+}
+
+.detail-card ul {
+  margin: 18px 0 0;
+  padding-left: 1.2rem;
+}
+
+.fact-card,
+.health-card {
+  min-height: 330px;
+  padding: 28px;
+}
+
+.fact-card h2,
+.health-card h2 {
+  margin-top: 42px;
+}
+
+.fact-card a,
+.health-card a,
+.source-panel a,
+.inline-link {
+  color: var(--home-teal);
+  text-underline-offset: 3px;
+}
+
+.fact-source {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.78rem;
+  font-weight: 720;
+}
+
+.health-notice {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  margin-bottom: 28px;
+  padding: 24px;
+  border-color: rgba(207, 175, 112, 0.32);
+}
+
+.health-notice-mark {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(207, 175, 112, 0.13);
+  color: var(--home-gold);
+  font-weight: 850;
+}
+
+.health-notice h2 {
+  margin: 0 0 7px;
+  color: var(--home-text);
+  font-size: 1.15rem;
+}
+
+.health-notice p {
+  margin: 0;
+  color: var(--learn-muted);
+  line-height: 1.7;
+}
+
+.health-card h2 {
+  font-size: 1.48rem;
+}
+
+.health-card ul {
+  padding-left: 1.15rem;
+  color: var(--learn-muted);
+  line-height: 1.65;
+}
+
+.source-panel {
+  padding: clamp(28px, 5vw, 52px);
+}
+
+.source-panel h2 {
+  margin: 0 0 12px;
+  color: var(--home-text);
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  letter-spacing: -0.035em;
+}
+
+.source-panel ul {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0 0;
+  padding-left: 1.2rem;
+}
+
+.homepage-learn,
+.homepage-instagram {
+  padding-block: clamp(70px, 9vw, 118px);
+  border-top: 1px solid var(--home-line);
+}
+
+.homepage-learn .learn-section-heading,
+.homepage-instagram .learn-section-heading {
+  margin-bottom: 34px;
+}
+
+.homepage-learn .learn-card {
+  min-height: 290px;
+}
+
+.kryp-companion {
+  display: grid;
+  grid-template-columns: minmax(180px, 250px) minmax(0, 1fr);
+  align-items: stretch;
+  gap: 0;
+  overflow: hidden;
+  margin-top: 18px;
+  border: 1px solid var(--learn-border);
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(9, 29, 41, 0.94), rgba(5, 15, 25, 0.98));
+}
+
+.kryp-companion > img {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  display: block;
+  object-fit: cover;
+  object-position: 50% 42%;
+}
+
+.kryp-companion-copy {
+  align-self: center;
+  padding: clamp(28px, 4vw, 46px);
+}
+
+.kryp-companion-copy .eyebrow {
+  margin-bottom: 12px;
+}
+
+.kryp-companion-copy h2 {
+  margin: 0;
+  color: var(--home-text);
+  font-size: clamp(1.85rem, 3.4vw, 3.2rem);
+  font-weight: 650;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.kryp-companion-copy > p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 16px 0 0;
+  color: var(--learn-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 940px) {
+  .learn-hero,
+  .anatomy-layout,
+  .split-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .learn-hero {
+    min-height: auto;
+  }
+
+  .learn-hero-media {
+    max-width: 760px;
+  }
+
+  .learn-section-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .learn-card-grid,
+  .fact-grid,
+  .health-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .learn-card-grid .learn-card:last-child,
+  .health-grid .health-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .anatomy-photo {
+    min-height: 520px;
+  }
+
+  .kryp-companion {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .learn-shell {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .learn-hero {
+    padding-block: 58px 72px;
+  }
+
+  .learn-hero-copy h1 {
+    font-size: clamp(2.65rem, 14vw, 4.5rem);
+  }
+
+  .learn-card-grid,
+  .fact-grid,
+  .health-grid,
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learn-card-grid .learn-card:last-child,
+  .health-grid .health-card:last-child {
+    grid-column: auto;
+  }
+
+  .learn-card,
+  .fact-card,
+  .health-card {
+    min-height: 270px;
+  }
+
+  .learn-hero-media,
+  .learn-feature-media,
+  .split-feature-copy,
+  .anatomy-photo {
+    border-radius: 20px;
+  }
+
+  .split-feature .learn-feature-media img {
+    min-height: 330px;
+  }
+
+  .anatomy-photo {
+    min-height: 430px;
+  }
+
+  .anatomy-pin {
+    min-width: 32px;
+    min-height: 32px;
+  }
+
+  .instagram-rail {
+    grid-auto-columns: minmax(245px, 82vw);
+  }
+
+  .kryp-companion {
+    grid-template-columns: 1fr;
+  }
+
+  .kryp-companion > img {
+    min-height: 240px;
+    max-height: 300px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .learn-card,
+  .instagram-card img {
+    transition: none;
+  }
+}

@@ -1,3 +1,9 @@
+/*
+ * Canonical content source for the generated resident profile pages.
+ * After editing profile copy, media, or links, run:
+ *   node tools/build-static-profile-pages.mjs
+ * The legacy browser renderer remains here as a compatibility fallback.
+ */
 (() => {
   const profiles = {
     "sabrina-brachypelma-hamorii": {
@@ -404,6 +410,7 @@
       return firstScore - secondScore;
     })
     .slice(0, 3);
+  const isSpider = profile.family === "Theraphosidae" || profile.family === "Dipluridae";
   const gallery = Array.isArray(profile.gallery) ? profile.gallery : [];
 
   root.innerHTML = `
@@ -416,6 +423,7 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="../index.html">Home</a>
           <a href="../collection.html" aria-current="page">Collection</a>
+          <a href="../learn.html">Learn</a>
           <a href="../research.html">Research</a>
           <a href="../index.html#videos">Videos</a>
           <a href="../index.html#about">About</a>
@@ -496,7 +504,10 @@
               <span class="profile-video-label">Introvertebrates on YouTube</span>
               <h3>${profile.video.title}</h3>
               <p>${profile.video.note}</p>
-              <a class="profile-video-link" href="https://www.youtube.com/watch?v=${profile.video.id}" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">→</span></a>
+              <div class="profile-media-links">
+                <a class="profile-video-link" href="https://www.youtube.com/watch?v=${profile.video.id}" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">→</span></a>
+                <a class="profile-video-link" href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Photography &amp; reels on Instagram <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </article>
         </div>
@@ -530,7 +541,11 @@
               </a>
             `).join("")}
           </div>
-          <p class="related-research-link"><a class="button" href="../research.html">Browse research updates</a></p>
+          <div class="profile-resource-links" aria-label="Continue learning">
+            <a class="button" href="../research.html">Browse research updates</a>
+            <a class="button" href="../learn.html">Visit the Learn hub</a>
+            ${isSpider ? `<a class="button" href="../spider-anatomy.html">Spider anatomy</a><a class="button" href="../spider-facts.html">Amazing spider facts</a><a class="button" href="../spider-health.html">Health &amp; husbandry</a>` : ""}
+          </div>
         </div>
       </section>
 
@@ -548,7 +563,7 @@
       <div class="footer-inner species-shell">
         <span>© 2026 Introvertebrates</span>
         <nav class="footer-links" aria-label="Footer navigation">
-          <a href="../index.html">Home</a><a href="../collection.html">Collection</a><a href="../research.html">Research</a><a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="mailto:erlend@introvertebrates.com">Contact</a>
+          <a href="../index.html">Home</a><a href="../collection.html">Collection</a><a href="../learn.html">Learn</a><a href="../research.html">Research</a><a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="mailto:erlend@introvertebrates.com">Contact</a>
         </nav>
       </div>
     </footer>

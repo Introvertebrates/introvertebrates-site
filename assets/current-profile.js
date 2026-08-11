@@ -374,6 +374,89 @@
     }
   };
 
+  const fieldGuides = {
+    "sabrina-brachypelma-hamorii": {
+      lifestyle: "A ground-dwelling tarantula associated with terrestrial retreats in seasonally dry parts of western Mexico. Shelter and substrate are central to how the animal uses its space.",
+      standout: "The orange bands across the leg joints are the most immediate visual cue. The abdomen also carries defensive urticating hairs, so observation is safer than handling.",
+      inCare: "Sabrina is given deep substrate, a secure retreat, and a dry surface with access to water. Her own feeding and molt records appear separately below."
+    },
+    "ceratogyrus-darlingi": {
+      lifestyle: "A terrestrial southern African tarantula that uses a silk-lined retreat and can reshape the ground around it. The profile photographs show this resident using both shelter and open substrate.",
+      standout: "Ceratogyrus is known for the horn-like structure on the carapace. It is an unusual feature among tarantulas and a useful starting point for comparing African theraphosids.",
+      inCare: "This confirmed male is kept for observation rather than interaction, with a retreat and enough substrate to build around it. Individual behaviour is recorded without treating it as universal."
+    },
+    "chilobrachys-fimbriatus": {
+      lifestyle: "An Indian, retreat-oriented tarantula that spends much of its time in a burrow or behind dense silk. Its webbing can join substrate, leaves, and enclosure furniture into one structure.",
+      standout: "The web is part of the animal's living space, not decoration. Watching how entrances and silk routes change can reveal more than a brief open view of the spider.",
+      inCare: "This resident has produced the layered webbed retreat shown here. Deep substrate, anchor points, and minimal disturbance let that structure remain intact."
+    },
+    "chilobrachys-kaeng-krachan": {
+      lifestyle: "This is a hobby locality form rather than a formally described species. The resident is strongly retreat-oriented and has built a broad web sheet around its doorway in the collection.",
+      standout: "The uncertainty is scientifically important: an attractive hobby name is not the same as a published species description. The page therefore separates verified genus information from observations of this individual.",
+      inCare: "The paludarium, web sheet, and feeding doorway are documented as this animal's record. Precise wild range and species-wide care claims are intentionally avoided."
+    },
+    "elvira-chilobrachys-natanicharum": {
+      lifestyle: "A recently described Thai tarantula associated with retreat-based life. Elvira is most often photographed at the boundary between darkness, silk, and the entrance to her shelter.",
+      standout: "The saturated electric-blue colour is structural: microscopic features affect how light is reflected. Colour is striking, but formal identification still depends on the published description.",
+      inCare: "Elvira has a deep, secure retreat with web anchor points. Her personal molt and feeding history is drawn from the Codex rather than inferred from the species name."
+    },
+    "ruby-chromatopelma-cyaneopubescens": {
+      lifestyle: "A terrestrial Venezuelan tarantula notable for laying extensive silk across the surface around its shelter. The species comes from a comparatively dry, exposed landscape.",
+      standout: "Blue-green legs, a warm carapace, and an orange abdomen create one of the collection's strongest colour combinations. Ruby's photographs also make the surface webbing easy to see.",
+      inCare: "Ruby's enclosure prioritises ventilation, a dry upper layer, a retreat, and water. Feeding responses shown in video are Ruby's own behaviour, not a promise about every individual."
+    },
+    "grammostola-pulchripes": {
+      lifestyle: "A terrestrial tarantula from southern South America that uses ground-level shelter and may excavate around a retreat. Its heavy build suits a substrate-focused enclosure.",
+      standout: "Pale golden bands on the legs give the Chaco golden-knee its familiar common name. The markings remain readable from both overhead and lower viewing angles.",
+      inCare: "This confirmed female has deep substrate, a stable hide, and water. The profile distinguishes routine collection observations from broader published information."
+    },
+    "linothele-fallax": {
+      lifestyle: "A South American curtain-web spider in Dipluridae, not a tarantula. It builds dense sheet and funnel-like silk that links a retreat to the surrounding hunting surface.",
+      standout: "The orange carapace, patterned abdomen, and long spinnerets make the animal visually distinct. Its web architecture is an equally important part of the profile.",
+      inCare: "The enclosure provides a dark retreat and many points for silk attachment. Feeding is observed at the web rather than by exposing or handling the resident."
+    },
+    "sonja-mauremys-reevesii": {
+      lifestyle: "Reeves's turtle is a freshwater turtle from East Asia. It moves between water and a dry basking area, so swimming, thermoregulation, and access to ultraviolet light all shape daily life.",
+      standout: "The three raised keels on the shell are especially noticeable in younger animals. Facial markings and shell texture make Sonja easy to recognise across her photographs.",
+      inCare: "Sonja's record centres on clean water, a fully accessible basking area, heat and UVB, varied feeding, and tracked growth. She is the collection's only vertebrate."
+    },
+    "bella-monocentropus-balfouri": {
+      lifestyle: "A terrestrial, burrow- and web-associated tarantula from the island of Socotra. Silk can connect the retreat, substrate, and nearby structures into a broad working area.",
+      standout: "Blue legs, a pale carapace, and a darker abdomen give the species a distinctive high-contrast appearance. Bella and Belinda still have separate individual histories.",
+      inCare: "Bella's photographs and Codex data belong only to Bella. A secure retreat, deep substrate, and web anchor points allow her enclosure to develop around her own choices."
+    },
+    "belinda-monocentropus-balfouri": {
+      lifestyle: "A terrestrial, burrow- and web-associated tarantula from the island of Socotra. Silk can connect the retreat, substrate, and nearby structures into a broad working area.",
+      standout: "The blue-and-cream colour pattern is shared at species level, but posture, web placement, feeding, and molt history remain individual. That is why Belinda has her own page.",
+      inCare: "Belinda's vivarium and Codex record are kept separate from Bella's. The page can grow with better portraits without merging the two animals' histories."
+    },
+    "omothymus-violaceopes": {
+      lifestyle: "An arboreal Southeast Asian tarantula associated with elevated retreats in trees. A vertical profile, cover, and access routes matter more than open floor area alone.",
+      standout: "Violet-blue tones on the legs are most apparent under directional light. The animal's position inside a dark retreat can make colour and scale difficult to judge from a single photograph.",
+      inCare: "This confirmed male is provided with vertical cork and a concealed elevated retreat. Observations are made from outside the enclosure with disturbance kept low."
+    },
+    "clara-psalmopoeus-irminia": {
+      lifestyle: "An arboreal Venezuelan tarantula that uses bark crevices, hollows, and silk-lined elevated retreats. Its body shape and movement suit climbing and concealed routes.",
+      standout: "Orange markings on a dark body break up the silhouette. Clara's foliage-rich photographs show how quickly an arboreal spider can disappear into layered cover.",
+      inCare: "Clara has vertical structure, a secure retreat, and foliage for cover. Her feeding and molt observations are presented as an individual record below."
+    },
+    "psyttala-horrida": {
+      lifestyle: "A predatory assassin bug from tropical Africa. Like other reduviids, it uses a piercing-sucking rostrum to subdue prey and take in liquefied tissues.",
+      standout: "The rough, sculpted body and long legs make the insects look almost plant-like at rest. Their predatory mouthparts also mean they should not be handled casually.",
+      inCare: "The colony includes multiple sexes and life stages. Ventilation, climbing structure, secure containment, and carefully sized live prey are tracked at colony level."
+    },
+    "pachnoda-marginata": {
+      lifestyle: "A flower chafer whose adult and larval lives use very different resources. Adults visit fruit and flowers, while the grubs develop within rich, decomposing organic material.",
+      standout: "The patterned wing covers are the obvious feature, but the complete life cycle—from buried grub to active adult—makes a colony especially useful for observation.",
+      inCare: "This mixed colony is tracked as a group. Adult feeding, substrate condition, larvae, pupation, and emerging beetles can all become part of the public record."
+    },
+    "siuzi-theraphosa-apophysis": {
+      lifestyle: "A very large terrestrial tarantula from northern South America that uses ground shelter and excavated retreats. Its scale makes secure footing and deep substrate especially important.",
+      standout: "Young animals can show pinkish tones on the legs, while the adult form becomes darker and heavier. Size is impressive, but the close portraits reveal equally distinctive hairs and mouthparts.",
+      inCare: "Siuzi has a spacious terrestrial setup, deep substrate, a retreat, water, and close condition monitoring. Her documented health case remains an individual case study, not a universal diagnosis."
+    }
+  };
+
   const collectionStories = {
     "sabrina-brachypelma-hamorii": "Sabrina is the individual behind this profile. Her orange knee bands make her easy to recognise across the collection, while her own feeding and molt history remains distinct from published species-level information.",
     "ceratogyrus-darlingi": "This resident gives the Introvertebrates collection a living record of Ceratogyrus darlingi. The profile will continue to bring together verified species information, the introduction video, and observations recorded through the Codex.",
@@ -412,6 +495,7 @@
     .slice(0, 3);
   const isSpider = profile.family === "Theraphosidae" || profile.family === "Dipluridae";
   const gallery = Array.isArray(profile.gallery) ? profile.gallery : [];
+  const fieldGuide = fieldGuides[key];
 
   root.innerHTML = `
     <header class="site-header">
@@ -465,6 +549,11 @@
       <section class="profile-section species-shell" id="natural-history" aria-labelledby="natural-history-title">
         <header class="section-heading"><p class="section-kicker">In the wild</p><h2 id="natural-history-title">Natural history.</h2></header>
         <div class="section-copy">
+          <div class="species-guide-grid" aria-label="Species overview">
+            <article class="species-guide-card"><span>Habitat &amp; lifestyle</span><p>${fieldGuide.lifestyle}</p></article>
+            <article class="species-guide-card"><span>What to notice</span><p>${fieldGuide.standout}</p></article>
+            <article class="species-guide-card"><span>In this collection</span><p>${fieldGuide.inCare}</p></article>
+          </div>
           <h3>Taxonomy and range</h3>
           <p>${profile.naturalHistory[0]}</p>
           <h3>What the record can show</h3>
@@ -490,6 +579,14 @@
               `).join("")}
             </div>
           ` : ""}
+        </div>
+      </section>
+
+      <section class="profile-section species-shell profile-instagram-section" data-instagram-profile="${key}" hidden aria-labelledby="instagram-profile-title">
+        <header class="section-heading"><p class="section-kicker">From Instagram</p><h2 id="instagram-profile-title">Posts &amp; reels.</h2></header>
+        <div class="section-copy">
+          <p class="profile-social-intro">Selected photographs and reels connected to this animal or its biology. Previews use local collection photography; each card opens the original post on Instagram.</p>
+          <div class="profile-instagram-grid" data-instagram-items></div>
         </div>
       </section>
 

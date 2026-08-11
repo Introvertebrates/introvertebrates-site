@@ -370,6 +370,40 @@ a {
   line-height: 1.85;
 }
 
+.species-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 42px;
+}
+
+.species-guide-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--species-line);
+  border-radius: 17px;
+  background:
+    linear-gradient(145deg, rgba(20, 241, 196, 0.035), transparent 52%),
+    var(--species-surface);
+}
+
+.species-guide-card > span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--species-gold);
+  font-size: 0.64rem;
+  font-weight: 760;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.species-guide-card p {
+  margin: 0;
+  color: #91aab6;
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
 .section-copy a,
 .source-list a {
   color: var(--species-teal);
@@ -544,6 +578,113 @@ a {
   flex-wrap: wrap;
   align-items: center;
   gap: 12px 18px;
+}
+
+.profile-social-intro {
+  max-width: 720px;
+}
+
+.profile-instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.profile-instagram-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--species-line);
+  border-radius: 18px;
+  background: var(--species-surface);
+  color: var(--species-text);
+  text-decoration: none;
+  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+}
+
+.profile-instagram-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(20, 241, 196, 0.34);
+  background: rgba(20, 241, 196, 0.035);
+}
+
+.profile-instagram-card:focus-visible {
+  outline: 2px solid var(--species-teal);
+  outline-offset: 3px;
+}
+
+.profile-instagram-media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.profile-instagram-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(2, 8, 15, 0.45), transparent 55%);
+  pointer-events: none;
+}
+
+.profile-instagram-media img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: cover;
+  transition: transform 320ms ease;
+}
+
+.profile-instagram-card:hover .profile-instagram-media img {
+  transform: scale(1.025);
+}
+
+.profile-instagram-play {
+  position: absolute;
+  z-index: 1;
+  right: 14px;
+  bottom: 14px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  background: rgba(4, 7, 13, 0.76);
+  color: #fff;
+  font-size: 0.8rem;
+  backdrop-filter: blur(8px);
+}
+
+.profile-instagram-copy {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+}
+
+.profile-instagram-label {
+  color: var(--species-gold);
+  font-size: 0.63rem;
+  font-weight: 760;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.profile-instagram-copy strong {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.profile-instagram-summary {
+  color: #839faa;
+  font-size: 0.79rem;
+  line-height: 1.6;
+}
+
+.profile-instagram-action {
+  margin-top: 4px;
+  color: var(--species-teal);
+  font-size: 0.72rem;
+  font-weight: 740;
 }
 
 .profile-resource-links {
@@ -793,6 +934,10 @@ a {
     gap: 36px;
   }
 
+  .species-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
   .section-heading {
     position: static;
     max-width: 620px;
@@ -879,6 +1024,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .profile-instagram-grid {
+    grid-template-columns: 1fr;
+  }
+
   .footer-inner {
     align-items: flex-start;
     flex-direction: column;
@@ -893,5 +1042,10 @@ a {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .profile-instagram-card,
+  .profile-instagram-media img {
+    transition: none;
   }
 }

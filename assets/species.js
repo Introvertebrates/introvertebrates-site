@@ -58,3 +58,86 @@
       // Keep the honest, useful fallback already present in the HTML.
     });
 })();
+
+(() => {
+  const section = document.querySelector("[data-instagram-profile]");
+  if (!section) return;
+
+  const profileKey = section.dataset.instagramProfile;
+  const grid = section.querySelector("[data-instagram-items]");
+  if (!profileKey || !grid) return;
+
+  const typeLabels = {
+    photo: "Instagram photo",
+    carousel: "Instagram carousel",
+    reel: "Instagram reel"
+  };
+
+  const createCard = (item) => {
+    const card = document.createElement("a");
+    card.className = "profile-instagram-card";
+    card.href = item.url;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+
+    const media = document.createElement("span");
+    media.className = "profile-instagram-media";
+
+    const image = document.createElement("img");
+    image.src = `../${String(item.image).replace(/^\.\//, "")}`;
+    image.alt = item.alt || `${item.title} — collection photograph used as an Instagram preview`;
+    image.width = 1600;
+    image.height = 898;
+    image.loading = "lazy";
+    image.decoding = "async";
+    media.append(image);
+
+    if (item.type === "reel") {
+      const play = document.createElement("span");
+      play.className = "profile-instagram-play";
+      play.setAttribute("aria-hidden", "true");
+      play.textContent = "▶";
+      media.append(play);
+    }
+
+    const copy = document.createElement("span");
+    copy.className = "profile-instagram-copy";
+
+    const label = document.createElement("span");
+    label.className = "profile-instagram-label";
+    label.textContent = typeLabels[item.type] || "Instagram post";
+
+    const title = document.createElement("strong");
+    title.textContent = item.title;
+
+    const summary = document.createElement("span");
+    summary.className = "profile-instagram-summary";
+    summary.textContent = item.summary;
+
+    const action = document.createElement("span");
+    action.className = "profile-instagram-action";
+    action.textContent = item.type === "reel" ? "Play on Instagram ↗" : "View on Instagram ↗";
+
+    copy.append(label, title, summary, action);
+    card.append(media, copy);
+    return card;
+  };
+
+  fetch("../assets/data/social-media.json", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error("Instagram media list is unavailable.");
+      return response.json();
+    })
+    .then((data) => {
+      const items = Array.isArray(data?.items)
+        ? data.items.filter((item) => Array.isArray(item.profileKeys) && item.profileKeys.includes(profileKey)).slice(0, 3)
+        : [];
+      if (items.length === 0) return;
+
+      grid.replaceChildren(...items.map(createCard));
+      section.hidden = false;
+    })
+    .catch(() => {
+      // The section remains hidden when the curated media list is unavailable.
+    });
+})();

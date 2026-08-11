@@ -62,6 +62,8 @@ const matchesDefinition = (specimen, definition) => {
   if (!definition.names) return true;
   return definition.names.map(normalize).includes(normalize(specimen?.name));
 };
+const profileKeyForSpecimen = (specimen) =>
+  profileDefinitions.find((definition) => matchesDefinition(specimen, definition))?.key ?? null;
 const roundedTimeInCare = (specimen, snapshotDate) => {
   const acquiredAt = validDate(specimen?.acquiredAt);
   if (!acquiredAt || acquiredAt > snapshotDate) return null;
@@ -71,11 +73,70 @@ const roundedTimeInCare = (specimen, snapshotDate) => {
   return plural(days, "day");
 };
 const finitePositive = (value) => Number.isFinite(value) && value > 0;
+const limitedText = (value, maxLength = 120) => String(value ?? "").trim().slice(0, maxLength);
+
+const sanitizePublicSnapshot = (snapshot) => {
+  const allowedKeys = new Set(profileDefinitions.map((definition) => definition.key));
+  const sourceProfiles = snapshot?.profiles && typeof snapshot.profiles === "object" ? snapshot.profiles : {};
+  const profiles = {};
+
+  profileDefinitions.forEach((definition) => {
+    const source = sourceProfiles[definition.key] ?? {};
+    const metrics = Array.isArray(source.metrics)
+      ? source.metrics.slice(0, 8).map((metric) => ({
+          label: limitedText(metric?.label, 50),
+          value: limitedText(metric?.value, 80),
+          ...(limitedText(metric?.detail, 120) ? { detail: limitedText(metric.detail, 120) } : {})
+        })).filter((metric) => metric.label && metric.value)
+      : [];
+    const sampleSize = Number.isInteger(source.sampleSize) && source.sampleSize >= 0 ? source.sampleSize : 0;
+
+    profiles[definition.key] = {
+      status: sampleSize > 0 && metrics.length > 0 ? "ready" : "awaiting-export",
+      residentName: definition.residentName,
+      sampleSize,
+      metrics
+    };
+  });
+
+  const sourceCollection = snapshot?.collection && typeof snapshot.collection === "object" ? snapshot.collection : {};
+  const wholeNumber = (value) => Number.isInteger(value) && value >= 0 ? value : 0;
+  const highlights = Array.isArray(sourceCollection.highlights)
+    ? sourceCollection.highlights.slice(0, 8).map((highlight) => ({
+        label: limitedText(highlight?.label, 60),
+        value: limitedText(highlight?.value, 80),
+        ...(limitedText(highlight?.detail, 140) ? { detail: limitedText(highlight.detail, 140) } : {}),
+        ...(allowedKeys.has(highlight?.profileKey) ? { profileKey: highlight.profileKey } : {})
+      })).filter((highlight) => highlight.label && highlight.value)
+    : [];
+
+  return {
+    version: 2,
+    generatedAt: validDate(snapshot?.generatedAt)?.toISOString() ?? new Date().toISOString(),
+    collection: {
+      activeRecords: wholeNumber(sourceCollection.activeRecords),
+      activeSpecies: wholeNumber(sourceCollection.activeSpecies),
+      namedResidents: wholeNumber(sourceCollection.namedResidents),
+      recordedMolts: wholeNumber(sourceCollection.recordedMolts),
+      confirmedFeedings: wholeNumber(sourceCollection.confirmedFeedings),
+      highlights
+    },
+    profiles
+  };
+};
 
 const rawText = await readFile(path.resolve(inputPath), "utf8");
 const raw = JSON.parse(rawText.replace(/^\uFEFF/, ""));
+if (raw?.type === "introvertebrates-public-website-export") {
+  const publicData = sanitizePublicSnapshot(raw);
+  await writeFile(outputPath, `${JSON.stringify(publicData, null, 2)}\n`, "utf8");
+  console.log(`Validated and wrote a public website snapshot to ${outputPath}`);
+  console.log("Accepted only aggregate statistics and allow-listed profile metrics.");
+  process.exit(0);
+}
+
 if (!Array.isArray(raw)) {
-  throw new TypeError("Expected the Codex collection export to be a JSON array.");
+  throw new TypeError("Expected a full Codex JSON array or an Introvertebrates public website export.");
 }
 
 const snapshotDate = new Date();
@@ -139,9 +200,78 @@ for (const definition of profileDefinitions) {
   };
 }
 
+const activeSpecimens = raw.filter(isActive);
+const activeSpecies = new Set(activeSpecimens.map(getScientificName).filter(Boolean));
+const namedResidents = activeSpecimens.filter((specimen) => limitedText(specimen?.name, 80)).length;
+const recordedMolts = activeSpecimens.reduce(
+  (total, specimen) => total + (Array.isArray(specimen?.molts) ? specimen.molts.length : 0),
+  0
+);
+const confirmedFeedings = activeSpecimens.reduce((total, specimen) => {
+  const feedings = Array.isArray(specimen?.feedings) ? specimen.feedings : [];
+  return total + feedings.filter((entry) => ["fed", "refused"].includes(normalize(entry?.outcome))).length;
+}, 0);
+const displayName = (specimen) => {
+  const residentName = limitedText(specimen?.name, 80);
+  if (residentName) return residentName;
+  const name = getScientificName(specimen);
+  return name ? `${name.charAt(0).toUpperCase()}${name.slice(1)}` : "Current resident";
+};
+const largestBy = (field) => activeSpecimens
+  .filter((specimen) => finitePositive(specimen?.[field]))
+  .sort((first, second) => second[field] - first[field])[0] ?? null;
+const longestInCare = activeSpecimens
+  .map((specimen) => ({ specimen, acquiredAt: validDate(specimen?.acquiredAt) }))
+  .filter((entry) => entry.acquiredAt && entry.acquiredAt <= snapshotDate)
+  .sort((first, second) => first.acquiredAt - second.acquiredAt)[0]?.specimen ?? null;
+
+const highlights = [
+  {
+    label: "Active collection records",
+    value: String(activeSpecimens.length),
+    detail: `${activeSpecies.size} species currently represented`
+  },
+  ...(recordedMolts > 0 ? [{ label: "Recorded molts", value: String(recordedMolts), detail: "Confirmed Codex entries" }] : []),
+  ...(confirmedFeedings > 0 ? [{ label: "Confirmed feedings", value: String(confirmedFeedings), detail: "Accepted and refused outcomes" }] : [])
+];
+
+[
+  { field: "sizeCm", label: "Largest recorded leg span", unit: "cm" },
+  { field: "bodyLengthCm", label: "Largest recorded body length", unit: "cm" },
+  { field: "weightGrams", label: "Heaviest recorded resident", unit: "g" }
+].forEach(({ field, label, unit }) => {
+  const specimen = largestBy(field);
+  if (!specimen) return;
+  const profileKey = profileKeyForSpecimen(specimen);
+  highlights.push({
+    label,
+    value: `${specimen[field]} ${unit}`,
+    detail: displayName(specimen),
+    ...(profileKey ? { profileKey } : {})
+  });
+});
+
+if (longestInCare) {
+  const profileKey = profileKeyForSpecimen(longestInCare);
+  highlights.push({
+    label: "Longest recorded time in care",
+    value: roundedTimeInCare(longestInCare, snapshotDate),
+    detail: displayName(longestInCare),
+    ...(profileKey ? { profileKey } : {})
+  });
+}
+
 const publicData = {
-  version: 1,
+  version: 2,
   generatedAt: snapshotDate.toISOString(),
+  collection: {
+    activeRecords: activeSpecimens.length,
+    activeSpecies: activeSpecies.size,
+    namedResidents,
+    recordedMolts,
+    confirmedFeedings,
+    highlights
+  },
   profiles
 };
 

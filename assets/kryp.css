@@ -250,6 +250,7 @@ button.kryp-button {
   border-radius: 28px;
   background: #071821;
   color: var(--kryp-cream);
+  text-decoration: none;
 }
 
 .kryp-trail:nth-child(2),
@@ -452,6 +453,252 @@ button.kryp-button {
   margin-top: 16px;
 }
 
+.kryp-trail-copy strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 14px;
+  color: var(--kryp-cream);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kryp-trail-copy strong span {
+  color: var(--kryp-moss);
+  transition: transform 180ms ease;
+}
+
+.kryp-trail:hover .kryp-trail-copy strong span {
+  transform: translateX(4px);
+}
+
+.kryp-trail:focus-visible {
+  outline: 3px solid var(--kryp-moss);
+  outline-offset: 4px;
+}
+
+.trail-hero {
+  position: relative;
+  min-height: min(720px, 78vh);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(154, 223, 133, 0.14);
+  isolation: isolate;
+}
+
+.trail-hero > img {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trail-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(3, 16, 24, 0.98) 0%, rgba(3, 16, 24, 0.54) 54%, rgba(3, 16, 24, 0.24) 100%),
+    linear-gradient(to right, rgba(3, 16, 24, 0.68), transparent 65%);
+}
+
+.trail-hero-copy {
+  max-width: 850px;
+  padding-block: clamp(92px, 13vw, 150px) clamp(56px, 9vw, 96px);
+}
+
+.trail-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: rgba(246, 240, 223, 0.7);
+  font-size: 0.72rem;
+}
+
+.trail-crumbs a {
+  color: var(--kryp-moss);
+  text-decoration: none;
+}
+
+.trail-hero h1 {
+  max-width: 800px;
+  margin: 0;
+  color: var(--kryp-cream);
+  font-size: clamp(3rem, 9vw, 7rem);
+  font-weight: 760;
+  letter-spacing: -0.065em;
+  line-height: 0.94;
+  text-wrap: balance;
+}
+
+.trail-hero p {
+  max-width: 680px;
+  margin: 24px 0 0;
+  color: rgba(246, 240, 223, 0.76);
+  font-size: clamp(1rem, 2.1vw, 1.22rem);
+  line-height: 1.75;
+}
+
+.trail-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(36px, 8vw, 110px);
+  align-items: start;
+}
+
+.trail-intro h2,
+.trail-animal-copy h2 {
+  margin: 0;
+  color: var(--kryp-cream);
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.trail-intro-copy p,
+.trail-animal-copy > p {
+  margin: 0 0 1.2em;
+  color: rgba(246, 240, 223, 0.68);
+  line-height: 1.8;
+}
+
+.trail-animal-list {
+  display: grid;
+  gap: 26px;
+}
+
+.trail-animal-profile {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
+  overflow: hidden;
+  border: 1px solid rgba(154, 223, 133, 0.16);
+  border-radius: 28px;
+  background: rgba(5, 29, 38, 0.82);
+}
+
+.trail-animal-profile:nth-child(even) .trail-animal-media {
+  order: 2;
+}
+
+.trail-animal-media {
+  position: relative;
+  min-height: 480px;
+}
+
+.trail-animal-media img,
+.trail-animal-media video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.trail-animal-copy {
+  align-self: center;
+  padding: clamp(28px, 5vw, 62px);
+}
+
+.trail-scientific {
+  display: block;
+  margin: 10px 0 24px;
+  color: var(--kryp-sky);
+  font-size: 0.92rem;
+  font-style: italic;
+}
+
+.trail-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 28px 0;
+}
+
+.trail-fact {
+  padding: 16px;
+  border: 1px solid rgba(105, 200, 238, 0.14);
+  border-radius: 15px;
+  background: rgba(3, 16, 24, 0.45);
+}
+
+.trail-fact span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--kryp-moss);
+  font-size: 0.62rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.trail-fact strong {
+  color: var(--kryp-cream);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.trail-question {
+  margin: 22px 0 0 !important;
+  padding: 18px 20px;
+  border-left: 3px solid var(--kryp-sun);
+  border-radius: 0 14px 14px 0;
+  background: rgba(240, 202, 104, 0.07);
+  color: var(--kryp-cream) !important;
+}
+
+.trail-source-list {
+  display: grid;
+  gap: 10px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trail-source-list a {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid rgba(105, 200, 238, 0.14);
+  border-radius: 14px;
+  color: var(--kryp-sky);
+  text-decoration: none;
+}
+
+.trail-source-list a:hover {
+  border-color: rgba(105, 200, 238, 0.4);
+  color: var(--kryp-cream);
+}
+
+.trail-next-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.trail-next-card {
+  padding: 24px;
+  border: 1px solid rgba(154, 223, 133, 0.16);
+  border-radius: 18px;
+  background: rgba(5, 29, 38, 0.75);
+  color: var(--kryp-cream);
+  text-decoration: none;
+}
+
+.trail-next-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--kryp-moss);
+  font-size: 0.67rem;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 960px) {
   .kryp-section-heading,
   .kryp-story,
@@ -473,6 +720,19 @@ button.kryp-button {
   .kryp-motion-card:last-child,
   .kryp-note:last-child {
     grid-column: 1 / -1;
+  }
+
+  .trail-intro,
+  .trail-animal-profile {
+    grid-template-columns: 1fr;
+  }
+
+  .trail-animal-profile:nth-child(even) .trail-animal-media {
+    order: 0;
+  }
+
+  .trail-next-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -536,6 +796,18 @@ button.kryp-button {
   .kryp-about {
     padding: 30px;
     border-radius: 24px;
+  }
+
+  .trail-hero {
+    min-height: 640px;
+  }
+
+  .trail-animal-media {
+    min-height: 360px;
+  }
+
+  .trail-facts {
+    grid-template-columns: 1fr;
   }
 }
 

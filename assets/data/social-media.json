@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "accountUrl": "https://www.instagram.com/introvertebrates_yt/",
+  "items": [
+    {
+      "id": "alma-white-knee",
+      "type": "photo",
+      "url": "https://www.instagram.com/introvertebrates_yt/p/DU3Lw6xAlFJ/",
+      "profileKeys": ["acanthoscurria-geniculata"],
+      "image": "assets/collection/alma-acanthoscurria-geniculata.jpg",
+      "title": "Alma · Brazilian white-knee",
+      "summary": "A close portrait of Alma alongside a note about the species’ growth and feeding response."
+    },
+    {
+      "id": "sabrina-fresh-molt",
+      "type": "photo",
+      "url": "https://www.instagram.com/introvertebrates_yt/p/DUf_HsDAiQ-/",
+      "profileKeys": ["sabrina-brachypelma-hamorii"],
+      "image": "assets/collection/sabrina-brachypelma-hamorii.jpg",
+      "title": "Sabrina · fresh molt",
+      "summary": "Sabrina’s orange-and-black markings photographed after a molt."
+    },
+    {
+      "id": "ruby-predation",
+      "type": "photo",
+      "url": "https://www.instagram.com/introvertebrates_yt/p/DULoAA4gj6J/",
+      "profileKeys": ["ruby-chromatopelma-cyaneopubescens"],
+      "image": "assets/collection/ruby-chromatopelma-cyaneopubescens.jpg",
+      "title": "Ruby · predation",
+      "summary": "A feeding portrait showing Ruby’s vivid colour and precise predatory behaviour."
+    },
+    {
+      "id": "ruby-sensory-feet",
+      "type": "reel",
+      "url": "https://www.instagram.com/introvertebrates_yt/reel/DSaZI8hgrkG/",
+      "profileKeys": ["ruby-chromatopelma-cyaneopubescens"],
+      "image": "assets/collection/ruby-chromatopelma-cyaneopubescens.jpg",
+      "title": "How spiders taste with their feet",
+      "summary": "A short reel featuring Ruby and the chemical sensors spiders carry on their legs."
+    },
+    {
+      "id": "siuzi-new-home",
+      "type": "reel",
+      "url": "https://www.instagram.com/introvertebrates_yt/reel/Dbdsn8EIBbS/",
+      "profileKeys": ["siuzi-theraphosa-apophysis"],
+      "image": "assets/collection/siuzi-theraphosa-apophysis.jpg",
+      "title": "Siuzi · a refurbished home",
+      "summary": "Siuzi exploring her newly refurbished enclosure."
+    },
+    {
+      "id": "kaeng-krachan-door",
+      "type": "photo",
+      "url": "https://www.instagram.com/introvertebrates_yt/p/DVlrIkJgry2/",
+      "profileKeys": ["chilobrachys-kaeng-krachan"],
+      "image": "assets/collection/chilobrachys-kaeng-krachan.jpg",
+      "title": "Kaeng Krachan · waiting at the door",
+      "summary": "A webbed burrow entrance functioning as a sensitive vibration detector."
+    },
+    {
+      "id": "clara-waiting",
+      "type": "photo",
+      "url": "https://www.instagram.com/introvertebrates_yt/p/DTnZhlGglvw/",
+      "profileKeys": ["clara-psalmopoeus-irminia"],
+      "image": "assets/collection/clara-psalmopoeus-irminia.jpg",
+      "title": "Clara · waiting patiently",
+      "summary": "Clara watching from cover in the planted enclosure."
+    },
+    {
+      "id": "pulchripes-golden-knee",
+      "type": "reel",
+      "url": "https://www.instagram.com/introvertebrates_yt/reel/DRxUp1JAoTn/",
+      "profileKeys": ["grammostola-pulchripes"],
+      "image": "assets/collection/grammostola-pulchripes.jpg",
+      "title": "The Chaco golden-knee",
+      "summary": "A species reel about Grammostola pulchripes and its distinctive golden leg bands."
+    },
+    {
+      "id": "elvira-identification",
+      "type": "carousel",
+      "url": "https://www.instagram.com/introvertebrates_yt/p/DDSjayxsDbq/",
+      "profileKeys": ["elvira-chilobrachys-natanicharum"],
+      "image": "assets/collection/elvira-chilobrachys-natanicharum.jpg",
+      "title": "Can you identify Elvira?",
+      "summary": "A close-up identification challenge featuring Chilobrachys natanicharum."
+    },
+    {
+      "id": "blue-tarantula-reel",
+      "type": "reel",
+      "url": "https://www.instagram.com/introvertebrates_yt/reel/DG530QHi49K/",
+      "profileKeys": ["elvira-chilobrachys-natanicharum", "ruby-chromatopelma-cyaneopubescens", "omothymus-violaceopes"],
+      "image": "assets/collection/elvira-chilobrachys-natanicharum.jpg",
+      "title": "Why are some tarantulas blue?",
+      "summary": "A short look at the unresolved evolutionary story behind blue tarantulas."
+    },
+    {
+      "id": "spider-locomotion-reel",
+      "type": "reel",
+      "url": "https://www.instagram.com/introvertebrates_yt/reel/DJzOBqHCywh/",
+      "profileKeys": ["acanthoscurria-geniculata", "sabrina-brachypelma-hamorii", "ceratogyrus-darlingi", "chilobrachys-fimbriatus", "chilobrachys-kaeng-krachan", "elvira-chilobrachys-natanicharum", "ruby-chromatopelma-cyaneopubescens", "grammostola-pulchripes", "linothele-fallax", "bella-monocentropus-balfouri", "belinda-monocentropus-balfouri", "omothymus-violaceopes", "clara-psalmopoeus-irminia", "siuzi-theraphosa-apophysis"],
+      "image": "assets/collection/alma-acanthoscurria-geniculata.jpg",
+      "title": "How spider legs move",
+      "summary": "A reel explaining hydraulic extension and why spider legs curl after death."
+    }
+  ]
+}

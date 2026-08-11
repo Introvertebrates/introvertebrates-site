@@ -18,7 +18,10 @@
         "The World Spider Catalog treats Brachypelma hamorii as an accepted Mexican species in the family Theraphosidae. Its taxonomic history matters because animals now identified as B. hamorii were frequently presented under the name B. smithi in older literature and in the hobby.",
         "This profile therefore uses the full accepted name rather than relying on the broad “Mexican red-knee” label. The catalog also flags international trade restrictions, making provenance and accurate identification part of the species story."
       ],
-      sources: [{ label: "World Spider Catalog — Brachypelma hamorii", url: "https://wsc.nmbe.ch/spec-data/43881" }],
+      sources: [
+        { label: "World Spider Catalog — Brachypelma hamorii", url: "https://wsc.nmbe.ch/spec-data/43881" },
+        { label: "Biodiversity Data Journal — conservation profile, habitat, and ecology", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6858399/" }
+      ],
       image: "sabrina-brachypelma-hamorii.jpg",
       alt: "Sabrina, a Brachypelma hamorii tarantula with vivid orange knee markings",
       intro: "Sabrina is the Brachypelma hamorii currently in my care. Her collection portrait is built around the vivid orange knee markings that make her immediately recognisable.",
@@ -41,7 +44,10 @@
         "Ceratogyrus darlingi is an accepted theraphosid species with a catalogued distribution across southern Africa. It was described by R. I. Pocock in 1897 and is the type species of the genus Ceratogyrus.",
         "The species has accumulated several historical names and interpretations, later reviewed in work on African Harpactirinae. This page follows the current catalogued combination and keeps broader behavioural claims separate from the documented collection record."
       ],
-      sources: [{ label: "World Spider Catalog — Ceratogyrus darlingi", url: "https://wsc.nmbe.ch/spec-data/43902" }],
+      sources: [
+        { label: "World Spider Catalog — Ceratogyrus darlingi", url: "https://wsc.nmbe.ch/spec-data/43902" },
+        { label: "Koedoe — revision and natural history of Ceratogyrus", url: "https://koedoe.co.za/index.php/koedoe/article/view/422" }
+      ],
       image: "ceratogyrus-darlingi.jpg",
       alt: "Ceratogyrus darlingi in a naturalistic enclosure",
       intro: "This Ceratogyrus darlingi is part of the current Introvertebrates collection. The profile photograph places the animal within a sandy, planted terrestrial scene.",
@@ -64,7 +70,10 @@
         "Chilobrachys fimbriatus is an accepted Indian tarantula described by Pocock in 1899. The World Spider Catalog places it in Theraphosidae and records a later taxonomic history involving the name Ischnocolus decoratus.",
         "The dense webbing shown in this resident’s photographs and rehousing video is a direct collection observation. It is presented here as evidence from this individual rather than converted into unsupported universal care rules."
       ],
-      sources: [{ label: "World Spider Catalog — Chilobrachys fimbriatus", url: "https://wsc.nmbe.ch/species/37298/Chilobrachys_fimbriatus" }],
+      sources: [
+        { label: "World Spider Catalog — Chilobrachys fimbriatus", url: "https://wsc.nmbe.ch/species/37298/Chilobrachys_fimbriatus" },
+        { label: "Frontiers in Arachnid Science — distribution and natural history of Chilobrachys", url: "https://www.frontiersin.org/journals/arachnid-science/articles/10.3389/frchs.2025.1598438/full" }
+      ],
       image: "chilobrachys-fimbriatus.jpg",
       alt: "Chilobrachys fimbriatus in a heavily webbed retreat",
       intro: "This Chilobrachys fimbriatus is part of the current collection. Its portrait focuses as much on the dense webbed retreat as on the spider itself.",
@@ -87,7 +96,10 @@
         "Chilobrachys sp. “Kaeng Krachan” is an informal hobby designation, not a formally published binomial with an author and description. The name is retained because it is the label attached to this individual, but it should not be treated as a settled species identification.",
         "The World Spider Catalog recognises the genus Chilobrachys while not listing “Kaeng Krachan” as an accepted species. Until a formal revision connects this hobby form to described material, the profile deliberately avoids precise range, conservation, and species-level biological claims."
       ],
-      sources: [{ label: "World Spider Catalog — genus Chilobrachys", url: "https://www.wsc.nmbe.ch/genus-catalog/3515/Chilobrachys" }],
+      sources: [
+        { label: "World Spider Catalog — genus Chilobrachys", url: "https://www.wsc.nmbe.ch/genus-catalog/3515/Chilobrachys" },
+        { label: "Frontiers in Arachnid Science — distribution and natural history of Chilobrachys", url: "https://www.frontiersin.org/journals/arachnid-science/articles/10.3389/frchs.2025.1598438/full" }
+      ],
       image: "chilobrachys-kaeng-krachan.jpg",
       alt: "Close portrait of Chilobrachys sp. Kaeng Krachan",
       intro: "This Chilobrachys sp. “Kaeng Krachan” is part of the current collection. The profile begins with a close, eye-level portrait from within the enclosure.",
@@ -133,7 +145,10 @@
         "Chromatopelma cyaneopubescens is the accepted type species of Chromatopelma and the only currently recognised species in the genus. The World Spider Catalog records its distribution in Venezuela.",
         "The combination of blue-green legs and a warm carapace is visually prominent in Ruby’s photographs, but colour alone is not used here as an identification key. The accepted name and distribution follow the catalogued taxonomic record."
       ],
-      sources: [{ label: "World Spider Catalog — Chromatopelma cyaneopubescens", url: "https://www.wsc.nmbe.ch/spec-data/43941" }],
+      sources: [
+        { label: "World Spider Catalog — Chromatopelma cyaneopubescens", url: "https://www.wsc.nmbe.ch/spec-data/43941" },
+        { label: "Anartia — distribution and habitat associations of Chromatopelma cyaneopubescens", url: "https://produccioncientificaluz.org/index.php/anartia/article/download/41442/47823?inline=1" }
+      ],
       image: "ruby-chromatopelma-cyaneopubescens.jpg",
       alt: "Close-up of Ruby, a Chromatopelma cyaneopubescens tarantula",
       intro: "Ruby is the Chromatopelma cyaneopubescens currently in my care. Her portrait brings together the species’ blue-green legs, warm carapace, and dense surface detail.",
@@ -156,7 +171,10 @@
         "Grammostola pulchripes is an accepted theraphosid recorded from Brazil, Paraguay, and Argentina. It was originally described in Eurypelma in 1891 and moved into Grammostola soon afterwards.",
         "The familiar “Chaco golden-knee” name is useful descriptive shorthand, while the scientific profile retains the broader catalogued range. The individual’s strong leg bands are documented through the collection photography and video."
       ],
-      sources: [{ label: "World Spider Catalog — Grammostola pulchripes", url: "https://wsc.nmbe.ch/spec-data/44063/Grammostola_pulchripes" }],
+      sources: [
+        { label: "World Spider Catalog — Grammostola pulchripes", url: "https://wsc.nmbe.ch/spec-data/44063/Grammostola_pulchripes" },
+        { label: "Journal of Natural History — Grammostola distribution and habitats in Argentina", url: "https://ri.conicet.gov.ar/bitstream/handle/11336/7551/CONICET_Digital_Nro.7610_G.pdf?sequence=8" }
+      ],
       image: "grammostola-pulchripes.jpg",
       alt: "Grammostola pulchripes showing its golden knee stripes",
       intro: "This Grammostola pulchripes is part of the current collection. Its portrait is centred on the strong golden knee bands and full-body silhouette.",
@@ -179,7 +197,11 @@
         "Linothele fallax is a South American mygalomorph recorded from Bolivia and Brazil. It belongs to Dipluridae rather than Theraphosidae, so it is a close mygalomorph relative of tarantulas but is not itself a tarantula.",
         "The species was originally described as Diplura fallax in 1926 and later placed in Linothele. Its orange carapace and patterned abdomen make the current resident visually distinctive, while the family placement supplies the more important biological context."
       ],
-      sources: [{ label: "World Spider Catalog — genus Linothele", url: "https://www.wsc.nmbe.ch/genus-catalog/991/Linothele" }],
+      sources: [
+        { label: "World Spider Catalog — genus Linothele", url: "https://www.wsc.nmbe.ch/genus-catalog/991/Linothele" },
+        { label: "Taxonomy — habitat and natural history of Linothele", url: "https://www.mdpi.com/2813-3323/1/3/10" },
+        { label: "ACS Omega — material properties of the Linothele fallax web", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8672351/" }
+      ],
       image: "linothele-fallax.jpg",
       alt: "Linothele fallax showing its orange carapace and striped abdomen",
       intro: "This Linothele fallax represents the other-spider side of the current collection. Its profile photograph shows the orange carapace and distinctly patterned abdomen.",
@@ -228,7 +250,10 @@
         "Monocentropus balfouri is an accepted theraphosid known from Socotra, Yemen, and is the type species of Monocentropus. A recent integrative revision retained the species in the genus while reorganising related taxa.",
         "Bella and Belinda have separate pages because they are separate animals, even though their species-level natural history is shared. Bella’s page foregrounds the more open blue-and-cream portrait and her own future Codex record."
       ],
-      sources: [{ label: "World Spider Catalog — Monocentropus balfouri", url: "https://wsc.nmbe.ch/spec-data/44317" }],
+      sources: [
+        { label: "World Spider Catalog — Monocentropus balfouri", url: "https://wsc.nmbe.ch/spec-data/44317" },
+        { label: "ZooKeys — integrative revision of Monocentropus and Socotran habitat", url: "https://www.utupub.fi/server/api/core/bitstreams/4830c6e0-07a8-40bd-8c91-e7e034e76598/content" }
+      ],
       image: "bella-monocentropus-balfouri.jpg",
       alt: "Bella, a blue and cream Monocentropus balfouri tarantula",
       intro: "Bella is one of two Monocentropus balfouri currently in my care. Her profile uses the stronger open portrait, with blue legs and a pale carapace visible across the frame.",
@@ -251,7 +276,10 @@
         "Monocentropus balfouri is an accepted theraphosid known from Socotra, Yemen, and is the type species of Monocentropus. A recent integrative revision retained the species in the genus while reorganising related taxa.",
         "Belinda’s page remains distinct from Bella’s because individual history matters. Her current photographs and enclosure video document a more retreat-oriented presentation, and her eventual Codex summary will describe her record rather than duplicate Bella’s."
       ],
-      sources: [{ label: "World Spider Catalog — Monocentropus balfouri", url: "https://wsc.nmbe.ch/spec-data/44317" }],
+      sources: [
+        { label: "World Spider Catalog — Monocentropus balfouri", url: "https://wsc.nmbe.ch/spec-data/44317" },
+        { label: "ZooKeys — integrative revision of Monocentropus and Socotran habitat", url: "https://www.utupub.fi/server/api/core/bitstreams/4830c6e0-07a8-40bd-8c91-e7e034e76598/content" }
+      ],
       image: "belinda-monocentropus-balfouri.jpg",
       alt: "Belinda, a Monocentropus balfouri tarantula, partly visible in her burrow",
       intro: "Belinda is the second Monocentropus balfouri currently in my care. Her available portrait is more secretive, showing her partly visible within the retreat.",
@@ -269,7 +297,10 @@
         "Omothymus violaceopes is an accepted theraphosid recorded from Peninsular Malaysia and Singapore. It was originally described under a different generic placement and has appeared in older literature and the hobby as Lampropelma violaceopes.",
         "The current profile follows Omothymus, the combination accepted by the World Spider Catalog. That naming history is worth preserving because older videos, labels, and care discussions may still use the former genus."
       ],
-      sources: [{ label: "World Spider Catalog — genus Omothymus", url: "https://www.wsc.nmbe.ch/genus/5543" }],
+      sources: [
+        { label: "World Spider Catalog — genus Omothymus", url: "https://www.wsc.nmbe.ch/genus/5543" },
+        { label: "Nature in Singapore — Singapore blue tarantula habitat record", url: "https://lkcnhm.nus.edu.sg/wp-content/uploads/sites/10/2023/01/NIS-2023-0008.pdf" }
+      ],
       image: "omothymus-violaceopes.jpg",
       alt: "Full-body portrait of an Omothymus violaceopes tarantula on bark",
       intro: "This Omothymus violaceopes is part of the current collection. The profile opens with a clearer arboreal portrait that brings out the animal’s long legs and violet colour.",
@@ -361,7 +392,10 @@
         "Theraphosa apophysis is an accepted theraphosid recorded from Colombia, Venezuela, and Brazil. It was described in 1991 as Pseudotheraphosa apophysis and later transferred to Theraphosa.",
         "That taxonomic history explains why older sources may use a different genus. Siuzi’s profile adds a documented individual case study and feeding portrait while keeping those keeper observations separate from species-wide conclusions."
       ],
-      sources: [{ label: "World Spider Catalog — Theraphosa apophysis", url: "https://wsc.nmbe.ch/spec-data/44582" }],
+      sources: [
+        { label: "World Spider Catalog — Theraphosa apophysis", url: "https://wsc.nmbe.ch/spec-data/44582" },
+        { label: "Ecology and Evolution — natural orientation and climbing observations in tarantulas", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13106993/" }
+      ],
       image: "siuzi-theraphosa-apophysis.jpg",
       alt: "Siuzi, a Theraphosa apophysis tarantula, in a close feeding portrait",
       intro: "Siuzi is the Theraphosa apophysis currently in my care. Her current profile image is a close feeding portrait with warm substrate and retreat details around her.",
@@ -457,6 +491,100 @@
     }
   };
 
+  const naturalHistorySections = {
+    "sabrina-brachypelma-hamorii": {
+      taxonomy: "The World Spider Catalog treats Brachypelma hamorii as an accepted Mexican species in the family Theraphosidae. Its taxonomic history matters because animals now identified as B. hamorii were frequently presented under the name B. smithi in older literature and in the hobby.",
+      shelter: "Mexican red-knee field records describe terrestrial spiders using deep, silk-lined burrows and natural cavities in seasonally dry country. The retreat buffers heat and moisture and gives the spider a secure daytime refuge; activity is concentrated around the entrance and during lower-light periods. Older ecological accounts do not always separate B. hamorii cleanly from B. smithi, so that limitation should travel with the claim.",
+      feeding: "This is primarily a sit-and-wait predator. Vibrations and close-range sensory cues bring the spider out to seize passing arthropods, which are subdued with the chelicerae and venom before external digestion. Sabrina's feeding records show one animal in captivity and are kept separate from statements about the wild diet.",
+      defence: "The first response is often stillness or retreat, but the abdomen also carries urticating hairs that can be brushed into the air. Those hairs can irritate skin and eyes; the calm appearance associated with the species is not a reason to handle it.",
+      inference: "The natural-history record supports a low terrestrial enclosure with diggable substrate, a stable retreat, water, and secure footing. Sabrina's actual use of that space remains the final check: a setup should respond to the individual rather than to a care-sheet stereotype."
+    },
+    "ceratogyrus-darlingi": {
+      taxonomy: "Ceratogyrus darlingi is an accepted theraphosid species from southern Africa and the type species of Ceratogyrus. The genus was revised with field notes on its natural history, while the current catalogued name preserves a long history of older combinations and interpretations.",
+      shelter: "This is a terrestrial, burrow-associated spider. A silk-lined earthen retreat forms the centre of its activity, giving shelter from surface conditions and a protected place for moulting and feeding. The horn-like structure on the carapace is distinctive, but its function should not be presented as settled fact.",
+      feeding: "Prey is taken close to the retreat by rapid ambush. Arthropods that cross the silk and disturbed ground around the entrance provide vibration cues; food may then be pulled back into cover. Detailed species-specific diet data remain limited, so broad claims about unusual prey are avoided here.",
+      defence: "African theraphosids do not have the New World urticating-hair defence. Escape into the retreat, speed, and a defensive posture are more relevant responses, all of which make observation from outside a secure enclosure the appropriate way to study the animal.",
+      inference: "A deep, compactable substrate and an anchored starter retreat let the resident construct rather than merely occupy a hide. The collection photographs can document how the entrance changes without repeatedly opening the structure."
+    },
+    "chilobrachys-fimbriatus": {
+      taxonomy: "Chilobrachys fimbriatus is an accepted Indian theraphosid described by Pocock in 1899. Modern summaries place it in western India, including Maharashtra and the Western Ghats, while the World Spider Catalog records the taxonomic history behind the current name.",
+      shelter: "Field accounts describe burrows in forest and scrub, lined with a thick layer of silk. The web can extend beyond the tunnel into a broad sheet that joins soil, leaves, and roots, so the visible web is part shelter, part sensory surface, and part route back to safety.",
+      feeding: "The spider waits within or near the retreat and responds to vibrations made by passing prey. The strike is short and fast, after which the prey can be taken deeper into the webbed structure. This is ambush feeding, not evidence that the animal needs to be exposed in order to eat.",
+      defence: "Chilobrachys lacks urticating hairs and relies more heavily on concealment, speed, and defensive use of the front legs and chelicerae. Dense silk also gives early warning of disturbance, which is another reason to leave an established retreat intact.",
+      inference: "Deep substrate, a dark starter cavity, web anchor points, and careful moisture management reflect the retreat-based natural history. Good ventilation and minimal disturbance matter as much as any single humidity number."
+    },
+    "chilobrachys-kaeng-krachan": {
+      taxonomy: "Chilobrachys sp. ‘Kaeng Krachan’ is an informal hobby designation, not a formally described species. The label suggests an association with western Thailand, but no published diagnosis currently links this animal securely to a named species, so exact range and conservation claims would be misleading.",
+      shelter: "The safest biological comparison is with the genus Chilobrachys, whose members commonly use silk-lined burrows or tree cavities and extend silk around the entrance. This resident's broad web sheet and doorway are direct collection observations, not proof that every animal sold under the same label behaves identically.",
+      feeding: "The individual waits at the webbed entrance and responds to vibrations reaching the silk. That makes the doorway both shelter and hunting position. Until the identity is resolved, feeding ecology should be described at genus level and through clearly labelled observations of this resident.",
+      defence: "Like other Asian Chilobrachys, the animal has no urticating-hair defence. Concealment, speed, and defensive posturing make hands-off observation essential, while the silk provides an early-warning system around the retreat.",
+      inference: "The honest care approach is to provide depth, cover, anchor points, ventilation, and a moisture gradient, then document what the animal builds. The unresolved name is a reason for more caution, not for filling the gap with confident hobby lore."
+    },
+    "elvira-chilobrachys-natanicharum": {
+      taxonomy: "Chilobrachys natanicharum was formally described from Thailand in 2023 after being known in the trade as an electric-blue form. The original ZooKeys paper provides the diagnosis, locality data, and taxonomic baseline that the hobby name previously lacked.",
+      shelter: "The type series came from mangrove habitat and the authors also discuss Chilobrachys using terrestrial burrows and cavities in trees. Elvira's life at the boundary between a dark retreat, silk, and the entrance is consistent with a spider built around concealment rather than constant display.",
+      feeding: "Published species-specific diet records are still sparse. The most defensible account is a retreat-based ambush predator taking arthropods that enter its vibration field; Elvira's own strikes and feeding outcomes remain individual Codex observations.",
+      defence: "The celebrated blue is structural colour produced by microscopic surface architecture rather than a simple blue pigment. Defence is a separate story: this Asian species lacks urticating hairs and can rely on cover, speed, and a defensive posture when escape is limited.",
+      inference: "A secure retreat spanning substrate and vertical structure, with abundant silk anchors and good airflow, lets the animal choose how terrestrial or elevated its shelter becomes. The enclosure should make that choice possible without forcing visibility."
+    },
+    "ruby-chromatopelma-cyaneopubescens": {
+      taxonomy: "Chromatopelma cyaneopubescens is a Venezuelan endemic and the only accepted species in its genus. Recent work using verified observations has expanded the known distribution beyond the best-known Paraguaná records while emphasizing how much of the published biology still comes from captivity.",
+      shelter: "Wild observations associate the species with dry, open scrub and silk shelters at the bases of vegetation, rocks, or shallow cavities. It spreads silk far beyond a single hole, producing a connected surface that combines cover, pathways, and vibration sensing.",
+      feeding: "Ruby hunts from that silk-rich working area. Passing arthropods can be detected before contact, followed by a rapid strike and retreat with the prey. Her feeding videos document a particularly bold individual response; they are not a species-wide feeding schedule.",
+      defence: "Bright blue-green legs and the warm orange abdomen are visual signals to us, not evidence that the spider is inviting contact. The animal can retreat rapidly and carries urticating abdominal hairs, so enclosure access should keep hands and faces away from both spider and loose substrate.",
+      inference: "Strong ventilation, a dry upper surface, access to water, a starter refuge, and many web anchors fit the published habitat associations without trying to recreate a desert as a uniformly dry box. Ruby's web placement shows whether the structure is working."
+    },
+    "grammostola-pulchripes": {
+      taxonomy: "Grammostola pulchripes is an accepted South American theraphosid recorded from Brazil, Paraguay, and Argentina. Regional taxonomic work places Argentine records in comparatively humid landscapes including wet Chaco, eastern Espinal, and northern Yungas, a useful correction to overly simple ‘dry grassland’ summaries.",
+      shelter: "This heavy terrestrial spider uses ground-level cover and can excavate around a natural cavity or prepared retreat. The shelter moderates surface conditions and becomes the centre of a relatively small activity area, especially outside mating dispersal.",
+      feeding: "The basic strategy is opportunistic ambush of terrestrial arthropods. Long pauses between visible events are normal for a sit-and-wait predator, and captive appetite can change around premoult, season, temperature, and individual condition.",
+      defence: "Retreat and stillness are important defences, backed by urticating abdominal hairs when the animal is persistently disturbed. The familiar golden bands make the spider easy to recognise but say nothing about whether handling is safe or useful.",
+      inference: "A low enclosure with generous substrate, a stable hide, water, and a moisture gradient is more faithful to the ecological range than a rigid humidity target. The resident's digging, closure of the retreat, and feeding history provide better feedback."
+    },
+    "linothele-fallax": {
+      taxonomy: "Linothele fallax is a South American mygalomorph in Dipluridae rather than Theraphosidae. It was originally described in Diplura and later transferred to Linothele, a genus whose species occupy a remarkable range of ground, bank, rock-wall, and elevated forest microhabitats.",
+      shelter: "L. fallax has been recorded from natural crevices near ground level and from burrows. Long spinnerets lay dense silk into a curtain or sheet leading back to the refuge, turning a small hiding place into a much larger vibration-sensitive hunting surface.",
+      feeding: "The spider waits where signals from the curtain web converge, then rushes onto the sheet to capture arthropods. Food can be taken back to the silk-lined refuge. Research on its web material also shows why the silk itself deserves attention as a biological structure, not simply scenery.",
+      defence: "This is a fast mygalomorph without the urticating-hair defence of many New World tarantulas. Retreat, speed, and venom used for prey make a secure enclosure and hands-off observation especially important.",
+      inference: "A dark crevice, deep substrate, and multiple attachment points allow the web to develop in three dimensions. Feeding and maintenance can then take place at the web edge instead of dismantling the animal's sensory architecture."
+    },
+    "bella-monocentropus-balfouri": {
+      taxonomy: "Monocentropus balfouri is an accepted theraphosid endemic to Socotra, Yemen. A recent integrative revision retained the species in Monocentropus and documented its island habitat and burrows while reorganising related Arabian and African taxa.",
+      shelter: "Field photographs and collection experience both place the species around silk-lined ground burrows. The web can spread through nearby soil and structure, joining several entrances into a concealed working area that is far larger than the visible spider.",
+      feeding: "Arthropods are taken by ambush at or beyond the retreat. The species is famous in captivity for tolerating group living and sometimes feeding near conspecifics, but the frequency and organisation of social behaviour in the wild remain poorly quantified and should not be overstated.",
+      defence: "There are no urticating hairs. Concealment, speed, and defensive posturing are more relevant, while the contrasting blue-and-cream colour is most obvious only when the animal leaves cover.",
+      inference: "Bella's individual enclosure needs depth, an anchored refuge, water, and room for silk architecture. Her page deliberately avoids turning reports from communal captive groups into assumptions about this single resident."
+    },
+    "belinda-monocentropus-balfouri": {
+      taxonomy: "Monocentropus balfouri is an accepted theraphosid endemic to Socotra, Yemen. A recent integrative revision retained the species in Monocentropus and documented its island habitat and burrows while reorganising related Arabian and African taxa.",
+      shelter: "Field photographs and collection experience both place the species around silk-lined ground burrows. The web can spread through nearby soil and structure, joining several entrances into a concealed working area that is far larger than the visible spider.",
+      feeding: "Arthropods are taken by ambush at or beyond the retreat. Captive animals can tolerate close neighbours when conditions are carefully managed, but wild social organisation remains insufficiently studied and Belinda's record should not be merged with Bella's.",
+      defence: "There are no urticating hairs. Concealment, speed, and defensive posturing are more relevant, while the contrasting blue-and-cream colour is most obvious only when the animal leaves cover.",
+      inference: "Belinda's enclosure and observations belong to Belinda alone: deep substrate, a stable refuge, water, and web anchors provide opportunity, while her Codex record documents the choices she actually makes."
+    },
+    "omothymus-violaceopes": {
+      taxonomy: "Omothymus violaceopes is the accepted name for the Singapore blue tarantula, recorded from Singapore and Malaysia. Older hobby and scientific sources may place it in Lampropelma, so using the current combination avoids quietly mixing names.",
+      shelter: "A recent Singapore record describes a large arboreal theraphosid inhabiting holes in tree trunks in mangroves and secondary forest. Well-developed adhesive foot pads support movement on vertical surfaces, while the cavity provides a dark, humid refuge.",
+      feeding: "The likely hunting position is at or near the tree-hole entrance, where the spider can seize climbing and flying arthropods that come within reach. Direct species-level diet data are limited, so the page does not turn body size into claims about routinely taking vertebrates.",
+      defence: "Adult females and juveniles can be violet-blue, while mature males become more brown and roam in search of females. The species lacks urticating hairs; rapid climbing, retreat into a cavity, and defensive posturing make escape prevention more important than display access.",
+      inference: "A tall, escape-secure enclosure with vertical cork, a concealed tube-like retreat, water, and careful ventilation reflects the arboreal record. For this confirmed male, routes and secure access matter more than a decorative open canopy."
+    },
+    "clara-psalmopoeus-irminia": {
+      taxonomy: "Psalmopoeus irminia is an accepted theraphosid from northern South America, with the World Spider Catalog recording Venezuela and Guyana. The species belongs to an arboreal lineage whose body proportions and foot pads support rapid movement on bark and other vertical surfaces.",
+      shelter: "The spider uses cavities, splits behind bark, and silk-lined tubes that join vertical cover to nearby foliage or substrate. Juveniles may stay closer to the ground, while larger animals can make greater use of elevated retreats; a simple ‘tree spider’ label misses that flexibility.",
+      feeding: "Clara is best understood as an ambush predator operating from a concealed vertical route. Arthropods moving across bark or silk provide the cue for a fast capture, followed by withdrawal into cover. Her own feeding history remains separate from the sparse field diet record.",
+      defence: "Psalmopoeus does not have urticating hairs. Speed, concealment, and a defensive posture when cornered make opening the enclosure the highest-risk moment, not the animal sitting quietly inside its retreat.",
+      inference: "Vertical structure should connect all the way to the substrate, with a narrow retreat, foliage, water, and good airflow. That gives Clara several concealed routes and reduces the need to cross exposed glass during routine activity."
+    },
+    "siuzi-theraphosa-apophysis": {
+      taxonomy: "Theraphosa apophysis is an accepted giant theraphosid recorded from Colombia, Venezuela, and Brazil. It was described in 1991 under Pseudotheraphosa and later transferred to Theraphosa, which explains the older combination still found in some sources.",
+      shelter: "Adult females are associated with fossorial retreats in lowland leaf litter. Recent field work documented an adult female at a ground burrow and later climbing roughly twelve metres into a tree, an important reminder that ‘terrestrial’ describes the usual centre of life rather than a physical inability to climb.",
+      feeding: "A large-bodied ambush predator can take a wide range of invertebrate prey, and occasional vertebrate predation has been recorded in giant tarantulas. Those unusual events are natural-history observations, not a captive feeding target; appropriately sized invertebrates remain the relevant collection record.",
+      defence: "Size is only one part of the defensive system. Theraphosa can retreat, stridulate, posture, and release strongly irritating urticating hairs; the last of these makes face and eye protection during enclosure work particularly important.",
+      inference: "Deep supportive substrate, a broad stable retreat, water, high ventilation, and low fall risk suit an animal of Siuzi's mass. Her documented health case and feeding history remain individual evidence, not a substitute for species research."
+    }
+  };
+
   const collectionStories = {
     "sabrina-brachypelma-hamorii": "Sabrina is the individual behind this profile. Her orange knee bands make her easy to recognise across the collection, while her own feeding and molt history remains distinct from published species-level information.",
     "ceratogyrus-darlingi": "This resident gives the Introvertebrates collection a living record of Ceratogyrus darlingi. The profile will continue to bring together verified species information, the introduction video, and observations recorded through the Codex.",
@@ -496,6 +624,7 @@
   const isSpider = profile.family === "Theraphosidae" || profile.family === "Dipluridae";
   const gallery = Array.isArray(profile.gallery) ? profile.gallery : [];
   const fieldGuide = fieldGuides[key];
+  const deeperHistory = naturalHistorySections[key];
 
   root.innerHTML = `
     <header class="site-header">
@@ -555,12 +684,21 @@
             <article class="species-guide-card"><span>In this collection</span><p>${fieldGuide.inCare}</p></article>
           </div>
           <h3>Taxonomy and range</h3>
-          <p>${profile.naturalHistory[0]}</p>
-          <h3>What the record can show</h3>
-          ${profile.naturalHistory.slice(1).map((paragraph) => `<p>${paragraph}</p>`).join("")}
+          <p>${deeperHistory?.taxonomy || profile.naturalHistory[0]}</p>
+          ${deeperHistory ? `
+            <h3>Burrows, shelter, and activity</h3>
+            <p>${deeperHistory.shelter}</p>
+            <h3>Feeding ecology</h3>
+            <p>${deeperHistory.feeding}</p>
+            <h3>Defence, senses, and movement</h3>
+            <p>${deeperHistory.defence}</p>
+          ` : `
+            <h3>What the record can show</h3>
+            ${profile.naturalHistory.slice(1).map((paragraph) => `<p>${paragraph}</p>`).join("")}
+          `}
           <aside class="context-note">
-            <strong>Research and keeper observations</strong>
-            <p>Published taxonomy and distribution are kept separate from photographs, videos, and Codex records of this resident. That makes it clear which statements come from research and which describe an animal in my care.</p>
+            <strong>${deeperHistory ? "From natural history to husbandry" : "Research and keeper observations"}</strong>
+            <p>${deeperHistory?.inference || "Published taxonomy and distribution are kept separate from photographs, videos, and Codex records of this resident. That makes it clear which statements come from research and which describe an animal in my care."}</p>
           </aside>
         </div>
       </section>
@@ -585,7 +723,7 @@
       <section class="profile-section species-shell profile-instagram-section" data-instagram-profile="${key}" hidden aria-labelledby="instagram-profile-title">
         <header class="section-heading"><p class="section-kicker">From Instagram</p><h2 id="instagram-profile-title">Posts &amp; reels.</h2></header>
         <div class="section-copy">
-          <p class="profile-social-intro">Selected photographs and reels connected to this animal or its biology. Previews use local collection photography; each card opens the original post on Instagram.</p>
+          <p class="profile-social-intro">Selected public photographs and reels connected to this animal or its biology. The original Instagram post loads in the page, with a direct link underneath as a fallback.</p>
           <div class="profile-instagram-grid" data-instagram-items></div>
         </div>
       </section>

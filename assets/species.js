@@ -73,31 +73,41 @@
     reel: "Instagram reel"
   };
 
+  const getEmbedUrl = (url) => {
+    const match = String(url).match(/instagram\.com\/(?:[^/]+\/)?(p|reel)\/([^/?#]+)/i);
+    return match ? `https://www.instagram.com/${match[1]}/${match[2]}/embed/captioned/` : null;
+  };
+
   const createCard = (item) => {
-    const card = document.createElement("a");
+    const card = document.createElement("article");
     card.className = "profile-instagram-card";
-    card.href = item.url;
-    card.target = "_blank";
-    card.rel = "noopener noreferrer";
 
-    const media = document.createElement("span");
-    media.className = "profile-instagram-media";
+    const embedUrl = getEmbedUrl(item.url);
+    if (embedUrl) {
+      const frameWrap = document.createElement("div");
+      frameWrap.className = "profile-instagram-embed";
 
-    const image = document.createElement("img");
-    image.src = `../${String(item.image).replace(/^\.\//, "")}`;
-    image.alt = item.alt || `${item.title} — collection photograph used as an Instagram preview`;
-    image.width = 1600;
-    image.height = 898;
-    image.loading = "lazy";
-    image.decoding = "async";
-    media.append(image);
+      const frame = document.createElement("iframe");
+      frame.src = embedUrl;
+      frame.title = `${typeLabels[item.type] || "Instagram post"}: ${item.title}`;
+      frame.loading = "lazy";
+      frame.allow = "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share";
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      frameWrap.append(frame);
+      card.append(frameWrap);
+    } else {
+      const media = document.createElement("span");
+      media.className = "profile-instagram-media";
 
-    if (item.type === "reel") {
-      const play = document.createElement("span");
-      play.className = "profile-instagram-play";
-      play.setAttribute("aria-hidden", "true");
-      play.textContent = "▶";
-      media.append(play);
+      const image = document.createElement("img");
+      image.src = `../${String(item.image).replace(/^\.\//, "")}`;
+      image.alt = item.alt || `${item.title} — collection photograph used as an Instagram preview`;
+      image.width = 1600;
+      image.height = 898;
+      image.loading = "lazy";
+      image.decoding = "async";
+      media.append(image);
+      card.append(media);
     }
 
     const copy = document.createElement("span");
@@ -116,10 +126,15 @@
 
     const action = document.createElement("span");
     action.className = "profile-instagram-action";
-    action.textContent = item.type === "reel" ? "Play on Instagram ↗" : "View on Instagram ↗";
+    const link = document.createElement("a");
+    link.href = item.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = item.type === "reel" ? "Open reel on Instagram ↗" : "Open post on Instagram ↗";
+    action.append(link);
 
     copy.append(label, title, summary, action);
-    card.append(media, copy);
+    card.append(copy);
     return card;
   };
 

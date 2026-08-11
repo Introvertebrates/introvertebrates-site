@@ -418,6 +418,7 @@
   </style>
   <link rel="stylesheet" href="assets/homepage.css">
   <link rel="stylesheet" href="assets/learn.css">
+  <link rel="stylesheet" href="assets/community.css">
 </head>
 <body>
 
@@ -434,6 +435,7 @@
       <a href="collection.html">Collection</a>
       <a href="learn.html">Learn</a>
       <a href="research.html">Research</a>
+      <a href="community.html">Community</a>
       <a href="#videos">Videos</a>
       <a href="#about">About</a>
       <a href="#codex">Codex</a>
@@ -719,11 +721,27 @@
     </div>
   </section>
 
+  <section class="homepage-community" aria-labelledby="home-community-title">
+    <div class="learn-shell">
+      <header class="learn-section-heading">
+        <div><p class="eyebrow">Community field log</p><h2 id="home-community-title">Measured by keepers. Reviewed before publication.</h2></div>
+        <p>A moderated home for remarkable measurements, keeper photography, and individual animal stories. Every published claim shows the evidence level behind it.</p>
+      </header>
+      <div class="community-grid" data-community-records data-community-limit="3" aria-live="polite">
+        <article class="community-empty"><span class="community-empty-mark">Loading</span><h3>Opening the community field log…</h3></article>
+      </div>
+      <div class="community-section-actions">
+        <a class="home-button home-button-primary" href="community.html">Explore records or submit an animal <span aria-hidden="true">→</span></a>
+        <p>Your own Codex data stays private unless you deliberately prepare and share a public-safe submission.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="homepage-instagram" aria-labelledby="home-instagram-title">
     <div class="learn-shell">
       <header class="learn-section-heading">
         <div><p class="eyebrow">Follow the close-ups</p><h2 id="home-instagram-title">From Introvertebrates photography.</h2></div>
-        <p>A scrollable window into the collection, connected to @introvertebrates_yt without loading a fragile third-party feed.</p>
+        <p>The cinematic slideshow stays quick to browse. Below it, selected public posts and reels load directly from @introvertebrates_yt.</p>
       </header>
       <div class="instagram-slideshow" data-instagram-slideshow aria-roledescription="carousel" aria-label="Selected Introvertebrates posts and reels">
         <div class="instagram-slideshow-viewport" data-instagram-viewport tabindex="0">
@@ -738,6 +756,11 @@
         <button class="instagram-slide-arrow instagram-slide-next" type="button" data-instagram-next aria-label="Next Instagram item">→</button>
         <div class="instagram-slide-controls"><div class="instagram-slide-dots" data-instagram-dots aria-label="Choose Instagram item"></div><button type="button" class="instagram-slide-toggle" data-instagram-toggle aria-pressed="false">Pause slideshow</button></div>
         <p class="sr-only" data-instagram-status aria-live="polite"></p>
+      </div>
+      <div class="instagram-live-intro"><p class="eyebrow">Live from Instagram</p><h3>See the original posts here.</h3><p>Play the reel, move through a carousel, read the caption, or open the post in Instagram.</p></div>
+      <div class="instagram-live-grid" aria-label="Selected live Instagram posts">
+        <article class="instagram-live-card"><iframe src="https://www.instagram.com/p/DU3Lw6xAlFJ/embed/captioned/" title="Instagram photo: Alma, a Brazilian white-knee tarantula" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></article>
+        <article class="instagram-live-card"><iframe src="https://www.instagram.com/reel/DSaZI8hgrkG/embed/captioned/" title="Instagram reel: How spiders taste with their feet, featuring Ruby" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></article>
       </div>
       <div class="learn-actions"><a class="home-button home-button-primary" href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Follow @introvertebrates_yt <span aria-hidden="true">↗</span></a></div>
     </div>
@@ -780,6 +803,7 @@
       <a href="collection.html">Collection</a>
       <a href="learn.html">Learn</a>
       <a href="research.html">Research</a>
+      <a href="community.html">Community</a>
       <a href="kryp-og-krabater.html">Kryp &amp; Krabater</a>
       <a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a>
       <a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -789,6 +813,7 @@
   </div>
 </footer>
 
+<script src="assets/community.js" defer></script>
 <script src="assets/homepage.js" defer></script>
 </body>
 </html>

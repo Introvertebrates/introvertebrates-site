@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-labelledby="title desc"><title>Spinnerets producing silk diagram</title><desc>Rear view of a spider abdomen with paired spinnerets and multiple silk threads emerging from their tips.</desc><defs><radialGradient id="bg" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#0b2731"/><stop offset="1" stop-color="#041019"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1000" height="625" fill="url(#bg)"/><g fill="none" stroke-linecap="round" stroke-linejoin="round">
-<ellipse cx="500" cy="255" rx="245" ry="185" fill="#0a1c27" stroke="#cfaf70" stroke-width="6"/>
-<path d="M390 370 Q350 420 365 515 Q415 535 455 470 L465 390" fill="#102c36" stroke="#14f1c4" stroke-width="7"/>
-<path d="M610 370 Q650 420 635 515 Q585 535 545 470 L535 390" fill="#102c36" stroke="#14f1c4" stroke-width="7"/>
-<path d="M455 405 Q445 440 465 492" stroke="#8bc4d6" stroke-width="10"/><path d="M545 405 Q555 440 535 492" stroke="#8bc4d6" stroke-width="10"/>
-<g stroke="#d8ffff" stroke-width="2" opacity=".92"><path d="M385 505 C310 555 220 515 150 585"/><path d="M405 510 C355 570 315 565 285 615"/><path d="M445 485 C420 555 430 580 430 625"/><path d="M615 505 C690 555 780 515 850 585"/><path d="M595 510 C645 570 685 565 715 615"/><path d="M555 485 C580 555 570 580 570 625"/></g>
-<g fill="#14f1c4" stroke="none"><circle cx="385" cy="505" r="6"/><circle cx="405" cy="510" r="6"/><circle cx="445" cy="485" r="6"/><circle cx="615" cy="505" r="6"/><circle cx="595" cy="510" r="6"/><circle cx="555" cy="485" r="6"/></g>
-</g></svg>

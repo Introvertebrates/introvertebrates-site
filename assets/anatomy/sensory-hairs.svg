@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-labelledby="title desc"><title>Spider sensory hairs diagram</title><desc>Close view of a spider leg with short tactile setae, a long trichobothrium responding to air movement, and a slit sensillum in the exoskeleton.</desc><defs><radialGradient id="bg" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#0b2731"/><stop offset="1" stop-color="#041019"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1000" height="625" fill="url(#bg)"/><g fill="none" stroke-linecap="round" stroke-linejoin="round">
-<path d="M120 390 Q310 235 545 285 Q690 315 875 230" stroke="#283c45" stroke-width="150"/>
-<path d="M120 390 Q310 235 545 285 Q690 315 875 230" stroke="#8bc4d6" stroke-width="6" opacity=".65"/>
-<g stroke="#d8ffff" stroke-width="5"><path d="M235 320 l-55 -105"/><path d="M300 290 l-38 -118"/><path d="M390 270 l-20 -128"/><path d="M520 290 l20 -125"/><path d="M620 290 l55 -105"/><path d="M735 265 l70 -100"/></g>
-<path d="M470 275 Q435 165 455 65" stroke="#14f1c4" stroke-width="8" filter="url(#glow)"/>
-<path d="M420 92 q35 -30 70 0 M408 63 q48 -45 95 0" stroke="#14f1c4" stroke-width="4" opacity=".75"/>
-<g stroke="#cfaf70" stroke-width="5"><path d="M570 312 q34 18 68 0"/><path d="M582 325 q22 12 44 0"/></g>
-<circle cx="455" cy="220" r="88" stroke="#14f1c4" stroke-width="2" stroke-dasharray="8 12" opacity=".24"/>
-</g></svg>

@@ -101,8 +101,8 @@
         { label: "Frontiers in Arachnid Science — distribution and natural history of Chilobrachys", url: "https://www.frontiersin.org/journals/arachnid-science/articles/10.3389/frchs.2025.1598438/full" }
       ],
       image: "chilobrachys-kaeng-krachan.jpg",
-      alt: "Close portrait of Chilobrachys sp. Kaeng Krachan",
-      intro: "This Chilobrachys sp. “Kaeng Krachan” is part of the current collection. The profile begins with a close, eye-level portrait from within the enclosure.",
+      alt: "Chilobrachys sp. Kaeng Krachan standing across dense enclosure webbing",
+      intro: "This Chilobrachys sp. “Kaeng Krachan” is part of the current collection. The portrait places the animal within the dense sheet webbing that turns the enclosure into a sensitive vibration network.",
       gallery: [
         { file: "kaeng-webbing.jpg", alt: "Chilobrachys sp. Kaeng Krachan standing on a broad sheet of webbing", caption: "On the web sheet · 2026" },
         { file: "kaeng-full-body.jpg", alt: "Full-body view of Chilobrachys sp. Kaeng Krachan inside the enclosure", caption: "Full-body view · 2025" },
@@ -150,7 +150,7 @@
         { label: "Anartia — distribution and habitat associations of Chromatopelma cyaneopubescens", url: "https://produccioncientificaluz.org/index.php/anartia/article/download/41442/47823?inline=1" }
       ],
       image: "ruby-chromatopelma-cyaneopubescens.jpg",
-      alt: "Close-up of Ruby, a Chromatopelma cyaneopubescens tarantula",
+      alt: "Ruby, a Chromatopelma cyaneopubescens tarantula showing cobalt-blue legs and an orange abdomen",
       intro: "Ruby is the Chromatopelma cyaneopubescens currently in my care. Her portrait brings together the species’ blue-green legs, warm carapace, and dense surface detail.",
       gallery: [
         { file: "ruby-feeding.jpg", alt: "Ruby feeding on the enclosure surface with blue legs and an orange abdomen visible", caption: "Feeding response · 2026" },
@@ -229,8 +229,8 @@
         { label: "U.S. Geological Survey — species profile", url: "https://nas.er.usgs.gov/queries/factsheet.aspx?SpeciesID=1228" }
       ],
       image: "sonja-mauremys-reevesii.jpg",
-      alt: "Sonja, a Reeves’s turtle, looking toward the camera in dark water",
-      intro: "Sonja is the Reeves’s turtle currently in my care and the only vertebrate in the collection. Her portrait keeps the surrounding water dark so the face and shell emerge gradually.",
+      alt: "Sonja, a Reeves’s turtle, lifting her head and forelegs toward the camera",
+      intro: "Sonja is the Reeves’s turtle currently in my care and the only vertebrate in the collection. Her portrait shows the striped head, expressive posture, and strong forelimbs that make her such a distinctive resident.",
       gallery: [
         { file: "sonja-close.jpg", alt: "Sonja lifting her head and forelegs toward the camera", caption: "Sonja up close · 2025" },
         { file: "sonja-wave.jpg", alt: "Sonja facing the camera with one forefoot raised", caption: "At the glass · 2025" },
@@ -390,15 +390,15 @@
       taxonomicStatus: "Accepted species",
       naturalHistory: [
         "Theraphosa apophysis is an accepted theraphosid recorded from Colombia, Venezuela, and Brazil. It was described in 1991 as Pseudotheraphosa apophysis and later transferred to Theraphosa.",
-        "That taxonomic history explains why older sources may use a different genus. Siuzi’s profile adds a documented individual case study and feeding portrait while keeping those keeper observations separate from species-wide conclusions."
+        "That taxonomic history explains why older sources may use a different genus. Siuzi’s profile adds a documented individual case study and close portrait while keeping those keeper observations separate from species-wide conclusions."
       ],
       sources: [
         { label: "World Spider Catalog — Theraphosa apophysis", url: "https://wsc.nmbe.ch/spec-data/44582" },
         { label: "Ecology and Evolution — natural orientation and climbing observations in tarantulas", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13106993/" }
       ],
       image: "siuzi-theraphosa-apophysis.jpg",
-      alt: "Siuzi, a Theraphosa apophysis tarantula, in a close feeding portrait",
-      intro: "Siuzi is the Theraphosa apophysis currently in my care. Her current profile image is a close feeding portrait with warm substrate and retreat details around her.",
+      alt: "Siuzi, a Theraphosa apophysis tarantula, facing the camera beneath a cork shelter",
+      intro: "Siuzi is the Theraphosa apophysis currently in my care. Her portrait shows the powerful chelicerae and dense sensory hairs of one of the world’s largest tarantula genera.",
       gallery: [
         { file: "siuzi-face.jpg", alt: "Extreme close view of Siuzi’s face and mouthparts", caption: "Face detail · 2025" },
         { file: "siuzi-habitat.jpg", alt: "Siuzi resting among grasses and cork in her terrestrial enclosure", caption: "Habitat view · 2024" },

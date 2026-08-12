@@ -3,8 +3,8 @@ title: The giant huntsman spider still shows how even huge species can stay hidd
 description: A plain-language Introvertebrates summary of a popular piece
   revisiting Heteropoda maxima, the giant cave huntsman from Laos.
 category: General arachnology news
-posted_date: 25 April 2026
-source_date: 23 April 2026
+posted_date: 2026-04-25
+source_date: 2026-04-23
 summary: A Times of India piece revisits the giant huntsman spider, Heteropoda
   maxima, a cave-dwelling species from Laos with a leg span reported at up to 30
   cm. The article emphasizes both its size and the fact that such a large,

@@ -3,8 +3,8 @@ title: Tarantulas may be better navigators than most people assume
 description: A plain-language Introvertebrates summary of research suggesting
   that tarantulas may use learned spatial orientation in the wild.
 category: Behavior
-posted_date: 18 April 2026
-source_date: 17 April 2026
+posted_date: 2026-04-18
+source_date: 2026-04-17
 summary: A recent study highlighted by Nautilus suggests that tarantulas may be
   capable of learned spatial orientation in the wild. That means they may not
   just move by simple instinct and immediate reaction, but instead remember

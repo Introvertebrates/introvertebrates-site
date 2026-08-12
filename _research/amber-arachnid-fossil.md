@@ -3,8 +3,8 @@ title: Amber fossils reveal a strange arachnid from 35 million years ago
 description: A plain-language Introvertebrates summary of the fossil arachnid
   Balticolasma wunderlichi from amber deposits in Europe.
 category: General arachnology news
-posted_date: 21 April 2026
-source_date: 18 April 2026
+posted_date: 2026-04-21
+source_date: 2026-04-18
 summary: Researchers have described Balticolasma wunderlichi, a harvestman known
   from two 35-million-year-old amber fossils from Ukraine and the Baltic region.
   The find is notable because it represents the first fossil example ever

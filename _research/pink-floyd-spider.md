@@ -3,8 +3,8 @@ title: A new wall-dwelling spider from Colombia was named after Pink Floyd
 description: A plain-language Introvertebrates summary of the newly described
   Colombian spider Pikelinia floydmuraria, named after Pink Floyd.
 category: New species / Taxonomy
-posted_date: 21 April 2026
-source_date: 14 April 2026
+posted_date: 2026-04-21
+source_date: 2026-04-14
 summary: Researchers have described Pikelinia floydmuraria, a newly named
   wall-dwelling spider from Colombia. The species name references Pink Floyd and
   its habit of living in walls, while the study also points to an interesting

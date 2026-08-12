@@ -3,8 +3,8 @@ title: A new study suggests Joro spiders may be stressed by traffic
 description: A plain-language Introvertebrates summary of research suggesting
   that Joro spiders living near high-traffic areas may show signs of stress.
 category: Behavior
-posted_date: 25 April 2026
-source_date: 21 April 2026
+posted_date: 2026-04-25
+source_date: 2026-04-21
 summary: A new study highlighted by Georgia Public Broadcasting suggests that
   Joro spiders living near roads and other high-traffic areas may show signs of
   stress, including elevated heart activity.

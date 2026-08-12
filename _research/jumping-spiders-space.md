@@ -4,8 +4,8 @@ title: Two jumping spiders were sent to the International Space Station — and
 description: A plain-language Introvertebrates summary of the famous spidernauts
   jumping spider experiment aboard the International Space Station.
 category: Behavior
-posted_date: 25 April 2026
-source_date: 22 April 2026
+posted_date: 2026-04-25
+source_date: 2026-04-22
 summary: A Discover Wildlife article revisits the spidernauts experiment, in
   which two jumping spiders were sent to the International Space Station to see
   how they would adapt to microgravity.

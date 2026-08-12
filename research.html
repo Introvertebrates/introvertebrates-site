@@ -458,6 +458,9 @@
           <button type="button" class="filter-chip" data-filter="behavior" aria-pressed="false">Behavior</button>
           <button type="button" class="filter-chip" data-filter="taxonomy" aria-pressed="false">Taxonomy</button>
           <button type="button" class="filter-chip" data-filter="general" aria-pressed="false">General</button>
+          <button type="button" class="filter-chip" data-filter="ecology" aria-pressed="false">Ecology</button>
+          <button type="button" class="filter-chip" data-filter="venom" aria-pressed="false">Venom</button>
+          <button type="button" class="filter-chip" data-filter="captive" aria-pressed="false">Captive relevance</button>
         </div>
 
         <label class="sort-control">
@@ -496,18 +499,18 @@
       {% assign research_items = site.research | sort: "source_date" | reverse %}
       {% for post in research_items %}
       {
-        title: {{ post.title | jsonify }},
-        description: {{ post.description | jsonify }},
-        category: {{ post.category | jsonify }},
-        posted_date: {{ post.posted_date | jsonify }},
-        source_date: {{ post.source_date | jsonify }},
-        summary: {{ post.summary | jsonify }},
-        why_it_matters: {{ post.why_it_matters | jsonify }},
-        source_url: {{ post.source_url | jsonify }},
-        source_name: {{ post.source_name | jsonify }},
-        slug: {{ post.slug | jsonify }},
-        url: {{ post.url | relative_url | jsonify }},
-        has_body: {% if post.content and post.content != "" %}true{% else %}false{% endif %}
+        "title": {{ post.title | jsonify }},
+        "description": {{ post.description | jsonify }},
+        "category": {{ post.category | jsonify }},
+        "posted_date": {{ post.posted_date | date: "%-d %B %Y" | jsonify }},
+        "source_date": {{ post.source_date | date: "%-d %B %Y" | jsonify }},
+        "summary": {{ post.summary | jsonify }},
+        "why_it_matters": {{ post.why_it_matters | jsonify }},
+        "source_url": {{ post.source_url | jsonify }},
+        "source_name": {{ post.source_name | jsonify }},
+        "slug": {{ post.slug | jsonify }},
+        "url": {{ post.url | relative_url | jsonify }},
+        "has_body": {% if post.content and post.content != "" %}true{% else %}false{% endif %}
       }{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ]

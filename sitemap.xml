@@ -1,3 +1,5 @@
+---
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://introvertebrates.com/</loc></url>
@@ -32,14 +34,11 @@
   <url><loc>https://introvertebrates.com/species/psyttala-horrida.html</loc></url>
   <url><loc>https://introvertebrates.com/species/pachnoda-marginata.html</loc></url>
   <url><loc>https://introvertebrates.com/species/siuzi-theraphosa-apophysis.html</loc></url>
+  <url><loc>https://introvertebrates.com/species/brachypelma-auratum.html</loc></url>
+  <url><loc>https://introvertebrates.com/species/caribena-versicolor.html</loc></url>
 
-  <url><loc>https://introvertebrates.com/research/the-giant-huntsman-spider-still-shows-how-even-huge-species-can-stay-hidden/</loc></url>
-  <url><loc>https://introvertebrates.com/research/two-jumping-spiders-were-sent-to-the-international-space-station-and-adapted-surprisingly-well/</loc></url>
-  <url><loc>https://introvertebrates.com/research/traffic-noise-can-raise-stress-responses-in-urban-tolerant-orb-weaving-spiders/</loc></url>
-  <url><loc>https://introvertebrates.com/research/a-new-study-suggests-joro-spiders-may-be-stressed-by-traffic/</loc></url>
-  <url><loc>https://introvertebrates.com/research/jumping-spiders-india/</loc></url>
-  <url><loc>https://introvertebrates.com/research/amber-arachnid-fossil/</loc></url>
-  <url><loc>https://introvertebrates.com/research/tarantula-navigation/</loc></url>
-  <url><loc>https://introvertebrates.com/research/pink-floyd-spider/</loc></url>
-  <url><loc>https://introvertebrates.com/research/blue-tarantulas-may-be-easier-to-tell-apart-by-color-than-by-body-shape/</loc></url>
+{% assign research_items = site.research | sort: "source_date" | reverse %}
+{% for post in research_items %}
+  <url><loc>{{ post.url | absolute_url }}</loc></url>
+{% endfor %}
 </urlset>

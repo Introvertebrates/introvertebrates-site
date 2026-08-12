@@ -3,8 +3,8 @@ title: Researchers describe two new jumping spider species from India
 description: A plain-language Introvertebrates summary of research describing
   two new jumping spider species from India in the genus Mogrus.
 category: New species / Taxonomy
-posted_date: 18 April 2026
-source_date: 18 April 2026
+posted_date: 2026-04-18
+source_date: 2026-04-18
 summary: "Researchers working in Western India have described two new jumping
   spider species in the genus Mogrus: Mogrus shushka and Mogrus pune. The same
   work also adds a new India record for Mogrus larisae and the first formal

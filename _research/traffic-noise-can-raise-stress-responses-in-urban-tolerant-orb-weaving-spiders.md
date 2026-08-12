@@ -4,8 +4,8 @@ description: A plain-language Introvertebrates summary of new research showing
   cardiac stress responses in two Trichonephila spiders exposed to traffic
   noise.
 category: Behavior
-posted_date: 25 April 2026
-source_date: 21 April 2026
+posted_date: 2026-04-25
+source_date: 2026-04-21
 summary: A Science news piece reports that traffic noise can raise heart rate in
   orb-weaving spiders, offering a rare look at hidden stress responses in
   invertebrates. Related reporting on the underlying study says Jorō spiders

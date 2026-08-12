@@ -4,8 +4,8 @@ description: A plain-language Introvertebrates summary of a 2026 morphometric
   study testing how far morphology alone can go in separating the tarantula
   lineages Lasiocyano and Lasiodora.
 category: New species / Taxonomy
-posted_date: 25 April 2026
-source_date: 12 April 2026
+posted_date: 2026-04-25
+source_date: 2026-04-12
 summary: A 2026 study in the Journal of Morphology tested whether detailed body
   measurements could reliably separate Lasiocyano sazimai from closely related
   Lasiodora species. Despite extensive morphometric analysis, the authors found

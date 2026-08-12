@@ -101,6 +101,7 @@ for (const [key, profile] of profileEntries) {
   <meta name="twitter:image" content="${imageUrl}">
   <meta name="twitter:image:alt" content="${escapeHtml(profile.alt)}">
   <script type="application/ld+json">${JSON.stringify(structuredData).replaceAll("<", "\\u003c")}</script>
+  <link rel="icon" type="image/png" href="../Only spider.png">
   <link rel="stylesheet" href="../assets/species.css">
 </head>
 <body data-profile="${key}">

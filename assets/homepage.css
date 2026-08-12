@@ -812,8 +812,9 @@ button {
 
   .site-nav {
     width: 100%;
-    justify-content: flex-start;
-    overflow-x: auto;
+    justify-content: space-between;
+    gap: 0;
+    overflow-x: visible;
     scrollbar-width: none;
   }
 
@@ -823,8 +824,8 @@ button {
 
   .site-nav a {
     min-height: 44px;
-    padding-inline: 9px;
-    font-size: 0.78rem;
+    padding-inline: 6px;
+    font-size: 0.76rem;
   }
 
   .home-hero {

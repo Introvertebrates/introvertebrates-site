@@ -625,6 +625,12 @@
   const gallery = Array.isArray(profile.gallery) ? profile.gallery : [];
   const fieldGuide = fieldGuides[key];
   const deeperHistory = naturalHistorySections[key];
+  const norwegianProfileAnchors = {
+    "sabrina-brachypelma-hamorii": "sabrina",
+    "ruby-chromatopelma-cyaneopubescens": "ruby",
+    "sonja-mauremys-reevesii": "sonja"
+  };
+  const norwegianProfileAnchor = norwegianProfileAnchors[key];
 
   root.innerHTML = `
     <header class="site-header">
@@ -634,13 +640,11 @@
           <span>Introvertebrates</span>
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="../index.html">Home</a>
           <a href="../collection.html" aria-current="page">Collection</a>
           <a href="../learn.html">Learn</a>
           <a href="../research.html">Research</a>
-          <a href="../index.html#videos">Videos</a>
-          <a href="../index.html#about">About</a>
-          <a href="../index.html#codex">Codex</a>
+          <a href="../community.html">Community</a>
+          <a href="../kryp-og-krabater.html" aria-label="Kryp &amp; Krabater">Kryp</a>
         </nav>
       </div>
     </header>
@@ -779,6 +783,8 @@
           <div class="profile-resource-links" aria-label="Continue learning">
             <a class="button" href="../research.html">Browse research updates</a>
             <a class="button" href="../learn.html">Visit the Learn hub</a>
+            <a class="button" href="../community.html#submit">Submit a community record</a>
+            ${norwegianProfileAnchor ? `<a class="button" href="../kryp-artsprofiler.html#${norwegianProfileAnchor}" lang="no">Les profilen på norsk</a>` : ""}
             ${isSpider ? `<a class="button" href="../spider-anatomy.html">Spider anatomy</a><a class="button" href="../spider-facts.html">Amazing spider facts</a><a class="button" href="../spider-health.html">Health &amp; husbandry</a>` : ""}
           </div>
         </div>
@@ -798,7 +804,7 @@
       <div class="footer-inner species-shell">
         <span>© 2026 Introvertebrates</span>
         <nav class="footer-links" aria-label="Footer navigation">
-          <a href="../index.html">Home</a><a href="../collection.html">Collection</a><a href="../learn.html">Learn</a><a href="../research.html">Research</a><a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="mailto:erlend@introvertebrates.com">Contact</a>
+          <a href="../index.html">Home</a><a href="../collection.html">Collection</a><a href="../learn.html">Learn</a><a href="../research.html">Research</a><a href="../community.html">Community</a><a href="../kryp-og-krabater.html">Kryp &amp; Krabater</a><a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="mailto:erlend@introvertebrates.com">Contact</a>
         </nav>
       </div>
     </footer>

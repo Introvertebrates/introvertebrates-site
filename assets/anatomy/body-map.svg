@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-labelledby="title desc"><title>Spider external body map</title><desc>Simplified dorsal spider diagram identifying the prosoma, abdomen, eye and mouthpart region, walking legs, pedicel and spinnerets.</desc><defs><radialGradient id="bg" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#0b2731"/><stop offset="1" stop-color="#041019"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1000" height="625" fill="url(#bg)"/><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#8bc4d6" stroke-width="9" opacity=".88">
+<path d="M410 300 C300 220 205 135 95 75"/><path d="M400 335 C275 310 165 280 65 255"/><path d="M405 360 C275 395 180 440 80 515"/><path d="M430 380 C340 475 285 535 220 585"/>
+<path d="M590 300 C700 220 795 135 905 75"/><path d="M600 335 C725 310 835 280 935 255"/><path d="M595 360 C725 395 820 440 920 515"/><path d="M570 380 C660 475 715 535 780 585"/>
+</g>
+<ellipse cx="475" cy="330" rx="150" ry="125" fill="#0c2430" stroke="#14f1c4" stroke-width="5"/>
+<ellipse cx="700" cy="355" rx="190" ry="150" fill="#0a1c27" stroke="#cfaf70" stroke-width="5"/>
+<path d="M615 330 C625 330 635 335 645 345 C635 360 625 367 613 370" stroke="#e6f6f4" stroke-width="12"/>
+<ellipse cx="385" cy="292" rx="44" ry="30" fill="#02100f" stroke="#14f1c4" stroke-width="4"/>
+<g fill="#d8ffff" stroke="#14f1c4" stroke-width="3"><circle cx="368" cy="284" r="7"/><circle cx="385" cy="278" r="7"/><circle cx="402" cy="284" r="7"/><circle cx="374" cy="300" r="6"/><circle cx="396" cy="300" r="6"/></g>
+<path d="M375 320 Q350 350 365 385" stroke="#cfaf70" stroke-width="16"/><path d="M410 320 Q435 350 420 385" stroke="#cfaf70" stroke-width="16"/>
+<path d="M358 332 Q325 340 305 372" stroke="#8bc4d6" stroke-width="11"/><path d="M427 332 Q460 340 480 372" stroke="#8bc4d6" stroke-width="11"/>
+<path d="M850 360 q45 -20 65 6" stroke="#14f1c4" stroke-width="14"/><path d="M850 385 q45 10 62 35" stroke="#14f1c4" stroke-width="14"/>
+<g font-family="Arial,sans-serif" font-weight="700" font-size="26" text-anchor="middle"><g fill="#02110e" stroke="none"><circle cx="470" cy="245" r="28" fill="#14f1c4"/><circle cx="710" cy="330" r="28" fill="#cfaf70"/><circle cx="365" cy="250" r="28" fill="#14f1c4"/><circle cx="172" cy="245" r="28" fill="#14f1c4"/><circle cx="625" cy="338" r="28" fill="#e6f6f4"/></g><g fill="#02110e" stroke="none"><text x="470" y="254">1</text><text x="710" y="339">2</text><text x="365" y="259">3</text><text x="172" y="254">4</text><text x="625" y="347">5</text></g></g>
+</g></svg>

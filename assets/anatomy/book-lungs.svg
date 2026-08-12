@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 625" role="img" aria-labelledby="title desc"><title>Book lungs diagram</title><desc>Ventral tarantula abdomen showing two pairs of book lung openings with a cutaway view of stacked internal lamellae.</desc><defs><radialGradient id="bg" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#0b2731"/><stop offset="1" stop-color="#041019"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="1000" height="625" fill="url(#bg)"/><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="500" cy="310" rx="300" ry="235" fill="#0a1c27" stroke="#cfaf70" stroke-width="6"/>
+<path d="M355 250 q70 -22 130 0" stroke="#14f1c4" stroke-width="13"/><path d="M515 250 q70 -22 130 0" stroke="#14f1c4" stroke-width="13"/>
+<path d="M340 375 q70 -22 130 0" stroke="#14f1c4" stroke-width="13"/><path d="M530 375 q70 -22 130 0" stroke="#14f1c4" stroke-width="13"/>
+<g transform="translate(715 160)"><rect width="220" height="305" rx="30" fill="#071923" stroke="#8bc4d6" stroke-width="4"/><path d="M35 45 H185 M35 65 H185 M35 85 H185 M35 105 H185 M35 125 H185 M35 145 H185 M35 165 H185 M35 185 H185 M35 205 H185 M35 225 H185 M35 245 H185" stroke="#14f1c4" stroke-width="5" opacity=".85"/><path d="M110 32 V270" stroke="#cfaf70" stroke-width="3" opacity=".55"/></g>
+<path d="M645 275 C690 245 710 240 735 245" stroke="#8bc4d6" stroke-width="3" stroke-dasharray="8 9"/>
+<circle cx="420" cy="250" r="83" stroke="#14f1c4" stroke-width="2" stroke-dasharray="7 11" opacity=".25"/>
+</g></svg>

@@ -14,6 +14,8 @@
 
 The app snapshot and the website importer only accept public aggregate statistics and allow-listed profile metrics. They exclude collection record IDs, private notes, contacts, exact event dates, enclosure IDs, and local image paths.
 
+The current update path is deliberately manual. For a private-app-to-public-website live feed, keep the same privacy boundary and add an authenticated one-way publishing service; see [`docs/codex-live-sync.md`](docs/codex-live-sync.md).
+
 ## Updating the Research section
 
 Research articles live in `_research/`, which is the canonical source used by Jekyll. The checked-in JSON file is generated only for static local previews.

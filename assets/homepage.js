@@ -327,6 +327,11 @@
       if (highlights.length === 0) throw new Error("No public collection highlights available.");
 
       grid.replaceChildren(...highlights.map(renderHighlight));
+      const activeCount = Number(data?.collection?.activeRecords);
+      const activeCountElement = document.querySelector("[data-home-active-count]");
+      if (activeCountElement && Number.isFinite(activeCount) && activeCount > 0) {
+        activeCountElement.textContent = `${activeCount} current collection ${activeCount === 1 ? "entry" : "entries"}`;
+      }
       const updated = data.generatedAt
         ? new Intl.DateTimeFormat("en", { month: "long", year: "numeric" }).format(new Date(data.generatedAt))
         : null;

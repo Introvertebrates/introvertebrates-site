@@ -215,6 +215,102 @@
   font-weight: 750;
 }
 
+.lineage-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.lineage-card {
+  padding: clamp(26px, 4vw, 42px);
+  border: 1px solid var(--learn-border);
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(12, 31, 46, 0.86), rgba(5, 15, 25, 0.96));
+}
+
+.lineage-label {
+  margin: 0 0 16px;
+  color: var(--home-gold);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.lineage-card h3 {
+  margin: 0;
+  color: var(--home-text);
+  font-size: clamp(1.45rem, 2.6vw, 2.3rem);
+  font-weight: 650;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.lineage-card dl {
+  display: grid;
+  gap: 0;
+  margin: 30px 0 0;
+}
+
+.lineage-card dl > div {
+  display: grid;
+  grid-template-columns: minmax(100px, 0.34fr) minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px 0;
+  border-top: 1px solid var(--learn-border);
+}
+
+.lineage-card dt {
+  color: #c7d9e2;
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+
+.lineage-card dd {
+  margin: 0;
+  color: var(--learn-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.lineage-note {
+  margin-top: 18px;
+  padding: 20px 24px;
+  border-left: 3px solid var(--home-teal);
+  border-radius: 0 14px 14px 0;
+  background: rgba(20, 241, 196, 0.05);
+  color: var(--learn-muted);
+  line-height: 1.7;
+}
+
+.lineage-note strong {
+  color: var(--home-text);
+}
+
+.lineage-sources {
+  margin: 22px 0 0;
+  color: #6f8b99;
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.lineage-sources a {
+  color: #85a8b8;
+}
+
+.rights-hero {
+  min-height: auto;
+  grid-template-columns: minmax(0, 820px);
+  padding-bottom: clamp(64px, 8vw, 108px);
+}
+
+.permission-steps {
+  margin: 24px 0 0;
+  padding-left: 1.2rem;
+  color: var(--learn-muted);
+  line-height: 1.75;
+}
+
 .split-feature {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(330px, 0.92fr);
@@ -1008,6 +1104,15 @@ a.codex-highlight-card:focus-visible {
 }
 
 @media (max-width: 680px) {
+  .lineage-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .lineage-card dl > div {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
   .learn-shell {
     width: min(100% - 28px, 1180px);
   }

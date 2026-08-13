@@ -213,6 +213,31 @@ a {
   line-height: 1.78;
 }
 
+.archive-profile-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 24px;
+  padding: 9px 13px;
+  border: 1px solid rgba(207, 175, 112, 0.3);
+  border-radius: 999px;
+  background: rgba(207, 175, 112, 0.07);
+  color: #ddc99f;
+  font-size: 0.72rem;
+  font-weight: 760;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.archive-profile-status::before {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--species-gold);
+  content: "";
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;

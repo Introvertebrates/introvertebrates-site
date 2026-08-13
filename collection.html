@@ -429,6 +429,113 @@
       line-height: 1.8;
     }
 
+    .archive-gallery {
+      margin-top: clamp(40px, 6vw, 70px);
+    }
+
+    .archive-gallery-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 28px;
+      margin-bottom: 24px;
+    }
+
+    .archive-gallery-heading h2 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 650;
+      letter-spacing: -0.05em;
+      line-height: 1;
+    }
+
+    .archive-gallery-heading p {
+      max-width: 540px;
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .archive-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .archive-card {
+      position: relative;
+      min-height: 430px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--surface);
+    }
+
+    .archive-card a {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      padding: 26px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .archive-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 500ms ease;
+    }
+
+    .archive-card::after {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(3, 9, 15, 0.97), rgba(3, 9, 15, 0.08) 70%);
+      content: "";
+      pointer-events: none;
+    }
+
+    .archive-card:hover img {
+      transform: scale(1.025);
+    }
+
+    .archive-card-copy {
+      position: relative;
+      z-index: 1;
+    }
+
+    .archive-status {
+      display: inline-flex;
+      margin-bottom: 12px;
+      padding: 7px 10px;
+      border: 1px solid rgba(207, 175, 112, 0.28);
+      border-radius: 999px;
+      background: rgba(4, 10, 18, 0.72);
+      color: var(--gold);
+      font-size: 0.64rem;
+      font-weight: 760;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .archive-card h3 {
+      margin: 0;
+      font-size: clamp(1.55rem, 3vw, 2.35rem);
+      font-weight: 650;
+      font-style: italic;
+      letter-spacing: -0.035em;
+    }
+
+    .archive-card p {
+      margin: 10px 0 0;
+      color: #9db4c0;
+      line-height: 1.6;
+    }
+
     .site-footer {
       border-top: 1px solid var(--line);
       color: #607d8c;
@@ -470,6 +577,11 @@
 
       .archive-note {
         grid-template-columns: 1fr;
+      }
+
+      .archive-gallery-heading {
+        align-items: start;
+        flex-direction: column;
       }
     }
 
@@ -528,6 +640,14 @@
 
       .resident-grid {
         grid-template-columns: 1fr;
+      }
+
+      .archive-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .archive-card {
+        min-height: 390px;
       }
 
       .resident-photo {
@@ -725,6 +845,27 @@
           Photographs of species I have kept previously will stay separate from the current collection. They can become the foundation for future species profiles, care notes, and research-led articles without implying that those animals are still in my care.
         </p>
       </aside>
+
+      <section class="archive-gallery" aria-labelledby="archive-gallery-title">
+        <header class="archive-gallery-heading">
+          <h2 id="archive-gallery-title">From the former collection.</h2>
+          <p>These profiles use my own archive photography, but the animals shown are not part of the current Introvertebrates collection.</p>
+        </header>
+        <div class="archive-grid">
+          <article class="archive-card">
+            <img src="assets/archive/brachypelma-auratum.jpg" alt="A Brachypelma auratum tarantula showing red-orange flame markings on its knees" width="1600" height="1000" loading="lazy" decoding="async">
+            <a href="species/brachypelma-auratum.html" aria-label="Read the archived Brachypelma auratum species profile">
+              <span class="archive-card-copy"><span class="archive-status">Previously kept · Not currently in the collection</span><h3>Brachypelma auratum</h3><p>Mexican flame-knee tarantula</p></span>
+            </a>
+          </article>
+          <article class="archive-card">
+            <img src="assets/archive/caribena-versicolor.jpg" alt="A Caribena versicolor tarantula showing blue-green and magenta colouring" width="1600" height="1000" loading="lazy" decoding="async">
+            <a href="species/caribena-versicolor.html" aria-label="Read the archived Caribena versicolor species profile">
+              <span class="archive-card-copy"><span class="archive-status">Previously kept · Not currently in the collection</span><h3>Caribena versicolor</h3><p>Antilles pinktoe tarantula</p></span>
+            </a>
+          </article>
+        </div>
+      </section>
     </section>
   </main>
 

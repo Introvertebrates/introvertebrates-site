@@ -152,5 +152,33 @@
     "slug": "blue-tarantulas-may-be-easier-to-tell-apart-by-color-than-by-body-shape",
     "url": "research/blue-tarantulas-may-be-easier-to-tell-apart-by-color-than-by-body-shape/",
     "has_body": true
+  },
+  {
+    "title": "A tarantula genome opens a 300-million-year comparison across spiders",
+    "description": "A chromosome-level Aphonopelma marxi genome helps researchers compare repeat-rich mygalomorph genomes with those of araneomorph spiders.",
+    "category": "General arachnology news",
+    "posted_date": "14 August 2026",
+    "source_date": "8 April 2026",
+    "summary": "Researchers assembled a 6.5-billion-base chromosome-level genome for a male Aphonopelma marxi tarantula, then compared it with 20 other spider genomes spanning 15 families. The analysis found that mygalomorph genomes were generally larger and more repeat-rich than those of their araneomorph sister lineage.",
+    "why_it_matters": "This gives the familiar tarantula-versus-araneomorph comparison a genomic dimension. The study does not make one lineage more \"advanced\" than the other; it shows how two long-lived branches of spider evolution have accumulated very different genomic architectures.",
+    "source_url": "https://academic.oup.com/gbe/article/18/4/evag081/8643931",
+    "source_name": "Genome Biology and Evolution",
+    "slug": "tarantula-genome-across-spider-evolution",
+    "url": "research/tarantula-genome-across-spider-evolution/",
+    "has_body": true
+  },
+  {
+    "title": "Frozen silk reveals tightly aligned spider nanofibrils",
+    "description": "Cryo-electron tomography compares the nanoscale organisation of spider, silkworm, and artificial silk.",
+    "category": "General arachnology news",
+    "posted_date": "14 August 2026",
+    "source_date": "7 March 2026",
+    "summary": "Researchers used cryo-focused ion beam milling and cryo-electron tomography to examine natural and artificial silk in three dimensions. In the sampled spider silk, nanofibrils were densely packed, closely aligned with the fibre axis, and separated by very little visible empty space.",
+    "why_it_matters": "Spider silk performance depends on more than its protein recipe. This study directly visualises how nanoscale building blocks are organised, helping connect silk formation with the properties that engineers struggle to reproduce in artificial fibres.",
+    "source_url": "https://www.nature.com/articles/s41467-026-70477-1",
+    "source_name": "Nature Communications",
+    "slug": "spider-silk-nanofibril-packing",
+    "url": "research/spider-silk-nanofibril-packing/",
+    "has_body": true
   }
 ]

@@ -75,8 +75,8 @@
         { label: "Frontiers in Arachnid Science — distribution and natural history of Chilobrachys", url: "https://www.frontiersin.org/journals/arachnid-science/articles/10.3389/frchs.2025.1598438/full" }
       ],
       image: "chilobrachys-fimbriatus.jpg",
-      alt: "Chilobrachys fimbriatus in a heavily webbed retreat",
-      intro: "This Chilobrachys fimbriatus is part of the current collection. Its portrait focuses as much on the dense webbed retreat as on the spider itself.",
+      alt: "Chilobrachys fimbriatus facing the camera at the entrance to its webbed retreat",
+      intro: "This Chilobrachys fimbriatus is part of the current collection. Its updated portrait shows the whole animal at the entrance to its dense, silk-lined retreat.",
       gallery: [
         { file: "fimbriatus-webbing.jpg", alt: "Chilobrachys fimbriatus visible through dense white webbing", caption: "Dense web structure · 2025" },
         { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "At the retreat entrance · 2025" },
@@ -348,8 +348,8 @@
       ],
       sources: [{ label: "Morphological study of Psyttala horrida eggs and nymphs", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9696875/" }],
       image: "psyttala-horrida.jpg",
-      alt: "A Psyttala horrida assassin bug resting on vivid pink and green leaves",
-      intro: "Psyttala horrida brings a different shape and scale to the current collection. The profile image places the dark assassin bug against vivid pink and green foliage.",
+      alt: "An adult Psyttala horrida assassin bug climbing on bark beside green leaves",
+      intro: "Psyttala horrida brings a different shape and scale to the current collection. The updated portrait clearly shows an adult's dark wings, red legs, and spined thorax within its planted habitat.",
       gallery: [
         { file: "psyttala-ground.jpg", alt: "Adult Psyttala horrida moving across leaf litter", caption: "Adult on the enclosure floor · 2025" },
         { file: "psyttala-adult.jpg", alt: "Adult Psyttala horrida climbing beside green leaves and bark", caption: "Adult colour and form · 2024" },

@@ -180,5 +180,47 @@
     "slug": "spider-silk-nanofibril-packing",
     "url": "research/spider-silk-nanofibril-packing/",
     "has_body": true
+  },
+  {
+    "title": "Urbanization is linked to genetic loss in a common lynx spider",
+    "description": "Population sampling across Taiwan finds lower diversity and stronger differentiation along an urban-rural gradient.",
+    "category": "Ecology",
+    "posted_date": "14 August 2026",
+    "source_date": "25 February 2026",
+    "summary": "Researchers sampled 245 Oxyopes sertatus lynx spiders at 17 sites in central Taiwan. Genome-wide markers showed declining genetic diversity with increasing urbanization and greater differentiation among urban populations, although analyses did not reveal fully separate genetic clusters.",
+    "why_it_matters": "A species can remain widespread and visibly common while losing genetic variation. The study shows why connected green space matters not only for species counts but also for the gene flow that can help populations respond to change.",
+    "source_url": "https://www.nature.com/articles/s41598-026-40537-z",
+    "source_name": "Scientific Reports",
+    "slug": "urbanization-reduces-lynx-spider-genetic-diversity",
+    "url": "research/urbanization-reduces-lynx-spider-genetic-diversity/",
+    "has_body": true
+  },
+  {
+    "title": "Hunting style and geography help shape spider gut microbiota",
+    "description": "A large survey compares gut microbial communities across web-builders, wandering hunters, and ambush spiders.",
+    "category": "Ecology",
+    "posted_date": "14 August 2026",
+    "source_date": "13 December 2025",
+    "summary": "Researchers analysed 16S rRNA data from 1,090 spiders across 34 families in southwestern China. Wandering and ambush hunters had higher gut-microbe diversity than web-builders, while geography and endosymbiont infections also contributed to the patterns.",
+    "why_it_matters": "Spiders are not isolated predators; they also host microbial communities. The unusually broad sampling shows that hunting strategy and place can be associated with those communities, while the authors caution that much of the assembly pattern was stochastic and geographically limited.",
+    "source_url": "https://www.nature.com/articles/s42003-025-09358-0",
+    "source_name": "Communications Biology",
+    "slug": "spider-foraging-strategies-shape-gut-microbiota",
+    "url": "research/spider-foraging-strategies-shape-gut-microbiota/",
+    "has_body": true
+  },
+  {
+    "title": "A tiny lineage-specific peptide can strengthen experimental silk fibres",
+    "description": "Researchers trace a newly evolved peptide in golden orb-weaver silk glands and test its effect in wet-spun fibres.",
+    "category": "General arachnology news",
+    "posted_date": "14 August 2026",
+    "source_date": "18 November 2025",
+    "summary": "A 67-amino-acid secretory peptide called SpiCE-DS8 was found in the dragline-silk system of sampled Nephilinae spiders. In wet-spinning experiments, adding its conserved core increased beta-sheet ordering and improved several mechanical properties of silkworm and spidroin-containing fibres.",
+    "why_it_matters": "Spider silk performance depends on more than the large spidroin proteins usually highlighted. This study suggests that a small, recently evolved helper peptide can influence protein assembly and fibre mechanics, offering another clue for synthetic-silk design.",
+    "source_url": "https://www.nature.com/articles/s41467-025-65026-1",
+    "source_name": "Nature Communications",
+    "slug": "small-peptide-strengthens-spider-silk",
+    "url": "research/small-peptide-strengthens-spider-silk/",
+    "has_body": true
   }
 ]

@@ -254,6 +254,19 @@
       white-space: nowrap;
     }
 
+    .collection-photo-note {
+      max-width: 860px;
+      margin: -12px 0 28px;
+      color: #7895a4;
+      font-size: 0.78rem;
+      line-height: 1.65;
+    }
+
+    .collection-photo-note a {
+      color: var(--teal);
+      text-underline-offset: 3px;
+    }
+
     .filters {
       display: flex;
       align-items: center;
@@ -339,6 +352,32 @@
       display: block;
       object-fit: cover;
       transition: transform 500ms ease, filter 500ms ease;
+    }
+
+    .resident-photo img[data-placeholder-active="true"] {
+      padding: clamp(30px, 7vw, 66px);
+      object-fit: contain;
+      background: radial-gradient(circle at 50% 46%, rgba(26, 54, 68, 0.78), #06111b 72%);
+      filter: drop-shadow(0 0 20px rgba(20, 241, 196, 0.14));
+    }
+
+    .resident-placeholder-label {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      left: 12px;
+      z-index: 2;
+      padding: 7px 9px;
+      border: 1px solid rgba(139, 196, 214, 0.18);
+      border-radius: 8px;
+      background: rgba(3, 9, 15, 0.86);
+      color: #c8d8df;
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1.35;
+      text-align: center;
+      text-transform: uppercase;
     }
 
     .resident-card:hover .resident-photo img {
@@ -714,6 +753,8 @@
         </div>
       </div>
 
+      <p class="collection-photo-note">Every current entry uses a verified photograph. If a future app-synced record has no verified image, it will show a clearly labelled group silhouette—not a generic animal presented as that individual. <a href="image-use.html#placeholders">How placeholders are handled</a>.</p>
+
       <div class="resident-grid" data-resident-grid>
         <article class="resident-card" id="alma" data-category="tarantula" data-resident="alma">
           <a class="resident-card-link" href="species/acanthoscurria-geniculata.html" aria-label="Read Alma’s Acanthoscurria geniculata profile">
@@ -815,14 +856,14 @@
 
         <article class="resident-card" id="psyttala-horrida" data-category="other-invertebrate" data-resident="psyttala">
           <a class="resident-card-link" href="species/psyttala-horrida.html" aria-label="Read the Psyttala horrida profile">
-          <div class="resident-photo"><img src="assets/collection/psyttala-horrida.jpg" alt="An adult Psyttala horrida assassin bug climbing on bark beside green leaves" width="1600" height="898" loading="lazy" decoding="async"></div>
+          <div class="resident-photo"><img src="assets/collection/psyttala-horrida.jpg" alt="An adult Psyttala horrida assassin bug climbing on bark beside green leaves" width="1600" height="898" loading="lazy" decoding="async" data-placeholder="true-bug"></div>
           <div class="resident-copy"><p class="resident-type">Assassin bug</p><h2 class="scientific-name">Psyttala horrida</h2></div>
           </a>
         </article>
 
         <article class="resident-card" id="pachnoda-marginata" data-category="other-invertebrate" data-resident="pachnoda">
           <a class="resident-card-link" href="species/pachnoda-marginata.html" aria-label="Read the Pachnoda marginata profile">
-          <div class="resident-photo"><img src="assets/collection/pachnoda-marginata.jpg" alt="Three Pachnoda marginata sun beetles clustered on a branch" width="1600" height="898" loading="lazy" decoding="async"></div>
+          <div class="resident-photo"><img src="assets/collection/pachnoda-marginata.jpg" alt="Three Pachnoda marginata sun beetles clustered on a branch" width="1600" height="898" loading="lazy" decoding="async" data-placeholder="beetle"></div>
           <div class="resident-copy"><p class="resident-type">Sun beetles</p><h2 class="scientific-name">Pachnoda marginata</h2></div>
           </a>
         </article>
@@ -881,6 +922,7 @@
     </div>
   </footer>
 
+  <script src="assets/specimen-placeholders.js"></script>
   <script>
     (() => {
       const filters = document.querySelector("[data-filters]");

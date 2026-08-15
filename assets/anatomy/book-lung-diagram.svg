@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Ventral view of a mygalomorph spider</title>
+  <desc id="desc">A conceptual diagram marking two pairs of external book-lung openings and the spinnerets. Internal book-lung lamellae are not shown.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0" stop-color="#102d42"/>
+      <stop offset="0.7" stop-color="#071521"/>
+      <stop offset="1" stop-color="#03080d"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dce8ee"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 12 6 0 12z" fill="#86d9f3"/></marker>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#86d9f3" fill="none"><circle cx="800" cy="500" r="370"/><circle cx="800" cy="500" r="455"/></g>
+  <text x="94" y="105" fill="#86d9f3" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="8">CONCEPTUAL DIAGRAM</text>
+  <text x="94" y="150" fill="#b7cbd5" font-family="Arial, sans-serif" font-size="23" letter-spacing="4">VENTRAL VIEW / MYGALOMORPH</text>
+
+  <g fill="none" stroke="url(#body)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M650 348 515 250 385 173 263 101"/><path d="M627 410 458 366 291 331 153 289"/>
+    <path d="M625 485 448 506 276 565 138 641"/><path d="M649 558 502 648 384 773 291 913"/>
+    <path d="M950 348 1085 250 1215 173 1337 101"/><path d="M973 410 1142 366 1309 331 1447 289"/>
+    <path d="M975 485 1152 506 1324 565 1462 641"/><path d="M951 558 1098 648 1216 773 1309 913"/>
+  </g>
+  <ellipse cx="800" cy="336" rx="170" ry="150" fill="url(#body)" stroke="#657883" stroke-width="7"/>
+  <path d="M654 285 Q800 205 946 285" fill="none" stroke="#657883" stroke-width="6" opacity="0.7"/>
+  <ellipse cx="800" cy="640" rx="250" ry="310" fill="url(#body)" stroke="#657883" stroke-width="8"/>
+  <path d="M680 445 Q800 486 920 445" fill="none" stroke="#657883" stroke-width="7" opacity="0.72"/>
+  <path d="M690 513 Q800 545 910 513" fill="none" stroke="#657883" stroke-width="6" opacity="0.55"/>
+
+  <g fill="#0b1e2b" stroke="#86d9f3" stroke-width="7">
+    <rect x="680" y="558" width="96" height="25" rx="13"/>
+    <rect x="824" y="558" width="96" height="25" rx="13"/>
+    <rect x="695" y="682" width="88" height="24" rx="12"/>
+    <rect x="817" y="682" width="88" height="24" rx="12"/>
+  </g>
+  <g fill="url(#body)" stroke="#657883" stroke-width="6">
+    <path d="M744 924 Q720 972 750 986 Q784 972 791 925Z"/>
+    <path d="M809 925 Q816 972 850 986 Q880 972 856 924Z"/>
+  </g>
+  <g fill="none" stroke="#86d9f3" stroke-width="5" marker-end="url(#arrow)">
+    <path d="M405 592 H560 Q615 592 674 571"/>
+    <path d="M405 609 H540 Q615 609 690 694"/>
+    <path d="M995 865 H930 Q895 865 855 927"/>
+  </g>
+  <g fill="#e9f5f8" font-family="Arial, sans-serif">
+    <text x="98" y="566" font-size="28" font-weight="700">BOOK-LUNG OPENINGS</text>
+    <text x="98" y="646" font-size="22" fill="#9eb8c4">two paired rows / internal lamellae not shown</text>
+    <text x="1000" y="844" font-size="28" font-weight="700">SPINNERETS</text>
+  </g>
+</svg>

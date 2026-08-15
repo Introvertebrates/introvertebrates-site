@@ -49,8 +49,8 @@
         { label: "Koedoe — revision and natural history of Ceratogyrus", url: "https://koedoe.co.za/index.php/koedoe/article/view/422" }
       ],
       image: "ceratogyrus-darlingi.jpg",
-      alt: "Ceratogyrus darlingi in a naturalistic enclosure",
-      intro: "This Ceratogyrus darlingi is part of the current Introvertebrates collection. The profile photograph places the animal within a sandy, planted terrestrial scene.",
+      alt: "Ceratogyrus darlingi facing outward from a webbed retreat",
+      intro: "This Ceratogyrus darlingi is part of the current Introvertebrates collection. The updated portrait shows the animal facing outward from a silk-lined shelter.",
       gallery: [
         { file: "darlingi-retreat.jpg", alt: "Ceratogyrus darlingi partly visible within a webbed wooden retreat", caption: "Inside the retreat · 2025" },
         { file: "darlingi-overhead.jpg", alt: "Overhead view of Ceratogyrus darlingi on textured bark", caption: "Dorsal view · 2025" },

@@ -398,6 +398,7 @@ button.kryp-button {
 
 .kryp-motion-card video {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   display: block;
   object-fit: cover;
@@ -824,6 +825,7 @@ button.kryp-button {
 
 .kryp-spotlight-card img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   display: block;
   margin-bottom: 18px;
@@ -902,6 +904,7 @@ button.kryp-button {
 
 .kryp-profile-hero figure img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   display: block;
   object-fit: cover;
@@ -947,6 +950,7 @@ button.kryp-button {
 .kryp-profile-media img,
 .kryp-profile-media video {
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   display: block;
   object-fit: cover;

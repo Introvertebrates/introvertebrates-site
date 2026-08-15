@@ -1,24 +1,3 @@
-{% assign research_title_downcase = page.title | downcase %}
-{% assign research_illustration = '/assets/research/taxonomy-and-discovery.webp' %}
-{% assign research_illustration_alt = 'Conceptual white illustration of two spiders, a magnifying lens, and a branching relationship' %}
-{% assign research_illustration_label = 'Taxonomy & discovery' %}
-{% if research_title_downcase contains 'silk' or research_title_downcase contains 'fibre' or research_title_downcase contains 'fiber' or research_title_downcase contains 'nanofibril' %}
-  {% assign research_illustration = '/assets/research/silk-and-materials.webp' %}
-  {% assign research_illustration_alt = 'Conceptual white illustration of an orb web transitioning into an enlarged silk fibre' %}
-  {% assign research_illustration_label = 'Silk & materials' %}
-{% elsif research_title_downcase contains 'genome' or research_title_downcase contains 'fossil' or research_title_downcase contains 'evolution' %}
-  {% assign research_illustration = '/assets/research/evolution-and-genomics.webp' %}
-  {% assign research_illustration_alt = 'Conceptual white illustration of a tarantula beside DNA and an evolutionary branching line' %}
-  {% assign research_illustration_label = 'Evolution & genomics' %}
-{% elsif page.category == 'Ecology' %}
-  {% assign research_illustration = '/assets/research/ecology-and-habitat.webp' %}
-  {% assign research_illustration_alt = 'Conceptual white illustration connecting a spider with a leaf and a city habitat' %}
-  {% assign research_illustration_label = 'Ecology & habitat' %}
-{% elsif page.category == 'Behavior' %}
-  {% assign research_illustration = '/assets/research/behavior-and-senses.webp' %}
-  {% assign research_illustration_alt = 'Conceptual white illustration of a spider sensing vibrations on web strands' %}
-  {% assign research_illustration_label = 'Behaviour & senses' %}
-{% endif %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,14 +11,14 @@
   <meta property="og:description" content="{{ page.description | default: page.summary | strip_html | escape }}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:image" content="{{ research_illustration | absolute_url }}">
-  <meta property="og:image:alt" content="{{ research_illustration_alt }}">
+  <meta property="og:image" content="{{ '/assets/collection/elvira-chilobrachys-natanicharum.jpg' | absolute_url }}">
+  <meta property="og:image:alt" content="Close portrait of Elvira, a Chilobrachys natanicharum tarantula">
   <meta property="og:site_name" content="Introvertebrates">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | escape }} | Introvertebrates">
   <meta name="twitter:description" content="{{ page.description | default: page.summary | strip_html | escape }}">
-  <meta name="twitter:image" content="{{ research_illustration | absolute_url }}">
-  <meta name="twitter:image:alt" content="{{ research_illustration_alt }}">
+  <meta name="twitter:image" content="{{ '/assets/collection/elvira-chilobrachys-natanicharum.jpg' | absolute_url }}">
+  <meta name="twitter:image:alt" content="Close portrait of Elvira, a Chilobrachys natanicharum tarantula">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,7 +27,7 @@
       "description": {{ page.description | default: page.summary | strip_html | jsonify }},
       "url": {{ page.url | absolute_url | jsonify }},
       "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
-      "image": {{ research_illustration | absolute_url | jsonify }},
+      "image": {{ '/assets/collection/elvira-chilobrachys-natanicharum.jpg' | absolute_url | jsonify }},
       "author": {
         "@type": "Organization",
         "name": "Introvertebrates",
@@ -247,7 +226,7 @@
     }
   </style>
   <link rel="stylesheet" href="{{ '/assets/homepage.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/research.css' | relative_url }}?v=20260814-illustrations-2">
+  <link rel="stylesheet" href="{{ '/assets/research.css' | relative_url }}">
 </head>
 <body class="research-article-body">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -282,10 +261,6 @@
       <div class="badge">{{ page.category }}</div>
       <h1>{{ page.title }}</h1>
       <p class="lead">{{ page.summary }}</p>
-      <figure class="article-illustration">
-        <img src="{{ research_illustration | relative_url }}" alt="{{ research_illustration_alt }}" width="1152" height="768" loading="eager" fetchpriority="high">
-        <figcaption>Conceptual illustration · {{ research_illustration_label }}</figcaption>
-      </figure>
     </header>
 
     <div class="article-layout">

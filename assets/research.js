@@ -19,48 +19,6 @@
     return "general";
   };
 
-  const illustrationForEntry = (entry) => {
-    const title = (entry.title || "").toLowerCase();
-
-    if (/silk|fibre|fiber|nanofibril/.test(title)) {
-      return {
-        src: "assets/research/silk-and-materials.webp",
-        alt: "Conceptual white illustration of an orb web transitioning into an enlarged silk fibre",
-        label: "Silk & materials",
-      };
-    }
-
-    if (/genome|fossil|evolution/.test(title)) {
-      return {
-        src: "assets/research/evolution-and-genomics.webp",
-        alt: "Conceptual white illustration of a tarantula beside DNA and an evolutionary branching line",
-        label: "Evolution & genomics",
-      };
-    }
-
-    if (entry.category === "Ecology") {
-      return {
-        src: "assets/research/ecology-and-habitat.webp",
-        alt: "Conceptual white illustration connecting a spider with a leaf and a city habitat",
-        label: "Ecology & habitat",
-      };
-    }
-
-    if (entry.category === "Behavior") {
-      return {
-        src: "assets/research/behavior-and-senses.webp",
-        alt: "Conceptual white illustration of a spider sensing vibrations on web strands",
-        label: "Behaviour & senses",
-      };
-    }
-
-    return {
-      src: "assets/research/taxonomy-and-discovery.webp",
-      alt: "Conceptual white illustration of two spiders, a magnifying lens, and a branching relationship",
-      label: "Taxonomy & discovery",
-    };
-  };
-
   const appendText = (parent, tagName, className, text) => {
     const element = document.createElement(tagName);
     if (className) element.className = className;
@@ -75,18 +33,6 @@
     article.dataset.category = categoryToSlug(entry.category);
     article.dataset.postedDate = entry.posted_date || "";
     article.dataset.sourceDate = entry.source_date || "";
-
-    const illustration = illustrationForEntry(entry);
-    const figure = appendText(article, "figure", "entry-illustration", "");
-    const image = document.createElement("img");
-    image.src = illustration.src;
-    image.alt = illustration.alt;
-    image.width = 1152;
-    image.height = 768;
-    image.loading = "lazy";
-    image.decoding = "async";
-    figure.appendChild(image);
-    appendText(figure, "figcaption", "", `Conceptual illustration · ${illustration.label}`);
 
     const dates = appendText(article, "div", "entry-dates", "");
     const posted = appendText(dates, "span", "entry-date-item", "");

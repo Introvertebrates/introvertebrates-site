@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="no">
 <head>
@@ -19,7 +21,7 @@
   <meta name="theme-color" content="#031018">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Kryp & Krabater","url":"https://introvertebrates.com/kryp-og-krabater.html","description":"Et norsk natur- og dyrelivsprosjekt for nysgjerrige barn, med egne møter ute og dyr fra Introvertebrates-samlingen.","inLanguage":"no","audience":{"@type":"PeopleAudience","audienceType":"Barn"},"publisher":{"@type":"Organization","name":"Introvertebrates"}}</script>
   <link rel="stylesheet" href="assets/homepage.css">
-  <link rel="stylesheet" href="assets/kryp.css?v=20260815a">
+  <link rel="stylesheet" href="assets/kryp.css?v=20260820a">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Hopp til innhold</a>
@@ -34,7 +36,7 @@
   <nav class="kryp-local-nav" aria-label="Kryp &amp; Krabater-seksjoner">
     <div class="kryp-local-inner kryp-shell">
       <a class="kryp-wordmark" href="#top">Kryp <span>&amp;</span> Krabater</a>
-      <div class="kryp-local-links"><a href="#tina-tarantell">Møt Tina</a><a href="#animal-world">Dyreverden</a><a href="kryp-artsprofiler.html">Artsprofiler</a><a href="#stories">Fortellinger</a><a href="#about-kryp">Om prosjektet</a><a href="index.html">Til Introvertebrates</a></div>
+      <div class="kryp-local-links"><a href="#tina-tarantell">Møt Tina</a><a href="#ukas-oppdrag">Ukas oppdrag</a><a href="#animal-world">Dyreverden</a><a href="kryp-artsprofiler.html">Artsprofiler</a><a href="#stories">Fortellinger</a><a href="#about-kryp">Om prosjektet</a><a href="index.html">Til Introvertebrates</a></div>
     </div>
   </nav>
 
@@ -60,6 +62,24 @@
         <p>Jeg hjelper deg med å finne små detaljer, stille gode spørsmål og velge hvilket dyrespor du vil følge videre. Se etter tips fra meg når det er noe ekstra spennende å legge merke til.</p>
         <p class="kryp-tina-note"><strong>Tina er en illustrert guide.</strong> Dyrene, fotografiene og observasjonene på sidene er ekte – og det er alltid de virkelige dyrene som står i sentrum.</p>
         <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="#animal-world">Velg et dyrespor <span aria-hidden="true">↓</span></a><a class="kryp-button" href="#stories">Finn et se-etter-oppdrag</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kryp-section kryp-weekly" id="ukas-oppdrag" aria-labelledby="weekly-title">
+    <div class="kryp-shell kryp-weekly-card">
+      <figure class="kryp-weekly-media">
+        <img src="{{ site.data.kryp_weekly.image }}" alt="{{ site.data.kryp_weekly.image_alt }}" width="1800" height="1200" loading="lazy" decoding="async">
+      </figure>
+      <div class="kryp-weekly-copy">
+        <p class="kryp-eyebrow">{{ site.data.kryp_weekly.date_label }}</p>
+        <h2 id="weekly-title">{{ site.data.kryp_weekly.title }}</h2>
+        <p>{{ site.data.kryp_weekly.intro }}</p>
+        <div class="kryp-weekly-question">
+          <img src="Tina – No background.png" alt="" width="2500" height="2500" loading="lazy" decoding="async">
+          <p><strong>Tina spør:</strong> {{ site.data.kryp_weekly.question }}</p>
+        </div>
+        <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ site.data.kryp_weekly.link_url }}">{{ site.data.kryp_weekly.link_label }} <span aria-hidden="true">→</span></a></div>
       </div>
     </div>
   </section>
@@ -102,7 +122,7 @@
       <div class="kryp-motion-head"><div><p class="kryp-eyebrow">Se etter én detalj</p><h2 id="stories-title">Fortellinger i bevegelse.</h2><p class="kryp-motion-lede">Korte opptak blir små observasjonsoppdrag: start bare filmen du vil se, les spørsmålet, og følg lenken når du vil forstå mer.</p></div></div>
       <div class="kryp-motion-grid">
         <article class="kryp-motion-card"><video controls muted playsinline preload="metadata" poster="assets/kryp/otter-water.jpg" aria-label="En oter beveger seg i vannet"><source src="assets/kryp/video/otter-water.mp4" type="video/mp4"></video><div class="kryp-motion-copy"><span>Norsk natur</span><h3>Oter i vannet</h3><p><strong>Se etter:</strong> Hvordan holder oteren hodet stabilt mens kroppen arbeider under vann?</p><a href="kryp-artsprofiler.html#oter">Møt oteren <span aria-hidden="true">→</span></a></div></article>
-        <article class="kryp-motion-card"><video controls muted playsinline preload="metadata" poster="assets/collection/sabrina-brachypelma-hamorii.jpg" aria-label="En kort norsk film om hvordan en tarantell bygger et skjulested"><source src="assets/kryp/video/tarantell-underjordisk-arkitekt.mp4" type="video/mp4"></video><div class="kryp-motion-copy"><span>Fra samlingen</span><h3>Den underjordiske arkitekten</h3><p><strong>Se etter:</strong> Hvorfor legger tarantellen silke på bakken og rundt åpningen?</p><a href="kryp-artsprofiler.html#sabrina">Møt Sabrina <span aria-hidden="true">→</span></a></div></article>
+        <article class="kryp-motion-card"><video controls muted playsinline preload="metadata" poster="assets/kryp/cockroaches-close.jpg" aria-label="Kakerlakker som beveger seg over bark"><source src="assets/kryp/video/cockroaches-bark.mp4" type="video/mp4"></video><div class="kryp-motion-copy"><span>Fra samlingen</span><h3>Kakerlakker i barken</h3><p><strong>Se etter:</strong> Hvordan bruker kakerlakkene antennene mens de undersøker underlaget?</p><a href="kryp-spor-krypenes-verden.html">Møt kakerlakkene <span aria-hidden="true">→</span></a></div></article>
       </div>
     </div>
   </section>
@@ -111,7 +131,7 @@
     <div class="kryp-shell kryp-story">
       <div class="kryp-story-media">
         <img src="assets/kryp/argentine-tegu.jpg" alt="Nærbilde av en argentinsk svart-hvit teju" width="1800" height="1432" loading="lazy" decoding="async">
-        <img src="assets/kryp/flower-mantis.jpg" alt="En blomsterkneler på en grein" width="1800" height="2700" loading="lazy" decoding="async">
+        <img src="assets/kryp/flower-mantis-portrait.jpg" alt="Nærportrett av en blomsterkneler med store fasettøyne og foldede gripebein" width="1200" height="1800" loading="lazy" decoding="async">
         <img src="assets/collection/sabrina-brachypelma-hamorii.jpg" alt="Sabrina, en Brachypelma hamorii" width="1600" height="898" loading="lazy" decoding="async">
       </div>
       <div class="kryp-story-copy"><p class="kryp-eyebrow">Fra møte til forståelse</p><h2 id="closer-title">La dyret lede historien.</h2><p>Et tungeflikk, et sansehår, et spor i snøen eller en fugl som vender tilbake til reiret kan begynne med et enkelt spørsmål. Målet er å svare tydelig, vise det virkelige dyret og samtidig gi plass til det neste spørsmålet.</p><div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="species/sabrina-brachypelma-hamorii.html">Møt Sabrina</a><a class="kryp-button" href="learn.html">Utforsk Learn</a></div></div>

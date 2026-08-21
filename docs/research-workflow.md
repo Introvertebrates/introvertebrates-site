@@ -6,11 +6,21 @@ The files in `_research/` are the **single source of truth** for the Introverteb
 
 ## Recommended rhythm
 
-- **Weekly scan (10–20 minutes):** look for strong new arachnology papers, museum/university releases, taxonomic descriptions, and research with clear relevance to spider biology, behaviour, ecology, venom, or captive understanding.
-- **Monthly publishing pass:** add the strongest 1–3 items rather than filling the section with every spider headline. Prefer primary papers and institutional sources; use secondary reporting when it genuinely helps explain the work.
+- **Monday–Thursday:** save promising arachnology papers, museum/university releases, taxonomic descriptions, and research with clear relevance to spider biology, behaviour, ecology, venom, or captive understanding.
+- **Friday publishing pass (10–20 minutes):** choose the strongest saved item, read the primary source, and publish one concise entry. If no source meets the editorial standard, skip the week instead of adding filler.
 - **Quarterly review:** check source links, remove accidental duplication, review category balance, and update summaries if later evidence changes the interpretation.
 
-The cadence is intentionally sustainable. A smaller journal that is reliably updated and carefully curated is more useful than a fast feed full of weak stories.
+The public page describes Friday as the normal release day. The cadence stays sustainable because the goal is one carefully selected entry, not an automated feed.
+
+## Friday checklist
+
+1. Open `/admin/` and choose **Research Updates → New Research Update**.
+2. Read the original paper or primary institutional source and save its URL.
+3. Write the finding first, then a separate “why it matters” paragraph.
+4. Set **Posted date** to Friday and **Source date** to the paper’s actual publication date.
+5. Preview, check scientific names and limitations, then publish.
+
+Research entries do not need decorative illustrations. Use an image only when a particularly fitting photograph owned by Introvertebrates is available; never add another person’s image for visual consistency.
 
 ## Add or edit an entry
 

@@ -12,6 +12,23 @@ site_url: https://introvertebrates.com
 display_url: https://introvertebrates.com
 
 collections:
+  - name: "kryp_weekly"
+    label: "Kryp & Krabater · Weekly feature"
+    files:
+      - label: "Current weekly feature"
+        name: "current"
+        file: "_data/kryp_weekly.yml"
+        fields:
+          - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "D MMMM YYYY", time_format: false }
+          - { label: "Short date label", name: "date_label", widget: "string", hint: "For example: Uke 34 · nytt hver uke" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - { label: "Tina's question", name: "question", widget: "text" }
+          - { label: "Image", name: "image", widget: "image", hint: "Use only an image you own; a 3:2 landscape crop works best." }
+          - { label: "Image alt text", name: "image_alt", widget: "string" }
+          - { label: "Link", name: "link_url", widget: "string" }
+          - { label: "Link label", name: "link_label", widget: "string" }
+
   - name: "research"
     label: "Research Updates"
     folder: "_research"

@@ -49,8 +49,8 @@
         { label: "Koedoe — revision and natural history of Ceratogyrus", url: "https://koedoe.co.za/index.php/koedoe/article/view/422" }
       ],
       image: "ceratogyrus-darlingi.jpg",
-      alt: "Ceratogyrus darlingi facing outward from a webbed retreat",
-      intro: "This Ceratogyrus darlingi is part of the current Introvertebrates collection. The updated portrait shows the animal facing outward from a silk-lined shelter.",
+      alt: "Ceratogyrus darlingi seen from above among leaf litter and enclosure structure",
+      intro: "This Ceratogyrus darlingi is part of the current Introvertebrates collection. The updated portrait shows the animal among leaf litter and enclosure structure.",
       gallery: [
         { file: "darlingi-retreat.jpg", alt: "Ceratogyrus darlingi partly visible within a webbed wooden retreat", caption: "Inside the retreat · 2025" },
         { file: "darlingi-overhead.jpg", alt: "Overhead view of Ceratogyrus darlingi on textured bark", caption: "Dorsal view · 2025" },
@@ -281,8 +281,8 @@
         { label: "ZooKeys — integrative revision of Monocentropus and Socotran habitat", url: "https://www.utupub.fi/server/api/core/bitstreams/4830c6e0-07a8-40bd-8c91-e7e034e76598/content" }
       ],
       image: "belinda-monocentropus-balfouri.jpg",
-      alt: "Belinda, a Monocentropus balfouri tarantula, partly visible in her burrow",
-      intro: "Belinda is the second Monocentropus balfouri currently in my care. Her available portrait is more secretive, showing her partly visible within the retreat.",
+      alt: "Belinda, a Monocentropus balfouri tarantula, clearly visible across webbed cork",
+      intro: "Belinda is the second Monocentropus balfouri currently in my care. Her updated portrait clearly shows her blue and cream colouring across webbed cork.",
       video: { id: "ghR2QufL78U", title: "The science behind a vivarium: Belinda’s new setup", note: "A longer build and husbandry video centred on Belinda’s enclosure." }
     },
     "omothymus-violaceopes": {
@@ -348,8 +348,8 @@
       ],
       sources: [{ label: "Morphological study of Psyttala horrida eggs and nymphs", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9696875/" }],
       image: "psyttala-horrida.jpg",
-      alt: "An adult Psyttala horrida assassin bug climbing on bark beside green leaves",
-      intro: "Psyttala horrida brings a different shape and scale to the current collection. The updated portrait clearly shows an adult's dark wings, red legs, and spined thorax within its planted habitat.",
+      alt: "An adult Psyttala horrida assassin bug in an alert stance on cork bark",
+      intro: "Psyttala horrida brings a different shape and scale to the current collection. The updated portrait clearly shows an adult's dark wings, red legs, and spined thorax on cork bark.",
       gallery: [
         { file: "psyttala-ground.jpg", alt: "Adult Psyttala horrida moving across leaf litter", caption: "Adult on the enclosure floor · 2025" },
         { file: "psyttala-adult.jpg", alt: "Adult Psyttala horrida climbing beside green leaves and bark", caption: "Adult colour and form · 2024" },
@@ -397,8 +397,8 @@
         { label: "Ecology and Evolution — natural orientation and climbing observations in tarantulas", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13106993/" }
       ],
       image: "siuzi-theraphosa-apophysis.jpg",
-      alt: "Siuzi, a Theraphosa apophysis tarantula, facing the camera beneath a cork shelter",
-      intro: "Siuzi is the Theraphosa apophysis currently in my care. Her portrait shows the powerful chelicerae and dense sensory hairs of one of the world’s largest tarantula genera.",
+      alt: "Siuzi, a Theraphosa apophysis tarantula, moving among grass and cork in her enclosure",
+      intro: "Siuzi is the Theraphosa apophysis currently in my care. Her updated portrait shows her moving through a naturalistic enclosure of cork and grass.",
       gallery: [
         { file: "siuzi-face.jpg", alt: "Extreme close view of Siuzi’s face and mouthparts", caption: "Face detail · 2025" },
         { file: "siuzi-habitat.jpg", alt: "Siuzi resting among grasses and cork in her terrestrial enclosure", caption: "Habitat view · 2024" },

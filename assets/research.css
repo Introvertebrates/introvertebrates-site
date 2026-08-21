@@ -522,6 +522,22 @@ body.research-article-body .site-footer {
   line-height: 1.75;
 }
 
+.research-schedule {
+  max-width: 720px;
+  margin: 20px 0 0;
+  padding: 15px 18px;
+  border-left: 3px solid var(--research-teal);
+  border-radius: 0 14px 14px 0;
+  background: rgba(20, 241, 196, 0.055);
+  color: #a9c0cb;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.research-schedule strong {
+  color: var(--research-text);
+}
+
 .article-layout {
   display: grid;
   grid-template-columns: minmax(0, 760px) minmax(250px, 1fr);

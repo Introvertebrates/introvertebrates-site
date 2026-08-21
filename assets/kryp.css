@@ -254,6 +254,83 @@ button.kryp-button {
   color: var(--kryp-cream);
 }
 
+.kryp-weekly {
+  background:
+    radial-gradient(circle at 86% 18%, rgba(246, 188, 87, 0.11), transparent 22rem),
+    rgba(4, 18, 27, 0.68);
+}
+
+.kryp-weekly-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
+  align-items: stretch;
+  gap: clamp(28px, 5vw, 68px);
+}
+
+.kryp-weekly-media {
+  min-height: 430px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(246, 240, 223, 0.14);
+  border-radius: 30px;
+  background: #071821;
+}
+
+.kryp-weekly-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.kryp-weekly-copy {
+  align-self: center;
+}
+
+.kryp-weekly-copy h2 {
+  margin: 0;
+  color: var(--kryp-cream);
+  font-size: clamp(2.5rem, 5vw, 5.2rem);
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+.kryp-weekly-copy > p:not(.kryp-eyebrow) {
+  margin: 22px 0 0;
+  color: rgba(246, 240, 223, 0.7);
+  line-height: 1.72;
+}
+
+.kryp-weekly-question {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  margin-top: 26px;
+  padding: 18px;
+  border: 1px solid rgba(154, 223, 133, 0.22);
+  border-radius: 20px;
+  background: rgba(154, 223, 133, 0.07);
+}
+
+.kryp-weekly-question img {
+  width: 82px;
+  height: 82px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.28));
+}
+
+.kryp-weekly-question p {
+  margin: 0;
+  color: var(--kryp-cream);
+  line-height: 1.55;
+}
+
+.kryp-weekly-question strong {
+  color: var(--kryp-moss);
+}
+
 .kryp-section-heading {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(300px, 0.52fr);
@@ -1033,7 +1110,8 @@ button.kryp-button {
   .kryp-section-heading,
   .kryp-story,
   .kryp-about,
-  .kryp-tina-card {
+  .kryp-tina-card,
+  .kryp-weekly-card {
     grid-template-columns: 1fr;
   }
 
@@ -1167,6 +1245,19 @@ button.kryp-button {
 
   .kryp-tina-copy h2 {
     font-size: clamp(2.5rem, 13vw, 4.3rem);
+  }
+
+  .kryp-weekly-media {
+    min-height: 300px;
+  }
+
+  .kryp-weekly-question {
+    grid-template-columns: 62px minmax(0, 1fr);
+  }
+
+  .kryp-weekly-question img {
+    width: 62px;
+    height: 62px;
   }
 
   .trail-hero {

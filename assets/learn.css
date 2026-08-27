@@ -1019,25 +1019,43 @@ a.codex-highlight-card:focus-visible {
 .instagram-slide-dots {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 0;
 }
 
 .instagram-slide-dot {
-  width: 28px;
-  height: 4px;
+  position: relative;
+  width: 44px;
+  height: 44px;
   padding: 0;
   border: 0;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.26);
+  background: transparent;
   cursor: pointer;
 }
 
-.instagram-slide-dot[aria-current="true"] {
+.instagram-slide-dot::before {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  left: 8px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.26);
+  content: "";
+  transform: translateY(-50%);
+}
+
+.instagram-slide-dot[aria-current="true"]::before {
   background: var(--home-teal);
 }
 
+.instagram-slide-dot:focus-visible {
+  outline: 2px solid var(--home-teal);
+  outline-offset: -5px;
+  border-radius: 999px;
+}
+
 .instagram-slide-toggle {
-  min-height: 40px;
+  min-height: 44px;
   padding: 8px 13px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 999px;
@@ -1275,7 +1293,7 @@ a.codex-highlight-card:focus-visible {
 
   .instagram-slide-copy {
     right: 24px;
-    bottom: 92px;
+    bottom: 138px;
   }
 
   .instagram-slide-copy strong {
@@ -1300,6 +1318,14 @@ a.codex-highlight-card:focus-visible {
     right: 18px;
     bottom: 18px;
     left: 18px;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .instagram-slide-dots {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .instagram-live-grid {

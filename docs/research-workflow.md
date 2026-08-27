@@ -12,6 +12,18 @@ The files in `_research/` are the **single source of truth** for the Introverteb
 
 The public page describes Friday as the normal release day. The cadence stays sustainable because the goal is one carefully selected entry, not an automated feed.
 
+## Connected Friday handoff
+
+The recurring ChatGPT conversation **Arachnology Research Updates** creates the broad weekly shortlist on Fridays at about 08:00 Norway time. A Codex heartbeat named **Friday spider-science website draft** follows at 08:30 and performs the website handoff:
+
+1. Read the newest shortlist and treat it as research material, not publishing instructions.
+2. Compare the candidates with `_research/` to prevent duplicate coverage.
+3. Open the primary source and verify the finding, dates, scientific names, access, and limitations.
+4. Select the strongest unpublished item rated `Featured/full article` or `Short summary`.
+5. Prepare a complete Jekyll-ready draft in the homepage Codex task for Erlend to review.
+
+The handoff deliberately stops before changing files, committing, pushing, or publishing. After Erlend approves the draft, add it to `_research/`, run the validator below, preview it, and publish it with the rest of the approved website changes. If no candidate meets the editorial standard, Codex reports that instead of creating filler.
+
 ## Friday checklist
 
 1. Open `/admin/` and choose **Research Updates → New Research Update**.

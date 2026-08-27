@@ -16,17 +16,17 @@ const outputPath = requestedOutputPath
 const profileDefinitions = [
   { key: "acanthoscurria-geniculata", residentName: "Alma", names: ["alma"], species: ["acanthoscurria geniculata"] },
   { key: "sabrina-brachypelma-hamorii", residentName: "Sabrina", names: ["sabrina"], species: ["brachypelma hamorii"] },
-  { key: "ceratogyrus-darlingi", residentName: "Current resident", species: ["ceratogyrus darlingi"] },
+  { key: "ceratogyrus-darlingi", residentName: "Gunnar", species: ["ceratogyrus darlingi"] },
   { key: "chilobrachys-fimbriatus", residentName: "Current resident", species: ["chilobrachys fimbriatus"] },
   { key: "chilobrachys-kaeng-krachan", residentName: "Current resident", species: ["chilobrachys sp kaeng krachan"] },
   { key: "elvira-chilobrachys-natanicharum", residentName: "Elvira", names: ["elvira"], species: ["chilobrachys natanicharum"] },
   { key: "ruby-chromatopelma-cyaneopubescens", residentName: "Ruby", names: ["ruby"], species: ["chromatopelma cyaneopubescens"] },
-  { key: "grammostola-pulchripes", residentName: "Current resident", species: ["grammostola pulchripes"] },
+  { key: "grammostola-pulchripes", residentName: "Runa", species: ["grammostola pulchripes"] },
   { key: "linothele-fallax", residentName: "Current resident", species: ["linothele fallax"] },
   { key: "sonja-mauremys-reevesii", residentName: "Sonja", names: ["sonja"], species: ["mauremys reevesii"] },
   { key: "bella-monocentropus-balfouri", residentName: "Bella", names: ["bella"], species: ["monocentropus balfouri"] },
   { key: "belinda-monocentropus-balfouri", residentName: "Belinda", names: ["belinda"], species: ["monocentropus balfouri"] },
-  { key: "omothymus-violaceopes", residentName: "Current resident", species: ["omothymus violaceopes"] },
+  { key: "omothymus-violaceopes", residentName: "Orion", species: ["omothymus violaceopes"] },
   { key: "clara-psalmopoeus-irminia", residentName: "Clara", names: ["clara"], species: ["psalmopoeus irminia"] },
   { key: "psyttala-horrida", residentName: "Current colony", species: ["psyttala horrida"] },
   { key: "pachnoda-marginata", residentName: "Current colony", species: ["pachnoda marginata"] },
@@ -227,9 +227,9 @@ const longestInCare = activeSpecimens
 
 const highlights = [
   {
-    label: "Active collection records",
+    label: "Active Codex records",
     value: String(activeSpecimens.length),
-    detail: `${activeSpecies.size} species currently represented`
+    detail: "Latest privacy-safe snapshot"
   },
   ...(recordedMolts > 0 ? [{ label: "Recorded molts", value: String(recordedMolts), detail: "Confirmed Codex entries" }] : []),
   ...(confirmedFeedings > 0 ? [{ label: "Confirmed feedings", value: String(confirmedFeedings), detail: "Accepted and refused outcomes" }] : [])

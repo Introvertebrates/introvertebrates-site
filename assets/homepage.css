@@ -548,6 +548,10 @@ button {
   border-top: 1px solid var(--home-line);
 }
 
+.home-section-codex {
+  padding-block: clamp(54px, 7vw, 84px);
+}
+
 .features {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -652,7 +656,7 @@ button {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: 66% center;
+  object-position: center;
 }
 
 .about-portrait figcaption {
@@ -963,6 +967,10 @@ button {
 
   .collection-card {
     aspect-ratio: 4 / 4.6;
+  }
+
+  .collection-card-mobile-extra {
+    display: none;
   }
 
   .about-portrait {

@@ -4,14 +4,14 @@
   "collection": {
     "activeRecords": 18,
     "activeSpecies": 17,
-    "namedResidents": 9,
+    "namedResidents": 12,
     "recordedMolts": 32,
     "confirmedFeedings": 84,
     "highlights": [
       {
-        "label": "Active collection records",
+        "label": "Active Codex records",
         "value": "18",
-        "detail": "17 species currently represented"
+        "detail": "Latest privacy-safe snapshot"
       },
       {
         "label": "Recorded molts",
@@ -26,7 +26,7 @@
       {
         "label": "Largest recorded leg span",
         "value": "18 cm",
-        "detail": "Omothymus violaceopes",
+        "detail": "Orion · Omothymus violaceopes",
         "profileKey": "omothymus-violaceopes"
       },
       {
@@ -89,7 +89,7 @@
     },
     "ceratogyrus-darlingi": {
       "status": "ready",
-      "residentName": "Current resident",
+      "residentName": "Gunnar",
       "sampleSize": 1,
       "metrics": [
         {
@@ -214,7 +214,7 @@
     },
     "grammostola-pulchripes": {
       "status": "ready",
-      "residentName": "Current resident",
+      "residentName": "Runa",
       "sampleSize": 1,
       "metrics": [
         {
@@ -339,7 +339,7 @@
     },
     "omothymus-violaceopes": {
       "status": "ready",
-      "residentName": "Current resident",
+      "residentName": "Orion",
       "sampleSize": 1,
       "metrics": [
         {

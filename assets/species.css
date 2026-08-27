@@ -161,6 +161,10 @@ a {
   padding-block: clamp(70px, 9vw, 126px) clamp(72px, 10vw, 132px);
 }
 
+.hero-copy {
+  min-width: 0;
+}
+
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
@@ -190,12 +194,14 @@ a {
 }
 
 .species-hero h1 {
+  max-width: 100%;
   margin: 0;
   font-size: clamp(3.35rem, 7vw, 6.75rem);
   font-weight: 650;
   letter-spacing: -0.06em;
   line-height: 0.92;
   text-wrap: balance;
+  overflow-wrap: anywhere;
 }
 
 .common-name {
@@ -1030,7 +1036,7 @@ a {
   }
 
   .species-hero h1 {
-    font-size: clamp(3rem, 15vw, 5.2rem);
+    font-size: clamp(2.4rem, 12vw, 4.6rem);
   }
 
   .hero-portrait,

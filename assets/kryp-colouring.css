@@ -1,0 +1,342 @@
+.colouring-page {
+  background: #031018;
+}
+
+.colouring-hero {
+  padding-block: clamp(78px, 11vw, 142px);
+  border-bottom: 1px solid rgba(246, 240, 223, 0.12);
+  background:
+    radial-gradient(circle at 18% 12%, rgba(154, 223, 133, 0.11), transparent 30rem),
+    linear-gradient(180deg, rgba(105, 200, 238, 0.035), transparent);
+}
+
+.colouring-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(300px, 0.68fr);
+  align-items: center;
+  gap: clamp(44px, 9vw, 116px);
+}
+
+.colouring-hero h1 {
+  max-width: 780px;
+  margin: 12px 0 26px;
+  color: var(--kryp-cream);
+  font-size: clamp(3.4rem, 8vw, 7.6rem);
+  font-weight: 650;
+  letter-spacing: -0.07em;
+  line-height: 0.9;
+  text-wrap: balance;
+}
+
+.colouring-hero h1 em {
+  display: block;
+  color: var(--kryp-moss);
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.colouring-hero p {
+  max-width: 670px;
+  margin: 0;
+  color: rgba(246, 240, 223, 0.7);
+  font-size: clamp(1rem, 2vw, 1.16rem);
+  line-height: 1.75;
+}
+
+.colouring-hero-art {
+  margin: 0;
+}
+
+.colouring-hero-art img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  display: block;
+  object-fit: contain;
+  border: 1px solid rgba(246, 240, 223, 0.16);
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.32);
+}
+
+.colouring-hero-art figcaption {
+  margin-top: 12px;
+  color: rgba(246, 240, 223, 0.52);
+  font-size: 0.74rem;
+  line-height: 1.55;
+}
+
+.colouring-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 42px;
+}
+
+.colouring-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.75fr) minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(246, 240, 223, 0.14);
+  border-radius: 24px;
+  background: rgba(7, 24, 33, 0.84);
+}
+
+.colouring-card-art {
+  min-height: 390px;
+  padding: 12px;
+  background: #fff;
+}
+
+.colouring-card-art img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.colouring-card-copy {
+  align-self: center;
+  padding: clamp(24px, 4vw, 42px);
+}
+
+.colouring-card-copy > span {
+  color: var(--kryp-sun);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.colouring-card-copy h3 {
+  margin: 8px 0 2px;
+  color: var(--kryp-cream);
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  letter-spacing: -0.05em;
+}
+
+.colouring-card-copy p {
+  margin: 0 0 16px;
+  color: rgba(246, 240, 223, 0.65);
+  line-height: 1.65;
+}
+
+.colouring-card-copy p:first-of-type {
+  color: var(--kryp-sky);
+  font-size: 0.82rem;
+}
+
+.colouring-card-copy .kryp-button {
+  margin-top: 4px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.colouring-note {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+  padding: 22px 24px;
+  border: 1px solid rgba(154, 223, 133, 0.16);
+  border-radius: 18px;
+  background: rgba(154, 223, 133, 0.045);
+}
+
+.colouring-note strong {
+  color: var(--kryp-moss);
+}
+
+.colouring-note p {
+  margin: 0;
+  color: rgba(246, 240, 223, 0.64);
+}
+
+.colouring-print-area {
+  display: none;
+}
+
+.colouring-sheet {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 285mm;
+  padding: 8mm 10mm 6mm;
+  grid-template-rows: auto auto minmax(0, 1fr) auto auto;
+  color: #101719;
+  background: #fff;
+  break-after: page;
+  page-break-after: always;
+}
+
+.colouring-sheet:last-child {
+  break-after: auto;
+  page-break-after: auto;
+}
+
+.colouring-sheet-brand {
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+  padding-bottom: 3mm;
+  border-bottom: 0.4mm solid #15282b;
+}
+
+.colouring-sheet-brand img {
+  width: 12mm;
+  height: 12mm;
+  object-fit: contain;
+}
+
+.colouring-sheet-brand strong,
+.colouring-sheet-brand span {
+  display: block;
+}
+
+.colouring-sheet-brand strong {
+  font-size: 14pt;
+  letter-spacing: -0.03em;
+}
+
+.colouring-sheet-brand span {
+  margin-top: 0.7mm;
+  color: #4a5c60;
+  font-size: 8pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.colouring-sheet-title {
+  padding-top: 4mm;
+  text-align: center;
+}
+
+.colouring-sheet-title p {
+  margin: 0 0 1mm;
+  font-size: 8pt;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.colouring-sheet-title h2 {
+  margin: 0;
+  font-size: 34pt;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.colouring-sheet-title span {
+  display: block;
+  margin-top: 1mm;
+  font-size: 10pt;
+}
+
+.colouring-sheet-art {
+  width: 100%;
+  height: 205mm;
+  display: block;
+  object-fit: contain;
+}
+
+.colouring-sheet-prompt {
+  margin-top: 2mm;
+  padding: 2.5mm 3mm;
+  border: 0.35mm solid #15282b;
+  border-radius: 2mm;
+  font-size: 9pt;
+  line-height: 1.4;
+}
+
+.colouring-sheet footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 6mm;
+  margin-top: 3mm;
+  padding-top: 2mm;
+  border-top: 0.25mm solid #aab5b7;
+  color: #4a5c60;
+  font-size: 7pt;
+}
+
+@media (max-width: 1080px) {
+  .colouring-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .colouring-hero-grid,
+  .colouring-card {
+    grid-template-columns: 1fr;
+  }
+
+  .colouring-hero-art {
+    width: min(100%, 520px);
+    justify-self: center;
+  }
+
+  .colouring-card-art {
+    min-height: 0;
+  }
+
+  .colouring-card-art img {
+    max-height: 520px;
+  }
+}
+
+@media (max-width: 600px) {
+  .colouring-hero {
+    padding-block: 70px;
+  }
+
+  .colouring-hero h1 {
+    font-size: clamp(3rem, 16vw, 5.2rem);
+  }
+
+  .colouring-card-copy {
+    padding: 26px;
+  }
+
+  .colouring-note {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 6mm;
+  }
+
+  html,
+  body {
+    width: 210mm;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+
+  body > *:not(.colouring-print-area) {
+    display: none !important;
+  }
+
+  .colouring-print-area {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+
+  .colouring-sheet {
+    display: grid;
+  }
+
+  body[data-print-sheet] .colouring-sheet {
+    display: none;
+  }
+
+  body[data-print-sheet] .colouring-sheet.is-print-target {
+    display: grid;
+  }
+}

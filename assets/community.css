@@ -28,6 +28,23 @@ body {
   margin-bottom: 34px;
 }
 
+.homepage-community.is-empty {
+  padding-block: clamp(58px, 7vw, 76px);
+}
+
+.homepage-community.is-empty .learn-section-heading {
+  margin-bottom: 24px;
+}
+
+.homepage-community.is-empty .community-empty {
+  min-height: 154px;
+  padding-block: 28px;
+}
+
+.homepage-community.is-empty .community-section-actions {
+  margin-top: 20px;
+}
+
 .community-kicker {
   display: inline-flex;
   align-items: center;

@@ -21,6 +21,8 @@
   }
 
   function setEmpty(root, title, copy) {
+    var homepageSection = root.closest('.homepage-community');
+    if (homepageSection) homepageSection.classList.add('is-empty');
     root.replaceChildren();
     var card = makeElement('article', 'community-empty');
     card.append(makeElement('span', 'community-empty-mark', 'Open for submissions'));
@@ -97,6 +99,8 @@
         setEmpty(root, 'No titleholder yet.', 'The first reviewed measurements will appear here. Every published result will show how it was checked.');
         return;
       }
+      var homepageSection = root.closest('.homepage-community');
+      if (homepageSection) homepageSection.classList.remove('is-empty');
       root.replaceChildren();
       records.slice(0, safeLimit(root, records.length)).forEach(function (item) {
         renderRecord(root, item);

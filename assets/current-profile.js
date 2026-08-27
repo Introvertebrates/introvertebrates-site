@@ -26,14 +26,14 @@
       alt: "Sabrina, a Brachypelma hamorii tarantula with vivid orange knee markings",
       intro: "Sabrina is the Brachypelma hamorii currently in my care. Her collection portrait is built around the vivid orange knee markings that make her immediately recognisable.",
       gallery: [
-        { file: "sabrina-close.jpg", alt: "Sabrina resting beside cork bark with her orange knee markings visible", caption: "Sabrina · close view · 2026" },
+        { file: "sabrina-close.jpg", alt: "Close portrait of Sabrina showing her eyes, mouthparts, and orange knee markings", caption: "Face and knee markings · archive portrait" },
         { file: "sabrina-habitat.jpg", alt: "Sabrina positioned among wood and dry enclosure planting", caption: "Sabrina in her habitat · 2026" },
         { file: "sabrina-retreat.jpg", alt: "Sabrina resting at the curved entrance to her retreat", caption: "At the retreat · 2024" }
       ],
       video: { id: "IXY2w7nUmoA", title: "Meet Sabrina: My Mexican red-knee tarantula", note: "A short introduction to Sabrina and the markings that make Brachypelma hamorii so recognisable." }
     },
     "ceratogyrus-darlingi": {
-      resident: "Current resident",
+      resident: "Gunnar",
       species: "Ceratogyrus darlingi",
       group: "Tarantula",
       sex: "Confirmed male",
@@ -49,14 +49,14 @@
         { label: "Koedoe — revision and natural history of Ceratogyrus", url: "https://koedoe.co.za/index.php/koedoe/article/view/422" }
       ],
       image: "ceratogyrus-darlingi.jpg",
-      alt: "Ceratogyrus darlingi seen from above among leaf litter and enclosure structure",
-      intro: "This Ceratogyrus darlingi is part of the current Introvertebrates collection. The updated portrait shows the animal among leaf litter and enclosure structure.",
+      alt: "Gunnar, a Ceratogyrus darlingi tarantula, watching from the entrance to his webbed retreat",
+      intro: "Gunnar is the Ceratogyrus darlingi currently in my care. His updated portrait brings the viewer level with the entrance to his webbed retreat.",
       gallery: [
         { file: "darlingi-retreat.jpg", alt: "Ceratogyrus darlingi partly visible within a webbed wooden retreat", caption: "Inside the retreat · 2025" },
         { file: "darlingi-overhead.jpg", alt: "Overhead view of Ceratogyrus darlingi on textured bark", caption: "Dorsal view · 2025" },
         { file: "darlingi-terrestrial.jpg", alt: "Ceratogyrus darlingi walking across pale sandy substrate", caption: "Terrestrial enclosure · 2025" }
       ],
-      video: { id: "WvyBlNpTxQI", title: "Introducing my Ceratogyrus darlingi", note: "A closer introduction to this current resident and its place in the Introvertebrates collection." }
+      video: { id: "WvyBlNpTxQI", title: "Introducing Gunnar, my Ceratogyrus darlingi", note: "A closer introduction to Gunnar and his place in the Introvertebrates collection." }
     },
     "chilobrachys-fimbriatus": {
       resident: "Current resident",
@@ -80,7 +80,7 @@
       gallery: [
         { file: "fimbriatus-webbing.jpg", alt: "Chilobrachys fimbriatus visible through dense white webbing", caption: "Dense web structure · 2025" },
         { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "At the retreat entrance · 2025" },
-        { file: "fimbriatus-detail.jpg", alt: "Close view of Chilobrachys fimbriatus surrounded by layered webbing", caption: "Webbing detail · 2025" }
+        { file: "fimbriatus-detail.jpg", alt: "Chilobrachys fimbriatus holding prey within layered white webbing", caption: "Prey and layered webbing · 2025" }
       ],
       video: { id: "iPIhIsNKUaY", title: "Rehousing my Chilobrachys fimbriatus", note: "A full rehousing video showing the animal, its retreat, and the enclosure work behind the profile." }
     },
@@ -160,7 +160,7 @@
       video: { id: "SYVBvfz9fh8", title: "Ruby’s best strikes since day one", note: "A fast collection of Ruby’s feeding responses, presented as an Introvertebrates Short." }
     },
     "grammostola-pulchripes": {
-      resident: "Current resident",
+      resident: "Runa",
       species: "Grammostola pulchripes",
       group: "Tarantula",
       sex: "Confirmed female",
@@ -177,7 +177,7 @@
       ],
       image: "grammostola-pulchripes.jpg",
       alt: "Grammostola pulchripes showing its golden knee stripes",
-      intro: "This Grammostola pulchripes is part of the current collection. Its portrait is centred on the strong golden knee bands and full-body silhouette.",
+      intro: "Runa is the Grammostola pulchripes currently in my care. Her portrait is centred on the strong golden knee bands and full-body silhouette.",
       gallery: [
         { file: "pulchripes-close.jpg", alt: "Close view of Grammostola pulchripes showing the pale bands on its legs", caption: "Golden-knee detail · 2024" },
         { file: "pulchripes-terrestrial.jpg", alt: "Grammostola pulchripes resting on reddish terrestrial substrate", caption: "Terrestrial view · 2024" },
@@ -233,7 +233,7 @@
       intro: "Sonja is the Reeves’s turtle currently in my care and the only vertebrate in the collection. Her portrait shows the striped head, expressive posture, and strong forelimbs that make her such a distinctive resident.",
       gallery: [
         { file: "sonja-close.jpg", alt: "Sonja lifting her head and forelegs toward the camera", caption: "Sonja up close · 2025" },
-        { file: "sonja-wave.jpg", alt: "Sonja facing the camera with one forefoot raised", caption: "At the glass · 2025" },
+        { file: "sonja-wave.jpg", alt: "Underwater side profile of Sonja resting above dark aquatic wood", caption: "Underwater side profile · 2025" },
         { file: "sonja-shore.jpg", alt: "Sonja resting at the planted shoreline of her enclosure", caption: "Shoreline habitat · 2025" }
       ],
       video: { id: "lEVuJhaAlNY", title: "Sonja’s new home", note: "A complete look at the home created for Sonja, the collection’s Reeves’s turtle." }
@@ -286,7 +286,7 @@
       video: { id: "ghR2QufL78U", title: "The science behind a vivarium: Belinda’s new setup", note: "A longer build and husbandry video centred on Belinda’s enclosure." }
     },
     "omothymus-violaceopes": {
-      resident: "Current resident",
+      resident: "Orion",
       species: "Omothymus violaceopes",
       group: "Tarantula",
       sex: "Confirmed male",
@@ -302,10 +302,10 @@
         { label: "Nature in Singapore — Singapore blue tarantula habitat record", url: "https://lkcnhm.nus.edu.sg/wp-content/uploads/sites/10/2023/01/NIS-2023-0008.pdf" }
       ],
       image: "omothymus-violaceopes.jpg",
-      alt: "Full-body portrait of an Omothymus violaceopes tarantula on bark",
-      intro: "This Omothymus violaceopes is part of the current collection. The profile opens with a clearer arboreal portrait that brings out the animal’s long legs and violet colour.",
+      alt: "Orion, an Omothymus violaceopes tarantula, standing vertically on bark",
+      intro: "Orion is the Omothymus violaceopes currently in my care. His profile opens with an arboreal portrait that brings out his long legs and violet colour.",
       gallery: [
-        { file: "violaceopes-full-body.jpg", alt: "Full-body view of Omothymus violaceopes on an arboreal bark surface", caption: "Full-body view · 2025" },
+        { file: "violaceopes-full-body.jpg", alt: "Macro view of Orion showing violet hairs and the eye cluster", caption: "Eyes and violet colour · 2025" },
         { file: "violaceopes-colour.jpg", alt: "Close view of Omothymus violaceopes showing violet colour on the legs", caption: "Violet leg colour · 2025" },
         { file: "violaceopes-arboreal.jpg", alt: "Omothymus violaceopes positioned vertically on bark", caption: "Arboreal posture · 2024" }
       ],
@@ -348,12 +348,12 @@
       ],
       sources: [{ label: "Morphological study of Psyttala horrida eggs and nymphs", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9696875/" }],
       image: "psyttala-horrida.jpg",
-      alt: "An adult Psyttala horrida assassin bug in an alert stance on cork bark",
-      intro: "Psyttala horrida brings a different shape and scale to the current collection. The updated portrait clearly shows an adult's dark wings, red legs, and spined thorax on cork bark.",
+      alt: "Adult Psyttala horrida assassin bug moving across the enclosure floor",
+      intro: "Psyttala horrida brings a different shape and scale to the current collection. The profile opens with an adult moving across the enclosure floor, while the gallery compares adult colour, foliage use, and the nymph stage.",
       gallery: [
-        { file: "psyttala-ground.jpg", alt: "Adult Psyttala horrida moving across leaf litter", caption: "Adult on the enclosure floor · 2025" },
-        { file: "psyttala-adult.jpg", alt: "Adult Psyttala horrida climbing beside green leaves and bark", caption: "Adult colour and form · 2024" },
-        { file: "psyttala-nymph.jpg", alt: "Psyttala horrida nymph resting on green foliage", caption: "Nymph stage · 2024" }
+        { file: "psyttala-portrait.jpg", alt: "Close dorsal portrait of adult Psyttala horrida showing black wings, red legs, and thoracic spines", caption: "Adult colour and armour · archive portrait" },
+        { file: "psyttala-foliage.jpg", alt: "Adult Psyttala horrida climbing across green foliage", caption: "Adult among foliage · archive portrait" },
+        { file: "psyttala-nymph.jpg", alt: "Orange and black Psyttala horrida nymph standing on bark", caption: "Nymph stage · 2025" }
       ],
       video: { id: "sr930b5ycrg", title: "Creating a beautiful assassin bug habitat", note: "The enclosure build and environmental thinking behind the assassin bugs in the collection." }
     },
@@ -401,7 +401,7 @@
       intro: "Siuzi is the Theraphosa apophysis currently in my care. Her updated portrait shows her moving through a naturalistic enclosure of cork and grass.",
       gallery: [
         { file: "siuzi-face.jpg", alt: "Extreme close view of Siuzi’s face and mouthparts", caption: "Face detail · 2025" },
-        { file: "siuzi-habitat.jpg", alt: "Siuzi resting among grasses and cork in her terrestrial enclosure", caption: "Habitat view · 2024" },
+        { file: "siuzi-habitat.jpg", alt: "Siuzi holding a large roach after a feeding response", caption: "Feeding response · 2025" },
         { file: "siuzi-retreat.jpg", alt: "Siuzi facing outward from beneath a cork retreat", caption: "At the retreat · 2024" }
       ],
       video: { id: "f3f4iNm1e7k", title: "When mold grows on a tarantula: A case study with Siuzi", note: "A detailed, individual case study documenting Siuzi and the response to an unusual health concern." }
@@ -587,17 +587,17 @@
 
   const collectionStories = {
     "sabrina-brachypelma-hamorii": "Sabrina is the individual behind this profile. Her orange knee bands make her easy to recognise across the collection, while her own feeding and molt history remains distinct from published species-level information.",
-    "ceratogyrus-darlingi": "This resident gives the Introvertebrates collection a living record of Ceratogyrus darlingi. The profile will continue to bring together verified species information, the introduction video, and observations recorded through the Codex.",
+    "ceratogyrus-darlingi": "Gunnar gives the Introvertebrates collection a living record of Ceratogyrus darlingi. His profile brings together verified species information, the introduction video, and observations recorded through the Codex.",
     "chilobrachys-fimbriatus": "This individual has produced the dense webbed retreat documented in the collection photography and rehousing video. Those records describe this animal’s behaviour in my care without turning one resident’s choices into universal care claims.",
     "chilobrachys-kaeng-krachan": "This is the individual kept under the hobby designation Chilobrachys sp. “Kaeng Krachan.” Its paludarium build, feeding records, and future photographs form a personal record while the profile remains transparent about the unresolved formal identity.",
     "elvira-chilobrachys-natanicharum": "Elvira is the individual behind this profile. Her collection record connects the recently described electric-blue species with a named resident whose feeding, molts, and development can be followed over time.",
     "ruby-chromatopelma-cyaneopubescens": "Ruby is one of the most visually distinctive residents in the collection. Her feeding-response video and Codex history give the profile an individual story alongside the accepted taxonomy and range of Chromatopelma cyaneopubescens.",
-    "grammostola-pulchripes": "This resident represents Grammostola pulchripes in the current collection. The recognisable golden leg bands make the animal easy to follow visually, while the Codex separates personal observations from general species information.",
+    "grammostola-pulchripes": "Runa represents Grammostola pulchripes in the current collection. Her recognisable golden leg bands make her easy to follow visually, while the Codex separates personal observations from general species information.",
     "linothele-fallax": "This Linothele fallax broadens the collection beyond tarantulas. Its curtain-web spider identity, patterned abdomen, feeding video, and keeper record give the profile a different biological and visual character from the theraphosid residents.",
     "sonja-mauremys-reevesii": "Sonja is the only vertebrate in the current collection. Her profile follows her as an individual—from the home shown in the accompanying video to the measurements and observations selected from her Codex record—while keeping turtle biology separate from the spider profiles.",
     "bella-monocentropus-balfouri": "Bella is one of two Monocentropus balfouri in my care. Her record remains separate from Belinda’s so that photographs, feeding outcomes, molts, and future observations continue to describe the correct individual.",
     "belinda-monocentropus-balfouri": "Belinda has her own profile because a shared species does not mean a shared history. Her vivarium video and Codex record document her as an individual, independently from Bella’s photographs and observations.",
-    "omothymus-violaceopes": "This resident represents Omothymus violaceopes in the current collection. The profile connects the species’ accepted modern name with an individual record that can grow through verified observations, photographs, and video.",
+    "omothymus-violaceopes": "Orion represents Omothymus violaceopes in the current collection. His profile connects the species’ accepted modern name with an individual record that can grow through verified observations, photographs, and video.",
     "clara-psalmopoeus-irminia": "Clara is the individual behind this profile. Her foliage-rich enclosure photography and personal Codex record add a keeper’s view to the documented range and taxonomy of Psalmopoeus irminia.",
     "psyttala-horrida": "This assassin bug colony brings predatory insects into the collection. The profile follows the colony as a living group record, with habitat, feeding observations, and photography kept distinct from published species-level research.",
     "pachnoda-marginata": "This Pachnoda marginata colony represents beetles in the current collection. Its group photography and Codex history can document feeding and colony development while the profile expands into life cycle and natural-history research.",
@@ -655,7 +655,7 @@
           <nav class="breadcrumbs" aria-label="Breadcrumb">
             <a href="../collection.html">Current collection</a><span aria-hidden="true">/</span><span>Profile</span>
           </nav>
-          <p class="eyebrow">Species profile · Current resident</p>
+          <p class="eyebrow">Species profile · ${profile.resident}</p>
           <h1 id="profile-title"><i>${profile.species}</i></h1>
           <p class="common-name">${subtitle}</p>
           <p class="species-lede">${profile.intro}</p>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Ukas dyr | Kryp &amp; Krabater</title>
+  <meta name="description" content="{{ page.description | default: page.intro | strip_html | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | escape }} | Kryp &amp; Krabater">
+  <meta property="og:description" content="{{ page.description | default: page.intro | strip_html | escape }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:image:alt" content="{{ page.image_alt | escape }}">
+  <meta property="og:site_name" content="Introvertebrates">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | escape }} | Kryp &amp; Krabater">
+  <meta name="twitter:description" content="{{ page.description | default: page.intro | strip_html | escape }}">
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+  <meta name="twitter:image:alt" content="{{ page.image_alt | escape }}">
+  <meta name="theme-color" content="#031018">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.description | default: page.intro | strip_html | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "inLanguage": "no",
+      "url": {{ page.url | absolute_url | jsonify }},
+      "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+      "image": {{ page.image | absolute_url | jsonify }},
+      "author": {"@type": "Person", "name": "Erlend Knudsen"},
+      "publisher": {"@type": "Organization", "name": "Introvertebrates", "url": "https://introvertebrates.com/"},
+      "isPartOf": {"@type": "CollectionPage", "name": "Ukas dyr", "url": "https://introvertebrates.com/kryp-ukearkiv.html"}
+    }
+  </script>
+  <link rel="stylesheet" href="{{ '/assets/homepage.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/kryp.css?v=20260826b' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/kryp-weekly.css?v=20260828a' | relative_url }}">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Hopp til innhold</a>
+<header class="site-header"><div class="header-inner shell"><a class="brand" href="{{ '/' | relative_url }}" aria-label="Introvertebrates forside"><img src="{{ '/Only spider.png' | relative_url }}" alt="" width="500" height="500"><span>Introvertebrates</span></a><nav class="site-nav" aria-label="Hovednavigasjon"><a href="{{ '/collection.html' | relative_url }}">Collection</a><a href="{{ '/learn.html' | relative_url }}">Learn</a><a href="{{ '/research.html' | relative_url }}">Research</a><a href="{{ '/community.html' | relative_url }}">Community</a><a href="{{ '/kryp-og-krabater.html' | relative_url }}" aria-current="page" aria-label="Kryp &amp; Krabater">Kryp</a></nav></div></header>
+
+<main class="kryp-page" id="main-content">
+  <nav class="kryp-local-nav" aria-label="Kryp &amp; Krabater-seksjoner"><div class="kryp-local-inner kryp-shell"><a class="kryp-wordmark" href="{{ '/kryp-og-krabater.html' | relative_url }}">Kryp <span>&amp;</span> Krabater</a><div class="kryp-local-links"><a href="{{ '/kryp-og-krabater.html' | relative_url }}#animal-world">Dyreverden</a><a href="{{ '/kryp-ukearkiv.html' | relative_url }}" aria-current="page">Ukas dyr</a><a href="{{ '/kryp-artsprofiler.html' | relative_url }}">Artsprofiler</a><a href="{{ '/kryp-fargelegging.html' | relative_url }}">Fargelegging</a><a href="{{ '/kryp-og-krabater.html' | relative_url }}#stories">Fortellinger</a><a href="{{ '/kryp-og-krabater.html' | relative_url }}#about-kryp">Om prosjektet</a></div></div></nav>
+
+  <article>
+    <header class="kryp-weekly-article-hero">
+      <div class="kryp-shell">
+        <nav class="kryp-weekly-breadcrumbs" aria-label="Brødsmuler"><a href="{{ '/kryp-og-krabater.html' | relative_url }}">Kryp &amp; Krabater</a><span aria-hidden="true">/</span><a href="{{ '/kryp-ukearkiv.html' | relative_url }}">Ukas dyr</a><span aria-hidden="true">/</span><span>{{ page.title }}</span></nav>
+        <div class="kryp-weekly-article-grid">
+          <figure class="kryp-weekly-article-media"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}" width="1800" height="1200" fetchpriority="high"><figcaption>{{ page.image_caption | default: page.image_alt }}</figcaption></figure>
+          <div><p class="kryp-eyebrow">{{ page.date_label }}</p><h1>{{ page.title }}</h1><p>{{ page.intro }}</p><div class="kryp-weekly-question"><img src="{{ '/Tina – No background.png' | relative_url }}" alt="" width="2500" height="2500"><p><strong>Tina spør:</strong> {{ page.question }}</p></div></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="kryp-section">
+      <div class="kryp-shell kryp-weekly-article-body">
+        <div class="kryp-weekly-prose">{{ content }}</div>
+        <aside class="kryp-weekly-aside" aria-label="Fortsett å utforske"><p class="kryp-eyebrow">Neste spor</p><h2>Vil du se nærmere?</h2><p>Følg dyresporet som passer til ukas tema, eller gå tilbake og oppdag tidligere dyr.</p><div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ page.link_url | relative_url }}">{{ page.link_label }} <span aria-hidden="true">→</span></a><a class="kryp-button" href="{{ '/kryp-ukearkiv.html' | relative_url }}">Se hele arkivet</a></div></aside>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer class="site-footer"><div class="footer-inner shell"><span>© 2026 Introvertebrates</span><nav class="footer-links" aria-label="Bunnavigasjon"><a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/kryp-og-krabater.html' | relative_url }}">Kryp &amp; Krabater</a><a href="{{ '/kryp-ukearkiv.html' | relative_url }}">Ukas dyr</a><a href="{{ '/kryp-artsprofiler.html' | relative_url }}">Artsprofiler</a><a href="{{ '/kryp-fargelegging.html' | relative_url }}">Fargelegging</a><a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a><a href="mailto:erlend@introvertebrates.com">Kontakt</a></nav></div></footer>
+</body>
+</html>

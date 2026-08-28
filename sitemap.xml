@@ -11,6 +11,8 @@
   <url><loc>https://introvertebrates.com/spider-health.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-og-krabater.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-artsprofiler.html</loc></url>
+  <url><loc>https://introvertebrates.com/kryp-fargelegging.html</loc></url>
+  <url><loc>https://introvertebrates.com/kryp-ukearkiv.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-spor-norsk-villmark.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-spor-hav-og-himmel.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-spor-reptiler.html</loc></url>
@@ -40,6 +42,10 @@
 
 {% assign research_items = site.research | sort: "source_date" | reverse %}
 {% for post in research_items %}
+  <url><loc>{{ post.url | absolute_url }}</loc></url>
+{% endfor %}
+{% assign weekly_items = site.kryp_weekly | sort: "date" | reverse %}
+{% for post in weekly_items %}
   <url><loc>{{ post.url | absolute_url }}</loc></url>
 {% endfor %}
 </urlset>

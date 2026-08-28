@@ -7,6 +7,9 @@ collections:
   research:
     output: true
     permalink: /research/:name/
+  kryp_weekly:
+    output: true
+    permalink: /kryp/ukas-dyr/:name/
 
 defaults:
   - scope:
@@ -14,3 +17,8 @@ defaults:
       type: research
     values:
       layout: research_article
+  - scope:
+      path: ""
+      type: kryp_weekly
+    values:
+      layout: kryp_weekly_article

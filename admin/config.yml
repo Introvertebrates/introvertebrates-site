@@ -13,21 +13,29 @@ display_url: https://introvertebrates.com
 
 collections:
   - name: "kryp_weekly"
-    label: "Kryp & Krabater · Weekly feature"
-    files:
-      - label: "Current weekly feature"
-        name: "current"
-        file: "_data/kryp_weekly.yml"
-        fields:
-          - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "D MMMM YYYY", time_format: false }
-          - { label: "Short date label", name: "date_label", widget: "string", hint: "For example: Uke 34 · nytt hver uke" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Introduction", name: "intro", widget: "text" }
-          - { label: "Tina's question", name: "question", widget: "text" }
-          - { label: "Image", name: "image", widget: "image", hint: "Use only an image you own; a 3:2 landscape crop works best." }
-          - { label: "Image alt text", name: "image_alt", widget: "string" }
-          - { label: "Link", name: "link_url", widget: "string" }
-          - { label: "Link label", name: "link_label", widget: "string" }
+    label: "Kryp & Krabater · Ukas dyr"
+    label_singular: "Ukas dyr-artikkel"
+    folder: "_kryp_weekly"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    preview_path: "kryp/ukas-dyr/{{slug}}"
+    summary: "{{date}} · {{title}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "kryp_weekly_article" }
+      - { label: "Tittel", name: "title", widget: "string" }
+      - { label: "Kort beskrivelse", name: "description", widget: "text", hint: "Brukes av Google og når artikkelen deles." }
+      - { label: "Publiseringsdato", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss ZZ", date_format: "D. MMMM YYYY", time_format: "HH:mm" }
+      - { label: "Synlig ukemerke", name: "date_label", widget: "string", hint: "For eksempel: Uke 35 · 30. august 2026" }
+      - { label: "Kort introduksjon", name: "intro", widget: "text" }
+      - { label: "Tinas spørsmål", name: "question", widget: "text" }
+      - { label: "Hovedbilde", name: "image", widget: "image", hint: "Bruk bare et bilde Erlend eier. Et liggende 3:2-bilde fungerer best." }
+      - { label: "Alternativ bildetekst", name: "image_alt", widget: "string" }
+      - { label: "Bildetekst", name: "image_caption", widget: "string", required: false }
+      - { label: "Videre lenke", name: "link_url", widget: "string", hint: "For eksempel: /kryp-spor-krypenes-verden.html" }
+      - { label: "Lenketekst", name: "link_label", widget: "string" }
+      - { label: "Artikkel", name: "body", widget: "markdown" }
 
   - name: "research"
     label: "Research Updates"

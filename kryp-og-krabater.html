@@ -1,5 +1,7 @@
 ---
 ---
+{% assign weekly_entries = site.kryp_weekly | sort: "date" | reverse %}
+{% assign weekly = weekly_entries | first %}
 <!DOCTYPE html>
 <html lang="no">
 <head>
@@ -36,7 +38,7 @@
   <nav class="kryp-local-nav" aria-label="Kryp &amp; Krabater-seksjoner">
     <div class="kryp-local-inner kryp-shell">
       <a class="kryp-wordmark" href="#top">Kryp <span>&amp;</span> Krabater</a>
-      <div class="kryp-local-links"><a href="#tina-tarantell">Møt Tina</a><a href="#ukas-oppdrag">Ukas oppdrag</a><a href="#animal-world">Dyreverden</a><a href="kryp-artsprofiler.html">Artsprofiler</a><a href="kryp-fargelegging.html">Fargelegging</a><a href="#stories">Fortellinger</a><a href="#about-kryp">Om prosjektet</a><a href="index.html">Til Introvertebrates</a></div>
+      <div class="kryp-local-links"><a href="#tina-tarantell">Møt Tina</a><a href="#ukas-oppdrag">Ukas dyr</a><a href="kryp-ukearkiv.html">Ukearkiv</a><a href="#animal-world">Dyreverden</a><a href="kryp-artsprofiler.html">Artsprofiler</a><a href="kryp-fargelegging.html">Fargelegging</a><a href="#stories">Fortellinger</a><a href="#about-kryp">Om prosjektet</a><a href="index.html">Til Introvertebrates</a></div>
     </div>
   </nav>
 
@@ -69,17 +71,17 @@
   <section class="kryp-section kryp-weekly" id="ukas-oppdrag" aria-labelledby="weekly-title">
     <div class="kryp-shell kryp-weekly-card">
       <figure class="kryp-weekly-media">
-        <img src="{{ site.data.kryp_weekly.image }}" alt="{{ site.data.kryp_weekly.image_alt }}" width="1800" height="1200" loading="lazy" decoding="async">
+        <img src="{{ weekly.image | relative_url }}" alt="{{ weekly.image_alt | escape }}" width="1800" height="1200" loading="lazy" decoding="async">
       </figure>
       <div class="kryp-weekly-copy">
-        <p class="kryp-eyebrow">{{ site.data.kryp_weekly.date_label }}</p>
-        <h2 id="weekly-title">{{ site.data.kryp_weekly.title }}</h2>
-        <p>{{ site.data.kryp_weekly.intro }}</p>
+        <p class="kryp-eyebrow">{{ weekly.date_label }}</p>
+        <h2 id="weekly-title">{{ weekly.title }}</h2>
+        <p>{{ weekly.intro }}</p>
         <div class="kryp-weekly-question">
           <img src="Tina – No background.png" alt="" width="2500" height="2500" loading="lazy" decoding="async">
-          <p><strong>Tina spør:</strong> {{ site.data.kryp_weekly.question }}</p>
+          <p><strong>Tina spør:</strong> {{ weekly.question }}</p>
         </div>
-        <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ site.data.kryp_weekly.link_url }}">{{ site.data.kryp_weekly.link_label }} <span aria-hidden="true">→</span></a></div>
+        <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ weekly.url | relative_url }}">Les hele ukas dyr <span aria-hidden="true">→</span></a><a class="kryp-button" href="kryp-ukearkiv.html">Se ukearkivet</a></div>
       </div>
     </div>
   </section>
@@ -119,7 +121,7 @@
 
   <section class="kryp-section kryp-colouring-preview" aria-labelledby="colouring-preview-title">
     <div class="kryp-shell kryp-story">
-      <div class="kryp-story-media kryp-colouring-media"><img src="assets/kryp/colouring/sonja-mauremys-reevesii.png" alt="Realistisk fargeleggingsillustrasjon av Sonja" width="1024" height="1536" loading="lazy" decoding="async"><img src="assets/kryp/colouring/siuzi-theraphosa-apophysis.png" alt="Realistisk fargeleggingsillustrasjon av Siuzi" width="1024" height="1536" loading="lazy" decoding="async"></div>
+      <div class="kryp-story-media kryp-colouring-media"><img src="assets/kryp/colouring/sonja-mauremys-reevesii.jpg" alt="Realistisk fargeleggingsillustrasjon av Sonja" width="1055" height="1491" loading="lazy" decoding="async"><img src="assets/kryp/colouring/siuzi-theraphosa-apophysis.jpg" alt="Realistisk fargeleggingsillustrasjon av Siuzi" width="1055" height="1491" loading="lazy" decoding="async"></div>
       <div class="kryp-story-copy"><p class="kryp-eyebrow">Nytt · skriv ut hjemme</p><h2 id="colouring-preview-title">Møt dyret med fargestiftene.</h2><p>Realistiske A4-ark er laget med fotografier av de virkelige dyrene som utgangspunkt. Navn, art og Introvertebrates-merke følger med på utskriften.</p><div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="kryp-fargelegging.html">Velg et fargeleggingsark <span aria-hidden="true">→</span></a></div></div>
     </div>
   </section>
@@ -164,6 +166,6 @@
   </section>
 </main>
 
-<footer class="site-footer"><div class="footer-inner shell"><span>© 2026 Introvertebrates</span><nav class="footer-links" aria-label="Bunnavigasjon"><a href="index.html">Home</a><a href="collection.html">Collection</a><a href="learn.html">Learn</a><a href="research.html">Research</a><a href="community.html">Community</a><a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="mailto:erlend@introvertebrates.com">Kontakt</a></nav></div></footer>
+<footer class="site-footer"><div class="footer-inner shell"><span>© 2026 Introvertebrates</span><nav class="footer-links" aria-label="Bunnavigasjon"><a href="index.html">Home</a><a href="kryp-ukearkiv.html">Ukas dyr</a><a href="collection.html">Collection</a><a href="learn.html">Learn</a><a href="research.html">Research</a><a href="community.html">Community</a><a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="mailto:erlend@introvertebrates.com">Kontakt</a></nav></div></footer>
 </body>
 </html>

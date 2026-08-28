@@ -1,5 +1,19 @@
 [
   {
+    "title": "A spider and its web may work together like a gyroscope",
+    "description": "Experiments and simulations suggest that an orb-weaver’s body movements and web architecture together provide clues about where prey struck.",
+    "category": "Behavior",
+    "posted_date": "28 August 2026",
+    "source_date": "19 August 2026",
+    "summary": "Experiments, mechanical tests and simulations involving adult female Argiope trifasciata found that prey impacts produce characteristic pitch-and-roll movements in the spider’s body. The web’s architecture may turn these whole-body motions into clues about impact location.",
+    "why_it_matters": "The result reframes an orb web as more than a passive trap or enlarged vibration sensor. Some useful information may be organized mechanically by the combined spider-web system before the nervous system interprets it.",
+    "source_url": "https://doi.org/10.1038/s41598-026-66753-1",
+    "source_name": "Scientific Reports",
+    "slug": "spider-and-web-mechanical-gyroscope-prey-sensing",
+    "url": "research/spider-and-web-mechanical-gyroscope-prey-sensing/",
+    "has_body": true
+  },
+  {
     "title": "Hunting style helps explain how spider eye arrangements evolved",
     "description": "A plain-language Introvertebrates summary of a Current Biology study linking spider hunting ecology to repeated changes in eye orientation.",
     "category": "Behavior",

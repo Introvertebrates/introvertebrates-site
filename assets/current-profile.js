@@ -127,7 +127,7 @@
       alt: "Close portrait of Elvira, a Chilobrachys natanicharum tarantula",
       intro: "Elvira is the Chilobrachys natanicharum currently in my care. Her profile portrait uses the darkness of the retreat to isolate the eyes and carapace.",
       gallery: [
-        { file: "elvira-blue-detail.jpg", alt: "Elvira showing electric-blue colour on her legs within the webbed retreat", caption: "Electric-blue detail · 2024" },
+        { file: "elvira-blue-detail.jpg", alt: "Close portrait of Elvira showing violet-blue structural colour on her raised legs", caption: "Electric-blue detail · close view" },
         { file: "elvira-retreat.jpg", alt: "Elvira positioned at the edge of a heavily webbed retreat", caption: "At the retreat · 2024" },
         { file: "elvira-full-body.jpg", alt: "Full-body view of Elvira against moss and dark substrate", caption: "Full-body view · 2024" }
       ],
@@ -281,7 +281,7 @@
         { label: "ZooKeys — integrative revision of Monocentropus and Socotran habitat", url: "https://www.utupub.fi/server/api/core/bitstreams/4830c6e0-07a8-40bd-8c91-e7e034e76598/content" }
       ],
       image: "belinda-monocentropus-balfouri.jpg",
-      alt: "Belinda, a Monocentropus balfouri tarantula, clearly visible across webbed cork",
+      alt: "Close portrait of Belinda, a Monocentropus balfouri tarantula, showing blue legs and cream markings among webbed cork",
       intro: "Belinda is the second Monocentropus balfouri currently in my care. Her updated portrait clearly shows her blue and cream colouring across webbed cork.",
       video: { id: "ghR2QufL78U", title: "The science behind a vivarium: Belinda’s new setup", note: "A longer build and husbandry video centred on Belinda’s enclosure." }
     },

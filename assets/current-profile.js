@@ -49,11 +49,11 @@
         { label: "Koedoe — revision and natural history of Ceratogyrus", url: "https://koedoe.co.za/index.php/koedoe/article/view/422" }
       ],
       image: "ceratogyrus-darlingi.jpg",
-      alt: "Gunnar, a Ceratogyrus darlingi tarantula, watching from the entrance to his webbed retreat",
-      intro: "Gunnar is the Ceratogyrus darlingi currently in my care. His updated portrait brings the viewer level with the entrance to his webbed retreat.",
+      alt: "Gunnar, a Ceratogyrus darlingi tarantula, fully visible on pale sandy substrate",
+      intro: "Gunnar is the Ceratogyrus darlingi currently in my care. His updated portrait shows his full build and mature-male proportions in the open.",
       gallery: [
         { file: "darlingi-retreat.jpg", alt: "Ceratogyrus darlingi partly visible within a webbed wooden retreat", caption: "Inside the retreat · 2025" },
-        { file: "darlingi-overhead.jpg", alt: "Overhead view of Ceratogyrus darlingi on textured bark", caption: "Dorsal view · 2025" },
+        { file: "darlingi-overhead.jpg", alt: "Close frontal view of Ceratogyrus darlingi on pale sandy substrate", caption: "Close frontal view · 2025" },
         { file: "darlingi-terrestrial.jpg", alt: "Ceratogyrus darlingi walking across pale sandy substrate", caption: "Terrestrial enclosure · 2025" }
       ],
       video: { id: "WvyBlNpTxQI", title: "Introducing Gunnar, my Ceratogyrus darlingi", note: "A closer introduction to Gunnar and his place in the Introvertebrates collection." }
@@ -75,12 +75,12 @@
         { label: "Frontiers in Arachnid Science — distribution and natural history of Chilobrachys", url: "https://www.frontiersin.org/journals/arachnid-science/articles/10.3389/frchs.2025.1598438/full" }
       ],
       image: "chilobrachys-fimbriatus.jpg",
-      alt: "Chilobrachys fimbriatus facing the camera at the entrance to its webbed retreat",
-      intro: "This Chilobrachys fimbriatus is part of the current collection. Its updated portrait shows the whole animal at the entrance to its dense, silk-lined retreat.",
+      alt: "Chilobrachys fimbriatus feeding on a cockroach within dense white webbing",
+      intro: "This Chilobrachys fimbriatus is part of the current collection. Its updated portrait records a feeding moment inside the dense, silk-lined retreat.",
       gallery: [
         { file: "fimbriatus-webbing.jpg", alt: "Chilobrachys fimbriatus visible through dense white webbing", caption: "Dense web structure · 2025" },
         { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "At the retreat entrance · 2025" },
-        { file: "fimbriatus-detail.jpg", alt: "Chilobrachys fimbriatus holding prey within layered white webbing", caption: "Prey and layered webbing · 2025" }
+        { file: "fimbriatus-detail.jpg", alt: "Chilobrachys fimbriatus partly visible among leaf litter at its retreat entrance", caption: "Leaf-litter retreat · 2025" }
       ],
       video: { id: "iPIhIsNKUaY", title: "Rehousing my Chilobrachys fimbriatus", note: "A full rehousing video showing the animal, its retreat, and the enclosure work behind the profile." }
     },
@@ -836,7 +836,7 @@
         metricsElement.replaceChildren(...codexProfile.metrics.map(renderMetric));
         metricsElement.hidden = false;
         const sampleText = `${codexProfile.sampleSize} Codex record${codexProfile.sampleSize === 1 ? "" : "s"}`;
-        const updated = data.generatedAt ? new Intl.DateTimeFormat("en", { month: "long", year: "numeric" }).format(new Date(data.generatedAt)) : null;
+        const updated = data.generatedAt ? new Intl.DateTimeFormat("en", { day: "numeric", month: "long", year: "numeric" }).format(new Date(data.generatedAt)) : null;
         statusElement.textContent = updated ? `Privacy-reviewed snapshot · ${sampleText} · updated ${updated}.` : `Privacy-reviewed snapshot · ${sampleText}.`;
       })
       .catch(() => {

@@ -328,7 +328,7 @@
 
       grid.replaceChildren(...highlights.map(renderHighlight));
       const updated = data.generatedAt
-        ? new Intl.DateTimeFormat("en", { month: "long", year: "numeric" }).format(new Date(data.generatedAt))
+        ? new Intl.DateTimeFormat("en", { day: "numeric", month: "long", year: "numeric" }).format(new Date(data.generatedAt))
         : null;
       status.textContent = updated
         ? `Privacy-reviewed snapshot · updated ${updated}. No private notes, IDs, contacts, or exact event dates are published.`

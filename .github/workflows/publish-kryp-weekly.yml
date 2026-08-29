@@ -1,0 +1,44 @@
+name: Publish Kryp & Krabater weekly animal
+
+on:
+  schedule:
+    - cron: "15 7 * * 5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kryp-weekly-publishing
+  cancel-in-progress: false
+
+jobs:
+  publish-next:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the website
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Publish the next queued article
+        run: node tools/publish-next-kryp-weekly.mjs
+
+      - name: Check local links and assets
+        run: node tools/check-local-references.mjs
+
+      - name: Commit the weekly article when the queue changed
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No queued article was available."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _kryp_weekly _kryp_weekly_queue
+          git commit -m "Publish Kryp & Krabater weekly animal"
+          git push

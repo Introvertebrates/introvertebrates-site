@@ -6,7 +6,7 @@ Each weekly article lives permanently in `_kryp_weekly/`. Jekyll sorts the colle
 
 The site keeps pre-approved articles in `_kryp_weekly_queue/`. At 07:15 UTC every Friday (08:15 in Norwegian winter time and 09:15 in summer time), `.github/workflows/publish-kryp-weekly.yml` runs `tools/publish-next-kryp-weekly.mjs`.
 
-The script takes the alphabetically first queued file, adds the current Oslo date and week label, moves it into `_kryp_weekly/`, checks its local image and destination link, and commits the change. GitHub Pages then rebuilds the site. If the queue is empty, the workflow exits without publishing filler.
+The script takes the alphabetically first queued file, adds the current Oslo date and week label, moves it into `_kryp_weekly/`, checks its local image and destination link, and commits the change. The workflow then requests a GitHub Pages rebuild explicitly, because a commit created with the workflow token does not trigger that rebuild on its own. If the queue is empty, the workflow exits without publishing filler.
 
 Queue filenames begin with a three-digit order such as `001-`. Keep at least four verified entries ready so there is time to review the next month of articles. Every queued article must use an Introvertebrates-owned image and contain claims that are appropriate for a young Norwegian audience.
 

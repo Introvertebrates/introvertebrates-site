@@ -53,7 +53,7 @@
       intro: "Gunnar is the Ceratogyrus darlingi currently in my care. His updated portrait shows his full build and mature-male proportions in the open.",
       gallery: [
         { file: "darlingi-retreat.jpg", alt: "Ceratogyrus darlingi partly visible within a webbed wooden retreat", caption: "Inside the retreat · 2025" },
-        { file: "darlingi-overhead.jpg", alt: "Close frontal view of Ceratogyrus darlingi on pale sandy substrate", caption: "Close frontal view · 2025" },
+        { file: "darlingi-overhead.jpg", alt: "Rear three-quarter view of Gunnar, a Ceratogyrus darlingi, on pale sandy substrate", caption: "Rear three-quarter view · 2025" },
         { file: "darlingi-terrestrial.jpg", alt: "Ceratogyrus darlingi walking across pale sandy substrate", caption: "Terrestrial enclosure · 2025" }
       ],
       video: { id: "WvyBlNpTxQI", title: "Introducing Gunnar, my Ceratogyrus darlingi", note: "A closer introduction to Gunnar and his place in the Introvertebrates collection." }
@@ -79,8 +79,7 @@
       intro: "This Chilobrachys fimbriatus is part of the current collection. Its updated portrait records a feeding moment inside the dense, silk-lined retreat.",
       gallery: [
         { file: "fimbriatus-webbing.jpg", alt: "Chilobrachys fimbriatus visible through dense white webbing", caption: "Dense web structure · 2025" },
-        { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "At the retreat entrance · 2025" },
-        { file: "fimbriatus-detail.jpg", alt: "Chilobrachys fimbriatus partly visible among leaf litter at its retreat entrance", caption: "Leaf-litter retreat · 2025" }
+        { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "At the retreat entrance · 2025" }
       ],
       video: { id: "iPIhIsNKUaY", title: "Rehousing my Chilobrachys fimbriatus", note: "A full rehousing video showing the animal, its retreat, and the enclosure work behind the profile." }
     },
@@ -128,8 +127,8 @@
       intro: "Elvira is the Chilobrachys natanicharum currently in my care. Her profile portrait uses the darkness of the retreat to isolate the eyes and carapace.",
       gallery: [
         { file: "elvira-blue-detail.jpg", alt: "Close portrait of Elvira showing violet-blue structural colour on her raised legs", caption: "Electric-blue detail · close view" },
-        { file: "elvira-retreat.jpg", alt: "Elvira positioned at the edge of a heavily webbed retreat", caption: "At the retreat · 2024" },
-        { file: "elvira-full-body.jpg", alt: "Full-body view of Elvira against moss and dark substrate", caption: "Full-body view · 2024" }
+        { file: "elvira-retreat.jpg", alt: "Full-body view of Elvira against moss and dark substrate", caption: "Full-body view · 2024" },
+        { file: "elvira-full-body.jpg", alt: "Elvira positioned at the edge of a heavily webbed retreat", caption: "At the retreat · 2024" }
       ],
       video: { id: "V_QQOjU2T28", title: "Chilobrachys natanicharum: The most beautiful tarantula", note: "A species-focused look at the electric-blue tarantula represented in the collection by Elvira." }
     },
@@ -295,19 +294,21 @@
       taxonomicStatus: "Accepted species",
       naturalHistory: [
         "Omothymus violaceopes is an accepted theraphosid recorded from Peninsular Malaysia and Singapore. It was originally described under a different generic placement and has appeared in older literature and the hobby as Lampropelma violaceopes.",
-        "The current profile follows Omothymus, the combination accepted by the World Spider Catalog. That naming history is worth preserving because older videos, labels, and care discussions may still use the former genus."
+        "The current profile follows Omothymus, the combination accepted by the World Spider Catalog. That naming history is worth preserving because older videos, labels, and care discussions may still use the former genus.",
+        "The species is strongly sexually dimorphic at maturity. Females and juveniles retain the familiar violet-blue colour, while mature males become much browner and more slender. Orion is a confirmed male; the violet photographs on this page document his appearance when they were taken, not the adult female form."
       ],
       sources: [
         { label: "World Spider Catalog — genus Omothymus", url: "https://www.wsc.nmbe.ch/genus/5543" },
-        { label: "Nature in Singapore — Singapore blue tarantula habitat record", url: "https://lkcnhm.nus.edu.sg/wp-content/uploads/sites/10/2023/01/NIS-2023-0008.pdf" }
+        { label: "Nature in Singapore — Singapore blue tarantula habitat record", url: "https://lkcnhm.nus.edu.sg/wp-content/uploads/sites/10/2023/01/NIS-2023-0008.pdf" },
+        { label: "SpiderNet — mature-male colour and species account", url: "https://spidernet.bay.to/species/omothymus-violaceopes" }
       ],
       image: "omothymus-violaceopes.jpg",
       alt: "Orion, an Omothymus violaceopes tarantula, standing vertically on bark",
-      intro: "Orion is the Omothymus violaceopes currently in my care. His profile opens with an arboreal portrait that brings out his long legs and violet colour.",
+      intro: "Orion is the confirmed male Omothymus violaceopes in the collection. His photographs show his violet colour at the time they were taken; mature males become much browner and more slender than females and juveniles.",
       gallery: [
-        { file: "violaceopes-full-body.jpg", alt: "Macro view of Orion showing violet hairs and the eye cluster", caption: "Eyes and violet colour · 2025" },
-        { file: "violaceopes-colour.jpg", alt: "Close view of Omothymus violaceopes showing violet colour on the legs", caption: "Violet leg colour · 2025" },
-        { file: "violaceopes-arboreal.jpg", alt: "Omothymus violaceopes positioned vertically on bark", caption: "Arboreal posture · 2024" }
+        { file: "violaceopes-arboreal.jpg", alt: "Full-body view of Orion positioned vertically on bark", caption: "Long-legged arboreal posture · 2024" },
+        { file: "violaceopes-colour.jpg", alt: "Sharp close view of Orion showing his eye cluster and violet colour on the legs", caption: "Eye cluster and violet colour · 2025" },
+        { file: "violaceopes-full-body.jpg", alt: "Extreme macro view of violet and golden setae on Orion", caption: "Violet and golden setae · 2025" }
       ],
       video: { id: "UPEjF670oIA", title: "Meet Omothymus violaceopes: The stunning blue tarantula", note: "A species-focused introduction to the Singapore blue tarantula." }
     },
@@ -349,11 +350,11 @@
       sources: [{ label: "Morphological study of Psyttala horrida eggs and nymphs", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9696875/" }],
       image: "psyttala-horrida.jpg",
       alt: "Adult Psyttala horrida assassin bug moving across the enclosure floor",
-      intro: "Psyttala horrida brings a different shape and scale to the current collection. The profile opens with an adult moving across the enclosure floor, while the gallery compares adult colour, foliage use, and the nymph stage.",
+      intro: "Psyttala horrida brings a different shape and scale to the current collection. The profile opens with an adult moving across the enclosure floor, while the gallery compares the bright nymph stage with adult foliage and ground use.",
       gallery: [
-        { file: "psyttala-portrait.jpg", alt: "Close dorsal portrait of adult Psyttala horrida showing black wings, red legs, and thoracic spines", caption: "Adult colour and armour · archive portrait" },
+        { file: "psyttala-nymph.jpg", alt: "Orange and black Psyttala horrida nymph showing its developing armour and wingless body", caption: "Nymph colour and developing armour · 2025" },
         { file: "psyttala-foliage.jpg", alt: "Adult Psyttala horrida climbing across green foliage", caption: "Adult among foliage · archive portrait" },
-        { file: "psyttala-nymph.jpg", alt: "Orange and black Psyttala horrida nymph standing on bark", caption: "Nymph stage · 2025" }
+        { file: "psyttala-ground.jpg", alt: "Adult Psyttala horrida moving across the enclosure floor", caption: "Adult on the enclosure floor · 2025" }
       ],
       video: { id: "sr930b5ycrg", title: "Creating a beautiful assassin bug habitat", note: "The enclosure build and environmental thinking behind the assassin bugs in the collection." }
     },
@@ -466,7 +467,7 @@
     },
     "omothymus-violaceopes": {
       lifestyle: "An arboreal Southeast Asian tarantula associated with elevated retreats in trees. A vertical profile, cover, and access routes matter more than open floor area alone.",
-      standout: "Violet-blue tones on the legs are most apparent under directional light. The animal's position inside a dark retreat can make colour and scale difficult to judge from a single photograph.",
+      standout: "Colour changes dramatically with sex and maturity. Females and juveniles are violet-blue; mature males become brown and more slender, so a mature male can look like a very different spider.",
       inCare: "This confirmed male is provided with vertical cork and a concealed elevated retreat. Observations are made from outside the enclosure with disturbance kept low."
     },
     "clara-psalmopoeus-irminia": {
@@ -593,7 +594,7 @@
     "elvira-chilobrachys-natanicharum": "Elvira is the individual behind this profile. Her collection record connects the recently described electric-blue species with a named resident whose feeding, molts, and development can be followed over time.",
     "ruby-chromatopelma-cyaneopubescens": "Ruby is one of the most visually distinctive residents in the collection. Her feeding-response video and Codex history give the profile an individual story alongside the accepted taxonomy and range of Chromatopelma cyaneopubescens.",
     "grammostola-pulchripes": "Runa represents Grammostola pulchripes in the current collection. Her recognisable golden leg bands make her easy to follow visually, while the Codex separates personal observations from general species information.",
-    "linothele-fallax": "This Linothele fallax broadens the collection beyond tarantulas. Its curtain-web spider identity, patterned abdomen, feeding video, and keeper record give the profile a different biological and visual character from the theraphosid residents.",
+    "linothele-fallax": "This Linothele fallax broadens the collection beyond tarantulas. Its curtain-web spider identity, patterned abdomen, feeding video, and care history give the profile a different biological and visual character from the theraphosid residents.",
     "sonja-mauremys-reevesii": "Sonja is the only vertebrate in the current collection. Her profile follows her as an individual—from the home shown in the accompanying video to the measurements and observations selected from her Codex record—while keeping turtle biology separate from the spider profiles.",
     "bella-monocentropus-balfouri": "Bella is one of two Monocentropus balfouri in my care. Her record remains separate from Belinda’s so that photographs, feeding outcomes, molts, and future observations continue to describe the correct individual.",
     "belinda-monocentropus-balfouri": "Belinda has her own profile because a shared species does not mean a shared history. Her vivarium video and Codex record document her as an individual, independently from Bella’s photographs and observations.",
@@ -612,7 +613,7 @@
   const namedResident = !profile.resident.startsWith("Current ");
   const title = namedResident ? profile.resident : profile.species;
   const subtitle = namedResident ? `Meet ${profile.resident}` : profile.group;
-  const collectionHeading = namedResident ? `Meet ${profile.resident}.` : "In my care.";
+  const collectionHeading = namedResident ? `Meet ${profile.resident}.` : "A living colony.";
   const relatedProfiles = Object.entries(profiles)
     .filter(([relatedKey]) => relatedKey !== key)
     .sort(([, first], [, second]) => {
@@ -656,7 +657,7 @@
             <a href="../collection.html">Current collection</a><span aria-hidden="true">/</span><span>Profile</span>
           </nav>
           <p class="eyebrow">Species profile · ${profile.resident}</p>
-          <h1 id="profile-title"><i>${profile.species}</i></h1>
+          <h1 id="profile-title"${profile.species.length > 22 ? ' class="long-species-name"' : ""}><i>${profile.species}</i></h1>
           <p class="common-name">${subtitle}</p>
           <p class="species-lede">${profile.intro}</p>
           <div class="hero-actions">
@@ -708,7 +709,7 @@
       </section>
 
       <section class="profile-section species-shell" id="collection-record" aria-labelledby="collection-record-title">
-        <header class="section-heading"><p class="section-kicker">In my care</p><h2 id="collection-record-title">${collectionHeading}</h2></header>
+        <header class="section-heading"><p class="section-kicker">Life in the collection</p><h2 id="collection-record-title">${collectionHeading}</h2></header>
         <div class="section-copy">
           <p class="alma-intro">${collectionStories[key]}</p>
           ${gallery.length > 0 ? `
@@ -757,7 +758,7 @@
         <div class="section-copy">
           <div class="codex-panel" data-codex-profile="${key}">
             <span class="codex-label">Introvertebrates Codex</span>
-            <h3>${profile.resident} · keeper record</h3>
+            <h3>${profile.resident} · care history</h3>
             <p class="codex-intro">A privacy-safe summary of this resident’s time in care, feeding outcomes, molts, and measurements. These are observations from the Introvertebrates collection, not species-wide averages.</p>
             <p class="codex-status" data-codex-status>Awaiting a privacy-reviewed Codex export. No invented statistics are shown.</p>
             <div class="codex-metrics" data-codex-metrics hidden></div>

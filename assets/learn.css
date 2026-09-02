@@ -485,7 +485,8 @@
 .anatomy-photo {
   position: relative;
   overflow: hidden;
-  min-height: 590px;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
   border: 1px solid var(--learn-border);
   border-radius: 28px;
   background: #02060a;
@@ -533,10 +534,10 @@
   box-shadow: 0 0 0 6px rgba(20, 241, 196, 0.14), 0 6px 22px rgba(0, 0, 0, 0.35);
 }
 
-.anatomy-pin-prosoma { left: 55%; top: 48%; }
-.anatomy-pin-abdomen { left: 69%; top: 58%; }
-.anatomy-pin-eyes { left: 49%; top: 52%; }
-.anatomy-pin-legs { left: 69%; top: 35%; }
+.anatomy-pin-prosoma { left: 40%; top: 47%; }
+.anatomy-pin-abdomen { left: 22%; top: 64%; }
+.anatomy-pin-eyes { left: 45%; top: 40%; }
+.anatomy-pin-legs { left: 73%; top: 60%; }
 
 .anatomy-key {
   display: grid;

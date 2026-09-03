@@ -2,9 +2,9 @@
 
 Each weekly article lives permanently in `_kryp_weekly/`. Jekyll sorts the collection by `date`: the newest entry becomes the featured card on `kryp-og-krabater.html`, while every entry remains available through `kryp-ukearkiv.html` and its own article URL.
 
-## Automatic Friday publishing
+## Automatic Sunday publishing
 
-The site keeps pre-approved articles in `_kryp_weekly_queue/`. At 07:15 UTC every Friday (08:15 in Norwegian winter time and 09:15 in summer time), `.github/workflows/publish-kryp-weekly.yml` runs `tools/publish-next-kryp-weekly.mjs`.
+The site keeps pre-approved articles in `_kryp_weekly_queue/`. At 07:15 UTC every Sunday (08:15 in Norwegian winter time and 09:15 in summer time), `.github/workflows/publish-kryp-weekly.yml` runs `tools/publish-next-kryp-weekly.mjs`.
 
 The script takes the alphabetically first queued file, adds the current Oslo date and week label, moves it into `_kryp_weekly/`, checks its local image and destination link, and commits the change. The workflow then requests a GitHub Pages rebuild explicitly, because a commit created with the workflow token does not trigger that rebuild on its own. If the queue is empty, the workflow exits without publishing filler.
 
@@ -13,7 +13,7 @@ Queue filenames begin with a three-digit order such as `001-`. Keep at least fou
 Run a dry test without moving a file:
 
 ```powershell
-node tools/publish-next-kryp-weekly.mjs --dry-run --date=2026-09-04
+node tools/publish-next-kryp-weekly.mjs --dry-run --date=2026-09-06
 ```
 
 The workflow can also be started manually from the repository's **Actions** tab.

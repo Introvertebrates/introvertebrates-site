@@ -1,3 +1,10 @@
+---
+---
+{% assign latest_research = site.research | sort: "posted_date" | reverse | first %}
+{% assign latest_kryp_entries = site.kryp_weekly | sort: "date" | reverse %}
+{% assign latest_kryp = latest_kryp_entries | first %}
+{% assign homepage_updates = site.data.homepage_updates | sort: "date" | reverse %}
+{% assign latest_homepage_update = homepage_updates | first %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -517,6 +524,66 @@
     </section>
   </section>
 
+  <section class="home-latest shell" aria-labelledby="home-latest-title">
+    <header class="home-latest-heading">
+      <div>
+        <p class="eyebrow">Latest from Introvertebrates</p>
+        <h2 id="home-latest-title">New reasons to look closer.</h2>
+      </div>
+      <div class="home-latest-heading-copy">
+        <p>Fresh research, Sunday animal stories, and meaningful additions to the living collection.</p>
+        <a href="updates.html">See all updates <span aria-hidden="true">→</span></a>
+      </div>
+    </header>
+
+    <div class="home-latest-grid">
+      <article class="home-latest-card">
+        <a class="home-latest-card-link" href="{{ latest_research.url | relative_url }}">
+          <figure class="home-latest-media">
+            <img src="assets/collection/elvira-chilobrachys-natanicharum.jpg" alt="Elvira, a Chilobrachys natanicharum tarantula, representing the Introvertebrates research journal" width="1600" height="898" loading="lazy" decoding="async">
+            <figcaption>Friday spider science</figcaption>
+          </figure>
+          <div class="home-latest-card-copy">
+            <p class="home-latest-meta"><span>Research</span><time datetime="{{ latest_research.posted_date | date: '%Y-%m-%d' }}">{{ latest_research.posted_date | date: "%-d %B %Y" }}</time></p>
+            <h3>{{ latest_research.title | escape }}</h3>
+            <p>{{ latest_research.description | escape }}</p>
+            <span class="home-latest-card-cta">Read the research update <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </article>
+
+      <article class="home-latest-card">
+        <a class="home-latest-card-link" href="{{ latest_kryp.url | relative_url }}">
+          <figure class="home-latest-media">
+            <img src="{{ latest_kryp.image | relative_url }}" alt="{{ latest_kryp.image_alt | escape }}" width="1800" height="1200" loading="lazy" decoding="async">
+            <figcaption>Sunday · Kryp &amp; Krabater</figcaption>
+          </figure>
+          <div class="home-latest-card-copy">
+            <p class="home-latest-meta"><span>Ukas dyr</span><time datetime="{{ latest_kryp.date | date: '%Y-%m-%d' }}">{{ latest_kryp.date | date: "%-d %B %Y" }}</time></p>
+            <h3 lang="no">{{ latest_kryp.title | escape }}</h3>
+            <p lang="no">{{ latest_kryp.intro | escape }}</p>
+            <span class="home-latest-card-cta">Les ukas dyr <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </article>
+
+      <article class="home-latest-card">
+        <a class="home-latest-card-link" href="{{ latest_homepage_update.url | relative_url }}">
+          <figure class="home-latest-media">
+            <img src="{{ latest_homepage_update.image | relative_url }}" alt="{{ latest_homepage_update.image_alt | escape }}" width="1600" height="898" loading="lazy" decoding="async">
+            <figcaption>From the living collection</figcaption>
+          </figure>
+          <div class="home-latest-card-copy">
+            <p class="home-latest-meta"><span>{{ latest_homepage_update.label | escape }}</span><time datetime="{{ latest_homepage_update.date }}">{{ latest_homepage_update.date_label | escape }}</time></p>
+            <h3>{{ latest_homepage_update.title | escape }}</h3>
+            <p>{{ latest_homepage_update.description | escape }}</p>
+            <span class="home-latest-card-cta">{{ latest_homepage_update.link_label | escape }} <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </article>
+    </div>
+  </section>
+
   <section class="collection" aria-labelledby="collection-title">
     <header class="collection-heading">
       <div class="collection-heading-main">
@@ -806,6 +873,7 @@
       <a href="learn.html">Learn</a>
       <a href="research.html">Research</a>
       <a href="community.html">Community</a>
+      <a href="updates.html">Updates</a>
       <a href="kryp-og-krabater.html">Kryp &amp; Krabater</a>
       <a href="image-use.html">Image use</a>
       <a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a>

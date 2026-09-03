@@ -1,0 +1,100 @@
+---
+---
+{% assign research_updates = site.research | sort: "posted_date" | reverse %}
+{% assign weekly_updates = site.kryp_weekly | sort: "date" | reverse %}
+{% assign collection_updates = site.data.homepage_updates | sort: "date" | reverse %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latest Updates | Introvertebrates</title>
+  <meta name="description" content="The newest Introvertebrates spider research, Kryp &amp; Krabater animal stories, and meaningful collection updates in one place.">
+  <link rel="canonical" href="https://introvertebrates.com/updates.html">
+  <meta property="og:title" content="Latest Updates | Introvertebrates">
+  <meta property="og:description" content="New spider research, Sunday animal stories, and meaningful additions to the Introvertebrates collection.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://introvertebrates.com/updates.html">
+  <meta property="og:image" content="https://introvertebrates.com/assets/collection/alma-acanthoscurria-geniculata.jpg">
+  <meta property="og:site_name" content="Introvertebrates">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#06101d">
+  <link rel="icon" type="image/png" href="Only spider.png">
+  <link rel="stylesheet" href="assets/homepage.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner shell">
+    <a class="brand" href="index.html" aria-label="Introvertebrates home"><img src="Only spider.png" alt="" width="500" height="500"><span>Introvertebrates</span></a>
+    <nav class="site-nav" aria-label="Primary navigation"><a href="collection.html">Collection</a><a href="learn.html">Learn</a><a href="research.html">Research</a><a href="community.html">Community</a><a href="kryp-og-krabater.html" aria-label="Kryp &amp; Krabater">Kryp</a></nav>
+  </div>
+</header>
+
+<main class="updates-page shell" id="main-content">
+  <header class="updates-hero">
+    <p class="eyebrow">Latest from Introvertebrates</p>
+    <h1>A living record of what is new.</h1>
+    <p>New research and Sunday animal stories appear here automatically. Collection and website notes are added only when they give visitors something genuinely new to explore.</p>
+  </header>
+
+  <section class="updates-stream" aria-labelledby="research-updates-title">
+    <header class="updates-stream-heading">
+      <div><p class="eyebrow">Friday spider science</p><h2 id="research-updates-title">Recent research</h2></div>
+      <p>Plain-language reporting built from primary papers and institutional sources, with limitations kept visible.</p>
+    </header>
+    <div class="updates-list">
+      {% for post in research_updates limit: 8 %}
+      <article class="updates-list-card">
+        <p class="home-latest-meta"><span>{{ post.category | escape }}</span><time datetime="{{ post.posted_date | date: '%Y-%m-%d' }}">{{ post.posted_date | date: "%-d %B %Y" }}</time></p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        <p>{{ post.description | escape }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="updates-stream-action"><a class="home-button" href="research.html">Browse the full research journal <span aria-hidden="true">→</span></a></div>
+  </section>
+
+  <section class="updates-stream" aria-labelledby="weekly-updates-title">
+    <header class="updates-stream-heading">
+      <div><p class="eyebrow">Every Sunday · På norsk</p><h2 id="weekly-updates-title">Kryp &amp; Krabater · Ukas dyr</h2></div>
+      <p>Short Norwegian animal stories for curious children, illustrated with original Introvertebrates photographs.</p>
+    </header>
+    <div class="updates-list">
+      {% for post in weekly_updates limit: 8 %}
+      <article class="updates-list-card" lang="no">
+        <p class="home-latest-meta"><span>Ukas dyr</span><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date_label | escape }}</time></p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        <p>{{ post.description | escape }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="updates-stream-action"><a class="home-button" href="kryp-ukearkiv.html">Åpne hele ukearkivet <span aria-hidden="true">→</span></a></div>
+  </section>
+
+  <section class="updates-stream" aria-labelledby="collection-updates-title">
+    <header class="updates-stream-heading">
+      <div><p class="eyebrow">Collection and website</p><h2 id="collection-updates-title">Meaningful additions</h2></div>
+      <p>New profiles, substantial expansions, original media, and public features—not a log of invisible technical fixes.</p>
+    </header>
+    <div class="updates-list">
+      {% for update in collection_updates %}
+      <article class="updates-list-card">
+        <p class="home-latest-meta"><span>{{ update.label | escape }}</span><time datetime="{{ update.date }}">{{ update.date_label | escape }}</time></p>
+        <h3><a href="{{ update.url | relative_url }}">{{ update.title | escape }}</a></h3>
+        <p>{{ update.description | escape }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner shell">
+    <span>© 2026 Introvertebrates</span>
+    <nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a><a href="collection.html">Collection</a><a href="learn.html">Learn</a><a href="research.html">Research</a><a href="kryp-og-krabater.html">Kryp &amp; Krabater</a><a href="mailto:erlend@introvertebrates.com">Contact</a></nav>
+  </div>
+</footer>
+</body>
+</html>

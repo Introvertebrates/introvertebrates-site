@@ -483,36 +483,30 @@
 }
 
 .anatomy-photo {
-  position: relative;
+  min-width: 0;
+  margin: 0;
+  align-self: start;
   overflow: hidden;
-  min-height: 0;
-  aspect-ratio: 16 / 9;
   border: 1px solid var(--learn-border);
   border-radius: 28px;
   background: #02060a;
 }
 
-.anatomy-photo img {
+.anatomy-image {
+  position: relative;
+  aspect-ratio: 1600 / 898;
+}
+
+.anatomy-image img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
-}
-
-.anatomy-photo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(180deg, transparent 55%, rgba(2, 6, 10, 0.76));
+  object-fit: contain;
 }
 
 .anatomy-photo figcaption {
-  position: absolute;
-  z-index: 2;
-  right: 24px;
-  bottom: 22px;
-  left: 24px;
+  padding: 18px 22px;
+  border-top: 1px solid var(--learn-border);
   color: #d9e7ed;
   font-size: 0.78rem;
   line-height: 1.55;
@@ -1192,10 +1186,6 @@ a.codex-highlight-card:focus-visible {
     grid-column: 1 / -1;
   }
 
-  .anatomy-photo {
-    min-height: 520px;
-  }
-
   .kryp-companion {
     grid-template-columns: 200px minmax(0, 1fr);
   }
@@ -1266,13 +1256,12 @@ a.codex-highlight-card:focus-visible {
     min-height: 330px;
   }
 
-  .anatomy-photo {
-    min-height: 430px;
-  }
-
   .anatomy-pin {
-    min-width: 32px;
-    min-height: 32px;
+    min-width: clamp(16px, 5vw, 28px);
+    min-height: clamp(16px, 5vw, 28px);
+    border-width: 1px;
+    font-size: clamp(0.55rem, 2.8vw, 0.76rem);
+    box-shadow: 0 0 0 2px rgba(20, 241, 196, 0.14);
   }
 
   .instagram-rail {

@@ -8,7 +8,7 @@
   --home-blue: #1fa2ff;
   --home-gold: #cfaf70;
   --home-line: rgba(139, 196, 214, 0.15);
-  --home-shell: 1180px;
+  --home-shell: clamp(73.75rem, min(61.458vw, 109.259vh), 98.333rem);
 }
 
 *,
@@ -49,7 +49,7 @@ button {
 }
 
 .shell {
-  width: min(var(--home-shell), calc(100% - 48px));
+  width: min(var(--home-shell), calc(100% - clamp(48px, 2.5vw, 64px)));
   margin-inline: auto;
 }
 

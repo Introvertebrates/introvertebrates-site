@@ -15,7 +15,7 @@
 }
 
 .kryp-shell {
-  width: min(1220px, calc(100% - 48px));
+  width: min(clamp(76.25rem, min(63.542vw, 112.963vh), 101.667rem), calc(100% - clamp(48px, 2.5vw, 64px)));
   margin-inline: auto;
 }
 
@@ -1123,6 +1123,46 @@ button.kryp-button {
   font-size: 0.72rem;
 }
 
+.kryp-profile-guide {
+  padding-block: clamp(34px, 5vw, 64px);
+  border-bottom: 1px solid rgba(246, 240, 223, 0.12);
+  background: linear-gradient(180deg, rgba(105, 200, 238, 0.045), rgba(154, 223, 133, 0.025));
+}
+
+.kryp-profile-guide-card {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 52px);
+  padding: clamp(24px, 4vw, 44px);
+  border: 1px solid rgba(154, 223, 133, 0.2);
+  border-radius: 26px;
+  background: linear-gradient(135deg, rgba(12, 42, 52, 0.86), rgba(5, 20, 30, 0.95));
+}
+
+.kryp-profile-guide-card img {
+  width: 132px;
+  height: 132px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 20px rgba(0, 0, 0, 0.26));
+}
+
+.kryp-profile-guide-card h2 {
+  margin: 5px 0 9px;
+  color: var(--kryp-cream);
+  font-size: clamp(1.8rem, 3.2vw, 3rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.kryp-profile-guide-card p:last-child {
+  max-width: 780px;
+  margin: 0;
+  color: rgba(246, 240, 223, 0.7);
+  line-height: 1.72;
+}
+
 .kryp-profile-media > span a,
 .trail-credit a {
   color: inherit;
@@ -1197,6 +1237,34 @@ button.kryp-button {
   background: rgba(5, 29, 38, 0.62);
 }
 
+.kryp-profile-facts article:last-child {
+  position: relative;
+  min-height: 122px;
+  overflow: hidden;
+  padding-left: 100px;
+  border-color: rgba(105, 200, 238, 0.25);
+  background:
+    radial-gradient(circle at 40px 50%, rgba(105, 200, 238, 0.16), transparent 68px),
+    linear-gradient(135deg, rgba(10, 43, 53, 0.9), rgba(5, 29, 38, 0.72));
+}
+
+.kryp-profile-facts article:last-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  width: 74px;
+  height: 74px;
+  background: url("../Tina – No background.png") center / contain no-repeat;
+  filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.28));
+  transform: translateY(-50%);
+}
+
+.kryp-profile-facts article:last-child h3::before {
+  content: "Tina spør · ";
+  color: var(--kryp-sky);
+}
+
 .kryp-profile-facts h3 {
   margin: 0 0 8px;
   color: var(--kryp-sun);
@@ -1230,6 +1298,14 @@ button.kryp-button {
 
 .kryp-profile-next {
   align-items: start;
+}
+
+@media (max-width: 1100px) {
+  .kryp-profile-hero-grid,
+  .kryp-profile-grid,
+  .kryp-profile-next {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1269,8 +1345,23 @@ button.kryp-button {
   .trail-animal-profile,
   .kryp-profile-hero-grid,
   .kryp-profile-grid,
-  .kryp-profile-next {
+  .kryp-profile-next,
+  .kryp-profile-guide-card {
     grid-template-columns: 1fr;
+  }
+
+  .kryp-profile-guide-card {
+    text-align: center;
+  }
+
+  .kryp-profile-guide-card img {
+    width: 116px;
+    height: 116px;
+    margin-inline: auto;
+  }
+
+  .kryp-profile-guide-card p:last-child {
+    margin-inline: auto;
   }
 
   .kryp-spotlight-grid {

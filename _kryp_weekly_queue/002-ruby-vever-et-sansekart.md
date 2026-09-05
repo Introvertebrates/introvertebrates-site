@@ -8,6 +8,10 @@ image_alt: "Ruby, en Chromatopelma cyaneopubescens, omgitt av silke"
 image_caption: "Ruby i silkelandskapet sitt · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#ruby"
 link_label: "Møt Ruby i artsprofilen"
+colouring_url: "/kryp-fargelegging.html#colouring-ruby"
+colouring_image: "/assets/kryp/colouring/ruby-chromatopelma-cyaneopubescens-original.png"
+colouring_image_alt: "Fotografibasert fargeleggingsark av Ruby"
+colouring_label: "Fargelegg Ruby"
 ---
 
 ## Tråder som sender signaler

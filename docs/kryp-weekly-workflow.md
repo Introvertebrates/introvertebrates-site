@@ -31,6 +31,8 @@ The new article automatically appears at the top of the archive and replaces the
 
 Use only Erlend’s photographs and video. The animal in the image must support the accompanying text, named collection animals must remain correctly identified, and every factual claim should be appropriate for a young Norwegian audience.
 
+Selected weekly entries can also include `colouring_url`, `colouring_image`, `colouring_image_alt`, and `colouring_label`. Add these fields only when the linked sheet is based on Erlend’s photograph and has been reviewed for the animal’s identifying features and anatomy. A weekly article without an approved sheet should publish normally without a colouring block.
+
 ## Local checks
 
 After editing locally, run:

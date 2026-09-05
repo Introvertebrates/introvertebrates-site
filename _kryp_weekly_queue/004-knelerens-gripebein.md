@@ -6,8 +6,8 @@ question: "Hvilke ledd må bevege seg for at gripebeinet skal åpne og lukke seg
 image: "/assets/kryp/mantis-portrait.jpg"
 image_alt: "Nærportrett av en kneler med trekantet hode og foldede gripebein"
 image_caption: "Kneler på nært hold · fotografert av Introvertebrates"
-link_url: "/kryp-spor-krypenes-verden.html#knelere"
-link_label: "Utforsk knelere"
+link_url: "/kryp-artsprofiler.html#knelere"
+link_label: "Møt knelerne i artsprofilen"
 ---
 
 ## Et bein som kan foldes sammen

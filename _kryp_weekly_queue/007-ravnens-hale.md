@@ -6,8 +6,8 @@ question: "Ser halen avrundet, rett eller kileformet ut når fuglen sprer den?"
 image: "/assets/kryp/ravens-in-flight.jpg"
 image_alt: "To ravner i toppen av et dødt tre, den ene med vingene løftet"
 image_caption: "Ravner klare til bevegelse · fotografert av Introvertebrates"
-link_url: "/kryp-spor-hav-og-himmel.html"
-link_label: "Utforsk fuglene i tretoppene"
+link_url: "/kryp-artsprofiler.html#ravn"
+link_label: "Møt ravnen i artsprofilen"
 ---
 
 ## Stor blant kråkefuglene

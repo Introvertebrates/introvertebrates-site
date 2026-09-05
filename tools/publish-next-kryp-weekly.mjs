@@ -74,12 +74,25 @@ const image = frontMatterValue(source, "image");
 const link = frontMatterValue(source, "link_url");
 if (!title || !image || !link) throw new Error(`${queueName} needs title, image and link_url fields.`);
 
+const colouringUrl = frontMatterValue(source, "colouring_url");
+const colouringImage = frontMatterValue(source, "colouring_image");
+const colouringAlt = frontMatterValue(source, "colouring_image_alt");
+const hasColouringSheet = colouringUrl || colouringImage || colouringAlt;
+if (hasColouringSheet && (!colouringUrl || !colouringImage || !colouringAlt)) {
+  throw new Error(`${queueName} needs colouring_url, colouring_image and colouring_image_alt together.`);
+}
+
 for (const publishedName of fs.readdirSync(publishedDirectory).filter((name) => name.endsWith(".md"))) {
   const published = fs.readFileSync(path.join(publishedDirectory, publishedName), "utf8");
   if (frontMatterValue(published, "title") === title) throw new Error(`An article titled “${title}” is already published.`);
 }
 
-for (const [label, reference] of [["image", image], ["link_url", link]]) {
+const localReferences = [["image", image], ["link_url", link]];
+if (hasColouringSheet) {
+  localReferences.push(["colouring_image", colouringImage], ["colouring_url", colouringUrl]);
+}
+
+for (const [label, reference] of localReferences) {
   if (!reference.startsWith("/")) continue;
   const target = path.join(siteRoot, reference.slice(1).split(/[?#]/, 1)[0]);
   if (!fs.existsSync(target)) throw new Error(`${queueName} has a missing local ${label}: ${reference}`);

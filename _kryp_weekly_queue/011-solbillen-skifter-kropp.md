@@ -6,8 +6,8 @@ question: "Hvilke deler på den voksne billen ville du aldri ha gjettet ut fra e
 image: "/assets/collection/pachnoda-marginata.jpg"
 image_alt: "Flere Pachnoda marginata solbiller på en grein"
 image_caption: "Pachnoda marginata i samlingen · fotografert av Introvertebrates"
-link_url: "/species/pachnoda-marginata.html"
-link_label: "Se profilen til solbillene"
+link_url: "/kryp-artsprofiler.html#solbiller"
+link_label: "Møt solbillene i den norske artsprofilen"
 ---
 
 ## Fire svært ulike stadier

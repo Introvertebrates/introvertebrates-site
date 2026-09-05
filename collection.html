@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Current Collection | Introvertebrates</title>
-  <meta name="description" content="Meet the spiders, invertebrates, and turtle currently in the Introvertebrates collection.">
+  <meta name="description" content="Meet the spiders, invertebrates, turtle, and separately documented feeder colonies in the current Introvertebrates collection.">
   <link rel="canonical" href="https://introvertebrates.com/collection.html">
   <meta property="og:title" content="Current Collection | Introvertebrates">
-  <meta property="og:description" content="Meet the spiders, invertebrates, and turtle currently in the Introvertebrates collection.">
+  <meta property="og:description" content="Meet the current residents and the feeder colonies documented separately from the featured collection.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://introvertebrates.com/collection.html">
   <meta property="og:image" content="https://introvertebrates.com/assets/collection/alma-acanthoscurria-geniculata.jpg">
@@ -25,7 +25,7 @@
       "@type": "CollectionPage",
       "name": "Current Animal Collection | Introvertebrates",
       "url": "https://introvertebrates.com/collection.html",
-      "description": "Meet the spiders, invertebrates, and turtle currently in the Introvertebrates collection.",
+      "description": "Meet the current spiders, invertebrates, turtle, and separately documented feeder colonies in the Introvertebrates collection.",
       "inLanguage": "en",
       "image": "https://introvertebrates.com/assets/collection/alma-acanthoscurria-geniculata.jpg",
       "isPartOf": {
@@ -445,6 +445,75 @@
       color: var(--text);
     }
 
+    .feeder-support {
+      display: grid;
+      grid-template-columns: minmax(0, 0.8fr) minmax(360px, 1.2fr);
+      align-items: center;
+      gap: clamp(38px, 7vw, 86px);
+      margin-top: clamp(72px, 9vw, 118px);
+      padding: clamp(28px, 5vw, 48px);
+      border: 1px solid rgba(207, 175, 112, 0.18);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(207, 175, 112, 0.06), rgba(7, 19, 31, 0.9));
+    }
+
+    .feeder-support-copy h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4.5vw, 3.8rem);
+      font-weight: 650;
+      letter-spacing: -0.05em;
+      line-height: 1;
+      text-wrap: balance;
+    }
+
+    .feeder-support-copy > p:not(.eyebrow) {
+      margin: 20px 0 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .feeder-support-card {
+      display: grid;
+      grid-template-columns: minmax(160px, 0.8fr) minmax(0, 1fr);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(4, 10, 18, 0.72);
+    }
+
+    .feeder-support-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 250px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .feeder-support-card div {
+      align-self: center;
+      padding: 24px;
+    }
+
+    .feeder-support-card span {
+      color: var(--gold);
+      font-size: 0.64rem;
+      font-weight: 750;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .feeder-support-card h3 {
+      margin: 10px 0 12px;
+      font-size: 1.45rem;
+    }
+
+    .feeder-support-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.65;
+    }
+
     .archive-note {
       display: grid;
       grid-template-columns: minmax(0, 0.8fr) minmax(360px, 1.2fr);
@@ -618,6 +687,10 @@
         grid-template-columns: 1fr;
       }
 
+      .feeder-support {
+        grid-template-columns: 1fr;
+      }
+
       .archive-gallery-heading {
         align-items: start;
         flex-direction: column;
@@ -683,6 +756,15 @@
 
       .archive-card {
         min-height: 390px;
+      }
+
+      .feeder-support-card {
+        grid-template-columns: 1fr;
+      }
+
+      .feeder-support-card img {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
       }
 
       .resident-photo {
@@ -875,6 +957,18 @@
           </a>
         </article>
       </div>
+
+      <section class="feeder-support" aria-labelledby="feeder-support-title">
+        <div class="feeder-support-copy">
+          <p class="eyebrow">Support colonies · documented separately</p>
+          <h2 id="feeder-support-title">Feeders are part of responsible husbandry.</h2>
+          <p>Feeder animals support the collection, but they are not presented as named residents or mixed into the featured-animal count. Their colonies can still be documented for nutrition, welfare, breeding, and traceability.</p>
+        </div>
+        <article class="feeder-support-card">
+          <img src="assets/kryp/cockroaches-on-cork.jpg" alt="Several feeder cockroaches gathered on cork bark" width="1800" height="1200" loading="lazy" decoding="async">
+          <div><span>Feeder colonies · Blattodea</span><h3>Cockroach feeders</h3><p>The public page stays at group level until each colony’s identification is documented. The Codex can retain feeding records without presenting feeder colonies as collection showpieces.</p></div>
+        </article>
+      </section>
 
       <aside class="archive-note" aria-labelledby="archive-title">
         <h2 id="archive-title">The archive has more stories.</h2>

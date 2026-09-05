@@ -8,6 +8,10 @@ image_alt: "Sonja, en Mauremys reevesii, ved vannkanten"
 image_caption: "Sonja ved vannkanten · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#sonja"
 link_label: "Møt Sonja i artsprofilen"
+colouring_url: "/kryp-fargelegging.html#colouring-sonja"
+colouring_image: "/assets/kryp/colouring/sonja-mauremys-reevesii-original.png"
+colouring_image_alt: "Fotografibasert fargeleggingsark av Sonja"
+colouring_label: "Fargelegg Sonja"
 ---
 
 ## Skall og skjelett hører sammen

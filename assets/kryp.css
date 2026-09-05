@@ -615,7 +615,8 @@ button.kryp-button {
 
 .kryp-creator-portrait {
   position: relative;
-  min-height: 520px;
+  min-height: 0;
+  aspect-ratio: 4 / 5;
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(246, 240, 223, 0.16);
@@ -634,10 +635,10 @@ button.kryp-button {
 .kryp-creator-portrait img {
   width: 100%;
   height: 100%;
-  min-height: 520px;
+  min-height: 0;
   display: block;
   object-fit: cover;
-  object-position: center 34%;
+  object-position: center;
 }
 
 .kryp-creator-portrait figcaption {
@@ -1367,7 +1368,7 @@ button.kryp-button {
 
   .kryp-creator-portrait,
   .kryp-creator-portrait img {
-    min-height: 430px;
+    min-height: 0;
   }
 
   .kryp-creator-note {

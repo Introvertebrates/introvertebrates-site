@@ -6,8 +6,12 @@ question: "Hvor på bakkroppen ser hårlaget tettest eller annerledes ut?"
 image: "/assets/collection/siuzi-theraphosa-apophysis.jpg"
 image_alt: "Siuzi, en Theraphosa apophysis, med hårene på bakkroppen synlige"
 image_caption: "Siuzi · Theraphosa apophysis · fotografert av Introvertebrates"
-link_url: "/species/siuzi-theraphosa-apophysis.html"
-link_label: "Møt Siuzi i artsprofilen"
+link_url: "/kryp-artsprofiler.html#siuzi"
+link_label: "Møt Siuzi i den norske artsprofilen"
+colouring_url: "/kryp-fargelegging.html#colouring-siuzi"
+colouring_image: "/assets/kryp/colouring/siuzi-theraphosa-apophysis-original.png"
+colouring_image_alt: "Fotografibasert fargeleggingsark av Siuzi"
+colouring_label: "Fargelegg Siuzi"
 ---
 
 ## Små hår med mothaker

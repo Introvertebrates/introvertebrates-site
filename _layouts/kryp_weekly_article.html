@@ -35,16 +35,16 @@
       "isPartOf": {"@type": "CollectionPage", "name": "Ukas dyr", "url": "https://introvertebrates.com/kryp-ukearkiv.html"}
     }
   </script>
-  <link rel="stylesheet" href="{{ '/assets/homepage.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/kryp.css?v=20260826b' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/kryp-weekly.css?v=20260828a' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/homepage.css?v=20260905a' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/kryp.css?v=20260905a' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/kryp-weekly.css?v=20260905a' | relative_url }}">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Hopp til innhold</a>
 <header class="site-header"><div class="header-inner shell"><a class="brand" href="{{ '/' | relative_url }}" aria-label="Introvertebrates forside"><img src="{{ '/Only spider.png' | relative_url }}" alt="" width="500" height="500"><span>Introvertebrates</span></a><nav class="site-nav" aria-label="Hovednavigasjon"><a href="{{ '/collection.html' | relative_url }}">Collection</a><a href="{{ '/learn.html' | relative_url }}">Learn</a><a href="{{ '/research.html' | relative_url }}">Research</a><a href="{{ '/community.html' | relative_url }}">Community</a><a href="{{ '/kryp-og-krabater.html' | relative_url }}" aria-current="page" aria-label="Kryp &amp; Krabater">Kryp</a></nav></div></header>
 
 <main class="kryp-page" id="main-content">
-  <nav class="kryp-local-nav" aria-label="Kryp &amp; Krabater-seksjoner"><div class="kryp-local-inner kryp-shell"><a class="kryp-wordmark" href="{{ '/kryp-og-krabater.html' | relative_url }}">Kryp <span>&amp;</span> Krabater</a><div class="kryp-local-links"><a href="{{ '/kryp-og-krabater.html' | relative_url }}#animal-world">Dyreverden</a><a href="{{ '/kryp-ukearkiv.html' | relative_url }}" aria-current="page">Ukas dyr</a><a href="{{ '/kryp-artsprofiler.html' | relative_url }}">Artsprofiler</a><a href="{{ '/kryp-fargelegging.html' | relative_url }}">Fargelegging</a><a href="{{ '/kryp-og-krabater.html' | relative_url }}#stories">Fortellinger</a><a href="{{ '/kryp-og-krabater.html' | relative_url }}#about-kryp">Om prosjektet</a></div></div></nav>
+  <nav class="kryp-local-nav" aria-label="Kryp &amp; Krabater-seksjoner"><div class="kryp-local-inner kryp-shell"><a class="kryp-wordmark" href="{{ '/kryp-og-krabater.html' | relative_url }}">Kryp <span>&amp;</span> Krabater</a><div class="kryp-local-links"><a href="{{ '/kryp-og-krabater.html' | relative_url }}#animal-world">Dyreverden</a><a href="{{ '/kryp-ukearkiv.html' | relative_url }}" aria-current="page">Ukas dyr</a><a href="{{ '/kryp-artsprofiler.html' | relative_url }}">Artsprofiler</a><a href="{{ '/kryp-fargelegging.html' | relative_url }}">Fargelegging</a><a href="{{ '/kryp-og-krabater.html' | relative_url }}#about-kryp">Om prosjektet</a></div></div></nav>
 
   <article>
     <header class="kryp-weekly-article-hero">
@@ -60,7 +60,16 @@
     <section class="kryp-section">
       <div class="kryp-shell kryp-weekly-article-body">
         <div class="kryp-weekly-prose">{{ content }}</div>
-        <aside class="kryp-weekly-aside" aria-label="Fortsett å utforske"><p class="kryp-eyebrow">Neste spor</p><h2>Vil du se nærmere?</h2><p>Følg dyresporet som passer til ukas tema, eller gå tilbake og oppdag tidligere dyr.</p><div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ page.link_url | relative_url }}">{{ page.link_label }} <span aria-hidden="true">→</span></a><a class="kryp-button" href="{{ '/kryp-ukearkiv.html' | relative_url }}">Se hele arkivet</a></div></aside>
+        <aside class="kryp-weekly-aside" aria-label="Fortsett å utforske">
+          <p class="kryp-eyebrow">Neste spor</p><h2>Vil du se nærmere?</h2><p>Følg dyresporet som passer til ukas tema, eller gå tilbake og oppdag tidligere dyr.</p>
+          <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ page.link_url | relative_url }}">{{ page.link_label }} <span aria-hidden="true">→</span></a><a class="kryp-button" href="{{ '/kryp-ukearkiv.html' | relative_url }}">Se hele arkivet</a></div>
+          {% if page.colouring_url and page.colouring_image %}
+          <div class="kryp-weekly-colouring">
+            <img src="{{ page.colouring_image | relative_url }}" alt="{{ page.colouring_image_alt | escape }}" width="1055" height="1491" loading="lazy" decoding="async">
+            <div><p class="kryp-eyebrow">Ekstra aktivitet</p><h3>Fargelegg ukas dyr</h3><p>Dette arket bygger på et fotografi av det virkelige dyret og er gjennomgått før publisering.</p><a class="kryp-button" href="{{ page.colouring_url | relative_url }}">{{ page.colouring_label | default: 'Åpne fargeleggingsarket' }} <span aria-hidden="true">→</span></a></div>
+          </div>
+          {% endif %}
+        </aside>
       </div>
     </section>
   </article>

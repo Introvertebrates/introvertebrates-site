@@ -180,6 +180,51 @@
   line-height: 1.65;
 }
 
+.kryp-weekly-colouring {
+  display: grid;
+  gap: 16px;
+  margin-top: 12px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(154, 223, 133, 0.18);
+}
+
+.kryp-weekly-colouring img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 7;
+  display: block;
+  object-fit: contain;
+  object-position: top;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.kryp-weekly-colouring h3 {
+  margin: 0 0 9px;
+  color: var(--kryp-cream);
+  font-size: 1.2rem;
+}
+
+.kryp-weekly-colouring .kryp-eyebrow {
+  margin-bottom: 8px;
+  color: var(--kryp-sun);
+  font-size: 0.64rem;
+}
+
+.kryp-weekly-colouring .kryp-button {
+  width: 100%;
+  margin-top: 14px;
+  justify-content: center;
+  text-align: center;
+}
+
+.kryp-weekly-article-hero h1,
+.kryp-weekly-prose,
+.kryp-weekly-aside {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .kryp-weekly-breadcrumbs {
   display: flex;
   flex-wrap: wrap;
@@ -213,6 +258,10 @@
   .kryp-weekly-archive-hero h1,
   .kryp-weekly-article-hero h1 {
     font-size: clamp(3rem, 16vw, 5.5rem);
+  }
+
+  .kryp-weekly-article-hero {
+    padding-block: 70px 86px;
   }
 }
 

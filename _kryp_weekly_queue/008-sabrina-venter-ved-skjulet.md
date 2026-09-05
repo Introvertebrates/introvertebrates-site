@@ -8,6 +8,10 @@ image_alt: "Sabrina, en Brachypelma hamorii, med tydelige oransje knebånd"
 image_caption: "Sabrina ved skjulestedet · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#sabrina"
 link_label: "Møt Sabrina i artsprofilen"
+colouring_url: "/kryp-fargelegging.html#colouring-sabrina"
+colouring_image: "/assets/kryp/colouring/sabrina-brachypelma-hamorii.png"
+colouring_image_alt: "Fotografibasert fargeleggingsark av Sabrina"
+colouring_label: "Fargelegg Sabrina"
 ---
 
 ## Venting kan være en jaktstrategi

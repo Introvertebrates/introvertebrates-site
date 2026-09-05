@@ -482,6 +482,10 @@ button.kryp-button {
   background: #061119;
 }
 
+.kryp-motion-video-mobile {
+  display: none !important;
+}
+
 .kryp-motion-copy {
   padding: 22px;
 }
@@ -1257,7 +1261,6 @@ button.kryp-button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .kryp-motion-card:last-child,
   .kryp-note:last-child {
     grid-column: 1 / -1;
   }
@@ -1350,6 +1353,18 @@ button.kryp-button {
   .kryp-motion-card:last-child,
   .kryp-note:last-child {
     grid-column: auto;
+  }
+
+  .kryp-motion-card video {
+    aspect-ratio: 4 / 5;
+  }
+
+  .kryp-motion-video-desktop {
+    display: none !important;
+  }
+
+  .kryp-motion-video-mobile {
+    display: block !important;
   }
 
   .kryp-story-media {

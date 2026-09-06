@@ -1,4 +1,6 @@
 ---
+date: 2026-09-06 10:00:00 +0200
+date_label: "Uke 36 · 6. september 2026"
 title: "Ruby vever et sansekart"
 description: "Utforsk hvordan Ruby bruker silke rundt skjulestedet til å registrere bevegelser i omgivelsene."
 intro: "For Ruby er silken mer enn et nett. Trådene kobler sammen bakken, skjulestedet og små festepunkter rundt henne."

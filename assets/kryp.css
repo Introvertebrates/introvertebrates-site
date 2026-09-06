@@ -1237,7 +1237,7 @@ button.kryp-button {
   background: rgba(5, 29, 38, 0.62);
 }
 
-.kryp-profile-facts article:last-child {
+.kryp-profile-facts .kryp-tina-task {
   position: relative;
   min-height: 122px;
   overflow: hidden;
@@ -1248,7 +1248,7 @@ button.kryp-button {
     linear-gradient(135deg, rgba(10, 43, 53, 0.9), rgba(5, 29, 38, 0.72));
 }
 
-.kryp-profile-facts article:last-child::before {
+.kryp-profile-facts .kryp-tina-task::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1258,11 +1258,6 @@ button.kryp-button {
   background: url("../Tina – No background.png") center / contain no-repeat;
   filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.28));
   transform: translateY(-50%);
-}
-
-.kryp-profile-facts article:last-child h3::before {
-  content: "Tina spør · ";
-  color: var(--kryp-sky);
 }
 
 .kryp-profile-facts h3 {
@@ -1298,6 +1293,16 @@ button.kryp-button {
 
 .kryp-profile-next {
   align-items: start;
+}
+
+.kryp-profile-facts .kryp-tina-label {
+  margin: 0 0 4px;
+  color: var(--kryp-sky);
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1100px) {

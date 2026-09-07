@@ -1,4 +1,6 @@
 ---
+video_youtube_id: "lEVuJhaAlNY"
+video_title: "Sonja – opptak fra Introvertebrates"
 title: "Sonja bærer skjelettet utenpå"
 description: "Bli kjent med Sonjas ryggskjold, bukskjold og de tre tydelige ryggene som kjennetegner Mauremys reevesii."
 intro: "Skallet er ikke et løst hus. Det er en levende del av Sonjas skjelett og vokser sammen med henne."

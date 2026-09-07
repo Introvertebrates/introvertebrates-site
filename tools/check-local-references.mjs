@@ -25,7 +25,7 @@ const referencesFor = (source, extension) => {
     ? [/(?:src|href)=["']([^"']+)["']/g]
     : extension === ".css"
       ? [/url\(\s*["']?([^"')]+)["']?\s*\)/g]
-      : [/!?\[[^\]]*\]\(([^)\s]+)(?:\s+["'][^)]*)?\)/g, /^(?:image|link_url):\s*["']?([^"'\s]+)["']?\s*$/gm];
+      : [/!?\[[^\]]*\]\(([^)\s]+)(?:\s+["'][^)]*)?\)/g, /^(?:image|link_url|colouring_image|colouring_url|video_url|video_poster):\s*["']?([^"'\s]+)["']?\s*$/gm];
 
   for (const pattern of patterns) {
     for (const match of source.matchAll(pattern)) references.push(match[1]);

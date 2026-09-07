@@ -1,4 +1,6 @@
 ---
+video_youtube_id: "6yuCc4-XAwU"
+video_title: "Linothele – opptak fra Introvertebrates"
 title: "Linothele bygger et sansekart av silke"
 description: "Se hvordan Linothele fallax kan bruke et stort teppe av silketråder til både skjul og varsling."
 intro: "For Linothele er nettet mer enn en felle. Trådene utvider området der edderkoppen kan merke små bevegelser."
@@ -8,6 +10,11 @@ image_alt: "Linothele fallax ved et tett teppe av hvit silke"
 image_caption: "Linothele fallax i samlingen · fotografert av Introvertebrates"
 link_url: "/species/linothele-fallax.html"
 link_label: "Se hele profilen til Linothele fallax"
+colouring_url: "/kryp-fargelegging.html#colouring-linothele"
+colouring_image: "/assets/kryp/colouring/linothele-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Linothele"
+colouring_label: "Fargelegg Linothele"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Et nett med flere oppgaver

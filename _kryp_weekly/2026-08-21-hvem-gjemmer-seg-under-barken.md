@@ -6,10 +6,15 @@ date_label: "Uke 34 · 21. august 2026"
 intro: "Ikke alle kakerlakker lever i kjøkken. Mange arter hører hjemme i skogbunnen, i løv og rundt død ved. Se nøye på kroppen, beina og de lange antennene."
 question: "Hvilken kroppsdel ser ut til å undersøke omgivelsene først når dyret beveger seg?"
 image: "/assets/kryp/cockroaches-close.jpg"
-image_alt: "To store brunmønstrede kakerlakker sett tett fra siden"
+image_alt: "En brunmønstret kakerlakk sett tett fra siden"
 image_caption: "Kakerlakker på nært hold · fotografert av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
+colouring_url: "/kryp-fargelegging.html#colouring-dubia"
+colouring_image: "/assets/kryp/colouring/dubia-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Dubia-kakerlakk"
+colouring_label: "Fargelegg Dubia-kakerlakk"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Antennene går først

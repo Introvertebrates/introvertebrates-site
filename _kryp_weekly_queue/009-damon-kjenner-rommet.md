@@ -8,6 +8,11 @@ image_alt: "Damon diadema på mose med de lange sansebeina strukket ut"
 image_caption: "Damon diadema · arkivfoto av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
+colouring_url: "/kryp-fargelegging.html#colouring-damon"
+colouring_image: "/assets/kryp/colouring/damon-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Damon"
+colouring_label: "Fargelegg Damon"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Seks gåbein og to sansebein

@@ -8,6 +8,11 @@ image_alt: "Ethmostigmus trigonopodus med mange oransje bein langs den mørke kr
 image_caption: "Ethmostigmus trigonopodus · arkivfoto av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
+colouring_url: "/kryp-fargelegging.html#colouring-hundrebein"
+colouring_image: "/assets/kryp/colouring/hundrebein-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Hundrebein"
+colouring_label: "Fargelegg Hundrebein"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Ett beinpar per kroppsledd

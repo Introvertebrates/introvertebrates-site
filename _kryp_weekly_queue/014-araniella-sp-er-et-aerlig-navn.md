@@ -8,6 +8,11 @@ image_alt: "Grønn Araniella-edderkopp delvis skjult under et blad"
 image_caption: "Araniella sp. · fotografert av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
+colouring_url: "/kryp-fargelegging.html#colouring-araniella"
+colouring_image: "/assets/kryp/colouring/araniella-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Araniella"
+colouring_label: "Fargelegg Araniella"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Hva betyr sp.?

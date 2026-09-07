@@ -1,3 +1,4 @@
+import { dateStamp, publicationBlocked } from "./weekly-calendar.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -64,6 +65,17 @@ if (!queue.length) {
   process.exit(0);
 }
 
+const dateText = osloDate();
+dateStamp(dateText);
+const publishedDates = fs.readdirSync(publishedDirectory).filter(name => name.endsWith('.md')).map(name => {
+  const value = frontMatterValue(fs.readFileSync(path.join(publishedDirectory, name), 'utf8'), 'date');
+  if (!value) throw new Error(name + ' has no publication date.');
+  return value.slice(0, 10);
+});
+if (publicationBlocked(dateText, publishedDates)) {
+  console.log('A weekly animal already occupies this week or the preceding seven days; queue unchanged.');
+  process.exit(0);
+}
 const queueName = queue[0];
 const sourcePath = path.join(queueDirectory, queueName);
 const source = fs.readFileSync(sourcePath, "utf8");
@@ -98,7 +110,6 @@ for (const [label, reference] of localReferences) {
   if (!fs.existsSync(target)) throw new Error(`${queueName} has a missing local ${label}: ${reference}`);
 }
 
-const dateText = osloDate();
 const offset = osloOffset(dateText);
 const datedFrontMatter = source.replace(
   /^---\r?\n/,

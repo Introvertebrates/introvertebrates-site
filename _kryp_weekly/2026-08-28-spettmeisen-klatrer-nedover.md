@@ -10,6 +10,11 @@ image_alt: "En spettmeis som klamrer seg sidelengs til en fuglemater"
 image_caption: "Spettmeis på nært hold · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#spettmeis"
 link_label: "Les artsprofilen om spettmeis"
+colouring_url: "/kryp-fargelegging.html#colouring-spettmeis"
+colouring_image: "/assets/kryp/colouring/spettmeis-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Spettmeis"
+colouring_label: "Fargelegg Spettmeis"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Føtter som holder godt fast

@@ -1,4 +1,6 @@
 ---
+video_youtube_id: "V_QQOjU2T28"
+video_title: "Elvira – opptak fra Introvertebrates"
 title: "Elvira er blå uten blå maling"
 description: "Se hvorfor Elviras elektriske blåfarge handler om hvordan lys møter kroppens fine strukturer."
 intro: "Elviras blå bein kan skifte uttrykk når lyset eller synsvinkelen endres. Fargen er knyttet til mikroskopiske strukturer i overflaten."
@@ -8,6 +10,10 @@ image_alt: "Elvira, en Chilobrachys natanicharum, med elektrisk blå bein"
 image_caption: "Elvira · Chilobrachys natanicharum · fotografert av Introvertebrates"
 link_url: "/species/elvira-chilobrachys-natanicharum.html"
 link_label: "Møt Elvira i artsprofilen"
+colouring_url: "/kryp-fargelegging.html#colouring-elvira"
+colouring_image: "/assets/kryp/colouring/elvira-chilobrachys-natanicharum.png"
+colouring_image_alt: "Fotografibasert fargeleggingsark av Elvira"
+colouring_label: "Fargelegg Elvira"
 ---
 
 ## Farge kan bygges av struktur

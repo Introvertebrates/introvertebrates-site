@@ -1,4 +1,6 @@
 ---
+video_url: "/assets/kryp/video/otter-water.mp4"
+video_title: "Oter i vannet"
 title: "Oteren kjenner bevegelse i vannet"
 description: "Se hvordan oterens kropp, hale, poter og værhår hjelper den med å svømme og jakte."
 intro: "Når det meste av kroppen er under vann, kan bølgene bak hodet avsløre hvor oteren beveger seg."
@@ -8,6 +10,11 @@ image_alt: "Oter med våt pels som svømmer i vann"
 image_caption: "Oter i vannet · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#oter"
 link_label: "Les artsprofilen om oter"
+colouring_url: "/kryp-fargelegging.html#colouring-oter"
+colouring_image: "/assets/kryp/colouring/oter-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Oter"
+colouring_label: "Fargelegg Oter"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## En kropp for svømming

@@ -8,6 +8,11 @@ image_alt: "Hadogenes paucidens fotografert ovenfra på en stein"
 image_caption: "Arkivert som Hadogenes paucidens · fotografert av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
+colouring_url: "/kryp-fargelegging.html#colouring-steinskorpion"
+colouring_image: "/assets/kryp/colouring/steinskorpion-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Steinskorpion"
+colouring_label: "Fargelegg Steinskorpion"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Lav kropp, kraftig grep

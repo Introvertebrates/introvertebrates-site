@@ -1,4 +1,6 @@
 ---
+video_youtube_id: "WvyBlNpTxQI"
+video_title: "Gunnar – opptak fra Introvertebrates"
 title: "Gunnar har et horn med et ubesvart spørsmål"
 description: "Se hornet på ryggskjoldet til Ceratogyrus darlingi, og lær hvorfor vitenskapen også må vise hva den ikke vet."
 intro: "Gunnars horn er lett å få øye på. Det vanskeligere spørsmålet er hva hornet faktisk gjør for edderkoppen."
@@ -8,6 +10,10 @@ image_alt: "Gunnar, en Ceratogyrus darlingi, sett ovenfra med hornet på ryggskj
 image_caption: "Gunnar · Ceratogyrus darlingi · fotografert av Introvertebrates"
 link_url: "/species/ceratogyrus-darlingi.html"
 link_label: "Møt Gunnar i artsprofilen"
+colouring_url: "/kryp-fargelegging.html#colouring-gunnar"
+colouring_image: "/assets/kryp/colouring/gunnar-ceratogyrus-darlingi.png"
+colouring_image_alt: "Fotografibasert fargeleggingsark av Gunnar"
+colouring_label: "Fargelegg Gunnar"
 ---
 
 ## En forhøyning på ryggskjoldet
@@ -27,3 +33,4 @@ World Spider Catalog regner *C. darlingi* som en godkjent art fra det sørlige A
 Tegn Gunnar fra siden og ovenfra. Hvilken vinkel gjør hornet lettest å se, og hvilken gjør plasseringen på kroppen tydeligst?
 
 [Se artsoppføringen i World Spider Catalog](https://wsc.nmbe.ch/spec-data/43902){:target="_blank" rel="noopener noreferrer"}
+

@@ -25,6 +25,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: Check weekly publishing safeguards
+        run: node --test tools/weekly-calendar.test.mjs
+
       - name: Publish the next queued article
         run: node tools/publish-next-kryp-weekly.mjs
 

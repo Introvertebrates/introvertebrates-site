@@ -8,6 +8,11 @@ image_alt: "Moskusflokk med lang pels i steinete fjellterreng på Dovre"
 image_caption: "Moskus på Dovrefjell · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#moskus"
 link_label: "Les artsprofilen om moskus"
+colouring_url: "/kryp-fargelegging.html#colouring-moskus"
+colouring_image: "/assets/kryp/colouring/moskus-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Moskus"
+colouring_label: "Fargelegg Moskus"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Dekkpels utenpå

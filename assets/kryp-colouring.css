@@ -341,3 +341,8 @@
     display: grid;
   }
 }
+
+/* Small monochrome brand mark, kept separate from the animal artwork. */
+.colouring-sheet-brand img { filter: grayscale(1) brightness(0); transform: rotate(-10deg); width: 9mm; height: 9mm; }
+.colouring-sheet-brand strong { font-size: 12pt; }
+.colouring-sheet-brand span { font-size: 7pt; letter-spacing: .03em; }

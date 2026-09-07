@@ -8,6 +8,11 @@ image_alt: "Svart Peruphasma schultei med røde detaljer på grønne blader"
 image_caption: "Peruphasma schultei · arkivfoto av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
+colouring_url: "/kryp-fargelegging.html#colouring-peruphasma"
+colouring_image: "/assets/kryp/colouring/peruphasma-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Peruphasma"
+colouring_label: "Fargelegg Peruphasma"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Kontraster som blir lagt merke til

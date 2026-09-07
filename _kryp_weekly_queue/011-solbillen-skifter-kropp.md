@@ -1,4 +1,6 @@
 ---
+video_youtube_id: "o7Ja1Ro3jDo"
+video_title: "Solbiller – opptak fra Introvertebrates"
 title: "Solbillen skifter kropp helt"
 description: "Følg Pachnoda marginata fra larve til puppe og videre til en fargerik voksen bille."
 intro: "En solbille ser ikke ut som en liten utgave av seg selv når den klekkes. Kroppen bygges om gjennom fullstendig forvandling."
@@ -8,6 +10,11 @@ image_alt: "Flere Pachnoda marginata solbiller på en grein"
 image_caption: "Pachnoda marginata i samlingen · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#solbiller"
 link_label: "Møt solbillene i den norske artsprofilen"
+colouring_url: "/kryp-fargelegging.html#colouring-solbille"
+colouring_image: "/assets/kryp/colouring/solbille-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Solbille"
+colouring_label: "Fargelegg Solbille"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Fire svært ulike stadier

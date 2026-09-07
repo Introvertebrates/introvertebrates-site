@@ -1,4 +1,6 @@
 ---
+video_youtube_id: "UPEjF670oIA"
+video_title: "Orion – opptak fra Introvertebrates"
 title: "Orion får et nytt uttrykk som voksen hann"
 description: "Oppdag hvorfor en voksen hann av Omothymus violaceopes kan se svært annerledes ut enn hunner og yngre dyr."
 intro: "De blåfiolette fargene mange forbinder med arten forteller ikke hele historien. En kjønnsmoden hann blir slankere og får et annet uttrykk."
@@ -8,6 +10,10 @@ image_alt: "Orion, en hann av Omothymus violaceopes, på bark"
 image_caption: "Orion · Omothymus violaceopes · fotografert av Introvertebrates"
 link_url: "/species/omothymus-violaceopes.html"
 link_label: "Møt Orion i artsprofilen"
+colouring_url: "/kryp-fargelegging.html#colouring-orion"
+colouring_image: "/assets/kryp/colouring/orion-omothymus-violaceopes.png"
+colouring_image_alt: "Fotografibasert fargeleggingsark av Orion"
+colouring_label: "Fargelegg Orion"
 ---
 
 ## Hunner, unge dyr og voksne hanner
@@ -27,3 +33,4 @@ Arten har tidligere vært plassert i slekten *Lampropelma*. World Spider Catalog
 Sammenlign beinlengde, bakkropp og farge i Orions profilbilder. Hvilket trekk tror du er mest pålitelig når lyset mellom bildene er forskjellig?
 
 [Se den godkjente artsoppføringen i World Spider Catalog](https://wsc.nmbe.ch/spec-data/44240/species){:target="_blank" rel="noopener noreferrer"}
+

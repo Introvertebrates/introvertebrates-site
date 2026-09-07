@@ -1,6 +1,4 @@
 ---
-date: 2026-09-06 10:00:00 +0200
-date_label: "Uke 36 · 6. september 2026"
 title: "Hvordan finner huggormen varmen?"
 description: "Se hvordan en huggorm bruker sol, skygge og skjul for å styre kroppstemperaturen gjennom dagen."
 intro: "Huggormen lager ikke jevn kroppsvarme slik vi gjør. I stedet flytter den seg mellom varme og kjølige steder."
@@ -10,6 +8,11 @@ image_alt: "Svart huggorm mellom løv og grønt gress i norsk natur"
 image_caption: "Svart huggorm i norsk natur · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#huggorm"
 link_label: "Les artsprofilen om huggorm"
+colouring_url: "/kryp-fargelegging.html#colouring-huggorm"
+colouring_image: "/assets/kryp/colouring/huggorm-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Huggorm"
+colouring_label: "Fargelegg Huggorm"
+colouring_description: "En generell artsillustrasjon. Stillingen og mønsteret er ikke kopiert fra fotografiet."
 ---
 
 ## Sol og skygge er verktøy

@@ -1,4 +1,6 @@
 ---
+video_url: "/assets/kryp/video/ghost-mantis-movement.mp4"
+video_title: "Spøkelseskneler (Phyllocrania paradoxa) – en annen knelerart enn på bildet"
 title: "Knelerens forbein er et fangstverktøy"
 description: "Se hvordan knelerens foldede forbein kan åpnes raskt når et byttedyr kommer nær."
 intro: "Knelerens forbein ser nesten ut som om de er foldet til bønn. Egentlig er de spesialiserte gripebein."
@@ -8,6 +10,11 @@ image_alt: "Nærportrett av en kneler med trekantet hode og foldede gripebein"
 image_caption: "Kneler på nært hold · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#knelere"
 link_label: "Møt knelerne i artsprofilen"
+colouring_url: "/kryp-fargelegging.html#colouring-kneler"
+colouring_image: "/assets/kryp/colouring/kneler-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Kneler"
+colouring_label: "Fargelegg Kneler"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Et bein som kan foldes sammen

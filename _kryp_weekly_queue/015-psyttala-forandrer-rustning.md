@@ -1,4 +1,6 @@
 ---
+video_youtube_id: "sr930b5ycrg"
+video_title: "Psyttala – opptak fra Introvertebrates"
 title: "Psyttala forandrer rustning mens den vokser"
 description: "Sammenlign en nymfe og en voksen Psyttala horrida, og se hva som skjer mellom hudskiftene."
 intro: "En ung rovtege er ikke bare en mindre voksen. Farger, pigger og kroppsform utvikles gjennom flere nymfestadier."
@@ -8,6 +10,11 @@ image_alt: "Psyttala horrida med tydelig lang kropp og gripebein"
 image_caption: "Psyttala horrida i samlingen · fotografert av Introvertebrates"
 link_url: "/species/psyttala-horrida.html"
 link_label: "Se profilen til Psyttala horrida"
+colouring_url: "/kryp-fargelegging.html#colouring-psyttala"
+colouring_image: "/assets/kryp/colouring/psyttala-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Psyttala"
+colouring_label: "Fargelegg Psyttala"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Vekst krever hudskifte

@@ -36,7 +36,7 @@
     }
   </script>
   <link rel="stylesheet" href="{{ '/assets/homepage.css?v=20260906a' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/kryp.css?v=20260906b' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/kryp.css?v=20260907a' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/kryp-weekly.css?v=20260905a' | relative_url }}">
 </head>
 <body>
@@ -59,14 +59,15 @@
 
     <section class="kryp-section">
       <div class="kryp-shell kryp-weekly-article-body">
-        <div class="kryp-weekly-prose">{{ content }}</div>
+        <div class="kryp-weekly-prose">{{ content }}
+{% if page.video_youtube_id or page.video_url %}<section class="kryp-weekly-video"><h2>Se dyret i bevegelse</h2><figure class="kryp-animal-video">{% if page.video_youtube_id %}<iframe src="https://www.youtube-nocookie.com/embed/{{ page.video_youtube_id | escape }}" title="{{ page.video_title | escape }}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>{% else %}<video controls playsinline preload="none"><source src="{{ page.video_url | relative_url }}" type="video/mp4">Nettleseren din kan ikke spille av videoen.</video>{% endif %}<figcaption>{{ page.video_title | escape }} · {% if page.video_youtube_id %}<a href="https://www.youtube.com/watch?v={{ page.video_youtube_id | escape }}">Se på YouTube</a>{% else %}<a href="{{ page.video_url | relative_url }}">Åpne filmen</a>{% endif %}</figcaption></figure></section>{% endif %}</div>
         <aside class="kryp-weekly-aside" aria-label="Fortsett å utforske">
           <p class="kryp-eyebrow">Neste spor</p><h2>Vil du se nærmere?</h2><p>Følg dyresporet som passer til ukas tema, eller gå tilbake og oppdag tidligere dyr.</p>
           <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ page.link_url | relative_url }}">{{ page.link_label }} <span aria-hidden="true">→</span></a><a class="kryp-button" href="{{ '/kryp-ukearkiv.html' | relative_url }}">Se hele arkivet</a></div>
           {% if page.colouring_url and page.colouring_image %}
           <div class="kryp-weekly-colouring">
             <img src="{{ page.colouring_image | relative_url }}" alt="{{ page.colouring_image_alt | escape }}" width="1055" height="1491" loading="lazy" decoding="async">
-            <div><p class="kryp-eyebrow">Ekstra aktivitet</p><h3>Fargelegg ukas dyr</h3><p>Dette arket bygger på et fotografi av det virkelige dyret og er gjennomgått før publisering.</p><a class="kryp-button" href="{{ page.colouring_url | relative_url }}">{{ page.colouring_label | default: 'Åpne fargeleggingsarket' }} <span aria-hidden="true">→</span></a></div>
+            <div><p class="kryp-eyebrow">Ekstra aktivitet</p><h3>Fargelegg ukas dyr</h3><p>{{ page.colouring_description | default: 'En forenklet strekillustrasjon basert på et Introvertebrates-fotografi.' | escape }}</p><a class="kryp-button" href="{{ page.colouring_url | relative_url }}">{{ page.colouring_label | default: 'Åpne fargeleggingsarket' }} <span aria-hidden="true">→</span></a></div>
           </div>
           {% endif %}
         </aside>

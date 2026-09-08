@@ -1,4 +1,5 @@
 ---
+colouring_release: "moskus"
 title: "Moskusen har to lag med pels"
 description: "Oppdag hvordan lange dekkhår og svært fin underull beskytter moskusen i vind og kulde."
 intro: "Moskusen ser ut som om pelsen går helt ned til bakken. Under de lange hårene finnes et mykere og svært varmt lag."

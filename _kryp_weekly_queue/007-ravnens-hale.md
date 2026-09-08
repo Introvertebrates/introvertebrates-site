@@ -1,4 +1,5 @@
 ---
+colouring_release: "ravn"
 video_url: "/assets/kryp/video/raven-winter.mp4"
 video_title: "Ravn i flukt"
 title: "Ravnens hale peker ut arten"

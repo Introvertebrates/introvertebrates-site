@@ -1,4 +1,5 @@
 ---
+colouring_release: "steinskorpion"
 title: "Steinskorpionen er bygget for sprekker"
 description: "Se hvordan den flate kroppen og de kraftige klørne hos en Hadogenes-skorpion passer til livet mellom steiner."
 intro: "En smal fjellsprekk kan være et helt landskap. Steinskorpioner i slekten Hadogenes har en kropp som passer inn der mange andre dyr ikke kommer til."

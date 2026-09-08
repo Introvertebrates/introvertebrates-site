@@ -1536,3 +1536,7 @@ button.kryp-button {
 .kryp-trail-copy p a { color: inherit; text-decoration: underline; text-underline-offset: .2em; }
 .kryp-trail a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .kryp-collection-links { columns: 2 16rem; line-height: 2; }
+
+.kryp-profile-video { margin-top: 2rem; max-width: 850px; padding-bottom: 1rem; }
+.kryp-profile-video h3 { margin: 0; }
+.kryp-upcoming { margin-top: 1.5rem; font-size: .95rem; line-height: 1.7; }

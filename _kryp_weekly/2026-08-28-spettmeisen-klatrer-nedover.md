@@ -1,4 +1,5 @@
 ---
+colouring_release: "spettmeis"
 title: "Spettmeisen klatrer med hodet først"
 description: "Se hvordan spettmeisens sterke føtter, lange klør og spisse nebb hjelper den med å lete etter mat langs trestammer."
 date: 2026-08-28 10:00:00 +0200

@@ -1,4 +1,5 @@
 ---
+colouring_release: "araniella"
 title: "Araniella sp. er et ærlig navn"
 description: "Lær hvorfor en edderkopp noen ganger får et sikkert slektsnavn, men ikke et usikkert artsnavn."
 intro: "Det grønne utseendet peker mot slekten Araniella. Men flere arter kan ligne på hverandre, og et fotografi viser ikke alltid detaljene som skiller dem."

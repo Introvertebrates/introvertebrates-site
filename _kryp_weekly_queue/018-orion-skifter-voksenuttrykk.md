@@ -1,6 +1,4 @@
 ---
-video_youtube_id: "UPEjF670oIA"
-video_title: "Orion – opptak fra Introvertebrates"
 title: "Orion får et nytt uttrykk som voksen hann"
 description: "Oppdag hvorfor en voksen hann av Omothymus violaceopes kan se svært annerledes ut enn hunner og yngre dyr."
 intro: "De blåfiolette fargene mange forbinder med arten forteller ikke hele historien. En kjønnsmoden hann blir slankere og får et annet uttrykk."

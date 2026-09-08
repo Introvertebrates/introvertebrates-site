@@ -1,4 +1,5 @@
 ---
+colouring_release: "peruphasma"
 title: "Peruphasma viser fram en advarsel"
 description: "Oppdag hvordan Peruphasma schultei kombinerer mørk kropp, røde detaljer og kjemisk forsvar."
 intro: "Noen dyr prøver å forsvinne i omgivelsene. Peruphasma schultei kan i stedet vise sterke kontraster når den blir forstyrret."

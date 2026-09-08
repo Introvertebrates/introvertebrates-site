@@ -1,4 +1,5 @@
 ---
+colouring_release: "damon"
 title: "Damon kjenner rommet med sansebein"
 description: "Oppdag hvorfor de to lengste beina hos Damon diadema brukes mer som antenner enn som gåbein."
 intro: "Det ser ut som Damon har et par altfor lange bein. De er egentlig avanserte sansebein som undersøker omgivelsene."

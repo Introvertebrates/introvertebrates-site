@@ -1,6 +1,5 @@
 ---
-video_youtube_id: "6yuCc4-XAwU"
-video_title: "Linothele – opptak fra Introvertebrates"
+colouring_release: "linothele"
 title: "Linothele bygger et sansekart av silke"
 description: "Se hvordan Linothele fallax kan bruke et stort teppe av silketråder til både skjul og varsling."
 intro: "For Linothele er nettet mer enn en felle. Trådene utvider området der edderkoppen kan merke små bevegelser."

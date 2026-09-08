@@ -1,4 +1,5 @@
 ---
+colouring_release: "dubia"
 video_url: "/assets/kryp/video/cockroaches-bark.mp4"
 video_title: "Kakerlakker på korkbark"
 title: "Dubia-kakerlakken undersøker med antennene"

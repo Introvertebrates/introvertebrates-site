@@ -54,3 +54,9 @@ The Huggorm sheet is a generic Vipera berus depiction, explicitly identified as 
 | Hundrebein (Ethmostigmus trigonopodus) | assets/kryp/ethmostigmus-trigonopodus.jpg | Photo-based simplified pose; occluded or cropped parts remain simplified |
 
 Elvira, Orion and Gunnar now link to their existing sheets. Existing sheets and original photo compositions were retained. Every sheet is a coloring interpretation, not an anatomical identification plate.
+
+## User corrections — 8 September 2026
+
+The Huggorm artwork is now the exact user-supplied b03e00eb-28ab-4ecf-bc3e-4a817eb31f3d.png, copied without image edits. Its existing title is preserved; the print template adds only a small footer brand rather than duplicating the heading. It replaces all generated adder drafts.
+
+Linothele fallax was redrawn with the built-in image tool from assets/collection/linothele-fallax.jpg: finer, less hairy contours, the photographed diagonal body pose, small eye group, outlined abdominal pattern and long spinnerets. It remains unreleased until its weekly article is published.

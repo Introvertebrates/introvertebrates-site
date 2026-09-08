@@ -346,3 +346,7 @@
 .colouring-sheet-brand img { filter: grayscale(1) brightness(0); transform: rotate(-10deg); width: 9mm; height: 9mm; }
 .colouring-sheet-brand strong { font-size: 12pt; }
 .colouring-sheet-brand span { font-size: 7pt; letter-spacing: .03em; }
+
+.colouring-sheet-supplied { padding: 0 3mm; grid-template-rows: minmax(0, 1fr) auto; height: 285mm; }
+.colouring-sheet-supplied .colouring-sheet-art { height: 270mm; }
+.colouring-sheet-supplied footer img { height: 5mm; width: 5mm; vertical-align: middle; filter: grayscale(1) brightness(0); }

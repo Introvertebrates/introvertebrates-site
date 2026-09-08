@@ -1,6 +1,4 @@
 ---
-video_youtube_id: "SYVBvfz9fh8"
-video_title: "Ruby – opptak fra Introvertebrates"
 date: 2026-09-06 10:00:00 +0200
 date_label: "Uke 36 · 6. september 2026"
 title: "Ruby på nært hold"
@@ -18,18 +16,18 @@ colouring_image_alt: "Fotografibasert fargeleggingsark av Ruby"
 colouring_label: "Fargelegg Ruby"
 ---
 
-## Finn fargene
+## To kroppsdeler
 
-Start med beina. Hvor ser de blå ut, og hvor blir de nesten svarte? Se deretter etter de oransje hårene på bakkroppen til venstre i bildet. Lyset gjør at noen hår er lettere å se enn andre.
+Ruby er fotografert tett ovenfra. Til venstre ser du bakkroppen med oransje hår. Den runde delen midt i bildet er forkroppen. Her sitter beina festet. Følg kanten mellom de to kroppsdelene – hvor blir den skjult av hår og bein?
 
-## Følg et bein
+## Et lite, blankt punkt
 
-Velg ett bein du kan se tydelig. Følg det fra kroppen og utover. Finn et sted der det bøyer seg. Noen bein overlapper, og noen fortsetter utenfor bildet – derfor trenger du ikke kunne telle alle åtte her.
+Se mot høyre på forkroppen, like bak munndelene. Den lille, blanke forhøyningen er øyegruppen. Du trenger ikke kunne skille hvert enkelt øye for å finne hvor de sitter.
 
-## Et nærbilde viser detaljer
+## Blå bein og lyse hår
 
-Se på hårene langs beina og bakkroppen. Noen står ut fra kroppen, mens andre ligger tettere. Hvor finner du de lengste hårene i nærbildet?
+Beina går ut fra forkroppen i flere retninger. Langs kantene kan du se enkelte lyse hår mot bakgrunnen. Velg et tydelig beinledd og se hvordan beinet endrer retning der. Flere bein fortsetter utenfor bildekanten.
 
-## Prøv selv
+## Ta med detaljene til arket
 
-Finn tre detaljer i fotografiet: et blått felt, et oransje felt og et bøyd beinledd. Finn de samme kroppsdelene på fargeleggingsarket. Arket viser Ruby fra en annen vinkel, så plasseringen er ikke helt lik.
+På fargeleggingsarket er mer av Ruby synlig. Finn bakkroppen og beina, og bruk fotografiet som fargehjelp: oransje på bakkroppen og blått på beina. Du kan også velge dine egne farger.

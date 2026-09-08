@@ -1,4 +1,5 @@
 ---
+colouring_release: "huggorm"
 title: "Hvordan finner huggormen varmen?"
 description: "Se hvordan en huggorm bruker sol, skygge og skjul for å styre kroppstemperaturen gjennom dagen."
 intro: "Huggormen lager ikke jevn kroppsvarme slik vi gjør. I stedet flytter den seg mellom varme og kjølige steder."

@@ -1,6 +1,5 @@
 ---
-video_youtube_id: "sr930b5ycrg"
-video_title: "Psyttala – opptak fra Introvertebrates"
+colouring_release: "psyttala"
 title: "Psyttala forandrer rustning mens den vokser"
 description: "Sammenlign en nymfe og en voksen Psyttala horrida, og se hva som skjer mellom hudskiftene."
 intro: "En ung rovtege er ikke bare en mindre voksen. Farger, pigger og kroppsform utvikles gjennom flere nymfestadier."

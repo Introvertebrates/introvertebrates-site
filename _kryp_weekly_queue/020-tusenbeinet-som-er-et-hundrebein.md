@@ -1,4 +1,5 @@
 ---
+colouring_release: "hundrebein"
 title: "Hundrebeinet som ikke har hundre bein"
 description: "Tell kroppsledd og bein hos Ethmostigmus trigonopodus, og finn ut hvorfor navnet hundrebein ikke er et nøyaktig tall."
 intro: "Ethmostigmus trigonopodus har mange bein, men navnet hundrebein lover ikke et bestemt antall. Kroppen følger et tydelig mønster."

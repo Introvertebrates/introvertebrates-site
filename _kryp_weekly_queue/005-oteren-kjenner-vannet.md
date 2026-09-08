@@ -1,4 +1,5 @@
 ---
+colouring_release: "oter"
 video_url: "/assets/kryp/video/otter-water.mp4"
 video_title: "Oter i vannet"
 title: "Oteren kjenner bevegelse i vannet"

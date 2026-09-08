@@ -1,6 +1,4 @@
 ---
-video_youtube_id: "f3f4iNm1e7k"
-video_title: "Siuzi – opptak fra Introvertebrates"
 title: "Siuzi har forsvar som nesten ikke synes"
 description: "Lær hvordan Siuzi og andre Theraphosa-taranteller kan bruke små irriterende hår som forsvar."
 intro: "De fine hårene på Siuzis bakkropp er ikke bare pynt. Noen av dem er spesialiserte forsvarsstrukturer."

@@ -1,4 +1,5 @@
 ---
+colouring_release: "kneler"
 video_url: "/assets/kryp/video/ghost-mantis-movement.mp4"
 video_title: "Spøkelseskneler (Phyllocrania paradoxa) – en annen knelerart enn på bildet"
 title: "Knelerens forbein er et fangstverktøy"

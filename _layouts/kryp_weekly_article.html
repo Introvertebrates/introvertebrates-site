@@ -36,7 +36,7 @@
     }
   </script>
   <link rel="stylesheet" href="{{ '/assets/homepage.css?v=20260906a' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/kryp.css?v=20260907a' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/kryp.css?v=20260908a' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/kryp-weekly.css?v=20260905a' | relative_url }}">
 </head>
 <body>
@@ -60,7 +60,7 @@
     <section class="kryp-section">
       <div class="kryp-shell kryp-weekly-article-body">
         <div class="kryp-weekly-prose">{{ content }}
-{% if page.video_youtube_id or page.video_url %}<section class="kryp-weekly-video"><h2>Se dyret i bevegelse</h2><figure class="kryp-animal-video">{% if page.video_youtube_id %}<iframe src="https://www.youtube-nocookie.com/embed/{{ page.video_youtube_id | escape }}" title="{{ page.video_title | escape }}" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>{% else %}<video controls playsinline preload="none"><source src="{{ page.video_url | relative_url }}" type="video/mp4">Nettleseren din kan ikke spille av videoen.</video>{% endif %}<figcaption>{{ page.video_title | escape }} · {% if page.video_youtube_id %}<a href="https://www.youtube.com/watch?v={{ page.video_youtube_id | escape }}">Se på YouTube</a>{% else %}<a href="{{ page.video_url | relative_url }}">Åpne filmen</a>{% endif %}</figcaption></figure></section>{% endif %}</div>
+{% if page.video_url %}<section class="kryp-weekly-video"><h2>Se dyret i bevegelse</h2><figure class="kryp-animal-video"><video controls playsinline preload="none" aria-label="{{ page.video_title | escape }}"><source src="{{ page.video_url | relative_url }}" type="video/mp4">Nettleseren din kan ikke spille av videoen.</video><figcaption>{{ page.video_title | escape }}</figcaption></figure></section>{% endif %}</div>
         <aside class="kryp-weekly-aside" aria-label="Fortsett å utforske">
           <p class="kryp-eyebrow">Neste spor</p><h2>Vil du se nærmere?</h2><p>Følg dyresporet som passer til ukas tema, eller gå tilbake og oppdag tidligere dyr.</p>
           <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ page.link_url | relative_url }}">{{ page.link_label }} <span aria-hidden="true">→</span></a><a class="kryp-button" href="{{ '/kryp-ukearkiv.html' | relative_url }}">Se hele arkivet</a></div>

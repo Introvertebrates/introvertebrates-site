@@ -1,6 +1,5 @@
 ---
-video_youtube_id: "o7Ja1Ro3jDo"
-video_title: "Solbiller – opptak fra Introvertebrates"
+colouring_release: "solbille"
 title: "Solbillen skifter kropp helt"
 description: "Følg Pachnoda marginata fra larve til puppe og videre til en fargerik voksen bille."
 intro: "En solbille ser ikke ut som en liten utgave av seg selv når den klekkes. Kroppen bygges om gjennom fullstendig forvandling."

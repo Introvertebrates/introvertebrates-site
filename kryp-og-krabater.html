@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#031018">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Kryp & Krabater","url":"https://introvertebrates.com/kryp-og-krabater.html","description":"Et norsk natur- og dyrelivsprosjekt for nysgjerrige barn, med egne møter ute og dyr fra Introvertebrates-samlingen.","inLanguage":"no","audience":{"@type":"PeopleAudience","audienceType":"Barn"},"publisher":{"@type":"Organization","name":"Introvertebrates"}}</script>
   <link rel="stylesheet" href="assets/homepage.css?v=20260906a">
-  <link rel="stylesheet" href="assets/kryp.css?v=20260907a">
+  <link rel="stylesheet" href="assets/kryp.css?v=20260908a">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Hopp til innhold</a>
@@ -45,7 +45,7 @@
   <section class="kryp-hero" id="top" aria-labelledby="kryp-title">
     <div class="kryp-hero-media" aria-hidden="true"><img src="assets/kryp/norwegian-landscape.jpg" alt="" width="1920" height="1088"></div>
     <div class="kryp-hero-copy kryp-shell">
-      <p class="kryp-kicker"><span>Norsk natur og dyreliv</span><span>Egne dyr på nært hold</span></p>
+      <p class="kryp-kicker"><span>Fokus på norsk natur og dyreliv</span><span>Egne dyr på nært hold</span></p>
       <h1 id="kryp-title">En hel verden venter på å bli <em>lagt merke til.</em></h1>
       <p class="kryp-hero-lede">Kryp &amp; Krabater handler først og fremst om norsk natur og dyreliv – fra små skapninger under føttene våre til fugler på bratte klipper og ville dyr i fjellet. Underveis møter vi også noen av dyrene i min egen samling.</p>
       <p class="kryp-hero-lede">Dyr, natur og nysgjerrighet – fortalt for barn.</p>
@@ -82,6 +82,7 @@
           <p><strong>Tina spør:</strong> {{ weekly.question }}</p>
         </div>
         <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ weekly.url | relative_url }}">Les hele ukas dyr <span aria-hidden="true">→</span></a><a class="kryp-button" href="kryp-ukearkiv.html">Se ukearkivet</a></div>
+{% assign dubia_published = site.kryp_weekly | where: 'colouring_release', 'dubia' | first %}{% unless dubia_published %}<p class="kryp-upcoming"><strong>De neste ukene:</strong> Huggorm 13. september · Dubia-kakerlakk 20. september. Nye fargeleggingsark følger med når artiklene publiseres.</p>{% endunless %}
       </div>
     </div>
   </section>
@@ -89,7 +90,7 @@
   <section class="kryp-section" id="animal-world" aria-labelledby="world-title">
     <div class="kryp-shell">
       <header class="kryp-section-heading">
-        <div><p class="kryp-eyebrow">Velg et spor</p><h2 id="world-title">Norsk natur først. Egne dyr på nært hold.</h2></div>
+        <div><p class="kryp-eyebrow">Velg et spor</p><h2 id="world-title">Fokus på norsk natur. Egne dyr på nært hold.</h2></div>
         <p>Vi begynner ute – i fjæra, skogen, våtmarka og fjellet. Derfra følger vi nysgjerrigheten inn i dyrerommet, der ekte dyr fra samlingen gir nye detaljer å undersøke.</p>
       </header>
       <div class="kryp-trails">
@@ -142,7 +143,7 @@
             <span>Fugl · vintermøte</span>
             <h3>Lappuglen vender blikket</h3>
             <p><strong>Se etter:</strong> Hvor lite av resten av kroppen beveger seg når hodet vender seg?</p>
-            <a href="kryp-spor-hav-og-himmel.html">Følg fuglesporet <span aria-hidden="true">→</span></a>
+            <a href="kryp-artsprofiler.html#lappugle">Møt lappugle <span aria-hidden="true">→</span></a>
           </div>
         </article>
         <article class="kryp-motion-card">
@@ -158,7 +159,7 @@
             <span>Fugl · på en grein</span>
             <h3>Sidensvansen følger med</h3>
             <p><strong>Se etter:</strong> Legg merke til toppen, hodet og halen. Hvilken del beveger seg først?</p>
-            <a href="kryp-spor-hav-og-himmel.html">Følg fuglesporet <span aria-hidden="true">→</span></a>
+            <a href="kryp-artsprofiler.html#sidensvans">Møt sidensvans <span aria-hidden="true">→</span></a>
           </div>
         </article>
       </div>

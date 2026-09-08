@@ -1,6 +1,4 @@
 ---
-video_youtube_id: "WvyBlNpTxQI"
-video_title: "Gunnar – opptak fra Introvertebrates"
 title: "Gunnar har et horn med et ubesvart spørsmål"
 description: "Se hornet på ryggskjoldet til Ceratogyrus darlingi, og lær hvorfor vitenskapen også må vise hva den ikke vet."
 intro: "Gunnars horn er lett å få øye på. Det vanskeligere spørsmålet er hva hornet faktisk gjør for edderkoppen."

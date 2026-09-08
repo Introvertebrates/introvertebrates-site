@@ -1,6 +1,4 @@
 ---
-video_youtube_id: "IXY2w7nUmoA"
-video_title: "Sabrina – opptak fra Introvertebrates"
 title: "Sabrina venter ved skjulestedet"
 description: "Se hvordan Sabrina bruker skjulestedet, silken og følsomme bein til å oppdage små bevegelser."
 intro: "Sabrina trenger ikke løpe rundt for å finne mat. Hun kan vente nær et trygt skjulested og reagere når underlaget vibrerer."

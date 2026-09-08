@@ -1,6 +1,4 @@
 ---
-video_youtube_id: "V_QQOjU2T28"
-video_title: "Elvira – opptak fra Introvertebrates"
 title: "Elvira er blå uten blå maling"
 description: "Se hvorfor Elviras elektriske blåfarge handler om hvordan lys møter kroppens fine strukturer."
 intro: "Elviras blå bein kan skifte uttrykk når lyset eller synsvinkelen endres. Fargen er knyttet til mikroskopiske strukturer i overflaten."

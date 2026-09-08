@@ -1,4 +1,6 @@
 ---
+video_url: "/assets/kryp/video/cockroaches-bark.mp4"
+video_title: "Kakerlakker på korkbark"
 title: "Hvem gjemmer seg under barken?"
 description: "Møt kakerlakker som skogsdyr, og se hvordan antennene og den flate kroppen hjelper dem med å utforske livet rundt død ved."
 date: 2026-08-21 10:00:00 +0200
@@ -10,11 +12,6 @@ image_alt: "En brunmønstret kakerlakk sett tett fra siden"
 image_caption: "Kakerlakker på nært hold · fotografert av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
-colouring_url: "/kryp-fargelegging.html#colouring-dubia"
-colouring_image: "/assets/kryp/colouring/dubia-weekly.png"
-colouring_image_alt: "Fargeleggingsark av Dubia-kakerlakk"
-colouring_label: "Fargelegg Dubia-kakerlakk"
-colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
 ---
 
 ## Antennene går først

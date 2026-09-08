@@ -347,6 +347,7 @@
 .colouring-sheet-brand strong { font-size: 12pt; }
 .colouring-sheet-brand span { font-size: 7pt; letter-spacing: .03em; }
 
-.colouring-sheet-supplied { padding: 0 3mm; grid-template-rows: minmax(0, 1fr) auto; height: 285mm; }
-.colouring-sheet-supplied .colouring-sheet-art { height: 270mm; }
-.colouring-sheet-supplied footer img { height: 5mm; width: 5mm; vertical-align: middle; filter: grayscale(1) brightness(0); }
+
+/* Shared print framing; the supplied Huggorm drawing is preserved in full below its baked-in title. */
+.colouring-huggorm-art { position:relative; overflow:hidden; width:100%; height:205mm; } .colouring-huggorm-art img { position:absolute; bottom:0; left:0; width:100%; height:auto; display:block; }
+.colouring-huggorm-preview { position:relative; overflow:hidden; width:100%; height:100%; } .colouring-huggorm-preview img { position:absolute; bottom:0; left:50%; transform:translateX(-50%); height:140%; width:auto; max-width:none; object-fit:contain; }

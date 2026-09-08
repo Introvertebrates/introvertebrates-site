@@ -67,7 +67,7 @@
           <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ page.link_url | relative_url }}">{{ page.link_label }} <span aria-hidden="true">→</span></a><a class="kryp-button" href="{{ '/kryp-ukearkiv.html' | relative_url }}">Se hele arkivet</a></div>
           {% if page.colouring_url and page.colouring_image %}
           <div class="kryp-weekly-colouring">
-            <img src="{{ page.colouring_image | relative_url }}" alt="{{ page.colouring_image_alt | escape }}" width="1055" height="1491" loading="lazy" decoding="async">
+            <img {% if page.colouring_image contains 'huggorm-weekly' %}class="weekly-huggorm-art"{% endif %} src="{{ page.colouring_image | relative_url }}" alt="{{ page.colouring_image_alt | escape }}" width="1055" height="1491" loading="lazy" decoding="async">
             <div><p class="kryp-eyebrow">Ekstra aktivitet</p><h3>Fargelegg ukas dyr</h3><p>{{ page.colouring_description | default: 'En forenklet strekillustrasjon basert på et Introvertebrates-fotografi.' | escape }}</p><a class="kryp-button" href="{{ page.colouring_url | relative_url }}">{{ page.colouring_label | default: 'Åpne fargeleggingsarket' }} <span aria-hidden="true">→</span></a></div>
           </div>
           {% endif %}

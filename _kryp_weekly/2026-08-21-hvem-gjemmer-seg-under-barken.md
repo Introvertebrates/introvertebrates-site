@@ -1,6 +1,9 @@
 ---
-video_url: "/assets/kryp/video/cockroaches-bark.mp4"
-video_title: "Kakerlakker på korkbark"
+colouring_release: "kakerlakker"
+colouring_url: "/kryp-fargelegging.html#colouring-kakerlakker"
+colouring_image: "/assets/kryp/colouring/kakerlakker-weekly.png"
+colouring_image_alt: "Fargeleggingsark av kakerlakk, basert på fotografiet"
+colouring_label: "Fargelegg kakerlakken"
 title: "Hvem gjemmer seg under barken?"
 description: "Møt kakerlakker som skogsdyr, og se hvordan antennene og den flate kroppen hjelper dem med å utforske livet rundt død ved."
 date: 2026-08-21 10:00:00 +0200

@@ -1,7 +1,5 @@
 ---
 colouring_release: "oter"
-video_url: "/assets/kryp/video/otter-water.mp4"
-video_title: "Oter i vannet"
 title: "Oteren kjenner bevegelse i vannet"
 description: "Se hvordan oterens kropp, hale, poter og værhår hjelper den med å svømme og jakte."
 intro: "Når det meste av kroppen er under vann, kan bølgene bak hodet avsløre hvor oteren beveger seg."
@@ -32,4 +30,4 @@ Den svært tette pelsen bidrar til å holde et isolerende lag med luft nær hude
 
 ## Prøv selv
 
-Se videoen eller bildet og finn hode, rygglinje og hale. Hvilke deler er synlige, og hvilke må du forestille deg under vannflaten?
+Se på bildet og finn hode og rygglinje. Hvilke deler er synlige, og hvilke må du forestille deg under vannflaten?

@@ -23,7 +23,7 @@
   <meta name="theme-color" content="#031018">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Kryp & Krabater","url":"https://introvertebrates.com/kryp-og-krabater.html","description":"Et norsk natur- og dyrelivsprosjekt for nysgjerrige barn, med egne møter ute og dyr fra Introvertebrates-samlingen.","inLanguage":"no","audience":{"@type":"PeopleAudience","audienceType":"Barn"},"publisher":{"@type":"Organization","name":"Introvertebrates"}}</script>
   <link rel="stylesheet" href="assets/homepage.css?v=20260906a">
-  <link rel="stylesheet" href="assets/kryp.css?v=20260908a">
+  <link rel="stylesheet" href="assets/kryp.css?v=20260908b">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Hopp til innhold</a>
@@ -82,7 +82,6 @@
           <p><strong>Tina spør:</strong> {{ weekly.question }}</p>
         </div>
         <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ weekly.url | relative_url }}">Les hele ukas dyr <span aria-hidden="true">→</span></a><a class="kryp-button" href="kryp-ukearkiv.html">Se ukearkivet</a></div>
-{% assign dubia_published = site.kryp_weekly | where: 'colouring_release', 'dubia' | first %}{% unless dubia_published %}<p class="kryp-upcoming"><strong>De neste ukene:</strong> Huggorm 13. september · Dubia-kakerlakk 20. september. Nye fargeleggingsark følger med når artiklene publiseres.</p>{% endunless %}
       </div>
     </div>
   </section>
@@ -130,6 +129,7 @@
         </div>
       </div>
       <div class="kryp-motion-grid">
+<article class="kryp-motion-card"><video class="kryp-motion-video-desktop" controls playsinline preload="none" aria-label="Huggorm i gresset"><source src="assets/kryp/video/huggorm-edited.mp4" type="video/mp4"></video><video class="kryp-motion-video-mobile" controls playsinline preload="none" aria-label="Huggorm i gresset"><source src="assets/kryp/video/huggorm-edited-vertical.mp4" type="video/mp4"></video><div class="kryp-motion-copy"><span>Reptil · eget opptak</span><h3>Huggormen ligger i gresset</h3><p><strong>Se etter:</strong> Følg hodet og mønsteret langs kroppen.</p><a href="kryp-artsprofiler.html#huggorm">Møt huggormen →</a></div></article>
         <article class="kryp-motion-card">
           <video class="kryp-motion-video-desktop" controls muted playsinline preload="none" poster="assets/kryp/lappugle-motion-poster.jpg" aria-label="Lappugle som vender hodet mot kameraet">
             <source src="assets/kryp/video/lappugle-vinter-landscape.mp4" type="video/mp4">

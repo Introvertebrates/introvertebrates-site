@@ -911,7 +911,7 @@ button {
 .about-portrait::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(2, 8, 14, 0.88), transparent 42%);
+  background: linear-gradient(to top, rgba(2, 8, 14, 0.88), rgba(2, 8, 14, 0.3) 12%, transparent 28%);
   content: "";
   pointer-events: none;
 }
@@ -1317,4 +1317,40 @@ button {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+}
+
+/* A small personal introduction within the About section. */
+.about-pets {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  align-items: center;
+  gap: 22px;
+  margin-top: 30px;
+  padding-top: 26px;
+  border-top: 1px solid var(--home-line);
+}
+.about-pets img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 65%;
+  border-radius: 18px;
+}
+.about-pets h3 {
+  margin: 0 0 10px;
+  color: var(--home-text, #eaf3f7);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.about-pets p {
+  margin: 0;
+  color: var(--home-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+@media (max-width: 560px) {
+  .about-pets { grid-template-columns: 1fr; gap: 18px; }
+  .about-pets img { width: 160px; }
 }

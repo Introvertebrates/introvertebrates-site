@@ -24,18 +24,6 @@
         "detail": "Accepted and refused outcomes"
       },
       {
-        "label": "Largest recorded leg span",
-        "value": "25 cm",
-        "detail": "Sonja",
-        "profileKey": "sonja-mauremys-reevesii"
-      },
-      {
-        "label": "Largest recorded body length",
-        "value": "20 cm",
-        "detail": "Sonja",
-        "profileKey": "sonja-mauremys-reevesii"
-      },
-      {
         "label": "Heaviest recorded resident",
         "value": "61 g",
         "detail": "Siuzi",

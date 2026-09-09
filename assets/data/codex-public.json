@@ -24,6 +24,18 @@
         "detail": "Accepted and refused outcomes"
       },
       {
+        "label": "Largest recorded leg span (DLS)",
+        "value": "20 cm",
+        "detail": "Siuzi",
+        "profileKey": "siuzi-theraphosa-apophysis"
+      },
+      {
+        "label": "Largest recorded body length",
+        "value": "8.5 cm",
+        "detail": "Siuzi",
+        "profileKey": "siuzi-theraphosa-apophysis"
+      },
+      {
         "label": "Heaviest recorded resident",
         "value": "61 g",
         "detail": "Siuzi",

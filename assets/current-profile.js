@@ -488,7 +488,7 @@
     "siuzi-theraphosa-apophysis": {
       lifestyle: "A very large terrestrial tarantula from northern South America that uses ground shelter and excavated retreats. Its scale makes secure footing and deep substrate especially important.",
       standout: "Young animals can show pinkish tones on the legs, while the adult form becomes darker and heavier. Size is impressive, but the close portraits reveal equally distinctive hairs and mouthparts.",
-      inCare: "Siuzi has a spacious terrestrial setup, deep substrate, a retreat, water, and close condition monitoring. Her documented health case remains an individual case study, not a universal diagnosis."
+      inCare: "Siuzi has a spacious terrestrial setup, deep substrate, a retreat, water, and close condition monitoring. Her care history includes a documented health case on the Introvertebrates channel."
     }
   };
 
@@ -582,7 +582,7 @@
       shelter: "Adult females are associated with fossorial retreats in lowland leaf litter. Recent field work documented an adult female at a ground burrow and later climbing roughly twelve metres into a tree, an important reminder that ‘terrestrial’ describes the usual centre of life rather than a physical inability to climb.",
       feeding: "A large-bodied ambush predator can take a wide range of invertebrate prey, and occasional vertebrate predation has been recorded in giant tarantulas. Those unusual events are natural-history observations, not a captive feeding target; appropriately sized invertebrates remain the relevant collection record.",
       defence: "Size is only one part of the defensive system. Theraphosa can retreat, stridulate, posture, and release strongly irritating urticating hairs; the last of these makes face and eye protection during enclosure work particularly important.",
-      inference: "Deep supportive substrate, a broad stable retreat, water, high ventilation, and low fall risk suit an animal of Siuzi's mass. Her documented health case and feeding history remain individual evidence, not a substitute for species research."
+      inference: "Deep supportive substrate, a broad stable retreat, water, high ventilation, and low fall risk suit an animal of Siuzi's mass. Her feeding and health records help me follow changes in her condition over time."
     }
   };
 
@@ -591,18 +591,18 @@
     "ceratogyrus-darlingi": "Gunnar gives the Introvertebrates collection a living record of Ceratogyrus darlingi. His profile brings together verified species information, the introduction video, and observations recorded through the Codex.",
     "chilobrachys-fimbriatus": "This individual has produced the dense webbed retreat documented in the collection photography and rehousing video. Those records describe this animal’s behaviour in my care without turning one resident’s choices into universal care claims.",
     "chilobrachys-kaeng-krachan": "This is the individual kept under the hobby designation Chilobrachys sp. “Kaeng Krachan.” Its paludarium build, feeding records, and future photographs form a personal record while the profile remains transparent about the unresolved formal identity.",
-    "elvira-chilobrachys-natanicharum": "Elvira is the individual behind this profile. Her collection record connects the recently described electric-blue species with a named resident whose feeding, molts, and development can be followed over time.",
+    "elvira-chilobrachys-natanicharum": "Elvira is the individual behind this profile. Her collection record connects the recently described electric-blue species with a named resident whose feeding, moults, and development can be followed over time.",
     "ruby-chromatopelma-cyaneopubescens": "Ruby is one of the most visually distinctive residents in the collection. Her feeding-response video and Codex history give the profile an individual story alongside the accepted taxonomy and range of Chromatopelma cyaneopubescens.",
     "grammostola-pulchripes": "Runa represents Grammostola pulchripes in the current collection. Her recognisable golden leg bands make her easy to follow visually, while the Codex separates personal observations from general species information.",
     "linothele-fallax": "This Linothele fallax broadens the collection beyond tarantulas. Its curtain-web spider identity, patterned abdomen, feeding video, and care history give the profile a different biological and visual character from the theraphosid residents.",
     "sonja-mauremys-reevesii": "Sonja is the only vertebrate in the current collection. Her profile follows her as an individual—from the home shown in the accompanying video to the measurements and observations selected from her Codex record—while keeping turtle biology separate from the spider profiles.",
-    "bella-monocentropus-balfouri": "Bella is one of two Monocentropus balfouri in my care. Her record remains separate from Belinda’s so that photographs, feeding outcomes, molts, and future observations continue to describe the correct individual.",
+    "bella-monocentropus-balfouri": "Bella is one of two Monocentropus balfouri in my care. Her record remains separate from Belinda’s so that photographs, feeding outcomes, moults, and future observations continue to describe the correct individual.",
     "belinda-monocentropus-balfouri": "Belinda has her own profile because a shared species does not mean a shared history. Her vivarium video and Codex record document her as an individual, independently from Bella’s photographs and observations.",
     "omothymus-violaceopes": "Orion represents Omothymus violaceopes in the current collection. His profile connects the species’ accepted modern name with an individual record that can grow through verified observations, photographs, and video.",
     "clara-psalmopoeus-irminia": "Clara is the individual behind this profile. Her foliage-rich enclosure photography and personal Codex record add a keeper’s view to the documented range and taxonomy of Psalmopoeus irminia.",
     "psyttala-horrida": "This assassin bug colony brings predatory insects into the collection. The profile follows the colony as a living group record, with habitat, feeding observations, and photography kept distinct from published species-level research.",
     "pachnoda-marginata": "This Pachnoda marginata colony represents beetles in the current collection. Its group photography and Codex history can document feeding and colony development while the profile expands into life cycle and natural-history research.",
-    "siuzi-theraphosa-apophysis": "Siuzi is the individual behind this profile. Her feeding record and the documented health case on the Introvertebrates channel create a particularly detailed personal history that sits alongside, but does not replace, verified species information."
+    "siuzi-theraphosa-apophysis": "Siuzi’s feeding records, photographs and videos document her life in the collection, including the health case shared on the Introvertebrates channel."
   };
 
   const root = document.querySelector("[data-current-profile]");
@@ -759,10 +759,10 @@
           <div class="codex-panel" data-codex-profile="${key}">
             <span class="codex-label">Introvertebrates Codex</span>
             <h3>${profile.resident} · care history</h3>
-            <p class="codex-intro">A privacy-safe summary of this resident’s time in care, feeding outcomes, molts, and measurements. These are observations from the Introvertebrates collection, not species-wide averages.</p>
-            <p class="codex-status" data-codex-status>Awaiting a privacy-reviewed Codex export. No invented statistics are shown.</p>
+            <p class="codex-intro">Time in care, feeding records, moults and measurements. These are observations from the Introvertebrates collection, not species-wide averages.</p>
+            <p class="codex-status" data-codex-status>Collection records are not available here yet.</p>
             <div class="codex-metrics" data-codex-metrics hidden></div>
-            <p class="codex-privacy">Never published here: raw notes, record IDs, seller or breeder details, enclosure identifiers, local file paths, or exact private event dates.</p>
+            <p class="codex-privacy">Private notes and identifying details are kept off the website.</p>
           </div>
         </div>
       </section>
@@ -838,7 +838,7 @@
         metricsElement.hidden = false;
         const sampleText = `${codexProfile.sampleSize} Codex record${codexProfile.sampleSize === 1 ? "" : "s"}`;
         const updated = data.generatedAt ? new Intl.DateTimeFormat("en", { day: "numeric", month: "long", year: "numeric" }).format(new Date(data.generatedAt)) : null;
-        statusElement.textContent = updated ? `Privacy-reviewed snapshot · ${sampleText} · updated ${updated}.` : `Privacy-reviewed snapshot · ${sampleText}.`;
+        statusElement.textContent = updated ? `Collection records · ${sampleText} · updated ${updated}.` : `Collection records · ${sampleText}.`;
       })
       .catch(() => {
         // Keep the honest fallback already present in the page.

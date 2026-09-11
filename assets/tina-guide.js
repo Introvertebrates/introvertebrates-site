@@ -4,7 +4,7 @@
 
   const css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = '/assets/tina-guide.css?v=20260911e';
+  css.href = '/assets/tina-guide.css?v=20260911h';
   document.head.append(css);
 
   const avatar = (role, label = 'Tina Tarantell') =>

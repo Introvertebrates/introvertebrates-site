@@ -4,7 +4,7 @@
 
   const css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = '/assets/tina-guide.css?v=20260911a';
+  css.href = '/assets/tina-guide.css?v=20260911e';
   document.head.append(css);
 
   const avatar = (role, label = 'Tina Tarantell') =>
@@ -33,7 +33,6 @@
     <p><strong>Tina foreslår</strong>${copy} <a href="${href}">${linkText} →</a></p>
   </div>`;
 
-  // Homepage: Tina's weekly question + a compact guide to her four recurring roles.
   const homeTina = document.querySelector('.kk-welcome .kk-tina');
   if (homeTina) {
     const oldImage = homeTina.querySelector('img');
@@ -48,7 +47,6 @@
     }
   }
 
-  // About Tina: make the role system explicit without replacing her main portrait.
   const tinaAbout = document.querySelector('#tina-tarantell .kryp-tina-copy');
   if (tinaAbout && !tinaAbout.querySelector('.kryp-tina-role-grid')) {
     const wrap = document.createElement('div');
@@ -58,7 +56,6 @@
     if (actions) actions.before(wrap); else tinaAbout.append(wrap);
   }
 
-  // Ukas dyr: keep the question role in the hero and let Tina guide the next click.
   const weeklyQuestion = document.querySelector('.kryp-weekly-question');
   if (weeklyQuestion) {
     const oldImage = weeklyQuestion.querySelector(':scope > img');
@@ -69,8 +66,6 @@
     weeklyAside.insertAdjacentHTML('afterbegin', nextCard('Når du er ferdig med ukas dyr, kan du følge temaet videre.', '{{ page.link_url | relative_url }}', 'Følg sporet'));
   }
 
-  // Animal profiles: turn Tina prompts into distinct role cards, add a few true explainers,
-  // and use her suggestion role for meaningful next stops.
   const profileRoles = {
     huggorm: 'utfordrer', oter: 'sporr', moskus: 'utfordrer', spettmeis: 'utfordrer',
     ravn: 'utfordrer', lappugle: 'utfordrer', sidensvans: 'utfordrer', sabrina: 'utfordrer',
@@ -134,7 +129,6 @@
     if (copy && !copy.querySelector('.tina-next')) copy.insertAdjacentHTML('beforeend', nextCard('Vil du utforske noe som henger sammen med dette dyret?', href, text));
   });
 
-  // Spor pages: one explanation/challenge near the start and Tina as a gentle next-stop guide.
   const trailPage = document.querySelector('.kryp-trail-page');
   if (trailPage) {
     const path = location.pathname.split('/').pop();

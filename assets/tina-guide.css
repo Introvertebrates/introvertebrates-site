@@ -1,5 +1,8 @@
-.tina-avatar{display:block;flex:0 0 auto;width:82px;height:82px;background:transparent url("/Tina%20%E2%80%93%20No%20background.png?v=20260911e") center/contain no-repeat;border:0!important;box-shadow:none!important;border-radius:0!important}
-.tina-avatar--sporr,.tina-avatar--forklarer,.tina-avatar--utfordrer,.tina-avatar--foreslar{background-position:center;background-size:contain}
+.tina-avatar{display:block;flex:0 0 auto;width:82px;height:82px;background:transparent url("/assets/tina-guide-sprite.webp?v=20260911f") no-repeat;background-size:200% 200%;border:0!important;box-shadow:none!important;border-radius:0!important}
+.tina-avatar--sporr{background-position:0 0}
+.tina-avatar--forklarer{background-position:100% 0}
+.tina-avatar--utfordrer{background-position:0 100%}
+.tina-avatar--foreslar{background-position:100% 100%}
 .tina-role-card{--tina-accent:#b9d99b;display:grid;grid-template-columns:82px 1fr;gap:16px;align-items:center;background:linear-gradient(135deg,#182c27,#11201d);border:1px solid #ffffff16!important;border-radius:10px!important;padding:16px!important;margin-top:14px}
 .tina-role-card[data-tina-role="sporr"]{--tina-accent:#d8c2ff}.tina-role-card[data-tina-role="forklarer"]{--tina-accent:#a9e7d5}.tina-role-card[data-tina-role="utfordrer"]{--tina-accent:#ffc5b7}.tina-role-card[data-tina-role="foreslar"]{--tina-accent:#f6dda2}
 .tina-role-label{margin:0 0 2px!important;color:var(--tina-accent)!important;font-size:10px!important;font-weight:700!important;letter-spacing:.1em!important;text-transform:uppercase}

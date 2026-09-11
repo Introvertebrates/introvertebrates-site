@@ -4,14 +4,14 @@
 
   const css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = '/assets/tina-guide.css?v=20260911k';
+  css.href = '/assets/tina-guide.css?v=20260911m';
   document.head.append(css);
 
   const roleImages = {
-    sporr: '/assets/tina/tina-sporr.webp?v=20260911k',
-    forklarer: '/assets/tina/tina-forklarer.webp?v=20260911k',
-    utfordrer: '/assets/tina/tina-utfordrer.webp?v=20260911k',
-    foreslar: '/assets/tina/tina-foreslar.webp?v=20260911k'
+    sporr: '/assets/tina/tina-sporr.webp?v=20260911m',
+    forklarer: '/assets/tina/tina-forklarer.webp?v=20260911m',
+    utfordrer: '/assets/tina/tina-utfordrer.webp?v=20260911m',
+    foreslar: '/assets/tina/tina-foreslar.webp?v=20260911m'
   };
 
   const avatar = (role, label = 'Tina Tarantell') =>

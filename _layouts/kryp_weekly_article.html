@@ -45,8 +45,6 @@
 <header class="kk-header"><div class="kk-wrap kk-header-inner"><a class="kk-brand" href="/kryp-og-krabater.html"><img src="/Only spider.png" alt="" width="500" height="500"><span>Kryp <i>&amp;</i> Krabater</span></a><nav aria-label="Kryp &amp; Krabater"><a href="/kryp-artsprofiler.html">Dyrene</a><a href="/kryp-ukearkiv.html" aria-current="page">Ukas dyr</a><a href="/kryp-filmer.html">Film</a><a href="/kryp-fargelegging.html">Fargelegging</a><a href="/kryp-om.html">Om</a></nav></div></header>
 
 <main class="kryp-page" id="main-content">
-  
-
   <article>
     <header class="kryp-weekly-article-hero">
       <div class="kryp-shell">
@@ -63,6 +61,7 @@
         <div class="kryp-weekly-prose">{{ content }}
 {% if page.video_url %}<section class="kryp-weekly-video"><h2>Se dyret i bevegelse</h2><figure class="kryp-animal-video"><video controls playsinline preload="none" {% if page.video_mobile_url %}data-portrait="true"{% endif %} aria-label="{{ page.video_title | escape }}">{% if page.video_mobile_url %}<source media="(max-width: 600px)" src="{{ page.video_mobile_url | relative_url }}" type="video/mp4">{% endif %}<source src="{{ page.video_url | relative_url }}" type="video/mp4">Nettleseren din kan ikke spille av videoen.</video><figcaption>{{ page.video_title | escape }}</figcaption></figure></section>{% endif %}</div>
         <aside class="kryp-weekly-aside" aria-label="Fortsett å utforske">
+          <div class="tina-next"><span class="tina-avatar tina-avatar--foreslar" role="img" aria-label="Tina foreslår"></span><p><strong>Tina foreslår</strong>Når du er ferdig med ukas dyr, kan du følge temaet videre. <a href="{{ page.link_url | relative_url }}">{{ page.link_label }} →</a></p></div>
           <p class="kryp-eyebrow">Neste spor</p><h2>Vil du se nærmere?</h2><p>Følg dyresporet som passer til ukas tema, eller gå tilbake og oppdag tidligere dyr.</p>
           <div class="kryp-actions"><a class="kryp-button kryp-button-primary" href="{{ page.link_url | relative_url }}">{{ page.link_label }} <span aria-hidden="true">→</span></a><a class="kryp-button" href="{{ '/kryp-ukearkiv.html' | relative_url }}">Se hele arkivet</a></div>
           {% if page.colouring_url and page.colouring_image %}
@@ -78,5 +77,6 @@
 </main>
 
 <footer class="kk-footer kk-wrap"><a class="kk-brand" href="/kryp-og-krabater.html">Kryp <i>&amp;</i> Krabater</a><span>Egne bilder. Ekte dyr. Rom for nysgjerrighet.</span><a href="/index.html">Til Introvertebrates ↗</a></footer>
+<script src="/assets/tina-guide.js?v=20260911a" defer></script>
 </body>
 </html>

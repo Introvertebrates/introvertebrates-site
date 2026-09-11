@@ -54,7 +54,7 @@
   navigate();
 
   const tinaGuide = document.createElement('script');
-  tinaGuide.src = '/assets/tina-guide.js?v=20260911j';
+  tinaGuide.src = '/assets/tina-guide.js?v=20260911k';
   tinaGuide.defer = true;
   document.body.append(tinaGuide);
 })();

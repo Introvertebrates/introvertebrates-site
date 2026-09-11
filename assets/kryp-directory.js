@@ -52,4 +52,9 @@
   });
   window.addEventListener('hashchange', navigate);
   navigate();
+
+  const tinaGuide = document.createElement('script');
+  tinaGuide.src = '/assets/tina-guide.js?v=20260911a';
+  tinaGuide.defer = true;
+  document.body.append(tinaGuide);
 })();

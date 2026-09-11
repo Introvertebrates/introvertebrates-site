@@ -4,11 +4,18 @@
 
   const css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = '/assets/tina-guide.css?v=20260911h';
+  css.href = '/assets/tina-guide.css?v=20260911j';
   document.head.append(css);
 
+  const roleImages = {
+    sporr: '/assets/tina/tina-sporr.webp?v=20260911j',
+    forklarer: '/assets/tina/tina-forklarer.webp?v=20260911j',
+    utfordrer: '/assets/tina/tina-utfordrer.webp?v=20260911j',
+    foreslar: '/assets/tina/tina-foreslar.webp?v=20260911j'
+  };
+
   const avatar = (role, label = 'Tina Tarantell') =>
-    `<span class="tina-avatar tina-avatar--${role}" role="img" aria-label="${label}"></span>`;
+    `<img class="tina-avatar tina-avatar--${role}" src="${roleImages[role]}" alt="${label}" loading="lazy" decoding="async">`;
 
   const roles = [
     ['sporr', 'Tina spør', 'Et spørsmål som får deg til å se litt nærmere.'],
@@ -25,7 +32,7 @@
 
   const roleCard = (role, title, body) => `<article class="tina-role-card" data-tina-role="${role}">
     ${avatar(role, title)}
-    <div><p class="tina-role-label">${title}</p>${body}</div>
+    <div class="tina-role-content"><p class="tina-role-label">${title}</p>${body}</div>
   </article>`;
 
   const nextCard = (copy, href, linkText) => `<div class="tina-next">
@@ -36,7 +43,9 @@
   const homeTina = document.querySelector('.kk-welcome .kk-tina');
   if (homeTina) {
     const oldImage = homeTina.querySelector('img');
-    if (oldImage) oldImage.replaceWith(document.createRange().createContextualFragment(avatar('sporr', 'Tina spør')));
+    if (oldImage && !oldImage.classList.contains('tina-avatar')) {
+      oldImage.replaceWith(document.createRange().createContextualFragment(avatar('sporr', 'Tina spør')));
+    }
     const trails = document.querySelector('#spor');
     if (trails && !document.querySelector('.kk-tina-guide')) {
       const section = document.createElement('section');
@@ -59,11 +68,19 @@
   const weeklyQuestion = document.querySelector('.kryp-weekly-question');
   if (weeklyQuestion) {
     const oldImage = weeklyQuestion.querySelector(':scope > img');
-    if (oldImage) oldImage.replaceWith(document.createRange().createContextualFragment(avatar('sporr', 'Tina spør')));
+    if (oldImage && !oldImage.classList.contains('tina-avatar')) {
+      oldImage.replaceWith(document.createRange().createContextualFragment(avatar('sporr', 'Tina spør')));
+    }
   }
+
   const weeklyAside = document.querySelector('.kryp-weekly-aside');
   if (weeklyAside && !weeklyAside.querySelector('.tina-next')) {
-    weeklyAside.insertAdjacentHTML('afterbegin', nextCard('Når du er ferdig med ukas dyr, kan du følge temaet videre.', '{{ page.link_url | relative_url }}', 'Følg sporet'));
+    const renderedTrailLink = weeklyAside.querySelector('a[href]');
+    if (renderedTrailLink) {
+      const href = renderedTrailLink.getAttribute('href');
+      const text = renderedTrailLink.textContent.replace(/→/g, '').trim() || 'Følg sporet';
+      weeklyAside.insertAdjacentHTML('afterbegin', nextCard('Når du er ferdig med ukas dyr, kan du følge temaet videre.', href, text));
+    }
   }
 
   const profileRoles = {
@@ -77,25 +94,33 @@
   document.querySelectorAll('.kryp-profile').forEach(profile => {
     const id = profile.id;
     const role = profileRoles[id] || 'sporr';
+
     profile.querySelectorAll('.kryp-tina-task').forEach(card => {
       if (card.dataset.tinaEnhanced) return;
       card.dataset.tinaEnhanced = 'true';
       card.dataset.tinaRole = role;
       card.classList.add('tina-role-card');
+
+      const existingMarkup = card.innerHTML;
+      card.innerHTML = `${avatar(role, roleTitles[role])}<div class="tina-role-content">${existingMarkup}</div>`;
+
       const label = card.querySelector('.kryp-tina-label');
-      if (label) { label.textContent = roleTitles[role]; label.className = 'tina-role-label'; }
-      card.insertAdjacentHTML('afterbegin', avatar(role, roleTitles[role]));
+      if (label) {
+        label.textContent = roleTitles[role];
+        label.className = 'tina-role-label';
+      }
     });
+
     const dynamic = profile.querySelector('[data-tina-profile]');
     if (dynamic && !dynamic.dataset.tinaEnhanced) {
       dynamic.dataset.tinaEnhanced = 'true';
       dynamic.dataset.tinaRole = role;
       dynamic.classList.add('tina-role-card');
       dynamic.classList.remove('kryp-weekly-question');
-      const img = dynamic.querySelector('img');
-      if (img) img.replaceWith(document.createRange().createContextualFragment(avatar(role, roleTitles[role])));
+
       const p = dynamic.querySelector('p');
-      if (p) p.innerHTML = `<span class="tina-role-label">${roleTitles[role]}</span>${p.innerHTML.replace(/<strong>.*?<\/strong>\s*/,'')}`;
+      const body = p ? p.innerHTML.replace(/<strong>.*?<\/strong>\s*/,'') : '';
+      dynamic.innerHTML = `${avatar(role, roleTitles[role])}<div class="tina-role-content"><p class="tina-role-label">${roleTitles[role]}</p><p>${body}</p></div>`;
     }
   });
 

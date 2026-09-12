@@ -114,13 +114,20 @@
       }
       .iv-analytics-button--secondary { border-color: rgba(139,196,214,.2); background: transparent; color: #b8cbd4; }
       .iv-privacy-button {
-        position: fixed; z-index: 2147482999; left: 12px; bottom: 12px;
+        min-height: 44px; display: inline-flex; align-items: center; padding: 0;
+        border: 0; background: transparent; color: #7593a2;
+        font: inherit; cursor: pointer;
+      }
+      .iv-privacy-button:hover, .iv-privacy-button:focus-visible {
+        color: #14f1c4; outline: none; text-decoration: none;
+      }
+      .iv-privacy-button--fallback {
+        position: fixed; z-index: 2147482999; right: 12px; bottom: 12px;
         min-height: 36px; padding: 7px 11px; border: 1px solid rgba(139,196,214,.16);
-        border-radius: 999px; background: rgba(4,10,18,.82); color: #91aab6;
-        font: 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; cursor: pointer;
+        border-radius: 999px; background: rgba(4,10,18,.9);
+        font: 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
         backdrop-filter: blur(8px);
       }
-      .iv-privacy-button:hover, .iv-privacy-button:focus-visible { color: #f5f7fb; border-color: rgba(20,241,196,.35); outline: none; }
       @media (max-width: 520px) {
         .iv-analytics-panel { right: 10px; bottom: 10px; width: calc(100vw - 20px); padding: 16px; }
       }
@@ -177,10 +184,16 @@
     button.id = "introvertebrates-privacy-button";
     button.className = "iv-privacy-button";
     button.type = "button";
-    button.textContent = "Privacy";
+    button.textContent = "Analytics settings";
     button.setAttribute("aria-label", "Open analytics privacy settings");
     button.addEventListener("click", () => showPanel(true));
-    document.body.appendChild(button);
+
+    const footerLinks = document.querySelector(".footer-links, .research-footer-links");
+    if (footerLinks) footerLinks.appendChild(button);
+    else {
+      button.classList.add("iv-privacy-button--fallback");
+      document.body.appendChild(button);
+    }
   };
 
   const init = () => {

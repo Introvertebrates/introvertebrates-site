@@ -140,3 +140,12 @@
       appendText(entryList, "p", "research-empty", "Research updates could not be loaded in this preview.");
     });
 })();
+
+(() => {
+  if (window.__introvertebratesAnalyticsLoaderAdded) return;
+  window.__introvertebratesAnalyticsLoaderAdded = true;
+  const script = document.createElement("script");
+  script.src = "/assets/analytics.js";
+  script.defer = true;
+  document.head.appendChild(script);
+})();

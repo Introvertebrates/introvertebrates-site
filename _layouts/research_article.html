@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | Introvertebrates</title>
-  <meta name="description" content="{{ page.description | default: page.summary | strip_html | escape }}">
+  <title>{{ page.seo_title | default: page.title }} | Introvertebrates</title>
+  <meta name="description" content="{{ page.seo_description | default: page.description | default: page.summary | strip_html | escape }}">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{{ page.title | escape }} | Introvertebrates">
-  <meta property="og:description" content="{{ page.description | default: page.summary | strip_html | escape }}">
+  <meta property="og:description" content="{{ page.seo_description | default: page.description | default: page.summary | strip_html | escape }}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:image" content="{{ '/assets/collection/elvira-chilobrachys-natanicharum.jpg' | absolute_url }}">
@@ -19,7 +19,7 @@
   {% if page.category %}<meta property="article:section" content="{{ page.category | escape }}">{% endif %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | escape }} | Introvertebrates">
-  <meta name="twitter:description" content="{{ page.description | default: page.summary | strip_html | escape }}">
+  <meta name="twitter:description" content="{{ page.seo_description | default: page.description | default: page.summary | strip_html | escape }}">
   <meta name="twitter:image" content="{{ '/assets/collection/elvira-chilobrachys-natanicharum.jpg' | absolute_url }}">
   <meta name="twitter:image:alt" content="Close portrait of Elvira, a Chilobrachys natanicharum tarantula">
   <script type="application/ld+json">
@@ -27,7 +27,7 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": {{ page.title | jsonify }},
-      "description": {{ page.description | default: page.summary | strip_html | jsonify }},
+      "description": {{ page.seo_description | default: page.description | default: page.summary | strip_html | jsonify }},
       "url": {{ page.url | absolute_url | jsonify }},
       "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
       "image": {{ '/assets/collection/elvira-chilobrachys-natanicharum.jpg' | absolute_url | jsonify }},
@@ -37,7 +37,11 @@
       "author": {
         "@type": "Organization",
         "name": "Introvertebrates",
-        "url": "https://introvertebrates.com/"
+        "url": "https://introvertebrates.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://introvertebrates.com/Only%20spider.png"
+        }
       },
       "publisher": {
         "@type": "Organization",

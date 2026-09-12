@@ -114,7 +114,7 @@
       }
       .iv-analytics-button--secondary { border-color: rgba(139,196,214,.2); background: transparent; color: #b8cbd4; }
       .iv-privacy-button {
-        min-height: 44px; display: inline-flex; align-items: center; padding: 0;
+        display: inline-flex; align-items: center; padding: 0;
         border: 0; background: transparent; color: #7593a2;
         font: inherit; cursor: pointer;
       }
@@ -189,8 +189,10 @@
     button.addEventListener("click", () => showPanel(true));
 
     const footerLinks = document.querySelector(".footer-links, .research-footer-links");
-    if (footerLinks) footerLinks.appendChild(button);
-    else {
+    if (footerLinks) {
+      const contactLink = footerLinks.querySelector('a[href^="mailto:"]');
+      footerLinks.insertBefore(button, contactLink);
+    } else {
       button.classList.add("iv-privacy-button--fallback");
       document.body.appendChild(button);
     }

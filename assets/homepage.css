@@ -1321,36 +1321,73 @@ button {
 
 /* A small personal introduction within the About section. */
 .about-pets {
-  display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
-  align-items: center;
-  gap: 22px;
   margin-top: 30px;
   padding-top: 26px;
   border-top: 1px solid var(--home-line);
 }
-.about-pets img {
+
+.about-pet-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 22px;
+}
+
+.about-pet-gallery figure {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #0c171d;
+}
+
+.about-pet-gallery img {
   display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 65%;
-  border-radius: 18px;
 }
+
+.about-pet-gallery figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 26px 12px 10px;
+  background: linear-gradient(to top, rgb(2 10 14 / 88%), transparent);
+  color: #f1f7f9;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 .about-pets h3 {
   margin: 0 0 10px;
   color: var(--home-text, #eaf3f7);
   font-size: 1.1rem;
   line-height: 1.4;
 }
+
 .about-pets p {
   margin: 0;
   color: var(--home-muted);
   font-size: 1rem;
   line-height: 1.7;
 }
+
 @media (max-width: 560px) {
-  .about-pets { grid-template-columns: 1fr; gap: 18px; }
-  .about-pets img { width: 160px; }
+  .about-pet-gallery {
+    gap: 8px;
+  }
+
+  .about-pet-gallery figure {
+    border-radius: 13px;
+  }
+
+  .about-pet-gallery figcaption {
+    padding: 22px 8px 8px;
+    font-size: 0.7rem;
+  }
 }

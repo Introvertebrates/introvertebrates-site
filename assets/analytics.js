@@ -113,16 +113,19 @@
         border-color: rgba(20,241,196,.62); background: rgba(20,241,196,.16); outline: none;
       }
       .iv-analytics-button--secondary { border-color: rgba(139,196,214,.2); background: transparent; color: #b8cbd4; }
-      .iv-privacy-button {
-        position: fixed; z-index: 2147482999; left: 12px; bottom: 12px;
-        min-height: 36px; padding: 7px 11px; border: 1px solid rgba(139,196,214,.16);
-        border-radius: 999px; background: rgba(4,10,18,.9); color: #91aab6;
-        font: 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; cursor: pointer;
-        backdrop-filter: blur(8px);
-        transition: bottom 160ms ease, color 160ms ease, border-color 160ms ease;
+      .iv-footer-privacy-group {
+        display: inline-flex; align-items: center; gap: 22px; white-space: nowrap;
       }
-      .iv-privacy-button:hover, .iv-privacy-button:focus-visible {
-        color: #f5f7fb; border-color: rgba(20,241,196,.35); outline: none;
+      .iv-footer-privacy-link,
+      .iv-privacy-button {
+        display: inline-flex; align-items: center; padding: 0; border: 0;
+        background: transparent; color: #7593a2; font: inherit;
+        text-decoration: none; cursor: pointer;
+      }
+      .iv-footer-privacy-link:hover,
+      .iv-privacy-button:hover,
+      .iv-privacy-button:focus-visible {
+        color: #14f1c4; outline: none; text-decoration: none;
       }
       @media (max-width: 520px) {
         .iv-analytics-panel { right: 10px; bottom: 10px; width: calc(100vw - 20px); padding: 16px; }
@@ -176,36 +179,36 @@
   const addSettingsButton = () => {
     injectStyles();
     if (document.getElementById("introvertebrates-privacy-button")) return;
+
     const button = document.createElement("button");
     button.id = "introvertebrates-privacy-button";
     button.className = "iv-privacy-button";
     button.type = "button";
-    button.textContent = "Privacy";
+    button.textContent = "Cookie settings";
     button.setAttribute("aria-label", "Open analytics privacy settings");
     button.addEventListener("click", () => showPanel(true));
 
-    document.body.appendChild(button);
+    const footerLinks = document.querySelector(".footer-links, .research-footer-links");
+    if (!footerLinks) {
+      document.body.appendChild(button);
+      return;
+    }
 
-    const footer = document.querySelector(".site-footer, .research-footer");
-    if (!footer) return;
+    let privacyLink = footerLinks.querySelector('a[href$="privacy.html"], a[href="/privacy.html"]');
+    if (privacyLink) privacyLink.remove();
+    else {
+      privacyLink = document.createElement("a");
+      privacyLink.href = "/privacy.html";
+      privacyLink.textContent = "Privacy";
+    }
+    privacyLink.classList.add("iv-footer-privacy-link");
 
-    let scheduled = false;
-    const keepClearOfFooter = () => {
-      scheduled = false;
-      const footerTop = footer.getBoundingClientRect().top;
-      const footerOverlap = Math.max(0, window.innerHeight - footerTop);
-      button.style.bottom = `${12 + footerOverlap}px`;
-    };
-    const schedulePosition = () => {
-      if (scheduled) return;
-      scheduled = true;
-      window.requestAnimationFrame(keepClearOfFooter);
-    };
+    const group = document.createElement("span");
+    group.className = "iv-footer-privacy-group";
+    group.append(privacyLink, button);
 
-    keepClearOfFooter();
-    window.addEventListener("scroll", schedulePosition, { passive: true });
-    window.addEventListener("resize", schedulePosition);
-    new ResizeObserver(schedulePosition).observe(footer);
+    const contactLink = footerLinks.querySelector('a[href^="mailto:"]');
+    footerLinks.insertBefore(group, contactLink);
   };
 
   const init = () => {

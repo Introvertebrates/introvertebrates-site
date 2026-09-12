@@ -141,7 +141,7 @@
     const current = readConsent();
     panel.innerHTML = `
       <h2 id="iv-analytics-title">${isSettings ? "Analytics settings" : "Optional analytics"}</h2>
-      <p>Introvertebrates uses Google Analytics to understand which pages people find and how the site is used. Google Analytics stays off unless you allow it. Advertising signals and ad personalisation are disabled.</p>
+      <p>Introvertebrates uses Google Analytics to understand which pages people find and how the site is used. Google Analytics stays off unless you allow it. Advertising signals and ad personalisation are disabled. <a href="/privacy.html">Privacy details</a>.</p>
       ${isSettings && current ? `<p>Your current choice: <strong>${current === "granted" ? "analytics allowed" : "analytics off"}</strong>.</p>` : ""}
       <div class="iv-analytics-actions">
         <button type="button" class="iv-analytics-button" data-analytics-choice="granted">Allow analytics</button>

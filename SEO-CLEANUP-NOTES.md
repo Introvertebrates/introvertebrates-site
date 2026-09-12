@@ -1,0 +1,1 @@
+Temporary marker file for SEO cleanup validation. This file can be removed after merge.

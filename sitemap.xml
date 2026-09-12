@@ -5,6 +5,10 @@
   <url><loc>https://introvertebrates.com/</loc></url>
   <url><loc>https://introvertebrates.com/collection.html</loc></url>
   <url><loc>https://introvertebrates.com/learn.html</loc></url>
+  <url><loc>https://introvertebrates.com/research.html</loc></url>
+  <url><loc>https://introvertebrates.com/community.html</loc></url>
+  <url><loc>https://introvertebrates.com/conservation.html</loc></url>
+  <url><loc>https://introvertebrates.com/updates.html</loc></url>
   <url><loc>https://introvertebrates.com/image-use.html</loc></url>
   <url><loc>https://introvertebrates.com/spider-anatomy.html</loc></url>
   <url><loc>https://introvertebrates.com/spider-facts.html</loc></url>
@@ -12,13 +16,13 @@
   <url><loc>https://introvertebrates.com/kryp-og-krabater.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-artsprofiler.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-fargelegging.html</loc></url>
+  <url><loc>https://introvertebrates.com/kryp-filmer.html</loc></url>
+  <url><loc>https://introvertebrates.com/kryp-om.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-ukearkiv.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-spor-norsk-villmark.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-spor-hav-og-himmel.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-spor-reptiler.html</loc></url>
   <url><loc>https://introvertebrates.com/kryp-spor-krypenes-verden.html</loc></url>
-  <url><loc>https://introvertebrates.com/research.html</loc></url>
-  <url><loc>https://introvertebrates.com/community.html</loc></url>
 
   <url><loc>https://introvertebrates.com/species/acanthoscurria-geniculata.html</loc></url>
   <url><loc>https://introvertebrates.com/species/sabrina-brachypelma-hamorii.html</loc></url>
@@ -42,10 +46,16 @@
 
 {% assign research_items = site.research | sort: "source_date" | reverse %}
 {% for post in research_items %}
-  <url><loc>{{ post.url | absolute_url }}</loc></url>
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+    {% if post.posted_date %}<lastmod>{{ post.posted_date | date_to_xmlschema }}</lastmod>{% endif %}
+  </url>
 {% endfor %}
 {% assign weekly_items = site.kryp_weekly | sort: "date" | reverse %}
 {% for post in weekly_items %}
-  <url><loc>{{ post.url | absolute_url }}</loc></url>
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+    {% if post.date %}<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>{% endif %}
+  </url>
 {% endfor %}
 </urlset>

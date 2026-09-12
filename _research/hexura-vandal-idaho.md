@@ -4,10 +4,10 @@ description: Hexura vandal, a newly described mygalomorph from moist Idaho fores
 category: New species / Taxonomy
 posted_date: 2026-09-04
 source_date: 2026-08-31
-summary: Researchers have described Hexura vandal from north-central Idaho. Morphology and genetic evidence distinguish it from the two previously known Hexura species, while repeated surveys suggest a narrow distribution in moist conifer forest.
+summary: Researchers described Hexura vandal from north-central Idaho. Morphology and genetic evidence distinguish it from the two previously known Hexura species, while surveys suggest a narrow distribution in moist conifer forest.
 why_it_matters: The discovery expands the known range of Hexura by roughly 500 kilometres and highlights overlooked diversity in isolated forest habitats.
-source_url: https://www.uidaho.edu/newsroom/new-vandal-spider
-source_name: University of Idaho
+source_url: https://doi.org/10.3897/zookeys.1290.200898
+source_name: ZooKeys
 ---
 
 <h2>A third <i>Hexura</i> species</h2>
@@ -20,6 +20,4 @@ source_name: University of Idaho
 
 <h2>Important caveats</h2>
 
-<p>Its full geographic range remains uncertain. Reported concerns about logging and wildfire should not be read as a formal threatened-species assessment or evidence of a measured population decline. This summary was checked against the institutional and publisher announcements; the full paper could not be retrieved during this review.</p>
-
-<p><a href="https://doi.org/10.3897/zookeys.1290.200898">Read the paper in <i>ZooKeys</i></a>.</p>
+<p>Its full geographic range remains uncertain. Concerns about logging and wildfire should not be read as a formal threatened-species assessment or evidence of a measured population decline.</p>

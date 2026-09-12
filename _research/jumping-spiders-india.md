@@ -1,62 +1,24 @@
 ---
 title: Researchers describe two new jumping spider species from India
-description: A plain-language Introvertebrates summary of research describing
-  two new jumping spider species from India in the genus Mogrus.
+description: A plain-language Introvertebrates summary of research describing Mogrus shushka and Mogrus pune and clarifying other Indian records in the genus.
 category: New species / Taxonomy
 posted_date: 2026-04-18
-source_date: 2026-04-18
-summary: "Researchers working in Western India have described two new jumping
-  spider species in the genus Mogrus: Mogrus shushka and Mogrus pune. The same
-  work also adds a new India record for Mogrus larisae and the first formal
-  description of the male of Mogrus rajasthanensis."
-why_it_matters: New species discoveries are a reminder that spider diversity is
-  still far from fully documented, even in places affected by urban pressure and
-  human-altered landscapes.
-source_url: https://researchmatters.in/news/researchers-discover-two-new-species-jumping-spiders-indias-arid-drylands-and-urban-parks
-source_name: Research Matters
+source_date: 2026-04-10
+summary: Researchers described Mogrus shushka and Mogrus pune from western India, recorded Mogrus larisae in India for the first time, and formally described the male of Mogrus rajasthanensis.
+why_it_matters: The study adds two species while also improving identification and distribution knowledge for the genus across semi-arid and human-altered habitats.
+source_url: https://doi.org/10.5852/ejt.2026.1048.3249
+source_name: European Journal of Taxonomy
 ---
 <h2>What was found</h2>
 
-<p>
+<p>Researchers described two new jumping spiders from western India: <em>Mogrus shushka</em> and <em>Mogrus pune</em>. The same study reports <em>Mogrus larisae</em> from India for the first time and provides the first formal description of the male of <em>Mogrus rajasthanensis</em>.</p>
 
-  Researchers working in Western India described two new jumping spider species in the genus <em>Mogrus</em>: <em>Mogrus shushka</em> and <em>Mogrus pune</em>. The same study also added a new India record for <em>Mogrus larisae</em> and provided the first formal description of the male of <em>Mogrus rajasthanensis</em>.
-
-</p>
-
-<p>
-
-  That means the paper did more than add two new names. It also improved the broader picture of what is known about the genus in the region by refining identification and distribution knowledge.
-
-</p>
-
-
+<p>The species were distinguished through detailed morphological comparisons, particularly of the reproductive structures taxonomists use to separate closely related jumping spiders.</p>
 
 <h2>What makes that interesting</h2>
 
-<p>
-
-  Jumping spiders are among the most familiar and charismatic spider groups, but even in well-liked groups there are still major gaps in basic documentation. Work like this shows that “known” spider diversity is still incomplete.
-
-</p>
-
-<p>
-
-  It also highlights how taxonomy often works in practice: not just by discovering brand new species, but by clarifying males and females, extending known ranges, and improving the accuracy of the entire record.
-
-</p>
-
-
+<p>The spiders came from semi-arid habitats and urban parks, showing that undocumented diversity persists in landscapes shaped by people as well as in less disturbed environments.</p>
 
 <h2>Why it matters</h2>
 
-<p>
-
-  This matters because naming and describing species is the foundation for almost everything else in biology. Distribution, ecology, conservation, and even simple communication about a species all depend on the taxonomy being right.
-
-</p>
-
-<p>
-
-  It is also a reminder that important discoveries are still being made in present-day landscapes shaped by people, not only in untouched or inaccessible areas.
-
-</p>
+<p>Taxonomy is the foundation for studying ecology, distribution, and conservation. This paper does more than add two names: it makes several members of the genus easier to identify and places their known ranges on firmer ground.</p>

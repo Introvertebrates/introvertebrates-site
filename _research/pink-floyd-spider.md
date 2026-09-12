@@ -1,7 +1,7 @@
 ---
 title: A wall-dwelling spider from Colombia was named after Pink Floyd
 description: A plain-language Introvertebrates summary of Pikelinia floydmuraria, a newly described synanthropic crevice weaver from Colombia.
-category: New species / Taxonomy
+category: Taxonomy & discoveries
 posted_date: 2026-04-21
 source_date: 2026-02-18
 summary: Researchers described Pikelinia floydmuraria from Tolima, Colombia. The study documents both sexes and records a varied diet in human-built environments, including prey much larger than the spider.

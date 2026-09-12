@@ -1,7 +1,7 @@
 ---
 title: Urbanization is linked to genetic loss in a common lynx spider
 description: Population sampling across Taiwan finds lower diversity and stronger differentiation along an urban-rural gradient.
-category: Ecology
+category: Ecology & conservation
 posted_date: 2026-08-14
 source_date: 2026-02-25
 summary: Researchers sampled 245 Oxyopes sertatus lynx spiders at 17 sites in central Taiwan. Genome-wide markers showed declining genetic diversity with increasing urbanization and greater differentiation among urban populations, although analyses did not reveal fully separate genetic clusters.

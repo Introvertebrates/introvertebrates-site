@@ -1,7 +1,7 @@
 ---
 title: Traffic noise produces mild cardiac responses in urban-tolerant orb-weaving spiders
 description: A plain-language Introvertebrates summary of research measuring cardiac responses in two Trichonephila species exposed to traffic noise.
-category: Behavior
+category: Ecology & conservation
 posted_date: 2026-04-25
 source_date: 2026-04-15
 summary: Researchers measured heart-rate changes in Jorō spiders and golden silk spiders exposed to traffic noise. Responses differed between species and were mild compared with severe stress, pointing to both a detectable physiological effect and considerable resilience.

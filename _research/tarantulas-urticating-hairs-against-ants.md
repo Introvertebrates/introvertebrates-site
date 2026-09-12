@@ -1,7 +1,7 @@
 ---
 title: Tarantulas actively use urticating hairs against ants
 description: Experiments document the first active use of urticating setae by tarantulas against invertebrate attackers.
-category: Behavior
+category: Venom & defence
 posted_date: 2026-09-12
 source_date: 2026-08-03
 summary: In controlled encounters, tarantulas deliberately directed abdominal urticating setae toward attacking ants. This is the first experimental report of these defensive hairs being actively used against invertebrates rather than vertebrate predators.

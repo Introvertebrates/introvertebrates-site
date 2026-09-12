@@ -3,7 +3,7 @@ title: A redback spider's suicidal mating somersault may have a surprisingly sim
 seo_title: Redback spider self-sacrifice may have a simple genetic basis
 seo_description: A 2026 crossing study suggests the redback spider's mating somersault follows a surprisingly simple X-linked inheritance pattern.
 description: A 2026 crossing study suggests the redback spider's mating somersault follows a surprisingly simple X-linked inheritance pattern.
-category: Behavior
+category: Evolution & genetics
 posted_date: 2026-09-11
 source_date: 2026-08-12
 summary: Researchers crossed Australian redback spiders, Latrodectus hasselti, with their close New Zealand relative Latrodectus katipo and found that the redback male's self-sacrificial mating somersault can reappear in hybrid descendants in a pattern consistent with single-locus X-linked inheritance. A second redback trait, abdominal constriction during mating, showed a more complex genetic pattern.

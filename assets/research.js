@@ -10,13 +10,15 @@
   let entries = [];
 
   const categoryToSlug = (category) => {
-    if (category === "Behavior") return "behavior";
-    if (category === "New species / Taxonomy") return "taxonomy";
-    if (category === "General arachnology news") return "general";
-    if (category === "Ecology") return "ecology";
-    if (category === "Venom") return "venom";
-    if (category === "Captive relevance") return "captive";
-    return "general";
+    const categories = {
+      "Behaviour & cognition": "behaviour",
+      "Ecology & conservation": "ecology",
+      "Evolution & genetics": "evolution",
+      "Taxonomy & discoveries": "taxonomy",
+      "Venom & defence": "defence",
+      "Silk & biomaterials": "silk",
+    };
+    return categories[category] || "uncategorised";
   };
 
   const appendText = (parent, tagName, className, text) => {
@@ -45,7 +47,7 @@
     const header = appendText(article, "div", "entry-header", "");
     const titleWrap = appendText(header, "div", "entry-title-wrap", "");
     appendText(titleWrap, "h2", "", entry.title || "Untitled research update");
-    appendText(header, "span", "badge", entry.category || "Research");
+    appendText(header, "span", `badge ${article.dataset.category}`, entry.category || "Research");
 
     appendText(article, "p", "", entry.summary || "");
     const relevance = appendText(article, "p", "", "");

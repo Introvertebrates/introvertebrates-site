@@ -48,7 +48,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text", required: false }
-      - { label: "Category", name: "category", widget: "select", options: ["Behavior", "New species / Taxonomy", "General arachnology news", "Ecology", "Venom", "Captive relevance"] }
+      - { label: "Category", name: "category", widget: "select", options: ["Behaviour & cognition", "Ecology & conservation", "Evolution & genetics", "Taxonomy & discoveries", "Venom & defence", "Silk & biomaterials"] }
       - { label: "Posted date", name: "posted_date", widget: "datetime", format: "YYYY-MM-DD", date_format: "D MMMM YYYY", time_format: false }
       - { label: "Source date", name: "source_date", widget: "datetime", format: "YYYY-MM-DD", date_format: "D MMMM YYYY", time_format: false }
       - { label: "Summary", name: "summary", widget: "text" }

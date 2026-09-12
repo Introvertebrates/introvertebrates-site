@@ -1,7 +1,7 @@
 ---
 title: Tarantulas may navigate more flexibly than we assumed
 description: Nine field observations suggest flexible, experience-based spatial orientation in wild tarantulas, while leaving the underlying mechanisms unresolved.
-category: Behavior
+category: Behaviour & cognition
 posted_date: 2026-04-18
 source_date: 2026-03-30
 summary: Nine field observations of arboreal and fossorial tarantulas describe repeated visits to productive locations and rapid, directed returns to retreats. The patterns are consistent with experience-based spatial orientation, but controlled experiments are still needed.

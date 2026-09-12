@@ -1,7 +1,7 @@
 ---
 title: Hunting style and geography help shape spider gut microbiota
 description: A large survey compares gut microbial communities across web-builders, wandering hunters, and ambush spiders.
-category: Ecology
+category: Ecology & conservation
 posted_date: 2026-08-14
 source_date: 2025-12-13
 summary: Researchers analysed 16S rRNA data from 1,090 spiders across 34 families in southwestern China. Wandering and ambush hunters had higher gut-microbe diversity than web-builders, while geography and endosymbiont infections also contributed to the patterns.

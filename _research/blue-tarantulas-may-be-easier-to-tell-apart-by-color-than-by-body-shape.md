@@ -3,7 +3,7 @@ title: Blue tarantulas may be easier to tell apart by color than by body shape
 description: A plain-language Introvertebrates summary of a 2026 morphometric
   study testing how far morphology alone can go in separating the tarantula
   lineages Lasiocyano and Lasiodora.
-category: New species / Taxonomy
+category: Taxonomy & discoveries
 posted_date: 2026-04-25
 source_date: 2026-04-12
 summary: A 2026 study in the Journal of Morphology tested whether detailed body

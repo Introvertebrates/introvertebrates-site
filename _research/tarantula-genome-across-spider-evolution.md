@@ -1,7 +1,7 @@
 ---
 title: A tarantula genome opens a 300-million-year comparison across spiders
 description: A chromosome-level Aphonopelma marxi genome helps researchers compare repeat-rich mygalomorph genomes with those of araneomorph spiders.
-category: General arachnology news
+category: Evolution & genetics
 posted_date: 2026-08-14
 source_date: 2026-04-08
 summary: Researchers assembled a 6.5-billion-base chromosome-level genome for a male Aphonopelma marxi tarantula, then compared it with 20 other spider genomes spanning 15 families. The analysis found that mygalomorph genomes were generally larger and more repeat-rich than those of their araneomorph sister lineage.

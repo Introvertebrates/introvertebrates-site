@@ -1,7 +1,7 @@
 ---
 title: A new Idaho spider reveals a hidden Rocky Mountain lineage
 description: Hexura vandal, a newly described mygalomorph from moist Idaho forest, extends its genus far east of its previously known range.
-category: New species / Taxonomy
+category: Taxonomy & discoveries
 posted_date: 2026-09-04
 source_date: 2026-08-31
 summary: Researchers described Hexura vandal from north-central Idaho. Morphology and genetic evidence distinguish it from the two previously known Hexura species, while surveys suggest a narrow distribution in moist conifer forest.

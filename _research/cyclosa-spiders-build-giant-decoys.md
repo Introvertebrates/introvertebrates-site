@@ -1,7 +1,7 @@
 ---
 title: Tiny spiders build giant spider-shaped decoys
 description: Two Cyclosa orb weavers arrange silk, debris, and prey remains into structures resembling spiders much larger than themselves.
-category: Behavior
+category: Behaviour & cognition
 posted_date: 2026-09-12
 source_date: 2025-11-06
 summary: Researchers formally documented spider-shaped web constructions made by Cyclosa longicauda in Peru and a Cyclosa species in the Philippines. Some spiders also shook the web, making the larger decoy move.

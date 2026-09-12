@@ -6,12 +6,12 @@ const root = process.cwd();
 const researchDir = path.join(root, '_research');
 const fallbackPath = path.join(root, 'assets', 'data', 'research-fallback.json');
 const validCategories = new Set([
-  'Behavior',
-  'New species / Taxonomy',
-  'General arachnology news',
-  'Ecology',
-  'Venom',
-  'Captive relevance',
+  'Behaviour & cognition',
+  'Ecology & conservation',
+  'Evolution & genetics',
+  'Taxonomy & discoveries',
+  'Venom & defence',
+  'Silk & biomaterials',
 ]);
 const requiredFields = [
   'title',

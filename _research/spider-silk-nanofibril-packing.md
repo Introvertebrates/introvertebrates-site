@@ -1,7 +1,7 @@
 ---
 title: Frozen silk reveals tightly aligned spider nanofibrils
 description: Cryo-electron tomography compares the nanoscale organisation of spider, silkworm, and artificial silk.
-category: General arachnology news
+category: Silk & biomaterials
 posted_date: 2026-08-14
 source_date: 2026-03-07
 summary: Researchers used cryo-focused ion beam milling and cryo-electron tomography to examine natural and artificial silk in three dimensions. In the sampled spider silk, nanofibrils were densely packed, closely aligned with the fibre axis, and separated by very little visible empty space.

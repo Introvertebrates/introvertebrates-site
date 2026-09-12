@@ -1,7 +1,7 @@
 ---
 title: Hunting style helps explain how spider eye arrangements evolved
 description: A plain-language Introvertebrates summary of a Current Biology study linking spider hunting ecology to repeated changes in eye orientation.
-category: Behavior
+category: Behaviour & cognition
 posted_date: 2026-08-12
 source_date: 2026-07-02
 summary: A broad comparative study found that spiders relying more heavily on vision while hunting repeatedly evolved more forward-facing eye arrangements, while the different eye pairs can shift somewhat independently over evolutionary time.

@@ -1,7 +1,7 @@
 ---
 title: A spider and its web may work together like a gyroscope
 description: Experiments and simulations suggest that an orb-weaver’s body movements and web architecture together provide clues about where prey struck.
-category: Behavior
+category: Behaviour & cognition
 posted_date: 2026-08-28
 source_date: 2026-08-19
 summary: Experiments, mechanical tests and simulations involving adult female Argiope trifasciata found that prey impacts produce characteristic pitch-and-roll movements in the spider’s body. The web’s architecture may turn these whole-body motions into clues about impact location.

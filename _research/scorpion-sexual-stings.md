@@ -1,7 +1,7 @@
 ---
 title: Why do male scorpions sting females during courtship?
 description: A review examines whether scorpion sexual stings function through coercion, stimulation, signalling, or different mechanisms in different lineages.
-category: Behavior
+category: Venom & defence
 posted_date: 2026-09-12
 source_date: 2025-12-17
 summary: Male scorpions in several groups perform sexual stings during courtship. A new review finds that the behaviour cannot yet be reduced to one explanation, ranging from a coercive knock-out effect to a possible stimulatory love-potion function.

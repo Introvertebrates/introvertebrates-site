@@ -1,7 +1,7 @@
 ---
 title: A tiny lineage-specific peptide can strengthen experimental silk fibres
 description: Researchers trace a newly evolved peptide in golden orb-weaver silk glands and test its effect in wet-spun fibres.
-category: General arachnology news
+category: Silk & biomaterials
 posted_date: 2026-08-14
 source_date: 2025-11-18
 summary: A 67-amino-acid secretory peptide called SpiCE-DS8 was found in the dragline-silk system of sampled Nephilinae spiders. In wet-spinning experiments, adding its conserved core increased beta-sheet ordering and improved several mechanical properties of silkworm and spidroin-containing fibres.

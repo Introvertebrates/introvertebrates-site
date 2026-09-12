@@ -1,7 +1,7 @@
 ---
 title: Citizen-science records reshape the story of parental care in harvestmen
 description: A plain-language Introvertebrates summary of research using iNaturalist observations to reconstruct the evolution of maternal and paternal care in harvestmen.
-category: Behavior
+category: Behaviour & cognition
 posted_date: 2026-08-12
 source_date: 2026-06-15
 summary: Researchers combined published observations, field and laboratory records, and iNaturalist photographs to more than double the number of harvestman species with documented parental-care data in the superfamily Gonyleptoidea.

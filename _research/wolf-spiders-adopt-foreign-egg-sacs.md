@@ -1,7 +1,7 @@
 ---
 title: Wolf spiders adopt another female's egg sac after losing their own
 description: Experiments reveal indiscriminate egg-sac adoption and physiological stress responses following offspring loss in Pardosa lugubris.
-category: Behavior
+category: Behaviour & cognition
 posted_date: 2026-09-12
 source_date: 2025-12-05
 summary: Fertilised Pardosa lugubris females deprived of their egg sacs accepted unrelated sacs in every trial, while females offered their own and a foreign sac chose whichever they encountered first. Offspring removal also altered physiological stress markers.

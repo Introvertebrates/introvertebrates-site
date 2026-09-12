@@ -1,7 +1,7 @@
 ---
 title: Amber fossils reveal a strange arachnid from 35 million years ago
 description: A plain-language Introvertebrates summary of Balticolasma wunderlichi, the first fossil representative of the harvestman subfamily Ortholasmatinae.
-category: General arachnology news
+category: Taxonomy & discoveries
 posted_date: 2026-04-21
 source_date: 2026-03-18
 summary: Researchers described Balticolasma wunderlichi from a male in Baltic amber and a likely conspecific female in Rovno amber. The fossils are roughly 34–38 million years old and provide the first fossil record of Ortholasmatinae.

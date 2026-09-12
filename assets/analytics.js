@@ -4,6 +4,7 @@
   const MEASUREMENT_ID = "G-PNLM56NP8F";
   const CONSENT_KEY = "introvertebrates_analytics_consent_v1";
   const CONSENT_MAX_AGE_MS = 180 * 24 * 60 * 60 * 1000;
+  const GA_DISABLE_KEY = `ga-disable-${MEASUREMENT_ID}`;
 
   // Keep Google Analytics off the child-focused Kryp & Krabater section.
   if (/^\/kryp(?:-|\/|$)/i.test(window.location.pathname)) return;
@@ -46,6 +47,7 @@
   };
 
   const startAnalytics = () => {
+    window[GA_DISABLE_KEY] = false;
     if (window.__introvertebratesGa4Loaded) return;
     window.__introvertebratesGa4Loaded = true;
 
@@ -73,6 +75,7 @@
   };
 
   const stopAnalytics = () => {
+    window[GA_DISABLE_KEY] = true;
     if (typeof window.gtag === "function") {
       window.gtag("consent", "update", {
         analytics_storage: "denied",
@@ -184,7 +187,8 @@
     addSettingsButton();
     const consent = readConsent();
     if (consent === "granted") startAnalytics();
-    else if (consent !== "denied") showPanel(false);
+    else if (consent === "denied") stopAnalytics();
+    else showPanel(false);
   };
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });

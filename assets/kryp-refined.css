@@ -229,21 +229,46 @@ body.kryp-refined { --kk-bg:#031018; --kk-panel:#091c25; --kk-ink:#f6f0df; --kk-
 }
 .kk-family {
   display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
+  grid-template-columns: minmax(210px, .85fr) minmax(0, 1.15fr);
   align-items: start;
   gap: 22px;
   margin-top: 28px;
   padding-top: 26px;
   border-top: 1px solid rgba(246, 240, 223, .16);
 }
-.kk-family img {
+.kk-family-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.kk-family-gallery figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #02080c;
+}
+.kk-family-gallery img {
   display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 65%;
-  border-radius: 18px;
+  object-position: center;
+}
+.kk-family-gallery figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 22px 8px 7px;
+  color: var(--kryp-cream);
+  background: linear-gradient(transparent, rgba(2, 8, 12, .86));
+  font-size: .68rem;
+  font-weight: 780;
+  letter-spacing: .06em;
+  text-align: center;
+  text-transform: uppercase;
 }
 .kk-family h3 {
   margin: 0 0 12px;
@@ -260,5 +285,5 @@ body.kryp-refined { --kk-bg:#031018; --kk-panel:#091c25; --kk-ink:#f6f0df; --kk-
 .kk-family p + p { margin-top: 12px; }
 @media (max-width: 600px) {
   .kk-family { grid-template-columns: 1fr; gap: 18px; }
-  .kk-family img { width: 160px; }
+  .kk-family-gallery { max-width: 360px; }
 }

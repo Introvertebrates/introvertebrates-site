@@ -4,7 +4,10 @@
 {% assign latest_kryp_entries = site.kryp_weekly | sort: "date" | reverse %}
 {% assign latest_kryp = latest_kryp_entries | first %}
 {% assign homepage_updates = site.data.homepage_updates | sort: "date" | reverse %}
-{% assign latest_homepage_update = homepage_updates | first %}
+{% assign homepage_video_updates = homepage_updates | where: "type", "video" %}
+{% assign latest_video = homepage_video_updates | first %}
+{% assign homepage_non_video_updates = homepage_updates | where_exp: "item", "item.type != 'video'" %}
+{% assign latest_homepage_update = homepage_non_video_updates | first %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -424,7 +427,7 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="assets/homepage.css?v=20260912-about-gallery">
+  <link rel="stylesheet" href="assets/homepage.css?v=20260913-video-card">
   <link rel="stylesheet" href="assets/learn.css">
   <link rel="stylesheet" href="assets/community.css">
 </head>
@@ -531,12 +534,29 @@
         <h2 id="home-latest-title">New reasons to look closer.</h2>
       </div>
       <div class="home-latest-heading-copy">
-        <p>Fresh research, Sunday animal stories, and meaningful additions to the living collection.</p>
+        <p>Fresh research, Sunday animal stories, new videos, and meaningful additions to the living collection.</p>
         <a href="updates.html">See all updates <span aria-hidden="true">→</span></a>
       </div>
     </header>
 
     <div class="home-latest-grid">
+      {% if latest_video %}
+      <article class="home-latest-card home-latest-card-video">
+        <a class="home-latest-card-link" href="{{ latest_video.url }}" target="_blank" rel="noopener noreferrer">
+          <figure class="home-latest-media">
+            <img src="{{ latest_video.image | relative_url }}" alt="{{ latest_video.image_alt | escape }}" width="1536" height="864" loading="lazy" decoding="async">
+            <figcaption>Latest on YouTube</figcaption>
+          </figure>
+          <div class="home-latest-card-copy">
+            <p class="home-latest-meta"><span>{{ latest_video.label | escape }}</span><time datetime="{{ latest_video.date }}">{{ latest_video.date_label | escape }}</time></p>
+            <h3>{{ latest_video.title | escape }}</h3>
+            <p>{{ latest_video.description | escape }}</p>
+            <span class="home-latest-card-cta">{{ latest_video.link_label | escape }} <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </article>
+      {% endif %}
+
       <article class="home-latest-card">
         <a class="home-latest-card-link" href="{{ latest_research.url | relative_url }}">
           <figure class="home-latest-media">

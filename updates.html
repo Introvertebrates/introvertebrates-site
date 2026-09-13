@@ -9,10 +9,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Latest Updates | Introvertebrates</title>
-  <meta name="description" content="The newest Introvertebrates spider research, Kryp &amp; Krabater animal stories, and meaningful collection updates in one place.">
+  <meta name="description" content="The newest Introvertebrates videos, spider research, Kryp &amp; Krabater animal stories, and meaningful collection updates in one place.">
   <link rel="canonical" href="https://introvertebrates.com/updates.html">
   <meta property="og:title" content="Latest Updates | Introvertebrates">
-  <meta property="og:description" content="New spider research, Sunday animal stories, and meaningful additions to the Introvertebrates collection.">
+  <meta property="og:description" content="New videos, spider research, Sunday animal stories, and meaningful additions to Introvertebrates.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://introvertebrates.com/updates.html">
   <meta property="og:image" content="https://introvertebrates.com/assets/collection/alma-acanthoscurria-geniculata.jpg">
@@ -36,7 +36,7 @@
   <header class="updates-hero">
     <p class="eyebrow">Latest from Introvertebrates</p>
     <h1>A living record of what is new.</h1>
-    <p>New research and Sunday animal stories appear here automatically. Collection and website notes are added only when they give visitors something genuinely new to explore.</p>
+    <p>New videos, research, and Sunday animal stories live here alongside collection and website notes that give visitors something genuinely new to explore.</p>
   </header>
 
   <section class="updates-stream" aria-labelledby="research-updates-title">
@@ -75,14 +75,14 @@
 
   <section class="updates-stream" aria-labelledby="collection-updates-title">
     <header class="updates-stream-heading">
-      <div><p class="eyebrow">Collection and website</p><h2 id="collection-updates-title">Meaningful additions</h2></div>
-      <p>New profiles, substantial expansions, original media, and public features—not a log of invisible technical fixes.</p>
+      <div><p class="eyebrow">Videos, collection and website</p><h2 id="collection-updates-title">Meaningful additions</h2></div>
+      <p>New videos, profiles, substantial expansions, original media, and public features—not a log of invisible technical fixes.</p>
     </header>
     <div class="updates-list">
       {% for update in collection_updates %}
       <article class="updates-list-card">
         <p class="home-latest-meta"><span>{{ update.label | escape }}</span><time datetime="{{ update.date }}">{{ update.date_label | escape }}</time></p>
-        <h3><a href="{{ update.url | relative_url }}">{{ update.title | escape }}</a></h3>
+        <h3><a href="{{ update.url }}"{% if update.type == "video" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ update.title | escape }}</a></h3>
         <p>{{ update.description | escape }}</p>
       </article>
       {% endfor %}

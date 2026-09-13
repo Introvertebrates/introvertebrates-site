@@ -1,0 +1,46 @@
+name: Validate Kryp & Krabater weekly publishing
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/check-kryp-weekly.yml"
+      - ".github/workflows/publish-kryp-weekly.yml"
+      - "tools/publish-next-kryp-weekly.mjs"
+      - "tools/weekly-calendar.mjs"
+      - "tools/weekly-calendar.test.mjs"
+      - "tools/media-decisions.test.mjs"
+      - "_kryp_weekly/**"
+      - "_kryp_weekly_queue/**"
+  pull_request:
+    paths:
+      - ".github/workflows/check-kryp-weekly.yml"
+      - ".github/workflows/publish-kryp-weekly.yml"
+      - "tools/publish-next-kryp-weekly.mjs"
+      - "tools/weekly-calendar.mjs"
+      - "tools/weekly-calendar.test.mjs"
+      - "tools/media-decisions.test.mjs"
+      - "_kryp_weekly/**"
+      - "_kryp_weekly_queue/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the website
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run weekly publishing safeguards
+        run: node --test tools/weekly-calendar.test.mjs tools/media-decisions.test.mjs
+
+      - name: Dry-run the next scheduled article
+        run: node tools/publish-next-kryp-weekly.mjs --dry-run --date=2026-09-20

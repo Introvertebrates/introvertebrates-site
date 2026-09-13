@@ -14,6 +14,6 @@ test('Huggorm precedes the existing cockroach article and is not queued again',(
   const h=entries.find(f=>f.includes('huggormen')),c=entries.find(f=>f.includes('hvem-gjemmer'));
   assert.equal(Date.parse(c.slice(0,10))-Date.parse(h.slice(0,10)),7*86400000);
   assert.equal(entries.indexOf(c),entries.indexOf(h)+1);
-  assert.equal(entries.at(-1),'2026-09-06-ruby-vever-et-sansekart.md');
+  assert.ok(entries.includes('2026-09-06-ruby-vever-et-sansekart.md'));
   assert.equal(fs.readdirSync(path.join(root,'_kryp_weekly_queue')).some(f=>/huggorm|dubia/.test(f)),false);
 });

@@ -2,7 +2,8 @@ name: Apply latest video homepage card
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
       - '.github/workflows/one-time-homepage-video.yml'
 
@@ -11,7 +12,6 @@ permissions:
 
 jobs:
   patch-homepage:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -19,174 +19,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Download the published video thumbnail
-        shell: bash
+      - name: Download published video thumbnail
         run: |
           mkdir -p assets/media
           curl -fL --retry 2 "https://i.ytimg.com/vi/b17sor4XiPE/maxresdefault.jpg" -o assets/media/whats-next-video-thumbnail.jpg
 
-      - name: Patch homepage video system
-        shell: python
-        run: |
-          from pathlib import Path
-
-          def replace_once(text, old, new, label):
-              if old not in text:
-                  raise SystemExit(f"Expected {label} pattern was not found; refusing to make a partial edit.")
-              return text.replace(old, new, 1)
-
-          index_path = Path("index.html")
-          index = index_path.read_text(encoding="utf-8")
-
-          index = replace_once(
-              index,
-              '{% assign homepage_updates = site.data.homepage_updates | sort: "date" | reverse %}\n{% assign latest_homepage_update = homepage_updates | first %}',
-              '{% assign homepage_updates = site.data.homepage_updates | sort: "date" | reverse %}\n{% assign homepage_video_updates = homepage_updates | where: "type", "video" %}\n{% assign latest_video = homepage_video_updates | first %}\n{% assign homepage_non_video_updates = homepage_updates | where_exp: "item", "item.type != \'video\'" %}\n{% assign latest_homepage_update = homepage_non_video_updates | first %}',
-              "homepage update assignments",
-          )
-
-          index = replace_once(
-              index,
-              "Fresh research, Sunday animal stories, and meaningful additions to the living collection.",
-              "Fresh research, Sunday animal stories, new videos, and meaningful additions to the living collection.",
-              "Latest section introduction",
-          )
-
-          research_start = '''    <div class="home-latest-grid">
-      <article class="home-latest-card">
-        <a class="home-latest-card-link" href="{{ latest_research.url | relative_url }}">'''
-
-          video_plus_research = '''    <div class="home-latest-grid">
-      {% if latest_video %}
-      <article class="home-latest-card home-latest-card-video">
-        <a class="home-latest-card-link" href="{{ latest_video.url }}" target="_blank" rel="noopener noreferrer">
-          <figure class="home-latest-media">
-            <img src="{{ latest_video.image | relative_url }}" alt="{{ latest_video.image_alt | escape }}" width="1536" height="864" loading="lazy" decoding="async">
-            <figcaption>Latest on YouTube</figcaption>
-          </figure>
-          <div class="home-latest-card-copy">
-            <p class="home-latest-meta"><span>{{ latest_video.label | escape }}</span><time datetime="{{ latest_video.date }}">{{ latest_video.date_label | escape }}</time></p>
-            <h3>{{ latest_video.title | escape }}</h3>
-            <p>{{ latest_video.description | escape }}</p>
-            <span class="home-latest-card-cta">{{ latest_video.link_label | escape }} <span aria-hidden="true">→</span></span>
-          </div>
-        </a>
-      </article>
-      {% endif %}
-
-      <article class="home-latest-card">
-        <a class="home-latest-card-link" href="{{ latest_research.url | relative_url }}">'''
-
-          index = replace_once(index, research_start, video_plus_research, "latest cards grid")
-          index = replace_once(
-              index,
-              'assets/homepage.css?v=20260912-about-gallery',
-              'assets/homepage.css?v=20260913-video-card',
-              "homepage stylesheet cache key",
-          )
-          index_path.write_text(index, encoding="utf-8")
-
-          css_path = Path("assets/homepage.css")
-          css = css_path.read_text(encoding="utf-8")
-          css = replace_once(
-              css,
-              '''.home-latest-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}''',
-              '''.home-latest-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}''',
-              "latest grid columns",
-          )
-          css = replace_once(
-              css,
-              '.home-latest-media::after {',
-              '''.home-latest-card-video .home-latest-media {
-  aspect-ratio: 16 / 9;
-}
-
-.home-latest-media::after {''',
-              "video thumbnail aspect rule",
-          )
-          css_path.write_text(css, encoding="utf-8")
-
-          data_path = Path("_data/homepage_updates.yml")
-          data = data_path.read_text(encoding="utf-8")
-          old_video = '''- date: "2026-09-13"
-  date_label: "13 September 2026"
-  label: "New video"
-  title: "Back after six months — a new animal room, new builds, and what comes next."
-  description: "The new Introvertebrates update follows the paludarium build while catching up on the move, the dedicated animal room, recent enclosure work, Siuzi, the Codex, the website, and what comes next for the channel."
-  image: "/assets/media/siuzi-stories-in-motion.jpg"
-  image_alt: "Close frontal portrait of Siuzi, a Theraphosa apophysis tarantula"
-  url: "https://www.youtube.com/@Introvertebrates/videos"
-  link_label: "Watch the new video"'''
-          new_video = '''- date: "2026-09-13"
-  date_label: "13 September 2026"
-  type: "video"
-  label: "New video"
-  title: "Back after six months — a new animal room, new builds, and what comes next."
-  description: "The comeback update follows a paludarium build while catching up on the move, the new animal room, enclosure work, Siuzi, the Codex, the website, and what comes next."
-  image: "/assets/media/whats-next-video-thumbnail.jpg"
-  image_alt: "Introvertebrates video thumbnail reading What's next? with Erlend, a planted vivarium, the Introvertebrates Codex, and tarantulas"
-  url: "https://youtu.be/b17sor4XiPE"
-  link_label: "Watch the video"'''
-          data = replace_once(data, old_video, new_video, "video update data")
-          data_path.write_text(data, encoding="utf-8")
-
-          updates_path = Path("updates.html")
-          updates = updates_path.read_text(encoding="utf-8")
-          updates = replace_once(
-              updates,
-              "The newest Introvertebrates spider research, Kryp &amp; Krabater animal stories, and meaningful collection updates in one place.",
-              "The newest Introvertebrates videos, spider research, Kryp &amp; Krabater animal stories, and meaningful collection updates in one place.",
-              "updates meta description",
-          )
-          updates = replace_once(
-              updates,
-              "New spider research, Sunday animal stories, and meaningful additions to the Introvertebrates collection.",
-              "New videos, spider research, Sunday animal stories, and meaningful additions to Introvertebrates.",
-              "updates social description",
-          )
-          updates = replace_once(
-              updates,
-              "New research and Sunday animal stories appear here automatically. Collection and website notes are added only when they give visitors something genuinely new to explore.",
-              "New videos, research, and Sunday animal stories live here alongside collection and website notes that give visitors something genuinely new to explore.",
-              "updates hero copy",
-          )
-          updates = replace_once(
-              updates,
-              '<div><p class="eyebrow">Collection and website</p><h2 id="collection-updates-title">Meaningful additions</h2></div>',
-              '<div><p class="eyebrow">Videos, collection and website</p><h2 id="collection-updates-title">Meaningful additions</h2></div>',
-              "updates section label",
-          )
-          updates = replace_once(
-              updates,
-              "New profiles, substantial expansions, original media, and public features—not a log of invisible technical fixes.",
-              "New videos, profiles, substantial expansions, original media, and public features—not a log of invisible technical fixes.",
-              "updates section copy",
-          )
-          updates = replace_once(
-              updates,
-              '<h3><a href="{{ update.url | relative_url }}">{{ update.title | escape }}</a></h3>',
-              '<h3><a href="{{ update.url }}"{% if update.type == "video" %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ update.title | escape }}</a></h3>',
-              "updates external video link",
-          )
-          updates_path.write_text(updates, encoding="utf-8")
+      - name: Patch homepage
+        run: python .github/scripts/patch_homepage_video.py
 
       - name: Commit homepage video card
-        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html assets/homepage.css assets/media/whats-next-video-thumbnail.jpg _data/homepage_updates.yml updates.html
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
           git commit -m "Add dedicated latest video homepage card"
           git push

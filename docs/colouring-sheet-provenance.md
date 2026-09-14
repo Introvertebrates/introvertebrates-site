@@ -11,7 +11,7 @@ The coloring artwork published on `kryp-fargelegging.html` uses the specific Int
 | Elvira | *Chilobrachys natanicharum* | `assets/species/elvira-chilobrachys-natanicharum/elvira-full-body.jpg` |
 | Gunnar | *Ceratogyrus darlingi* | `assets/collection/ceratogyrus-darlingi.jpg` |
 | Orion | *Omothymus violaceopes* | `assets/collection/omothymus-violaceopes.jpg` |
-| Ruby | *Chromatopelma cyaneopubescens* | `assets/collection/ruby-chromatopelma-cyaneopubescens.jpg` |
+| Ruby | *Chromatopelma cyaneopubescens* | `assets/collection/ruby-frontal-portrait-2026.jpg` |
 | Runa | *Grammostola pulchripes* | `assets/collection/grammostola-pulchripes.jpg` |
 | Sabrina | *Brachypelma hamorii* | `assets/species/sabrina-brachypelma-hamorii/sabrina-retreat.jpg` |
 | Siuzi | *Theraphosa apophysis* | `assets/species/siuzi-theraphosa-apophysis/siuzi-habitat.jpg` |

@@ -148,7 +148,7 @@
         { label: "World Spider Catalog — Chromatopelma cyaneopubescens", url: "https://www.wsc.nmbe.ch/spec-data/43941" },
         { label: "Anartia — distribution and habitat associations of Chromatopelma cyaneopubescens", url: "https://produccioncientificaluz.org/index.php/anartia/article/download/41442/47823?inline=1" }
       ],
-      image: "ruby-chromatopelma-cyaneopubescens.jpg",
+      image: "ruby-frontal-portrait-2026.jpg",
       alt: "Frontal portrait of Ruby, a Chromatopelma cyaneopubescens tarantula, between rocks on sandy substrate",
       intro: "Ruby is the Chromatopelma cyaneopubescens currently in my care. Her frontal portrait brings together the species’ blue-green legs, warm carapace, and dense surface detail.",
       gallery: [

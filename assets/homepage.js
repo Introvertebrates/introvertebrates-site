@@ -15,6 +15,235 @@
     return;
   }
 
+  // Approved homepage photo pool. The two anchors remain every month; the
+  // remaining slots are selected deterministically from this list.
+  const photoPool = [
+    {
+      id: "alma",
+      name: "Alma",
+      species: "Acanthoscurria geniculata",
+      src: "assets/collection/alma-acanthoscurria-geniculata.jpg",
+      alt: "Macro portrait of Alma, an Acanthoscurria geniculata tarantula",
+      href: "species/acanthoscurria-geniculata.html",
+      anchor: true
+    },
+    {
+      id: "ruby",
+      name: "Ruby",
+      species: "Chromatopelma cyaneopubescens",
+      src: "assets/collection/ruby-frontal-portrait-2026.jpg",
+      alt: "Ruby, a Chromatopelma cyaneopubescens tarantula showing cobalt-blue legs and an orange abdomen",
+      href: "species/ruby-chromatopelma-cyaneopubescens.html",
+      anchor: true
+    },
+    {
+      id: "clara",
+      name: "Clara",
+      species: "Psalmopoeus irminia",
+      src: "assets/collection/clara-psalmopoeus-irminia.jpg",
+      alt: "Clara, a Psalmopoeus irminia tarantula, peering through green leaves",
+      href: "species/clara-psalmopoeus-irminia.html"
+    },
+    {
+      id: "siuzi",
+      name: "Siuzi",
+      species: "Theraphosa apophysis",
+      src: "assets/collection/siuzi-theraphosa-apophysis.jpg",
+      alt: "Siuzi, a Theraphosa apophysis tarantula",
+      href: "species/siuzi-theraphosa-apophysis.html"
+    },
+    {
+      id: "sabrina",
+      name: "Sabrina",
+      species: "Brachypelma hamorii",
+      src: "assets/collection/sabrina-homepage-close.jpg",
+      alt: "Close portrait of Sabrina, a Brachypelma hamorii tarantula",
+      href: "species/sabrina-brachypelma-hamorii.html"
+    },
+    {
+      id: "bella",
+      name: "Bella",
+      species: "Monocentropus balfouri",
+      src: "assets/collection/bella-monocentropus-balfouri.jpg",
+      alt: "Bella, a Monocentropus balfouri tarantula",
+      href: "species/bella-monocentropus-balfouri.html"
+    },
+    {
+      id: "elvira",
+      name: "Elvira",
+      species: "Chilobrachys natanicharum",
+      src: "assets/collection/elvira-chilobrachys-natanicharum.jpg",
+      alt: "Elvira, a Chilobrachys natanicharum tarantula",
+      href: "species/elvira-chilobrachys-natanicharum.html"
+    },
+    {
+      id: "gunnar",
+      name: "Gunnar",
+      species: "Ceratogyrus darlingi",
+      src: "assets/collection/ceratogyrus-darlingi.jpg",
+      alt: "Gunnar, a Ceratogyrus darlingi tarantula",
+      href: "species/ceratogyrus-darlingi.html"
+    },
+    {
+      id: "runa",
+      name: "Runa",
+      species: "Grammostola pulchripes",
+      src: "assets/collection/grammostola-pulchripes.jpg",
+      alt: "Runa, a Grammostola pulchripes tarantula",
+      href: "species/grammostola-pulchripes.html"
+    },
+    {
+      id: "orion",
+      name: "Orion",
+      species: "Omothymus violaceopes",
+      src: "assets/collection/omothymus-violaceopes.jpg",
+      alt: "Orion, an Omothymus violaceopes tarantula",
+      href: "species/omothymus-violaceopes.html"
+    },
+    {
+      id: "kaeng-krachan",
+      name: "Kaeng Krachan",
+      species: "Chilobrachys sp. Kaeng Krachan",
+      src: "assets/collection/chilobrachys-kaeng-krachan.jpg",
+      alt: "Chilobrachys sp. Kaeng Krachan at its webbed retreat",
+      href: "species/chilobrachys-kaeng-krachan.html"
+    },
+    {
+      id: "linothele-fallax",
+      name: "Linothele fallax",
+      species: "Linothele fallax",
+      src: "assets/collection/linothele-fallax.jpg",
+      alt: "Linothele fallax standing on its dense sheet web",
+      href: "species/linothele-fallax.html",
+      variety: true
+    },
+    {
+      id: "psyttala-horrida",
+      name: "Assassin bug",
+      species: "Psyttala horrida",
+      src: "assets/collection/psyttala-horrida.jpg",
+      alt: "Adult Psyttala horrida assassin bug moving across the enclosure floor",
+      href: "species/psyttala-horrida.html",
+      variety: true
+    },
+    {
+      id: "pachnoda-marginata",
+      name: "Sun beetles",
+      species: "Pachnoda marginata",
+      src: "assets/collection/pachnoda-marginata.jpg",
+      alt: "Three Pachnoda marginata sun beetles clustered on a branch",
+      href: "species/pachnoda-marginata.html",
+      variety: true
+    },
+    {
+      id: "sonja",
+      name: "Sonja",
+      species: "Mauremys reevesii",
+      src: "assets/collection/sonja-mauremys-reevesii.jpg",
+      alt: "Sonja, a Reeves’s turtle, lifting her head and forelegs toward the camera",
+      href: "species/sonja-mauremys-reevesii.html",
+      variety: true
+    }
+  ];
+
+  const hashSeed = (value) => {
+    let hash = 2166136261;
+    for (let i = 0; i < value.length; i += 1) {
+      hash ^= value.charCodeAt(i);
+      hash = Math.imul(hash, 16777619);
+    }
+    return hash >>> 0;
+  };
+
+  const seededRandom = (seed) => {
+    let state = seed >>> 0;
+    return () => {
+      state += 0x6D2B79F5;
+      let value = state;
+      value = Math.imul(value ^ (value >>> 15), value | 1);
+      value ^= value + Math.imul(value ^ (value >>> 7), value | 61);
+      return ((value ^ (value >>> 14)) >>> 0) / 4294967296;
+    };
+  };
+
+  const seededShuffle = (items, seedKey) => {
+    const output = [...items];
+    const random = seededRandom(hashSeed(seedKey));
+    for (let i = output.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(random() * (i + 1));
+      [output[i], output[j]] = [output[j], output[i]];
+    }
+    return output;
+  };
+
+  const monthKey = (date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+
+  const selectForMonth = (date) => {
+    const anchors = photoPool.filter((photo) => photo.anchor);
+    const varietyPool = seededShuffle(
+      photoPool.filter((photo) => !photo.anchor && photo.variety),
+      "introvertebrates-homepage-variety"
+    );
+    const mainPool = seededShuffle(
+      photoPool.filter((photo) => !photo.anchor && !photo.variety),
+      "introvertebrates-homepage-main"
+    );
+
+    // Use an absolute month number so every visitor gets the same selection for
+    // a given month. Advancing one variety slot and three main slots at a time
+    // prevents photos from repeating in consecutive months while the pools are
+    // large enough.
+    const monthNumber = date.getFullYear() * 12 + date.getMonth();
+    const variety = varietyPool[monthNumber % varietyPool.length];
+    const mainStart = (monthNumber * 3) % mainPool.length;
+    const mainSelection = Array.from({ length: 3 }, (_, offset) =>
+      mainPool[(mainStart + offset) % mainPool.length]
+    );
+
+    return [anchors[0], variety, mainSelection[0], anchors[1], mainSelection[1], mainSelection[2]].filter(Boolean);
+  };
+
+  const now = new Date();
+  const monthlySelection = selectForMonth(now).slice(0, slides.length);
+
+  if (monthlySelection.length === slides.length) {
+    carousel.dataset.monthlySelection = monthKey(now);
+
+    slides.forEach((slide, slideIndex) => {
+      const photo = monthlySelection[slideIndex];
+      const label = `${photo.name} — ${photo.species}`;
+      const image = slide.querySelector("img");
+      const captionLink = slide.querySelector(".carousel-caption-link");
+      const name = slide.querySelector(".carousel-name");
+      const species = slide.querySelector(".carousel-species");
+      const profileLink = slide.querySelector(".carousel-profile-link");
+
+      slide.dataset.label = label;
+      slide.setAttribute("aria-label", `${slideIndex + 1} of ${slides.length}: ${photo.name}, ${photo.species}`);
+
+      if (image) {
+        image.src = photo.src;
+        image.alt = photo.alt;
+        image.loading = slideIndex === 0 ? "eager" : "lazy";
+        if (slideIndex === 0) {
+          image.setAttribute("fetchpriority", "high");
+          image.removeAttribute("decoding");
+        } else {
+          image.removeAttribute("fetchpriority");
+          image.setAttribute("decoding", "async");
+        }
+      }
+
+      if (captionLink) {
+        captionLink.href = photo.href;
+        captionLink.setAttribute("aria-label", `View ${photo.name}’s ${photo.species} profile`);
+      }
+      if (name) name.textContent = photo.name;
+      if (species) species.textContent = photo.species;
+      if (profileLink) profileLink.textContent = "View profile →";
+    });
+  }
+
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const dots = [];
   let index = 0;

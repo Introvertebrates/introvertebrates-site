@@ -17,6 +17,9 @@
 
   // Approved homepage photo pool. The two anchors remain every month; the
   // remaining slots are selected deterministically from this list.
+  //
+  // Optional `priority` is a curation control: 1 is normal, while standout
+  // images can be raised (for example 1.15–1.35) so they earn more airtime.
   const photoPool = [
     {
       id: "alma",
@@ -166,39 +169,38 @@
     };
   };
 
-  const seededShuffle = (items, seedKey) => {
-    const output = [...items];
-    const random = seededRandom(hashSeed(seedKey));
-    for (let i = output.length - 1; i > 0; i -= 1) {
-      const j = Math.floor(random() * (i + 1));
-      [output[i], output[j]] = [output[j], output[i]];
-    }
-    return output;
-  };
-
   const monthKey = (date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+
+  const rankPool = (pool, date, count, recentIds = []) => {
+    const key = monthKey(date);
+    const recent = new Set(recentIds);
+
+    return pool
+      .map((photo) => {
+        const random = seededRandom(hashSeed(`${key}:${photo.id}`))();
+        const priority = photo.priority ?? 1;
+        const recentPenalty = recent.has(photo.id) ? 0.18 : 0;
+        const score = priority + (random * 0.55) - recentPenalty;
+        return { photo, score };
+      })
+      .sort((a, b) => b.score - a.score || a.photo.id.localeCompare(b.photo.id))
+      .slice(0, count)
+      .map(({ photo }) => photo);
+  };
 
   const selectForMonth = (date) => {
     const anchors = photoPool.filter((photo) => photo.anchor);
-    const varietyPool = seededShuffle(
-      photoPool.filter((photo) => !photo.anchor && photo.variety),
-      "introvertebrates-homepage-variety"
-    );
-    const mainPool = seededShuffle(
-      photoPool.filter((photo) => !photo.anchor && !photo.variety),
-      "introvertebrates-homepage-main"
-    );
+    const varietyPool = photoPool.filter((photo) => !photo.anchor && photo.variety);
+    const mainPool = photoPool.filter((photo) => !photo.anchor && !photo.variety);
 
-    // Use an absolute month number so every visitor gets the same selection for
-    // a given month. Advancing one variety slot and three main slots at a time
-    // prevents photos from repeating in consecutive months while the pools are
-    // large enough.
-    const monthNumber = date.getFullYear() * 12 + date.getMonth();
-    const variety = varietyPool[monthNumber % varietyPool.length];
-    const mainStart = (monthNumber * 3) % mainPool.length;
-    const mainSelection = Array.from({ length: 3 }, (_, offset) =>
-      mainPool[(mainStart + offset) % mainPool.length]
-    );
+    const previousDate = new Date(date.getFullYear(), date.getMonth() - 1, 1);
+    const previousVariety = rankPool(varietyPool, previousDate, 1);
+    const previousMain = rankPool(mainPool, previousDate, 3);
+
+    // Recency is only a gentle nudge, not a ban. A standout image with a higher
+    // `priority` can still beat the 0.18 recent-use penalty and appear again.
+    const variety = rankPool(varietyPool, date, 1, previousVariety.map((photo) => photo.id))[0];
+    const mainSelection = rankPool(mainPool, date, 3, previousMain.map((photo) => photo.id));
 
     return [anchors[0], variety, mainSelection[0], anchors[1], mainSelection[1], mainSelection[2]].filter(Boolean);
   };

@@ -78,9 +78,8 @@
       alt: "Chilobrachys fimbriatus emerging from a mossy, silk-lined retreat",
       intro: "This Chilobrachys fimbriatus is part of the current collection. Its updated portrait records the spider emerging through plants and silk at the entrance to its retreat.",
       gallery: [
-        { file: "fimbriatus-habitat-2026.jpg", alt: "Chilobrachys fimbriatus emerging among moss, plants, and webbing", caption: "Habitat and silk · 2026", width: 1600, height: 1067 },
-        { file: "fimbriatus-retreat-2026.jpg", alt: "Chilobrachys fimbriatus standing at the dark entrance to its retreat", caption: "At the retreat entrance · 2026", width: 1600, height: 1067 },
-        { file: "fimbriatus-close-2026.jpg", alt: "Close portrait of Chilobrachys fimbriatus showing the eyes and fine leg hairs", caption: "Close portrait · 2026", width: 1600, height: 1067 }
+        { file: "fimbriatus-webbing.jpg", alt: "Chilobrachys fimbriatus visible through dense white webbing", caption: "Dense web structure · 2025" },
+        { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "At the retreat entrance · 2025" }
       ],
       video: { id: "iPIhIsNKUaY", title: "Rehousing my Chilobrachys fimbriatus", note: "A full rehousing video showing the animal, its retreat, and the enclosure work behind the profile." }
     },
@@ -150,12 +149,12 @@
         { label: "Anartia — distribution and habitat associations of Chromatopelma cyaneopubescens", url: "https://produccioncientificaluz.org/index.php/anartia/article/download/41442/47823?inline=1" }
       ],
       image: "ruby-chromatopelma-cyaneopubescens.jpg",
-      alt: "Ruby, a Chromatopelma cyaneopubescens tarantula showing cobalt-blue legs and an orange abdomen",
-      intro: "Ruby is the Chromatopelma cyaneopubescens currently in my care. Her portrait brings together the species’ blue-green legs, warm carapace, and dense surface detail.",
+      alt: "Frontal portrait of Ruby, a Chromatopelma cyaneopubescens tarantula, between rocks on sandy substrate",
+      intro: "Ruby is the Chromatopelma cyaneopubescens currently in my care. Her frontal portrait brings together the species’ blue-green legs, warm carapace, and dense surface detail.",
       gallery: [
-        { file: "ruby-blue-detail-2026.jpg", alt: "Close frontal portrait of Ruby showing blue legs and a green carapace", caption: "Blue leg and carapace detail · 2026", width: 1600, height: 1067 },
-        { file: "ruby-shallow-focus-2026.jpg", alt: "Ruby facing the camera with the front legs softly out of focus", caption: "Shallow-focus portrait · 2026", width: 1600, height: 1067 },
-        { file: "ruby-frontal-2026.jpg", alt: "Frontal portrait of Ruby standing between rocks on sandy substrate", caption: "Frontal portrait · 2026", width: 1600, height: 1067 }
+        { file: "ruby-profile-2026.jpg", alt: "Full-body portrait of Ruby showing blue legs, a green carapace, and an orange abdomen", caption: "Full-body portrait · 2026", width: 1600, height: 1067 },
+        { file: "ruby-feeding.jpg", alt: "Ruby feeding on the enclosure surface with blue legs and an orange abdomen visible", caption: "Feeding response · 2026" },
+        { file: "ruby-colour.jpg", alt: "Close dorsal view of Ruby showing blue legs and a warm orange abdomen", caption: "Colour and texture · 2025" }
       ],
       video: { id: "SYVBvfz9fh8", title: "Ruby’s best strikes since day one", note: "A fast collection of Ruby’s feeding responses, presented as an Introvertebrates Short." }
     },

@@ -208,6 +208,11 @@ a {
   .species-hero h1.long-species-name {
     font-size: clamp(3.2rem, 5.5vw, 5.6rem);
   }
+
+  body[data-profile="ruby-chromatopelma-cyaneopubescens"] .species-hero h1.long-species-name {
+    font-size: clamp(2.7rem, 4.35vw, 4.45rem);
+    overflow-wrap: normal;
+  }
 }
 
 .common-name {
@@ -439,6 +444,86 @@ a {
   color: #91aab6;
   font-size: 0.82rem;
   line-height: 1.7;
+}
+
+.profile-conservation-intro {
+  max-width: 760px;
+  margin-bottom: 28px !important;
+}
+
+.profile-conservation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.profile-conservation-card {
+  min-width: 0;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid var(--species-line);
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(20, 241, 196, 0.045), transparent 55%),
+    var(--species-surface);
+}
+
+.profile-conservation-card > span {
+  color: var(--species-gold);
+  font-size: 0.64rem;
+  font-weight: 780;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.profile-conservation-card h3 {
+  margin: auto 0 12px;
+  color: var(--species-text);
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-weight: 650;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.profile-conservation-card p {
+  margin: 0;
+  color: #91aab6;
+  font-size: 0.86rem;
+  line-height: 1.72;
+}
+
+.profile-conservation-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.profile-conservation-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 38px;
+  padding: 9px 13px;
+  border: 1px solid rgba(20, 241, 196, 0.18);
+  border-radius: 999px;
+  background: rgba(20, 241, 196, 0.035);
+  font-size: 0.76rem;
+  font-weight: 720;
+}
+
+.profile-conservation-links a:hover {
+  border-color: rgba(20, 241, 196, 0.46);
+  text-decoration: none;
+}
+
+.profile-conservation-note {
+  margin: 18px 0 0 !important;
+  color: #6f8e9d !important;
+  font-size: 0.76rem !important;
+  line-height: 1.65 !important;
 }
 
 .section-copy a,
@@ -1022,9 +1107,10 @@ a {
 
   .site-nav {
     width: 100%;
-    justify-content: space-between;
-    gap: 0;
-    overflow-x: visible;
+    justify-content: flex-start;
+    gap: 2px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
     scrollbar-width: none;
   }
 
@@ -1033,8 +1119,12 @@ a {
   }
 
   .site-nav a {
-    padding-inline: 6px;
+    padding-inline: 3px;
     font-size: 0.76rem;
+  }
+
+  .profile-conservation-grid {
+    grid-template-columns: 1fr;
   }
 
   .species-hero {

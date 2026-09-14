@@ -1156,9 +1156,10 @@ button {
 
   .site-nav {
     width: 100%;
-    justify-content: space-between;
-    gap: 0;
-    overflow-x: visible;
+    justify-content: flex-start;
+    gap: 2px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
     scrollbar-width: none;
   }
 
@@ -1168,7 +1169,7 @@ button {
 
   .site-nav a {
     min-height: 44px;
-    padding-inline: 6px;
+    padding-inline: 3px;
     font-size: 0.76rem;
   }
 

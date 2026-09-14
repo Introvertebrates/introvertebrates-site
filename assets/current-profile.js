@@ -26,7 +26,7 @@
       alt: "Sabrina, a Brachypelma hamorii tarantula with vivid orange knee markings",
       intro: "Sabrina is the Brachypelma hamorii currently in my care. Her collection portrait is built around the vivid orange knee markings that make her immediately recognisable.",
       gallery: [
-        { file: "sabrina-close.jpg", alt: "Close portrait of Sabrina showing her eyes, mouthparts, and orange knee markings", caption: "Face and knee markings · archive portrait" },
+        { file: "sabrina-knee-detail-2026.jpg", alt: "Close portrait of Sabrina showing her eyes and vivid orange knee markings", caption: "Face and knee markings · 2026", width: 1600, height: 1067 },
         { file: "sabrina-habitat.jpg", alt: "Sabrina positioned among wood and dry enclosure planting", caption: "Sabrina in her habitat · 2026" },
         { file: "sabrina-retreat.jpg", alt: "Sabrina resting at the curved entrance to her retreat", caption: "At the retreat · 2024" }
       ],
@@ -75,11 +75,12 @@
         { label: "Frontiers in Arachnid Science — distribution and natural history of Chilobrachys", url: "https://www.frontiersin.org/journals/arachnid-science/articles/10.3389/frchs.2025.1598438/full" }
       ],
       image: "chilobrachys-fimbriatus.jpg",
-      alt: "Chilobrachys fimbriatus feeding on a cockroach within dense white webbing",
-      intro: "This Chilobrachys fimbriatus is part of the current collection. Its updated portrait records a feeding moment inside the dense, silk-lined retreat.",
+      alt: "Chilobrachys fimbriatus emerging from a mossy, silk-lined retreat",
+      intro: "This Chilobrachys fimbriatus is part of the current collection. Its updated portrait records the spider emerging through plants and silk at the entrance to its retreat.",
       gallery: [
-        { file: "fimbriatus-webbing.jpg", alt: "Chilobrachys fimbriatus visible through dense white webbing", caption: "Dense web structure · 2025" },
-        { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "At the retreat entrance · 2025" }
+        { file: "fimbriatus-habitat-2026.jpg", alt: "Chilobrachys fimbriatus emerging among moss, plants, and webbing", caption: "Habitat and silk · 2026", width: 1600, height: 1067 },
+        { file: "fimbriatus-retreat-2026.jpg", alt: "Chilobrachys fimbriatus standing at the dark entrance to its retreat", caption: "At the retreat entrance · 2026", width: 1600, height: 1067 },
+        { file: "fimbriatus-close-2026.jpg", alt: "Close portrait of Chilobrachys fimbriatus showing the eyes and fine leg hairs", caption: "Close portrait · 2026", width: 1600, height: 1067 }
       ],
       video: { id: "iPIhIsNKUaY", title: "Rehousing my Chilobrachys fimbriatus", note: "A full rehousing video showing the animal, its retreat, and the enclosure work behind the profile." }
     },
@@ -152,9 +153,9 @@
       alt: "Ruby, a Chromatopelma cyaneopubescens tarantula showing cobalt-blue legs and an orange abdomen",
       intro: "Ruby is the Chromatopelma cyaneopubescens currently in my care. Her portrait brings together the species’ blue-green legs, warm carapace, and dense surface detail.",
       gallery: [
-        { file: "ruby-feeding.jpg", alt: "Ruby feeding on the enclosure surface with blue legs and an orange abdomen visible", caption: "Feeding response · 2026" },
-        { file: "ruby-colour.jpg", alt: "Close dorsal view of Ruby showing blue legs and a warm orange abdomen", caption: "Colour and texture · 2025" },
-        { file: "ruby-full-body.jpg", alt: "Full-body view of Ruby standing on webbed substrate", caption: "Full-body view · 2025" }
+        { file: "ruby-blue-detail-2026.jpg", alt: "Close frontal portrait of Ruby showing blue legs and a green carapace", caption: "Blue leg and carapace detail · 2026", width: 1600, height: 1067 },
+        { file: "ruby-shallow-focus-2026.jpg", alt: "Ruby facing the camera with the front legs softly out of focus", caption: "Shallow-focus portrait · 2026", width: 1600, height: 1067 },
+        { file: "ruby-frontal-2026.jpg", alt: "Frontal portrait of Ruby standing between rocks on sandy substrate", caption: "Frontal portrait · 2026", width: 1600, height: 1067 }
       ],
       video: { id: "SYVBvfz9fh8", title: "Ruby’s best strikes since day one", note: "A fast collection of Ruby’s feeding responses, presented as an Introvertebrates Short." }
     },
@@ -586,6 +587,145 @@
     }
   };
 
+  const conservationProfiles = {
+    "sabrina-brachypelma-hamorii": {
+      assessmentLabel: "Vulnerable · 2018",
+      assessment: "The Commission for Environmental Cooperation’s 2019 identification guide reports that IUCN assessed Brachypelma hamorii as Vulnerable in 2018. The assessment year remains part of the claim; check the live Red List for updates.",
+      tradeLabel: "CITES Appendix II",
+      trade: "The listing applies to the genus Brachypelma. International trade is controlled, and the exact scientific name and lawful origin matter.",
+      context: "Published conservation profiles describe a restricted western Mexican range with pressure from habitat change, fragmentation, and collection.",
+      keeper: "Retain breeder or seller details, receipts, the name used at acquisition, and any permit history. Older B. smithi labels deserve particular scrutiny.",
+      source: { label: "CEC tarantula identification guide", url: "https://www.cec.org/files/documents/publications/11805-identification-cites-listed-tarantulas-aphonopelma-brachypelma-and-sericopelma-en.pdf" }
+    },
+    "ceratogyrus-darlingi": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "No species-level assessment was located in IUCN Red List version 2026-1. Published taxonomy and natural history do not yet provide a global population trend.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026. National wildlife and export rules can still apply.",
+      context: "The catalogued range spans parts of southern Africa, but range size alone cannot substitute for abundance, habitat condition, or trend data.",
+      keeper: "Use documented captive-bred provenance and retain the original seller and acquisition record; do not turn a missing assessment into a low-risk claim."
+    },
+    "chilobrachys-fimbriatus": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "No species-level assessment was located in IUCN Red List version 2026-1, and reliable population-trend information remains limited.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026. Indian wildlife and export law remains separate from CITES.",
+      context: "A species can be common in captivity while its wild abundance and collection history remain poorly documented. Those are different evidence sets.",
+      keeper: "Prefer traceable captive-bred stock and retain origin records. Avoid claims about wild abundance unless they are supported by field evidence."
+    },
+    "chilobrachys-kaeng-krachan": {
+      assessmentLabel: "Identity unresolved",
+      assessment: "This hobby locality label is not a formally described species, so a species-level IUCN assessment cannot be matched to it responsibly.",
+      tradeLabel: "No species-level match",
+      trade: "No CITES listing was found for the genus Chilobrachys, but the unresolved identity makes precise legal and geographic claims especially fragile.",
+      context: "The first conservation problem is identification: without a defensible name and locality, range, population, and threat claims cannot be tested.",
+      keeper: "Preserve the original label and seller history exactly. Do not invent a locality, upgrade the name, or market descendants as a verified species."
+    },
+    "elvira-chilobrachys-natanicharum": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "The species was described only in 2023 and no species-level assessment was located in IUCN Red List version 2026-1.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026. It was already present in the pet trade before formal description.",
+      context: "The type material links the species to Thai mangrove habitat, but its wider distribution, abundance, and population trend are still poorly resolved.",
+      keeper: "A captive-bred claim should be supported by a traceable breeder chain. Keep the scientific name, acquisition date, seller, and any locality information together.",
+      source: { label: "Original 2023 species description", url: "https://zookeys.pensoft.net/article/106278/" }
+    },
+    "ruby-chromatopelma-cyaneopubescens": {
+      assessmentSystem: "Venezuelan Red Book",
+      assessmentLabel: "Endangered · Venezuela, 2015",
+      assessment: "Venezuela’s 2015 Red Book assessed Chromatopelma cyaneopubescens as Endangered nationally. This is a Venezuelan assessment, not a global IUCN category, and its date should remain visible.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026. A missing CITES listing is not a population assessment.",
+      context: "This Venezuelan endemic is associated with dry scrub habitat. Recent occurrence work improves the known range, but population trend and collection pressure remain insufficiently quantified.",
+      keeper: "Choose documented captive-bred animals and preserve provenance. Do not present popularity in captivity as evidence of security in the wild.",
+      source: { label: "Venezuelan Red Book species account", url: "https://www.especiesamenazadas.org/taxon/arthropoda/arachnida/araneae/theraphosidae/chromatopelma/tarantula-azul-de-paraguana" }
+    },
+    "grammostola-pulchripes": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "No species-level assessment was located in IUCN Red List version 2026-1.",
+      tradeLabel: "Not CITES-listed",
+      trade: "CITES CoP20 added Grammostola rosea to Appendix II with delayed implementation; it did not list the entire genus or G. pulchripes.",
+      context: "The species is recorded across Brazil, Paraguay, and Argentina, but a broad mapped range does not reveal local habitat loss, collection levels, or population trend.",
+      keeper: "Keep the exact species name and provenance. Similar common names within Grammostola should not be used to transfer legal status from one species to another.",
+      source: { label: "CITES CoP20 proposal outcomes", url: "https://www.canada.ca/en/environment-climate-change/services/convention-international-trade-endangered-species/conference-of-parties/20-species-proposal-outcomes.html" }
+    },
+    "linothele-fallax": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "No species-level assessment was located in IUCN Red List version 2026-1.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026.",
+      context: "Species-specific field information is sparse. Taxonomy, web biology, and scattered locality records cannot yet provide a reliable global population trend.",
+      keeper: "Preserve the accepted name and seller history, and keep observations of this captive individual separate from claims about wild populations."
+    },
+    "sonja-mauremys-reevesii": {
+      assessmentLabel: "Endangered",
+      assessment: "The global IUCN assessment lists Mauremys reevesii as Endangered. The published assessment dates to 2011 and should be read with that age visible.",
+      tradeLabel: "CITES Appendix III",
+      trade: "China included the species in Appendix III, requesting international cooperation in controlling trade.",
+      context: "Published accounts identify wetland change, collection and consumption, pollution, and movement of farmed or released turtles as conservation concerns.",
+      keeper: "Never release a captive turtle. Retain origin records and plan for lifelong care; releases can move disease and complicate already mixed wild and introduced populations.",
+      source: { label: "IUCN/SSC turtle species account", url: "https://iucn-tftsg.org/cbftt/species-accounts/mauremys-reevesii-050/" }
+    },
+    "bella-monocentropus-balfouri": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "No species-level assessment was located in IUCN Red List version 2026-1.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026.",
+      context: "Monocentropus balfouri is endemic to Socotra. An island range concentrates the global population geographically, while published work has raised concern about collection and export of Socotran endemics.",
+      keeper: "Document captive-bred provenance and keep Bella’s record separate from Belinda’s. Captive availability does not remove the importance of lawful origin."
+    },
+    "belinda-monocentropus-balfouri": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "No species-level assessment was located in IUCN Red List version 2026-1.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026.",
+      context: "Monocentropus balfouri is endemic to Socotra. An island range concentrates the global population geographically, while published work has raised concern about collection and export of Socotran endemics.",
+      keeper: "Document captive-bred provenance and keep Belinda’s record separate from Bella’s. Captive availability does not remove the importance of lawful origin."
+    },
+    "omothymus-violaceopes": {
+      assessmentLabel: "Global status unassessed",
+      assessment: "No global species-level assessment was located in IUCN Red List version 2026-1. Singapore’s 2024 national Red Data Book classifies the species as Endangered locally.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026.",
+      context: "Singapore sources identify loss of mature forest trees and suitable cavities, land conversion, and poaching for the pet trade as threats to the national population.",
+      keeper: "Insist on traceable captive-bred provenance. A high price or captive rarity is not evidence that wild collection was harmless.",
+      source: { label: "Singapore Red Data Book species account", url: "https://file.go.gov.sg/reddatabook3-part11.pdf" }
+    },
+    "clara-psalmopoeus-irminia": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "No species-level assessment was located in IUCN Red List version 2026-1.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026.",
+      context: "Forest dependence and visibility in the pet trade make habitat and provenance relevant, but species-specific abundance, trend, and harvest data remain limited.",
+      keeper: "Prefer documented captive-bred animals and preserve the chain of custody. Do not convert an uncertain country label into precise locality data.",
+      source: { label: "Psalmopoeus taxonomy and conservation study", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10838173/" }
+    },
+    "psyttala-horrida": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "No species-level assessment was located in IUCN Red List version 2026-1.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026.",
+      context: "Modern work describes morphology and development, but the broad label “Africa” and limited population data are not enough for a meaningful global trend assessment.",
+      keeper: "Retain the correct spelling Psyttala, seller history, and colony origin. Keep captive observations separate from assumptions about abundance in the wild."
+    },
+    "pachnoda-marginata": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "No species-level assessment was located in IUCN Red List version 2026-1.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026.",
+      context: "A broad species label, subspecies uncertainty, and sparse locality information limit what this colony can say about any particular wild population.",
+      keeper: "Preserve seller and origin records, avoid attaching unsupported subspecies or locality names, and never release captive beetles or their substrate."
+    },
+    "siuzi-theraphosa-apophysis": {
+      assessmentLabel: "Not Evaluated",
+      assessment: "No species-level assessment was located in IUCN Red List version 2026-1.",
+      tradeLabel: "Not CITES-listed",
+      trade: "The species was not found in the CITES Appendices checked in September 2026.",
+      context: "Its large body, long life and limited dispersal make reliable harvest and population data especially important, but a global trend has not been established.",
+      keeper: "Use traceable captive-bred provenance and preserve acquisition records. Size and captive longevity do not make an undocumented origin less important."
+    }
+  };
+
   const collectionStories = {
     "sabrina-brachypelma-hamorii": "Sabrina is the individual behind this profile. Her orange knee bands make her easy to recognise across the collection, while her own feeding and molt history remains distinct from published species-level information.",
     "ceratogyrus-darlingi": "Gunnar gives the Introvertebrates collection a living record of Ceratogyrus darlingi. His profile brings together verified species information, the introduction video, and observations recorded through the Codex.",
@@ -613,7 +753,11 @@
   const namedResident = !profile.resident.startsWith("Current ");
   const title = namedResident ? profile.resident : profile.species;
   const subtitle = namedResident ? `Meet ${profile.resident}` : profile.group;
-  const collectionHeading = namedResident ? `Meet ${profile.resident}.` : "A living colony.";
+  const collectionHeading = namedResident
+    ? `Meet ${profile.resident}.`
+    : profile.resident.toLowerCase().includes("colony")
+      ? "A living colony."
+      : "A living resident.";
   const relatedProfiles = Object.entries(profiles)
     .filter(([relatedKey]) => relatedKey !== key)
     .sort(([, first], [, second]) => {
@@ -626,6 +770,7 @@
   const gallery = Array.isArray(profile.gallery) ? profile.gallery : [];
   const fieldGuide = fieldGuides[key];
   const deeperHistory = naturalHistorySections[key];
+  const conservationProfile = conservationProfiles[key];
   const norwegianProfileAnchors = {
     "sabrina-brachypelma-hamorii": "sabrina",
     "ruby-chromatopelma-cyaneopubescens": "ruby",
@@ -643,6 +788,7 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="../collection.html" aria-current="page">Collection</a>
           <a href="../learn.html">Learn</a>
+          <a href="../conservation.html">Conservation</a>
           <a href="../research.html">Research</a>
           <a href="../community.html">Community</a>
           <a href="../kryp-og-krabater.html" aria-label="Kryp &amp; Krabater">Kryp</a>
@@ -708,6 +854,42 @@
         </div>
       </section>
 
+      <section class="profile-section species-shell profile-conservation-section" id="conservation-context" aria-labelledby="conservation-context-title">
+        <header class="section-heading"><p class="section-kicker">Conservation context</p><h2 id="conservation-context-title">Status, trade &amp; uncertainty.</h2></header>
+        <div class="section-copy">
+          <p class="profile-conservation-intro">IUCN evaluates extinction risk; CITES regulates international trade. They answer different questions, and missing data should remain visible.</p>
+          <div class="profile-conservation-grid">
+            <article class="profile-conservation-card">
+              <span>${conservationProfile.assessmentSystem || "IUCN Red List"}</span>
+              <h3>${conservationProfile.assessmentLabel}</h3>
+              <p>${conservationProfile.assessment}</p>
+            </article>
+            <article class="profile-conservation-card">
+              <span>International trade</span>
+              <h3>${conservationProfile.tradeLabel}</h3>
+              <p>${conservationProfile.trade}</p>
+            </article>
+            <article class="profile-conservation-card">
+              <span>Conservation lens</span>
+              <h3>What the evidence supports</h3>
+              <p>${conservationProfile.context}</p>
+            </article>
+            <article class="profile-conservation-card">
+              <span>Keeper connection</span>
+              <h3>Make provenance visible</h3>
+              <p>${conservationProfile.keeper}</p>
+            </article>
+          </div>
+          <div class="profile-conservation-links">
+            <a href="https://www.iucnredlist.org/" target="_blank" rel="noopener noreferrer">Check IUCN <span aria-hidden="true">↗</span></a>
+            <a href="https://checklist.cites.org/" target="_blank" rel="noopener noreferrer">Check CITES <span aria-hidden="true">↗</span></a>
+            ${conservationProfile.source ? '<a href="' + conservationProfile.source.url + '" target="_blank" rel="noopener noreferrer">' + conservationProfile.source.label + ' <span aria-hidden="true">↗</span></a>' : ""}
+            <a href="../conservation.html">Conservation overview <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="profile-conservation-note">Reviewed 14 September 2026 against IUCN Red List version 2026-1 and the live CITES Checklist. “Not Evaluated” is not a low-risk category. National and local rules may be stricter.</p>
+        </div>
+      </section>
+
       <section class="profile-section species-shell" id="collection-record" aria-labelledby="collection-record-title">
         <header class="section-heading"><p class="section-kicker">Life in the collection</p><h2 id="collection-record-title">${collectionHeading}</h2></header>
         <div class="section-copy">
@@ -716,7 +898,7 @@
             <div class="photo-gallery" aria-label="Photographs of ${title}">
               ${gallery.map((photo) => `
                 <figure class="photo-card">
-                  <img src="../assets/species/${key}/${photo.file}" alt="${photo.alt}" width="1600" height="898" loading="lazy" decoding="async">
+                  <img src="../assets/species/${key}/${photo.file}" alt="${photo.alt}" width="${photo.width || 1600}" height="${photo.height || 898}" loading="lazy" decoding="async">
                   ${photo.caption ? `<figcaption>${photo.caption}</figcaption>` : ""}
                 </figure>
               `).join("")}
@@ -805,7 +987,7 @@
       <div class="footer-inner species-shell">
         <span>© 2026 Introvertebrates</span>
         <nav class="footer-links" aria-label="Footer navigation">
-          <a href="../index.html">Home</a><a href="../collection.html">Collection</a><a href="../learn.html">Learn</a><a href="../research.html">Research</a><a href="../community.html">Community</a><a href="../kryp-og-krabater.html">Kryp &amp; Krabater</a><a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="mailto:erlend@introvertebrates.com">Contact</a>
+          <a href="../index.html">Home</a><a href="../collection.html">Collection</a><a href="../learn.html">Learn</a><a href="../conservation.html">Conservation</a><a href="../research.html">Research</a><a href="../community.html">Community</a><a href="../kryp-og-krabater.html">Kryp &amp; Krabater</a><a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="mailto:erlend@introvertebrates.com">Contact</a>
         </nav>
       </div>
     </footer>

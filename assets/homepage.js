@@ -178,40 +178,33 @@
 
   const monthKey = (date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
 
-  const selectForMonth = (date, avoidIds = []) => {
-    const key = monthKey(date);
+  const selectForMonth = (date) => {
     const anchors = photoPool.filter((photo) => photo.anchor);
-    const rotating = photoPool.filter((photo) => !photo.anchor);
-    const avoid = new Set(avoidIds);
+    const varietyPool = seededShuffle(
+      photoPool.filter((photo) => !photo.anchor && photo.variety),
+      "introvertebrates-homepage-variety"
+    );
+    const mainPool = seededShuffle(
+      photoPool.filter((photo) => !photo.anchor && !photo.variety),
+      "introvertebrates-homepage-main"
+    );
 
-    const varietyCandidates = seededShuffle(
-      rotating.filter((photo) => photo.variety && !avoid.has(photo.id)),
-      `${key}:variety`
+    // Use an absolute month number so every visitor gets the same selection for
+    // a given month. Advancing one variety slot and three main slots at a time
+    // prevents photos from repeating in consecutive months while the pools are
+    // large enough.
+    const monthNumber = date.getFullYear() * 12 + date.getMonth();
+    const variety = varietyPool[monthNumber % varietyPool.length];
+    const mainStart = (monthNumber * 3) % mainPool.length;
+    const mainSelection = Array.from({ length: 3 }, (_, offset) =>
+      mainPool[(mainStart + offset) % mainPool.length]
     );
-    const varietyBackfill = seededShuffle(
-      rotating.filter((photo) => photo.variety && avoid.has(photo.id)),
-      `${key}:variety-backfill`
-    );
-    const variety = varietyCandidates[0] || varietyBackfill[0];
 
-    const preferred = seededShuffle(
-      rotating.filter((photo) => photo.id !== variety?.id && !avoid.has(photo.id)),
-      `${key}:preferred`
-    );
-    const backfill = seededShuffle(
-      rotating.filter((photo) => photo.id !== variety?.id && avoid.has(photo.id)),
-      `${key}:backfill`
-    );
-    const rotatingSelection = [variety, ...preferred, ...backfill].filter(Boolean).slice(0, 4);
-
-    return [anchors[0], rotatingSelection[0], rotatingSelection[1], anchors[1], rotatingSelection[2], rotatingSelection[3]].filter(Boolean);
+    return [anchors[0], variety, mainSelection[0], anchors[1], mainSelection[1], mainSelection[2]].filter(Boolean);
   };
 
   const now = new Date();
-  const previousMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
-  const previousSelection = selectForMonth(previousMonth);
-  const previousRotatingIds = previousSelection.filter((photo) => !photo.anchor).map((photo) => photo.id);
-  const monthlySelection = selectForMonth(now, previousRotatingIds).slice(0, slides.length);
+  const monthlySelection = selectForMonth(now).slice(0, slides.length);
 
   if (monthlySelection.length === slides.length) {
     carousel.dataset.monthlySelection = monthKey(now);

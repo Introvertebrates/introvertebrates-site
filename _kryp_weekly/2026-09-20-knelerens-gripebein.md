@@ -1,4 +1,6 @@
 ---
+date: 2026-09-20 10:00:00 +0200
+date_label: "Uke 38 · 20. september 2026"
 colouring_release: "kneler"
 video_url: "/assets/kryp/video/ghost-mantis-movement.mp4"
 video_title: "Spøkelseskneler (Phyllocrania paradoxa) – en annen knelerart enn på bildet"

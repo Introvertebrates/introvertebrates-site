@@ -1,4 +1,6 @@
 ---
+date: 2026-09-27 10:00:00 +0200
+date_label: "Uke 39 · 27. september 2026"
 colouring_release: "oter"
 title: "Oteren kjenner bevegelse i vannet"
 description: "Se hvordan oterens kropp, hale, poter og værhår hjelper den med å svømme og jakte."

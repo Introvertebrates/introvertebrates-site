@@ -1,4 +1,6 @@
 ---
+date: 2026-10-04 10:00:00 +0200
+date_label: "Uke 40 · 4. oktober 2026"
 colouring_release: "moskus"
 title: "Moskusen har to lag med pels"
 description: "Oppdag hvordan lange dekkhår og svært fin underull beskytter moskusen i vind og kulde."

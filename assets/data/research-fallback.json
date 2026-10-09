@@ -320,5 +320,19 @@
     "slug": "cyclosa-spiders-build-giant-decoys",
     "url": "research/cyclosa-spiders-build-giant-decoys/",
     "has_body": true
+  },
+  {
+    "title": "This spider turns its web into a spring-loaded catapult",
+    "description": "Hyptiotes cavatus launches its triangular web at prey, and a 2025 silk-gene study adds a new chapter to the remarkable mechanism.",
+    "category": "Behaviour & cognition",
+    "posted_date": "9 October 2026",
+    "source_date": "13 May 2019",
+    "summary": "The triangle-weaver Hyptiotes cavatus tightens its web through repeated movements, stores energy in the silk, and releases it when prey strikes. In a 2019 study, the spider reached peak accelerations of about 79 g; a 2025 follow-up found unusually proline-rich silk proteins that may help explain the web's demanding mechanics.",
+    "why_it_matters": "A spider's web can be an actively powered hunting device. Combining the catapult experiments with later silk research connects behaviour, biomechanics and evolution, while leaving the precise link between silk composition and performance open for testing.",
+    "source_url": "https://doi.org/10.1073/pnas.1821419116",
+    "source_name": "PNAS",
+    "slug": "hyptiotes-web-catapult",
+    "url": "research/hyptiotes-web-catapult/",
+    "has_body": true
   }
 ]

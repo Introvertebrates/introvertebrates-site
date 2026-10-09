@@ -468,10 +468,10 @@
         <label class="sort-control">
           <span>Sort by</span>
           <select id="sort-select">
-            <option value="source-desc">Newest source date</option>
-            <option value="source-asc">Oldest source date</option>
             <option value="posted-desc">Newest posted date</option>
             <option value="posted-asc">Oldest posted date</option>
+            <option value="source-desc">Newest source date</option>
+            <option value="source-asc">Oldest source date</option>
           </select>
         </label>
       </div>
@@ -498,7 +498,7 @@
 
   <script id="research-data" type="application/json" data-fallback-url="assets/data/research-fallback.json">
     [
-      {% assign research_items = site.research | sort: "source_date" | reverse %}
+      {% assign research_items = site.research | sort: "posted_date" | reverse %}
       {% for post in research_items %}
       {
         "title": {{ post.title | jsonify }},

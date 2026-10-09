@@ -6,7 +6,7 @@
   if (!dataElement || !entryList || !sortSelect) return;
 
   let activeFilter = "all";
-  let activeSort = "source-desc";
+  let activeSort = sortSelect.value;
   let entries = [];
 
   const categoryToSlug = (category) => {

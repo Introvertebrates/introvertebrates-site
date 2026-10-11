@@ -1,4 +1,6 @@
 ---
+date: 2026-10-11 10:00:00 +0200
+date_label: "Uke 41 · 11. oktober 2026"
 colouring_release: "ravn"
 video_url: "/assets/kryp/video/raven-winter.mp4"
 video_title: "Ravn i flukt"

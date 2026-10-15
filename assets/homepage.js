@@ -96,14 +96,6 @@
       href: "species/grammostola-pulchripes.html"
     },
     {
-      id: "orion",
-      name: "Orion",
-      species: "Omothymus violaceopes",
-      src: "assets/collection/omothymus-violaceopes.jpg",
-      alt: "Orion, an Omothymus violaceopes tarantula",
-      href: "species/omothymus-violaceopes.html"
-    },
-    {
       id: "kaeng-krachan",
       name: "Kaeng Krachan",
       species: "Chilobrachys sp. Kaeng Krachan",

@@ -72,7 +72,7 @@ for (const [key, profile] of profileEntries) {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://introvertebrates.com/" },
-        { "@type": "ListItem", position: 2, name: "Current collection", item: "https://introvertebrates.com/collection.html" },
+        { "@type": "ListItem", position: 2, name: profile.collectionStatus === "former" ? "Collection archive" : "Current collection", item: "https://introvertebrates.com/collection.html" },
         { "@type": "ListItem", position: 3, name: profile.species, item: canonicalUrl }
       ]
     }

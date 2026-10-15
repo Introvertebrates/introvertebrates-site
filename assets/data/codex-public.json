@@ -1,49 +1,49 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-08T20:46:42.533Z",
+  "generatedAt": "2026-10-15T11:47:37.713Z",
   "collection": {
-    "activeRecords": 20,
-    "activeSpecies": 18,
-    "namedResidents": 12,
-    "recordedMolts": 31,
-    "confirmedFeedings": 117,
+    "activeRecords": 22,
+    "activeSpecies": 20,
+    "namedResidents": 13,
+    "recordedMolts": 28,
+    "confirmedFeedings": 119,
     "highlights": [
       {
         "label": "Active collection records",
-        "value": "20",
-        "detail": "18 species currently represented"
+        "value": "22",
+        "detail": "20 species currently represented"
       },
       {
         "label": "Recorded molts",
-        "value": "31",
+        "value": "28",
         "detail": "Confirmed Codex entries"
       },
       {
         "label": "Confirmed feedings",
-        "value": "117",
+        "value": "119",
         "detail": "Accepted and refused outcomes"
       },
       {
         "label": "Largest recorded leg span (DLS)",
-        "value": "20 cm",
+        "value": "22 cm",
         "detail": "Siuzi",
         "profileKey": "siuzi-theraphosa-apophysis"
       },
       {
-        "label": "Largest recorded body length",
-        "value": "8.5 cm",
+        "label": "Largest recorded spider body length",
+        "value": "11 cm",
         "detail": "Siuzi",
         "profileKey": "siuzi-theraphosa-apophysis"
       },
       {
         "label": "Heaviest recorded resident",
-        "value": "61 g",
+        "value": "65 g",
         "detail": "Siuzi",
         "profileKey": "siuzi-theraphosa-apophysis"
       },
       {
         "label": "Longest recorded time in care",
-        "value": "6.0 years",
+        "value": "6.1 years",
         "detail": "Psyttala horrida",
         "profileKey": "psyttala-horrida"
       }
@@ -57,7 +57,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "15 months",
+          "value": "16 months",
           "detail": "Rounded for privacy"
         },
         {
@@ -89,7 +89,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "2.2 years",
+          "value": "2.3 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -100,11 +100,11 @@
         {
           "label": "Feeding acceptance",
           "value": "100%",
-          "detail": "4 accepted · 0 refused"
+          "detail": "5 accepted · 0 refused"
         },
         {
           "label": "Accepted prey",
-          "value": "Roach",
+          "value": "Roach · Mealworm beetle",
           "detail": "Most often recorded"
         }
       ]
@@ -116,7 +116,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "19 months",
+          "value": "20 months",
           "detail": "Rounded for privacy"
         },
         {
@@ -143,7 +143,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "15 months",
+          "value": "16 months",
           "detail": "Rounded for privacy"
         },
         {
@@ -170,7 +170,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "24 months",
+          "value": "2.1 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -180,8 +180,8 @@
         },
         {
           "label": "Feeding acceptance",
-          "value": "94%",
-          "detail": "17 accepted · 1 refused"
+          "value": "95%",
+          "detail": "18 accepted · 1 refused"
         },
         {
           "label": "Accepted prey",
@@ -207,7 +207,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "3.2 years",
+          "value": "3.3 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -234,12 +234,12 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "15 months",
+          "value": "16 months",
           "detail": "Rounded for privacy"
         },
         {
           "label": "Recorded molts",
-          "value": "1",
+          "value": "2",
           "detail": "Confirmed Codex entries"
         },
         {
@@ -261,7 +261,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "2.2 years",
+          "value": "2.3 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -288,7 +288,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "15 months",
+          "value": "16 months",
           "detail": "Rounded for privacy"
         },
         {
@@ -299,11 +299,11 @@
         {
           "label": "Feeding acceptance",
           "value": "100%",
-          "detail": "7 accepted · 0 refused"
+          "detail": "8 accepted · 0 refused"
         },
         {
           "label": "Accepted prey",
-          "value": "Roach · Mealworm",
+          "value": "Roach · Mealworm · Mealworm beetle",
           "detail": "Most often recorded"
         },
         {
@@ -320,7 +320,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "19 months",
+          "value": "20 months",
           "detail": "Rounded for privacy"
         },
         {
@@ -347,8 +347,13 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "4.1 years",
+          "value": "4.2 years",
           "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Recorded molts",
+          "value": "1",
+          "detail": "Confirmed Codex entries"
         },
         {
           "label": "Feeding acceptance",
@@ -369,7 +374,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "4.1 years",
+          "value": "4.2 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -390,36 +395,10 @@
       ]
     },
     "omothymus-violaceopes": {
-      "status": "ready",
+      "status": "awaiting-export",
       "residentName": "Orion",
-      "sampleSize": 1,
-      "metrics": [
-        {
-          "label": "Time in care",
-          "value": "3.2 years",
-          "detail": "Rounded for privacy"
-        },
-        {
-          "label": "Recorded molts",
-          "value": "6",
-          "detail": "Confirmed Codex entries"
-        },
-        {
-          "label": "Feeding acceptance",
-          "value": "100%",
-          "detail": "3 accepted · 0 refused"
-        },
-        {
-          "label": "Accepted prey",
-          "value": "Roach · Cricket",
-          "detail": "Most often recorded"
-        },
-        {
-          "label": "Recorded leg span",
-          "value": "18 cm",
-          "detail": "Latest Codex measurement"
-        }
-      ]
+      "sampleSize": 0,
+      "metrics": []
     },
     "clara-psalmopoeus-irminia": {
       "status": "ready",
@@ -428,7 +407,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "3.2 years",
+          "value": "3.3 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -449,10 +428,26 @@
       ]
     },
     "psyttala-horrida": {
-      "status": "awaiting-export",
+      "status": "ready",
       "residentName": "Current colony",
-      "sampleSize": 0,
-      "metrics": []
+      "sampleSize": 1,
+      "metrics": [
+        {
+          "label": "Time in care",
+          "value": "6.1 years",
+          "detail": "Rounded for privacy"
+        },
+        {
+          "label": "Feeding acceptance",
+          "value": "100%",
+          "detail": "5 accepted · 0 refused"
+        },
+        {
+          "label": "Accepted prey",
+          "value": "Roach · Dubia roach",
+          "detail": "Most often recorded"
+        }
+      ]
     },
     "pachnoda-marginata": {
       "status": "ready",
@@ -461,7 +456,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "5.4 years",
+          "value": "5.5 years",
           "detail": "Rounded for privacy"
         }
       ]
@@ -473,18 +468,18 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "4.1 years",
+          "value": "4.2 years",
           "detail": "Rounded for privacy"
         },
         {
           "label": "Recorded molts",
-          "value": "3",
+          "value": "4",
           "detail": "Confirmed Codex entries"
         },
         {
           "label": "Feeding acceptance",
-          "value": "100%",
-          "detail": "9 accepted · 0 refused"
+          "value": "90%",
+          "detail": "9 accepted · 1 refused"
         },
         {
           "label": "Accepted prey",
@@ -493,17 +488,17 @@
         },
         {
           "label": "Recorded leg span",
-          "value": "20 cm",
+          "value": "22 cm",
           "detail": "Latest Codex measurement"
         },
         {
           "label": "Recorded body length",
-          "value": "8.5 cm",
+          "value": "11 cm",
           "detail": "Latest Codex measurement"
         },
         {
           "label": "Recorded weight",
-          "value": "61 g",
+          "value": "65 g",
           "detail": "Latest Codex measurement"
         }
       ]

@@ -441,6 +441,11 @@
       content: "View profile →";
     }
 
+    .resident-card[data-profile-status="forthcoming"] .resident-copy::after {
+      color: #7895a4;
+      content: "Profile forthcoming";
+    }
+
     .resident-card:hover .resident-copy::after {
       color: var(--text);
     }
@@ -566,7 +571,7 @@
 
     .archive-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 16px;
     }
 
@@ -828,7 +833,7 @@
     <section class="collection-section shell" aria-labelledby="residents-title">
       <h2 id="residents-title" class="sr-only">All current residents</h2>
       <div class="collection-toolbar">
-        <span class="collection-count" data-filter-status aria-live="polite">Showing all 17 collection entries</span>
+        <span class="collection-count" data-filter-status aria-live="polite">Showing all 19 collection entries</span>
         <div class="filters" data-filters aria-label="Filter the collection" hidden>
           <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All</button>
           <button class="filter-button" type="button" data-filter="tarantula" aria-pressed="false">Tarantulas</button>
@@ -890,11 +895,35 @@
           </a>
         </article>
 
+        <article class="resident-card" id="morgana" data-category="tarantula" data-resident="morgana" data-profile-status="forthcoming">
+          <div class="resident-photo">
+            <img src="assets/placeholders/spider.png" alt="" width="1024" height="1024" loading="lazy" decoding="async" data-placeholder-active="true">
+            <span class="resident-placeholder-label">Spider silhouette · photograph not yet on site</span>
+          </div>
+          <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Morgana</h2><p class="resident-species">Ephebopus murinus</p></div>
+        </article>
+
         <article class="resident-card" id="grammostola-pulchripes" data-category="tarantula" data-resident="grammostola">
           <a class="resident-card-link" href="species/grammostola-pulchripes.html" aria-label="Read Runa’s Grammostola pulchripes profile">
           <div class="resident-photo"><img src="assets/collection/grammostola-pulchripes.jpg" alt="Grammostola pulchripes showing its golden knee stripes" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Runa</h2><p class="resident-species">Grammostola pulchripes</p></div>
           </a>
+        </article>
+
+        <article class="resident-card" id="helle" data-category="tarantula" data-resident="helle" data-profile-status="forthcoming">
+          <div class="resident-photo">
+            <img src="assets/placeholders/spider.png" alt="" width="1024" height="1024" loading="lazy" decoding="async" data-placeholder-active="true">
+            <span class="resident-placeholder-label">Spider silhouette · photograph not yet on site</span>
+          </div>
+          <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Helle</h2><p class="resident-species">Idiothele mira</p></div>
+        </article>
+
+        <article class="resident-card" id="lasiodora-klugi" data-category="tarantula" data-resident="lasiodora" data-profile-status="forthcoming">
+          <div class="resident-photo">
+            <img src="assets/placeholders/spider.png" alt="" width="1024" height="1024" loading="lazy" decoding="async" data-placeholder-active="true">
+            <span class="resident-placeholder-label">Spider silhouette · photograph not yet on site</span>
+          </div>
+          <div class="resident-copy"><p class="resident-type">Tarantula</p><h2 class="scientific-name">Lasiodora klugi</h2></div>
         </article>
 
         <article class="resident-card" id="linothele-fallax" data-category="other-spider" data-resident="linothele">
@@ -922,13 +951,6 @@
           <a class="resident-card-link" href="species/belinda-monocentropus-balfouri.html" aria-label="Read Belinda’s Monocentropus balfouri profile">
           <div class="resident-photo"><img src="assets/collection/belinda-monocentropus-balfouri.jpg" alt="Close portrait of Belinda, a Monocentropus balfouri tarantula, showing blue legs and cream markings among webbed cork" width="1600" height="898" loading="lazy" decoding="async"></div>
           <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Belinda</h2><p class="resident-species">Monocentropus balfouri</p></div>
-          </a>
-        </article>
-
-        <article class="resident-card" id="omothymus-violaceopes" data-category="tarantula" data-resident="omothymus">
-          <a class="resident-card-link" href="species/omothymus-violaceopes.html" aria-label="Read Orion’s Omothymus violaceopes profile">
-          <div class="resident-photo"><img src="assets/collection/omothymus-violaceopes.jpg" alt="Dark close portrait of an Omothymus violaceopes tarantula" width="1600" height="898" loading="lazy" decoding="async"></div>
-          <div class="resident-copy"><p class="resident-type">Tarantula</p><h2>Orion</h2><p class="resident-species">Omothymus violaceopes</p></div>
           </a>
         </article>
 
@@ -996,6 +1018,12 @@
             <img src="assets/archive/caribena-versicolor.jpg" alt="Adult and juvenile Caribena versicolor archive photographs showing magenta and blue life-stage colours" width="1600" height="1000" loading="lazy" decoding="async">
             <a href="species/caribena-versicolor.html" aria-label="Read the archived Caribena versicolor species profile">
               <span class="archive-card-copy"><span class="archive-status">Previously kept · Not currently in the collection</span><h3>Caribena versicolor</h3><p>Antilles pinktoe tarantula</p></span>
+            </a>
+          </article>
+          <article class="archive-card">
+            <img src="assets/collection/omothymus-violaceopes.jpg" alt="Orion, an Omothymus violaceopes tarantula, standing vertically on bark" width="1600" height="898" loading="lazy" decoding="async">
+            <a href="species/omothymus-violaceopes.html" aria-label="Read Orion’s archived Omothymus violaceopes profile">
+              <span class="archive-card-copy"><span class="archive-status">Previously kept · Not currently in the collection</span><h3>Orion</h3><p><i>Omothymus violaceopes</i></p></span>
             </a>
           </article>
         </div>

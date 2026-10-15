@@ -217,7 +217,12 @@ const displayName = (specimen) => {
   const name = getScientificName(specimen);
   return name ? `${name.charAt(0).toUpperCase()}${name.slice(1)}` : "Current resident";
 };
-const largestBy = (field) => activeSpecimens
+const activeSpiders = activeSpecimens.filter((specimen) => {
+  const type = normalize(specimen?.type);
+  const animalType = normalize(specimen?.animalType);
+  return type === "spider" || animalType === "tarantula" || animalType === "true spider";
+});
+const largestBy = (field, specimens = activeSpecimens) => specimens
   .filter((specimen) => finitePositive(specimen?.[field]))
   .sort((first, second) => second[field] - first[field])[0] ?? null;
 const longestInCare = activeSpecimens
@@ -227,20 +232,20 @@ const longestInCare = activeSpecimens
 
 const highlights = [
   {
-    label: "Active Codex records",
+    label: "Active collection records",
     value: String(activeSpecimens.length),
-    detail: "Latest privacy-safe snapshot"
+    detail: `${activeSpecies.size} species currently represented`
   },
   ...(recordedMolts > 0 ? [{ label: "Recorded molts", value: String(recordedMolts), detail: "Confirmed Codex entries" }] : []),
   ...(confirmedFeedings > 0 ? [{ label: "Confirmed feedings", value: String(confirmedFeedings), detail: "Accepted and refused outcomes" }] : [])
 ];
 
 [
-  { field: "sizeCm", label: "Largest recorded leg span", unit: "cm" },
-  { field: "bodyLengthCm", label: "Largest recorded body length", unit: "cm" },
-  { field: "weightGrams", label: "Heaviest recorded resident", unit: "g" }
-].forEach(({ field, label, unit }) => {
-  const specimen = largestBy(field);
+  { field: "sizeCm", label: "Largest recorded leg span (DLS)", unit: "cm", specimens: activeSpiders },
+  { field: "bodyLengthCm", label: "Largest recorded spider body length", unit: "cm", specimens: activeSpiders },
+  { field: "weightGrams", label: "Heaviest recorded resident", unit: "g", specimens: activeSpecimens }
+].forEach(({ field, label, unit, specimens }) => {
+  const specimen = largestBy(field, specimens);
   if (!specimen) return;
   const profileKey = profileKeyForSpecimen(specimen);
   highlights.push({

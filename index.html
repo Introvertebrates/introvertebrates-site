@@ -430,6 +430,49 @@
   <link rel="stylesheet" href="assets/homepage.css?v=20260913-video-card">
   <link rel="stylesheet" href="assets/learn.css">
   <link rel="stylesheet" href="assets/community.css">
+  <style>
+    .codex-recruitment-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      margin-top: 24px;
+      padding: 18px 24px;
+      border: 1px solid rgba(20, 241, 196, 0.3);
+      border-radius: 18px;
+      background: rgba(20, 241, 196, 0.06);
+      color: var(--home-text);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+    .codex-recruitment-link strong { color: var(--home-teal); }
+    .codex-recruitment-link:hover { border-color: var(--home-teal); }
+    .codex-recruitment .codex-panel {
+      grid-template-columns: 86px minmax(0, 1fr);
+      align-items: start;
+    }
+    .codex-recruitment .codex-copy > p:not(.eyebrow) {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: #a9bec9;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+    .codex-recruitment .status-pill { margin-bottom: 20px; }
+    .codex-platforms { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+    .codex-platforms > div { padding: 20px; border: 1px solid var(--home-line); border-radius: 18px; background: rgba(4, 10, 18, 0.4); }
+    .codex-platforms h3 { margin: 0 0 8px; color: var(--home-text); font-size: 1.1rem; }
+    .codex-platforms p { margin: 0; color: #a9bec9; font-size: 0.94rem; line-height: 1.7; }
+    .codex-recruitment .home-button { padding-block: 12px; overflow-wrap: anywhere; }
+    .codex-recruitment .codex-contact-note { font-size: 0.88rem; }
+    @media (max-width: 760px) {
+      .codex-recruitment .codex-panel, .codex-platforms { grid-template-columns: minmax(0, 1fr); }
+      .codex-recruitment .codex-mark { display: none; }
+      .codex-recruitment .section-actions { flex-direction: column; align-items: stretch; }
+    }
+  </style>
 </head>
 <body>
 
@@ -454,6 +497,11 @@
 </header>
 
 <main class="page" id="main-content">
+
+  <a class="codex-recruitment-link shell" href="#codex">
+    <span><strong>Introvertebrates Codex · Beta testers wanted</strong><br>A field log for the animals in your care. Android &amp; iOS keepers welcome.</span>
+    <span>Help me shape the app <span aria-hidden="true">→</span></span>
+  </a>
 
   <section class="home-hero shell" aria-labelledby="hero-title">
     <div class="hero-copy">
@@ -812,15 +860,25 @@
     </div>
   </section>
 
-  <section class="home-section home-section-codex" id="codex" aria-labelledby="codex-title">
+  <section class="home-section home-section-codex codex-recruitment" id="codex" aria-labelledby="codex-title">
     <div class="codex-panel">
       <div class="codex-mark" aria-hidden="true"><img src="Only spider.png" alt="" width="500" height="500" loading="lazy"></div>
       <div class="codex-copy">
+        <span class="status-pill">Beta tester recruitment</span>
         <p class="eyebrow">Introvertebrates Codex</p>
-        <h2 id="codex-title">Build your field log.</h2>
-        <p>A dedicated digital companion for tracking the animals in your care. The Codex is currently in development.</p>
+        <h2 id="codex-title">Help me build a better field log.</h2>
+        <p>I’m building Introvertebrates Codex, a mobile app for keeping track of the animals in your care: feeding, moults, growth, and observations, all in one personal field log.</p>
+        <p>I’m looking for beta testers who can try it with their own collection, spot bugs, and tell me what makes everyday record-keeping easier. It’s still in development, and your feedback will help me shape what comes next.</p>
+        <div class="codex-platforms" aria-label="Beta testing platforms">
+          <div><h3>Android</h3><p>Use an Android phone? Get in touch to take part in beta testing.</p></div>
+          <div><h3>iPhone / iOS</h3><p>Keep on an iPhone? I’d love to hear from you too. Message me about iOS testing.</p></div>
+        </div>
+        <div class="section-actions" aria-label="Contact Erlend privately about beta testing">
+          <a class="home-button home-button-primary" href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">DM me on Instagram <span aria-hidden="true">↗</span></a>
+          <a class="home-button" href="mailto:erlend@introvertebrates.com?subject=Introvertebrates%20Codex%20beta%20testing">Email erlend@introvertebrates.com</a>
+        </div>
+        <p class="codex-contact-note">Tell me whether you use Android or iOS and a little about the animals you keep. Contact me privately by Instagram DM or email; there’s no need to share your details in public comments. — Erlend</p>
       </div>
-      <span class="status-pill">In development</span>
     </div>
   </section>
 

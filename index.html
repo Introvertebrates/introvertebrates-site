@@ -450,7 +450,7 @@
     .codex-recruitment-link strong { color: var(--home-teal); }
     .codex-recruitment-link:hover { border-color: var(--home-teal); }
     .codex-recruitment .codex-panel {
-      grid-template-columns: 86px minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
       align-items: start;
     }
     .codex-recruitment .codex-copy > p:not(.eyebrow) {
@@ -461,6 +461,11 @@
       line-height: 1.75;
     }
     .codex-recruitment .status-pill { margin-bottom: 20px; }
+    .codex-recruitment .codex-mark { display: none; }
+    .codex-trailer { margin: 0; width: 100%; max-width: 360px; justify-self: center; }
+    .codex-trailer video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; border: 1px solid var(--home-line); border-radius: 18px; background: #040a12; }
+    .codex-trailer figcaption { margin-top: 12px; color: #a9bec9; font-size: 0.85rem; line-height: 1.6; }
+    .home-latest-card-codex .home-latest-media img { object-fit: contain; }
     .codex-platforms { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
     .codex-platforms > div { padding: 20px; border: 1px solid var(--home-line); border-radius: 18px; background: rgba(4, 10, 18, 0.4); }
     .codex-platforms h3 { margin: 0 0 8px; color: var(--home-text); font-size: 1.1rem; }
@@ -636,11 +641,11 @@
         </a>
       </article>
 
-      <article class="home-latest-card">
+      <article class="home-latest-card{% if latest_homepage_update.type == 'beta' %} home-latest-card-codex{% endif %}">
         <a class="home-latest-card-link" href="{{ latest_homepage_update.url | relative_url }}">
           <figure class="home-latest-media">
             <img src="{{ latest_homepage_update.image | relative_url }}" alt="{{ latest_homepage_update.image_alt | escape }}" width="1600" height="898" loading="lazy" decoding="async">
-            <figcaption>From the living collection</figcaption>
+            <figcaption>{{ latest_homepage_update.label | escape }}</figcaption>
           </figure>
           <div class="home-latest-card-copy">
             <p class="home-latest-meta"><span>{{ latest_homepage_update.label | escape }}</span><time datetime="{{ latest_homepage_update.date }}">{{ latest_homepage_update.date_label | escape }}</time></p>
@@ -879,6 +884,13 @@
         </div>
         <p class="codex-contact-note">Tell me whether you use Android or iOS and a little about the animals you keep. Contact me privately by Instagram DM or email; there’s no need to share your details in public comments. — Erlend</p>
       </div>
+      <figure class="codex-trailer">
+        <video controls playsinline preload="none" poster="assets/media/codex-beta-poster.jpg" width="720" height="1280" aria-label="Introvertebrates Codex beta recruitment trailer" aria-describedby="codex-trailer-caption">
+          <source src="assets/media/codex-beta-trailer.mp4" type="video/mp4">
+          <a href="assets/media/codex-beta-trailer.mp4">Watch the Codex beta trailer</a>
+        </video>
+        <figcaption id="codex-trailer-caption">A 30-second look at Codex, the personal field log I’m building for invertebrate keepers. Android and iPhone beta testers welcome.</figcaption>
+      </figure>
     </div>
   </section>
 

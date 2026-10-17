@@ -47,7 +47,7 @@
   <section class="kryp-section" aria-labelledby="entries-title">
     <div class="kryp-shell">
       
-      <div class="kryp-weekly-archive-grid">
+      <h2 id="entries-title">Alle ukas dyr</h2><div class="kryp-weekly-archive-grid">
         {% for entry in weekly_entries %}
           <a class="kryp-weekly-archive-card" href="{{ entry.url | relative_url }}">
             <img src="{{ entry.image | relative_url }}" alt="{{ entry.image_alt | escape }}" width="1800" height="1200" loading="lazy" decoding="async">
@@ -60,5 +60,5 @@
 </main>
 
 <footer class="kk-footer kk-wrap"><a class="kk-brand" href="/kryp-og-krabater.html">Kryp <i>&amp;</i> Krabater</a><span>Egne bilder. Ekte dyr. Rom for nysgjerrighet.</span><a href="/index.html">Til Introvertebrates ↗</a></footer>
-</body>
+<script src="/assets/tina-guide.js?v=20261017a" defer></script></body>
 </html>

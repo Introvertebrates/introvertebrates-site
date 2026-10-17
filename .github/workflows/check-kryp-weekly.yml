@@ -11,6 +11,8 @@ on:
       - "tools/weekly-calendar.mjs"
       - "tools/weekly-calendar.test.mjs"
       - "tools/media-decisions.test.mjs"
+      - "tools/colouring-print.test.mjs"
+      - "assets/kryp-colouring.js"
       - "_kryp_weekly/**"
       - "_kryp_weekly_queue/**"
   pull_request:
@@ -21,6 +23,8 @@ on:
       - "tools/weekly-calendar.mjs"
       - "tools/weekly-calendar.test.mjs"
       - "tools/media-decisions.test.mjs"
+      - "tools/colouring-print.test.mjs"
+      - "assets/kryp-colouring.js"
       - "_kryp_weekly/**"
       - "_kryp_weekly_queue/**"
 
@@ -40,7 +44,7 @@ jobs:
           node-version: 22
 
       - name: Run weekly publishing safeguards
-        run: node --test tools/weekly-calendar.test.mjs tools/media-decisions.test.mjs
+        run: node --test tools/weekly-calendar.test.mjs tools/media-decisions.test.mjs tools/colouring-print.test.mjs
 
       - name: Dry-run the next scheduled article
         run: node tools/publish-next-kryp-weekly.mjs --dry-run --date=2026-09-20

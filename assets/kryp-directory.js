@@ -6,7 +6,7 @@
   const tinaQuestions = {
     skorpion: 'Hvorfor kan vibrasjoner i bakken være viktigere enn godt syn om natten?',
     kakerlakker: 'Hva ville skjedd i skogen hvis ingenting spiste døde blader og tre?',
-    kongesnok: 'Se på bildet. Hvorfor tror du kongesnoken stikker tungen ut?',
+    kongesnok: 'Se på fotografiet. Hvor finner du øyet, og hvordan skiller mønsteret på hodet seg fra mønsteret på kroppen?',
     teju: 'Hva kan tejuen gjøre med beina og øyelokkene som kongesnoken ikke kan?'
   };
 
@@ -54,7 +54,7 @@
   navigate();
 
   const tinaGuide = document.createElement('script');
-  tinaGuide.src = '/assets/tina-guide.js?v=20260911m';
+  tinaGuide.src = '/assets/tina-guide.js?v=20261017a';
   tinaGuide.defer = true;
   document.body.append(tinaGuide);
 })();

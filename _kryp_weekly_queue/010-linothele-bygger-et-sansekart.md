@@ -3,12 +3,12 @@ colouring_release: "linothele"
 title: "Linothele bygger et sansekart av silke"
 description: "Se hvordan Linothele fallax kan bruke et stort teppe av silketråder til både skjul og varsling."
 intro: "For Linothele er nettet mer enn en felle. Trådene utvider området der edderkoppen kan merke små bevegelser."
-question: "Hvor forsvinner de hvite silketrådene inn i det mørkeste skjulet?"
+question: "Hvilke mørke og lyse mønstre finner du på bakkroppen?"
 image: "/assets/collection/linothele-fallax.jpg"
-image_alt: "Linothele fallax ved et tett teppe av hvit silke"
+image_alt: "Linothele fallax med oransje forkropp og mørkt mønster på bakkroppen"
 image_caption: "Linothele fallax i samlingen · fotografert av Introvertebrates"
 link_url: "/species/linothele-fallax.html"
-link_label: "Se hele profilen til Linothele fallax"
+link_label: "Se hele profilen til Linothele fallax (engelsk)"
 colouring_url: "/kryp-fargelegging.html#colouring-linothele"
 colouring_image: "/assets/kryp/colouring/linothele-weekly.png"
 colouring_image_alt: "Fargeleggingsark av Linothele"
@@ -26,10 +26,10 @@ Når et lite dyr berører trådene, går vibrasjonen gjennom nettet. Edderkoppen
 
 ## Dette bildet er en observasjon
 
-Bildet viser nettet til individet i Introvertebrates-samlingen. Beskrivelsen av nettformen bygger på kunnskap om gruppen, mens nøyaktig plassering og tykkelse kan variere mellom individer og omgivelser.
+Nærbildet viser edderkoppen i Introvertebrates-samlingen, ikke hele silketeppet. Forklaringen om nettet beskriver hvordan slike edderkopper bruker silke; den er ikke en beskrivelse av synlige tråder i dette fotografiet.
 
 ## Prøv selv
 
-Finn tre steder der silken er festet. Hvilken vei tror du en vibrasjon vil bevege seg mot skjulet?
+Finn forkroppen, beina og den mønstrede bakkroppen i bildet. Tenk deg at en silketråd festes til underlaget ved et bein. Hvordan kan en bevegelse i tråden nå fram til edderkoppen?
 
 [Les om silketyper og nett hos mygalomorfe edderkopper](https://www.mdpi.com/2813-3323/1/3/10){:target="_blank" rel="noopener noreferrer"}

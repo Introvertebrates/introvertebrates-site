@@ -9,7 +9,7 @@ description: "Møt kakerlakker som skogsdyr, og se hvordan antennene og den flat
 date: 2026-08-21 10:00:00 +0200
 date_label: "Uke 34 · 21. august 2026"
 intro: "Ikke alle kakerlakker lever i kjøkken. Mange arter hører hjemme i skogbunnen, i løv og rundt død ved. Se nøye på kroppen, beina og de lange antennene."
-question: "Hvilken kroppsdel ser ut til å undersøke omgivelsene først når dyret beveger seg?"
+question: "Se på fotografiet. Kan du finne antennene foran hodet, og hvilken vei peker de?"
 image: "/assets/kryp/cockroaches-close.jpg"
 image_alt: "En brunmønstret kakerlakk sett tett fra siden"
 image_caption: "Kakerlakker på nært hold · fotografert av Introvertebrates"
@@ -27,8 +27,8 @@ Den brede, ganske flate kroppen gjør det lettere å komme inn i sprekker, under
 
 ## Mer enn et kjøkkendyr
 
-Kakerlakker er en stor og variert insektgruppe. Mange arter lever ute i naturen og møter aldri et menneskekjøkken. I skog og skogbunn kan de bruke dødt plantemateriale, gjemmesteder og fuktige mikrohabitater som en del av hverdagen sin.
+Kakerlakker er en stor og variert insektgruppe. Mange arter lever ute i naturen og møter aldri et menneskekjøkken. I skog og skogbunn kan de bruke dødt plantemateriale, gjemmesteder og små, fuktige levesteder som en del av hverdagen sin.
 
 ## Prøv selv
 
-Se på fotografiet én gang uten å lese teksten. Se deretter på nytt og finn antennene, de seks beina og den flate kroppen. Hvilken detalj la du først merke til den andre gangen?
+Se på fotografiet én gang uten å lese teksten. Se deretter på nytt og finn antennene, beina som er synlige, og kroppens form. Hvilken detalj la du først merke til den andre gangen?

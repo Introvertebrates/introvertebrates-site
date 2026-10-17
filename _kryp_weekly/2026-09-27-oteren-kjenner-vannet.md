@@ -4,10 +4,10 @@ date_label: "Uke 39 · 27. september 2026"
 colouring_release: "oter"
 title: "Oteren kjenner bevegelse i vannet"
 description: "Se hvordan oterens kropp, hale, poter og værhår hjelper den med å svømme og jakte."
-intro: "Når det meste av kroppen er under vann, kan bølgene bak hodet avsløre hvor oteren beveger seg."
-question: "Hvor begynner bølgen, og hvilken retning viser den at oteren svømmer?"
+intro: "På nærbildet ser du oterens våte pels, små ører og lange værhår. Værhårene hjelper den med å undersøke det som skjer nær snuten."
+question: "Se på fotografiet. Hvor langt ut fra snuten rekker værhårene, og hvilken vei peker de?"
 image: "/assets/kryp/otter-water.jpg"
-image_alt: "Oter med våt pels som svømmer i vann"
+image_alt: "Oter med våt pels og lange værhår ved grunt vann"
 image_caption: "Oter i vannet · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#oter"
 link_label: "Les artsprofilen om oter"
@@ -32,4 +32,4 @@ Den svært tette pelsen bidrar til å holde et isolerende lag med luft nær hude
 
 ## Prøv selv
 
-Se på bildet og finn hode og rygglinje. Hvilke deler er synlige, og hvilke må du forestille deg under vannflaten?
+Se på bildet og finn hode og rygglinje. Hvilke deler er synlige, og hvilke er skjult av vann eller utenfor bildekanten?

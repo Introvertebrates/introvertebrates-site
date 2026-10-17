@@ -3,9 +3,9 @@ colouring_release: "peruphasma"
 title: "Peruphasma viser fram en advarsel"
 description: "Oppdag hvordan Peruphasma schultei kombinerer mørk kropp, røde detaljer og kjemisk forsvar."
 intro: "Noen dyr prøver å forsvinne i omgivelsene. Peruphasma schultei kan i stedet vise sterke kontraster når den blir forstyrret."
-question: "Hvor finner du de sterkeste røde fargefeltene mot den svarte kroppen?"
+question: "Se på fotografiet. Hvordan skiller den mørke kroppen og de lange beina seg fra de grønne bladene?"
 image: "/assets/kryp/peruphasma-schultei.jpg"
-image_alt: "Svart Peruphasma schultei med røde detaljer på grønne blader"
+image_alt: "Mørk Peruphasma schultei på grønne blader"
 image_caption: "Peruphasma schultei · arkivfoto av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
@@ -30,6 +30,6 @@ Varselsfarger stopper ikke nødvendigvis et rovdyr alene. Men sammen med lukt el
 
 ## Prøv selv
 
-Se først på hele bildet, og se deretter bare på de røde detaljene. Hvor raskt oppdager øyet dem mot den mørke kroppen?
+Se på bildet og finn dyrets omriss mot bladene. Varselsfargene er ikke tydelige fra denne vinkelen. Hvordan kan et annet bilde vise andre detaljer ved det samme dyret?
 
 [Les studien av forsvarskjertlene hos Peruphasma schultei](https://pubmed.ncbi.nlm.nih.gov/26500685/){:target="_blank" rel="noopener noreferrer"}

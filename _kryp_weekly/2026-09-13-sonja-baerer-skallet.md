@@ -1,10 +1,10 @@
 ---
 date: 2026-09-13 10:00:00 +0200
 date_label: "Uke 37 · 13. september 2026"
-title: "Sonja bærer skjelettet utenpå"
+title: "Sonjas skall er en del av skjelettet"
 description: "Bli kjent med Sonjas ryggskjold, bukskjold og de tre tydelige ryggene som kjennetegner Mauremys reevesii."
 intro: "Skallet er ikke et løst hus. Det er en levende del av Sonjas skjelett og vokser sammen med henne."
-question: "Kan du finne feltene i ryggskjoldet og de tre ryggene som går langs skallet?"
+question: "Se på fotografiet. Hvor går kanten av skallet, og hvilke deler av hodet og beina kan du se?"
 image: "/assets/species/sonja-mauremys-reevesii/sonja-shore.jpg"
 image_alt: "Sonja, en Mauremys reevesii, ved vannkanten"
 image_caption: "Sonja ved vannkanten · fotografert av Introvertebrates"
@@ -30,4 +30,4 @@ Sonja svømmer og finner mat i vann, men trenger også et tørt sted der hun kan
 
 ## Prøv selv
 
-Se på bildet og tegn omrisset av skallet. Legg deretter inn de største skjoldfeltene og de tre ryggene før du tegner hodet og beina.
+Se på bildet og tegn omrisset av skallet. Tegn inn feltene og ryggene du faktisk kan se, og legg deretter til hodet og beina.

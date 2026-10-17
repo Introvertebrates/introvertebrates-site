@@ -4,7 +4,7 @@
 
   const css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = '/assets/tina-guide.css?v=20260911m';
+  css.href = '/assets/tina-guide.css?v=20261017a';
   document.head.append(css);
 
   const roleImages = {
@@ -39,6 +39,18 @@
     ${avatar('foreslar', 'Tina foreslår')}
     <p><strong>Tina foreslår</strong>${copy} <a href="${href}">${linkText} →</a></p>
   </div>`;
+
+  const pageTips = {
+    '/kryp-filmer.html': ['utfordrer', 'Følg én detalj', 'Velg en film og se på hodet, beina eller halen. Hva beveger seg? Spill filmen en gang til og se etter noe annet.'],
+    '/kryp-fargelegging.html': ['foreslar', 'Fra bilde til farger', 'Se gjerne på fotografiet av dyret før du fargelegger. Du kan følge dyrets farger eller finne på dine egne. Velg «Skriv ut» ved arket du vil bruke.'],
+    '/kryp-ukearkiv.html': ['foreslar', 'Velg en oppdagelse', 'Trykk på et dyr du er nysgjerrig på. Inne i fortellingen finner du et spørsmål til bildet, og noen dyr har også en film.']
+  };
+  const tip = pageTips[location.pathname];
+  const intro = document.querySelector('.colouring-hero-grid > div, .kryp-weekly-archive-hero .kryp-shell, .kk-page-heading');
+  if (tip && intro && !document.querySelector('[data-tina-page-tip]')) {
+    const [role, title, text] = tip;
+    intro.insertAdjacentHTML('beforeend', roleCard(role, roles.find(item => item[0] === role)[1], `<h3>${title}</h3><p>${text}</p>`).replace('<article ', '<article data-tina-page-tip '));
+  }
 
   const homeTina = document.querySelector('.kk-welcome .kk-tina');
   if (homeTina) {
@@ -156,6 +168,13 @@
 
   const trailPage = document.querySelector('.kryp-trail-page');
   if (trailPage) {
+    trailPage.querySelectorAll('.trail-animal-copy .trail-question').forEach(question => {
+      if (question.dataset.tinaEnhanced) return;
+      const label = question.querySelector('strong')?.textContent || '';
+      const role = /Finn|Tell|Se nøye|Sammenlign/.test(label) ? 'utfordrer' : 'sporr';
+      const body = question.innerHTML.replace(/<strong>.*?<\/strong>\s*/, '');
+      question.outerHTML = roleCard(role, roleTitles[role], `<p>${body}</p>`).replace('<article ', '<article data-tina-enhanced="true" ');
+    });
     const path = location.pathname.split('/').pop();
     const trailNotes = {
       'kryp-spor-krypenes-verden.html': ['forklarer', 'To kroppsplaner', 'Insekter har seks bein. Edderkoppdyr har åtte. Det er en av de raskeste måtene å begynne å skille gruppene på.'],

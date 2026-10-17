@@ -1,0 +1,53 @@
+name: Update published Kryp & Krabater videos
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - tools/sync-kryp-youtube.py
+      - tools/kryp-youtube-catalog.json
+      - .github/workflows/sync-kryp-youtube.yml
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: kryp-youtube-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify publication safeguards
+        run: python -m unittest discover -s tools -p test_kryp_youtube.py
+      - name: Read the public channel feed
+        run: python tools/sync-kryp-youtube.py
+      - name: Save confirmed public videos
+        id: save
+        run: |
+          if git diff --quiet -- assets/data/kryp-youtube.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/data/kryp-youtube.json
+          git commit -m 'Update published Kryp & Krabater videos'
+          git pull --rebase origin main
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Rebuild GitHub Pages
+        if: steps.save.outputs.changed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl --fail-with-body --request POST \
+            --url "https://api.github.com/repos/${{ github.repository }}/pages/builds" \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer $GITHUB_TOKEN" \
+            --header "X-GitHub-Api-Version: 2022-11-28"

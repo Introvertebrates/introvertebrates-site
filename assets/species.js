@@ -165,3 +165,14 @@
   script.defer = true;
   document.head.appendChild(script);
 })();
+
+// Shared video links use only the list confirmed from the public channel feed.
+(() => {
+  if (!document.body.dataset.profile) return;
+  const style = document.createElement('link');
+  style.rel = 'stylesheet'; style.href = '/assets/kryp-youtube.css';
+  document.head.append(style);
+  const script = document.createElement('script');
+  script.src = '/assets/kryp-youtube.js'; script.defer = true;
+  document.head.append(script);
+})();

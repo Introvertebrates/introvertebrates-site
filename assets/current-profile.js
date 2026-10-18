@@ -85,7 +85,7 @@
       intro: "This Chilobrachys fimbriatus is part of the current collection. Its updated portrait records the spider emerging through plants and silk at the entrance to its retreat.",
       gallery: [
         { file: "fimbriatus-webbing.jpg", alt: "Chilobrachys fimbriatus visible through dense white webbing", caption: "Dense web structure · 2025", width: 1600, height: 1425 },
-        { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "At the retreat entrance · 2025", width: 1600, height: 900 }
+        { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "Among leaf litter · 2025", width: 1600, height: 900 }
       ],
       video: { id: "iPIhIsNKUaY", title: "Rehousing my Chilobrachys fimbriatus", note: "A full rehousing video showing the animal, its retreat, and the enclosure work behind the profile." }
     },
@@ -250,7 +250,6 @@
       intro: "Sonja is the Reeves’s turtle currently in my care and the only vertebrate in the collection. Her portrait shows the patterned head, textured forelimbs and shell as she rests on a basking ledge.",
       gallery: [
         { file: "sonja-close.jpg", alt: "Sonja lifting her head and forelegs toward the camera", caption: "Sonja up close · 2025", width: 1600, height: 900 },
-        { file: "sonja-under-cover.jpg", alt: "Sonja looking out from beneath a wooden shelter", caption: "Under cover", width: 1600, height: 1600 },
         { file: "sonja-shore.jpg", alt: "Sonja resting at the planted shoreline of her enclosure", caption: "Shoreline habitat · 2025", width: 1600, height: 898 }
       ],
       video: { id: "lEVuJhaAlNY", title: "Sonja’s new home", note: "A complete look at the home created for Sonja, the collection’s Reeves’s turtle." }
@@ -383,7 +382,7 @@
       intro: "Psyttala horrida brings a different shape and scale to the current collection. The profile opens with an adult moving across the enclosure floor, while the gallery compares the bright nymph stage with adult foliage and ground use.",
       gallery: [
         { file: "psyttala-nymph.jpg", alt: "Orange and black Psyttala horrida nymph showing its wingless body", caption: "Nymph colour and wingless body · 2025", width: 1600, height: 900 },
-        { file: "psyttala-nymph-on-bark-2026.jpg", alt: "Side view of a black Psyttala horrida nymph with orange legs gripping vertical bark", caption: "Nymph climbing bark · archive photograph", width: 1080, height: 1080 },
+        { file: "psyttala-on-bark-2026.jpg", alt: "Side view of Psyttala horrida with orange legs gripping vertical bark", caption: "Climbing bark · archive photograph", width: 1080, height: 1080 },
         { file: "psyttala-foliage.jpg", alt: "Adult Psyttala horrida climbing across green foliage", caption: "Adult among foliage · archive portrait", width: 1600, height: 900 },
         { file: "psyttala-ground.jpg", alt: "Adult Psyttala horrida moving across the enclosure floor", caption: "Adult on the enclosure floor · 2025", width: 1600, height: 900 }
       ],

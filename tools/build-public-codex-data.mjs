@@ -14,6 +14,33 @@ const outputPath = requestedOutputPath
   : path.resolve("assets/data/codex-public.json");
 
 const profileDefinitions = [
+  {
+  "key": "morgana-ephebopus-murinus",
+  "residentName": "Morgana",
+  "species": [
+    "ephebopus murinus"
+  ],
+  "names": [
+    "morgana"
+  ]
+},
+  {
+  "key": "helle-idiothele-mira",
+  "residentName": "Helle",
+  "species": [
+    "idiothele mira"
+  ],
+  "names": [
+    "helle"
+  ]
+},
+  {
+  "key": "lasiodora-klugi",
+  "residentName": "Current resident",
+  "species": [
+    "lasiodora klugi"
+  ]
+},
   { key: "acanthoscurria-geniculata", residentName: "Alma", names: ["alma"], species: ["acanthoscurria geniculata"] },
   { key: "sabrina-brachypelma-hamorii", residentName: "Sabrina", names: ["sabrina"], species: ["brachypelma hamorii"] },
   { key: "ceratogyrus-darlingi", residentName: "Gunnar", species: ["ceratogyrus darlingi"] },

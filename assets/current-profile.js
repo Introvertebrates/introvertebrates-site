@@ -745,6 +745,188 @@
     "siuzi-theraphosa-apophysis": "Siuzi’s feeding records, photographs and videos document her life in the collection, including the health case shared on the Introvertebrates channel."
   };
 
+
+  // New resident profiles; archive photographs are explicitly distinguished from current portraits.
+  Object.assign(profiles, {
+  "morgana-ephebopus-murinus": {
+    "resident": "Morgana",
+    "species": "Ephebopus murinus",
+    "group": "Tarantula",
+    "sex": "Not confirmed",
+    "family": "Theraphosidae",
+    "range": "French Guiana, Suriname and Brazil",
+    "taxonomicStatus": "Accepted species",
+    "naturalHistory": [
+      "Ephebopus murinus (Walckenaer, 1837) is the type species of Ephebopus. The World Spider Catalog accepts the name and records French Guiana, Suriname and Brazil. A 2008 revision provides the morphological baseline for the genus."
+    ],
+    "sources": [
+      {
+        "label": "World Spider Catalog — Ephebopus murinus",
+        "url": "https://wsc.nmbe.ch/spec-data/44027"
+      },
+      {
+        "label": "West and colleagues (2008) — revision of Ephebopus",
+        "url": "https://www.mapress.com/zt/article/view/zootaxa.1849.1.3"
+      },
+      {
+        "label": "Marshall and West (2008) — changes in retreat use during development",
+        "url": "https://britishspiders.org.uk/system/files/library/140605.pdf"
+      }
+    ],
+    "image": "morgana-ephebopus-murinus.jpg",
+    "imageWidth": 1600,
+    "imageHeight": 1204,
+    "alt": "Archive photograph of Ephebopus murinus showing pale leg markings on dark legs",
+    "intro": "Meet Morgana, the Ephebopus murinus in the Introvertebrates collection: a burrowing tarantula whose pale leg markings give the species its skeleton-spider nickname.",
+    "portraitCaption": "Ephebopus murinus · archive photograph; individual not confirmed as Morgana",
+    "commonName": "Skeleton tarantula",
+    "gallery": [],
+    "video": null,
+    "hideInstagram": true,
+    "conservationReview": "Taxonomy and linked literature reviewed 18 October 2026. A Red List category and international trade status are not asserted here without a verified assessment or listing.",
+    "codexFallback": "No public care metrics have been published for this resident yet."
+  },
+  "helle-idiothele-mira": {
+    "resident": "Helle",
+    "species": "Idiothele mira",
+    "group": "Tarantula",
+    "sex": "Not confirmed",
+    "family": "Theraphosidae",
+    "range": "South Africa",
+    "taxonomicStatus": "Accepted species",
+    "naturalHistory": [
+      "Idiothele mira Gallon, 2010 is an accepted South African theraphosid. The original description records material from Ndumo and Tembe in northeastern South Africa and distinguishes it from Idiothele nigrofulva."
+    ],
+    "sources": [
+      {
+        "label": "World Spider Catalog — Idiothele mira",
+        "url": "https://wsc.nmbe.ch/spec-data/44214"
+      },
+      {
+        "label": "Gallon (2010) — original description and field ecology",
+        "url": "https://britishspiders.org.uk/system/files/library/150201.pdf"
+      }
+    ],
+    "image": "helle-idiothele-mira.jpg",
+    "imageWidth": 1280,
+    "imageHeight": 720,
+    "alt": "Close portrait of Helle, an Idiothele mira, showing a gold-and-dark patterned carapace and surrounding legs",
+    "intro": "Meet Helle, the Idiothele mira in the Introvertebrates collection. This South African tarantula is known for silk-lined retreats that can close with a delicate trapdoor.",
+    "portraitCaption": "Helle · photograph from the Introvertebrates collection",
+    "commonName": "Blue-foot baboon tarantula",
+    "gallery": [],
+    "video": null,
+    "hideInstagram": true,
+    "conservationReview": "Taxonomy and linked literature reviewed 18 October 2026. A Red List category and international trade status are not asserted here without a verified assessment or listing.",
+    "codexFallback": "No public care metrics have been published for this resident yet."
+  },
+  "lasiodora-klugi": {
+    "resident": "Current resident",
+    "species": "Lasiodora klugi",
+    "group": "Tarantula",
+    "sex": "Not confirmed",
+    "family": "Theraphosidae",
+    "range": "Brazil",
+    "taxonomicStatus": "Accepted species",
+    "naturalHistory": [
+      "Lasiodora klugi (C. L. Koch, 1841) is an accepted Brazilian species and the type species of Lasiodora. Bertani’s 2023 revision synonymised Lasiodora itabunae with L. klugi and reassessed historical identifications."
+    ],
+    "sources": [
+      {
+        "label": "World Spider Catalog — Lasiodora klugi",
+        "url": "https://wsc.nmbe.ch/spec-data/44261"
+      },
+      {
+        "label": "Bertani (2023) — revision of Lasiodora",
+        "url": "https://doi.org/10.11646/zootaxa.5390.1.1"
+      }
+    ],
+    "image": "lasiodora-klugi.jpg",
+    "imageWidth": 1600,
+    "imageHeight": 1600,
+    "alt": "Archive photograph labelled Lasiodora klugi showing dark legs and reddish abdominal hairs beside a mossy retreat",
+    "intro": "Lasiodora klugi brings a large Brazilian terrestrial tarantula to the Introvertebrates collection. Its profile follows the accepted taxonomy while keeping the current resident’s history separate from archive photography.",
+    "portraitCaption": "Lasiodora klugi · archive photograph; individual not confirmed as the current resident",
+    "commonName": "Bahia scarlet tarantula",
+    "gallery": [],
+    "video": null,
+    "hideInstagram": true,
+    "conservationReview": "Taxonomy and linked literature reviewed 18 October 2026. A Red List category and international trade status are not asserted here without a verified assessment or listing.",
+    "codexFallback": "No public care metrics have been published for this resident yet."
+  }
+});
+  Object.assign(fieldGuides, {
+  "morgana-ephebopus-murinus": {
+    "lifestyle": "A retreat-building forest tarantula. Adults live in soil burrows, while field research in French Guiana documents a change in retreat use during development.",
+    "standout": "Pale markings contrast with the dark legs. Ephebopus also carries specialised urticating setae on the pedipalps, rather than the abdominal patch familiar from many other American tarantulas.",
+    "inCare": "This profile separates the current resident’s documented history from species-level research. The photograph is a labelled species archive image."
+  },
+  "helle-idiothele-mira": {
+    "lifestyle": "The original description reports densely silk-lined tunnels or cells beneath rocks and logs in lightly wooded habitats. A thin silk door can conceal the entrance.",
+    "standout": "The blue distal leg segments help distinguish the species. The silk door can be inconspicuous in the field; not seeing one does not establish that a retreat lacks a closure.",
+    "inCare": "This profile separates the current resident’s documented history from species-level research. The portrait shows Helle."
+  },
+  "lasiodora-klugi": {
+    "lifestyle": "A ground-dwelling Brazilian tarantula. The current revision is the starting point for interpreting its morphology and distribution, especially where older sources used names differently.",
+    "standout": "Dark legs and reddish abdominal hairs give the familiar scarlet contrast. Colour alone is insufficient to distinguish the species from all other Lasiodora.",
+    "inCare": "This profile separates the current resident’s documented history from species-level research. The photograph is a labelled species archive image."
+  }
+});
+  Object.assign(naturalHistorySections, {
+  "morgana-ephebopus-murinus": {
+    "taxonomy": "Ephebopus murinus (Walckenaer, 1837) is the type species of Ephebopus. The World Spider Catalog accepts the name and records French Guiana, Suriname and Brazil. A 2008 revision provides the morphological baseline for the genus.",
+    "shelter": "Field observations describe adult burrows with silk-supported entrances. Young spiders can use elevated retreats, including bromeliads, so the label burrowing tarantula does not describe every life stage equally well.",
+    "feeding": "A retreat provides both shelter and a base for detecting nearby prey. Interpreting feeding in captivity requires the animal’s own records; a species description cannot establish Morgana’s feeding frequency or preferred prey.",
+    "defence": "The palpal urticating-seta pads are a distinctive feature of the genus. They are defensive structures, and their position shows why not every American tarantula uses the same hair-flicking mechanism.",
+    "inference": "The field observations support providing usable shelter and substrate that can hold a retreat. Enclosure choices should also follow the animal’s developmental stage and observed use of space."
+  },
+  "helle-idiothele-mira": {
+    "taxonomy": "Idiothele mira Gallon, 2010 is an accepted South African theraphosid. The original description records material from Ndumo and Tembe in northeastern South Africa and distinguishes it from Idiothele nigrofulva.",
+    "shelter": "Gallon’s field account places retreats under rocks and logs. The entrance can be sealed with a thin, wafer-like silk trapdoor, a useful reminder that elaborate shelter is not restricted to spiders commonly called trapdoor spiders.",
+    "feeding": "A concealed retreat is compatible with a predatory lifestyle. Helle’s prey choices and feeding responses belong in the individual collection record; they cannot be inferred from the taxonomic description.",
+    "defence": "The description documents specialised sensory hairs and structures on the limbs and mouthparts. Retreat architecture offers another way to understand the animal without repeatedly opening or disturbing its shelter.",
+    "inference": "A secure retreat and material suitable for silk attachment follow from the published habitat observations. This is a natural-history inference, not evidence that Helle has already built a particular structure."
+  },
+  "lasiodora-klugi": {
+    "taxonomy": "Lasiodora klugi (C. L. Koch, 1841) is an accepted Brazilian species and the type species of Lasiodora. Bertani’s 2023 revision synonymised Lasiodora itabunae with L. klugi and reassessed historical identifications.",
+    "shelter": "For a large terrestrial tarantula, ground-level cover and usable substrate are more relevant than climbing height. The archive photograph shows a spider beside cover, but one image does not establish the current resident’s enclosure preferences.",
+    "feeding": "Like other tarantulas, Lasiodora klugi is a predator. The resident’s feeding intervals, refusals and prey choices require direct observation; size alone does not establish appetite or a suitable feeding schedule.",
+    "defence": "Lasiodora possesses urticating setae. These defensive hairs are part of the biology reviewed in the genus revision. Defensive responses vary with context and should not be reduced to a fixed temperament label.",
+    "inference": "A stable, substrate-focused enclosure and accessible shelter follow from a terrestrial body plan. Precise measurements and environmental observations should be recorded for the individual instead of copied from a generic care chart."
+  }
+});
+  Object.assign(collectionStories, {
+  "morgana-ephebopus-murinus": "Morgana is the current resident behind this profile. The archive photograph illustrates the species, but has not been confirmed as Morgana. Measurements, sex, acquisition history and feeding observations will be added only when verified for this individual.",
+  "helle-idiothele-mira": "Helle’s portrait shows the patterned carapace and surrounding legs at close range. It documents Helle as an individual; it does not establish sex, age or the form of the retreat. Those details remain unpublished until verified.",
+  "lasiodora-klugi": "This is the Lasiodora klugi currently represented in the collection, without a published individual name. The archive image is labelled separately because its connection to the current resident has not been confirmed. Sex and measurements remain unpublished."
+});
+  Object.assign(conservationProfiles, {
+  "morgana-ephebopus-murinus": {
+    "assessmentLabel": "Assessment not verified",
+    "assessment": "A species-level IUCN category has not been verified for this profile. Lack of a published category here is not evidence of low extinction risk.",
+    "tradeLabel": "Check current listings",
+    "trade": "Consult the current CITES Checklist and relevant national requirements before any transfer. No legal status is inferred from the presence of the species in captivity.",
+    "context": "The taxonomic sources establish a name and distribution, not a global population trend. Captive availability cannot substitute for field population data.",
+    "keeper": "Keep provenance and acquisition records, and distinguish captive observations from claims about wild abundance."
+  },
+  "helle-idiothele-mira": {
+    "assessmentLabel": "Assessment not verified",
+    "assessment": "A species-level IUCN category has not been verified for this profile. Lack of a published category here is not evidence of low extinction risk.",
+    "tradeLabel": "Check current listings",
+    "trade": "Consult the current CITES Checklist and relevant national requirements before any transfer. No legal status is inferred from the presence of the species in captivity.",
+    "context": "The taxonomic sources establish a name and distribution, not a global population trend. Captive availability cannot substitute for field population data.",
+    "keeper": "Keep provenance and acquisition records, and distinguish captive observations from claims about wild abundance."
+  },
+  "lasiodora-klugi": {
+    "assessmentLabel": "Assessment not verified",
+    "assessment": "A species-level IUCN category has not been verified for this profile. Lack of a published category here is not evidence of low extinction risk.",
+    "tradeLabel": "Check current listings",
+    "trade": "Consult the current CITES Checklist and relevant national requirements before any transfer. No legal status is inferred from the presence of the species in captivity.",
+    "context": "The taxonomic sources establish a name and distribution, not a global population trend. Captive availability cannot substitute for field population data.",
+    "keeper": "Keep provenance and acquisition records, and distinguish captive observations from claims about wild abundance."
+  }
+});
+
   const root = document.querySelector("[data-current-profile]");
   const key = document.body.dataset.profile;
   const profile = profiles[key];
@@ -807,7 +989,7 @@
           </nav>
           <p class="eyebrow">Species profile · ${profile.resident}</p>
           <h1 id="profile-title"${profile.species.length > 22 ? ' class="long-species-name"' : ""}><i>${profile.species}</i></h1>
-          <p class="common-name">${subtitle}</p>
+          <p class="common-name">${profile.commonName || subtitle}</p>
           <p class="species-lede">${profile.intro}</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#natural-history">Explore the species</a>
@@ -816,8 +998,8 @@
           </div>
         </div>
         <figure class="hero-portrait">
-          <img src="../assets/collection/${profile.image}" alt="${profile.alt}" width="1600" height="898" loading="eager" fetchpriority="high">
-          <figcaption>${profile.resident} · photographed ${isFormerResident ? "during his time in" : "in"} the Introvertebrates collection</figcaption>
+          <img src="../assets/collection/${profile.image}" alt="${profile.alt}" width="${profile.imageWidth || 1600}" height="${profile.imageHeight || 898}" loading="eager" fetchpriority="high">
+          <figcaption>${profile.portraitCaption || `${profile.resident} · photographed ${isFormerResident ? "during his time in" : "in"} the Introvertebrates collection`}</figcaption>
         </figure>
       </section>
 
@@ -889,7 +1071,7 @@
             ${conservationProfile.source ? '<a href="' + conservationProfile.source.url + '" target="_blank" rel="noopener noreferrer">' + conservationProfile.source.label + ' <span aria-hidden="true">↗</span></a>' : ""}
             <a href="../conservation.html">Conservation overview <span aria-hidden="true">→</span></a>
           </div>
-          <p class="profile-conservation-note">Reviewed 14 September 2026 against IUCN Red List version 2026-1 and the live CITES Checklist. “Not Evaluated” is not a low-risk category. National and local rules may be stricter.</p>
+          <p class="profile-conservation-note">${profile.conservationReview || "Reviewed 14 September 2026 against IUCN Red List version 2026-1 and the live CITES Checklist. “Not Evaluated” is not a low-risk category. National and local rules may be stricter."}</p>
         </div>
       </section>
 
@@ -910,6 +1092,7 @@
         </div>
       </section>
 
+      ${!profile.hideInstagram ? `
       <section class="profile-section species-shell profile-instagram-section" data-instagram-profile="${key}" hidden aria-labelledby="instagram-profile-title">
         <header class="section-heading"><p class="section-kicker">From Instagram</p><h2 id="instagram-profile-title">Posts &amp; reels.</h2></header>
         <div class="section-copy">
@@ -918,6 +1101,9 @@
         </div>
       </section>
 
+      ` : ""}
+
+      ${profile.video ? `
       <section class="profile-section species-shell profile-video-section" aria-labelledby="profile-video-title">
         <header class="section-heading"><p class="section-kicker">From the channel</p><h2 id="profile-video-title">Related viewing.</h2></header>
         <div class="section-copy">
@@ -938,6 +1124,8 @@
         </div>
       </section>
 
+      ` : ""}
+
       <section class="profile-section species-shell" aria-labelledby="codex-title">
         <header class="section-heading"><p class="section-kicker">Personal observations</p><h2 id="codex-title">From the Codex.</h2></header>
         <div class="section-copy">
@@ -945,7 +1133,7 @@
             <span class="codex-label">Introvertebrates Codex</span>
             <h3>${profile.resident} · ${isFormerResident ? "archived care history" : "care history"}</h3>
             <p class="codex-intro">${isFormerResident ? "This profile preserves an archive of Orion’s time in the Introvertebrates collection; inactive private records are not exported to the public website." : "Time in care, feeding records, moults and measurements. These are observations from the Introvertebrates collection, not species-wide averages."}</p>
-            <p class="codex-status" data-codex-status>${isFormerResident ? "No active public Codex record is shown for former residents." : "Collection records are not available here yet."}</p>
+            <p class="codex-status" data-codex-status>${isFormerResident ? "No active public Codex record is shown for former residents." : profile.codexFallback || "Collection records are not available here yet."}</p>
             <div class="codex-metrics" data-codex-metrics hidden></div>
             <p class="codex-privacy">Private notes and identifying details are kept off the website.</p>
           </div>

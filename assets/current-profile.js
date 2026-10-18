@@ -779,7 +779,7 @@
     "imageHeight": 1088,
     "alt": "Archive photograph of Ephebopus murinus showing pale leg markings on dark legs",
     "intro": "Meet Morgana, the Ephebopus murinus in the Introvertebrates collection: a burrowing tarantula whose pale leg markings give the species its skeleton-spider nickname.",
-    "portraitCaption": "Ephebopus murinus · AI-assisted archive edit; individual not confirmed as Morgana",
+    "portraitCaption": "Ephebopus murinus · Archived photo of another individual · AI-assisted edit",
     "commonName": "Skeleton tarantula",
     "gallery": [],
     "video": null,
@@ -842,13 +842,13 @@
         "url": "https://doi.org/10.11646/zootaxa.5390.1.1"
       }
     ],
-    "image": "lasiodora-klugi-archive-edited.jpg",
+    "image": "lasiodora-klugi-archive-horizontal.jpg",
     "portraitOriginal": "lasiodora-klugi.jpg",
-    "imageWidth": 1254,
-    "imageHeight": 1254,
+    "imageWidth": 1600,
+    "imageHeight": 1600,
     "alt": "Archive photograph labelled Lasiodora klugi showing dark legs and reddish abdominal hairs beside a mossy retreat",
     "intro": "Lasiodora klugi brings a large Brazilian terrestrial tarantula to the Introvertebrates collection. Its profile follows the accepted taxonomy while keeping the current resident’s history separate from archive photography.",
-    "portraitCaption": "Lasiodora klugi · AI-assisted archive edit; individual not confirmed as the current resident",
+    "portraitCaption": "Lasiodora klugi · Archived photo of another individual",
     "commonName": "Bahia scarlet tarantula",
     "gallery": [],
     "video": null,
@@ -898,9 +898,9 @@
   }
 });
   Object.assign(collectionStories, {
-  "morgana-ephebopus-murinus": "Morgana is the current resident behind this profile. The archive photograph illustrates the species, but has not been confirmed as Morgana. Measurements, sex, acquisition history and feeding observations will be added only when verified for this individual.",
+  "morgana-ephebopus-murinus": "Morgana is the current resident behind this profile. The archived photograph shows another individual of the same species. Measurements, sex, acquisition history and feeding observations will be added only when verified for this individual.",
   "helle-idiothele-mira": "Helle’s portrait shows the patterned carapace and surrounding legs at close range. It documents Helle as an individual; it does not establish sex, age or the form of the retreat. Those details remain unpublished until verified.",
-  "lasiodora-klugi": "This is the Lasiodora klugi currently represented in the collection, without a published individual name. The archive image is labelled separately because its connection to the current resident has not been confirmed. Sex and measurements remain unpublished."
+  "lasiodora-klugi": "This is the Lasiodora klugi currently represented in the collection, without a published individual name. The archived photograph shows another individual of the same species. Sex and measurements remain unpublished."
 });
   Object.assign(conservationProfiles, {
   "morgana-ephebopus-murinus": {

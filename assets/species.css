@@ -153,6 +153,17 @@ a {
   object-position: center;
 }
 
+/* Keep the supplied horizontal spider pose fully visible at every viewport. */
+body[data-profile="lasiodora-klugi"] .hero-portrait,
+body[data-profile="lasiodora-klugi"] .hero-portrait img {
+  min-height: 0;
+}
+
+body[data-profile="lasiodora-klugi"] .hero-portrait img {
+  height: auto;
+  object-fit: contain;
+}
+
 .species-hero {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);

@@ -154,6 +154,41 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.archive-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 24px;
+}
+
+.archive-photo-grid figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--home-line, rgba(169, 210, 224, 0.15));
+  border-radius: 22px;
+  background: #07111c;
+}
+
+.archive-photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background: #040a12;
+}
+
+.archive-photo-grid figcaption {
+  display: grid;
+  gap: 8px;
+  padding: 22px;
+  line-height: 1.6;
+}
+
+.archive-photo-grid figcaption span {
+  color: #aebfc9;
+  font-size: 0.9rem;
+}
+
 .fact-grid,
 .health-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));

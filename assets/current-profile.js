@@ -53,7 +53,7 @@
       intro: "Gunnar is the Ceratogyrus darlingi currently in my care. His updated portrait shows his full build and mature-male proportions in the open.",
       gallery: [
         { file: "darlingi-retreat.jpg", alt: "Ceratogyrus darlingi partly visible within a webbed wooden retreat", caption: "Inside the retreat · 2025" },
-        { file: "darlingi-overhead.jpg", alt: "Rear three-quarter view of Gunnar, a Ceratogyrus darlingi, on pale sandy substrate", caption: "Rear three-quarter view · 2025" },
+        { file: "gunnar-retreat-portrait.jpg", alt: "Gunnar, a Ceratogyrus darlingi, looking out from a silk-lined retreat", caption: "At the retreat entrance", width: 1600, height: 1335 },
         { file: "darlingi-terrestrial.jpg", alt: "Ceratogyrus darlingi walking across pale sandy substrate", caption: "Terrestrial enclosure · 2025" }
       ],
       video: { id: "WvyBlNpTxQI", title: "Introducing Gunnar, my Ceratogyrus darlingi", note: "A closer introduction to Gunnar and his place in the Introvertebrates collection." }
@@ -128,7 +128,7 @@
       gallery: [
         { file: "elvira-blue-detail.jpg", alt: "Close portrait of Elvira showing violet-blue structural colour on her raised legs", caption: "Electric-blue detail · close view" },
         { file: "elvira-retreat.jpg", alt: "Full-body view of Elvira against moss and dark substrate", caption: "Full-body view · 2024" },
-        { file: "elvira-full-body.jpg", alt: "Elvira positioned at the edge of a heavily webbed retreat", caption: "At the retreat · 2024" }
+        { file: "elvira-blue-legs.jpg", alt: "Elvira, a Chilobrachys natanicharum, showing blue leg markings beside silk and cork", caption: "Blue leg markings and the retreat", width: 1600, height: 1255 }
       ],
       video: { id: "V_QQOjU2T28", title: "Chilobrachys natanicharum: The most beautiful tarantula", note: "A species-focused look at the electric-blue tarantula represented in the collection by Elvira." }
     },
@@ -174,9 +174,11 @@
         { label: "World Spider Catalog — Grammostola pulchripes", url: "https://wsc.nmbe.ch/spec-data/44063/Grammostola_pulchripes" },
         { label: "Journal of Natural History — Grammostola distribution and habitats in Argentina", url: "https://ri.conicet.gov.ar/bitstream/handle/11336/7551/CONICET_Digital_Nro.7610_G.pdf?sequence=8" }
       ],
-      image: "grammostola-pulchripes.jpg",
-      alt: "Grammostola pulchripes showing its golden knee stripes",
-      intro: "Runa is the Grammostola pulchripes currently in my care. Her portrait is centred on the strong golden knee bands and full-body silhouette.",
+      image: "runa-dorsal-portrait-2026.jpg",
+      imageWidth: 1600,
+      imageHeight: 1445,
+      alt: "Dorsal portrait of Runa, a Grammostola pulchripes, showing the carapace, golden leg bands and dense setae",
+      intro: "Runa is the Grammostola pulchripes currently in my care. This close dorsal portrait shows her carapace, golden leg bands and dense covering of setae.",
       gallery: [
         { file: "pulchripes-close.jpg", alt: "Close view of Grammostola pulchripes showing the pale bands on its legs", caption: "Golden-knee detail · 2024" },
         { file: "pulchripes-terrestrial.jpg", alt: "Grammostola pulchripes resting on reddish terrestrial substrate", caption: "Terrestrial view · 2024" },
@@ -201,12 +203,14 @@
         { label: "Taxonomy — habitat and natural history of Linothele", url: "https://www.mdpi.com/2813-3323/1/3/10" },
         { label: "ACS Omega — material properties of the Linothele fallax web", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8672351/" }
       ],
-      image: "linothele-fallax.jpg",
-      alt: "Linothele fallax showing its orange carapace and striped abdomen",
-      intro: "This Linothele fallax represents the other-spider side of the current collection. Its profile photograph shows the orange carapace and distinctly patterned abdomen.",
+      image: "linothele-fallax-portrait-2026.jpg",
+      imageWidth: 1600,
+      imageHeight: 1221,
+      alt: "Linothele fallax showing an orange carapace, banded abdomen and long legs over a silk-lined retreat",
+      intro: "This Linothele fallax is part of the current collection. Its portrait shows the orange carapace, banded abdomen and long legs against the silk of its retreat.",
       gallery: [
         { file: "fallax-webbing.jpg", alt: "Linothele fallax standing on dense white curtain webbing", caption: "Curtain webbing · 2025" },
-        { file: "fallax-overhead.jpg", alt: "Overhead view of Linothele fallax showing its orange carapace and patterned abdomen", caption: "Dorsal markings · 2025" },
+        { file: "fallax-dorsal-detail.jpg", alt: "Dorsal photograph of Linothele fallax showing the orange carapace and striped abdomen", caption: "Dorsal markings", width: 1600, height: 1535 },
         { file: "fallax-habitat.jpg", alt: "Linothele fallax partly visible among leaf litter and moss", caption: "Habitat view · 2025" }
       ],
       video: { id: "6yuCc4-XAwU", title: "Spider snapshot: Linothele fallax", note: "A compact species snapshot of the tiger curtain-web spider." }
@@ -227,12 +231,14 @@
         { label: "The Reptile Database — Mauremys reevesii", url: "https://reptile-database.reptarium.cz/Mauremys/reevesii" },
         { label: "U.S. Geological Survey — species profile", url: "https://nas.er.usgs.gov/queries/factsheet.aspx?SpeciesID=1228" }
       ],
-      image: "sonja-mauremys-reevesii.jpg",
-      alt: "Sonja, a Reeves’s turtle, lifting her head and forelegs toward the camera",
-      intro: "Sonja is the Reeves’s turtle currently in my care and the only vertebrate in the collection. Her portrait shows the striped head, expressive posture, and strong forelimbs that make her such a distinctive resident.",
+      image: "sonja-basking-portrait-2026.jpg",
+      imageWidth: 1600,
+      imageHeight: 900,
+      alt: "Sonja, a Mauremys reevesii turtle, resting on a basking ledge with her head, forelimbs and shell visible",
+      intro: "Sonja is the Reeves’s turtle currently in my care and the only vertebrate in the collection. Her portrait shows the patterned head, textured forelimbs and shell as she rests on a basking ledge.",
       gallery: [
         { file: "sonja-close.jpg", alt: "Sonja lifting her head and forelegs toward the camera", caption: "Sonja up close · 2025" },
-        { file: "sonja-wave.jpg", alt: "Underwater side profile of Sonja resting above dark aquatic wood", caption: "Underwater side profile · 2025" },
+        { file: "sonja-under-cover.jpg", alt: "Sonja looking out from beneath a wooden shelter", caption: "Under cover", width: 1600, height: 1600 },
         { file: "sonja-shore.jpg", alt: "Sonja resting at the planted shoreline of her enclosure", caption: "Shoreline habitat · 2025" }
       ],
       video: { id: "lEVuJhaAlNY", title: "Sonja’s new home", note: "A complete look at the home created for Sonja, the collection’s Reeves’s turtle." }
@@ -332,7 +338,8 @@
       gallery: [
         { file: "clara-climbing.jpg", alt: "Clara climbing vertically across bark inside the enclosure", caption: "Climbing posture · 2025" },
         { file: "clara-webbing.jpg", alt: "Clara standing at the entrance to a broad webbed retreat", caption: "At the webbed retreat · 2025" },
-        { file: "clara-retreat.jpg", alt: "Clara partly concealed inside a narrow arboreal retreat", caption: "Inside the retreat · 2024" }
+        { file: "clara-retreat.jpg", alt: "Clara partly concealed inside a narrow arboreal retreat", caption: "Inside the retreat · 2024" },
+        { file: "clara-eye-cluster.jpg", alt: "Close crop of Clara’s compact eye cluster, with reflections on the dark eyes", caption: "Clara’s eye cluster · close crop", width: 509, height: 343 }
       ],
       video: { id: "F8HVJVy4PdE", title: "Meet Clara: The Venezuelan sun tiger", note: "A full introduction to Clara and Psalmopoeus irminia on the Introvertebrates channel." }
     },

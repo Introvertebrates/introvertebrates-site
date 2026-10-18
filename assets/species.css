@@ -153,6 +153,11 @@ a {
   object-position: center;
 }
 
+body[data-profile="grammostola-pulchripes"] #profile-title {
+  font-size: clamp(2.6rem, 4.6vw, 4.8rem);
+  overflow-wrap: normal;
+}
+
 /* Keep the supplied horizontal spider pose fully visible at every viewport. */
 body[data-profile="lasiodora-klugi"] .hero-portrait,
 body[data-profile="lasiodora-klugi"] .hero-portrait img {

@@ -773,12 +773,13 @@
         "url": "https://britishspiders.org.uk/system/files/library/140605.pdf"
       }
     ],
-    "image": "morgana-ephebopus-murinus.jpg",
-    "imageWidth": 1600,
-    "imageHeight": 1204,
+    "image": "morgana-ephebopus-murinus-archive-edited.jpg",
+    "portraitOriginal": "morgana-ephebopus-murinus.jpg",
+    "imageWidth": 1445,
+    "imageHeight": 1088,
     "alt": "Archive photograph of Ephebopus murinus showing pale leg markings on dark legs",
     "intro": "Meet Morgana, the Ephebopus murinus in the Introvertebrates collection: a burrowing tarantula whose pale leg markings give the species its skeleton-spider nickname.",
-    "portraitCaption": "Ephebopus murinus · archive photograph; individual not confirmed as Morgana",
+    "portraitCaption": "Ephebopus murinus · AI-assisted archive edit; individual not confirmed as Morgana",
     "commonName": "Skeleton tarantula",
     "gallery": [],
     "video": null,
@@ -841,12 +842,13 @@
         "url": "https://doi.org/10.11646/zootaxa.5390.1.1"
       }
     ],
-    "image": "lasiodora-klugi.jpg",
-    "imageWidth": 1600,
-    "imageHeight": 1600,
+    "image": "lasiodora-klugi-archive-edited.jpg",
+    "portraitOriginal": "lasiodora-klugi.jpg",
+    "imageWidth": 1254,
+    "imageHeight": 1254,
     "alt": "Archive photograph labelled Lasiodora klugi showing dark legs and reddish abdominal hairs beside a mossy retreat",
     "intro": "Lasiodora klugi brings a large Brazilian terrestrial tarantula to the Introvertebrates collection. Its profile follows the accepted taxonomy while keeping the current resident’s history separate from archive photography.",
-    "portraitCaption": "Lasiodora klugi · archive photograph; individual not confirmed as the current resident",
+    "portraitCaption": "Lasiodora klugi · AI-assisted archive edit; individual not confirmed as the current resident",
     "commonName": "Bahia scarlet tarantula",
     "gallery": [],
     "video": null,
@@ -999,7 +1001,7 @@
         </div>
         <figure class="hero-portrait">
           <img src="../assets/collection/${profile.image}" alt="${profile.alt}" width="${profile.imageWidth || 1600}" height="${profile.imageHeight || 898}" loading="eager" fetchpriority="high">
-          <figcaption>${profile.portraitCaption || `${profile.resident} · photographed ${isFormerResident ? "during his time in" : "in"} the Introvertebrates collection`}</figcaption>
+          <figcaption>${profile.portraitCaption || `${profile.resident} · photographed ${isFormerResident ? "during his time in" : "in"} the Introvertebrates collection`}${profile.portraitOriginal ? ` · <a href="../assets/collection/${profile.portraitOriginal}">View original photograph</a>` : ""}</figcaption>
         </figure>
       </section>
 

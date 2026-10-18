@@ -4,7 +4,7 @@ title: "Linothele bygger et sansekart av silke"
 description: "Se hvordan Linothele fallax kan bruke et stort teppe av silketråder til både skjul og varsling."
 intro: "For Linothele er nettet mer enn en felle. Trådene utvider området der edderkoppen kan merke små bevegelser."
 question: "Hvilke mørke og lyse mønstre finner du på bakkroppen?"
-image: "/assets/collection/linothele-fallax.jpg"
+image: "/assets/collection/linothele-fallax-portrait-2026.jpg"
 image_alt: "Linothele fallax med oransje forkropp og mørkt mønster på bakkroppen"
 image_caption: "Linothele fallax i samlingen · fotografert av Introvertebrates"
 link_url: "/species/linothele-fallax.html"
@@ -13,7 +13,7 @@ colouring_url: "/kryp-fargelegging.html#colouring-linothele"
 colouring_image: "/assets/kryp/colouring/linothele-weekly.png"
 colouring_image_alt: "Fargeleggingsark av Linothele"
 colouring_label: "Fargelegg Linothele"
-colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
+colouring_description: "En forenklet strekillustrasjon basert på et tidligere fotografi av Linothele fra samlingen."
 ---
 
 ## Et nett med flere oppgaver
@@ -26,7 +26,7 @@ Når et lite dyr berører trådene, går vibrasjonen gjennom nettet. Edderkoppen
 
 ## Dette bildet er en observasjon
 
-Nærbildet viser edderkoppen i Introvertebrates-samlingen, ikke hele silketeppet. Forklaringen om nettet beskriver hvordan slike edderkopper bruker silke; den er ikke en beskrivelse av synlige tråder i dette fotografiet.
+Nærbildet viser edderkoppen og deler av silkeskjulet i Introvertebrates-samlingen. Det viser ikke hele nettet eller hvordan vibrasjoner beveger seg gjennom det. Forklaringen om nettet bygger på kunnskap om slike edderkopper, ikke på stillbildet alene.
 
 ## Prøv selv
 

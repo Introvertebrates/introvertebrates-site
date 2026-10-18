@@ -287,3 +287,28 @@ body.kryp-refined { --kk-bg:#031018; --kk-panel:#091c25; --kk-ink:#f6f0df; --kk-
   .kk-family { grid-template-columns: 1fr; gap: 18px; }
   .kk-family-gallery { max-width: 360px; }
 }
+
+/* Archive photographs keep their full framing for the observation tasks. */
+.kk-photo-intro { max-width: 650px; color: var(--kk-muted); margin: -8px 0 26px; }
+.kk-photo-archive, .kk-photo-pair { display: grid; gap: 24px; }
+.kk-photo-archive { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.kk-photo-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 30px; }
+.kk-photo-archive figure, .kk-photo-pair figure, .kk-photo-detail {
+  margin: 0; overflow: hidden; border: 1px solid #ffffff1c;
+  border-radius: 10px; background: var(--kk-panel);
+}
+.kk-photo-archive img, .kk-photo-pair img, .kk-photo-detail img {
+  display: block; width: 100%; height: auto; aspect-ratio: 3 / 2;
+  object-fit: contain; background: #031018;
+}
+.kk-photo-archive figcaption { padding: 22px; }
+.kk-photo-archive h3 { font-size: 24px; line-height: 1.2; margin: 10px 0; }
+.kk-photo-archive figcaption p, .kk-photo-pair figcaption, .kk-photo-detail figcaption {
+  color: var(--kk-muted); font-size: 14px; line-height: 1.7;
+}
+.kk-photo-archive figcaption p { margin: 0; }
+.kk-photo-pair figcaption, .kk-photo-detail figcaption { padding: 16px 20px; }
+.kryp-weekly-prose .kk-photo-detail { margin-block: 26px; }
+@media (max-width: 700px) {
+  .kk-photo-archive, .kk-photo-pair { grid-template-columns: 1fr; }
+}

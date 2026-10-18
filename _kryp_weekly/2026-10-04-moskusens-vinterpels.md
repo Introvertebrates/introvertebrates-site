@@ -22,6 +22,8 @@ colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotogr
 
 De lange ytre hårene skjermer kroppen mot vind, snø og fukt. De kan henge som et mørkt forheng langs sidene og få beina til å se kortere ut enn de er.
 
+<figure class="kk-photo-detail"><img src="/assets/kryp/musk-ox-coat-2026.jpg" alt="Moskus sett fra siden med lange dekkhår langs kroppen" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Se hvor langt de ytre hårene henger langs siden. Den fine underulla ligger skjult innenfor.</figcaption></figure>
+
 ## Varm underull innenfor
 
 Nær huden ligger en fin og isolerende underull. Luft mellom hårene bremser varmetapet. Sammen gjør de to lagene det lettere å leve i kalde og vindutsatte områder.

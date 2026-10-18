@@ -20,3 +20,10 @@ Archive photographs do not establish a capture locality or current collection me
 - Checked local image and navigation references, unique HTML IDs, image alt attributes, JavaScript syntax and generated-profile consistency. Checked representative desktop and mobile layouts in a browser.
 
 The detailed local manifest keeps the source-file hashes and the selection reasons. Archive file dates and the year in a web filename are not presented as a photograph's capture date.
+
+## Puffin caption correction
+
+The owner identified the material in the single puffin photograph as grass. The original fish description was an editorial error. Corrected the homepage activity, image alt text and profile link accordingly. Cornell Lab describes grass and twigs as nest lining. EAZA's 2025 Atlantic puffin guidelines, section 2.4.1 (printed page 22, PDF page 29), document males presenting nesting material to females during courtship, based on keeper observations. The profile describes this as possible general behaviour; the photograph does not establish sex or a courtship event.
+
+- https://www.allaboutbirds.org/guide/Atlantic_Puffin/lifehistory
+- https://media.eaza.net/uploads/2025_Atlantic_Puffin_EAZA_Best_Practice_Guidelines_final_04dee2bb8b.pdf#page=29

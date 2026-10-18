@@ -126,7 +126,7 @@
       name: "Sun beetles",
       species: "Pachnoda marginata",
       src: "assets/collection/pachnoda-marginata.jpg",
-      alt: "Three Pachnoda marginata sun beetles clustered on a branch",
+      alt: "A Pachnoda marginata sun beetle on a branch",
       href: "species/pachnoda-marginata.html",
       variety: true
     },

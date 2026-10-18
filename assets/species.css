@@ -629,7 +629,7 @@ body[data-profile="lasiodora-klugi"] .hero-portrait img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .photo-card:first-child img {

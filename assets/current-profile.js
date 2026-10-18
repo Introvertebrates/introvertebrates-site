@@ -23,12 +23,14 @@
         { label: "Biodiversity Data Journal — conservation profile, habitat, and ecology", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6858399/" }
       ],
       image: "sabrina-brachypelma-hamorii.jpg",
+      imageWidth: 1600,
+      imageHeight: 898,
       alt: "Sabrina, a Brachypelma hamorii tarantula with vivid orange knee markings",
       intro: "Sabrina is the Brachypelma hamorii currently in my care. Her collection portrait is built around the vivid orange knee markings that make her immediately recognisable.",
       gallery: [
         { file: "sabrina-knee-detail-2026.jpg", alt: "Close portrait of Sabrina showing her eyes and vivid orange knee markings", caption: "Face and knee markings · 2026", width: 1600, height: 1067 },
-        { file: "sabrina-habitat.jpg", alt: "Sabrina positioned among wood and dry enclosure planting", caption: "Sabrina in her habitat · 2026" },
-        { file: "sabrina-retreat.jpg", alt: "Sabrina resting at the curved entrance to her retreat", caption: "At the retreat · 2024" }
+        { file: "sabrina-habitat.jpg", alt: "Sabrina positioned among wood and dry enclosure planting", caption: "Sabrina in her habitat · 2026", width: 1600, height: 900 },
+        { file: "sabrina-retreat.jpg", alt: "Sabrina resting at the curved entrance to her retreat", caption: "At the retreat · 2024", width: 1600, height: 900 }
       ],
       video: { id: "IXY2w7nUmoA", title: "Meet Sabrina: My Mexican red-knee tarantula", note: "A short introduction to Sabrina and the markings that make Brachypelma hamorii so recognisable." }
     },
@@ -49,12 +51,14 @@
         { label: "Koedoe — revision and natural history of Ceratogyrus", url: "https://koedoe.co.za/index.php/koedoe/article/view/422" }
       ],
       image: "ceratogyrus-darlingi.jpg",
+      imageWidth: 1600,
+      imageHeight: 900,
       alt: "Gunnar, a Ceratogyrus darlingi tarantula, fully visible on pale sandy substrate",
       intro: "Gunnar is the Ceratogyrus darlingi currently in my care. His updated portrait shows his full build and mature-male proportions in the open.",
       gallery: [
-        { file: "darlingi-retreat.jpg", alt: "Ceratogyrus darlingi partly visible within a webbed wooden retreat", caption: "Inside the retreat · 2025" },
+        { file: "darlingi-retreat.jpg", alt: "Ceratogyrus darlingi partly visible within a webbed wooden retreat", caption: "Inside the retreat · 2025", width: 1600, height: 900 },
         { file: "gunnar-retreat-portrait.jpg", alt: "Gunnar, a Ceratogyrus darlingi, looking out from a silk-lined retreat", caption: "At the retreat entrance", width: 1600, height: 1335 },
-        { file: "darlingi-terrestrial.jpg", alt: "Ceratogyrus darlingi walking across pale sandy substrate", caption: "Terrestrial enclosure · 2025" }
+        { file: "darlingi-terrestrial.jpg", alt: "Ceratogyrus darlingi walking across pale sandy substrate", caption: "Terrestrial enclosure · 2025", width: 1600, height: 900 }
       ],
       video: { id: "WvyBlNpTxQI", title: "Introducing Gunnar, my Ceratogyrus darlingi", note: "A closer introduction to Gunnar and his place in the Introvertebrates collection." }
     },
@@ -75,11 +79,13 @@
         { label: "Frontiers in Arachnid Science — distribution and natural history of Chilobrachys", url: "https://www.frontiersin.org/journals/arachnid-science/articles/10.3389/frchs.2025.1598438/full" }
       ],
       image: "chilobrachys-fimbriatus.jpg",
+      imageWidth: 1600,
+      imageHeight: 1067,
       alt: "Chilobrachys fimbriatus emerging from a mossy, silk-lined retreat",
       intro: "This Chilobrachys fimbriatus is part of the current collection. Its updated portrait records the spider emerging through plants and silk at the entrance to its retreat.",
       gallery: [
-        { file: "fimbriatus-webbing.jpg", alt: "Chilobrachys fimbriatus visible through dense white webbing", caption: "Dense web structure · 2025" },
-        { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "At the retreat entrance · 2025" }
+        { file: "fimbriatus-webbing.jpg", alt: "Chilobrachys fimbriatus visible through dense white webbing", caption: "Dense web structure · 2025", width: 1600, height: 1425 },
+        { file: "fimbriatus-retreat.jpg", alt: "Chilobrachys fimbriatus partly concealed among leaves and substrate", caption: "At the retreat entrance · 2025", width: 1600, height: 900 }
       ],
       video: { id: "iPIhIsNKUaY", title: "Rehousing my Chilobrachys fimbriatus", note: "A full rehousing video showing the animal, its retreat, and the enclosure work behind the profile." }
     },
@@ -100,12 +106,14 @@
         { label: "Frontiers in Arachnid Science — distribution and natural history of Chilobrachys", url: "https://www.frontiersin.org/journals/arachnid-science/articles/10.3389/frchs.2025.1598438/full" }
       ],
       image: "chilobrachys-kaeng-krachan.jpg",
+      imageWidth: 1600,
+      imageHeight: 898,
       alt: "Chilobrachys sp. Kaeng Krachan standing across dense enclosure webbing",
       intro: "This Chilobrachys sp. “Kaeng Krachan” is part of the current collection. The portrait places the animal within the dense sheet webbing that turns the enclosure into a sensitive vibration network.",
       gallery: [
-        { file: "kaeng-webbing.jpg", alt: "Chilobrachys sp. Kaeng Krachan standing on a broad sheet of webbing", caption: "On the web sheet · 2026" },
-        { file: "kaeng-full-body.jpg", alt: "Full-body view of Chilobrachys sp. Kaeng Krachan inside the enclosure", caption: "Full-body view · 2025" },
-        { file: "kaeng-paludarium.jpg", alt: "Planted paludarium built for Chilobrachys sp. Kaeng Krachan", caption: "The paludarium · 2025" }
+        { file: "kaeng-webbing.jpg", alt: "Chilobrachys sp. Kaeng Krachan standing on a broad sheet of webbing", caption: "On the web sheet · 2026", width: 1600, height: 900 },
+        { file: "kaeng-full-body.jpg", alt: "Full-body view of Chilobrachys sp. Kaeng Krachan inside the enclosure", caption: "Full-body view · 2025", width: 1600, height: 900 },
+        { file: "kaeng-paludarium.jpg", alt: "Planted paludarium built for Chilobrachys sp. Kaeng Krachan", caption: "The paludarium · 2025", width: 1600, height: 900 }
       ],
       video: { id: "-axko1BGf0s", title: "Building a jungle paludarium for Chilobrachys sp. Kaeng Krachan", note: "The complete enclosure build behind this resident’s dark, humid presentation." }
     },
@@ -123,11 +131,13 @@
       ],
       sources: [{ label: "ZooKeys — original description of Chilobrachys natanicharum", url: "https://zookeys.pensoft.net/article/106278/" }],
       image: "elvira-chilobrachys-natanicharum.jpg",
+      imageWidth: 1600,
+      imageHeight: 898,
       alt: "Close portrait of Elvira, a Chilobrachys natanicharum tarantula",
       intro: "Elvira is the Chilobrachys natanicharum currently in my care. Her profile portrait uses the darkness of the retreat to isolate the eyes and carapace.",
       gallery: [
-        { file: "elvira-blue-detail.jpg", alt: "Close portrait of Elvira showing violet-blue structural colour on her raised legs", caption: "Electric-blue detail · close view" },
-        { file: "elvira-retreat.jpg", alt: "Full-body view of Elvira against moss and dark substrate", caption: "Full-body view · 2024" },
+        { file: "elvira-blue-detail.jpg", alt: "Close portrait of Elvira showing violet-blue structural colour on her raised legs", caption: "Electric-blue detail · close view", width: 1600, height: 898 },
+        { file: "elvira-retreat.jpg", alt: "Full-body view of Elvira against moss and dark substrate", caption: "Full-body view · 2024", width: 1600, height: 900 },
         { file: "elvira-blue-legs.jpg", alt: "Elvira, a Chilobrachys natanicharum, showing blue leg markings beside silk and cork", caption: "Blue leg markings and the retreat", width: 1600, height: 1255 }
       ],
       video: { id: "V_QQOjU2T28", title: "Chilobrachys natanicharum: The most beautiful tarantula", note: "A species-focused look at the electric-blue tarantula represented in the collection by Elvira." }
@@ -149,12 +159,14 @@
         { label: "Anartia — distribution and habitat associations of Chromatopelma cyaneopubescens", url: "https://produccioncientificaluz.org/index.php/anartia/article/download/41442/47823?inline=1" }
       ],
       image: "ruby-frontal-portrait-2026.jpg",
+      imageWidth: 1600,
+      imageHeight: 900,
       alt: "Frontal portrait of Ruby, a Chromatopelma cyaneopubescens tarantula, between rocks on sandy substrate",
       intro: "Ruby is the Chromatopelma cyaneopubescens currently in my care. Her frontal portrait brings together the species’ blue-green legs, warm carapace, and dense surface detail.",
       gallery: [
-        { file: "ruby-profile-2026.jpg", alt: "Full-body portrait of Ruby showing blue legs, a green carapace, and an orange abdomen", caption: "Full-body portrait · 2026", width: 1600, height: 1067 },
-        { file: "ruby-feeding.jpg", alt: "Ruby feeding on the enclosure surface with blue legs and an orange abdomen visible", caption: "Feeding response · 2026" },
-        { file: "ruby-colour.jpg", alt: "Close dorsal view of Ruby showing blue legs and a warm orange abdomen", caption: "Colour and texture · 2025" }
+        { file: "ruby-profile-2026.jpg", alt: "Full-body portrait of Ruby showing blue legs, a green carapace, and an orange abdomen", caption: "Full-body portrait · 2026", width: 1600, height: 1068 },
+        { file: "ruby-feeding.jpg", alt: "Ruby feeding on the enclosure surface with blue legs and an orange abdomen visible", caption: "Feeding response · 2026", width: 1600, height: 900 },
+        { file: "ruby-colour.jpg", alt: "Close dorsal view of Ruby showing blue legs and a warm orange abdomen", caption: "Colour and texture · 2025", width: 1600, height: 900 }
       ],
       video: { id: "SYVBvfz9fh8", title: "Ruby’s best strikes since day one", note: "A fast collection of Ruby’s feeding responses, presented as an Introvertebrates Short." }
     },
@@ -180,9 +192,9 @@
       alt: "Dorsal portrait of Runa, a Grammostola pulchripes, showing the carapace, golden leg bands and dense setae",
       intro: "Runa is the Grammostola pulchripes currently in my care. This close dorsal portrait shows her carapace, golden leg bands and dense covering of setae.",
       gallery: [
-        { file: "pulchripes-close.jpg", alt: "Close view of Grammostola pulchripes showing the pale bands on its legs", caption: "Golden-knee detail · 2024" },
-        { file: "pulchripes-terrestrial.jpg", alt: "Grammostola pulchripes resting on reddish terrestrial substrate", caption: "Terrestrial view · 2024" },
-        { file: "pulchripes-habitat.jpg", alt: "Grammostola pulchripes beside cork bark and dry enclosure planting", caption: "In the enclosure · 2024" }
+        { file: "pulchripes-close.jpg", alt: "Close view of Grammostola pulchripes showing the pale bands on its legs", caption: "Golden-knee detail · 2024", width: 1600, height: 900 },
+        { file: "pulchripes-terrestrial.jpg", alt: "Grammostola pulchripes resting on reddish terrestrial substrate", caption: "Terrestrial view · 2024", width: 1600, height: 900 },
+        { file: "pulchripes-habitat.jpg", alt: "Grammostola pulchripes beside cork bark and dry enclosure planting", caption: "In the enclosure · 2024", width: 1600, height: 900 }
       ],
       video: { id: "Uveo9KLDKro", title: "Meet the Chaco golden-knee tarantula up close", note: "A species-focused introduction to Grammostola pulchripes and its distinctive golden bands." }
     },
@@ -209,9 +221,9 @@
       alt: "Linothele fallax showing an orange carapace, banded abdomen and long legs over a silk-lined retreat",
       intro: "This Linothele fallax is part of the current collection. Its portrait shows the orange carapace, banded abdomen and long legs against the silk of its retreat.",
       gallery: [
-        { file: "fallax-webbing.jpg", alt: "Linothele fallax standing on dense white curtain webbing", caption: "Curtain webbing · 2025" },
+        { file: "fallax-webbing.jpg", alt: "Linothele fallax standing on dense white curtain webbing", caption: "Curtain webbing · 2025", width: 1600, height: 1221 },
         { file: "fallax-dorsal-detail.jpg", alt: "Dorsal photograph of Linothele fallax showing the orange carapace and striped abdomen", caption: "Dorsal markings", width: 1600, height: 1535 },
-        { file: "fallax-habitat.jpg", alt: "Linothele fallax partly visible among leaf litter and moss", caption: "Habitat view · 2025" }
+        { file: "fallax-habitat.jpg", alt: "Linothele fallax partly visible among leaf litter and moss", caption: "Habitat view · 2025", width: 1600, height: 900 }
       ],
       video: { id: "6yuCc4-XAwU", title: "Spider snapshot: Linothele fallax", note: "A compact species snapshot of the tiger curtain-web spider." }
     },
@@ -237,9 +249,9 @@
       alt: "Sonja, a Mauremys reevesii turtle, resting on a basking ledge with her head, forelimbs and shell visible",
       intro: "Sonja is the Reeves’s turtle currently in my care and the only vertebrate in the collection. Her portrait shows the patterned head, textured forelimbs and shell as she rests on a basking ledge.",
       gallery: [
-        { file: "sonja-close.jpg", alt: "Sonja lifting her head and forelegs toward the camera", caption: "Sonja up close · 2025" },
+        { file: "sonja-close.jpg", alt: "Sonja lifting her head and forelegs toward the camera", caption: "Sonja up close · 2025", width: 1600, height: 900 },
         { file: "sonja-under-cover.jpg", alt: "Sonja looking out from beneath a wooden shelter", caption: "Under cover", width: 1600, height: 1600 },
-        { file: "sonja-shore.jpg", alt: "Sonja resting at the planted shoreline of her enclosure", caption: "Shoreline habitat · 2025" }
+        { file: "sonja-shore.jpg", alt: "Sonja resting at the planted shoreline of her enclosure", caption: "Shoreline habitat · 2025", width: 1600, height: 898 }
       ],
       video: { id: "lEVuJhaAlNY", title: "Sonja’s new home", note: "A complete look at the home created for Sonja, the collection’s Reeves’s turtle." }
     },
@@ -260,12 +272,14 @@
         { label: "ZooKeys — integrative revision of Monocentropus and Socotran habitat", url: "https://www.utupub.fi/server/api/core/bitstreams/4830c6e0-07a8-40bd-8c91-e7e034e76598/content" }
       ],
       image: "bella-monocentropus-balfouri.jpg",
+      imageWidth: 1600,
+      imageHeight: 898,
       alt: "Bella, a blue and cream Monocentropus balfouri tarantula",
       intro: "Bella is one of two Monocentropus balfouri currently in my care. Her profile uses the stronger open portrait, with blue legs and a pale carapace visible across the frame.",
       gallery: [
-        { file: "bella-close.jpg", alt: "Close view of Bella showing her pale carapace and blue legs", caption: "Bella up close · 2024" },
-        { file: "bella-retreat.jpg", alt: "Bella facing outward from a rounded webbed retreat", caption: "At the retreat · 2024" },
-        { file: "bella-webbing.jpg", alt: "Bella resting on a dense layer of white webbing", caption: "Webbed enclosure · 2024" }
+        { file: "bella-close.jpg", alt: "Close view of Bella showing her pale carapace and blue legs", caption: "Bella up close · 2024", width: 1600, height: 900 },
+        { file: "bella-retreat.jpg", alt: "Bella facing outward from a rounded webbed retreat", caption: "At the retreat · 2024", width: 1600, height: 900 },
+        { file: "bella-webbing.jpg", alt: "Bella resting on a dense layer of white webbing", caption: "Webbed enclosure · 2024", width: 1600, height: 900 }
       ],
       video: { id: "fjac-dh_wAQ", title: "Discover Bella: Monocentropus balfouri", note: "A short individual introduction to Bella and her distinctive blue-and-cream colouring." }
     },
@@ -286,6 +300,8 @@
         { label: "ZooKeys — integrative revision of Monocentropus and Socotran habitat", url: "https://www.utupub.fi/server/api/core/bitstreams/4830c6e0-07a8-40bd-8c91-e7e034e76598/content" }
       ],
       image: "belinda-monocentropus-balfouri.jpg",
+      imageWidth: 1600,
+      imageHeight: 898,
       alt: "Close portrait of Belinda, a Monocentropus balfouri tarantula, showing blue legs and cream markings among webbed cork",
       intro: "Belinda is the second Monocentropus balfouri currently in my care. Her updated portrait clearly shows her blue and cream colouring across webbed cork.",
       video: { id: "ghR2QufL78U", title: "The science behind a vivarium: Belinda’s new setup", note: "A longer build and husbandry video centred on Belinda’s enclosure." }
@@ -310,12 +326,14 @@
         { label: "SpiderNet — mature-male colour and species account", url: "https://spidernet.bay.to/species/omothymus-violaceopes" }
       ],
       image: "omothymus-violaceopes.jpg",
+      imageWidth: 1600,
+      imageHeight: 900,
       alt: "Orion, an Omothymus violaceopes tarantula, standing vertically on bark",
       intro: "Orion was the confirmed male Omothymus violaceopes in the Introvertebrates collection. His archive photographs preserve his violet colour at the time they were taken; mature males become much browner and more slender than females and juveniles.",
       gallery: [
-        { file: "violaceopes-arboreal.jpg", alt: "Full-body view of Orion positioned vertically on bark", caption: "Long-legged arboreal posture · 2024" },
-        { file: "violaceopes-colour.jpg", alt: "Sharp close view of Orion showing his eye cluster and violet colour on the legs", caption: "Eye cluster and violet colour · 2025" },
-        { file: "violaceopes-full-body.jpg", alt: "Extreme macro view of violet and golden setae on Orion", caption: "Violet and golden setae · 2025" }
+        { file: "violaceopes-arboreal.jpg", alt: "Full-body view of Orion positioned vertically on bark", caption: "Long-legged arboreal posture · 2024", width: 1600, height: 900 },
+        { file: "violaceopes-colour.jpg", alt: "Sharp close view of Orion showing his eye cluster and violet colour on the legs", caption: "Eye cluster and violet colour · 2025", width: 1600, height: 900 },
+        { file: "violaceopes-full-body.jpg", alt: "Extreme macro view of violet and golden setae on Orion", caption: "Violet and golden setae · 2025", width: 1600, height: 900 }
       ],
       video: { id: "UPEjF670oIA", title: "Meet Omothymus violaceopes: The stunning blue tarantula", note: "A species-focused introduction to the Singapore blue tarantula." }
     },
@@ -333,12 +351,14 @@
       ],
       sources: [{ label: "World Spider Catalog — Psalmopoeus irminia", url: "https://wsc.nmbe.ch/spec-data/44467/Psalmopoeus_irminia" }],
       image: "clara-psalmopoeus-irminia.jpg",
+      imageWidth: 1600,
+      imageHeight: 898,
       alt: "Clara, a Psalmopoeus irminia tarantula, peering through green leaves",
       intro: "Clara is the Psalmopoeus irminia currently in my care. Her photograph is one of the most atmospheric in the collection, placing her face between dark foliage and soft green light.",
       gallery: [
-        { file: "clara-climbing.jpg", alt: "Clara climbing vertically across bark inside the enclosure", caption: "Climbing posture · 2025" },
-        { file: "clara-webbing.jpg", alt: "Clara standing at the entrance to a broad webbed retreat", caption: "At the webbed retreat · 2025" },
-        { file: "clara-retreat.jpg", alt: "Clara partly concealed inside a narrow arboreal retreat", caption: "Inside the retreat · 2024" },
+        { file: "clara-climbing.jpg", alt: "Clara climbing vertically across bark inside the enclosure", caption: "Climbing posture · 2025", width: 1600, height: 900 },
+        { file: "clara-webbing.jpg", alt: "Clara standing at the entrance to a broad webbed retreat", caption: "At the webbed retreat · 2025", width: 1600, height: 900 },
+        { file: "clara-retreat.jpg", alt: "Clara partly concealed inside a narrow arboreal retreat", caption: "Inside the retreat · 2024", width: 1600, height: 900 },
         { file: "clara-eye-cluster.jpg", alt: "Close crop of Clara’s compact eye cluster, with reflections on the dark eyes", caption: "Clara’s eye cluster · close crop", width: 509, height: 343 }
       ],
       video: { id: "F8HVJVy4PdE", title: "Meet Clara: The Venezuelan sun tiger", note: "A full introduction to Clara and Psalmopoeus irminia on the Introvertebrates channel." }
@@ -357,12 +377,15 @@
       ],
       sources: [{ label: "Morphological study of Psyttala horrida eggs and nymphs", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9696875/" }],
       image: "psyttala-horrida.jpg",
+      imageWidth: 1600,
+      imageHeight: 900,
       alt: "Adult Psyttala horrida assassin bug moving across the enclosure floor",
       intro: "Psyttala horrida brings a different shape and scale to the current collection. The profile opens with an adult moving across the enclosure floor, while the gallery compares the bright nymph stage with adult foliage and ground use.",
       gallery: [
-        { file: "psyttala-nymph.jpg", alt: "Orange and black Psyttala horrida nymph showing its developing armour and wingless body", caption: "Nymph colour and developing armour · 2025" },
-        { file: "psyttala-foliage.jpg", alt: "Adult Psyttala horrida climbing across green foliage", caption: "Adult among foliage · archive portrait" },
-        { file: "psyttala-ground.jpg", alt: "Adult Psyttala horrida moving across the enclosure floor", caption: "Adult on the enclosure floor · 2025" }
+        { file: "psyttala-nymph.jpg", alt: "Orange and black Psyttala horrida nymph showing its wingless body", caption: "Nymph colour and wingless body · 2025", width: 1600, height: 900 },
+        { file: "psyttala-nymph-on-bark-2026.jpg", alt: "Side view of a black Psyttala horrida nymph with orange legs gripping vertical bark", caption: "Nymph climbing bark · archive photograph", width: 1080, height: 1080 },
+        { file: "psyttala-foliage.jpg", alt: "Adult Psyttala horrida climbing across green foliage", caption: "Adult among foliage · archive portrait", width: 1600, height: 900 },
+        { file: "psyttala-ground.jpg", alt: "Adult Psyttala horrida moving across the enclosure floor", caption: "Adult on the enclosure floor · 2025", width: 1600, height: 900 }
       ],
       video: { id: "sr930b5ycrg", title: "Creating a beautiful assassin bug habitat", note: "The enclosure build and environmental thinking behind the assassin bugs in the collection." }
     },
@@ -380,12 +403,14 @@
       ],
       sources: [{ label: "GBIF Backbone Taxonomy — Pachnoda marginata", url: "https://www.gbif.org/species/1081779" }],
       image: "pachnoda-marginata.jpg",
-      alt: "Pachnoda marginata sun beetles clustered on a branch",
-      intro: "Pachnoda marginata represents the beetles in the current collection. The profile photograph shows several individuals using the same branching structure.",
+      imageWidth: 1600,
+      imageHeight: 898,
+      alt: "A Pachnoda marginata sun beetle on a branch",
+      intro: "Pachnoda marginata represents the beetles in the current collection. The profile photograph shows one adult on a branch; the gallery also records beetles together in the colony.",
       gallery: [
-        { file: "pachnoda-group.jpg", alt: "Several Pachnoda marginata beetles climbing together on dark wood", caption: "Colony group · 2024" },
-        { file: "pachnoda-close.jpg", alt: "Close frontal view of a Pachnoda marginata beetle on wood", caption: "Head and pronotum detail · 2024" },
-        { file: "pachnoda-pair.jpg", alt: "Pair of Pachnoda marginata beetles meeting on a branch", caption: "Pair on a branch · 2024" }
+        { file: "pachnoda-group.jpg", alt: "Several Pachnoda marginata beetles climbing together on dark wood", caption: "Colony group · 2024", width: 1600, height: 900 },
+        { file: "pachnoda-close.jpg", alt: "Close frontal view of a Pachnoda marginata beetle on wood", caption: "Head and pronotum detail · 2024", width: 1600, height: 900 },
+        { file: "pachnoda-pair.jpg", alt: "Pair of Pachnoda marginata beetles meeting on a branch", caption: "Pair on a branch · 2024", width: 1600, height: 900 }
       ],
       video: { id: "o7Ja1Ro3jDo", title: "The beautiful lives of sun beetles", note: "A longer look at the sun beetles’ life cycle, behaviour, and enclosure." }
     },
@@ -406,12 +431,14 @@
         { label: "Ecology and Evolution — natural orientation and climbing observations in tarantulas", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13106993/" }
       ],
       image: "siuzi-theraphosa-apophysis.jpg",
+      imageWidth: 1600,
+      imageHeight: 898,
       alt: "Siuzi, a Theraphosa apophysis tarantula, moving among grass and cork in her enclosure",
       intro: "Siuzi is the Theraphosa apophysis currently in my care. Her updated portrait shows her moving through a naturalistic enclosure of cork and grass.",
       gallery: [
-        { file: "siuzi-face.jpg", alt: "Extreme close view of Siuzi’s face and mouthparts", caption: "Face detail · 2025" },
-        { file: "siuzi-habitat.jpg", alt: "Siuzi holding a large roach after a feeding response", caption: "Feeding response · 2025" },
-        { file: "siuzi-retreat.jpg", alt: "Siuzi facing outward from beneath a cork retreat", caption: "At the retreat · 2024" }
+        { file: "siuzi-face.jpg", alt: "Extreme close view of Siuzi’s face and mouthparts", caption: "Face detail · 2025", width: 1600, height: 900 },
+        { file: "siuzi-habitat.jpg", alt: "Siuzi holding a large roach after a feeding response", caption: "Feeding response · 2025", width: 1600, height: 898 },
+        { file: "siuzi-retreat.jpg", alt: "Siuzi facing outward from beneath a cork retreat", caption: "At the retreat · 2024", width: 1600, height: 900 }
       ],
       video: { id: "f3f4iNm1e7k", title: "When mold grows on a tarantula: A case study with Siuzi", note: "A detailed, individual case study documenting Siuzi and the response to an unusual health concern." }
     }
@@ -1155,7 +1182,7 @@
           <div class="related-profile-grid">
             ${relatedProfiles.map(([relatedKey, related]) => `
               <a class="related-profile-card" href="./${relatedKey}.html">
-                <img src="../assets/collection/${related.image}" alt="" width="640" height="360" loading="lazy" decoding="async">
+                <img src="../assets/collection/${related.image}" alt="" width="${related.imageWidth || 1600}" height="${related.imageHeight || 898}" loading="lazy" decoding="async">
                 <span class="related-profile-copy">
                   <strong>${related.resident.startsWith("Current ") ? related.species : related.resident}</strong>
                   <i>${related.species}</i>

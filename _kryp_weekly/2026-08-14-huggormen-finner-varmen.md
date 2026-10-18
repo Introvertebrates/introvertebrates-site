@@ -10,6 +10,8 @@ description: "Se hvordan en huggorm bruker sol, skygge og skjul for å styre kro
 intro: "Huggormen lager ikke jevn kroppsvarme slik vi gjør. I stedet flytter den seg mellom varme og kjølige steder."
 question: "Ligger hele slangen i solen, eller kan deler av kroppen være nær et skjulested?"
 image: "/assets/kryp/huggorm-norway.jpg"
+image_width: 1800
+image_height: 1200
 image_alt: "Svart huggorm mellom løv og grønt gress i norsk natur"
 image_caption: "Svart huggorm i norsk natur · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#huggorm"

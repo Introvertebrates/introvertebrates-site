@@ -5,6 +5,8 @@ description: "Sammenlign en nymfe og en voksen Psyttala horrida, og se hva som s
 intro: "En ung rovtege er ikke bare en mindre voksen. Farger, pigger og kroppsform utvikles gjennom flere nymfestadier."
 question: "Hvilke farger og former ville du brukt for å skille en nymfe fra et voksent dyr?"
 image: "/assets/collection/psyttala-horrida.jpg"
+image_width: 1600
+image_height: 900
 image_alt: "Psyttala horrida med tydelig lang kropp og gripebein"
 image_caption: "Psyttala horrida i samlingen · fotografert av Introvertebrates"
 link_url: "/species/psyttala-horrida.html"

@@ -11,6 +11,8 @@ date_label: "Uke 34 · 21. august 2026"
 intro: "Ikke alle kakerlakker lever i kjøkken. Mange arter hører hjemme i skogbunnen, i løv og rundt død ved. Se nøye på kroppen, beina og de lange antennene."
 question: "Se på fotografiet. Kan du finne antennene foran hodet, og hvilken vei peker de?"
 image: "/assets/kryp/cockroaches-close.jpg"
+image_width: 1800
+image_height: 1200
 image_alt: "En brunmønstret kakerlakk sett tett fra siden"
 image_caption: "Kakerlakker på nært hold · fotografert av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"

@@ -9,6 +9,8 @@ description: "Se hvordan knelerens foldede forbein kan åpnes raskt når et bytt
 intro: "Knelerens forbein ser nesten ut som om de er foldet til bønn. Egentlig er de spesialiserte gripebein."
 question: "Hvilke ledd må bevege seg for at gripebeinet skal åpne og lukke seg?"
 image: "/assets/kryp/mantis-portrait.jpg"
+image_width: 1200
+image_height: 1800
 image_alt: "Nærportrett av en kneler med trekantet hode og foldede gripebein"
 image_caption: "Kneler på nært hold · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#knelere"

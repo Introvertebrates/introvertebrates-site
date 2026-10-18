@@ -4,6 +4,8 @@ description: "Lær hvordan Siuzi og andre Theraphosa-taranteller kan bruke små 
 intro: "De fine hårene på Siuzis bakkropp er ikke bare pynt. Noen av dem er spesialiserte forsvarsstrukturer."
 question: "Hvor på bakkroppen ser hårlaget tettest eller annerledes ut?"
 image: "/assets/collection/siuzi-theraphosa-apophysis.jpg"
+image_width: 1600
+image_height: 898
 image_alt: "Siuzi, en Theraphosa apophysis, med hårene på bakkroppen synlige"
 image_caption: "Siuzi · Theraphosa apophysis · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#siuzi"

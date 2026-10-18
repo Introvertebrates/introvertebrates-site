@@ -5,6 +5,8 @@ description: "Oppdag hvorfor de to lengste beina hos Damon diadema brukes mer so
 intro: "Det ser ut som Damon har et par altfor lange bein. De er egentlig avanserte sansebein som undersøker omgivelsene."
 question: "Kan du finne de to tynneste og lengste beina på bildet?"
 image: "/assets/kryp/damon-diadema.jpg"
+image_width: 2000
+image_height: 1123
 image_alt: "Damon diadema på mose med de lange sansebeina strukket ut"
 image_caption: "Damon diadema · arkivfoto av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"

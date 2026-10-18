@@ -7,6 +7,8 @@ description: "Oppdag hvordan lange dekkhår og svært fin underull beskytter mos
 intro: "Moskusen ser ut som om pelsen går helt ned til bakken. Under de lange hårene finnes et mykere og svært varmt lag."
 question: "Hvor på kroppen ser du tydeligst forskjellen mellom de lange hårene og den kompakte kroppsformen?"
 image: "/assets/kryp/musk-ox-norway.jpg"
+image_width: 1800
+image_height: 1200
 image_alt: "Moskusflokk med lang pels i steinete fjellterreng på Dovre"
 image_caption: "Moskus på Dovrefjell · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#moskus"

@@ -5,6 +5,8 @@ description: "Følg Pachnoda marginata fra larve til puppe og videre til en farg
 intro: "En solbille ser ikke ut som en liten utgave av seg selv når den klekkes. Kroppen bygges om gjennom fullstendig forvandling."
 question: "Hvilke deler på den voksne billen ville du aldri ha gjettet ut fra en myk larve?"
 image: "/assets/collection/pachnoda-marginata.jpg"
+image_width: 1600
+image_height: 898
 image_alt: "Flere Pachnoda marginata solbiller på en grein"
 image_caption: "Pachnoda marginata i samlingen · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#solbiller"

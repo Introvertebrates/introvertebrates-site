@@ -5,6 +5,8 @@ description: "Tell kroppsledd og bein hos Ethmostigmus trigonopodus, og finn ut 
 intro: "Ethmostigmus trigonopodus har mange bein, men navnet hundrebein lover ikke et bestemt antall. Kroppen følger et tydelig mønster."
 question: "Ser du ett eller to beinpar på hvert synlige kroppsledd?"
 image: "/assets/kryp/ethmostigmus-trigonopodus.jpg"
+image_width: 2000
+image_height: 1333
 image_alt: "Ethmostigmus trigonopodus med mange oransje bein langs den mørke kroppen"
 image_caption: "Ethmostigmus trigonopodus · arkivfoto av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"

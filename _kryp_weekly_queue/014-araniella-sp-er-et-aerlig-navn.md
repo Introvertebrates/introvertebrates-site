@@ -5,6 +5,8 @@ description: "Lær hvorfor en edderkopp noen ganger får et sikkert slektsnavn, 
 intro: "Det grønne utseendet peker mot slekten Araniella. Men flere arter kan ligne på hverandre, og et fotografi viser ikke alltid detaljene som skiller dem."
 question: "Hvilke trekk kan du beskrive uten å måtte gjette hvilken art det er?"
 image: "/assets/kryp/araniella-sp.png"
+image_width: 1600
+image_height: 898
 image_alt: "Grønn Araniella-edderkopp delvis skjult under et blad"
 image_caption: "Araniella sp. · fotografert av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"

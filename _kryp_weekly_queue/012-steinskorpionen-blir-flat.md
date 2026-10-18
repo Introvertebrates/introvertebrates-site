@@ -5,6 +5,8 @@ description: "Se hvordan den flate kroppen og de kraftige klørne hos en Hadogen
 intro: "En smal fjellsprekk kan være et helt landskap. Steinskorpioner i slekten Hadogenes har en kropp som passer inn der mange andre dyr ikke kommer til."
 question: "Se på bildet fra siden. Hvor lav er kroppen sammenlignet med de kraftige klosaksene?"
 image: "/assets/kryp/hadogenes-paucidens.jpg"
+image_width: 2000
+image_height: 2000
 image_alt: "Hadogenes paucidens sett skrått fra siden på en stein"
 image_caption: "Arkivert som Hadogenes paucidens · fotografert av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"

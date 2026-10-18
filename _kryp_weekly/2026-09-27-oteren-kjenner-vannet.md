@@ -7,6 +7,8 @@ description: "Se hvordan oterens kropp, hale, poter og værhår hjelper den med 
 intro: "På nærbildet ser du oterens våte pels, små ører og lange værhår. Værhårene hjelper den med å undersøke det som skjer nær snuten."
 question: "Se på fotografiet. Hvor langt ut fra snuten rekker værhårene, og hvilken vei peker de?"
 image: "/assets/kryp/otter-water.jpg"
+image_width: 1920
+image_height: 1088
 image_alt: "Oter med våt pels og lange værhår ved grunt vann"
 image_caption: "Oter i vannet · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#oter"

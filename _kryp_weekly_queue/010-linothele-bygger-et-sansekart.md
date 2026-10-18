@@ -5,6 +5,8 @@ description: "Se hvordan Linothele fallax kan bruke et stort teppe av silketråd
 intro: "For Linothele er nettet mer enn en felle. Trådene utvider området der edderkoppen kan merke små bevegelser."
 question: "Hvilke mørke og lyse mønstre finner du på bakkroppen?"
 image: "/assets/collection/linothele-fallax-portrait-2026.jpg"
+image_width: 1600
+image_height: 1221
 image_alt: "Linothele fallax med oransje forkropp og mørkt mønster på bakkroppen"
 image_caption: "Linothele fallax i samlingen · fotografert av Introvertebrates"
 link_url: "/species/linothele-fallax.html"

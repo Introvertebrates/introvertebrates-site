@@ -4,6 +4,8 @@ description: "Oppdag hvorfor en voksen hann av Omothymus violaceopes kan se svæ
 intro: "De blåfiolette fargene mange forbinder med arten forteller ikke hele historien. En kjønnsmoden hann blir slankere og får et annet uttrykk."
 question: "Hvilke trekk ville du sammenligne for å skille kroppsform fra ren farge?"
 image: "/assets/collection/omothymus-violaceopes.jpg"
+image_width: 1600
+image_height: 900
 image_alt: "Orion, en hann av Omothymus violaceopes, på bark"
 image_caption: "Orion · Omothymus violaceopes · fotografert av Introvertebrates"
 link_url: "/species/omothymus-violaceopes.html"

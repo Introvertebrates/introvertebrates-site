@@ -6,6 +6,8 @@ description: "Bli kjent med Sonjas ryggskjold, bukskjold og de tre tydelige rygg
 intro: "Skallet er ikke et løst hus. Det er en levende del av Sonjas skjelett og vokser sammen med henne."
 question: "Se på fotografiet. Hvor går kanten av skallet, og hvilke deler av hodet og beina kan du se?"
 image: "/assets/species/sonja-mauremys-reevesii/sonja-shore.jpg"
+image_width: 1600
+image_height: 898
 image_alt: "Sonja, en Mauremys reevesii, ved vannkanten"
 image_caption: "Sonja ved vannkanten · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#sonja"

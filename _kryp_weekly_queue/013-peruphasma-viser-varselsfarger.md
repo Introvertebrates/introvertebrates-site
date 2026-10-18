@@ -5,6 +5,8 @@ description: "Oppdag hvordan Peruphasma schultei kombinerer mørk kropp, røde d
 intro: "Noen dyr prøver å forsvinne i omgivelsene. Peruphasma schultei kan i stedet vise sterke kontraster når den blir forstyrret."
 question: "Se på fotografiet. Hvordan skiller den mørke kroppen og de lange beina seg fra de grønne bladene?"
 image: "/assets/kryp/peruphasma-schultei.jpg"
+image_width: 2000
+image_height: 1333
 image_alt: "Mørk Peruphasma schultei på grønne blader"
 image_caption: "Peruphasma schultei · arkivfoto av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"

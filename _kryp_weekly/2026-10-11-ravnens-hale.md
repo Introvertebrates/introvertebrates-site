@@ -9,6 +9,8 @@ description: "Lær å se etter ravnens store kropp, kraftige nebb og kileformede
 intro: "En ravn kan ligne andre svarte kråkefugler på avstand. I flukt blir formen på halen et nyttig spor."
 question: "Se på fotografiet. Hvilken av de to ravnene har vingene løftet?"
 image: "/assets/kryp/ravens-in-flight.jpg"
+image_width: 1800
+image_height: 1200
 image_alt: "To ravner i toppen av et dødt tre, den ene med vingene løftet"
 image_caption: "Ravner klare til bevegelse · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#ravn"

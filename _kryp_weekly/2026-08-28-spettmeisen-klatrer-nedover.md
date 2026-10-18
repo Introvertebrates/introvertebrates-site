@@ -7,6 +7,8 @@ date_label: "Uke 35 · 28. august 2026"
 intro: "Mange småfugler beveger seg oppover en stamme. Spettmeisen kan også klatre med hodet først nedover – uten å støtte seg på halen."
 question: "Se på fotografiet: Hvilken vei peker hodet, og hvor holder føttene fuglen fast i materen?"
 image: "/assets/kryp/nuthatch-feeder.jpg"
+image_width: 1800
+image_height: 1200
 image_alt: "En spettmeis som klamrer seg sidelengs til en fuglemater"
 image_caption: "Spettmeis på nært hold · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#spettmeis"

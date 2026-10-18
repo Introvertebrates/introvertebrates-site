@@ -5,7 +5,9 @@ title: "Sabrina venter ved skjulestedet"
 description: "Se hvordan Sabrina bruker skjulestedet, silken og følsomme bein til å oppdage små bevegelser."
 intro: "Sabrina trenger ikke løpe rundt for å finne mat. Hun kan vente nær et trygt skjulested og reagere når underlaget vibrerer."
 question: "Hvor på beina ser du oransjerøde felt, og hvor er beina mørke?"
-image: "/assets/collection/sabrina-brachypelma-hamorii.jpg"
+image: "/assets/collection/sabrina-homepage-close.jpg"
+image_width: 1568
+image_height: 1200
 image_alt: "Sabrina, en Brachypelma hamorii, med tydelige oransje knebånd"
 image_caption: "Sabrina på nært hold · fotografert av Introvertebrates"
 link_url: "/kryp-artsprofiler.html#sabrina"

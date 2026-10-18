@@ -2,7 +2,7 @@
   const profiles = [...document.querySelectorAll('.kryp-profile')];
   const cards = [...document.querySelectorAll('.kryp-spotlight-card')];
   const back = document.querySelector('.kk-profile-back');
-  const wildlife = new Set(['huggorm','oter','moskus','spettmeis','ravn','lappugle','sidensvans']);
+  const wildlife = new Set(['huggorm','oter','moskus','spettmeis','ravn','lappugle','sidensvans','gaupe','lunde']);
   const tinaQuestions = {
     skorpion: 'Hvorfor kan vibrasjoner i bakken være viktigere enn godt syn om natten?',
     kakerlakker: 'Hva ville skjedd i skogen hvis ingenting spiste døde blader og tre?',

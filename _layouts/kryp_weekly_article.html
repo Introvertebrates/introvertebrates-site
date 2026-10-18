@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="{{ '/assets/homepage.css?v=20260906a' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/kryp.css?v=20260908b' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/kryp-weekly.css?v=20260905a' | relative_url }}">
-<link rel="stylesheet" href="/assets/kryp-refined.css">
+<link rel="stylesheet" href="/assets/kryp-refined.css?v=20261018a">
 </head>
 <body class="kryp-refined">
 <a class="skip-link" href="#main-content">Hopp til innhold</a>
@@ -50,7 +50,7 @@
       <div class="kryp-shell">
         <nav class="kryp-weekly-breadcrumbs" aria-label="Brødsmuler"><a href="{{ '/kryp-og-krabater.html' | relative_url }}">Kryp &amp; Krabater</a><span aria-hidden="true">/</span><a href="{{ '/kryp-ukearkiv.html' | relative_url }}">Ukas dyr</a><span aria-hidden="true">/</span><span>{{ page.title }}</span></nav>
         <div class="kryp-weekly-article-grid">
-          <figure class="kryp-weekly-article-media"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}" width="1800" height="1200" fetchpriority="high"><figcaption>{{ page.image_caption | default: page.image_alt }}</figcaption></figure>
+          <figure class="kryp-weekly-article-media"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}" width="{{ page.image_width | default: 1600 }}" height="{{ page.image_height | default: 900 }}" fetchpriority="high"><figcaption>{{ page.image_caption | default: page.image_alt }}</figcaption></figure>
           <div><p class="kryp-eyebrow">{{ page.date_label }}</p><h1>{{ page.title }}</h1><p>{{ page.intro }}</p><div class="kryp-weekly-question"><img src="{{ '/Tina – No background.png' | relative_url }}" alt="" width="2500" height="2500"><p><strong>Tina spør:</strong> {{ page.question }}</p></div></div>
         </div>
       </div>

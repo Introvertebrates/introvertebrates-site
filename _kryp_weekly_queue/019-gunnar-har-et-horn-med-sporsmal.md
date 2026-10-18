@@ -4,6 +4,8 @@ description: "Se hornet på ryggskjoldet til Ceratogyrus darlingi, og lær hvorf
 intro: "Gunnars horn er lett å få øye på. Det vanskeligere spørsmålet er hva hornet faktisk gjør for edderkoppen."
 question: "Hvor sitter hornet i forhold til beina og bakkroppen?"
 image: "/assets/collection/ceratogyrus-darlingi.jpg"
+image_width: 1600
+image_height: 900
 image_alt: "Gunnar, en Ceratogyrus darlingi, sett skrått fra siden med hornet på ryggskjoldet synlig"
 image_caption: "Gunnar · Ceratogyrus darlingi · fotografert av Introvertebrates"
 link_url: "/species/ceratogyrus-darlingi.html"

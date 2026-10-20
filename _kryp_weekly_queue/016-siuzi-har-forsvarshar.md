@@ -11,7 +11,7 @@ image_caption: "Siuzi · Theraphosa apophysis · fotografert av Introvertebrates
 link_url: "/kryp-artsprofiler.html#siuzi"
 link_label: "Møt Siuzi i den norske artsprofilen"
 colouring_url: "/kryp-fargelegging.html#colouring-siuzi"
-colouring_image: "/assets/kryp/colouring/siuzi-theraphosa-apophysis-original.png"
+colouring_image: "/assets/kryp/colouring/siuzi-theraphosa-apophysis-portrait.png"
 colouring_image_alt: "Fotografibasert fargeleggingsark av Siuzi"
 colouring_label: "Fargelegg Siuzi"
 ---

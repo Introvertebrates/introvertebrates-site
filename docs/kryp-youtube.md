@@ -22,10 +22,14 @@ videos older than that window are retained only while YouTube oEmbed remains
 accessible. This detects unavailable/private videos, but an older video later
 changed to unlisted can remain accessible via oEmbed. Remove such an archived
 entry from the generated JSON if it must also disappear from the website.
-Recent entries that disappear from the feed are removed automatically. Feed
-errors stop the job and preserve the existing list; the website never falls
-back to showing the schedule or private catalog. An empty feed is treated as
-an error and requires review rather than wiping the library.
+Recent entries that disappear from the feed are removed automatically. Temporary
+server errors, rate limits and connection failures are retried up to four times,
+waiting 5, 10 and 20 seconds between attempts. Intermittent 404 responses are
+retried for the channel feed only; an oEmbed 404 still removes an unavailable
+archived video. Persistent feed errors stop the job and preserve the existing
+list; the website never falls back to showing the schedule or private catalog.
+An empty feed is treated as an error and requires review rather than wiping
+the library.
 
 The workflow commits changed public data and requests a GitHub Pages rebuild,
 following the existing weekly-animal workflow. It has no YouTube login or

@@ -1,8 +1,12 @@
 import datetime as dt
 import importlib.util
+import io
 import json
 from pathlib import Path
+import tempfile
 import unittest
+from unittest.mock import patch
+import urllib.error
 
 spec = importlib.util.spec_from_file_location('sync', Path(__file__).with_name('sync-kryp-youtube.py'))
 sync = importlib.util.module_from_spec(spec)
@@ -46,6 +50,69 @@ class PublicVideosTest(unittest.TestCase):
         self.assertEqual([item['id'] for item in result], ['live'])
         result = sync.build_items(entries, previous, {}, lambda _: True)
         self.assertEqual([item['id'] for item in result], ['live', 'old'])
+
+
+class NetworkRetryTest(unittest.TestCase):
+    @patch.object(sync.time, 'sleep')
+    @patch.object(sync.urllib.request, 'urlopen')
+    def test_temporary_server_and_network_errors_recover(self, urlopen, sleep):
+        url = 'https://www.youtube.com/feeds/videos.xml'
+        failures = [urllib.error.HTTPError(url, code, 'Temporary error', {}, None)
+                    for code in (408, 429, 500, 503)]
+        failures += [urllib.error.URLError('Connection interrupted'),
+                     TimeoutError('Timed out'), ConnectionResetError('Connection reset')]
+        for failure in failures:
+            with self.subTest(failure=failure):
+                urlopen.reset_mock()
+                sleep.reset_mock()
+                urlopen.side_effect = [failure, io.BytesIO(b'public feed')]
+                self.assertEqual(sync.get(url), b'public feed')
+                self.assertEqual(urlopen.call_count, 2)
+                sleep.assert_called_once_with(5)
+
+    @patch.object(sync.time, 'sleep')
+    @patch.object(sync.urllib.request, 'urlopen')
+    def test_feed_not_found_is_retried_but_unavailable_video_is_removed(self, urlopen, sleep):
+        url = 'https://www.youtube.com/feeds/videos.xml'
+        urlopen.side_effect = [urllib.error.HTTPError(url, 404, 'Not Found', {}, None),
+                               io.BytesIO(b'public feed')]
+        self.assertEqual(sync.get(url, retry_not_found=True), b'public feed')
+        sleep.assert_called_once_with(5)
+
+        urlopen.reset_mock()
+        sleep.reset_mock()
+        urlopen.side_effect = urllib.error.HTTPError(url, 404, 'Not Found', {}, None)
+        self.assertFalse(sync.accessible('removed-video'))
+        self.assertEqual(urlopen.call_count, 1)
+        sleep.assert_not_called()
+
+    @patch.object(sync.time, 'sleep')
+    @patch.object(sync.urllib.request, 'urlopen')
+    def test_permanent_request_errors_fail_without_retry(self, urlopen, sleep):
+        urlopen.side_effect = urllib.error.HTTPError('https://www.youtube.com', 400, 'Bad Request', {}, None)
+        with self.assertRaises(urllib.error.HTTPError):
+            sync.get('https://www.youtube.com')
+        self.assertEqual(urlopen.call_count, 1)
+        sleep.assert_not_called()
+
+    @patch.object(sync.time, 'sleep')
+    @patch.object(sync.urllib.request, 'urlopen')
+    def test_exhausted_retries_fail_and_preserve_published_data(self, urlopen, sleep):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            output = root / 'assets/data/kryp-youtube.json'
+            output.parent.mkdir(parents=True)
+            original = b'{"channelId":"existing","items":[{"id":"keep-me"}]}\n'
+            output.write_bytes(original)
+            (root / 'tools').mkdir()
+            (root / 'tools/kryp-youtube-catalog.json').write_text('{}', encoding='utf-8')
+            failure = urllib.error.HTTPError('https://www.youtube.com', 503, 'Unavailable', {}, None)
+            urlopen.side_effect = failure
+            with patch.object(sync, 'ROOT', root), self.assertRaises(urllib.error.HTTPError):
+                sync.main()
+            self.assertEqual(output.read_bytes(), original)
+            self.assertEqual(urlopen.call_count, 4)
+            self.assertEqual([call.args[0] for call in sleep.call_args_list], [5, 10, 20])
 
 
 if __name__ == '__main__':

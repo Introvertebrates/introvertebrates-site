@@ -2,6 +2,8 @@
 import datetime as dt
 import json
 from pathlib import Path
+import sys
+import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -28,10 +30,29 @@ def public_entries(xml, now=None):
     return entries
 
 
-def get(url):
+def get(url, *, retry_not_found=False):
     request = urllib.request.Request(url, headers={'User-Agent': 'Introvertebrates-public-video-sync/1.0'})
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return response.read()
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return response.read()
+        except urllib.error.HTTPError as error:
+            # The channel feed intermittently returns 404 even for a valid
+            # channel. An oEmbed 404 still means an archived video is unavailable.
+            transient = (error.code in (408, 429) or 500 <= error.code < 600
+                         or (retry_not_found and error.code == 404))
+            if not transient or attempt == 3:
+                raise
+            reason = f'HTTP {error.code}'
+            error.close()
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as error:
+            if attempt == 3:
+                raise
+            reason = str(error)
+        delay = 5 * (2 ** attempt)
+        print(f'YouTube request failed ({reason}); retrying in {delay}s '
+              f'(attempt {attempt + 2}/4).', file=sys.stderr)
+        time.sleep(delay)
 
 
 def accessible(video_id):
@@ -68,7 +89,8 @@ def main():
     output = ROOT / 'assets/data/kryp-youtube.json'
     catalog = json.loads((ROOT / 'tools/kryp-youtube-catalog.json').read_text(encoding='utf-8'))
     previous = json.loads(output.read_text(encoding='utf-8'))['items'] if output.exists() else []
-    entries = public_entries(get(f'https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL}'))
+    entries = public_entries(get(f'https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL}',
+                                retry_not_found=True))
     items = build_items(entries, previous, catalog)
     output.write_text(json.dumps({'channelId': CHANNEL, 'items': items}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'Confirmed {len(items)} published videos. Scheduled videos are never added from the catalog alone.')

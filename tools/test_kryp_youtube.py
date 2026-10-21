@@ -115,5 +115,79 @@ class NetworkRetryTest(unittest.TestCase):
             self.assertEqual([call.args[0] for call in sleep.call_args_list], [5, 10, 20])
 
 
+class VerifiedCacheTest(unittest.TestCase):
+    def setUp(self):
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        self.root = Path(directory.name)
+        self.output = self.root / 'assets/data/kryp-youtube.json'
+        self.output.parent.mkdir(parents=True)
+        (self.root / 'tools').mkdir()
+        (self.root / 'tools/kryp-youtube-catalog.json').write_text('{}', encoding='utf-8')
+        self.now = dt.datetime.now(dt.timezone.utc)
+        published = (self.now - dt.timedelta(days=2)).isoformat()
+        self.items = [{'id': 'public', 'title': 'Public', 'published': published,
+                       'summary': '', 'profiles': [], 'norwegianProfiles': [], 'kind': 'video'}]
+        self.xml = (f'<feed xmlns="http://www.w3.org/2005/Atom" '
+                    f'xmlns:yt="http://www.youtube.com/xml/schemas/2015">'
+                    f'<yt:channelId>{sync.CHANNEL}</yt:channelId>'
+                    f'<entry><yt:videoId>public</yt:videoId><title>Public</title>'
+                    f'<published>{published}</published></entry></feed>').encode()
+        for owner, name, value in [(sync, 'ROOT', self.root),
+                                   (sync.time, 'sleep', None),
+                                   (sync.urllib.request, 'urlopen', None)]:
+            replacement = patch.object(owner, name, value) if name == 'ROOT' else patch.object(owner, name)
+            mocked = replacement.start()
+            self.addCleanup(replacement.stop)
+            if name == 'urlopen':
+                self.urlopen = mocked
+
+    def write_cache(self, verified, channel=sync.CHANNEL):
+        data = {'channelId': channel, 'items': self.items}
+        if verified is not None:
+            data['lastVerifiedAt'] = verified
+        self.output.write_text(json.dumps(data), encoding='utf-8')
+        return self.output.read_bytes()
+
+    def test_short_outage_warns_and_keeps_recent_verified_cache(self):
+        original = self.write_cache((self.now - dt.timedelta(hours=1)).isoformat())
+        self.urlopen.side_effect = urllib.error.HTTPError('https://www.youtube.com', 500, 'Error', {}, None)
+        with patch('builtins.print') as report:
+            sync.main()
+        self.assertEqual(self.output.read_bytes(), original)
+        self.assertEqual(self.urlopen.call_count, 4)
+        self.assertTrue(any(call.args[0].startswith('::warning::') for call in report.call_args_list))
+
+    def test_stale_or_unverified_cache_still_fails(self):
+        cases = [(None, sync.CHANNEL),
+                 ((self.now - dt.timedelta(hours=25)).isoformat(), sync.CHANNEL),
+                 ((self.now + dt.timedelta(hours=1)).isoformat(), sync.CHANNEL),
+                 ('invalid timestamp', sync.CHANNEL),
+                 (self.now.isoformat(), 'wrong-channel')]
+        for verified, channel in cases:
+            with self.subTest(verified=verified, channel=channel):
+                original = self.write_cache(verified, channel)
+                self.urlopen.reset_mock()
+                self.urlopen.side_effect = urllib.error.HTTPError('https://www.youtube.com', 404, 'Not Found', {}, None)
+                with self.assertRaises(urllib.error.HTTPError):
+                    sync.main()
+                self.assertEqual(self.output.read_bytes(), original)
+                self.assertEqual(self.urlopen.call_count, 4)
+
+    def test_success_refreshes_verification_when_due(self):
+        self.write_cache((self.now - dt.timedelta(hours=13)).isoformat())
+        self.urlopen.return_value = io.BytesIO(self.xml)
+        sync.main()
+        data = json.loads(self.output.read_text(encoding='utf-8'))
+        self.assertEqual(data['items'], self.items)
+        self.assertGreaterEqual(dt.datetime.fromisoformat(data['lastVerifiedAt']), self.now)
+
+    def test_unchanged_recent_data_does_not_create_commit_churn(self):
+        original = self.write_cache((self.now - dt.timedelta(hours=1)).isoformat())
+        self.urlopen.return_value = io.BytesIO(self.xml)
+        sync.main()
+        self.assertEqual(self.output.read_bytes(), original)
+
+
 if __name__ == '__main__':
     unittest.main()

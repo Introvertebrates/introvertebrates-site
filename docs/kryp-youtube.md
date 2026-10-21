@@ -26,10 +26,15 @@ Recent entries that disappear from the feed are removed automatically. Temporary
 server errors, rate limits and connection failures are retried up to four times,
 waiting 5, 10 and 20 seconds between attempts. Intermittent 404 responses are
 retried for the channel feed only; an oEmbed 404 still removes an unavailable
-archived video. Persistent feed errors stop the job and preserve the existing
-list; the website never falls back to showing the schedule or private catalog.
-An empty feed is treated as an error and requires review rather than wiping
-the library.
+archived video. If all retries fail but existing public data was verified within
+24 hours, the job reports a warning, preserves the file unchanged and tries again
+on the next scheduled run. Missing, invalid or older verification means the job
+fails and sends the usual failure alert. Successful checks refresh `lastVerifiedAt`
+when content changes or the recorded verification is at least 12 hours old,
+avoiding a commit and site rebuild on every hourly check.
+
+The website never falls back to showing the schedule or private catalog. An
+empty feed or an unexpected channel is still an error that requires review.
 
 The workflow commits changed public data and requests a GitHub Pages rebuild,
 following the existing weekly-animal workflow. It has no YouTube login or

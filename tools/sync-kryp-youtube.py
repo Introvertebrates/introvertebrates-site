@@ -30,25 +30,29 @@ def public_entries(xml, now=None):
     return entries
 
 
+def temporary_error(error, *, retry_not_found=False):
+    if isinstance(error, urllib.error.HTTPError):
+        return (error.code in (408, 429) or 500 <= error.code < 600
+                or (retry_not_found and error.code == 404))
+    return isinstance(error, (urllib.error.URLError, TimeoutError, ConnectionError))
+
+
 def get(url, *, retry_not_found=False):
     request = urllib.request.Request(url, headers={'User-Agent': 'Introvertebrates-public-video-sync/1.0'})
     for attempt in range(4):
         try:
             with urllib.request.urlopen(request, timeout=30) as response:
                 return response.read()
-        except urllib.error.HTTPError as error:
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as error:
             # The channel feed intermittently returns 404 even for a valid
             # channel. An oEmbed 404 still means an archived video is unavailable.
-            transient = (error.code in (408, 429) or 500 <= error.code < 600
-                         or (retry_not_found and error.code == 404))
-            if not transient or attempt == 3:
+            if not temporary_error(error, retry_not_found=retry_not_found) or attempt == 3:
                 raise
-            reason = f'HTTP {error.code}'
-            error.close()
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as error:
-            if attempt == 3:
-                raise
-            reason = str(error)
+            if isinstance(error, urllib.error.HTTPError):
+                reason = f'HTTP {error.code}'
+                error.close()
+            else:
+                reason = str(error)
         delay = 5 * (2 ** attempt)
         print(f'YouTube request failed ({reason}); retrying in {delay}s '
               f'(attempt {attempt + 2}/4).', file=sys.stderr)
@@ -85,14 +89,41 @@ def build_items(entries, previous, catalog, check_accessible=accessible):
     return sorted(result, key=lambda item: item['published'], reverse=True)
 
 
+def verification_time(data, now):
+    timestamp = data.get('lastVerifiedAt')
+    if data.get('channelId') != CHANNEL or not data.get('items') or not isinstance(timestamp, str):
+        return None
+    try:
+        verified = dt.datetime.fromisoformat(timestamp.replace('Z', '+00:00'))
+    except ValueError:
+        return None
+    return verified if verified.tzinfo is not None and verified <= now else None
+
+
 def main():
     output = ROOT / 'assets/data/kryp-youtube.json'
     catalog = json.loads((ROOT / 'tools/kryp-youtube-catalog.json').read_text(encoding='utf-8'))
-    previous = json.loads(output.read_text(encoding='utf-8'))['items'] if output.exists() else []
-    entries = public_entries(get(f'https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL}',
-                                retry_not_found=True))
-    items = build_items(entries, previous, catalog)
-    output.write_text(json.dumps({'channelId': CHANNEL, 'items': items}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    data = json.loads(output.read_text(encoding='utf-8')) if output.exists() else {}
+    previous = data.get('items', [])
+    now = dt.datetime.now(dt.timezone.utc)
+    verified = verification_time(data, now)
+    try:
+        entries = public_entries(get(f'https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL}',
+                                    retry_not_found=True), now)
+        items = build_items(entries, previous, catalog)
+    except (urllib.error.URLError, TimeoutError, ConnectionError) as error:
+        if (temporary_error(error, retry_not_found=True) and verified is not None
+                and now - verified < dt.timedelta(hours=24)):
+            print(f'::warning::YouTube is temporarily unavailable ({error}). '
+                  f'Keeping {len(previous)} public videos verified at {data["lastVerifiedAt"]}; '
+                  'the next scheduled run will try again. No website data was changed.')
+            return
+        raise
+    # Refresh the verification timestamp twice daily, or when content changes,
+    # so successful checks do not create a commit and site rebuild every hour.
+    if (items != previous or verified is None or now - verified >= dt.timedelta(hours=12)):
+        data = {'channelId': CHANNEL, 'lastVerifiedAt': now.isoformat(), 'items': items}
+        output.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'Confirmed {len(items)} published videos. Scheduled videos are never added from the catalog alone.')
 
 

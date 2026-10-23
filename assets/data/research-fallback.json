@@ -336,6 +336,20 @@
     "has_body": true
   },
   {
+    "title": "This spider hears flying prey—and catches it with a net",
+    "description": "Ogre-faced spiders can detect airborne sound through their legs, using low-frequency cues to launch backward net-casting strikes at flying insects.",
+    "category": "Behaviour & cognition",
+    "posted_date": "23 October 2026",
+    "source_date": "29 October 2020",
+    "summary": "Experiments on Deinopis spinosa combined neural recordings with behavioural tests. The spiders detected airborne sound from at least two metres away, and low-frequency tones associated with flying insects could trigger a rapid backward strike with their handheld silk net.",
+    "why_it_matters": "Ogre-faced spiders are famous for enormous night-sensitive eyes, but this study revealed a second long-range sensory system. Their legs detect airborne sound, helping them intercept prey outside the visual hunting zone below them—without ears and without hearing exactly as humans do.",
+    "source_url": "https://doi.org/10.1016/j.cub.2020.09.048",
+    "source_name": "Current Biology",
+    "slug": "ogre-faced-spiders-hear-flying-prey",
+    "url": "research/ogre-faced-spiders-hear-flying-prey/",
+    "has_body": true
+  },
+  {
     "title": "This spider turns its web into a spring-loaded catapult",
     "description": "Hyptiotes cavatus launches its triangular web at prey, and a 2025 silk-gene study adds a new chapter to the remarkable mechanism.",
     "category": "Behaviour & cognition",

@@ -41,6 +41,32 @@
   .kk-body-figure svg .kk-map-eyes { fill:#183b2a; stroke-width:1; }
   .kk-body-figure svg .is-selected { fill:#65915a; stroke:#153e24; }
   .kk-body-figure svg .kk-map-legs.is-selected,.kk-body-figure svg .kk-map-palps.is-selected { fill:none; stroke:#315e36; stroke-width:15; }
+
+  /* The actual body illustration is interactive (mouse, touch, and keyboard). */
+  .kk-body-figure svg [data-body-part],
+  .kk-body-figure svg [data-body-marker] {
+    cursor:pointer;
+    touch-action:manipulation;
+  }
+  .kk-body-figure svg [data-body-part].is-selected {
+    filter:drop-shadow(0 0 5px rgba(36,91,44,.5));
+  }
+  .kk-body-figure svg [data-body-part]:focus-visible {
+    outline:3px solid #9b692f;
+    outline-offset:5px;
+  }
+  .kk-body-figure svg .kk-map-tap-line {
+    fill:none;
+    stroke:transparent;
+    stroke-width:35;
+    pointer-events:stroke;
+  }
+  .kk-body-figure svg .kk-map-tap-box,
+  .kk-body-figure svg .kk-map-tap-circle {
+    fill:transparent;
+    stroke:none;
+    pointer-events:all;
+  }
   .kk-map-marker circle { fill:#fffdf2; stroke:#294b33; stroke-width:2; }
   .kk-map-marker text { fill:#163723; font:700 16px Arial,sans-serif; text-anchor:middle; dominant-baseline:middle; }
   .kk-map-marker.is-selected circle { fill:#244e30; stroke:#244e30; }

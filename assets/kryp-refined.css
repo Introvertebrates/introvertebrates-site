@@ -89,7 +89,6 @@ body.kryp-refined { --kk-bg:#0c1917; --kk-panel:#152622; --kk-ink:#f2efdf; --kk-
 .kryp-refined .kryp-profile-grid { gap:45px; align-items:start; grid-template-columns:1fr 1fr; }
 .kryp-refined .kryp-profile-copy h2 { font-size:48px; }
 .kryp-refined .kryp-profile-media img { border-radius:10px; aspect-ratio:auto; object-fit:contain; }
-.kryp-refined .kryp-spotlight-card[href="#lunde"] img { object-fit:contain; background:#031018; }
 .trail-animal-media img[src$="gaupe-archive-2026.jpg"] { object-fit:contain; }
 .kryp-refined .kryp-profile-facts { display:block; }
 .kryp-refined .kryp-profile-facts > article { background:transparent; border:0; border-top:1px solid #ffffff1c; border-radius:0; padding:18px 0; }

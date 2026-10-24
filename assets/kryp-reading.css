@@ -65,6 +65,7 @@
   .kk-body-figure svg .kk-map-tap-circle {
     fill:transparent;
     stroke:none;
+    opacity:0;
     pointer-events:all;
   }
   .kk-map-marker circle { fill:#fffdf2; stroke:#294b33; stroke-width:2; }

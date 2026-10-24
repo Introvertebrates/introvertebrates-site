@@ -1,0 +1,18 @@
+/* Learning activities shared by Kryp & Krabater's six animal trails. */
+.trail-learning-section { background:linear-gradient(180deg,rgba(154,223,133,.035),rgba(105,200,238,.025)); }
+.trail-learning-head { max-width:760px; margin-bottom:27px; }
+.trail-learning-head h2 { margin:0 0 13px; color:var(--kryp-cream); font-size:clamp(2rem,5vw,3.4rem); line-height:1.12; letter-spacing:-.045em; }
+.trail-learning-head p { max-width:66ch; color:rgba(246,240,223,.76); line-height:1.75; }
+.trail-learning-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:15px; margin:0; padding:0; list-style:none; }
+.trail-learning-steps li { position:relative; padding:25px; border:1px solid rgba(154,223,133,.22); background:rgba(5,29,38,.82); border-radius:19px; }
+.trail-learning-step { display:block; margin-bottom:12px; color:var(--kryp-moss); font-size:.75rem; letter-spacing:.14em; font-weight:800; }
+.trail-learning-steps strong { display:block; color:var(--kryp-cream); font-size:1.4rem; margin-bottom:10px; }
+.trail-learning-steps p { margin:0; color:rgba(246,240,223,.8); line-height:1.7; }
+.trail-learning-hint { max-width:800px; margin-top:20px; padding:18px 22px; border:1px solid rgba(105,200,238,.2); border-radius:15px; color:var(--kryp-cream); }
+.trail-learning-hint summary { cursor:pointer; font-weight:750; min-height:36px; padding:8px 0; color:var(--kryp-moss); }
+.trail-learning-hint p { margin:10px 0 0; line-height:1.7; color:rgba(246,240,223,.84); }
+.trail-learning-photo { width:min(100%,480px); margin:20px 0 0; overflow:hidden; border:1px solid rgba(246,240,223,.15); border-radius:18px; }
+.trail-learning-photo img { width:100%; height:auto; display:block; object-fit:contain; }
+.trail-learning-photo figcaption { padding:16px 20px; color:rgba(246,240,223,.72); font-size:.88rem; line-height:1.6; }
+@media(max-width:760px){.trail-learning-steps{grid-template-columns:1fr}.trail-learning-steps li{padding:21px}}
+@media print {.trail-learning-steps{grid-template-columns:repeat(3,minmax(0,1fr))}}

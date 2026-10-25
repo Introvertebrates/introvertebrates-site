@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { dateStamp, weekKey, publicationBlocked } from './weekly-calendar.mjs';
+import { dateStamp, weekKey, publicationBlocked, scheduledPublicationDate } from './weekly-calendar.mjs';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -38,4 +38,19 @@ test('publisher consumes Sonja then Kneler, never twice in one week', () => {
     assert.match(run('2026-09-20'),/Published 002-Kneler/);
     assert.equal(fs.readdirSync(path.join(root,'_kryp_weekly_queue')).length,0);
   } finally { fs.rmSync(root,{recursive:true,force:true}); }
+});
+
+test('never stamp a future-dated 10:00 article during a Sunday morning build', () => {
+  assert.equal(scheduledPublicationDate('2026-10-25', '09:59'), null);
+  assert.equal(scheduledPublicationDate('2026-10-25', '10:00'), '2026-10-25');
+  assert.equal(scheduledPublicationDate('2026-11-01', '10:07'), '2026-11-01');
+  assert.equal(scheduledPublicationDate('2026-07-12', '10:07'), '2026-07-12');
+});
+
+test('Monday recovery always fills the preceding Sunday without consuming another week', () => {
+  assert.equal(scheduledPublicationDate('2026-10-26', '10:17'), '2026-10-25');
+  assert.equal(scheduledPublicationDate('2027-01-04', '10:17'), '2027-01-03');
+  assert.equal(scheduledPublicationDate('2026-10-27', '10:17'), null);
+  assert.equal(scheduledPublicationDate('2026-10-24', '12:00'), null);
+  assert.throws(() => scheduledPublicationDate('2026-10-25', '25:19'), /Invalid Oslo clock/);
 });

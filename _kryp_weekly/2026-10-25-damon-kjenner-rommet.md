@@ -14,7 +14,7 @@ image_caption: "Damon diadema · arkivfoto av Introvertebrates"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 colouring_url: "/kryp-fargelegging.html#colouring-damon"
-colouring_image: "/assets/kryp/colouring/damon-weekly.png?v=eeac6700808e"
+colouring_image: "/assets/kryp/colouring/damon-weekly.png?v=d7eac9280874"
 colouring_image_width: 1122
 colouring_image_height: 1402
 colouring_image_alt: "Fargeleggingsark av Damon"

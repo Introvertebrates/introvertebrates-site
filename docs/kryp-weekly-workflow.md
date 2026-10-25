@@ -2,21 +2,34 @@
 
 Each weekly article lives permanently in `_kryp_weekly/`. Jekyll sorts the collection by `date`: the newest entry becomes the featured card on `kryp-og-krabater.html`, while every entry remains available through `kryp-ukearkiv.html` and its own article URL.
 
-## Automatic Sunday publishing
+## Automatic Sunday publishing and recovery
 
-The site keeps pre-approved articles in `_kryp_weekly_queue/`. Every Sunday, `.github/workflows/publish-kryp-weekly.yml` is scheduled at 07:15, 08:15 and 09:15 UTC. That corresponds to 08:15, 09:15 and 10:15 in Norwegian winter time, or 09:15, 10:15 and 11:15 in summer time. These are retry opportunities, not three publication slots: GitHub Actions schedules can be delayed, and the publisher blocks another article when the current ISO week is already occupied or a published entry is less than seven days away.
+The approved articles remain in `_kryp_weekly_queue/` until a publisher actually commits them. GitHub Actions `.github/workflows/publish-kryp-weekly.yml` uses **Europe/Oslo** time so DST changes no longer shift the schedule:
 
-The script takes the alphabetically first queued file, adds the current Oslo date and week label, moves it into `_kryp_weekly/`, checks its local image and destination link, and commits the change. The workflow then requests a GitHub Pages rebuild explicitly, because a commit created with the workflow token does not trigger that rebuild on its own. If the queue is empty, or the current week is already occupied, the workflow exits without consuming another queued article.
+- Target: **Sunday at or shortly after 10:00 Norwegian time**. Cron retries at **10:07, 10:22, 10:37, 10:52**, then each 15 minutes through **13:52**.
+- Safety net: Monday checks at **10:17, 10:47, 12:17, 12:47** Norwegian time. If the previous Sunday never published, the recovery post receives **Sunday's date**, preserving the weekly archive.
+- Independent attempts reduce the chance of losing an entire publication to GitHub's occasional delayed or dropped scheduled events. GitHub does **not** guarantee minute-precise cron execution.
+- Manual emergency publishing remains available using **Actions > Publish Kryp & Krabater weekly animal > Run workflow**. This explicit `workflow_dispatch` path uses `--force` to allow recovery outside the ordinary Sunday window.
 
-Queue filenames begin with a three-digit order such as `001-`. Keep at least four verified entries ready so there is time to review the next month of articles. Every queued article must use an Introvertebrates-owned image and contain claims that are appropriate for a young Norwegian audience.
+### Why the old setup failed
 
-Run a dry test without moving a file:
+The old schedule ran on Sunday at 07:15, 08:15 and 09:15 UTC, including times **before 10:00 in Oslo**. The publisher always dated the article at `10:00 Europe/Oslo`; a premature Jekyll build could thus skip the future-dated article, and later retries treated the week as already published without rebuilding. On 25 October 2026, no publishing workflow runs had appeared by the time we investigated even though earlier slots had passed, consistent with GitHub Actions' documented best-effort scheduling.
+
+The publisher now **refuses to release before 10:00 Oslo** on Sundays. Ordinary scheduled events outside Sunday or Monday's recovery window cannot accidentally publish an issue dated Tuesday/Wednesday. The ISO-week and seven-day duplication safeguards are unchanged. Unit tests cover DST-era Sunday dates, the early-build gate and Monday backfill.
+
+### Verifying the actual site
+
+The publisher outputs the permalink of the selected article, even on a duplicate-protected retry. The workflow checks whether its public page returns HTTP 200; if the page is missing, it **requests a GitHub Pages rebuild**, retries the check for several minutes and **fails visibly** if it still cannot verify the page. A newly published article always requests a rebuild. This closes the previous hole where an already-committed article could remain invisible indefinitely.
+
+If a scheduled event is **never created**, GitHub has no native failure notification. The repository's Actions page can distinguish a missing cron event from a failed job. If precision is essential, an independent external scheduler or watchdog is still required; GitHub Actions alone cannot guarantee an exact minute.
+
+Queue filenames begin with a three-digit order such as `010-`. Keep at least four checked entries ready so there is time to review the next month of articles. New colouring sheets become public together with the article.
+
+A manual dry-run can still be tested without moving a file:
 
 ```powershell
-node tools/publish-next-kryp-weekly.mjs --dry-run --date=2026-09-20
+node tools/publish-next-kryp-weekly.mjs --dry-run --date=2026-11-01
 ```
-
-The workflow can also be started manually from the repository's **Actions** tab.
 
 ## Manual publishing flow
 

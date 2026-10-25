@@ -32,7 +32,7 @@ Sansebeina kan registrere berøring, luftbevegelse og kjemiske signaler. Når Da
 
 De brede, piggete pedipalpene foran kroppen er noe annet enn sansebeina. De brukes til å gripe bytte. Se derfor på dyrets bevegelser uten å ta på det eller plassere fingre foran kroppen.
 
-## Visste du at? En piskedderkopp i Harry Potter!
+## Du kan se en piskedderkopp i Harry Potter!
 
 Har du sett *Harry Potter og Ildbegeret*? I en av scenene bruker professor Alastor «Galøye» Bister (Mad-Eye Moody på engelsk) et dyr som ligner på Damon. Det er en piskedderkopp! Den ser kanskje litt skummel ut på film, men i virkeligheten er piskedderkopper ikke farlige for mennesker. De bruker de lange sansebeina sine til å utforske verden – helt uten magi.
 

@@ -1,4 +1,4 @@
-import { dateStamp, publicationBlocked } from "./weekly-calendar.mjs";
+import { dateStamp, publicationBlocked, scheduledPublicationDate, weekKey } from "./weekly-calendar.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -8,18 +8,21 @@ const siteRoot = path.resolve(toolsDirectory, "..");
 const queueDirectory = path.join(siteRoot, "_kryp_weekly_queue");
 const publishedDirectory = path.join(siteRoot, "_kryp_weekly");
 const dryRun = process.argv.includes("--dry-run");
+const force = process.argv.includes("--force");
 const dateArgument = process.argv.find((argument) => argument.startsWith("--date="));
 
-const osloDate = () => {
-  if (dateArgument) return dateArgument.slice("--date=".length);
-  const parts = new Intl.DateTimeFormat("en-CA", {
+const osloNow = () => {
+  const parts = new Intl.DateTimeFormat("en-GB", {
     timeZone: "Europe/Oslo",
     year: "numeric",
     month: "2-digit",
-    day: "2-digit"
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23"
   }).formatToParts(new Date());
   const values = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
-  return `${values.year}-${values.month}-${values.day}`;
+  return { date: `${values.year}-${values.month}-${values.day}`, clock: `${values.hour}:${values.minute}` };
 };
 
 const isoWeek = (dateText) => {
@@ -65,15 +68,32 @@ if (!queue.length) {
   process.exit(0);
 }
 
-const dateText = osloDate();
+const now = osloNow();
+const dateText = dateArgument
+  ? dateArgument.slice("--date=".length)
+  : force
+    ? now.date
+    : scheduledPublicationDate(now.date, now.clock);
+if (!dateText) {
+  console.log(`Outside the Sunday 10:00+ Oslo release window or Monday recovery window (${now.date} ${now.clock}); queue unchanged.`);
+  process.exit(0);
+}
 dateStamp(dateText);
-const publishedDates = fs.readdirSync(publishedDirectory).filter(name => name.endsWith('.md')).map(name => {
-  const value = frontMatterValue(fs.readFileSync(path.join(publishedDirectory, name), 'utf8'), 'date');
-  if (!value) throw new Error(name + ' has no publication date.');
-  return value.slice(0, 10);
+
+const publishedEntries = fs.readdirSync(publishedDirectory).filter(name => name.endsWith(".md")).map(name => {
+  const value = frontMatterValue(fs.readFileSync(path.join(publishedDirectory, name), "utf8"), "date");
+  if (!value) throw new Error(name + " has no publication date.");
+  return { name, date: value.slice(0, 10) };
 });
-if (publicationBlocked(dateText, publishedDates)) {
-  console.log('A weekly animal already occupies this week or the preceding seven days; queue unchanged.');
+const issueUrl = name => `https://introvertebrates.com/kryp/ukas-dyr/${name.replace(/\.md$/i, "")}/`;
+const setArticleOutput = name => {
+  if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `article_url=${issueUrl(name)}\n`);
+};
+
+if (publicationBlocked(dateText, publishedEntries.map(item => item.date))) {
+  const currentIssue = publishedEntries.find(item => weekKey(item.date) === weekKey(dateText));
+  if (currentIssue) setArticleOutput(currentIssue.name);
+  console.log("A weekly animal already occupies this week or the preceding seven days; queue unchanged.");
   process.exit(0);
 }
 const queueName = queue[0];
@@ -128,4 +148,5 @@ if (dryRun) {
 
 fs.writeFileSync(destinationPath, datedFrontMatter, "utf8");
 fs.unlinkSync(sourcePath);
-console.log(`Published ${queueName} as ${destinationName}.`);
+setArticleOutput(destinationName);
+console.log(`Published ${queueName} as ${destinationName} at/after the 10:00 Oslo release time.`);

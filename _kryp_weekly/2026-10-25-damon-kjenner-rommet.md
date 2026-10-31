@@ -11,6 +11,9 @@ image_width: 2000
 image_height: 1123
 image_alt: "Damon diadema på mose med de lange sansebeina strukket ut"
 image_caption: "Damon diadema · arkivfoto av Introvertebrates"
+video_url: "/assets/kryp/video/damon-diadema.mp4"
+video_mobile_url: "/assets/kryp/video/damon-diadema-vertical.mp4"
+video_title: "Damon diadema i bevegelse – følg de lange, tynne sansebeina mens dyret undersøker omgivelsene."
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 colouring_url: "/kryp-fargelegging.html#colouring-damon"

@@ -89,6 +89,65 @@ def build_items(entries, previous, catalog, check_accessible=accessible):
     return sorted(result, key=lambda item: item['published'], reverse=True)
 
 
+
+def frontmatter_value(source, key):
+    """Read a simple scalar from a site's YAML front matter."""
+    if not source.startswith('---\\n'):
+        return None
+    header = source.split('\\n---\\n', 1)[0]
+    for line in header.splitlines():
+        if line.startswith(key + ':'):
+            value = line.split(':', 1)[1].strip()
+            if len(value) >= 2 and value[0] == value[-1] and value[0] in ('"', "'"):
+                return value[1:-1]
+            return value
+    return None
+
+
+def update_weekly_article_links(items, root=None):
+    """Add a static YouTube link to an already-published weekly article only
+    after the matching video appears in the confirmed public channel feed.
+    The queued article and unpublished/private videos are never linked.
+    """
+    root = root or ROOT
+    folder = root / '_kryp_weekly'
+    if not folder.is_dir():
+        return []
+    updated = []
+    for file in sorted(folder.glob('*.md')):
+        source = file.read_text(encoding='utf-8')
+        match_value = frontmatter_value(source, 'youtube_video_match')
+        not_before = frontmatter_value(source, 'youtube_video_not_before')
+        if not match_value or not not_before or frontmatter_value(source, 'youtube_link_url'):
+            continue
+        try:
+            earliest = dt.datetime.fromisoformat(not_before.replace('Z', '+00:00'))
+        except ValueError:
+            raise ValueError(f'{file.name}: invalid youtube_video_not_before')
+        if earliest.tzinfo is None:
+            raise ValueError(f'{file.name}: youtube_video_not_before needs a timezone')
+        terms = [term.strip().casefold() for term in match_value.split('|') if term.strip()]
+        candidates = []
+        for item in items:
+            video_id = item.get('id', '')
+            if len(video_id) != 11 or not all(c.isalnum() or c in '_-' for c in video_id):
+                continue
+            published = dt.datetime.fromisoformat(item['published'].replace('Z', '+00:00'))
+            if published < earliest or published.tzinfo is None:
+                continue
+            haystack = (item['title'] + ' ' + item.get('summary', '')).casefold()
+            if any(term in haystack for term in terms):
+                candidates.append(item)
+        if not candidates:
+            continue
+        chosen = max(candidates, key=lambda item: item['published'])
+        link = f'https://www.youtube.com/watch?v={chosen["id"]}'
+        new_source = source.replace('---\\n', f'---\\nyoutube_link_url: "{link}"\\n', 1)
+        file.write_text(new_source, encoding='utf-8')
+        updated.append(file.name)
+    return updated
+
+
 def verification_time(data, now):
     timestamp = data.get('lastVerifiedAt')
     if data.get('channelId') != CHANNEL or not data.get('items') or not isinstance(timestamp, str):
@@ -119,6 +178,9 @@ def main():
                   'the next scheduled run will try again. No website data was changed.')
             return
         raise
+    linked_articles = update_weekly_article_links(items)
+    for article in linked_articles:
+        print(f'Added confirmed public YouTube Short to {article}.')
     # Refresh the verification timestamp twice daily, or when content changes,
     # so successful checks do not create a commit and site rebuild every hour.
     if (items != previous or verified is None or now - verified >= dt.timedelta(hours=12)):

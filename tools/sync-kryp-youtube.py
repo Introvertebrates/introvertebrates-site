@@ -92,9 +92,9 @@ def build_items(entries, previous, catalog, check_accessible=accessible):
 
 def frontmatter_value(source, key):
     """Read a simple scalar from a site's YAML front matter."""
-    if not source.startswith('---\\n'):
+    if not source.startswith('---\n'):
         return None
-    header = source.split('\\n---\\n', 1)[0]
+    header = source.split('\n---\n', 1)[0]
     for line in header.splitlines():
         if line.startswith(key + ':'):
             value = line.split(':', 1)[1].strip()
@@ -133,7 +133,7 @@ def update_weekly_article_links(items, root=None):
             if len(video_id) != 11 or not all(c.isalnum() or c in '_-' for c in video_id):
                 continue
             published = dt.datetime.fromisoformat(item['published'].replace('Z', '+00:00'))
-            if published < earliest or published.tzinfo is None:
+            if published.tzinfo is None or published < earliest:
                 continue
             haystack = (item['title'] + ' ' + item.get('summary', '')).casefold()
             if any(term in haystack for term in terms):
@@ -142,7 +142,7 @@ def update_weekly_article_links(items, root=None):
             continue
         chosen = max(candidates, key=lambda item: item['published'])
         link = f'https://www.youtube.com/watch?v={chosen["id"]}'
-        new_source = source.replace('---\\n', f'---\\nyoutube_link_url: "{link}"\\n', 1)
+        new_source = source.replace('---\n', f'---\nyoutube_link_url: "{link}"\n', 1)
         file.write_text(new_source, encoding='utf-8')
         updated.append(file.name)
     return updated

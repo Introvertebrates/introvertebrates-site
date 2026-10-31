@@ -12,7 +12,7 @@ image: "/assets/kryp/mantis-portrait.jpg"
 image_width: 1200
 image_height: 1800
 image_alt: "Nærportrett av en kneler med trekantet hode og foldede gripebein"
-image_caption: "Kneler på nært hold · fotografert av Introvertebrates"
+image_caption: "Kneler på nært hold"
 link_url: "/kryp-artsprofiler.html#knelere"
 link_label: "Møt knelerne i artsprofilen"
 colouring_url: "/kryp-fargelegging.html#colouring-kneler"
@@ -37,3 +37,4 @@ Mange knelere ligner grønne blader, tørre blader eller kvister. Form og farge 
 ## Prøv selv
 
 Finn forbeinet på bildet og følg det ledd for ledd. Sammenlign med et av gangbeina. Hva er likt, og hva er annerledes?
+

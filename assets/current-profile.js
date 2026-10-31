@@ -846,7 +846,7 @@
     "imageHeight": 720,
     "alt": "Close portrait of Helle, an Idiothele mira, showing a gold-and-dark patterned carapace and surrounding legs",
     "intro": "Meet Helle, the Idiothele mira in the Introvertebrates collection. This South African tarantula is known for silk-lined retreats that can close with a delicate trapdoor.",
-    "portraitCaption": "Helle · photograph from the Introvertebrates collection",
+    "portraitCaption": "Helle",
     "commonName": "Blue-foot baboon tarantula",
     "gallery": [],
     "video": null,
@@ -1034,7 +1034,7 @@
         </div>
         <figure class="hero-portrait">
           <img src="../assets/collection/${profile.image}" alt="${profile.alt}" width="${profile.imageWidth || 1600}" height="${profile.imageHeight || 898}" loading="eager" fetchpriority="high">
-          <figcaption>${profile.portraitCaption || `${profile.resident} · photographed ${isFormerResident ? "during his time in" : "in"} the Introvertebrates collection`}${profile.portraitOriginal ? ` · <a href="../assets/collection/${profile.portraitOriginal}">View original photograph</a>` : ""}</figcaption>
+          <figcaption>${profile.portraitCaption || `${profile.resident} · ${profile.species}`}${profile.portraitOriginal ? ` · <a href="../assets/collection/${profile.portraitOriginal}">View original photograph</a>` : ""}</figcaption>
         </figure>
       </section>
 
@@ -1214,7 +1214,7 @@
         <span>© 2026 Introvertebrates</span>
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="../index.html">Home</a><a href="../collection.html">Collection</a><a href="../learn.html">Learn</a><a href="../conservation.html">Conservation</a><a href="../research.html">Research</a><a href="../community.html">Community</a><a href="../kryp-og-krabater.html">Kryp &amp; Krabater</a><a href="https://www.youtube.com/@Introvertebrates" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="mailto:erlend@introvertebrates.com">Contact</a>
-        </nav>
+        <a href="../image-use.html#ownership">Photos &amp; video</a></nav>
       </div>
     </footer>
   `;
@@ -1253,3 +1253,4 @@
       });
   }
 })();
+

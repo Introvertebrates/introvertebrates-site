@@ -7,7 +7,7 @@ image: "/assets/species/elvira-chilobrachys-natanicharum/elvira-blue-detail.jpg"
 image_width: 1600
 image_height: 898
 image_alt: "Elvira, en Chilobrachys natanicharum, med elektrisk blå bein"
-image_caption: "Elvira · Chilobrachys natanicharum · fotografert av Introvertebrates"
+image_caption: "Elvira · Chilobrachys natanicharum"
 link_url: "/species/elvira-chilobrachys-natanicharum.html"
 link_label: "Møt Elvira i artsprofilen (engelsk)"
 colouring_url: "/kryp-fargelegging.html#colouring-elvira"
@@ -33,3 +33,4 @@ Kameravinkel, lyskilde og eksponering påvirker hvor tydelig blåfargen blir i e
 Sammenlign Elviras profilbilde med nærbildet av blådetaljene i galleriet. Er det de samme kroppsdelene som ser mest blå ut i begge?
 
 [Les originalbeskrivelsen av Chilobrachys natanicharum](https://zookeys.pensoft.net/article/106278/){:target="_blank" rel="noopener noreferrer"}
+

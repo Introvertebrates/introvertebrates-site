@@ -8,7 +8,7 @@ image: "/assets/kryp/ethmostigmus-trigonopodus.jpg"
 image_width: 2000
 image_height: 1333
 image_alt: "Ethmostigmus trigonopodus med mange oransje bein langs den mørke kroppen"
-image_caption: "Ethmostigmus trigonopodus · arkivfoto av Introvertebrates"
+image_caption: "Ethmostigmus trigonopodus · arkivfoto"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 colouring_url: "/kryp-fargelegging.html#colouring-hundrebein"
@@ -35,3 +35,4 @@ Beina løftes i bølger langs kroppen. Hvis alle beveget seg helt likt samtidig,
 Velg fem kroppsledd midt på dyret og tell beinparene. Ikke håndter et levende hundrebein for å telle; bruk fotografiet og zoom.
 
 [Les den taksonomiske gjennomgangen av Ethmostigmus trigonopodus](https://verlag.nhm-wien.ac.at/pdfs/105B_067137_Schileyko.pdf){:target="_blank" rel="noopener noreferrer"}
+

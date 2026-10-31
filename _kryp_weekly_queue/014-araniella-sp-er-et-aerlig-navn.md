@@ -8,7 +8,7 @@ image: "/assets/kryp/araniella-sp.png"
 image_width: 1600
 image_height: 898
 image_alt: "Grønn Araniella-edderkopp delvis skjult under et blad"
-image_caption: "Araniella sp. · fotografert av Introvertebrates"
+image_caption: "Araniella sp."
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 colouring_url: "/kryp-fargelegging.html#colouring-araniella"
@@ -35,3 +35,4 @@ Det er bedre å skrive *Araniella* sp. enn å velge en art bare fordi den ligner
 Lag en beskrivelse med bare synlige trekk: farge, kroppsform, plassering og underlag. Hvor mye kan du fortelle uten å bruke et artsnavn?
 
 [Se de godkjente artene i slekten Araniella](https://wsc.nmbe.ch/species-list/458/Araniella){:target="_blank" rel="noopener noreferrer"}
+

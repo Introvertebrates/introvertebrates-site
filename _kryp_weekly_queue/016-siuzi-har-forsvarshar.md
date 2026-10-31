@@ -7,7 +7,7 @@ image: "/assets/collection/siuzi-theraphosa-apophysis.jpg"
 image_width: 1600
 image_height: 898
 image_alt: "Siuzi, en Theraphosa apophysis, med hårene på bakkroppen synlige"
-image_caption: "Siuzi · Theraphosa apophysis · fotografert av Introvertebrates"
+image_caption: "Siuzi · Theraphosa apophysis"
 link_url: "/kryp-artsprofiler.html#siuzi"
 link_label: "Møt Siuzi i den norske artsprofilen"
 colouring_url: "/kryp-fargelegging.html#colouring-siuzi"
@@ -33,3 +33,4 @@ Hårene kan irritere hud, luftveier og særlig øyne. De kan også bli liggende 
 Se på Siuzis profilbilder uten å zoome inn på ansiktet først. Hvilke områder av kroppen ser mest hårete ut, og hvorfor kan plasseringen være nyttig?
 
 [Les fagoversikten om urtiserende hår hos taranteller](https://pmc.ncbi.nlm.nih.gov/articles/PMC6844489/){:target="_blank" rel="noopener noreferrer"}
+

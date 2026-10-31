@@ -14,7 +14,7 @@ image: "/assets/kryp/cockroaches-close.jpg"
 image_width: 1800
 image_height: 1200
 image_alt: "En brunmønstret kakerlakk sett tett fra siden"
-image_caption: "Kakerlakker på nært hold · fotografert av Introvertebrates"
+image_caption: "Kakerlakker på nært hold"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 ---
@@ -34,3 +34,4 @@ Kakerlakker er en stor og variert insektgruppe. Mange arter lever ute i naturen 
 ## Prøv selv
 
 Se på fotografiet én gang uten å lese teksten. Se deretter på nytt og finn antennene, beina som er synlige, og kroppens form. Hvilken detalj la du først merke til den andre gangen?
+

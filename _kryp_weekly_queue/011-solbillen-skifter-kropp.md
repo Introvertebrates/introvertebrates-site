@@ -8,7 +8,7 @@ image: "/assets/collection/pachnoda-marginata.jpg"
 image_width: 1600
 image_height: 898
 image_alt: "Flere Pachnoda marginata solbiller på en grein"
-image_caption: "Pachnoda marginata i samlingen · fotografert av Introvertebrates"
+image_caption: "Pachnoda marginata i samlingen"
 link_url: "/kryp-artsprofiler.html#solbiller"
 link_label: "Møt solbillene i den norske artsprofilen"
 colouring_url: "/kryp-fargelegging.html#colouring-solbille"
@@ -35,3 +35,4 @@ Larven bruker mye tid på vekst. Den voksne billen kan bevege seg over større o
 Tegn fire ruter med pil mellom: egg, larve, puppe og bille. Skriv én synlig forskjell mellom hvert stadium.
 
 [Les Korkeasaari dyrehages artsfakta om solbillen](https://korkeasaari.fi/en/animal/sun-beetle/){:target="_blank" rel="noopener noreferrer"}
+

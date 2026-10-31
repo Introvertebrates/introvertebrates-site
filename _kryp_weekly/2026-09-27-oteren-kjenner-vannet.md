@@ -10,7 +10,7 @@ image: "/assets/kryp/otter-water.jpg"
 image_width: 1920
 image_height: 1088
 image_alt: "Oter med våt pels og lange værhår ved grunt vann"
-image_caption: "Oter i vannet · fotografert av Introvertebrates"
+image_caption: "Oter i vannet"
 link_url: "/kryp-artsprofiler.html#oter"
 link_label: "Les artsprofilen om oter"
 colouring_url: "/kryp-fargelegging.html#colouring-oter"
@@ -35,3 +35,4 @@ Den svært tette pelsen bidrar til å holde et isolerende lag med luft nær hude
 ## Prøv selv
 
 Se på bildet og finn hode og rygglinje. Hvilke deler er synlige, og hvilke er skjult av vann eller utenfor bildekanten?
+

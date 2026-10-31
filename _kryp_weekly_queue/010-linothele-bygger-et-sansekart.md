@@ -12,7 +12,7 @@ image: "/assets/collection/linothele-fallax-portrait-2026.jpg"
 image_width: 1600
 image_height: 1221
 image_alt: "Linothele fallax med oransje forkropp og mørkt mønster på bakkroppen"
-image_caption: "Linothele fallax i samlingen · fotografert av Introvertebrates"
+image_caption: "Linothele fallax i samlingen"
 link_url: "/species/linothele-fallax.html"
 link_label: "Se hele profilen til Linothele fallax (engelsk)"
 colouring_url: "/kryp-fargelegging.html#colouring-linothele"
@@ -39,3 +39,4 @@ Nærbildet viser edderkoppen og deler av silkeskjulet i Introvertebrates-samling
 Finn forkroppen, beina og den mønstrede bakkroppen i bildet. Tenk deg at en silketråd festes til underlaget ved et bein. Hvordan kan en bevegelse i tråden nå fram til edderkoppen?
 
 [Les om silketyper og nett hos mygalomorfe edderkopper](https://www.mdpi.com/2813-3323/1/3/10){:target="_blank" rel="noopener noreferrer"}
+

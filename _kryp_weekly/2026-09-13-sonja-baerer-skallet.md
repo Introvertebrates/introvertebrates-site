@@ -9,7 +9,7 @@ image: "/assets/species/sonja-mauremys-reevesii/sonja-shore.jpg"
 image_width: 1600
 image_height: 898
 image_alt: "Sonja, en Mauremys reevesii, ved vannkanten"
-image_caption: "Sonja ved vannkanten · fotografert av Introvertebrates"
+image_caption: "Sonja ved vannkanten"
 link_url: "/kryp-artsprofiler.html#sonja"
 link_label: "Møt Sonja i artsprofilen"
 colouring_url: "/kryp-fargelegging.html#colouring-sonja"
@@ -33,3 +33,4 @@ Sonja svømmer og finner mat i vann, men trenger også et tørt sted der hun kan
 ## Prøv selv
 
 Se på bildet og tegn omrisset av skallet. Tegn inn feltene og ryggene du faktisk kan se, og legg deretter til hodet og beina.
+

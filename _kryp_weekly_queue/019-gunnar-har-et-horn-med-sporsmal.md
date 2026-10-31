@@ -7,7 +7,7 @@ image: "/assets/collection/ceratogyrus-darlingi.jpg"
 image_width: 1600
 image_height: 900
 image_alt: "Gunnar, en Ceratogyrus darlingi, sett skrått fra siden med hornet på ryggskjoldet synlig"
-image_caption: "Gunnar · Ceratogyrus darlingi · fotografert av Introvertebrates"
+image_caption: "Gunnar · Ceratogyrus darlingi"
 link_url: "/species/ceratogyrus-darlingi.html"
 link_label: "Møt Gunnar i artsprofilen (engelsk)"
 colouring_url: "/kryp-fargelegging.html#colouring-gunnar"
@@ -33,4 +33,5 @@ World Spider Catalog regner *C. darlingi* som en godkjent art fra det sørlige A
 Tegn Gunnar fra siden og ovenfra. Hvilken vinkel gjør hornet lettest å se, og hvilken gjør plasseringen på kroppen tydeligst?
 
 [Se artsoppføringen i World Spider Catalog](https://wsc.nmbe.ch/spec-data/43902){:target="_blank" rel="noopener noreferrer"}
+
 

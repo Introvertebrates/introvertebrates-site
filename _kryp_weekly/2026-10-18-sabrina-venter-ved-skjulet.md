@@ -9,7 +9,7 @@ image: "/assets/collection/sabrina-homepage-close.jpg"
 image_width: 1568
 image_height: 1200
 image_alt: "Sabrina, en Brachypelma hamorii, med tydelige oransje knebånd"
-image_caption: "Sabrina på nært hold · fotografert av Introvertebrates"
+image_caption: "Sabrina på nært hold"
 link_url: "/kryp-artsprofiler.html#sabrina"
 link_label: "Møt Sabrina i artsprofilen"
 colouring_url: "/kryp-fargelegging.html#colouring-sabrina"
@@ -33,3 +33,4 @@ Sabrina har mørk kropp og oransjerøde felt ved flere av beinleddene. Fargene e
 ## Prøv selv
 
 Velg ett bein du ser tydelig. Følg det med øynene fra kroppen og utover: Hvor skifter fargen, og hvor bøyer beinet seg?
+

@@ -8,7 +8,7 @@ image: "/assets/collection/psyttala-horrida.jpg"
 image_width: 1600
 image_height: 900
 image_alt: "Psyttala horrida med tydelig lang kropp og gripebein"
-image_caption: "Psyttala horrida i samlingen · fotografert av Introvertebrates"
+image_caption: "Psyttala horrida i samlingen"
 link_url: "/species/psyttala-horrida.html"
 link_label: "Se profilen til Psyttala horrida (engelsk)"
 colouring_url: "/kryp-fargelegging.html#colouring-psyttala"
@@ -35,3 +35,4 @@ Rovteger bruker en leddelt sugesnabel til å stikke i byttedyr og ta inn flytend
 Åpne artsprofilens bilder og sammenlign nymfen med den voksne. Finn én detalj som endrer farge, og én som endrer form.
 
 [Les den vitenskapelige studien av egg og nymfer](https://pmc.ncbi.nlm.nih.gov/articles/PMC9696875/){:target="_blank" rel="noopener noreferrer"}
+

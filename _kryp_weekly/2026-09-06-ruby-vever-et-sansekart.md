@@ -9,7 +9,7 @@ image: "/assets/collection/ruby-frontal-portrait-2026.jpg"
 image_width: 1600
 image_height: 900
 image_alt: "Nærbilde av Ruby med blå bein, mørkt ryggskjold og oransje hår på bakkroppen"
-image_caption: "Ruby på nært hold · fotografert av Introvertebrates"
+image_caption: "Ruby på nært hold"
 link_url: "/kryp-artsprofiler.html#ruby"
 link_label: "Møt Ruby i artsprofilen"
 colouring_url: "/kryp-fargelegging.html#colouring-ruby"
@@ -33,3 +33,4 @@ Beina går ut fra forkroppen i flere retninger. Langs kantene kan du se enkelte 
 ## Ta med detaljene til arket
 
 På fargeleggingsarket er mer av Ruby synlig. Finn bakkroppen og beina, og bruk fotografiet som fargehjelp: oransje på bakkroppen og blått på beina. Du kan også velge dine egne farger.
+

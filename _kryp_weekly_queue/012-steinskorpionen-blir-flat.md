@@ -8,7 +8,7 @@ image: "/assets/kryp/hadogenes-paucidens.jpg"
 image_width: 2000
 image_height: 2000
 image_alt: "Hadogenes paucidens sett skrått fra siden på en stein"
-image_caption: "Arkivert som Hadogenes paucidens · fotografert av Introvertebrates"
+image_caption: "Arkivert som Hadogenes paucidens"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 colouring_url: "/kryp-fargelegging.html#colouring-steinskorpion"
@@ -35,3 +35,4 @@ Dette eldre fotografiet er arkivert som *Hadogenes paucidens*. Slekten har vært
 Legg merke til høyden på kroppen sammenlignet med bredden på klørne. Hvordan kan hver av delene hjelpe dyret mellom steinene?
 
 [Les fagstoff om steinskorpioner fra NTNU](https://www.ntnu.no/ub/scorpion-files/h_troglodytes.php){:target="_blank" rel="noopener noreferrer"}
+

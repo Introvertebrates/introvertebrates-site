@@ -10,7 +10,7 @@ image: "/assets/kryp/nuthatch-feeder.jpg"
 image_width: 1800
 image_height: 1200
 image_alt: "En spettmeis som klamrer seg sidelengs til en fuglemater"
-image_caption: "Spettmeis på nært hold · fotografert av Introvertebrates"
+image_caption: "Spettmeis på nært hold"
 link_url: "/kryp-artsprofiler.html#spettmeis"
 link_label: "Les artsprofilen om spettmeis"
 colouring_url: "/kryp-fargelegging.html#colouring-spettmeis"
@@ -37,3 +37,4 @@ Reiret ligger i et hulrom. Hvis åpningen er for stor, kan spettmeisen bruke lei
 Finn et trygt sted der småfugler besøker trær eller en fuglemater. Se etter en blågrå rygg og en mørk stripe gjennom øyet. Legg så merke til om fuglen beveger seg oppover, sidelengs eller nedover.
 
 [Les mer om spettmeis hos Artsdatabanken](https://artsdatabanken.no/arter/takson/4321){:target="_blank" rel="noopener noreferrer"}
+

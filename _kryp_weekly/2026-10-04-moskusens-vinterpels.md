@@ -10,7 +10,7 @@ image: "/assets/kryp/musk-ox-norway.jpg"
 image_width: 1800
 image_height: 1200
 image_alt: "Moskusflokk med lang pels i steinete fjellterreng på Dovre"
-image_caption: "Moskus på Dovrefjell · fotografert av Introvertebrates"
+image_caption: "Moskus på Dovrefjell"
 video_url: "/assets/kryp/video/moskus.mp4"
 video_mobile_url: "/assets/kryp/video/moskus-vertical.mp4"
 video_title: "Moskus i bevegelse – se hvordan den lange pelsen følger kroppen når dyrene går."
@@ -40,3 +40,4 @@ Moskus er ikke opprinnelig norsk. Bestanden på Dovrefjell stammer fra dyr som b
 ## Prøv selv
 
 Se på flokken og sammenlign dyrene. Hvilket dyr ser størst ut, og hvor mye av forskjellen kan skyldes pels, vinkel og avstand?
+

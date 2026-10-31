@@ -7,7 +7,7 @@ image: "/assets/collection/omothymus-violaceopes.jpg"
 image_width: 1600
 image_height: 900
 image_alt: "Orion, en hann av Omothymus violaceopes, på bark"
-image_caption: "Orion · Omothymus violaceopes · fotografert av Introvertebrates"
+image_caption: "Orion · Omothymus violaceopes"
 link_url: "/species/omothymus-violaceopes.html"
 link_label: "Møt Orion i artsprofilen (engelsk)"
 colouring_url: "/kryp-fargelegging.html#colouring-orion"
@@ -33,4 +33,5 @@ Arten har tidligere vært plassert i slekten *Lampropelma*. World Spider Catalog
 Sammenlign beinlengde, bakkropp og farge i Orions profilbilder. Hvilket trekk tror du er mest pålitelig når lyset mellom bildene er forskjellig?
 
 [Se den godkjente artsoppføringen i World Spider Catalog](https://wsc.nmbe.ch/spec-data/44240/species){:target="_blank" rel="noopener noreferrer"}
+
 

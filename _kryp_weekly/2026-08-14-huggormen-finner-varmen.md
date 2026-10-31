@@ -3,7 +3,7 @@ date: 2026-08-14 10:00:00 +0200
 date_label: "Uke 33 · 14. august 2026"
 video_url: "/assets/kryp/video/huggorm-edited.mp4"
 video_mobile_url: "/assets/kryp/video/huggorm-edited-vertical.mp4"
-video_title: "Huggorm med synlig ryggmønster · eget redigert opptak"
+video_title: "Huggorm med synlig ryggmønster"
 colouring_release: "huggorm"
 title: "Hvordan finner huggormen varmen?"
 description: "Se hvordan en huggorm bruker sol, skygge og skjul for å styre kroppstemperaturen gjennom dagen."
@@ -13,7 +13,7 @@ image: "/assets/kryp/huggorm-norway.jpg"
 image_width: 1800
 image_height: 1200
 image_alt: "Svart huggorm mellom løv og grønt gress i norsk natur"
-image_caption: "Svart huggorm i norsk natur · fotografert av Introvertebrates"
+image_caption: "Svart huggorm i norsk natur"
 link_url: "/kryp-artsprofiler.html#huggorm"
 link_label: "Les artsprofilen om huggorm"
 colouring_url: "/kryp-fargelegging.html#colouring-huggorm"
@@ -38,3 +38,4 @@ Se alltid på god avstand og la slangen ha en fri vei bort. Ikke løft, flytt el
 ## Prøv selv
 
 Se på bildet og finn grensen mellom sol, skygge og vegetasjon. Hvor ville slangen raskest kunne gjemme seg hvis den ble forstyrret?
+

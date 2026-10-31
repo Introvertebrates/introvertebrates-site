@@ -8,7 +8,7 @@ image: "/assets/kryp/peruphasma-schultei.jpg"
 image_width: 2000
 image_height: 1333
 image_alt: "Mørk Peruphasma schultei på grønne blader"
-image_caption: "Peruphasma schultei · arkivfoto av Introvertebrates"
+image_caption: "Peruphasma schultei · arkivfoto"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 colouring_url: "/kryp-fargelegging.html#colouring-peruphasma"
@@ -35,3 +35,4 @@ Varselsfarger stopper ikke nødvendigvis et rovdyr alene. Men sammen med lukt el
 Se på bildet og finn dyrets omriss mot bladene. Varselsfargene er ikke tydelige fra denne vinkelen. Hvordan kan et annet bilde vise andre detaljer ved det samme dyret?
 
 [Les studien av forsvarskjertlene hos Peruphasma schultei](https://pubmed.ncbi.nlm.nih.gov/26500685/){:target="_blank" rel="noopener noreferrer"}
+

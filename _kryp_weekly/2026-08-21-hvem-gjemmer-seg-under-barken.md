@@ -15,6 +15,10 @@ image_width: 1800
 image_height: 1200
 image_alt: "En brunmønstret kakerlakk sett tett fra siden"
 image_caption: "Kakerlakker på nært hold"
+video_url: "/assets/kryp/video/elliptorhina-chopardi.mp4"
+video_mobile_url: "/assets/kryp/video/elliptorhina-chopardi-vertical.mp4"
+video_poster: "/assets/kryp/elliptorhina-chopardi-video-poster.jpg"
+video_title: "I filmen ser du Elliptorhina chopardi. Følg de lange antennene og beina rundt matbiten."
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 ---

@@ -11,6 +11,10 @@ image_width: 1920
 image_height: 1088
 image_alt: "Oter med våt pels og lange værhår ved grunt vann"
 image_caption: "Oter i vannet"
+video_url: "/assets/kryp/video/oter.mp4"
+video_mobile_url: "/assets/kryp/video/oter-vertical.mp4"
+video_poster: "/assets/kryp/oter-video-poster.jpg"
+video_title: "Oteren kikker opp fra vannet før den dykker under. Se på værhårene og ringene i vannet."
 link_url: "/kryp-artsprofiler.html#oter"
 link_label: "Les artsprofilen om oter"
 colouring_url: "/kryp-fargelegging.html#colouring-oter"

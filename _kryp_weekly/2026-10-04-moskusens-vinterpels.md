@@ -11,6 +11,9 @@ image_width: 1800
 image_height: 1200
 image_alt: "Moskusflokk med lang pels i steinete fjellterreng på Dovre"
 image_caption: "Moskus på Dovrefjell · fotografert av Introvertebrates"
+video_url: "/assets/kryp/video/moskus.mp4"
+video_mobile_url: "/assets/kryp/video/moskus-vertical.mp4"
+video_title: "Moskus i bevegelse – se hvordan den lange pelsen følger kroppen når dyrene går."
 link_url: "/kryp-artsprofiler.html#moskus"
 link_label: "Les artsprofilen om moskus"
 colouring_url: "/kryp-fargelegging.html#colouring-moskus"

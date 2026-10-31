@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - tools/sync-kryp-youtube.py
+      - tools/test_kryp_youtube.py
       - tools/kryp-youtube-catalog.json
       - .github/workflows/sync-kryp-youtube.yml
 permissions:

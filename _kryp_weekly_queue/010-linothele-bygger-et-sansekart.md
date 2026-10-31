@@ -1,5 +1,7 @@
 ---
 colouring_release: "linothele"
+youtube_video_match: "linothele|fallax|edderkoppens egen alarm"
+youtube_video_not_before: "2026-11-02T00:00:00+01:00"
 title: "Linothele bygger et sansekart av silke"
 description: "Se hvordan Linothele fallax kan bruke et stort teppe av silketråder til både skjul og varsling."
 intro: "For Linothele er nettet mer enn en felle. Trådene utvider området der edderkoppen kan merke små bevegelser."

@@ -52,6 +52,61 @@ class PublicVideosTest(unittest.TestCase):
         self.assertEqual([item['id'] for item in result], ['live', 'old'])
 
 
+
+class WeeklyArticleVideoLinkTest(unittest.TestCase):
+    def test_only_link_published_article_after_matching_public_video(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            published = root / '_kryp_weekly'
+            queued = root / '_kryp_weekly_queue'
+            published.mkdir()
+            queued.mkdir()
+            article_content = ('---\n'
+                               'title: "Linothele bygger et sansekart av silke"\n'
+                               'youtube_video_match: "linothele|fallax|edderkoppens egen alarm"\n'
+                               'youtube_video_not_before: "2026-11-02T00:00:00+01:00"\n'
+                               '---\nArticle body stays unchanged.\n')
+            article = published / '2026-11-01-linothele-bygger-et-sansekart.md'
+            article.write_text(article_content, encoding='utf-8')
+            queued_copy = queued / '010-future.md'
+            queued_copy.write_text(article_content, encoding='utf-8')
+
+            early = [{'id': '12345678901', 'title': 'Linothele teaser',
+                      'published': '2026-11-01T16:00:00Z'}]
+            unrelated = [{'id': '12345678902', 'title': 'Har edderkopper knokler?',
+                          'published': '2026-11-02T16:00:00Z'}]
+            self.assertEqual(sync.update_weekly_article_links(early, root), [])
+            self.assertEqual(sync.update_weekly_article_links(unrelated, root), [])
+            self.assertEqual(article.read_text(encoding='utf-8'), article_content)
+
+            released = [{'id': '12345678903', 'title': 'Edderkoppens egen alarm! 🕷️',
+                         'published': '2026-11-02T16:00:00Z'}]
+            self.assertEqual(sync.update_weekly_article_links(released, root), [article.name])
+            new_content = article.read_text(encoding='utf-8')
+            self.assertIn('youtube_link_url: "https://www.youtube.com/watch?v=12345678903"', new_content)
+            self.assertIn('Article body stays unchanged.', new_content)
+            self.assertEqual(queued_copy.read_text(encoding='utf-8'), article_content)
+            self.assertEqual(sync.update_weekly_article_links(released, root), [])
+            self.assertEqual(article.read_text(encoding='utf-8'), new_content)
+
+    def test_ignores_articles_without_opt_in_and_invalid_video_ids(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            folder = root / '_kryp_weekly'
+            folder.mkdir()
+            plain = folder / 'plain.md'
+            plain.write_text('---\ntitle: "Other animal"\n---\n', encoding='utf-8')
+            matched = folder / 'match.md'
+            matched.write_text('---\nyoutube_video_match: "linothele"\n'
+                               'youtube_video_not_before: "2026-11-02T00:00:00+01:00"\n---\n',
+                               encoding='utf-8')
+            candidate = [{'id': 'unsafe/id', 'title': 'Linothele',
+                          'published': '2026-11-02T16:00:00Z'}]
+            self.assertEqual(sync.update_weekly_article_links(candidate, root), [])
+            self.assertNotIn('youtube_link_url', plain.read_text(encoding='utf-8'))
+            self.assertNotIn('youtube_link_url', matched.read_text(encoding='utf-8'))
+
+
 class NetworkRetryTest(unittest.TestCase):
     @patch.object(sync.time, 'sleep')
     @patch.object(sync.urllib.request, 'urlopen')

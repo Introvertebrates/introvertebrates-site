@@ -352,33 +352,19 @@
   }
 }
 
-/* Linothele is landscape artwork; avoid placing it in a 205mm-tall portrait image slot. */
+/* Keep the same A4 portrait print template for all sheets.
+   Linothele alone has a landscape drawing, so use the available width
+   without changing the shared title, prompt or footer placement. */
 @media print {
-  #sheet-linothele {
-    grid-template-rows: auto auto auto auto minmax(0, 1fr);
-    align-content: start;
-  }
-
-  #sheet-linothele .colouring-sheet-title {
-    padding-top: 3mm;
-  }
-
   #sheet-linothele .colouring-sheet-art {
     width: calc(100% + 10mm);
     max-width: none;
     height: auto;
     min-height: 0;
-    max-height: none;
-    margin: 5mm -5mm 0;
+    max-height: 205mm;
+    align-self: center;
+    justify-self: center;
     object-fit: contain;
-  }
-
-  #sheet-linothele .colouring-sheet-prompt {
-    margin-top: 7mm;
-  }
-
-  #sheet-linothele footer {
-    margin-top: 4mm;
   }
 }
 

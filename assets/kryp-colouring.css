@@ -352,6 +352,36 @@
   }
 }
 
+/* Linothele is landscape artwork; avoid placing it in a 205mm-tall portrait image slot. */
+@media print {
+  #sheet-linothele {
+    grid-template-rows: auto auto auto auto minmax(0, 1fr);
+    align-content: start;
+  }
+
+  #sheet-linothele .colouring-sheet-title {
+    padding-top: 3mm;
+  }
+
+  #sheet-linothele .colouring-sheet-art {
+    width: calc(100% + 10mm);
+    max-width: none;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    margin: 5mm -5mm 0;
+    object-fit: contain;
+  }
+
+  #sheet-linothele .colouring-sheet-prompt {
+    margin-top: 7mm;
+  }
+
+  #sheet-linothele footer {
+    margin-top: 4mm;
+  }
+}
+
 /* Small monochrome brand mark, kept separate from the animal artwork. */
 .colouring-sheet-brand img { filter: grayscale(1) brightness(0); transform: rotate(-10deg); width: 9mm; height: 9mm; }
 .colouring-sheet-brand strong { font-size: 12pt; }

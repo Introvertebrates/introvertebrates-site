@@ -1,4 +1,6 @@
 ---
+date: 2026-11-01 10:00:00 +0100
+date_label: "Uke 44 · 1. november 2026"
 colouring_release: "linothele"
 youtube_video_match: "linothele|fallax|edderkoppens egen alarm"
 youtube_video_not_before: "2026-11-02T00:00:00+01:00"

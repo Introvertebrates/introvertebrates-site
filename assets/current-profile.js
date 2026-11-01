@@ -882,7 +882,15 @@
     "intro": "Lasiodora klugi brings a large Brazilian terrestrial tarantula to the Introvertebrates collection. The portrait shows the current resident, with its eyes, carapace and reddish abdominal hairs in close view.",
     "portraitCaption": "Lasiodora klugi · Current resident",
     "commonName": "Bahia scarlet tarantula",
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "../assets/collection/lasiodora-klugi-archive-horizontal.jpg",
+        "alt": "Previously kept adult Lasiodora klugi showing dark legs and reddish abdominal hairs beside a mossy retreat",
+        "caption": "Adult coloration · Dark legs and reddish abdominal hairs · Previously kept individual",
+        "width": 1600,
+        "height": 1600
+      }
+    ],
     "video": null,
     "hideInstagram": true,
     "conservationReview": "Taxonomy and linked literature reviewed 18 October 2026. A Red List category and international trade status are not asserted here without a verified assessment or listing.",
@@ -1117,7 +1125,7 @@
             <div class="photo-gallery" aria-label="Photographs of ${title}">
               ${gallery.map((photo) => `
                 <figure class="photo-card">
-                  <img src="../assets/species/${key}/${photo.file}" alt="${photo.alt}" width="${photo.width || 1600}" height="${photo.height || 898}" loading="lazy" decoding="async">
+                  <img src="${photo.src || `../assets/species/${key}/${photo.file}`}" alt="${photo.alt}" width="${photo.width || 1600}" height="${photo.height || 898}" loading="lazy" decoding="async">
                   ${photo.caption ? `<figcaption>${photo.caption}</figcaption>` : ""}
                 </figure>
               `).join("")}

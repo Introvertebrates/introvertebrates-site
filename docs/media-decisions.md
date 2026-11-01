@@ -28,3 +28,10 @@ The source folder also contains edited Dunspett, Lappugle, Prærieulv, Ravn, Sid
 - SELECTED: `Completed/Gaupe/Gaupe(1).mp4` and `Gaupe 9-16.mp4` for the existing Gaupe species profile and Fortellinger i bevegelse. The two 15.05-second exports are landscape and portrait versions of the same grooming sequence, with silent audio tracks.
 - Website copies: `assets/kryp/video/gaupe.mp4` (1280 × 720) and `gaupe-vertical.mp4` (720 × 1280), H.264/AAC with fast-start metadata. Preserve the original 50 fps cadence, duration, framing and colour. The Completed originals remain unchanged. Matching posters are `gaupe-video-poster.jpg` and `gaupe-video-poster-mobile.jpg`.
 - Captions describe visible grooming, without claiming a recording location or that the animal is the same individual as the profile photograph. The portrait crop is tighter than the landscape version; a wider crop is an optional later editorial improvement, not part of this publication.
+
+## Lunde and Spettmeis clips — 1 November 2026
+
+- SELECTED: `Completed/Lunde/Lunde.mp4` and `Lunde 9-16.mp4` for the existing Lunde profile and Fortellinger i bevegelse. The 10.01-second landscape and portrait versions show two puffins moving on a rock. Captions describe the visible wing and foot movements without inferring mating behaviour or a recording location.
+- SELECTED: `Completed/Spettmeis/Spettmeis.mp4` and `Spettmeis 9-16.mp4` for the existing Spettmeis profile and Fortellinger i bevegelse. The 12.42-second versions show a nuthatch at a hole in a tree trunk, then a nuthatch at a feeder. Do not claim that the shots show the same individual or an uninterrupted flight between these places.
+- Website copies are `assets/kryp/video/lunde.mp4`, `lunde-vertical.mp4`, `spettmeis.mp4` and `spettmeis-vertical.mp4`, at 1280 × 720 / 720 × 1280 with fast-start metadata. Retain each original's 50 fps cadence, duration, framing and colour; all four supplied exports are silent. The Completed originals remain unchanged.
+- Matching landscape and portrait posters use `{species}-video-poster.jpg` and `{species}-video-poster-mobile.jpg`, at 5.5 seconds for Lunde and 7.0 seconds for Spettmeis.

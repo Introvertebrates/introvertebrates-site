@@ -191,10 +191,8 @@
 .kryp-weekly-colouring img {
   width: 100%;
   height: auto;
-  aspect-ratio: 5 / 7;
   display: block;
   object-fit: contain;
-  object-position: top;
   border-radius: 14px;
   background: #fff;
 }

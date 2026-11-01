@@ -15,3 +15,9 @@ Always check BOTH Pictures/Bilder/Homepage and Videos/Homepage, including Videos
 
 The source folder also contains edited Dunspett, Lappugle, Prærieulv, Ravn, Sidensvans and Trompetersvane files. Their presence has been recorded; it is not approval to create new articles or alter the agreed schedule.
 
+## Portrait selections — 1 November 2026
+
+- SELECTED: `O:/Bilder/Homepage/IMG_4805.jpg` for the existing Lasiodora klugi profile and collection card. The owner supplied it to replace the photograph of a previously kept specimen. `assets/collection/lasiodora-klugi-portrait-2026.jpg` is an unchanged copy of the 893 × 853 JPEG. Remove the archive-photo labels from these current-resident placements; retain the older archive files.
+- SELECTED: `O:/Bilder/Homepage/IMG_4886.jpg` for Chilobrachys sp. “Kaeng Krachan” on the homepage, collection card and profile. `assets/collection/chilobrachys-kaeng-krachan-portrait-2026.jpg` crops the 1280 × 758 JPEG to its leftmost 1024 × 758 pixels to exclude the feeder on the right. No generated image detail or colour changes were added. Keep the older file for the existing Instagram post record in `assets/data/social-media.json`.
+- The supplied JPEG and CR3 originals remain untouched. The filenames identify the website selection year, not a verified capture date.
+

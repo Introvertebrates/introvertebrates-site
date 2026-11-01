@@ -105,10 +105,10 @@
         { label: "World Spider Catalog — genus Chilobrachys", url: "https://www.wsc.nmbe.ch/genus-catalog/3515/Chilobrachys" },
         { label: "Frontiers in Arachnid Science — distribution and natural history of Chilobrachys", url: "https://www.frontiersin.org/journals/arachnid-science/articles/10.3389/frchs.2025.1598438/full" }
       ],
-      image: "chilobrachys-kaeng-krachan.jpg",
-      imageWidth: 1600,
-      imageHeight: 898,
-      alt: "Chilobrachys sp. Kaeng Krachan standing across dense enclosure webbing",
+      image: "chilobrachys-kaeng-krachan-portrait-2026.jpg",
+      imageWidth: 1024,
+      imageHeight: 758,
+      alt: "Close portrait of Chilobrachys sp. Kaeng Krachan showing its eyes, warm brown carapace and legs against silk webbing",
       intro: "This Chilobrachys sp. “Kaeng Krachan” is part of the current collection. The portrait places the animal within the dense sheet webbing that turns the enclosure into a sensitive vibration network.",
       gallery: [
         { file: "kaeng-webbing.jpg", alt: "Chilobrachys sp. Kaeng Krachan standing on a broad sheet of webbing", caption: "On the web sheet · 2026", width: 1600, height: 900 },
@@ -875,13 +875,12 @@
         "url": "https://doi.org/10.11646/zootaxa.5390.1.1"
       }
     ],
-    "image": "lasiodora-klugi-archive-horizontal.jpg",
-    "portraitOriginal": "lasiodora-klugi.jpg",
-    "imageWidth": 1600,
-    "imageHeight": 1600,
-    "alt": "Archive photograph labelled Lasiodora klugi showing dark legs and reddish abdominal hairs beside a mossy retreat",
-    "intro": "Lasiodora klugi brings a large Brazilian terrestrial tarantula to the Introvertebrates collection. Its profile follows the accepted taxonomy while keeping the current resident’s history separate from archive photography.",
-    "portraitCaption": "Lasiodora klugi · Archived photo of another individual",
+    "image": "lasiodora-klugi-portrait-2026.jpg",
+    "imageWidth": 893,
+    "imageHeight": 853,
+    "alt": "Close portrait of the current Lasiodora klugi showing its eyes, dark carapace and reddish abdominal hairs on soil",
+    "intro": "Lasiodora klugi brings a large Brazilian terrestrial tarantula to the Introvertebrates collection. The portrait shows the current resident, with its eyes, carapace and reddish abdominal hairs in close view.",
+    "portraitCaption": "Lasiodora klugi · Current resident",
     "commonName": "Bahia scarlet tarantula",
     "gallery": [],
     "video": null,
@@ -904,7 +903,7 @@
   "lasiodora-klugi": {
     "lifestyle": "A ground-dwelling Brazilian tarantula. The current revision is the starting point for interpreting its morphology and distribution, especially where older sources used names differently.",
     "standout": "Dark legs and reddish abdominal hairs give the familiar scarlet contrast. Colour alone is insufficient to distinguish the species from all other Lasiodora.",
-    "inCare": "This profile separates the current resident’s documented history from species-level research. The photograph is a labelled species archive image."
+    "inCare": "The portrait shows the current resident’s eyes, carapace and surrounding legs. Individual observations remain separate from species-level research."
   }
 });
   Object.assign(naturalHistorySections, {
@@ -924,7 +923,7 @@
   },
   "lasiodora-klugi": {
     "taxonomy": "Lasiodora klugi (C. L. Koch, 1841) is an accepted Brazilian species and the type species of Lasiodora. Bertani’s 2023 revision synonymised Lasiodora itabunae with L. klugi and reassessed historical identifications.",
-    "shelter": "For a large terrestrial tarantula, ground-level cover and usable substrate are more relevant than climbing height. The archive photograph shows a spider beside cover, but one image does not establish the current resident’s enclosure preferences.",
+    "shelter": "For a large terrestrial tarantula, ground-level cover and usable substrate are more relevant than climbing height. The portrait shows the current resident on soil, but one image does not establish its enclosure preferences.",
     "feeding": "Like other tarantulas, Lasiodora klugi is a predator. The resident’s feeding intervals, refusals and prey choices require direct observation; size alone does not establish appetite or a suitable feeding schedule.",
     "defence": "Lasiodora possesses urticating setae. These defensive hairs are part of the biology reviewed in the genus revision. Defensive responses vary with context and should not be reduced to a fixed temperament label.",
     "inference": "A stable, substrate-focused enclosure and accessible shelter follow from a terrestrial body plan. Precise measurements and environmental observations should be recorded for the individual instead of copied from a generic care chart."
@@ -933,7 +932,7 @@
   Object.assign(collectionStories, {
   "morgana-ephebopus-murinus": "Morgana is the current resident behind this profile. The archived photograph shows another individual of the same species. Measurements, sex, acquisition history and feeding observations will be added only when verified for this individual.",
   "helle-idiothele-mira": "Helle’s portrait shows the patterned carapace and surrounding legs at close range. It documents Helle as an individual; it does not establish sex, age or the form of the retreat. Those details remain unpublished until verified.",
-  "lasiodora-klugi": "This is the Lasiodora klugi currently represented in the collection, without a published individual name. The archived photograph shows another individual of the same species. Sex and measurements remain unpublished."
+  "lasiodora-klugi": "The portrait shows the Lasiodora klugi currently in the collection, with its eyes, carapace and surrounding legs in close view. No individual name, sex or measurements have been published."
 });
   Object.assign(conservationProfiles, {
   "morgana-ephebopus-murinus": {

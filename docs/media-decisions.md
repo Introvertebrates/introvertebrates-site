@@ -49,3 +49,7 @@ The source folder also contains edited Dunspett, Lappugle, Prærieulv, Ravn, Sid
 - SELECTED: `Completed/Rosenbille/Rosenbille.mp4` and `Rosenbille 9-16.mp4`, two silent 15.00-second landscape and portrait exports. The adult beetle is on a branch, with antenna and front-leg movements visible. Captions do not claim flight or metamorphosis is shown.
 - Website copies are `assets/kryp/video/rosenbille.mp4` and `rosenbille-vertical.mp4`, at 1280 × 720 / 720 × 1280 with fast-start metadata, preserving original framing, timing, colour and 50 fps cadence. The Completed originals remain unchanged. Posters use the matching 5.5-second frames.
 - The clips appear in the English Pachnoda marginata profile, K&K Rosenbiller profile and Fortellinger i bevegelse. The queued Rosenbillen article reuses them when its existing turn in the queue arrives; its queue position and publication timing are unchanged. The colouring artwork has no printed name and is reused unchanged under its corrected asset name, with its earlier asset URL retained for compatibility.
+
+## English Introvertebrates captions — 2 November 2026
+
+Use concise, factual descriptions of the animal and visible behaviour in the English Introvertebrates section. Omit viewing prompts such as “follow the orange bands” or instructions about what the viewer should look for. This preference applies to future video captions as well as the existing clips.

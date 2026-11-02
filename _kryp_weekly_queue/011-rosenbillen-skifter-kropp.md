@@ -1,0 +1,42 @@
+---
+colouring_release: "rosenbille"
+title: "Rosenbillen skifter kropp helt"
+description: "Følg Pachnoda marginata fra larve til puppe og videre til en fargerik voksen bille."
+intro: "En rosenbille ser ikke ut som en liten utgave av seg selv når den klekkes. Kroppen bygges om gjennom fullstendig forvandling."
+question: "Hvilke deler på den voksne billen ville du aldri ha gjettet ut fra en myk larve?"
+image: "/assets/collection/pachnoda-marginata.jpg"
+image_width: 1600
+image_height: 898
+image_alt: "Flere Pachnoda marginata rosenbiller på en grein"
+image_caption: "Pachnoda marginata i samlingen"
+link_url: "/kryp-artsprofiler.html#rosenbiller"
+link_label: "Møt rosenbillene i den norske artsprofilen"
+colouring_url: "/kryp-fargelegging.html#colouring-rosenbille"
+colouring_image: "/assets/kryp/colouring/rosenbille-weekly.png"
+colouring_image_alt: "Fargeleggingsark av Rosenbille"
+colouring_label: "Fargelegg Rosenbille"
+colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
+video_url: "/assets/kryp/video/rosenbille.mp4"
+video_mobile_url: "/assets/kryp/video/rosenbille-vertical.mp4"
+video_title: "En voksen rosenbille på en grein. Se på de små bevegelsene i antennene og frambeina."
+video_poster: "/assets/kryp/rosenbille-video-poster.jpg"
+---
+
+## Fire svært ulike stadier
+
+*Pachnoda marginata* gjennomgår fullstendig forvandling: egg, larve, puppe og voksen bille. Larven lever i materiale på bakken og ligner ikke på den ferdige billen. Inne i puppen organiseres kroppen på nytt før den voksne billen kommer fram.
+
+## Vingene ligger under dekkvingene
+
+Den voksne billen har harde dekkvinger som beskytter de tynnere flygevingene. Den har også ferdigutviklede bein, antenner og den tydelige fargen som gjør rosenbillene lette å kjenne igjen i samlingen.
+
+## Livsstadiet bestemmer oppgaven
+
+Larven bruker mye tid på vekst. Den voksne billen kan bevege seg over større områder og føre arten videre. Det er samme dyr gjennom hele livsløpet, men kropp og oppgave forandres kraftig.
+
+## Prøv selv
+
+Tegn fire ruter med pil mellom: egg, larve, puppe og bille. Skriv én synlig forskjell mellom hvert stadium.
+
+[Les Korkeasaari dyrehages artsfakta om rosenbillen](https://korkeasaari.fi/en/animal/sun-beetle/){:target="_blank" rel="noopener noreferrer"}
+

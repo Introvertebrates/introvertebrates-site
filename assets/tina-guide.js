@@ -98,7 +98,7 @@
   const profileRoles = {
     huggorm: 'utfordrer', oter: 'sporr', moskus: 'utfordrer', spettmeis: 'utfordrer',
     ravn: 'utfordrer', lappugle: 'utfordrer', sidensvans: 'utfordrer', sabrina: 'utfordrer',
-    ruby: 'utfordrer', sonja: 'sporr', siuzi: 'utfordrer', solbiller: 'utfordrer', knelere: 'utfordrer',
+    ruby: 'utfordrer', sonja: 'sporr', siuzi: 'utfordrer', rosenbiller: 'utfordrer', knelere: 'utfordrer',
     skorpion: 'sporr', kakerlakker: 'sporr', kongesnok: 'sporr', teju: 'utfordrer'
   };
   const roleTitles = {sporr:'Tina spør', forklarer:'Tina forklarer', utfordrer:'Tina utfordrer', foreslar:'Tina foreslår'};
@@ -138,7 +138,7 @@
 
   const explainers = {
     kakerlakker: ['Hva er en nedbryter?', 'En nedbryter hjelper til med å bryte ned dødt materiale, slik at næringsstoffer kan brukes på nytt i naturen.'],
-    solbiller: ['Hva betyr fullstendig forvandling?', 'Larve, puppe og voksen bille er ulike stadier av det samme dyret. Kroppen bygges kraftig om mellom stadiene.'],
+    rosenbiller: ['Hva betyr fullstendig forvandling?', 'Larve, puppe og voksen bille er ulike stadier av det samme dyret. Kroppen bygges kraftig om mellom stadiene.'],
     ruby: ['Hva betyr strukturell farge?', 'Fargen kommer ikke bare fra pigment. Små strukturer på kroppen påvirker hvordan lyset blir reflektert.']
   };
   Object.entries(explainers).forEach(([id, [title, text]]) => {

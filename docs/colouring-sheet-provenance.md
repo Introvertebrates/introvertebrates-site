@@ -45,7 +45,7 @@ The Huggorm sheet is a generic Vipera berus depiction, explicitly identified as 
 | Ravn (Corvus corax) | assets/kryp/ravens-in-flight.jpg | Photo-based simplified pose; occluded or cropped parts remain simplified |
 | Damon (Damon diadema) | assets/kryp/damon-diadema.jpg | Photo-based simplified pose; occluded or cropped parts remain simplified |
 | Linothele (Linothele fallax) | assets/collection/linothele-fallax.jpg | Photo-based simplified pose; occluded or cropped parts remain simplified |
-| Solbille (Pachnoda marginata) | assets/collection/pachnoda-marginata.jpg | Photo-based simplified pose; occluded or cropped parts remain simplified |
+| Rosenbille (Pachnoda marginata) | assets/collection/pachnoda-marginata.jpg | Photo-based simplified pose; occluded or cropped parts remain simplified |
 | Steinskorpion (Hadogenes paucidens) | assets/kryp/hadogenes-paucidens.jpg | Photo-based simplified pose; occluded or cropped parts remain simplified |
 | Peruphasma (Peruphasma schultei) | assets/kryp/peruphasma-schultei.jpg | Photo-based simplified pose; occluded or cropped parts remain simplified |
 | Araniella (Araniella sp.) | assets/kryp/araniella-sp.png | Photo-based simplified pose; occluded or cropped parts remain simplified |

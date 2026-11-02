@@ -14,7 +14,7 @@
 | Område | Rettet |
 | --- | --- |
 | Tina | Relevant tips på film-, fargeleggings- og arkivsiden. Dyresporets enkeltoppgaver har nå riktig Tina-rolle og illustrasjon. |
-| Solbiller | Oppgave og alternativ tekst beskriver én bille, slik fotografiet faktisk viser. |
+| Rosenbiller | Oppgave og alternativ tekst beskriver én bille, slik fotografiet faktisk viser. |
 | Ruby | Profiloppgaven gjelder blå bein og lyse hår i frontportrettet, i stedet for en øyegruppe beskrevet fra en annen kameravinkel. |
 | Kongesnok | Ingen oppgave om å telle tungeflikk i et stillbilde uten synlig tunge; oppgaven gjelder øyet og mønsteret. |
 | Ravn | Oppgaven ved hovedfotografiet gjelder de to ravnene og løftede vinger. Teksten om haleformen er fortsatt en generell forklaring, og filmen finnes lenger nede. |

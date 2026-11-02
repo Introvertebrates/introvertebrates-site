@@ -16,6 +16,10 @@ colouring_url: "/kryp-fargelegging.html#colouring-ruby"
 colouring_image: "/assets/kryp/colouring/ruby-chromatopelma-cyaneopubescens-original.png"
 colouring_image_alt: "Fotografibasert fargeleggingsark av Ruby"
 colouring_label: "Fargelegg Ruby"
+video_url: "/assets/kryp/video/ruby.mp4"
+video_mobile_url: "/assets/kryp/video/ruby-vertical.mp4"
+video_title: "Ruby holder et byttedyr mens hun snur seg på silken. Følg de blå beina og de oransje hårene på bakkroppen."
+video_poster: "/assets/kryp/ruby-video-poster.jpg"
 ---
 
 ## To kroppsdeler

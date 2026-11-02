@@ -16,6 +16,10 @@ colouring_url: "/kryp-fargelegging.html#colouring-sabrina"
 colouring_image: "/assets/kryp/colouring/sabrina-brachypelma-hamorii.png"
 colouring_image_alt: "Fotografibasert fargeleggingsark av Sabrina"
 colouring_label: "Fargelegg Sabrina"
+video_url: "/assets/kryp/video/sabrina.mp4"
+video_mobile_url: "/assets/kryp/video/sabrina-vertical.mp4"
+video_title: "Sabrina beveger seg fram mellom barkbitene. Se etter de oransje feltene ved beinleddene."
+video_poster: "/assets/kryp/sabrina-video-poster.jpg"
 ---
 
 ## Venting kan være en jaktstrategi

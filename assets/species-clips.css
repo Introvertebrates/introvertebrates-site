@@ -1,0 +1,23 @@
+.profile-local-video {
+  margin: 0;
+}
+
+.profile-local-video-player {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: 75vh;
+  object-fit: contain;
+  background: #02070c;
+}
+
+.profile-local-video .profile-video-copy p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .profile-local-video-player {
+    aspect-ratio: 9 / 16;
+  }
+}

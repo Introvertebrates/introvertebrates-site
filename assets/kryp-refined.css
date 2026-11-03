@@ -224,6 +224,37 @@ body.kryp-refined { --kk-bg:#031018; --kk-panel:#091c25; --kk-ink:#f6f0df; --kk-
 @media screen { .kryp-weekly-colouring .weekly-huggorm-art { clip-path:inset(23% 0 0); margin-top:-23%; } }
 @media screen { .kryp-refined .kk-home-trails .kryp-trail { grid-column:auto; min-height:0; overflow:visible; } .kk-home-trails .kryp-trail::after { display:none; } .kk-home-trails .kryp-trail-copy { position:static; } }
 
+/* Keep the portrait beside the introduction, with details below both columns. */
+#creator .kryp-creator-card {
+  grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr);
+  align-items: start;
+  gap: 32px clamp(24px, 4vw, 48px);
+}
+#creator .kk-creator-details {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+#creator .kk-creator-details .kk-family { margin-top: 0; }
+#creator .kryp-creator-note {
+  grid-template-columns: 140px minmax(0, 1fr);
+  max-width: none;
+}
+#creator .kk-creator-details > p {
+  margin: 24px 0 0;
+  color: rgba(246, 240, 223, .7);
+  line-height: 1.75;
+}
+@media (max-width: 850px) {
+  #creator .kryp-creator-card { grid-template-columns: 1fr; }
+  #creator .kryp-creator-portrait {
+    width: min(100%, 320px);
+    justify-self: center;
+  }
+}
+@media (max-width: 720px) {
+  #creator .kryp-creator-note { grid-template-columns: 1fr; }
+}
+
 /* Family introduction on the Norwegian About page. */
 #creator .kryp-creator-portrait::after {
   background: linear-gradient(to top, rgba(2, 8, 12, .9), rgba(2, 8, 12, .3) 12%, transparent 28%);

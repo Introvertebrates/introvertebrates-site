@@ -60,6 +60,11 @@ const profileDefinitions = [
   { key: "siuzi-theraphosa-apophysis", residentName: "Siuzi", names: ["siuzi"], species: ["theraphosa apophysis"] }
 ];
 
+// These profiles use general size measurements, not spider leg spans.
+const nonSpiderProfileKeys = new Set([
+  "sonja-mauremys-reevesii", "psyttala-horrida", "pachnoda-marginata"
+]);
+
 const normalize = (value) => String(value ?? "")
   .normalize("NFKD")
   .toLowerCase()
@@ -111,7 +116,9 @@ const sanitizePublicSnapshot = (snapshot) => {
     const source = sourceProfiles[definition.key] ?? {};
     const metrics = Array.isArray(source.metrics)
       ? source.metrics.slice(0, 8).map((metric) => ({
-          label: limitedText(metric?.label, 50),
+          label: nonSpiderProfileKeys.has(definition.key) && metric?.label === "Recorded leg span"
+            ? "Recorded size"
+            : limitedText(metric?.label, 50),
           value: limitedText(metric?.value, 80),
           ...(limitedText(metric?.detail, 120) ? { detail: limitedText(metric.detail, 120) } : {})
         })).filter((metric) => metric.label && metric.value)
@@ -128,7 +135,7 @@ const sanitizePublicSnapshot = (snapshot) => {
 
   const sourceCollection = snapshot?.collection && typeof snapshot.collection === "object" ? snapshot.collection : {};
   const wholeNumber = (value) => Number.isInteger(value) && value >= 0 ? value : 0;
-  const highlights = Array.isArray(sourceCollection.highlights)
+  const sourceHighlights = Array.isArray(sourceCollection.highlights)
     ? sourceCollection.highlights.slice(0, 8).map((highlight) => ({
         label: limitedText(highlight?.label, 60),
         value: limitedText(highlight?.value, 80),
@@ -136,6 +143,40 @@ const sanitizePublicSnapshot = (snapshot) => {
         ...(allowedKeys.has(highlight?.profileKey) ? { profileKey: highlight.profileKey } : {})
       })).filter((highlight) => highlight.label && highlight.value)
     : [];
+
+  const highlights = sourceHighlights.flatMap((highlight) => {
+    const metricLabel = /^Largest recorded leg span(?: \(DLS\))?$/.test(highlight.label)
+      ? "Recorded leg span"
+      : /^Largest recorded (?:spider )?body length$/.test(highlight.label)
+        ? "Recorded body length"
+        : null;
+    if (!metricLabel || !nonSpiderProfileKeys.has(highlight.profileKey)) return [highlight];
+
+    // Older app exports include turtles in spider measurement highlights.
+    // Rebuild those highlights from the public spider metrics in this snapshot.
+    const candidates = profileDefinitions.flatMap((definition) => {
+      if (nonSpiderProfileKeys.has(definition.key)) return [];
+      const metric = profiles[definition.key].metrics.find((entry) => entry.label === metricLabel);
+      const match = metric?.value.match(/^(\d+(?:\.\d+)?)\s*cm$/);
+      return match && finitePositive(Number(match[1]))
+        ? [{ definition, metric, size: Number(match[1]) }]
+        : [];
+    }).sort((first, second) => second.size - first.size);
+    const largest = candidates[0];
+    if (!largest) return [];
+    const { definition, metric } = largest;
+    const species = definition.species[0];
+    return [{
+      label: metricLabel === "Recorded leg span"
+        ? "Largest recorded leg span (DLS)"
+        : "Largest recorded spider body length",
+      value: metric.value,
+      detail: definition.residentName.startsWith("Current ")
+        ? species.charAt(0).toUpperCase() + species.slice(1)
+        : definition.residentName,
+      profileKey: definition.key
+    }];
+  });
 
   return {
     version: 2,
@@ -214,7 +255,7 @@ for (const definition of profileDefinitions) {
 
   if (specimens.length === 1) {
     const specimen = specimens[0];
-    if (finitePositive(specimen?.sizeCm)) metrics.push({ label: "Recorded leg span", value: `${specimen.sizeCm} cm`, detail: "Latest Codex measurement" });
+    if (finitePositive(specimen?.sizeCm)) metrics.push({ label: nonSpiderProfileKeys.has(definition.key) ? "Recorded size" : "Recorded leg span", value: `${specimen.sizeCm} cm`, detail: "Latest Codex measurement" });
     if (finitePositive(specimen?.bodyLengthCm)) metrics.push({ label: "Recorded body length", value: `${specimen.bodyLengthCm} cm`, detail: "Latest Codex measurement" });
     if (finitePositive(specimen?.weightGrams)) metrics.push({ label: "Recorded weight", value: `${specimen.weightGrams} g`, detail: "Latest Codex measurement" });
   }

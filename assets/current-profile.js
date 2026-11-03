@@ -328,7 +328,7 @@
       imageWidth: 1600,
       imageHeight: 900,
       alt: "Orion, an Omothymus violaceopes tarantula, standing vertically on bark",
-      intro: "Orion was the confirmed male Omothymus violaceopes in the Introvertebrates collection. His archive photographs preserve his violet colour at the time they were taken; mature males become much browner and more slender than females and juveniles.",
+      intro: "Orion was the confirmed male Omothymus violaceopes in the Introvertebrates collection. His photographs show his violet colour at the time they were taken; mature males become much browner and more slender than females and juveniles.",
       gallery: [
         { file: "violaceopes-arboreal.jpg", alt: "Full-body view of Orion positioned vertically on bark", caption: "Long-legged arboreal posture · 2024", width: 1600, height: 900 },
         { file: "violaceopes-colour.jpg", alt: "Sharp close view of Orion showing his eye cluster and violet colour on the legs", caption: "Eye cluster and violet colour · 2025", width: 1600, height: 900 },
@@ -382,8 +382,8 @@
       intro: "Psyttala horrida brings a different shape and scale to the current collection. The profile opens with an adult moving across the enclosure floor, while the gallery compares the bright nymph stage with adult foliage and ground use.",
       gallery: [
         { file: "psyttala-nymph.jpg", alt: "Orange and black Psyttala horrida nymph showing its wingless body", caption: "Nymph colour and wingless body · 2025", width: 1600, height: 900 },
-        { file: "psyttala-on-bark-2026.jpg", alt: "Side view of Psyttala horrida with orange legs gripping vertical bark", caption: "Climbing bark · archive photograph", width: 1080, height: 1080 },
-        { file: "psyttala-foliage.jpg", alt: "Adult Psyttala horrida climbing across green foliage", caption: "Adult among foliage · archive portrait", width: 1600, height: 900 },
+        { file: "psyttala-on-bark-2026.jpg", alt: "Side view of Psyttala horrida with orange legs gripping vertical bark", caption: "Climbing bark", width: 1080, height: 1080 },
+        { file: "psyttala-foliage.jpg", alt: "Adult Psyttala horrida climbing across green foliage", caption: "Adult among foliage", width: 1600, height: 900 },
         { file: "psyttala-ground.jpg", alt: "Adult Psyttala horrida moving across the enclosure floor", caption: "Adult on the enclosure floor · 2025", width: 1600, height: 900 }
       ],
       video: { id: "sr930b5ycrg", title: "Creating a beautiful assassin bug habitat", note: "The enclosure build and environmental thinking behind the assassin bugs in the collection." }
@@ -404,8 +404,8 @@
       image: "pachnoda-marginata.jpg",
       imageWidth: 1600,
       imageHeight: 898,
-      alt: "A Pachnoda marginata sun beetle on a branch",
-      intro: "Pachnoda marginata represents the beetles in the current collection. The profile photograph shows one adult on a branch; the gallery also records beetles together in the colony.",
+      alt: "Two adult Pachnoda marginata sun beetles on a branch",
+      intro: "Pachnoda marginata represents the beetles in the current collection. The profile photograph shows two adults on a branch; the gallery also records beetles together in the colony.",
       gallery: [
         { file: "pachnoda-group.jpg", alt: "Several Pachnoda marginata beetles climbing together on dark wood", caption: "Colony group · 2024", width: 1600, height: 900 },
         { file: "pachnoda-close.jpg", alt: "Close frontal view of a Pachnoda marginata beetle on wood", caption: "Head and pronotum detail · 2024", width: 1600, height: 900 },
@@ -502,7 +502,7 @@
     "omothymus-violaceopes": {
       lifestyle: "An arboreal Southeast Asian tarantula associated with elevated retreats in trees. A vertical profile, cover, and access routes matter more than open floor area alone.",
       standout: "Colour changes dramatically with sex and maturity. Females and juveniles are violet-blue; mature males become brown and more slender, so a mature male can look like a very different spider.",
-      inCare: "Orion’s archived record documents vertical cork, a concealed elevated retreat, and observations made from outside the enclosure with disturbance kept low."
+      inCare: "Orion’s care record documents vertical cork, a concealed elevated retreat, and observations made from outside the enclosure with disturbance kept low."
     },
     "clara-psalmopoeus-irminia": {
       lifestyle: "An arboreal Venezuelan tarantula that uses bark crevices, hollows, and silk-lined elevated retreats. Its body shape and movement suit climbing and concealed routes.",
@@ -602,7 +602,7 @@
       shelter: "A recent Singapore record describes a large arboreal theraphosid inhabiting holes in tree trunks in mangroves and secondary forest. Well-developed adhesive foot pads support movement on vertical surfaces, while the cavity provides a dark, humid refuge.",
       feeding: "The likely hunting position is at or near the tree-hole entrance, where the spider can seize climbing and flying arthropods that come within reach. Direct species-level diet data are limited, so the page does not turn body size into claims about routinely taking vertebrates.",
       defence: "Adult females and juveniles can be violet-blue, while mature males become more brown and roam in search of females. The species lacks urticating hairs; rapid climbing, retreat into a cavity, and defensive posturing make escape prevention more important than display access.",
-      inference: "A tall, escape-secure enclosure with vertical cork, a concealed tube-like retreat, water, and careful ventilation reflects the arboreal record. Orion’s archived setup prioritised routes and secure access over a decorative open canopy."
+      inference: "A tall, escape-secure enclosure with vertical cork, a concealed tube-like retreat, water, and careful ventilation reflects the arboreal record. Orion’s enclosure prioritised routes and secure access over a decorative open canopy."
     },
     "clara-psalmopoeus-irminia": {
       taxonomy: "Psalmopoeus irminia is an accepted theraphosid from northern South America, with the World Spider Catalog recording Venezuela and Guyana. The species belongs to an arboreal lineage whose body proportions and foot pads support rapid movement on bark and other vertical surfaces.",
@@ -771,7 +771,7 @@
     "sonja-mauremys-reevesii": "Sonja is the only vertebrate in the current collection. Her profile follows her as an individual—from the home shown in the accompanying video to the measurements and observations selected from her Codex record—while keeping turtle biology separate from the spider profiles.",
     "bella-monocentropus-balfouri": "Bella is one of two Monocentropus balfouri in my care. Her record remains separate from Belinda’s so that photographs, feeding outcomes, moults, and future observations continue to describe the correct individual.",
     "belinda-monocentropus-balfouri": "Belinda has her own profile because a shared species does not mean a shared history. Her vivarium video and Codex record document her as an individual, independently from Bella’s photographs and observations.",
-    "omothymus-violaceopes": "Orion was the individual behind this profile. His archive photographs, video, and collection record preserve his story while keeping the species’ accepted modern name and natural history clear.",
+    "omothymus-violaceopes": "Orion was the individual behind this profile. His photographs, video, and collection record preserve his story while keeping the species’ accepted modern name and natural history clear.",
     "clara-psalmopoeus-irminia": "Clara is the individual behind this profile. Her foliage-rich enclosure photography and personal Codex record add a keeper’s view to the documented range and taxonomy of Psalmopoeus irminia.",
     "psyttala-horrida": "This assassin bug colony brings predatory insects into the collection. The profile follows the colony as a living group record, with habitat, feeding observations, and photography kept distinct from published species-level research.",
     "pachnoda-marginata": "This Pachnoda marginata colony represents beetles in the current collection. Its group photography and Codex history can document feeding and colony development while the profile expands into life cycle and natural-history research.",
@@ -779,13 +779,13 @@
   };
 
 
-  // New resident profiles; archive photographs are explicitly distinguished from current portraits.
+  // New resident profiles; captions describe the species and visible details.
   Object.assign(profiles, {
   "morgana-ephebopus-murinus": {
     "resident": "Morgana",
     "species": "Ephebopus murinus",
     "group": "Tarantula",
-    "sex": "Not confirmed",
+    "sex": "Confirmed female",
     "family": "Theraphosidae",
     "range": "French Guiana, Suriname and Brazil",
     "taxonomicStatus": "Accepted species",
@@ -810,9 +810,9 @@
     "portraitOriginal": "morgana-ephebopus-murinus.jpg",
     "imageWidth": 1445,
     "imageHeight": 1088,
-    "alt": "Archive photograph of Ephebopus murinus showing pale leg markings on dark legs",
+    "alt": "Ephebopus murinus showing pale leg markings on dark legs",
     "intro": "Meet Morgana, the Ephebopus murinus in the Introvertebrates collection: a burrowing tarantula whose pale leg markings give the species its skeleton-spider nickname.",
-    "portraitCaption": "Ephebopus murinus · Archived photo of another individual · AI-assisted edit",
+    "portraitCaption": "Ephebopus murinus · Pale leg markings",
     "commonName": "Skeleton tarantula",
     "gallery": [],
     "video": null,
@@ -824,7 +824,7 @@
     "resident": "Helle",
     "species": "Idiothele mira",
     "group": "Tarantula",
-    "sex": "Not confirmed",
+    "sex": "Confirmed female",
     "family": "Theraphosidae",
     "range": "South Africa",
     "taxonomicStatus": "Accepted species",
@@ -885,8 +885,8 @@
     "gallery": [
       {
         "src": "../assets/collection/lasiodora-klugi-archive-horizontal.jpg",
-        "alt": "Previously kept adult Lasiodora klugi showing dark legs and reddish abdominal hairs beside a mossy retreat",
-        "caption": "Adult coloration · Dark legs and reddish abdominal hairs · Previously kept individual",
+        "alt": "Adult Lasiodora klugi showing dark legs and reddish abdominal hairs beside a mossy retreat",
+        "caption": "Adult coloration · Dark legs and reddish abdominal hairs",
         "width": 1600,
         "height": 1600
       }
@@ -901,7 +901,7 @@
   "morgana-ephebopus-murinus": {
     "lifestyle": "A retreat-building forest tarantula. Adults live in soil burrows, while field research in French Guiana documents a change in retreat use during development.",
     "standout": "Pale markings contrast with the dark legs. Ephebopus also carries specialised urticating setae on the pedipalps, rather than the abdominal patch familiar from many other American tarantulas.",
-    "inCare": "This profile separates the current resident’s documented history from species-level research. The photograph is a labelled species archive image."
+    "inCare": "Morgana is the confirmed female in this collection. The species photograph highlights pale markings on dark legs."
   },
   "helle-idiothele-mira": {
     "lifestyle": "The original description reports densely silk-lined tunnels or cells beneath rocks and logs in lightly wooded habitats. A thin silk door can conceal the entrance.",
@@ -938,8 +938,8 @@
   }
 });
   Object.assign(collectionStories, {
-  "morgana-ephebopus-murinus": "Morgana is the current resident behind this profile. The archived photograph shows another individual of the same species. Measurements, sex, acquisition history and feeding observations will be added only when verified for this individual.",
-  "helle-idiothele-mira": "Helle’s portrait shows the patterned carapace and surrounding legs at close range. It documents Helle as an individual; it does not establish sex, age or the form of the retreat. Those details remain unpublished until verified.",
+  "morgana-ephebopus-murinus": "Morgana is the confirmed female Ephebopus murinus currently in the collection. The photograph highlights the species’ pale leg markings. Measurements and care observations will be added as they are documented.",
+  "helle-idiothele-mira": "Helle is the confirmed female Idiothele mira in the collection. Her portrait shows the patterned carapace and surrounding legs at close range.",
   "lasiodora-klugi": "The portrait shows the Lasiodora klugi currently in the collection, with its eyes, carapace and surrounding legs in close view. No individual name, sex or measurements have been published."
 });
   Object.assign(conservationProfiles, {

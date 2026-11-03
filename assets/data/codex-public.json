@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-15T11:47:37.713Z",
+  "generatedAt": "2026-11-03T18:57:17.443Z",
   "collection": {
     "activeRecords": 22,
     "activeSpecies": 20,
     "namedResidents": 13,
-    "recordedMolts": 28,
-    "confirmedFeedings": 119,
+    "recordedMolts": 29,
+    "confirmedFeedings": 130,
     "highlights": [
       {
         "label": "Active collection records",
@@ -15,12 +15,12 @@
       },
       {
         "label": "Recorded molts",
-        "value": "28",
+        "value": "29",
         "detail": "Confirmed Codex entries"
       },
       {
         "label": "Confirmed feedings",
-        "value": "119",
+        "value": "130",
         "detail": "Accepted and refused outcomes"
       },
       {
@@ -50,6 +50,24 @@
     ]
   },
   "profiles": {
+    "morgana-ephebopus-murinus": {
+      "status": "awaiting-export",
+      "residentName": "Morgana",
+      "sampleSize": 0,
+      "metrics": []
+    },
+    "helle-idiothele-mira": {
+      "status": "awaiting-export",
+      "residentName": "Helle",
+      "sampleSize": 0,
+      "metrics": []
+    },
+    "lasiodora-klugi": {
+      "status": "awaiting-export",
+      "residentName": "Current resident",
+      "sampleSize": 0,
+      "metrics": []
+    },
     "acanthoscurria-geniculata": {
       "status": "ready",
       "residentName": "Alma",
@@ -57,17 +75,17 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "16 months",
+          "value": "17 months",
           "detail": "Rounded for privacy"
         },
         {
           "label": "Feeding acceptance",
           "value": "100%",
-          "detail": "8 accepted · 0 refused"
+          "detail": "9 accepted · 0 refused"
         },
         {
           "label": "Accepted prey",
-          "value": "Roach · Mealworm",
+          "value": "Roach · Mealworm · Dubia roach",
           "detail": "Most often recorded"
         },
         {
@@ -89,7 +107,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "2.3 years",
+          "value": "2.4 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -116,7 +134,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "20 months",
+          "value": "21 months",
           "detail": "Rounded for privacy"
         },
         {
@@ -143,7 +161,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "16 months",
+          "value": "17 months",
           "detail": "Rounded for privacy"
         },
         {
@@ -181,7 +199,7 @@
         {
           "label": "Feeding acceptance",
           "value": "95%",
-          "detail": "18 accepted · 1 refused"
+          "detail": "19 accepted · 1 refused"
         },
         {
           "label": "Accepted prey",
@@ -207,7 +225,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "3.3 years",
+          "value": "3.4 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -217,8 +235,8 @@
         },
         {
           "label": "Feeding acceptance",
-          "value": "100%",
-          "detail": "10 accepted · 0 refused"
+          "value": "91%",
+          "detail": "10 accepted · 1 refused"
         },
         {
           "label": "Accepted prey",
@@ -234,7 +252,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "16 months",
+          "value": "17 months",
           "detail": "Rounded for privacy"
         },
         {
@@ -261,7 +279,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "2.3 years",
+          "value": "2.4 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -288,7 +306,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "16 months",
+          "value": "17 months",
           "detail": "Rounded for privacy"
         },
         {
@@ -299,11 +317,11 @@
         {
           "label": "Feeding acceptance",
           "value": "100%",
-          "detail": "8 accepted · 0 refused"
+          "detail": "9 accepted · 0 refused"
         },
         {
           "label": "Accepted prey",
-          "value": "Roach · Mealworm · Mealworm beetle",
+          "value": "Roach · Dubia roach · Mealworm",
           "detail": "Most often recorded"
         },
         {
@@ -320,16 +338,21 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "20 months",
+          "value": "21 months",
           "detail": "Rounded for privacy"
         },
         {
           "label": "Feeding acceptance",
           "value": "100%",
-          "detail": "1 accepted · 0 refused"
+          "detail": "2 accepted · 0 refused"
         },
         {
-          "label": "Recorded leg span",
+          "label": "Accepted prey",
+          "value": "Turtle food 🐢",
+          "detail": "Most often recorded"
+        },
+        {
+          "label": "Recorded size",
           "value": "25 cm",
           "detail": "Latest Codex measurement"
         },
@@ -347,7 +370,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "4.2 years",
+          "value": "4.3 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -374,7 +397,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "4.2 years",
+          "value": "4.3 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -407,7 +430,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "3.3 years",
+          "value": "3.4 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -417,12 +440,12 @@
         },
         {
           "label": "Feeding acceptance",
-          "value": "80%",
-          "detail": "4 accepted · 1 refused"
+          "value": "83%",
+          "detail": "5 accepted · 1 refused"
         },
         {
           "label": "Accepted prey",
-          "value": "Roach",
+          "value": "Roach · Dubia roach",
           "detail": "Most often recorded"
         }
       ]
@@ -440,7 +463,7 @@
         {
           "label": "Feeding acceptance",
           "value": "100%",
-          "detail": "5 accepted · 0 refused"
+          "detail": "7 accepted · 0 refused"
         },
         {
           "label": "Accepted prey",
@@ -468,7 +491,7 @@
       "metrics": [
         {
           "label": "Time in care",
-          "value": "4.2 years",
+          "value": "4.3 years",
           "detail": "Rounded for privacy"
         },
         {
@@ -478,12 +501,12 @@
         },
         {
           "label": "Feeding acceptance",
-          "value": "90%",
-          "detail": "9 accepted · 1 refused"
+          "value": "91%",
+          "detail": "10 accepted · 1 refused"
         },
         {
           "label": "Accepted prey",
-          "value": "Roach · Cricket · Mealworm",
+          "value": "Roach · Cricket · Dubia roach",
           "detail": "Most often recorded"
         },
         {

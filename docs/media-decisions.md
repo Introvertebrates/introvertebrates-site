@@ -60,3 +60,10 @@ Use concise, factual descriptions of the animal and visible behaviour in the Eng
 - The owner confirmed Morgana (Ephebopus murinus) and Helle (Idiothele mira) as females. Both profiles must show “Confirmed female”.
 - The Pachnoda marginata profile photograph shows two adults on a branch. Use that count in English and Norwegian descriptions and alt text; the separate video still shows one adult.
 - Morgana’s species photograph is an AI-assisted edit of a photograph of another individual. Retain that provenance here; its public caption describes the species and visible leg markings without identifying the pictured animal as Morgana.
+
+
+## Phormingochilus hatihati profile — 3 November 2026
+
+- The former resident was a confirmed male who reached maturity and later passed away. Use the full species-profile layout with researched natural history, conservation context, his photographic record, related profiles and sources.
+- RETAIN: `phormingochilus-hatihati-before-full.jpg`, `phormingochilus-hatihati-before-detail.jpg` and `phormingochilus-hatihati-after-full.jpg`.
+- REMOVED from the profile at the owner’s request: `phormingochilus-hatihati-after-detail.jpg`, captioned “After the final molt · closer view”. Do not re-add it to the profile unless the owner requests it.

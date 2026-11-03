@@ -153,7 +153,8 @@ a {
   object-position: center;
 }
 
-body[data-profile="grammostola-pulchripes"] #profile-title {
+body[data-profile="grammostola-pulchripes"] #profile-title,
+body[data-profile="omothymus-violaceopes"] #profile-title {
   font-size: clamp(2.6rem, 4.6vw, 4.8rem);
   overflow-wrap: normal;
 }

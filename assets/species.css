@@ -1190,3 +1190,33 @@ body[data-profile="lasiodora-klugi"] .hero-portrait img {
     transition: none;
   }
 }
+
+
+/* Inline references share the same treatment across all species profiles. */
+.profile-reference {
+  margin-left: 0.12em;
+  font-size: 0.72em;
+  font-weight: 700;
+  line-height: 0;
+  vertical-align: super;
+  white-space: nowrap;
+}
+
+.profile-reference a {
+  color: var(--species-teal);
+  text-decoration: none;
+}
+
+.profile-reference a:hover,
+.profile-reference a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.source-list li[id] {
+  scroll-margin-top: 100px;
+}
+
+.source-list li:target {
+  border-color: var(--species-teal);
+}

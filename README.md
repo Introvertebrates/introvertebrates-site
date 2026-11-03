@@ -28,3 +28,17 @@ node tools/sync-research.mjs
 ```
 
 See [`docs/research-workflow.md`](docs/research-workflow.md) for the publishing rhythm and editorial checklist.
+
+
+## Updating English species profiles
+
+The 19 generated resident profiles use `assets/current-profile.js` as their canonical content source. The reference plans connect individual sections to verified sources; numbers resolve automatically into the numbered bibliography. Keep citations beside the claims they support, and identify keeper interpretations and genus-level comparisons clearly. Local observation clips also belong in this canonical data.
+
+After editing the canonical data or renderer, run:
+
+```sh
+node tools/build-static-profile-pages.mjs
+node --test tools/profile-references.test.mjs
+```
+
+The Alma, Brachypelma auratum, Caribena versicolor and Phormingochilus hatihati pages are maintained as standalone HTML profiles. They use the same inline-reference and source-anchor convention.

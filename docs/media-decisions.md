@@ -67,3 +67,10 @@ Use concise, factual descriptions of the animal and visible behaviour in the Eng
 - The former resident was a confirmed male who reached maturity and later passed away. Use the full species-profile layout with researched natural history, conservation context, his photographic record, related profiles and sources.
 - RETAIN: `phormingochilus-hatihati-before-full.jpg`, `phormingochilus-hatihati-before-detail.jpg` and `phormingochilus-hatihati-after-full.jpg`.
 - REMOVED from the profile at the owner’s request: `phormingochilus-hatihati-after-detail.jpg`, captioned “After the final molt · closer view”. Do not re-add it to the profile unless the owner requests it.
+
+
+## Species profile references and Orion — 3 November 2026
+
+- Use the full Phormingochilus hatihati profile as the editorial model for English species profiles: clear sections, numbered inline references at the claims they support, and matching numbered sources. Keep keeper observations and husbandry interpretations visibly separate from published findings. Label genus-level comparisons and uncertain assessments explicitly.
+- The owner confirmed that Orion has died. Show “Previously kept - deceased” on his Omothymus violaceopes profile and collection archive card. Do not apply this status to other former residents without confirmation.
+- Keep Sabrina, Ruby, Siuzi and Pachnoda marginata local observation clips in the canonical profile data and builder, including both landscape and portrait sources. Regeneration must preserve the selected clips, captions and existing YouTube material.

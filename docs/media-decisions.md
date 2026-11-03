@@ -1,6 +1,6 @@
 # User media decisions
 
-All user-provided photographs and videos for Introvertebrates.com and Kryp & Krabater belong to Introvertebrates. State media ownership centrally on image-use.html and the Kryp & Krabater about page, and link that policy from the site footers. Do not add repeated ownership labels such as “eget opptak”, “eget fotografi”, “egne bilder”, or “photographed by Introvertebrates” to individual media. Keep captions focused on the animal, behaviour, place, or relevant archive context. Preserve any separately credited third-party or community material and useful disclosures about image editing.
+All user-provided photographs and videos for Introvertebrates.com and Kryp & Krabater belong to Introvertebrates. State media ownership centrally on image-use.html and the Kryp & Krabater about page, and link that policy from the site footers. Do not add repeated ownership labels such as “eget opptak”, “eget fotografi”, “egne bilder”, or “photographed by Introvertebrates” to individual media. Keep captions and alt text focused on the animal, visible behaviour, or relevant place. Do not label pictures as “archived photos”, “archive portraits”, “arkivfoto”, or similar; collection status belongs in the profile context. Describe species photographs by species without implying that they show a named resident. Preserve any separately credited third-party or community material and useful disclosures about image editing.
 
 The Damon diadema clip appears to show grooming of the antenniform sensory legs. Describe the visible behaviour cautiously rather than presenting the clip as exploration of the surroundings.
 
@@ -20,7 +20,7 @@ The source folder also contains edited Dunspett, Lappugle, Prærieulv, Ravn, Sid
 - SELECTED: `O:/Bilder/Homepage/IMG_4805.jpg` for the existing Lasiodora klugi profile and collection card. The owner supplied it to replace the photograph of a previously kept specimen. `assets/collection/lasiodora-klugi-portrait-2026.jpg` is an unchanged copy of the 893 × 853 JPEG. Remove the archive-photo labels from these current-resident placements; retain the older archive files.
 - SELECTED: `O:/Bilder/Homepage/IMG_4886.jpg` for Chilobrachys sp. “Kaeng Krachan” on the homepage, collection card and profile. `assets/collection/chilobrachys-kaeng-krachan-portrait-2026.jpg` crops the 1280 × 758 JPEG to its leftmost 1024 × 758 pixels to exclude the feeder on the right. No generated image detail or colour changes were added. Keep the older file for the existing Instagram post record in `assets/data/social-media.json`.
 - The supplied JPEG and CR3 originals remain untouched. The filenames identify the website selection year, not a verified capture date.
-- SELECTED: Reuse `assets/collection/lasiodora-klugi-archive-horizontal.jpg` within the L. klugi profile gallery as an example of adult coloration. The owner identified it as a previously kept specimen. Label the photograph as a previously kept adult, separate from the current resident shown in the main portrait.
+- SELECTED: Reuse `assets/collection/lasiodora-klugi-archive-horizontal.jpg` within the L. klugi profile gallery as an example of adult coloration. The owner identified it as a previously kept specimen. Describe the adult coloration in its caption and alt text; keep the earlier specimen’s provenance in this internal record.
 
 
 ## Gaupe clips — 1 November 2026
@@ -53,3 +53,10 @@ The source folder also contains edited Dunspett, Lappugle, Prærieulv, Ravn, Sid
 ## English Introvertebrates captions — 2 November 2026
 
 Use concise, factual descriptions of the animal and visible behaviour in the English Introvertebrates section. Omit viewing prompts such as “follow the orange bands” or instructions about what the viewer should look for. This preference applies to future video captions as well as the existing clips.
+
+
+## Profile corrections — 3 November 2026
+
+- The owner confirmed Morgana (Ephebopus murinus) and Helle (Idiothele mira) as females. Both profiles must show “Confirmed female”.
+- The Pachnoda marginata profile photograph shows two adults on a branch. Use that count in English and Norwegian descriptions and alt text; the separate video still shows one adult.
+- Morgana’s species photograph is an AI-assisted edit of a photograph of another individual. Retain that provenance here; its public caption describes the species and visible leg markings without identifying the pictured animal as Morgana.

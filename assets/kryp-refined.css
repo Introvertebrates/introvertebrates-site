@@ -255,6 +255,34 @@ body.kryp-refined { --kk-bg:#031018; --kk-panel:#091c25; --kk-ink:#f6f0df; --kk-
   #creator .kryp-creator-note { grid-template-columns: 1fr; }
 }
 
+/* Tina's guide cards sit below her portrait and introduction. */
+#tina-tarantell .kryp-tina-card {
+  grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr);
+  align-items: start;
+  gap: 28px clamp(24px, 4vw, 48px);
+}
+#tina-tarantell .kryp-tina-portrait img { width: min(100%, 340px); }
+#tina-tarantell .kk-tina-details {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+#tina-tarantell .kryp-tina-role-grid { margin-top: 0; }
+#tina-tarantell .tina-role-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1100px) {
+  #tina-tarantell .tina-role-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 850px) {
+  #tina-tarantell .kryp-tina-card { grid-template-columns: 1fr; }
+  #tina-tarantell .kryp-tina-portrait {
+    width: min(100%, 320px);
+    min-height: 0;
+    justify-self: center;
+  }
+}
+@media (max-width: 650px) {
+  #tina-tarantell .tina-role-grid { grid-template-columns: 1fr; }
+}
+
 /* Family introduction on the Norwegian About page. */
 #creator .kryp-creator-portrait::after {
   background: linear-gradient(to top, rgba(2, 8, 12, .9), rgba(2, 8, 12, .3) 12%, transparent 28%);

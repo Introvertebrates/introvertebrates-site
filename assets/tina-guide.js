@@ -68,7 +68,8 @@
     }
   }
 
-  const tinaAbout = document.querySelector('#tina-tarantell .kryp-tina-copy');
+  const tinaAbout = document.querySelector('#tina-tarantell .kk-tina-details')
+    || document.querySelector('#tina-tarantell .kryp-tina-copy');
   if (tinaAbout && !tinaAbout.querySelector('.kryp-tina-role-grid')) {
     const wrap = document.createElement('div');
     wrap.className = 'kryp-tina-role-grid';

@@ -1400,11 +1400,11 @@
       </section>
 
       ${!profile.hideInstagram ? `
-      <section class="profile-section species-shell profile-instagram-section" data-instagram-profile="${key}" hidden aria-labelledby="instagram-profile-title">
+      <section class="profile-section species-shell profile-instagram-section" id="instagram-posts" data-instagram-profile="${key}" hidden aria-labelledby="instagram-profile-title">
         <header class="section-heading"><p class="section-kicker">From Instagram</p><h2 id="instagram-profile-title">Posts &amp; reels.</h2></header>
         <div class="section-copy">
-          <p class="profile-social-intro">Selected public photographs and reels connected to this animal or its biology. The original Instagram post loads in the page, with a direct link underneath as a fallback.</p>
-          <div class="profile-instagram-grid" data-instagram-items></div>
+          <p class="profile-social-intro">Photographs and reels connected to this animal or its biology, with links to the original Instagram posts.</p>
+          <div class="related-profile-grid profile-instagram-grid" data-instagram-items></div>
         </div>
       </section>
 

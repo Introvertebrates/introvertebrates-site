@@ -57,7 +57,7 @@ The public “Edderkoppens egen alarm!” Short (`uKEScHbjv8k`, published 2 Nove
 
 English Introvertebrates uploads are curated in `channelPosts` in `assets/current-profile.js`, with their public verification date, publication date and exact species associations. Regenerate the static profiles after editing that list. Existing primary YouTube videos and local observation clips are retained. Generic channel announcements are not assigned to every animal.
 
-Instagram profiles retain three embedded cards, with remaining saved links under “More Instagram posts”. This review did not verify new Instagram uploads because browser access was blocked; the Instagram post catalog has not been marked as freshly verified.
+Instagram profiles use text cards with a title, description and direct link for every matching saved post. This presentation change does not verify new Instagram uploads; the post catalog has not been marked as freshly verified.
 
 
 Profile video cards use text and direct links, including the related Norwegian videos on English species profiles and named Norwegian profiles. Their thumbnail is omitted on these profile placements. The shared homepage and film-library cards keep their existing layout. English profile videos are also rendered as static text cards by `assets/current-profile.js`; old publication dates are omitted when they have not been verified.

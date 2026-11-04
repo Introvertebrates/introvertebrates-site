@@ -81,3 +81,10 @@ Use concise, factual descriptions of the animal and visible behaviour in the Eng
 - The owner prefers the text cards used for the Idiothele mira and Linothele fallax Shorts. Apply that format to all profile YouTube links: title, short description, a direct viewing link and a publication date where verified.
 - Replace profile YouTube players and thumbnail previews with these cards. Keep every selected video association and preserve local observation clips and animal photographs. Previously linked videos without a verified publication date remain undated.
 - Apply the same text format to related Kryp & Krabater videos on English and Norwegian profile pages. The general channel and film-library layouts are outside this profile-only change.
+
+
+## Profile Instagram presentation — 4 November 2026
+
+- Apply the same text-card format as the YouTube sections to Instagram links on all profiles: post type, title, a short description and a direct link to the original post or reel.
+- Keep all matching entries from the existing Instagram catalog visible. Do not load embedded posts or thumbnail previews on the profiles. Preserve the site’s own photographs and local observation clips.
+- This is a presentation change using the existing post catalog; it does not assert that new Instagram uploads have been verified.

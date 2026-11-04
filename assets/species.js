@@ -73,48 +73,18 @@
     reel: "Instagram reel"
   };
 
-  const getEmbedUrl = (url) => {
-    const match = String(url).match(/instagram\.com\/(?:[^/]+\/)?(p|reel)\/([^/?#]+)/i);
-    return match ? `https://www.instagram.com/${match[1]}/${match[2]}/embed/captioned/` : null;
-  };
-
   const createCard = (item) => {
-    const card = document.createElement("article");
-    card.className = "profile-instagram-card";
-
-    const embedUrl = getEmbedUrl(item.url);
-    if (embedUrl) {
-      const frameWrap = document.createElement("div");
-      frameWrap.className = "profile-instagram-embed";
-
-      const frame = document.createElement("iframe");
-      frame.src = embedUrl;
-      frame.title = `${typeLabels[item.type] || "Instagram post"}: ${item.title}`;
-      frame.loading = "lazy";
-      frame.allow = "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share";
-      frame.referrerPolicy = "strict-origin-when-cross-origin";
-      frameWrap.append(frame);
-      card.append(frameWrap);
-    } else {
-      const media = document.createElement("span");
-      media.className = "profile-instagram-media";
-
-      const image = document.createElement("img");
-      image.src = `../${String(item.image).replace(/^\.\//, "")}`;
-      image.alt = item.alt || `${item.title} — collection photograph used as an Instagram preview`;
-      image.width = 1600;
-      image.height = 898;
-      image.loading = "lazy";
-      image.decoding = "async";
-      media.append(image);
-      card.append(media);
-    }
+    const card = document.createElement("a");
+    card.className = "related-profile-card profile-instagram-card";
+    card.href = item.url;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
 
     const copy = document.createElement("span");
-    copy.className = "profile-instagram-copy";
+    copy.className = "related-profile-copy";
 
     const label = document.createElement("span");
-    label.className = "profile-instagram-label";
+    label.className = "profile-video-label";
     label.textContent = typeLabels[item.type] || "Instagram post";
 
     const title = document.createElement("strong");
@@ -126,12 +96,7 @@
 
     const action = document.createElement("span");
     action.className = "profile-instagram-action";
-    const link = document.createElement("a");
-    link.href = item.url;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = item.type === "reel" ? "Open reel on Instagram ↗" : "Open post on Instagram ↗";
-    action.append(link);
+    action.textContent = item.type === "reel" ? "Open reel on Instagram ↗" : "Open post on Instagram ↗";
 
     copy.append(label, title, summary, action);
     card.append(copy);
@@ -149,26 +114,7 @@
         : [];
       if (items.length === 0) return;
 
-      grid.replaceChildren(...items.slice(0, 3).map(createCard));
-      if (items.length > 3) {
-        const more = document.createElement("details");
-        more.className = "profile-more-social";
-        const summary = document.createElement("summary");
-        summary.textContent = `More Instagram posts (${items.length - 3})`;
-        const list = document.createElement("ul");
-        for (const item of items.slice(3)) {
-          const entry = document.createElement("li");
-          const link = document.createElement("a");
-          link.href = item.url;
-          link.target = "_blank";
-          link.rel = "noopener noreferrer";
-          link.textContent = `${item.title} ↗`;
-          entry.append(link);
-          list.append(entry);
-        }
-        more.append(summary, list);
-        grid.after(more);
-      }
+      grid.replaceChildren(...items.map(createCard));
       section.hidden = false;
     })
     .catch(() => {

@@ -73,33 +73,45 @@ class Element {
 }
 const descendants = (element) => [element, ...element.children.flatMap(descendants), ...element.following.flatMap(descendants)];
 
-test("Instagram links beyond the three embedded cards remain accessible", async () => {
+test("saved Instagram posts use text cards with every matching link retained", async () => {
   const catalog = JSON.parse(read("assets/data/social-media.json"));
-  const key = "ruby-chromatopelma-cyaneopubescens";
-  const expected = catalog.items.filter((item) => item.profileKeys.includes(key));
-  assert.ok(expected.length > 3, "fixture must cover the overflow case");
-  const grid = new Element("div");
-  const section = new Element("section");
-  section.dataset = { instagramProfile: key };
-  section.querySelector = () => grid;
-  const browserContext = vm.createContext({
-    document: {
-      body: { dataset: {} },
-      head: new Element("head"),
-      querySelector: (selector) => selector === "[data-instagram-profile]" ? section : null,
-      createElement: (tag) => new Element(tag)
-    },
-    window: { __introvertebratesAnalyticsLoaderAdded: true },
-    fetch: async () => ({ ok: true, json: async () => catalog })
-  });
-  vm.runInContext(read("assets/species.js"), browserContext);
-  await new Promise(setImmediate);
-  const elements = descendants(grid);
-  const links = elements.filter((element) => element.tag === "a").map((element) => element.href);
-  assert.deepEqual(links.sort(), expected.map((item) => item.url).sort());
-  assert.equal(elements.filter((element) => element.tag === "iframe").length, 3);
-  assert.equal(grid.following[0].tag, "details");
-  assert.equal(section.hidden, false);
+  const keys = new Set(catalog.items.flatMap((item) => item.profileKeys));
+  assert.ok(catalog.items.filter((item) => item.profileKeys.includes("ruby-chromatopelma-cyaneopubescens")).length > 3);
+  for (const key of [...keys, "profile-without-posts"]) {
+    const expected = catalog.items.filter((item) => item.profileKeys.includes(key));
+    const grid = new Element("div");
+    const section = new Element("section");
+    section.dataset = { instagramProfile: key };
+    section.hidden = true;
+    section.querySelector = () => grid;
+    const requests = [];
+    const browserContext = vm.createContext({
+      document: {
+        body: { dataset: {} },
+        head: new Element("head"),
+        querySelector: (selector) => selector === "[data-instagram-profile]" ? section : null,
+        createElement: (tag) => new Element(tag)
+      },
+      window: { __introvertebratesAnalyticsLoaderAdded: true },
+      fetch: async (url) => { requests.push(url); return { ok: true, json: async () => catalog }; }
+    });
+    vm.runInContext(read("assets/species.js"), browserContext);
+    await new Promise(setImmediate);
+    const elements = descendants(grid);
+    const links = elements.filter((element) => element.tag === "a").map((element) => element.href);
+    assert.deepEqual(links.sort(), expected.map((item) => item.url).sort(), key);
+    assert.equal(grid.children.length, expected.length, key);
+    assert.equal(elements.filter((element) => ["iframe", "img", "details"].includes(element.tag)).length, 0, key);
+    assert.equal(elements.filter((element) => element.tag === "strong").length, expected.length, key);
+    assert.equal(section.hidden, expected.length === 0, key);
+    assert.deepEqual(requests, ["../assets/data/social-media.json"]);
+    if (expected.length) {
+      const html = read(`species/${key}.html`);
+      assert.ok(html.includes(`data-instagram-profile="${key}"`), key);
+      assert.ok(html.includes('id="instagram-posts"'), key);
+      assert.doesNotMatch(html, /The original Instagram post loads in the page/, key);
+    }
+  }
 });
 
 test("Norwegian video links use text on profiles and preserve the film-library cards", async () => {

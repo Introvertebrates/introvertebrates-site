@@ -1223,31 +1223,36 @@ body[data-profile="lasiodora-klugi"] .hero-portrait img {
 }
 
 
-.profile-youtube-grid {
+.profile-youtube-grid,
+.profile-instagram-grid {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   margin-top: 24px;
 }
 
-.profile-youtube-card .related-profile-copy strong {
+.profile-youtube-card .related-profile-copy strong,
+.profile-instagram-card .related-profile-copy strong {
   white-space: normal;
   overflow: visible;
   text-overflow: clip;
   line-height: 1.5;
 }
 
-.profile-youtube-card .related-profile-copy {
+.profile-youtube-card .related-profile-copy,
+.profile-instagram-card .related-profile-copy {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.profile-youtube-summary {
+.profile-youtube-summary,
+.profile-instagram-summary {
   color: var(--species-muted);
   font-size: 0.86rem;
   line-height: 1.65;
 }
 
-.profile-youtube-action {
+.profile-youtube-action,
+.profile-instagram-action {
   margin-top: auto;
   color: var(--species-teal);
   font-size: 0.85rem;

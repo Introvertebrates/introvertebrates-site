@@ -102,14 +102,14 @@ for (const [key, profile] of profileEntries) {
   <meta name="twitter:image:alt" content="${escapeHtml(profile.alt)}">
   <script type="application/ld+json">${JSON.stringify(structuredData).replaceAll("<", "\\u003c")}</script>
   <link rel="icon" type="image/png" href="../Only spider.png">
-  <link rel="stylesheet" href="../assets/species.css?v=20261104media2">${profile.localVideo ? '\n  <link rel="stylesheet" href="../assets/species-clips.css">' : ""}
+  <link rel="stylesheet" href="../assets/species.css?v=20261104instagram">${profile.localVideo ? '\n  <link rel="stylesheet" href="../assets/species-clips.css">' : ""}
 </head>
 <body data-profile="${key}">
   <a class="skip-link" href="#main-content">Skip to profile</a>
   <div data-current-profile data-static-profile>
 ${renderedHtml.split("\n").map((line) => line ? `    ${line}` : "").join("\n")}
   </div>
-  <script src="../assets/species.js?v=20261104text" defer></script>
+  <script src="../assets/species.js?v=20261104instagram" defer></script>
 </body>
 </html>
 `;

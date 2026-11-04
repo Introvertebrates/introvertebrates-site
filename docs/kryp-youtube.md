@@ -48,3 +48,13 @@ python -m unittest discover -s tools -p test_kryp_youtube.py
 node tools/check-local-references.mjs
 node --check assets/kryp-youtube.js
 ```
+
+
+
+## Profile link review — 4 November 2026
+
+The public “Edderkoppens egen alarm!” Short (`uKEScHbjv8k`, published 2 November) features Linothele fallax. Its catalog entry links it to the English Linothele profile and marks it as a Short. There is no matching Norwegian profile section to assign. This is the new public upload; the previously excluded private/uncorrected videos remain excluded.
+
+English Introvertebrates uploads are curated in `channelPosts` in `assets/current-profile.js`, with their public verification date, publication date and exact species associations. Regenerate the static profiles after editing that list. Existing primary YouTube videos and local observation clips are retained. Generic channel announcements are not assigned to every animal.
+
+Instagram profiles retain three embedded cards, with remaining saved links under “More Instagram posts”. This review did not verify new Instagram uploads because browser access was blocked; the Instagram post catalog has not been marked as freshly verified.

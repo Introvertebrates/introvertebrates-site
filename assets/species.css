@@ -1221,3 +1221,50 @@ body[data-profile="lasiodora-klugi"] .hero-portrait img {
 .source-list li:target {
   border-color: var(--species-teal);
 }
+
+
+.profile-youtube-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  margin-top: 24px;
+}
+
+.profile-youtube-card img {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.profile-youtube-card .related-profile-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-youtube-summary {
+  color: var(--species-muted);
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.profile-youtube-action {
+  margin-top: auto;
+  color: var(--species-teal);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.profile-more-social {
+  margin-top: 20px;
+  padding: 16px 20px;
+  border: 1px solid var(--species-line);
+  border-radius: 14px;
+}
+
+.profile-more-social summary {
+  color: var(--species-teal);
+  cursor: pointer;
+}
+
+.profile-more-social li {
+  margin-top: 10px;
+}

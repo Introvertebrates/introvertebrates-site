@@ -100,6 +100,13 @@
     "profiles": [],
     "norwegianProfiles": [],
     "kind": "short"
+  },
+  "uKEScHbjv8k": {
+    "summary": "Linothele fallax kjenner vibrasjoner i nettet når et småkryp beveger seg i silketrådene.",
+    "profiles": [
+      "linothele-fallax"
+    ],
+    "norwegianProfiles": [],
+    "kind": "short"
   }
 }
-

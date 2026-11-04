@@ -145,11 +145,30 @@
     })
     .then((data) => {
       const items = Array.isArray(data?.items)
-        ? data.items.filter((item) => Array.isArray(item.profileKeys) && item.profileKeys.includes(profileKey)).slice(0, 3)
+        ? data.items.filter((item) => Array.isArray(item.profileKeys) && item.profileKeys.includes(profileKey))
         : [];
       if (items.length === 0) return;
 
-      grid.replaceChildren(...items.map(createCard));
+      grid.replaceChildren(...items.slice(0, 3).map(createCard));
+      if (items.length > 3) {
+        const more = document.createElement("details");
+        more.className = "profile-more-social";
+        const summary = document.createElement("summary");
+        summary.textContent = `More Instagram posts (${items.length - 3})`;
+        const list = document.createElement("ul");
+        for (const item of items.slice(3)) {
+          const entry = document.createElement("li");
+          const link = document.createElement("a");
+          link.href = item.url;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = `${item.title} ↗`;
+          entry.append(link);
+          list.append(entry);
+        }
+        more.append(summary, list);
+        grid.after(more);
+      }
       section.hidden = false;
     })
     .catch(() => {
@@ -176,3 +195,4 @@
   script.src = '/assets/kryp-youtube.js'; script.defer = true;
   document.head.append(script);
 })();
+

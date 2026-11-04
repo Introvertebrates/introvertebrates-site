@@ -1120,6 +1120,105 @@
   for (const [profileKey, video] of Object.entries(localVideos)) profiles[profileKey].localVideo = video;
 
 
+  // Confirmed public channel uploads, matched to the animals they feature.
+  // Keep unrelated channel announcements and scheduled uploads off profiles.
+  const channelPosts = [
+  {
+    "id": "93NbTdoMkYI",
+    "kind": "short",
+    "published": "2026-11-01",
+    "title": "This Spider’s Web Is an Alarm System 🕷️ Linothele fallax",
+    "summary": "Linothele fallax catches a roach in slow motion, with a closer look at vibrations in its web.",
+    "profiles": [
+      "linothele-fallax"
+    ],
+    "verifiedPublicOn": "2026-11-04"
+  },
+  {
+    "id": "OSbbMSWjZMU",
+    "kind": "short",
+    "published": "2026-10-23",
+    "title": "This Tarantula Has a Trapdoor! 🕷️ Idiothele mira",
+    "summary": "A short introduction to Idiothele mira, its silk trapdoor and blue feet.",
+    "profiles": [
+      "helle-idiothele-mira"
+    ],
+    "verifiedPublicOn": "2026-11-04"
+  },
+  {
+    "id": "QEOpwJFTqX0",
+    "kind": "short",
+    "published": "2026-09-19",
+    "title": "Meet My 3 New Tarantulas! 🕷️",
+    "summary": "Meet the new Lasiodora klugi, Idiothele mira and Ephebopus murinus in the collection.",
+    "profiles": [
+      "lasiodora-klugi",
+      "helle-idiothele-mira",
+      "morgana-ephebopus-murinus"
+    ],
+    "verifiedPublicOn": "2026-11-04"
+  },
+  {
+    "id": "b17sor4XiPE",
+    "kind": "video",
+    "published": "2026-09-13",
+    "title": "New House, New Animal Room & What’s Next for Introvertebrates",
+    "summary": "An animal-room update that includes Siuzi’s move and a paludarium build.",
+    "profiles": [
+      "siuzi-theraphosa-apophysis"
+    ],
+    "verifiedPublicOn": "2026-11-04"
+  },
+  {
+    "id": "OITj4VbUqTE",
+    "kind": "short",
+    "published": "2026-07-31",
+    "title": "Moving My Giant Tarantula Into Her New Home 🕷️",
+    "summary": "Siuzi’s move into her new home, ahead of the longer animal-room update.",
+    "profiles": [
+      "siuzi-theraphosa-apophysis"
+    ],
+    "verifiedPublicOn": "2026-11-04"
+  },
+  {
+    "id": "ZLVfP3GRFzE",
+    "kind": "short",
+    "published": "2026-02-01",
+    "title": "Tarantula Strike in Real Speed vs Slow Motion",
+    "summary": "A close view of a feeding strike by Chilobrachys fimbriatus.",
+    "profiles": [
+      "chilobrachys-fimbriatus"
+    ],
+    "verifiedPublicOn": "2026-11-04"
+  },
+  {
+    "id": "2UgmTqdbPwI",
+    "kind": "video",
+    "published": "2025-12-18",
+    "title": "My Turtle Sonja Meets Her New Tankmates… 🐢🐟",
+    "summary": "An update on Sonja, her tankmates and everyday life in her enclosure.",
+    "profiles": [
+      "sonja-mauremys-reevesii"
+    ],
+    "verifiedPublicOn": "2026-11-04"
+  },
+  {
+    "id": "h-SCQ6Xon2A",
+    "kind": "short",
+    "published": "2025-12-14",
+    "title": "This Isn’t a Spider… But Watch How It Hunts",
+    "summary": "A closer look at Psyttala horrida, the assassin bugs in the collection.",
+    "profiles": [
+      "psyttala-horrida"
+    ],
+    "verifiedPublicOn": "2026-11-04"
+  }
+];
+
+  const escapeProfileHtml = (value) => String(value)
+    .replaceAll("&", "&amp;").replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+
   const root = document.querySelector("[data-current-profile]");
   const key = document.body.dataset.profile;
   const profile = profiles[key];
@@ -1149,6 +1248,14 @@
   const fieldGuide = fieldGuides[key];
   const deeperHistory = naturalHistorySections[key];
   const conservationProfile = conservationProfiles[key];
+  const relatedChannelVideos = channelPosts.filter((video) =>
+    video.profiles.includes(key) && video.id !== profile.video?.id &&
+    /^[A-Za-z0-9_-]{11}$/.test(video.id) && video.verifiedPublicOn &&
+    new Date(video.published) <= new Date()
+  );
+  const videoDate = (value) => new Intl.DateTimeFormat("en-GB", {
+    day: "numeric", month: "long", year: "numeric", timeZone: "UTC"
+  }).format(new Date(value));
   const referenceMarks = (section) => (profile.references?.[section] || []).map((number) => {
     const label = profile.sources[number - 1].label.replaceAll("&", "&amp;").replaceAll('"', "&quot;");
     return `<sup class="profile-reference"><a href="#source-${number}" title="${label}" aria-label="Reference ${number}: ${label}">[${number}]</a></sup>`;
@@ -1317,10 +1424,11 @@
       </section>
       ` : ""}
 
-      ${profile.video ? `
-      <section class="profile-section species-shell profile-video-section" aria-labelledby="profile-video-title">
+      ${profile.video || relatedChannelVideos.length ? `
+      <section class="profile-section species-shell profile-video-section" id="related-viewing" aria-labelledby="profile-video-title">
         <header class="section-heading"><p class="section-kicker">From the channel</p><h2 id="profile-video-title">Related viewing.</h2></header>
         <div class="section-copy">
+          ${profile.video ? `
           <article class="profile-video-card">
             <div class="profile-video-frame">
               <iframe src="https://www.youtube-nocookie.com/embed/${profile.video.id}" title="${profile.video.title}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -1335,6 +1443,23 @@
               </div>
             </div>
           </article>
+          ` : ""}
+          ${relatedChannelVideos.length ? `
+            ${profile.video ? '<h3 class="profile-more-video-title">More from the channel</h3>' : ""}
+            <div class="related-profile-grid profile-youtube-grid">
+              ${relatedChannelVideos.map((video) => `
+                <a class="related-profile-card profile-youtube-card" data-youtube-video="${video.id}" href="https://www.youtube.com/${video.kind === "short" ? "shorts/" : "watch?v="}${video.id}" target="_blank" rel="noopener noreferrer">
+                  <img src="https://i.ytimg.com/vi/${video.id}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
+                  <span class="related-profile-copy">
+                    <span class="profile-video-label">${video.kind === "short" ? "YouTube Short" : "YouTube video"} · <time datetime="${video.published}">${videoDate(video.published)}</time></span>
+                    <strong>${escapeProfileHtml(video.title)}</strong>
+                    <span class="profile-youtube-summary">${escapeProfileHtml(video.summary)}</span>
+                    <span class="profile-youtube-action">Watch on YouTube <span aria-hidden="true">↗</span></span>
+                  </span>
+                </a>
+              `).join("")}
+            </div>
+          ` : ""}
         </div>
       </section>
 

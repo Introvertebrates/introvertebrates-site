@@ -1,15 +1,17 @@
 {
   "channelId": "UC5Nn9nq93NXyq0SBKq7Ny0Q",
-  "lastVerifiedAt": "2026-11-03T09:44:00.067829+00:00",
+  "lastVerifiedAt": "2026-11-04T05:35:57.415131+00:00",
   "items": [
     {
       "id": "uKEScHbjv8k",
       "title": "Edderkoppens egen alarm! 🕷️🕸️",
       "published": "2026-11-02T16:00:17+00:00",
-      "summary": "",
-      "profiles": [],
+      "summary": "Linothele fallax kjenner vibrasjoner i nettet når et småkryp beveger seg i silketrådene.",
+      "profiles": [
+        "linothele-fallax"
+      ],
       "norwegianProfiles": [],
-      "kind": "video"
+      "kind": "short"
     },
     {
       "id": "pCvxVXNTQoE",

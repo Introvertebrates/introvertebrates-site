@@ -1449,7 +1449,6 @@
             <div class="related-profile-grid profile-youtube-grid">
               ${relatedChannelVideos.map((video) => `
                 <a class="related-profile-card profile-youtube-card" data-youtube-video="${video.id}" href="https://www.youtube.com/${video.kind === "short" ? "shorts/" : "watch?v="}${video.id}" target="_blank" rel="noopener noreferrer">
-                  <img src="https://i.ytimg.com/vi/${video.id}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
                   <span class="related-profile-copy">
                     <span class="profile-video-label">${video.kind === "short" ? "YouTube Short" : "YouTube video"} · <time datetime="${video.published}">${videoDate(video.published)}</time></span>
                     <strong>${escapeProfileHtml(video.title)}</strong>

@@ -1228,10 +1228,11 @@ body[data-profile="lasiodora-klugi"] .hero-portrait img {
   margin-top: 24px;
 }
 
-.profile-youtube-card img {
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+.profile-youtube-card .related-profile-copy strong {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  line-height: 1.5;
 }
 
 .profile-youtube-card .related-profile-copy {

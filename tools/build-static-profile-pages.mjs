@@ -109,7 +109,7 @@ for (const [key, profile] of profileEntries) {
   <div data-current-profile data-static-profile>
 ${renderedHtml.split("\n").map((line) => line ? `    ${line}` : "").join("\n")}
   </div>
-  <script src="../assets/species.js?v=20261104media" defer></script>
+  <script src="../assets/species.js?v=20261104text" defer></script>
 </body>
 </html>
 `;

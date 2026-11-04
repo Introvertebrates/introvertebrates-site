@@ -1248,11 +1248,13 @@
   const fieldGuide = fieldGuides[key];
   const deeperHistory = naturalHistorySections[key];
   const conservationProfile = conservationProfiles[key];
-  const relatedChannelVideos = channelPosts.filter((video) =>
-    video.profiles.includes(key) && video.id !== profile.video?.id &&
-    /^[A-Za-z0-9_-]{11}$/.test(video.id) && video.verifiedPublicOn &&
-    new Date(video.published) <= new Date()
-  );
+  const relatedChannelVideos = [
+    ...channelPosts.filter((video) =>
+      video.profiles.includes(key) && /^[A-Za-z0-9_-]{11}$/.test(video.id) &&
+      video.verifiedPublicOn && new Date(video.published) <= new Date()
+    ),
+    ...(profile.video ? [{ ...profile.video, summary: profile.video.note }] : [])
+  ].filter((video, index, videos) => videos.findIndex((item) => item.id === video.id) === index);
   const videoDate = (value) => new Intl.DateTimeFormat("en-GB", {
     day: "numeric", month: "long", year: "numeric", timeZone: "UTC"
   }).format(new Date(value));
@@ -1424,44 +1426,24 @@
       </section>
       ` : ""}
 
-      ${profile.video || relatedChannelVideos.length ? `
+      ${relatedChannelVideos.length ? `
       <section class="profile-section species-shell profile-video-section" id="related-viewing" aria-labelledby="profile-video-title">
         <header class="section-heading"><p class="section-kicker">From the channel</p><h2 id="profile-video-title">Related viewing.</h2></header>
         <div class="section-copy">
-          ${profile.video ? `
-          <article class="profile-video-card">
-            <div class="profile-video-frame">
-              <iframe src="https://www.youtube-nocookie.com/embed/${profile.video.id}" title="${profile.video.title}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="profile-video-copy">
-              <span class="profile-video-label">Introvertebrates on YouTube</span>
-              <h3>${profile.video.title}</h3>
-              <p>${profile.video.note}</p>
-              <div class="profile-media-links">
-                <a class="profile-video-link" href="https://www.youtube.com/watch?v=${profile.video.id}" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">→</span></a>
-                <a class="profile-video-link" href="https://www.instagram.com/introvertebrates_yt/" target="_blank" rel="noopener noreferrer">Photography &amp; reels on Instagram <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
-          ` : ""}
-          ${relatedChannelVideos.length ? `
-            ${profile.video ? '<h3 class="profile-more-video-title">More from the channel</h3>' : ""}
-            <div class="related-profile-grid profile-youtube-grid">
-              ${relatedChannelVideos.map((video) => `
-                <a class="related-profile-card profile-youtube-card" data-youtube-video="${video.id}" href="https://www.youtube.com/${video.kind === "short" ? "shorts/" : "watch?v="}${video.id}" target="_blank" rel="noopener noreferrer">
-                  <span class="related-profile-copy">
-                    <span class="profile-video-label">${video.kind === "short" ? "YouTube Short" : "YouTube video"} · <time datetime="${video.published}">${videoDate(video.published)}</time></span>
-                    <strong>${escapeProfileHtml(video.title)}</strong>
-                    <span class="profile-youtube-summary">${escapeProfileHtml(video.summary)}</span>
-                    <span class="profile-youtube-action">Watch on YouTube <span aria-hidden="true">↗</span></span>
-                  </span>
-                </a>
-              `).join("")}
-            </div>
-          ` : ""}
+          <div class="related-profile-grid profile-youtube-grid">
+            ${relatedChannelVideos.map((video) => `
+              <a class="related-profile-card profile-youtube-card" data-youtube-video="${video.id}" href="https://www.youtube.com/${video.kind === "short" ? "shorts/" : "watch?v="}${video.id}" target="_blank" rel="noopener noreferrer">
+                <span class="related-profile-copy">
+                  <span class="profile-video-label">${video.kind === "short" ? "YouTube Short" : "YouTube video"}${video.published ? ` · <time datetime="${video.published}">${videoDate(video.published)}</time>` : ""}</span>
+                  <strong>${escapeProfileHtml(video.title)}</strong>
+                  <span class="profile-youtube-summary">${escapeProfileHtml(video.summary)}</span>
+                  <span class="profile-youtube-action">Watch on YouTube <span aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+            `).join("")}
+          </div>
         </div>
       </section>
-
       ` : ""}
 
       <section class="profile-section species-shell" aria-labelledby="codex-title">

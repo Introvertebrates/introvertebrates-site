@@ -44,11 +44,32 @@ test("the public Norwegian Linothele Short keeps its species association after s
   assert.equal(video.kind, "short");
 });
 
+test("all profile YouTube placements use text cards and retain the original primary video", () => {
+  for (const file of fs.readdirSync(path.join(siteRoot, "species")).filter((file) => file.endsWith(".html"))) {
+    const html = read(`species/${file}`);
+    assert.doesNotMatch(html, /<iframe[^>]+src="https:\/\/(?:www\.)?youtube(?:-nocookie)?\.com\//, file);
+    const cards = [...html.matchAll(/<a class="related-profile-card profile-youtube-card"[\s\S]*?<\/a>/g)];
+    for (const [card] of cards) {
+      assert.doesNotMatch(card, /<img|<iframe/, file);
+      assert.match(card, /<strong>[^<]+<\/strong>/, file);
+      assert.match(card, /Watch on YouTube/, file);
+    }
+  }
+  for (const [key, profile] of Object.entries(profiles)) {
+    if (!profile.video) continue;
+    const html = read(`species/${key}.html`);
+    assert.ok(html.includes(`data-youtube-video="${profile.video.id}"`), key);
+    assert.ok(html.includes(`href="https://www.youtube.com/watch?v=${profile.video.id}"`), key);
+  }
+  assert.ok(read("species/acanthoscurria-geniculata.html").includes('data-youtube-video="BsemPEq5f2Y"'));
+});
+
 class Element {
   constructor(tag) { this.tag = tag; this.children = []; this.following = []; }
   append(...children) { this.children.push(...children); }
   replaceChildren(...children) { this.children = children; }
   after(element) { this.following.push(element); }
+  setAttribute(name, value) { this[name] = value; }
 }
 const descendants = (element) => [element, ...element.children.flatMap(descendants), ...element.following.flatMap(descendants)];
 
@@ -79,4 +100,32 @@ test("Instagram links beyond the three embedded cards remain accessible", async 
   assert.equal(elements.filter((element) => element.tag === "iframe").length, 3);
   assert.equal(grid.following[0].tag, "details");
   assert.equal(section.hidden, false);
+});
+
+test("Norwegian video links use text on profiles and preserve the film-library cards", async () => {
+  const feed = JSON.parse(read("assets/data/kryp-youtube.json"));
+  for (const placement of ["english-profile", "norwegian-profile", "film-library"]) {
+    const main = new Element("main");
+    const target = new Element("section");
+    target.dataset = placement === "norwegian-profile" ? { krypProfile: "siuzi" } : { limit: "2" };
+    const isEnglish = placement === "english-profile";
+    const page = vm.createContext({
+      document: {
+        body: { dataset: isEnglish ? { profile: "siuzi-theraphosa-apophysis" } : {} },
+        documentElement: { lang: isEnglish ? "en" : "no" },
+        querySelectorAll: () => isEnglish ? [] : [target],
+        querySelector: () => main,
+        createElement: (tag) => new Element(tag)
+      },
+      fetch: async () => ({ ok: true, json: async () => feed })
+    });
+    vm.runInContext(read("assets/kryp-youtube.js"), page);
+    await new Promise(setImmediate);
+    const elements = descendants(isEnglish ? main : target);
+    const links = elements.filter((element) => element.tag === "a").map((element) => element.href);
+    assert.ok(links.some((url) => url.includes("youtube.com/watch?v=")), placement);
+    const images = elements.filter((element) => element.tag === "img");
+    if (placement === "film-library") assert.equal(images.length, 2);
+    else assert.equal(images.length, 0, placement);
+  }
 });

@@ -192,7 +192,7 @@
   style.rel = 'stylesheet'; style.href = '/assets/kryp-youtube.css';
   document.head.append(style);
   const script = document.createElement('script');
-  script.src = '/assets/kryp-youtube.js'; script.defer = true;
+  script.src = '/assets/kryp-youtube.js?v=20261104text'; script.defer = true;
   document.head.append(script);
 })();
 

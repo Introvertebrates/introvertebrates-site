@@ -74,3 +74,10 @@ Use concise, factual descriptions of the animal and visible behaviour in the Eng
 - Use the full Phormingochilus hatihati profile as the editorial model for English species profiles: clear sections, numbered inline references at the claims they support, and matching numbered sources. Keep keeper observations and husbandry interpretations visibly separate from published findings. Label genus-level comparisons and uncertain assessments explicitly.
 - The owner confirmed that Orion has died. Show “Previously kept - deceased” on his Omothymus violaceopes profile and collection archive card. Do not apply this status to other former residents without confirmation.
 - Keep Sabrina, Ruby, Siuzi and Pachnoda marginata local observation clips in the canonical profile data and builder, including both landscape and portrait sources. Regeneration must preserve the selected clips, captions and existing YouTube material.
+
+
+## Profile YouTube presentation — 4 November 2026
+
+- The owner prefers the text cards used for the Idiothele mira and Linothele fallax Shorts. Apply that format to all profile YouTube links: title, short description, a direct viewing link and a publication date where verified.
+- Replace profile YouTube players and thumbnail previews with these cards. Keep every selected video association and preserve local observation clips and animal photographs. Previously linked videos without a verified publication date remain undated.
+- Apply the same text format to related Kryp & Krabater videos on English and Norwegian profile pages. The general channel and film-library layouts are outside this profile-only change.

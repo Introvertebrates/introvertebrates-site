@@ -16,15 +16,18 @@
     el.href = href;
     return el;
   };
-  function card(item) {
+  function card(item, textOnly = false) {
     const article = node('article', '', 'kk-video-card');
     const watch = link('', `https://www.youtube.com/watch?v=${item.id}`);
     watch.setAttribute('aria-label', item.title);
-    const image = node('img');
-    image.src = `https://i.ytimg.com/vi/${item.id}/hqdefault.jpg`;
-    image.alt = '';
-    image.width = 480; image.height = 360; image.loading = 'lazy';
-    watch.append(image);
+    if (!textOnly) {
+      const image = node('img');
+      image.src = `https://i.ytimg.com/vi/${item.id}/hqdefault.jpg`;
+      image.alt = '';
+      image.width = 480; image.height = 360; image.loading = 'lazy';
+      watch.append(image);
+      article.append(watch);
+    }
     const copy = node('div', '', 'kk-video-copy');
     const date = node('time', new Date(item.published).toLocaleDateString(english ? 'en-GB' : 'nb-NO', { timeZone: 'Europe/Oslo', year: 'numeric', month: 'long', day: 'numeric' }));
     date.dateTime = item.published;
@@ -41,7 +44,7 @@
     for (const key of item.profiles || []) {
       copy.append(link(english ? 'Explore the animal profile →' : 'Utforsk dyreprofilen (engelsk) →', `/species/${key}.html`));
     }
-    article.append(watch, copy);
+    article.append(copy);
     return article;
   }
   fetch('/assets/data/kryp-youtube.json', { cache: 'no-cache' })
@@ -57,7 +60,7 @@
           const section = node('section', '', 'kk-video-section species-shell');
           section.append(node('h2', 'Kryp & Krabater · Norwegian videos'));
           const grid = node('div', '', 'kk-video-grid');
-          grid.append(...related.map(card)); section.append(grid); speciesMain.append(section);
+          grid.append(...related.map(item => card(item, true))); section.append(grid); speciesMain.append(section);
         }
       }
       for (const target of targets) {
@@ -66,8 +69,9 @@
         const selected = related.slice(0, Number(target.dataset.limit) || related.length);
         if (!selected.length) continue;
         const grid = node('div', '', 'kk-video-grid');
-        grid.append(...selected.map(card)); target.append(grid); target.hidden = false;
+        grid.append(...selected.map(item => card(item, Boolean(key)))); target.append(grid); target.hidden = false;
       }
     })
     .catch(() => { /* Existing channel links remain available if the list cannot load. */ });
 })();
+

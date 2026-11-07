@@ -1,9 +1,9 @@
 ---
 colouring_release: "rosenbille"
 title: "Rosenbillen skifter kropp helt"
-description: "Følg Pachnoda marginata fra larve til puppe og videre til en fargerik voksen bille."
-intro: "En rosenbille ser ikke ut som en liten utgave av seg selv når den klekkes. Kroppen bygges om gjennom fullstendig forvandling."
-question: "Hvilke deler på den voksne billen ville du aldri ha gjettet ut fra en myk larve?"
+description: "Se hvordan rosenbillen – et insekt – forvandles fra egg til larve, puppe og voksen bille."
+intro: "Rosenbiller er insekter. Når en rosenbille kommer ut av egget, er den en larve – ikke en liten utgave av den voksne billen. Dette kalles fullstendig forvandling."
+question: "Hvilke forskjeller ser du mellom larven og den voksne billen?"
 image: "/assets/collection/pachnoda-marginata.jpg"
 image_width: 1600
 image_height: 898
@@ -24,11 +24,18 @@ video_poster: "/assets/kryp/rosenbille-video-poster.jpg"
 
 ## Fire svært ulike stadier
 
-*Pachnoda marginata* gjennomgår fullstendig forvandling: egg, larve, puppe og voksen bille. Larven lever i materiale på bakken og ligner ikke på den ferdige billen. Inne i puppen organiseres kroppen på nytt før den voksne billen kommer fram.
+*Pachnoda marginata* er en rosenbille, og **biller er insekter** – akkurat som maur, bier og sommerfugler. Rosenbillen er et insekt gjennom hele livet, også når den er larve. Den gjennomgår **fullstendig forvandling** i fire stadier: egg, larve, puppe og voksen bille.
+
+Når rosenbillen kommer ut av egget, er den en lys, krumbøyd larve med brunt hode og seks små bein foran på kroppen. Larven lever blant løv og annet nedbrutt plantemateriale. Når den er ferdig utvokst, lager den et beskyttet kammer i underlaget. Der forvandles den til en puppe, før den voksne billen til slutt kommer fram.
+
+<figure class="kryp-weekly-lifecycle">
+  <img src="/assets/kryp/rosenbille-livssyklus.svg" alt="Tegning som viser fire stadier med piler mellom: lyse egg, en krumbøyd larve med brunt hode og seks små bein, en puppe og en brun-gul voksen rosenbille." width="1056" height="384" loading="lazy" decoding="async">
+  <figcaption>Forenklet illustrasjon av rosenbillens livssyklus. Stadiene er ikke vist i naturlig størrelse.</figcaption>
+</figure>
 
 ## Vingene ligger under dekkvingene
 
-Den voksne billen har harde dekkvinger som beskytter de tynnere flygevingene. Den har også ferdigutviklede bein, antenner og den tydelige fargen som gjør rosenbillene lette å kjenne igjen i samlingen.
+Den voksne billen har harde dekkvinger som beskytter de tynnere flygevingene. Som andre insekter har den seks bein og ett par antenner. Larven har også små bein og antenner, men de ser ganske annerledes ut. Den voksne billens form og tydelige farger gjør den lett å kjenne igjen i samlingen.
 
 ## Livsstadiet bestemmer oppgaven
 
@@ -36,7 +43,7 @@ Larven bruker mye tid på vekst. Den voksne billen kan bevege seg over større o
 
 ## Prøv selv
 
-Tegn fire ruter med pil mellom: egg, larve, puppe og bille. Skriv én synlig forskjell mellom hvert stadium.
+Se på illustrasjonen av de fire stadiene. Finn minst én forskjell mellom larven og den voksne billen: Se på farge, form og bein. Prøv gjerne å tegne de fire stadiene i riktig rekkefølge. Du kan også peke og forklare forskjellene høyt i stedet for å skrive.
 
 [Les Korkeasaari dyrehages artsfakta om rosenbillen](https://korkeasaari.fi/en/animal/sun-beetle/){:target="_blank" rel="noopener noreferrer"}
 

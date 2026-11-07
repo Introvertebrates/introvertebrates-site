@@ -268,3 +268,21 @@
     transition: none;
   }
 }
+
+
+/* Illustrated four-stage life cycle, embedded in an Ukas dyr article. */
+.kryp-weekly-lifecycle {
+  margin: 28px 0 32px;
+}
+.kryp-weekly-lifecycle img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.kryp-weekly-lifecycle figcaption {
+  margin-top: 10px;
+  color: rgba(246, 240, 223, 0.66);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1056" height="384" viewBox="0 0 1056 384" role="img" aria-labelledby="title desc">
+<title id="title">Rosenbillens livssyklus: egg, larve, puppe og voksen bille</title>
+<desc id="desc">En forenklet illustrasjon med fire stadier. Et lyst egg, en krumbøyd lys larve med brunt hode, en lys puppe med synlige kroppsdeler og en brun-og-gul voksen rosenbille. Pilene viser rekkefølgen.</desc>
+<defs>
+  <linearGradient id="shell" x2="0" y2="1"><stop stop-color="#ffe6a2"/><stop offset="1" stop-color="#e3a34d"/></linearGradient>
+  <linearGradient id="pale" x2="0" y2="1"><stop stop-color="#ffefce"/><stop offset="1" stop-color="#e8ca8a"/></linearGradient>
+</defs>
+<rect width="1056" height="384" rx="22" fill="#fbf7ea"/>
+<g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+  <g fill="#f1f3e7" stroke="#d5e2cc" stroke-width="2">
+    <rect x="16" y="16" width="244" height="352" rx="20"/>
+    <rect x="276" y="16" width="244" height="352" rx="20"/>
+    <rect x="536" y="16" width="244" height="352" rx="20"/>
+    <rect x="796" y="16" width="244" height="352" rx="20"/>
+  </g>
+  <g fill="#224e30" font-size="27" font-weight="bold">
+    <text x="138" y="58">1. Egg</text>
+    <text x="398" y="58">2. Larve</text>
+    <text x="658" y="58">3. Puppe</text>
+    <text x="918" y="58">4. Voksen bille</text>
+  </g>
+</g>
+<!-- Eggs resting among a little leaf litter. -->
+<g transform="translate(138 191)">
+  <path d="M-77 52 Q-8 37 73 53" fill="none" stroke="#8c9868" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="-19" cy="4" rx="32" ry="46" transform="rotate(-14 -19 4)" fill="url(#pale)" stroke="#b89465" stroke-width="3"/>
+  <ellipse cx="31" cy="23" rx="29" ry="39" transform="rotate(15 31 23)" fill="#fae4b1" stroke="#b89465" stroke-width="3"/>
+  <path d="M-33 -18 Q-19 -32 -5 -12 M20 3 Q29 -7 40 5" fill="none" stroke="#fff8df" stroke-width="6" stroke-linecap="round"/>
+  <path d="M-77 56 Q-54 38 -38 56 M41 56 Q60 42 77 57" fill="none" stroke="#65844b" stroke-width="5" stroke-linecap="round"/>
+</g>
+<!-- C-shaped scarab grub, with brown head and three small pairs of thoracic legs. -->
+<g transform="translate(398 190)">
+  <path d="M-39 53 C-80 13 -73 -59 -10 -77 C51 -95 78 -37 58 13" fill="none" stroke="#9f7a50" stroke-width="59" stroke-linecap="round"/>
+  <path d="M-39 53 C-80 13 -73 -59 -10 -77 C51 -95 78 -37 58 13" fill="none" stroke="#f3dfb4" stroke-width="52" stroke-linecap="round"/>
+  <g fill="none" stroke="#c9aa79" stroke-width="3" stroke-linecap="round">
+    <path d="M-65 21 Q-39 19 -21 35 M-71 -8 Q-42 -4 -18 5 M-64 -37 Q-37 -28 -19 -12 M-29 -77 Q-16 -51 2 -37 M10 -83 Q15 -59 29 -41 M43 -65 Q35 -39 51 -18"/>
+  </g>
+  <ellipse cx="59" cy="14" rx="21" ry="18" transform="rotate(25 59 14)" fill="#87502f" stroke="#643b26" stroke-width="3"/>
+  <g fill="none" stroke="#704b31" stroke-width="5" stroke-linecap="round">
+    <path d="M61 27 L49 48 L37 50 M70 28 L70 49 L82 52 M48 25 L31 33 L20 29"/>
+  </g>
+</g>
+<!-- Free beetle pupa, with wing pads, folded legs and segmented abdomen, not a butterfly chrysalis. -->
+<g transform="translate(658 191)">
+  <path d="M0 -84 C-53 -80 -62 -35 -55 17 C-48 68 -23 87 0 87 C23 87 48 68 55 17 C62 -35 53 -80 0 -84Z" fill="url(#shell)" stroke="#9a6b3b" stroke-width="3"/>
+  <ellipse cx="0" cy="-53" rx="27" ry="24" fill="#edc27a" stroke="#a57643" stroke-width="2"/>
+  <g fill="none" stroke="#bb884a" stroke-width="3" stroke-linecap="round">
+    <path d="M-36 -20 Q-18 -8 -13 28 Q-30 20 -34 -12 M36 -20 Q18 -8 13 28 Q30 20 34 -12"/>
+    <path d="M-35 24 Q0 34 35 24 M-31 40 Q0 49 31 40 M-25 56 Q0 64 25 56"/>
+    <path d="M-16 -47 Q-31 -46 -42 -30 M16 -47 Q31 -46 42 -30 M-14 -30 Q-24 -8 -35 4 M14 -30 Q24 -8 35 4"/>
+  </g>
+  <path d="M-20 -69 Q0 -80 20 -69" fill="none" stroke="#fff0cd" stroke-width="6" stroke-linecap="round"/>
+</g>
+<!-- Adult Pachnoda marginata, schematic dorsal view with six legs and paired antennae. -->
+<g transform="translate(918 187)">
+  <g fill="none" stroke="#32271d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-37 -37 L-64 -57 L-76 -49 M37 -37 L64 -57 L76 -49"/>
+    <path d="M-47 9 L-76 15 L-87 38 M47 9 L76 15 L87 38"/>
+    <path d="M-35 48 L-56 75 L-70 81 M35 48 L56 75 L70 81"/>
+    <path d="M-12 -71 L-27 -95 L-39 -98 M12 -71 L27 -95 L39 -98"/>
+  </g>
+  <ellipse cx="0" cy="16" rx="53" ry="74" fill="#d6a13f" stroke="#32271d" stroke-width="4"/>
+  <path d="M-44 -8 C-42 -32 -25 -42 0 -39 L0 87 C-29 86 -52 52 -44 -8Z" fill="#473225"/>
+  <path d="M44 -8 C42 -32 25 -42 0 -39 L0 87 C29 86 52 52 44 -8Z" fill="#473225"/>
+  <path d="M-43 11 Q-28 1 -12 14 L-4 79 Q-30 66 -37 37 M43 11 Q28 1 12 14 L4 79 Q30 66 37 37" fill="#5e3b2c"/>
+  <path d="M0 -39 L0 87" stroke="#d5a64c" stroke-width="3"/>
+  <path d="M-49 -15 C-44 -41 -31 -56 0 -56 C31 -56 44 -41 49 -15 L35 -5 C12 -14 -12 -14 -35 -5Z" fill="#edb546" stroke="#32271d" stroke-width="3"/>
+  <ellipse cx="0" cy="-64" rx="30" ry="23" fill="#503326" stroke="#32271d" stroke-width="4"/>
+  <path d="M-18 -77 Q0 -87 18 -77" fill="none" stroke="#f5c35e" stroke-width="8" stroke-linecap="round"/>
+</g>
+<!-- Directional arrows -->
+<g fill="none" stroke="#4d914b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M262 183 H275 M268 176 L275 183 L268 190"/>
+  <path d="M522 183 H535 M528 176 L535 183 L528 190"/>
+  <path d="M782 183 H795 M788 176 L795 183 L788 190"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" fill="#264836" font-size="18" text-anchor="middle">
+  <text x="138" y="310">Et lite egg</text><text x="138" y="335">ligger i underlaget.</text>
+  <text x="398" y="310">En krum larve med</text><text x="398" y="335">seks små bein.</text>
+  <text x="658" y="310">Kroppen forandres</text><text x="658" y="335">i et beskyttet kammer.</text>
+  <text x="918" y="310">Seks bein, antenner</text><text x="918" y="335">og harde dekkvinger.</text>
+</g>
+</svg>

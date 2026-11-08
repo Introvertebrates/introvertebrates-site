@@ -1,4 +1,6 @@
 ---
+date: 2026-11-08 10:00:00 +0100
+date_label: "Uke 45 · 8. november 2026"
 colouring_release: "rosenbille"
 title: "Rosenbillen skifter kropp helt"
 description: "Se hvordan rosenbillen – et insekt – forvandles fra egg til larve, puppe og voksen bille."

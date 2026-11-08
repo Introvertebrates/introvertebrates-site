@@ -3,13 +3,19 @@ name: Publish Kryp & Krabater weekly animal
 on:
   schedule:
     # Publish only after 10:00 Europe/Oslo (the Jekyll article timestamp).
-    # Many independent off-peak-minute retries mitigate GitHub dropping cron events.
+    # Scheduled events are best-effort and may be dropped. Backup trigger below
+    # runs when the independent published-video sync finishes.
     # Monday checks backfill Sunday's issue if all Sunday attempts were missed.
-    - cron: "7,22,37,52 10-13 * * 0"
+    - cron: "11,26,41,56 10-13 * * 0"
       timezone: "Europe/Oslo"
     - cron: "17,47 10,12 * * 1"
       timezone: "Europe/Oslo"
   workflow_dispatch:
+  # Independent trigger: scheduled video synchronization can wake this
+  # publisher even when GitHub drops its own schedule event.
+  workflow_run:
+    workflows: ["Update published Kryp & Krabater videos"]
+    types: [completed]
 
 permissions:
   contents: write
@@ -54,8 +60,18 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add _kryp_weekly _kryp_weekly_queue
           git commit -m "Publish Kryp & Krabater weekly animal"
-          git push
-          echo "published=true" >> "$GITHUB_OUTPUT"
+          # The video sync may update main at the same time. Rebase and retry
+          # rather than losing a completed article to a non-fast-forward push.
+          for attempt in 1 2 3 4; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then
+              echo "published=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "::error::Could not push the published article after four attempts."
+          exit 1
 
       - name: Rebuild if needed and verify the public article
         if: steps.prepare.outputs.article_url != ''

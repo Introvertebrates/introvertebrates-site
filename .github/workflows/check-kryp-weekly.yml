@@ -10,6 +10,8 @@ on:
       - "tools/publish-next-kryp-weekly.mjs"
       - "tools/weekly-calendar.mjs"
       - "tools/weekly-calendar.test.mjs"
+      - "tools/check-next-kryp-weekly.mjs"
+      - "tools/check-local-references.mjs"
       - "tools/media-decisions.test.mjs"
       - "tools/colouring-print.test.mjs"
       - "assets/kryp-colouring.js"
@@ -22,6 +24,8 @@ on:
       - "tools/publish-next-kryp-weekly.mjs"
       - "tools/weekly-calendar.mjs"
       - "tools/weekly-calendar.test.mjs"
+      - "tools/check-next-kryp-weekly.mjs"
+      - "tools/check-local-references.mjs"
       - "tools/media-decisions.test.mjs"
       - "tools/colouring-print.test.mjs"
       - "assets/kryp-colouring.js"
@@ -46,5 +50,8 @@ jobs:
       - name: Run weekly publishing safeguards
         run: node --test tools/weekly-calendar.test.mjs tools/media-decisions.test.mjs tools/colouring-print.test.mjs
 
-      - name: Dry-run the next scheduled article
-        run: node tools/publish-next-kryp-weekly.mjs --dry-run --date=2026-09-20
+      - name: Validate the upcoming article and its assets
+        run: node tools/check-next-kryp-weekly.mjs
+
+      - name: Validate site-wide local links and anchors
+        run: node tools/check-local-references.mjs

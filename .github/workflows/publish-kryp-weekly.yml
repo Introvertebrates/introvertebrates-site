@@ -40,11 +40,18 @@ jobs:
       - name: Check weekly publishing safeguards
         run: node --test tools/weekly-calendar.test.mjs tools/media-decisions.test.mjs tools/colouring-print.test.mjs
 
+      - name: Preflight the next queued article and its media
+        run: node tools/check-next-kryp-weekly.mjs
+
       - name: Publish the next queued article
         id: prepare
         run: node tools/publish-next-kryp-weekly.mjs ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
 
-      - name: Check local links and assets
+      # A broken link on another page must not prevent a reviewed weekly
+      # article from being published. The article's own assets are checked
+      # above, and site-wide link errors are still reported for repair.
+      - name: Report site-wide link issues without blocking publication
+        continue-on-error: true
         run: node tools/check-local-references.mjs
 
       - name: Commit the weekly article when the queue changed

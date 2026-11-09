@@ -1,7 +1,20 @@
 {
   "channelId": "UC5Nn9nq93NXyq0SBKq7Ny0Q",
-  "lastVerifiedAt": "2026-11-09T11:51:10.440158+00:00",
+  "lastVerifiedAt": "2026-11-09T22:31:50.848312+00:00",
   "items": [
+    {
+      "id": "Ku0W3x8UgtI",
+      "title": "Møt den rosafotede goliaten! | Theraphosa apophysis",
+      "published": "2026-11-09T16:00:19+00:00",
+      "summary": "Møt Theraphosa apophysis på nært hold.",
+      "profiles": [
+        "siuzi-theraphosa-apophysis"
+      ],
+      "norwegianProfiles": [
+        "siuzi"
+      ],
+      "kind": "short"
+    },
     {
       "id": "QYElB3PuNg0",
       "title": "Edderkopp i fokus: Chaco-gullknetarantell | Grammostola pulchripes",

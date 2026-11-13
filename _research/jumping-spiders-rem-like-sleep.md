@@ -52,6 +52,18 @@ source_name: PNAS
   Together, these repeated and coordinated behaviours provide evidence for an <strong>REM sleep-like state</strong> in a terrestrial invertebrate. They do not prove that a spider's internal physiology matches mammalian REM sleep exactly.
 </p>
 
+
+<div class="research-update">
+  <p class="eyebrow">2026 follow-up</p>
+  <h2>The next experiments confirmed that this really is sleep</h2>
+  <p>
+    This 2022 study discovered the REM-like pattern, but it could not establish whether the spiders were truly asleep. A 2026 study tested that question in <em>Portia fimbriata</em> and found a circadian rhythm, organised two-stage sleep, reduced responsiveness during REM-like periods and rebound sleep after disruption.
+  </p>
+  <p>
+    <a href="/research/jumping-spiders-two-stage-sleep/"><strong>Read the follow-up: Experiments confirm two-stage sleep in jumping spiders →</strong></a>
+  </p>
+</div>
+
 <h2>Do jumping spiders dream?</h2>
 
 <p>

@@ -1,5 +1,19 @@
 [
   {
+    "title": "Experiments confirm two-stage sleep in jumping spiders",
+    "description": "Tests of Portia fimbriata found circadian timing, reduced responsiveness and rebound after disruption—evidence that its REM-like episodes occur within regulated sleep.",
+    "category": "Behaviour & cognition",
+    "posted_date": "13 November 2026",
+    "source_date": "26 October 2026",
+    "summary": "Follow-up experiments with Portia fimbriata found a free-running circadian rhythm, organised sleep architecture, reduced responsiveness during REM-like periods and rebound sleep after disruption. Together, those tests show that the spider's quiet and active resting states meet behavioural criteria for regulated, two-stage sleep.",
+    "why_it_matters": "A 2022 study revealed REM-like movements in resting jumping spiders but could not prove that the animals were asleep. The new experiments provide that missing behavioural evidence, broadening the study of sleep beyond vertebrates and familiar laboratory models without claiming that spiders dream.",
+    "source_url": "https://doi.org/10.1073/pnas.2618030123",
+    "source_name": "PNAS",
+    "slug": "jumping-spiders-two-stage-sleep",
+    "url": "research/jumping-spiders-two-stage-sleep/",
+    "has_body": true
+  },
+  {
     "title": "These ancient trapdoor spiders are disappearing from their mountain refuges",
     "description": "A 22-year comparison found estimated burrow abundance down by more than 98% across four Cataxia species in Western Australia's Stirling Range.",
     "category": "Ecology & conservation",

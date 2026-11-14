@@ -1,9 +1,9 @@
 ---
 colouring_release: "steinskorpion"
 title: "Steinskorpionen er bygget for sprekker"
-description: "Se hvordan den flate kroppen og de kraftige klørne hos en Hadogenes-skorpion passer til livet mellom steiner."
+description: "Oppdag hvordan den flate kroppen hjelper en Hadogenes-skorpion å gjemme seg i smale fjellsprekker."
 intro: "En smal fjellsprekk kan være et helt landskap. Steinskorpioner i slekten Hadogenes har en kropp som passer inn der mange andre dyr ikke kommer til."
-question: "Se på bildet fra siden. Hvor lav er kroppen sammenlignet med de kraftige klosaksene?"
+question: "Hvor tror du skorpionen er tryggest – i en smal fjellsprekk eller på en åpen stein? Hvorfor?"
 image: "/assets/kryp/hadogenes-paucidens.jpg"
 image_width: 2000
 image_height: 2000
@@ -20,7 +20,7 @@ colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotogr
 
 ## Lav kropp, kraftig grep
 
-Steinskorpioner i slekten *Hadogenes* har en lang og svært flat kropp. Kraftige pedipalper med store klør og bein som får godt feste, hjelper dem i trange sprekker og på ujevne steinflater.
+Steinskorpioner i slekten *Hadogenes* har en lang og svært flat kropp. Den flate kroppen gjør det lettere å komme inn i smale fjellsprekker. Beina har strukturer som gir godt feste på ujevne steinflater, mens de kraftige klørne blant annet brukes til å gripe byttedyr og forsvare seg.
 
 ## Spalten er et skjulested
 
@@ -32,7 +32,7 @@ Dette eldre fotografiet er arkivert som *Hadogenes paucidens*. Slekten har vært
 
 ## Prøv selv
 
-Legg merke til høyden på kroppen sammenlignet med bredden på klørne. Hvordan kan hver av delene hjelpe dyret mellom steinene?
+Se for deg to steder: en smal sprekk mellom steiner og en helt åpen stein. Hvor tror du steinskorpionen er best beskyttet mot større dyr? Hvorfor er det nyttig at kroppen er så flat?
 
-[Les fagstoff om steinskorpioner fra NTNU](https://www.ntnu.no/ub/scorpion-files/h_troglodytes.php){:target="_blank" rel="noopener noreferrer"}
+[Les om en annen steinskorpionart, *Hadogenes troglodytes*, hos NTNU](https://www.ntnu.no/ub/scorpion-files/h_troglodytes.php){:target="_blank" rel="noopener noreferrer"}
 

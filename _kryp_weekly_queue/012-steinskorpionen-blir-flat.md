@@ -22,6 +22,16 @@ colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotogr
 
 Steinskorpioner i slekten *Hadogenes* har en lang og svært flat kropp. Den flate kroppen gjør det lettere å komme inn i smale fjellsprekker. Beina har strukturer som gir godt feste på ujevne steinflater, mens de kraftige klørne blant annet brukes til å gripe byttedyr og forsvare seg.
 
+## Samme kroppsdel – forskjellige oppgaver!
+
+Visste du at skorpionens store klør og edderkoppens små pedipalper egentlig er samme type kroppsdel?
+
+Hos edderkopper sitter pedipalpene foran ved munnen og brukes blant annet til å føle og håndtere mat. Hos skorpioner har de utviklet seg til kraftige klør som kan gripe byttedyr!
+
+Selv om de ser veldig forskjellige ut, har de altså samme evolusjonære opphav.
+
+**Kan du finne pedipalpene på en edderkopp og sammenligne dem med skorpionens klør?**
+
 ## Spalten er et skjulested
 
 Mellom steiner kan en skorpion få beskyttelse mot vær og større dyr. Formen gjør også at den kan holde kroppen tett mot underlaget. Den trenger ikke et stort rom når en smal sprekk gir riktig beskyttelse.

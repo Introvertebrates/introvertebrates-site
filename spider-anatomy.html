@@ -23,7 +23,7 @@
         "description": "A photo-led guide to spider body parts, internal systems, senses, silk, respiration, and molting.",
         "image": "https://introvertebrates.com/assets/collection/alma-acanthoscurria-geniculata.jpg",
         "datePublished": "2026-08-10",
-        "dateModified": "2026-09-19",
+        "dateModified": "2026-11-15",
         "author": {"@type": "Organization", "name": "Introvertebrates", "url": "https://introvertebrates.com/"},
         "publisher": {"@type": "Organization", "name": "Introvertebrates", "url": "https://introvertebrates.com/", "logo": {"@type": "ImageObject", "url": "https://introvertebrates.com/Only%20spider.png"}}
       },
@@ -51,7 +51,7 @@
   </script>
   <link rel="stylesheet" href="assets/homepage.css">
   <link rel="stylesheet" href="assets/learn.css">
-  <link rel="stylesheet" href="assets/anatomy.css">
+  <link rel="stylesheet" href="assets/anatomy.css?v=20261115">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -286,7 +286,151 @@
 
     <section class="anatomy-section" id="internal-anatomy" aria-labelledby="internal-title">
       <div class="learn-shell">
-        <header class="anatomy-heading anatomy-heading-wide"><div><p class="eyebrow">Inside a spider</p><h2 id="internal-title">A system map you can place.</h2></div><p>Select a system to isolate its broad location. Region labels and a marked pedicel show whether it sits in the prosoma, abdomen, or passes through both.</p></header>
+        <header class="anatomy-heading anatomy-heading-wide">
+          <div><p class="eyebrow">Inside a spider</p><h2 id="internal-title">Where the organs sit.</h2></div>
+          <p>See how the organs fit together from the side. Use the top-down map to highlight one system at a time.</p>
+        </header>
+        <figure class="side-cutaway" id="tarantula-cutaway" aria-labelledby="tarantula-cutaway-title">
+          <h3 id="tarantula-cutaway-title">A tarantula in side view</h3>
+          <svg viewBox="0 0 1100 448" role="img" aria-labelledby="side-cutaway-svg-title" aria-describedby="side-cutaway-svg-description">
+            <title id="side-cutaway-svg-title">Internal anatomy of a female tarantula, seen from the side</title>
+            <desc id="side-cutaway-svg-description">The venom gland sits inside the jaw and the brain and sucking stomach lie in the front body region. The midgut runs through the abdomen beneath the tubular heart. The two visible book lungs and the ovary sit lower in the abdomen. Silk glands lead to the spinnerets at the rear.</desc>
+            <defs>
+              <linearGradient id="side-cutaway-shell" x2="0" y2="1" gradientUnits="objectBoundingBox">
+                <stop stop-color="#203541"/>
+                <stop offset="1" stop-color="#101b23"/>
+              </linearGradient>
+            </defs>
+
+            <!-- The cut surface is drawn over the near-side leg bases and rear appendages. -->
+            <g fill="#111f2a" stroke="#5a7481" stroke-width="2.5" stroke-linejoin="round">
+              <path d="M456 273 C470 278 484 279 498 273 L504 307 C488 312 468 311 451 305 Z"/>
+              <path d="M172 281 C183 278 194 288 192 301 L185 321 Q178 329 166 321 L167 299 Q163 288 172 281 Z"/>
+              <path d="M204 288 C218 283 235 287 241 299 L237 324 Q230 343 206 338 Q190 332 193 317 Z"/>
+              <path d="M265 300 C282 294 298 298 305 311 L303 331 Q297 350 274 348 Q258 343 257 328 Z"/>
+              <path d="M327 303 C343 297 360 302 365 313 L364 332 Q359 350 335 348 Q320 345 319 329 Z"/>
+              <path d="M387 296 C400 287 417 293 424 303 L427 322 Q426 342 403 343 Q387 340 384 323 Z"/>
+              <path d="M130 271 C107 282 108 316 125 337 C133 347 141 355 152 359 C142 343 129 324 134 306 C137 295 144 285 152 279 Z"/>
+              <path d="M942 339 C955 342 968 348 972 357 Q971 367 960 366 C950 364 940 358 934 351 Z"/>
+              <path d="M950 322 C969 327 982 322 992 314 C1000 307 1011 303 1018 308 C1025 313 1020 324 1011 331 C998 344 976 348 960 350 Q946 344 950 322 Z"/>
+            </g>
+            <g fill="url(#side-cutaway-shell)" stroke="#718993" stroke-width="2.5" stroke-linejoin="round">
+              <path d="M151 232 C159 197 189 175 231 169 C280 161 324 175 370 193 C413 211 445 232 463 255 C474 269 471 282 483 291 L479 308 C450 308 435 319 409 325 C371 334 338 329 300 332 C258 336 217 329 184 312 C154 296 142 264 151 232 Z"/>
+              <path d="M477 288 C488 268 485 250 484 231 C481 187 515 148 578 124 C643 100 719 97 786 108 C870 121 919 158 944 208 C961 242 964 271 975 302 C980 317 981 328 968 337 C938 354 885 358 832 358 C782 357 737 354 690 355 C641 356 600 361 559 358 C520 355 489 335 481 311 Z"/>
+              <path d="M159 211 C140 210 126 223 122 240 C114 261 119 281 133 292 C150 301 169 290 177 270 C187 245 179 217 159 211 Z"/>
+            </g>
+            <g fill="none" stroke="#9bb1b9" stroke-linecap="round" stroke-width="2" opacity=".35">
+              <path d="M162 226 C176 197 200 185 232 180 C280 173 326 187 367 204 C408 221 438 239 454 258"/>
+              <path d="M493 226 C496 183 530 156 583 135 C644 112 719 107 785 119 C863 132 908 165 932 212"/>
+              <path d="M977 326 L985 342 M993 314 L1002 335 M950 349 L954 362"/>
+              <path d="M203 326 Q217 335 232 326 M268 337 Q283 345 298 335 M329 337 Q344 345 359 335 M395 330 Q407 339 422 329"/>
+            </g>
+            <g fill="#bcd1d4" stroke="#14232e" stroke-width="2">
+              <ellipse cx="182" cy="191" rx="6" ry="5"/>
+              <ellipse cx="194" cy="183" rx="7" ry="6"/>
+              <ellipse cx="207" cy="182" rx="5" ry="4"/>
+            </g>
+
+            <g class="side-venom" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M143 262 C132 275 122 285 121 299 C119 314 129 336 143 350" stroke-width="2.5"/>
+              <path d="M154 221 C165 222 166 235 160 248 C155 260 144 269 135 270 C128 265 132 250 138 236 C142 227 148 221 154 221 Z" fill="currentColor" fill-opacity=".28" stroke-width="2.5"/>
+              <path d="M153 229 Q147 239 143 253" stroke-opacity=".6" stroke-width="2"/>
+            </g>
+            <g class="side-nerves" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M197 189 C200 203 209 211 222 221 M228 234 Q203 249 217 270 M234 289 L218 324 M249 290 Q263 304 278 334 M260 286 Q327 282 342 334 M264 280 Q362 274 404 321" stroke-opacity=".62" stroke-width="2.6"/>
+              <path d="M219 215 C227 207 238 207 245 212 C258 210 270 219 265 230 C263 240 248 240 238 240 C229 245 217 240 214 231 Q212 221 219 215 Z" fill="currentColor" fill-opacity=".28" stroke-width="2.5"/>
+              <path d="M220 267 C229 259 241 258 256 264 C270 267 278 278 266 287 C255 293 244 288 236 291 C222 295 210 284 213 276 Q215 270 220 267 Z" fill="currentColor" fill-opacity=".19" stroke-width="2"/>
+            </g>
+            <g class="side-heart" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M531 213 C508 247 527 275 492 282 C462 288 440 266 407 255" stroke-opacity=".48" stroke-width="3"/>
+              <path d="M521 222 C541 178 588 149 645 141 C729 130 814 142 879 181 C891 188 900 198 905 209 C876 196 855 187 836 180 C777 158 716 154 651 161 C596 167 553 187 531 225 Z" fill="currentColor" fill-opacity=".36" stroke-width="2.5"/>
+              <path d="M609 151 L611 162 M658 142 L660 155 M716 142 L716 154 M774 147 L772 160 M825 158 L822 173" stroke-opacity=".65" stroke-width="2"/>
+            </g>
+            <g class="side-gut" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M177 276 C210 260 246 252 303 250" stroke-width="5" stroke-opacity=".73"/>
+              <path d="M286 252 C300 239 312 226 333 226 C353 225 369 233 379 252 C363 264 348 268 328 263 C310 259 299 255 286 252 Z" fill="currentColor" fill-opacity=".23" stroke-width="2.5"/>
+              <path d="M303 250 Q338 260 366 251" stroke-width="2" stroke-opacity=".8"/>
+              <path d="M369 254 C411 262 430 286 469 295 C498 301 515 282 541 266 C592 237 654 227 707 228 C777 225 831 237 871 254 C918 275 938 310 965 324" stroke-width="9" stroke-opacity=".42"/>
+              <path d="M369 254 C411 262 430 286 469 295 C498 301 515 282 541 266 C592 237 654 227 707 228 C777 225 831 237 871 254 C918 275 938 310 965 324" stroke-width="2.5"/>
+              <path d="M550 261 Q562 234 585 217 L596 202 M570 232 Q560 222 562 211 M590 242 Q616 225 625 206 Q637 205 645 196 M620 214 L610 202 M667 231 Q687 219 690 198 L704 187 M690 201 Q681 191 679 186 M735 229 Q751 215 751 198 L765 194 M751 203 Q741 197 739 189 M794 233 Q816 222 823 207 L842 205 M819 214 L810 202 M856 249 Q883 243 894 231 M881 241 L884 225 M566 253 Q578 267 593 271 M633 234 Q645 247 660 250 M794 233 Q803 251 818 261 M907 274 Q916 261 931 260" stroke-width="2.5" stroke-opacity=".42"/>
+            </g>
+            <g class="side-reproduction" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M645 299 C631 314 602 307 587 323 Q575 336 573 351" stroke-width="3" stroke-opacity=".56"/>
+              <path d="M622 293 C632 277 664 264 707 269 C746 271 772 281 798 291 C823 301 839 305 855 305 C851 318 834 320 807 315 C767 308 751 303 716 301 C682 301 657 303 638 311 C628 313 618 306 622 293 Z" fill="currentColor" fill-opacity=".22" stroke-width="2"/>
+              <g fill="currentColor" fill-opacity=".28" stroke-opacity=".8" stroke-width="1.3">
+                <circle cx="637" cy="296" r="6"/><circle cx="649" cy="289" r="7"/><circle cx="664" cy="283" r="7"/><circle cx="663" cy="295" r="5"/><circle cx="679" cy="286" r="8"/><circle cx="696" cy="280" r="5"/><circle cx="695" cy="292" r="7"/><circle cx="710" cy="285" r="7"/><circle cx="726" cy="287" r="8"/><circle cx="742" cy="290" r="7"/><circle cx="758" cy="294" r="7"/><circle cx="773" cy="299" r="6"/><circle cx="788" cy="302" r="6"/><circle cx="802" cy="306" r="5"/><circle cx="818" cy="311" r="4"/>
+              </g>
+            </g>
+            <g class="side-lungs" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M508 315 C525 306 545 308 559 322 L575 350 C554 351 532 348 518 336 Q510 327 508 315 Z M577 326 C591 317 611 316 624 324 L643 352 L599 354 Q583 347 577 326 Z" fill="currentColor" fill-opacity=".27" stroke-width="2.5"/>
+              <path d="M516 319 Q538 313 552 324 M518 325 Q540 320 555 329 M521 330 Q543 326 559 335 M527 336 Q546 333 561 340 M536 342 Q550 341 565 345 M585 329 Q607 322 620 328 M588 334 Q606 328 623 333 M591 339 Q612 334 627 339 M596 344 Q616 340 631 344 M602 349 Q622 346 634 349" stroke-width="1.6" stroke-opacity=".85"/>
+            </g>
+            <g class="side-silk" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M749 334 C756 325 773 321 789 325 C799 328 800 334 816 334 C828 334 838 337 841 341 C827 346 814 342 800 342 C783 342 769 347 757 344 Q747 342 749 334 Z M809 323 C817 316 837 316 851 322 C865 327 873 329 886 333 C870 337 858 332 847 330 C830 329 816 335 809 323 Z M869 340 C879 334 892 335 902 340 C913 344 925 345 936 343 C929 350 913 351 903 349 C893 346 878 349 869 340 Z" fill="currentColor" fill-opacity=".28" stroke-width="2.3"/>
+              <path d="M819 340 C861 345 892 351 932 346 Q946 347 963 361 M861 329 C899 334 928 339 961 335 Q991 330 1015 314 M909 346 Q939 345 963 339" stroke-width="2" stroke-opacity=".76"/>
+            </g>
+
+            <g class="side-cutaway-callouts" aria-hidden="true">
+              <g class="side-venom">
+                <path d="M120 68 V205 L144 240"/><circle cx="144" cy="240" r="4.5"/>
+                <text class="side-cutaway-label" x="120" y="55">Venom gland</text>
+                <g class="side-cutaway-marker" transform="translate(120 54)"><circle r="30"/><text y="14">1</text></g>
+              </g>
+              <g class="side-nerves">
+                <path d="M255 68 V178 L236 221"/><circle cx="236" cy="221" r="4.5"/>
+                <text class="side-cutaway-label" x="255" y="55">Brain</text>
+                <g class="side-cutaway-marker" transform="translate(255 54)"><circle r="30"/><text y="14">2</text></g>
+              </g>
+              <g class="side-gut">
+                <path d="M410 68 V187 L337 240"/><circle cx="337" cy="240" r="4.5"/>
+                <text class="side-cutaway-label" x="410" y="55">Sucking stomach</text>
+                <g class="side-cutaway-marker" transform="translate(410 54)"><circle r="30"/><text y="14">3</text></g>
+              </g>
+              <g class="side-heart">
+                <path d="M671 68 V123 L685 149"/><circle cx="685" cy="149" r="4.5"/>
+                <text class="side-cutaway-label" x="671" y="55">Heart</text>
+                <g class="side-cutaway-marker" transform="translate(671 54)"><circle r="30"/><text y="14">4</text></g>
+              </g>
+              <g class="side-gut">
+                <path d="M977 68 V190 L871 254"/><circle cx="871" cy="254" r="4.5"/>
+                <text class="side-cutaway-label" x="977" y="55">Midgut</text>
+                <g class="side-cutaway-marker" transform="translate(977 54)"><circle r="30"/><text y="14">5</text></g>
+              </g>
+              <g class="side-lungs">
+                <path d="M468 398 V377 H601 L611 336 M468 377 L540 331"/><circle cx="540" cy="331" r="4.5"/><circle cx="611" cy="336" r="4.5"/>
+                <text class="side-cutaway-label" x="468" y="425">Book lungs</text>
+                <g class="side-cutaway-marker" transform="translate(468 412)"><circle r="30"/><text y="14">6</text></g>
+              </g>
+              <g class="side-reproduction">
+                <path d="M664 398 V357 L686 288"/><circle cx="686" cy="288" r="4.5"/>
+                <text class="side-cutaway-label" x="664" y="425">Ovary</text>
+                <g class="side-cutaway-marker" transform="translate(664 412)"><circle r="30"/><text y="14">7</text></g>
+              </g>
+              <g class="side-silk">
+                <path d="M825 398 V373 L779 336"/><circle cx="779" cy="336" r="4.5"/>
+                <text class="side-cutaway-label" x="825" y="425">Silk glands</text>
+                <g class="side-cutaway-marker" transform="translate(825 412)"><circle r="30"/><text y="14">8</text></g>
+              </g>
+              <g class="side-silk">
+                <path d="M1014 398 V374 L984 337 M1014 374 H977 L960 359"/><circle cx="984" cy="337" r="4.5"/><circle cx="960" cy="359" r="4.5"/>
+                <text class="side-cutaway-label" x="1014" y="425">Spinnerets</text>
+                <g class="side-cutaway-marker" transform="translate(1014 412)"><circle r="30"/><text y="14">9</text></g>
+              </g>
+            </g>
+          </svg>
+          <ol class="side-cutaway-key" aria-label="Numbered labels for the tarantula cutaway">
+            <li class="side-venom">Venom gland</li>
+            <li class="side-nerves">Brain</li>
+            <li class="side-gut">Sucking stomach</li>
+            <li class="side-heart">Heart</li>
+            <li class="side-gut">Midgut</li>
+            <li class="side-lungs">Book lungs</li>
+            <li class="side-reproduction">Ovary</li>
+            <li class="side-silk">Silk glands</li>
+            <li class="side-silk">Spinnerets</li>
+          </ol>
+          <figcaption>Simplified cutaway of a female tarantula with the legs and pedipalps cropped at their bases. One book lung from each of the two pairs is visible.</figcaption>
+        </figure>
         <div class="internal-map" data-active-system="whole">
           <div class="internal-figure">
             <p class="schematic-label">Conceptual dorsal cutaway · approximate</p>
@@ -398,6 +542,8 @@
         <p>Photographs document the animals and visible structures shown; diagrams are intentionally schematic. They explain relationships without pretending to be species-level diagnostic plates.</p>
         <ul>
           <li><a href="https://australian.museum/learn/animals/spiders/spider-structure/" target="_blank" rel="noopener noreferrer">Australian Museum — external and internal spider structure</a></li>
+          <li><a href="https://doi.org/10.1002/inpr.371" target="_blank" rel="noopener noreferrer">Kennedy (2023) — tarantula internal anatomy, figure 3</a></li>
+          <li><a href="https://pubmed.ncbi.nlm.nih.gov/19132396/" target="_blank" rel="noopener noreferrer">Rocha-e-Silva et al. (2009) — venom glands and fangs of a tarantula</a></li>
           <li><a href="https://www.ento.vt.edu/content/dam/ento_vt_edu/2021-hokie-bugfest/activities/Spider%20Anatomy.pdf" target="_blank" rel="noopener noreferrer">Virginia Tech — spider anatomy guide</a></li>
           <li><a href="https://journals.biologists.com/jeb/article/215/4/578/11117/Hydraulic-leg-extension-is-not-necessarily-the" target="_blank" rel="noopener noreferrer">Journal of Experimental Biology — mechanics of leg extension in large spiders</a></li>
           <li><a href="https://academic.oup.com/icb/article/57/3/510/4077010" target="_blank" rel="noopener noreferrer">Integrative and Comparative Biology — evolution of book lungs and tracheae</a></li>

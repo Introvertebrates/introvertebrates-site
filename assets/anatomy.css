@@ -1062,6 +1062,77 @@
   font-size: 0.57rem;
 }
 
+.side-cutaway {
+  margin: 0 0 24px;
+  padding: clamp(18px, 3vw, 34px);
+  border: 1px solid var(--anatomy-line);
+  border-radius: 28px;
+  background: radial-gradient(ellipse at 55% 52%, #10232e, #030a11 72%);
+}
+
+.side-cutaway h3 {
+  margin: 0;
+  color: var(--anatomy-ink);
+  font-size: clamp(1.25rem, 2.5vw, 1.9rem);
+  font-weight: 670;
+  letter-spacing: -0.025em;
+}
+
+.side-cutaway svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 7px auto 0;
+}
+
+.side-cutaway svg g {
+  color: var(--cutaway-color, inherit);
+}
+
+.side-venom { --cutaway-color: #e4c27f; }
+.side-nerves { --cutaway-color: #56e8c9; }
+.side-heart { --cutaway-color: #ff828e; }
+.side-gut { --cutaway-color: #e8f0f2; }
+.side-reproduction { --cutaway-color: #f5a6d7; }
+.side-lungs { --cutaway-color: #92c7ff; }
+.side-silk { --cutaway-color: #c1a2ff; }
+
+.side-cutaway-callouts > g > path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.25;
+  stroke-opacity: 0.65;
+  vector-effect: non-scaling-stroke;
+}
+
+.side-cutaway-callouts > g > circle {
+  fill: currentColor;
+  stroke: #10202a;
+  stroke-width: 1.5;
+}
+
+.side-cutaway-label {
+  fill: currentColor;
+  font-size: 23px;
+  font-weight: 650;
+  text-anchor: middle;
+}
+
+.side-cutaway-key,
+.side-cutaway-marker {
+  display: none;
+}
+
+.side-cutaway figcaption {
+  max-width: 70ch;
+  margin: 8px auto 0;
+  color: var(--anatomy-muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+  text-align: center;
+  text-wrap: pretty;
+}
+
 .internal-map {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
@@ -1813,6 +1884,47 @@
     grid-template-columns: 1fr;
     gap: 10px;
     padding-inline: 10px;
+  }
+
+  .side-cutaway-label {
+    display: none;
+  }
+
+  .side-cutaway-marker {
+    display: inline;
+  }
+
+  .side-cutaway-marker circle {
+    fill: #0b1720;
+    stroke: currentColor;
+    stroke-width: 3;
+  }
+
+  .side-cutaway-marker text {
+    fill: currentColor;
+    font-size: 42px;
+    font-weight: 760;
+    text-anchor: middle;
+  }
+
+  .side-cutaway-key {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px 20px;
+    margin: 12px 0 16px;
+    padding-inline-start: 1.45em;
+    color: var(--anatomy-ink);
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+
+  .side-cutaway-key li::marker {
+    color: var(--cutaway-color);
+    font-weight: 760;
+  }
+
+  .side-cutaway figcaption {
+    text-align: left;
   }
 
   .internal-figure {

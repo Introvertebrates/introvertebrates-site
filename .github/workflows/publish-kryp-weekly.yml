@@ -2,14 +2,12 @@ name: Publish Kryp & Krabater weekly animal
 
 on:
   schedule:
-    # Publish only after 10:00 Europe/Oslo (the Jekyll article timestamp).
-    # Scheduled events are best-effort and may be dropped. Backup trigger below
-    # runs when the independent published-video sync finishes.
-    # Monday checks backfill Sunday's issue if all Sunday attempts were missed.
-    - cron: "11,26,41,56 10-13 * * 0"
-      timezone: "Europe/Oslo"
-    - cron: "17,47 10,12 * * 1"
-      timezone: "Europe/Oslo"
+    # GitHub schedules use UTC. Run in both summer and winter time,
+    # with repeated retries because scheduled events can be delayed or dropped.
+    # The Node publisher checks Europe/Oslo and refuses early releases.
+    - cron: "11,26,41,56 8-13 * * 0"
+    # Monday recovery for any missed Sunday release.
+    - cron: "17,47 8-13 * * 1"
   workflow_dispatch:
   # Independent trigger: scheduled video synchronization can wake this
   # publisher even when GitHub drops its own schedule event.

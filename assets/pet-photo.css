@@ -1,0 +1,88 @@
+.pet-photo-trigger {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.pet-photo-trigger + figcaption {
+  pointer-events: none;
+}
+
+.pet-photo-trigger:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -4px;
+}
+
+.pet-photo-trigger::after,
+.pet-photo-close {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 45%);
+  border-radius: 50%;
+  background: rgb(2 8 12 / 85%);
+  color: #fff;
+  line-height: 1;
+}
+
+.pet-photo-trigger::after {
+  content: "+";
+  top: 7px;
+  right: 7px;
+  width: 26px;
+  height: 26px;
+  font-size: 1.125rem;
+}
+
+html:has(.pet-photo-dialog[open]) {
+  overflow: hidden;
+  scrollbar-gutter: stable;
+}
+
+.pet-photo-dialog {
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 25%);
+  border-radius: 16px;
+  background: #0c171d;
+  color: #f4f8fb;
+}
+
+.pet-photo-dialog::backdrop {
+  background: rgb(2 8 12 / 82%);
+}
+
+.pet-photo-dialog figure {
+  margin: 0;
+}
+
+.pet-photo-dialog img {
+  display: block;
+  width: min(900px, calc(100vw - 2rem), calc(100vh - 5.5rem));
+  width: min(900px, calc(100vw - 2rem), calc(100dvh - 5.5rem));
+  height: auto;
+}
+
+.pet-photo-dialog figcaption {
+  padding: 10px 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.pet-photo-close {
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  font-size: 1.75rem;
+  cursor: pointer;
+}

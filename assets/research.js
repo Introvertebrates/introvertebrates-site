@@ -134,12 +134,16 @@
 
   loadData()
     .then((sourceData) => {
+      // Keep the server-rendered archive if the enhanced dataset is unavailable.
+      if (sourceData.length === 0 && entryList.children.length > 0) return;
       entries = sourceData.map(buildEntry);
       renderEntries();
     })
     .catch(() => {
-      entryList.replaceChildren();
-      appendText(entryList, "p", "research-empty", "Research updates could not be loaded in this preview.");
+      // Preserve usable article links when loading or parsing fails.
+      if (!entryList.children.length) {
+        appendText(entryList, "p", "research-empty", "Research updates could not be loaded in this preview.");
+      }
     });
 })();
 

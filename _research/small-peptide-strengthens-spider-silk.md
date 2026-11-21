@@ -8,6 +8,13 @@ summary: A 67-amino-acid secretory peptide called SpiCE-DS8 was found in the dra
 why_it_matters: Spider silk performance depends on more than the large spidroin proteins usually highlighted. This study suggests that a small, recently evolved helper peptide can influence protein assembly and fibre mechanics, offering another clue for synthetic-silk design.
 source_url: https://www.nature.com/articles/s41467-025-65026-1
 source_name: Nature Communications
+related_links:
+  - title: "What silk fibres look like under a microscope"
+    url: "/research/spider-silk-nanofibril-packing/"
+    note: "A related study on nanofibril organisation, not the same experimental material."
+  - title: "Silk glands and spinnerets"
+    url: "/spider-anatomy.html#silk"
+    note: "A visual introduction to the spider’s silk-making system."
 ---
 <h2>A small addition to the silk recipe</h2>
 

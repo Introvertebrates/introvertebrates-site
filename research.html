@@ -399,7 +399,7 @@
     }
   </style>
   <link rel="stylesheet" href="assets/homepage.css">
-  <link rel="stylesheet" href="assets/research.css">
+  <link rel="stylesheet" href="assets/research.css?v=20261121topics">
 </head>
 <body class="research-index-body">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -445,11 +445,108 @@
       </figure>
     </section>
 
+
+    <section class="research-topics" id="research-topics" aria-labelledby="research-topics-title">
+      <header class="research-topic-heading">
+        <div>
+          <p class="eyebrow">Find a thread to follow</p>
+          <h2 id="research-topics-title">Explore by topic.</h2>
+        </div>
+        <p>Start with the science that interests you. Each topic includes recent discoveries and a link to the full set of articles.</p>
+      </header>
+      <div class="research-topic-grid">
+      {% assign topic_posts = site.research | where: "category", "Behaviour & cognition" | sort: "posted_date" | reverse %}
+      <article class="research-topic-card" aria-labelledby="topic-behaviour-title">
+        <div class="research-topic-card-top">
+          <h3 id="topic-behaviour-title">Behaviour &amp; cognition</h3>
+          <span class="research-topic-count">{{ topic_posts.size }} {% if topic_posts.size == 1 %}article{% else %}articles{% endif %}</span>
+        </div>
+        <p>Hunting strategies, navigation, sleep and the senses that guide spider behaviour.</p>
+        <ul aria-label="Recent Behaviour &amp; cognition research">
+          {% for topic_post in topic_posts limit: 2 %}
+          <li><a href="{{ topic_post.url | relative_url }}">{{ topic_post.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+        <a class="research-topic-browse" href="research.html?topic=behaviour#research-archive">Browse this topic <span aria-hidden="true">→</span></a>
+      </article>
+      {% assign topic_posts = site.research | where: "category", "Ecology & conservation" | sort: "posted_date" | reverse %}
+      <article class="research-topic-card" aria-labelledby="topic-ecology-title">
+        <div class="research-topic-card-top">
+          <h3 id="topic-ecology-title">Ecology &amp; conservation</h3>
+          <span class="research-topic-count">{{ topic_posts.size }} {% if topic_posts.size == 1 %}article{% else %}articles{% endif %}</span>
+        </div>
+        <p>How spiders interact with habitats, respond to environmental change and face threats.</p>
+        <ul aria-label="Recent Ecology &amp; conservation research">
+          {% for topic_post in topic_posts limit: 2 %}
+          <li><a href="{{ topic_post.url | relative_url }}">{{ topic_post.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+        <a class="research-topic-browse" href="research.html?topic=ecology#research-archive">Browse this topic <span aria-hidden="true">→</span></a>
+      </article>
+      {% assign topic_posts = site.research | where: "category", "Evolution & genetics" | sort: "posted_date" | reverse %}
+      <article class="research-topic-card" aria-labelledby="topic-evolution-title">
+        <div class="research-topic-card-top">
+          <h3 id="topic-evolution-title">Evolution &amp; genetics</h3>
+          <span class="research-topic-count">{{ topic_posts.size }} {% if topic_posts.size == 1 %}article{% else %}articles{% endif %}</span>
+        </div>
+        <p>Genomes, deep ancestry and the features shaped by millions of years of evolution.</p>
+        <ul aria-label="Recent Evolution &amp; genetics research">
+          {% for topic_post in topic_posts limit: 2 %}
+          <li><a href="{{ topic_post.url | relative_url }}">{{ topic_post.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+        <a class="research-topic-browse" href="research.html?topic=evolution#research-archive">Browse this topic <span aria-hidden="true">→</span></a>
+      </article>
+      {% assign topic_posts = site.research | where: "category", "Taxonomy & discoveries" | sort: "posted_date" | reverse %}
+      <article class="research-topic-card" aria-labelledby="topic-taxonomy-title">
+        <div class="research-topic-card-top">
+          <h3 id="topic-taxonomy-title">Taxonomy &amp; discoveries</h3>
+          <span class="research-topic-count">{{ topic_posts.size }} {% if topic_posts.size == 1 %}article{% else %}articles{% endif %}</span>
+        </div>
+        <p>Species discoveries, identification challenges and changing scientific names.</p>
+        <ul aria-label="Recent Taxonomy &amp; discoveries research">
+          {% for topic_post in topic_posts limit: 2 %}
+          <li><a href="{{ topic_post.url | relative_url }}">{{ topic_post.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+        <a class="research-topic-browse" href="research.html?topic=taxonomy#research-archive">Browse this topic <span aria-hidden="true">→</span></a>
+      </article>
+      {% assign topic_posts = site.research | where: "category", "Venom & defence" | sort: "posted_date" | reverse %}
+      <article class="research-topic-card" aria-labelledby="topic-defence-title">
+        <div class="research-topic-card-top">
+          <h3 id="topic-defence-title">Venom &amp; defence</h3>
+          <span class="research-topic-count">{{ topic_posts.size }} {% if topic_posts.size == 1 %}article{% else %}articles{% endif %}</span>
+        </div>
+        <p>Venom, protective structures and the ways arachnids survive attacks.</p>
+        <ul aria-label="Recent Venom &amp; defence research">
+          {% for topic_post in topic_posts limit: 2 %}
+          <li><a href="{{ topic_post.url | relative_url }}">{{ topic_post.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+        <a class="research-topic-browse" href="research.html?topic=defence#research-archive">Browse this topic <span aria-hidden="true">→</span></a>
+      </article>
+      {% assign topic_posts = site.research | where: "category", "Silk & biomaterials" | sort: "posted_date" | reverse %}
+      <article class="research-topic-card" aria-labelledby="topic-silk-title">
+        <div class="research-topic-card-top">
+          <h3 id="topic-silk-title">Silk &amp; biomaterials</h3>
+          <span class="research-topic-count">{{ topic_posts.size }} {% if topic_posts.size == 1 %}article{% else %}articles{% endif %}</span>
+        </div>
+        <p>Spider silk, web mechanics and the molecular designs behind remarkable fibres.</p>
+        <ul aria-label="Recent Silk &amp; biomaterials research">
+          {% for topic_post in topic_posts limit: 2 %}
+          <li><a href="{{ topic_post.url | relative_url }}">{{ topic_post.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+        <a class="research-topic-browse" href="research.html?topic=silk#research-archive">Browse this topic <span aria-hidden="true">→</span></a>
+      </article>
+      </div>
+    </section>
+
     <section class="research-archive" id="research-archive" aria-labelledby="archive-title">
       <header class="research-list-heading">
         <div>
           <p class="eyebrow">Reading room</p>
-          <h2 id="archive-title">Latest entries.</h2>
+          <h2 id="archive-title">Research archive.</h2>
         </div>
         <p>Behaviour, ecology, evolution, taxonomy, defence, and silk—kept readable, traceable, and connected to the original source.</p>
       </header>
@@ -465,6 +562,10 @@
           <button type="button" class="filter-chip" data-filter="silk" aria-pressed="false">Silk &amp; biomaterials</button>
         </div>
 
+        <label class="research-search" for="research-search-input">
+          <span>Search articles</span>
+          <input id="research-search-input" type="search" placeholder="Try “jumping spider sleep”" autocomplete="off" aria-controls="entry-list">
+        </label>
         <label class="sort-control">
           <span>Sort by</span>
           <select id="sort-select">
@@ -475,6 +576,8 @@
           </select>
         </label>
       </div>
+
+      <p class="research-result-count" id="research-result-count" role="status" aria-live="polite"></p>
 
       <!-- Server-rendered article links keep the archive crawlable and useful without JavaScript.
            The enhanced filter/sort interface replaces these cards once it loads. -->
@@ -541,7 +644,7 @@
       {% endfor %}
     ]
   </script>
-  <script src="assets/research.js" defer></script>
+  <script src="assets/research.js?v=20261121topics" defer></script>
 </body>
 </html>
 

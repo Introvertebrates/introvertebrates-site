@@ -3,11 +3,17 @@
   const entryList = document.getElementById("entry-list");
   const filterButtons = Array.from(document.querySelectorAll(".filter-chip"));
   const sortSelect = document.getElementById("sort-select");
+  const searchInput = document.getElementById("research-search-input");
+  const resultCount = document.getElementById("research-result-count");
   if (!dataElement || !entryList || !sortSelect) return;
 
-  let activeFilter = "all";
+  const urlParams = new URLSearchParams(window.location.search);
+  const validFilters = new Set(filterButtons.map((button) => button.dataset.filter));
+  let activeFilter = validFilters.has(urlParams.get("topic")) ? urlParams.get("topic") : "all";
+  let searchTerm = (urlParams.get("q") || "").trim().toLocaleLowerCase();
   let activeSort = sortSelect.value;
   let entries = [];
+  if (searchInput) searchInput.value = urlParams.get("q") || "";
 
   const categoryToSlug = (category) => {
     const categories = {
@@ -35,6 +41,10 @@
     article.dataset.category = categoryToSlug(entry.category);
     article.dataset.postedDate = entry.posted_date || "";
     article.dataset.sourceDate = entry.source_date || "";
+    article.dataset.searchText = [
+      entry.title, entry.description, entry.summary, entry.why_it_matters,
+      entry.category, entry.source_name
+    ].filter(Boolean).join(" ").toLocaleLowerCase();
 
     const dates = appendText(article, "div", "entry-dates", "");
     const posted = appendText(dates, "span", "entry-date-item", "");
@@ -86,13 +96,42 @@
     return 0;
   });
 
+  const updateFilterButtons = () => {
+    filterButtons.forEach((button) => {
+      const selected = button.dataset.filter === activeFilter;
+      button.classList.toggle("active", selected);
+      button.setAttribute("aria-pressed", String(selected));
+    });
+  };
+
+  const updateAddress = () => {
+    const url = new URL(window.location.href);
+    if (activeFilter === "all") url.searchParams.delete("topic");
+    else url.searchParams.set("topic", activeFilter);
+    if (searchInput && searchInput.value.trim()) url.searchParams.set("q", searchInput.value.trim());
+    else url.searchParams.delete("q");
+    try {
+      window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    } catch {
+      // Local file previews may not permit history updates.
+    }
+  };
+
   const renderEntries = () => {
-    const filtered = entries.filter((entry) => activeFilter === "all" || entry.dataset.category === activeFilter);
+    const words = searchTerm.split(/\s+/).filter(Boolean);
+    const filtered = entries.filter((entry) =>
+      (activeFilter === "all" || entry.dataset.category === activeFilter) &&
+      words.every((word) => entry.dataset.searchText.includes(word))
+    );
     const sorted = sortEntries(filtered, activeSort);
     entryList.replaceChildren();
 
+    if (resultCount) {
+      resultCount.textContent = `Showing ${filtered.length} of ${entries.length} research articles`;
+    }
+
     if (sorted.length === 0) {
-      appendText(entryList, "p", "research-empty", "No research summaries match this filter yet.");
+      appendText(entryList, "p", "research-empty", "No matching studies yet. Try another keyword or choose a different topic.");
       return;
     }
 
@@ -118,14 +157,19 @@
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
       activeFilter = button.dataset.filter;
-      filterButtons.forEach((candidate) => {
-        const selected = candidate === button;
-        candidate.classList.toggle("active", selected);
-        candidate.setAttribute("aria-pressed", String(selected));
-      });
+      updateFilterButtons();
+      updateAddress();
       renderEntries();
     });
   });
+
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      searchTerm = searchInput.value.trim().toLocaleLowerCase();
+      updateAddress();
+      renderEntries();
+    });
+  }
 
   sortSelect.addEventListener("change", (event) => {
     activeSort = event.target.value;
@@ -137,6 +181,7 @@
       // Keep the server-rendered archive if the enhanced dataset is unavailable.
       if (sourceData.length === 0 && entryList.children.length > 0) return;
       entries = sourceData.map(buildEntry);
+      updateFilterButtons();
       renderEntries();
     })
     .catch(() => {

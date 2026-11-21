@@ -415,6 +415,8 @@
     "siuzi-theraphosa-apophysis": {
       resident: "Siuzi",
       species: "Theraphosa apophysis",
+      seoTitle: "Theraphosa apophysis Tarantula (Siuzi) | Introvertebrates",
+      seoDescription: "Meet Siuzi, a female Theraphosa apophysis tarantula. Explore photographs, natural history, habitat, feeding observations, and evidence-based sources.",
       group: "Tarantula",
       sex: "Confirmed female",
       family: "Theraphosidae",

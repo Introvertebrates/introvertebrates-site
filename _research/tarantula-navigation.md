@@ -8,6 +8,18 @@ summary: Nine field observations of arboreal and fossorial tarantulas describe r
 why_it_matters: The observations challenge the idea that tarantula movement is entirely rigid or reflexive, while showing exactly where intriguing natural history ends and stronger evidence must begin.
 source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13106993/
 source_name: Ecology and Evolution
+feature_image: "/assets/collection/siuzi-theraphosa-apophysis.jpg"
+feature_image_alt: "Siuzi, a Theraphosa apophysis tarantula, moving over cork and grass in her enclosure"
+feature_image_caption: "Siuzi, Theraphosa apophysis, in her enclosure. This photograph illustrates the species; it is not a recording from the field study."
+feature_image_width: 1600
+feature_image_height: 898
+related_links:
+  - title: "Meet Siuzi · Theraphosa apophysis"
+    url: "/species/siuzi-theraphosa-apophysis.html"
+    note: "Natural history and one animal’s documented life; not evidence of her taking part in the study."
+  - title: "How spiders sense their surroundings"
+    url: "/spider-anatomy.html#senses"
+    note: "A closer look at movement, touch and other sensory structures."
 ---
 <h2>What was observed</h2>
 

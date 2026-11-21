@@ -18,7 +18,7 @@ const testedExtensions = new Set([".html", ".md", ".json", ".js"]);
 const rules = [
   {
     label: "Photo should be identified by what it shows, not by archive status",
-    pattern: /\b(?:archived?|archival)\s+(?:collection\s+)?(?:photos?|photographs?|pictures?|images?|portraits?|views?)\b/gi,
+    pattern: /\b(?:archived?|archival)\s+(?:(?:collection|ventral|dorsal|side|front|profile)\s+)?(?:photos?|photographs?|pictures?|images?|portraits?|views?)\b/gi,
   },
   {
     label: "Avoid calling ordinary animal photos 'archive photos'",

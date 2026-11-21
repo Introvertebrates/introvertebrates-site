@@ -1158,6 +1158,12 @@
   display: block;
 }
 
+/* The mobile view repeats the active system near the figure so the highlight
+   stays identifiable even while someone reads a button farther down. */
+.internal-selection {
+  display: none;
+}
+
 .internal-vector-base {
   fill: #fff;
   opacity: 0.24;
@@ -1927,13 +1933,80 @@
     text-align: left;
   }
 
+  /* Keep the highlighted spider in view as the list of systems scrolls.
+     The page's inherited overflow:hidden would otherwise defeat sticky. */
+  .anatomy-page {
+    overflow: clip;
+  }
+
+  .internal-map {
+    display: block;
+    overflow: visible;
+  }
+
   .internal-figure {
-    min-height: 390px;
-    padding: 58px 12px 20px;
+    position: sticky;
+    z-index: 5;
+    top: 110px; /* Mobile navigation wraps into a roughly 104px header. */
+    height: clamp(215px, 38svh, 290px);
+    min-height: 0;
+    padding: 28px 10px 44px;
+    border-bottom: 1px solid var(--anatomy-line);
+    border-radius: 19px 19px 0 0;
+    background: #030b12;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+  }
+
+  .internal-figure svg {
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+  }
+
+  .internal-figure .schematic-label {
+    top: 9px;
+    left: 14px;
+    font-size: 0.59rem;
+  }
+
+  .internal-selection {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+    padding: 6px 10px;
+    border: 1px solid rgba(156, 199, 215, 0.18);
+    border-radius: 10px;
+    background: rgba(7, 22, 32, 0.94);
+    color: #98afbb;
+    font-size: 0.76rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .internal-selection strong {
+    color: #f7fbfd;
   }
 
   .internal-key {
+    position: relative;
+    z-index: 1;
     grid-template-columns: 1fr;
+  }
+
+  .internal-key-item {
+    min-height: 66px;
+    padding: 14px 16px;
+  }
+
+  .internal-key-copy {
+    margin-top: 5px;
+    line-height: 1.46;
   }
 
   .internal-key-item:nth-child(2) {
@@ -1954,6 +2027,15 @@
 
   .anatomy-faq p {
     margin-right: 0;
+  }
+}
+
+/* On touch-first devices, swipe gestures over the diagram must never
+   activate another organ. The labelled buttons remain fully operable. */
+@media (hover: none), (pointer: coarse) {
+  .internal-system {
+    pointer-events: none;
+    cursor: default;
   }
 }
 

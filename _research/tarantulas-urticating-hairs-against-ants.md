@@ -8,6 +8,18 @@ summary: In controlled encounters, tarantulas deliberately directed abdominal ur
 why_it_matters: The result expands the known function of one of the most distinctive tarantula defences and strengthens the case that interactions with ants may have influenced its evolution.
 source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13433772/
 source_name: Scientific Reports
+feature_image: "/assets/collection/ruby-frontal-portrait-2026.jpg"
+feature_image_alt: "Ruby, a Chromatopelma cyaneopubescens tarantula, with blue legs and visible body hairs"
+feature_image_caption: "Ruby, Chromatopelma cyaneopubescens. The body hairs are visible, but this photo does not identify individual urticating setae or show the behaviour tested."
+feature_image_width: 1600
+feature_image_height: 900
+related_links:
+  - title: "Meet Ruby · Chromatopelma cyaneopubescens"
+    url: "/species/ruby-chromatopelma-cyaneopubescens.html"
+    note: "An illustrated species profile, not a record of the ant experiment."
+  - title: "Meet Siuzi · Theraphosa apophysis"
+    url: "/species/siuzi-theraphosa-apophysis.html"
+    note: "Natural history and photographs of another New World tarantula."
 ---
 <h2>What was found</h2>
 

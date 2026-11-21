@@ -22,6 +22,10 @@ video_url: "/assets/kryp/video/rosenbille.mp4"
 video_mobile_url: "/assets/kryp/video/rosenbille-vertical.mp4"
 video_title: "En voksen rosenbille på en grein. Se på de små bevegelsene i antennene og frambeina."
 video_poster: "/assets/kryp/rosenbille-video-poster.jpg"
+related_links:
+  - title: "Arten Pachnoda marginata (engelsk)"
+    url: "/species/pachnoda-marginata.html"
+    note: "Flere bilder og fakta om rosenbillenes utvikling og liv i en koloni."
 ---
 
 ## Fire svært ulike stadier

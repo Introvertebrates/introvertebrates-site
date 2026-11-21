@@ -476,7 +476,31 @@
         </label>
       </div>
 
-      <div class="entry-list" id="entry-list" aria-label="Research summaries"></div>
+      <!-- Server-rendered article links keep the archive crawlable and useful without JavaScript.
+           The enhanced filter/sort interface replaces these cards once it loads. -->
+      <div class="entry-list" id="entry-list" aria-label="Research summaries">
+        {% assign visible_research = site.research | sort: "posted_date" | reverse %}
+        {% for post in visible_research %}
+        <article class="entry">
+          <div class="entry-dates">
+            <span class="entry-date-item"><span class="entry-date-label">Posted:</span> <span>{{ post.posted_date | date: "%-d %B %Y" }}</span></span>
+            <span class="entry-date-item"><span class="entry-date-label">Source:</span> <span>{{ post.source_date | date: "%-d %B %Y" }}</span></span>
+          </div>
+          <div class="entry-header">
+            <div class="entry-title-wrap"><h2>{{ post.title | escape }}</h2></div>
+            <span class="badge">{{ post.category | default: 'Research' | escape }}</span>
+          </div>
+          <p>{{ post.summary | escape }}</p>
+          <p><strong>Why it matters:</strong> {{ post.why_it_matters | escape }}</p>
+          <div class="entry-actions">
+            <a class="home-button research-card-button" href="{{ post.url | relative_url }}">Read full summary</a>
+            {% if post.source_url %}
+            <a class="research-source-link" href="{{ post.source_url | escape }}" target="_blank" rel="noopener noreferrer">Original source · {{ post.source_name | default: 'Read article' | escape }}</a>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
     </section>
   </main>
 

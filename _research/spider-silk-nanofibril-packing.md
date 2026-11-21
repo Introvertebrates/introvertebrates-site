@@ -8,6 +8,18 @@ summary: Researchers used cryo-focused ion beam milling and cryo-electron tomogr
 why_it_matters: Spider silk performance depends on more than its protein recipe. This study directly visualises how nanoscale building blocks are organised, helping connect silk formation with the properties that engineers struggle to reproduce in artificial fibres.
 source_url: https://www.nature.com/articles/s41467-026-70477-1
 source_name: Nature Communications
+feature_image: "/assets/learn/archive/orb-web-structure-2026.jpg"
+feature_image_alt: "A spider suspended among radial and curved strands of an orb web"
+feature_image_caption: "An orb web from the Introvertebrates photo archive. Illustrative only: the study measured microscopic fibre structure, not this web."
+feature_image_width: 882
+feature_image_height: 882
+related_links:
+  - title: "Silk glands and spinnerets"
+    url: "/spider-anatomy.html#silk"
+    note: "Explore how spiders produce and place silk."
+  - title: "A peptide that changes experimental silk fibres"
+    url: "/research/small-peptide-strengthens-spider-silk/"
+    note: "Related research on silk composition and laboratory fibres."
 ---
 <h2>Looking inside an intact fibre</h2>
 

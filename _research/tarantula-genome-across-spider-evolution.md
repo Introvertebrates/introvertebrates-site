@@ -8,6 +8,13 @@ summary: Researchers assembled a 6.5-billion-base chromosome-level genome for a 
 why_it_matters: This gives the familiar tarantula-versus-araneomorph comparison a genomic dimension. The study does not make one lineage more "advanced" than the other; it shows how two long-lived branches of spider evolution have accumulated very different genomic architectures.
 source_url: https://academic.oup.com/gbe/article/18/4/evag081/8643931
 source_name: Genome Biology and Evolution
+related_links:
+  - title: "Mygalomorphs and araneomorphs explained"
+    url: "/spider-anatomy.html#lineages"
+    note: "See the anatomy differences between the two major spider lineages."
+  - title: "Explore the tarantula species profiles"
+    url: "/collection.html"
+    note: "Natural-history profiles with original photography."
 ---
 <h2>What the researchers built</h2>
 

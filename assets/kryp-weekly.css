@@ -190,6 +190,44 @@
   line-height: 1.65;
 }
 
+.kryp-weekly-related {
+  margin-top: 6px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(154, 223, 133, 0.18);
+}
+
+.kryp-weekly-related h3 {
+  margin: 0 0 12px;
+  color: var(--kryp-cream);
+  font-size: 1.02rem;
+}
+
+.kryp-weekly-related ul {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kryp-weekly-related li + li {
+  padding-top: 12px;
+  border-top: 1px solid rgba(154, 223, 133, 0.12);
+}
+
+.kryp-weekly-related a {
+  color: var(--kryp-moss);
+  font-weight: 650;
+  line-height: 1.55;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.kryp-weekly-related p {
+  margin-top: 4px;
+  font-size: 0.82rem;
+}
+
 .kryp-weekly-colouring {
   display: grid;
   gap: 16px;

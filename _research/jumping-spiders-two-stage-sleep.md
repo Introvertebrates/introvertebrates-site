@@ -10,6 +10,13 @@ summary: Follow-up experiments with Portia fimbriata found a free-running circad
 why_it_matters: A 2022 study revealed REM-like movements in resting jumping spiders but could not prove that the animals were asleep. The new experiments provide that missing behavioural evidence, broadening the study of sleep beyond vertebrates and familiar laboratory models without claiming that spiders dream.
 source_url: https://doi.org/10.1073/pnas.2618030123
 source_name: PNAS
+related_links:
+  - title: "The original 2022 discovery"
+    url: "/research/jumping-spiders-rem-like-sleep/"
+    note: "Retinal movements and twitching first raised the sleep question."
+  - title: "Spider eyes and sensory anatomy"
+    url: "/spider-anatomy.html#front-end"
+    note: "Explore the structures that make retinal tracking possible."
 ---
 
 <p>

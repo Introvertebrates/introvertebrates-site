@@ -8,6 +8,13 @@ summary: Researchers trained mated adult female Habronattus pyrrithrix to associ
 why_it_matters: The experiment provides rare direct evidence that colour vision can improve foraging performance and affect the timing of reproduction, connecting sensory ability to a measurable fitness-related outcome.
 source_url: https://doi.org/10.1093/beheco/arag110
 source_name: Behavioral Ecology
+related_links:
+  - title: "Eyes, vision and the front of the spider"
+    url: "/spider-anatomy.html#front-end"
+    note: "The basic visual anatomy behind this fascinating behaviour."
+  - title: "Why spider eye arrangements vary"
+    url: "/research/spider-eye-arrangements-hunting-ecology/"
+    note: "Research on hunting ecology and the evolution of spider eyes."
 ---
 <h2>What was found</h2>
 

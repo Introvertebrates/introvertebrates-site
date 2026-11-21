@@ -8,7 +8,7 @@ image: "/assets/kryp/ethmostigmus-trigonopodus.jpg"
 image_width: 2000
 image_height: 1333
 image_alt: "Ethmostigmus trigonopodus med mange oransje bein langs den mørke kroppen"
-image_caption: "Ethmostigmus trigonopodus · arkivfoto"
+image_caption: "Ethmostigmus trigonopodus"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 colouring_url: "/kryp-fargelegging.html#colouring-hundrebein"

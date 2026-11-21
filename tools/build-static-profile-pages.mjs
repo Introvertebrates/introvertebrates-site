@@ -47,8 +47,8 @@ for (const [key, profile] of profileEntries) {
 
   const namedResident = !profile.resident.startsWith("Current ");
   const pageName = namedResident ? `${profile.resident} · ${profile.species}` : profile.species;
-  const title = `${pageName} | Introvertebrates`;
-  const description = profile.intro;
+  const title = profile.seoTitle || `${pageName} | Introvertebrates`;
+  const description = profile.seoDescription || profile.intro;
   const canonicalUrl = `https://introvertebrates.com/species/${key}.html`;
   const imageUrl = `https://introvertebrates.com/assets/collection/${profile.image}`;
   const structuredData = {

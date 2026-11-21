@@ -23,6 +23,10 @@ colouring_image: "/assets/kryp/colouring/linothele-weekly.png"
 colouring_image_alt: "Fargeleggingsark av Linothele"
 colouring_label: "Fargelegg Linothele"
 colouring_description: "En forenklet strekillustrasjon basert på et tidligere fotografi av Linothele fra samlingen."
+related_links:
+  - title: "Hvordan lager edderkopper silke?"
+    url: "/kryp-edderkoppens-kropp.html"
+    note: "Finn spinnvortene og les om hvordan edderkopper bygger med silke."
 ---
 
 ## Et nett med flere oppgaver

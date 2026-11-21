@@ -329,7 +329,7 @@
     },
     "omothymus-violaceopes": {
       seoTitle: "Omothymus violaceopes – Arboreal Tarantula | Introvertebrates",
-      seoDescription: "Learn about Omothymus violaceopes from Malaysia and Singapore: tree retreats and male colour changes, with archived photographs of Orion.",
+      seoDescription: "Learn about Omothymus violaceopes from Malaysia and Singapore: tree retreats and male colour changes, with photographs of Orion.",
       resident: "Orion",
       collectionStatus: "former",
       species: "Omothymus violaceopes",

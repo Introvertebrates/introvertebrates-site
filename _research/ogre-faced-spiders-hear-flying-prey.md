@@ -8,6 +8,13 @@ summary: Experiments on Deinopis spinosa combined neural recordings with behavio
 why_it_matters: Ogre-faced spiders are famous for enormous night-sensitive eyes, but this study revealed a second long-range sensory system. Their legs detect airborne sound, helping them intercept prey outside the visual hunting zone below them—without ears and without hearing exactly as humans do.
 source_url: https://doi.org/10.1016/j.cub.2020.09.048
 source_name: Current Biology
+related_links:
+  - title: "How spiders sense air movement"
+    url: "/spider-anatomy.html#senses"
+    note: "Learn about trichobothria, setae and other sensory structures."
+  - title: "Eye arrangements and hunting style"
+    url: "/research/spider-eye-arrangements-hunting-ecology/"
+    note: "A different study connecting spider eyes with hunting ecology."
 ---
 
 <h2>A hunter with two ways to strike</h2>

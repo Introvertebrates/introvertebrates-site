@@ -1402,6 +1402,16 @@
             <strong>${deeperHistory ? "Keeper interpretation" : "Research and keeper observations"}</strong>
             <p>${deeperHistory?.inference || "Published taxonomy and distribution are kept separate from photographs, videos, and Codex records of this resident. That makes it clear which statements come from research and which describe an animal in my care."}</p>
           </aside>
+          ${relatedResearch.length ? `
+            <aside class="profile-research-story" aria-label="Research related to this species">
+              <p class="profile-research-label">Explore the science</p>
+              <ul>
+                ${relatedResearch.map((item) => `
+                  <li><a href="../research/${item.slug}/">${escapeProfileHtml(item.title)} <span aria-hidden="true">→</span></a><p>${escapeProfileHtml(item.note)}</p></li>
+                `).join("")}
+              </ul>
+            </aside>
+          ` : ""}
         </div>
       </section>
 
@@ -1519,6 +1529,14 @@
         </div>
       </section>
 
+      <section class="profile-section species-shell" id="sources" aria-labelledby="sources-title">
+        <header class="section-heading"><p class="section-kicker">Read further</p><h2 id="sources-title">Sources.</h2></header>
+        <div class="section-copy">
+          <ul class="source-list">
+            ${profile.sources.map((source, index) => `<li id="source-${index + 1}"><strong>${index + 1}. ${source.label}</strong><a href="${source.url}" target="_blank" rel="noopener noreferrer">View the source</a>.</li>`).join("")}
+          </ul>
+        </div>
+      </section>
       <section class="profile-section species-shell" aria-labelledby="related-title">
         <header class="section-heading"><p class="section-kicker">Continue exploring</p><h2 id="related-title">Related profiles.</h2></header>
         <div class="section-copy">
@@ -1540,16 +1558,6 @@
             ${norwegianProfileAnchor ? `<a class="button" href="../kryp-artsprofiler.html#${norwegianProfileAnchor}" lang="no">Les profilen på norsk</a>` : ""}
             ${isSpider ? `<a class="button" href="../spider-anatomy.html">Spider anatomy</a><a class="button" href="../spider-facts.html">Amazing spider facts</a><a class="button" href="../spider-health.html">Health &amp; husbandry</a>` : ""}
           </div>
-          ${relatedResearch.length ? `
-            <aside class="profile-research-story" aria-label="Research related to this species">
-              <p class="profile-research-label">Explore the science</p>
-              <ul>
-                ${relatedResearch.map((item) => `
-                  <li><a href="../research/${item.slug}/">${escapeProfileHtml(item.title)} <span aria-hidden="true">→</span></a><p>${escapeProfileHtml(item.note)}</p></li>
-                `).join("")}
-              </ul>
-            </aside>
-          ` : ""}
           ${norwegianWeeklyStory ? `
             <div class="profile-norwegian-story">
               <p class="profile-norwegian-story-label">Also in Norwegian · Kryp &amp; Krabater</p>
@@ -1560,14 +1568,6 @@
         </div>
       </section>
 
-      <section class="profile-section species-shell" id="sources" aria-labelledby="sources-title">
-        <header class="section-heading"><p class="section-kicker">Read further</p><h2 id="sources-title">Sources.</h2></header>
-        <div class="section-copy">
-          <ul class="source-list">
-            ${profile.sources.map((source, index) => `<li id="source-${index + 1}"><strong>${index + 1}. ${source.label}</strong><a href="${source.url}" target="_blank" rel="noopener noreferrer">View the source</a>.</li>`).join("")}
-          </ul>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">

@@ -823,6 +823,47 @@ body[data-profile="lasiodora-klugi"] .hero-portrait img {
   margin-top: 24px;
 }
 
+.profile-research-story {
+  margin-top: 22px;
+  padding: 19px 22px;
+  border: 1px solid var(--species-line);
+  border-radius: 14px;
+  background: var(--species-surface);
+}
+.profile-research-story .profile-research-label {
+  margin: 0 0 12px;
+  color: #93b9c1;
+  font-size: 0.71rem;
+  font-weight: 750;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.profile-research-story ul {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.profile-research-story li + li {
+  border-top: 1px solid var(--species-line);
+  padding-top: 12px;
+}
+.profile-research-story a {
+  color: var(--species-teal);
+  font-weight: 750;
+  text-underline-offset: 4px;
+}
+.profile-research-story a:hover,
+.profile-research-story a:focus-visible {
+  color: var(--species-text);
+}
+.profile-research-story li p {
+  margin: 5px 0 0;
+  color: #8ca7b4;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
 .profile-norwegian-story {
   margin-top: 22px;
   padding: 19px 22px;

@@ -7,6 +7,8 @@
 (() => {
   const profiles = {
     "sabrina-brachypelma-hamorii": {
+      seoTitle: "Brachypelma hamorii – Mexican Red-Knee | Introvertebrates",
+      seoDescription: "Learn about Brachypelma hamorii, the Mexican red-knee tarantula: habitat, identification, defensive hairs and conservation, with original photographs of Sabrina.",
       resident: "Sabrina",
       species: "Brachypelma hamorii",
       group: "Tarantula",
@@ -35,6 +37,8 @@
       video: { id: "IXY2w7nUmoA", title: "Meet Sabrina: My Mexican red-knee tarantula", note: "A short introduction to Sabrina and the markings that make Brachypelma hamorii so recognisable." }
     },
     "ceratogyrus-darlingi": {
+      seoTitle: "Ceratogyrus darlingi – Horned Tarantula | Introvertebrates",
+      seoDescription: "Explore Ceratogyrus darlingi, a southern African horned tarantula: taxonomy, silk-lined retreats and behaviour, with photographs and observations of Gunnar.",
       resident: "Gunnar",
       species: "Ceratogyrus darlingi",
       group: "Tarantula",
@@ -63,6 +67,8 @@
       video: { id: "WvyBlNpTxQI", title: "Introducing Gunnar, my Ceratogyrus darlingi", note: "A closer introduction to Gunnar and his place in the Introvertebrates collection." }
     },
     "chilobrachys-fimbriatus": {
+      seoTitle: "Chilobrachys fimbriatus – Indian Tarantula | Introvertebrates",
+      seoDescription: "Discover Chilobrachys fimbriatus from India: its silk-lined burrows, retreat behaviour and taxonomy, with original spider photographs and natural-history sources.",
       resident: "Current resident",
       species: "Chilobrachys fimbriatus",
       group: "Tarantula",
@@ -90,6 +96,8 @@
       video: { id: "iPIhIsNKUaY", title: "Rehousing my Chilobrachys fimbriatus", note: "A full rehousing video showing the animal, its retreat, and the enclosure work behind the profile." }
     },
     "chilobrachys-kaeng-krachan": {
+      seoTitle: "Chilobrachys sp. Kaeng Krachan | Introvertebrates",
+      seoDescription: "Explore the web-building Chilobrachys sp. “Kaeng Krachan” and its extensive silk retreats. Learn why this hobby label is not a formally described species.",
       resident: "Current resident",
       species: "Chilobrachys sp. “Kaeng Krachan”",
       group: "Tarantula",
@@ -118,6 +126,8 @@
       video: { id: "-axko1BGf0s", title: "Building a jungle paludarium for Chilobrachys sp. Kaeng Krachan", note: "The complete enclosure build behind this resident’s dark, humid presentation." }
     },
     "elvira-chilobrachys-natanicharum": {
+      seoTitle: "Chilobrachys natanicharum – Electric Blue | Introvertebrates",
+      seoDescription: "Learn about Chilobrachys natanicharum, the electric-blue tarantula described from Thailand in 2023. See its taxonomy, silk retreats and photographs of Elvira.",
       resident: "Elvira",
       species: "Chilobrachys natanicharum",
       group: "Tarantula",
@@ -143,6 +153,8 @@
       video: { id: "V_QQOjU2T28", title: "Chilobrachys natanicharum: The most beautiful tarantula", note: "A species-focused look at the electric-blue tarantula represented in the collection by Elvira." }
     },
     "ruby-chromatopelma-cyaneopubescens": {
+      seoTitle: "Chromatopelma cyaneopubescens – Greenbottle Blue | Introvertebrates",
+      seoDescription: "Explore Chromatopelma cyaneopubescens, the Venezuelan greenbottle blue tarantula: colourful markings, surface webbing, habitat and photographs of Ruby.",
       resident: "Ruby",
       species: "Chromatopelma cyaneopubescens",
       group: "Tarantula",
@@ -171,6 +183,8 @@
       video: { id: "SYVBvfz9fh8", title: "Ruby’s best strikes since day one", note: "A fast collection of Ruby’s feeding responses, presented as an Introvertebrates Short." }
     },
     "grammostola-pulchripes": {
+      seoTitle: "Grammostola pulchripes – Chaco Golden-Knee | Introvertebrates",
+      seoDescription: "Read about Grammostola pulchripes, the Chaco golden-knee tarantula: South American range, habitat and distinctive leg markings, illustrated with Runa's photos.",
       resident: "Runa",
       species: "Grammostola pulchripes",
       group: "Tarantula",
@@ -199,6 +213,8 @@
       video: { id: "Uveo9KLDKro", title: "Meet the Chaco golden-knee tarantula up close", note: "A species-focused introduction to Grammostola pulchripes and its distinctive golden bands." }
     },
     "linothele-fallax": {
+      seoTitle: "Linothele fallax – Curtain-Web Spider | Introvertebrates",
+      seoDescription: "Discover Linothele fallax, a South American curtain-web spider—not a tarantula. Explore its silk retreat, taxonomy, hunting behaviour, photographs and video.",
       resident: "Current resident",
       species: "Linothele fallax",
       group: "Curtain-web spider",
@@ -228,6 +244,8 @@
       video: { id: "6yuCc4-XAwU", title: "Spider snapshot: Linothele fallax", note: "A compact species snapshot of the tiger curtain-web spider." }
     },
     "sonja-mauremys-reevesii": {
+      seoTitle: "Mauremys reevesii – Reeves's Turtle | Introvertebrates",
+      seoDescription: "Learn about Mauremys reevesii, Reeves's turtle: East Asian freshwater habitats, basking behaviour and shell features, with original photographs of Sonja.",
       resident: "Sonja",
       species: "Mauremys reevesii",
       group: "Reeves’s turtle",
@@ -255,6 +273,8 @@
       video: { id: "lEVuJhaAlNY", title: "Sonja’s new home", note: "A complete look at the home created for Sonja, the collection’s Reeves’s turtle." }
     },
     "bella-monocentropus-balfouri": {
+      seoTitle: "Monocentropus balfouri – Bella | Introvertebrates",
+      seoDescription: "Explore Monocentropus balfouri, a blue-legged tarantula native to Socotra. Learn about the species' habitat and silk retreats through Bella's photographs.",
       resident: "Bella",
       species: "Monocentropus balfouri",
       group: "Tarantula",
@@ -283,6 +303,8 @@
       video: { id: "fjac-dh_wAQ", title: "Discover Bella: Monocentropus balfouri", note: "A short individual introduction to Bella and her distinctive blue-and-cream colouring." }
     },
     "belinda-monocentropus-balfouri": {
+      seoTitle: "Monocentropus balfouri – Belinda | Introvertebrates",
+      seoDescription: "Discover the Socotra tarantula Monocentropus balfouri through taxonomy, habitat and burrow behaviour, plus Belinda's blue-and-cream portraits and webbing.",
       resident: "Belinda",
       species: "Monocentropus balfouri",
       group: "Tarantula",
@@ -306,6 +328,8 @@
       video: { id: "ghR2QufL78U", title: "The science behind a vivarium: Belinda’s new setup", note: "A longer build and husbandry video centred on Belinda’s enclosure." }
     },
     "omothymus-violaceopes": {
+      seoTitle: "Omothymus violaceopes – Arboreal Tarantula | Introvertebrates",
+      seoDescription: "Learn about Omothymus violaceopes from Malaysia and Singapore: tree retreats and male colour changes, with archived photographs of Orion.",
       resident: "Orion",
       collectionStatus: "former",
       species: "Omothymus violaceopes",
@@ -336,6 +360,8 @@
       video: { id: "UPEjF670oIA", title: "Meet Omothymus violaceopes: The stunning blue tarantula", note: "A species-focused introduction to the Singapore blue tarantula." }
     },
     "clara-psalmopoeus-irminia": {
+      seoTitle: "Psalmopoeus irminia – Venezuelan Suntiger | Introvertebrates",
+      seoDescription: "Discover Psalmopoeus irminia, an arboreal tarantula from northern South America: taxonomy, habitat and orange markings, illustrated with photographs of Clara.",
       resident: "Clara",
       species: "Psalmopoeus irminia",
       group: "Tarantula",
@@ -362,6 +388,8 @@
       video: { id: "F8HVJVy4PdE", title: "Meet Clara: The Venezuelan sun tiger", note: "A full introduction to Clara and Psalmopoeus irminia on the Introvertebrates channel." }
     },
     "psyttala-horrida": {
+      seoTitle: "Psyttala horrida – African Assassin Bug | Introvertebrates",
+      seoDescription: "Explore Psyttala horrida, a predatory African assassin bug: taxonomy, piercing-sucking mouthparts and nymph development, with photographs of the colony.",
       resident: "Current colony",
       species: "Psyttala horrida",
       group: "Assassin bug",
@@ -388,6 +416,8 @@
       video: { id: "sr930b5ycrg", title: "Creating a beautiful assassin bug habitat", note: "The enclosure build and environmental thinking behind the assassin bugs in the collection." }
     },
     "pachnoda-marginata": {
+      seoTitle: "Pachnoda marginata – Sun Beetle | Introvertebrates",
+      seoDescription: "Learn about Pachnoda marginata, the sun beetle: adult feeding, larval development and habitat, with original photographs from the Introvertebrates colony.",
       resident: "Current colony",
       species: "Pachnoda marginata",
       group: "Sun beetle",

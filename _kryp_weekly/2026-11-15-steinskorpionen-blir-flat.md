@@ -10,7 +10,7 @@ image: "/assets/kryp/hadogenes-paucidens.jpg"
 image_width: 2000
 image_height: 2000
 image_alt: "Hadogenes paucidens sett skrått fra siden på en stein"
-image_caption: "Arkivert som Hadogenes paucidens"
+image_caption: "Steinskorpion · tentativt identifisert som Hadogenes paucidens"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 colouring_url: "/kryp-fargelegging.html#colouring-steinskorpion"
@@ -40,7 +40,7 @@ Mellom steiner kan en skorpion få beskyttelse mot vær og større dyr. Formen g
 
 ## Et navn med forbehold
 
-Dette eldre fotografiet er arkivert som *Hadogenes paucidens*. Slekten har vært gjennom taksonomiske endringer, og sikker artsbestemmelse kan kreve detaljer som ikke kan bekreftes fra ett bilde. Tilpasningene som beskrives her gjelder derfor først og fremst slekten *Hadogenes*.
+Dette fotografiet har tidligere vært merket *Hadogenes paucidens*. Slekten har vært gjennom taksonomiske endringer, og sikker artsbestemmelse kan kreve detaljer som ikke kan bekreftes fra ett bilde. Tilpasningene som beskrives her gjelder derfor først og fremst slekten *Hadogenes*.
 
 ## Prøv selv
 

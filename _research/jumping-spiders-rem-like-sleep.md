@@ -1,5 +1,7 @@
 ---
 title: What happens when a jumping spider falls asleep?
+seo_title: Do Jumping Spiders Sleep? REM-Like Sleep Explained
+seo_description: A 2022 study filmed moving retinas, twitching and leg curls in resting jumping spiders. Explore the REM-like evidence, its limits, and the 2026 follow-up.
 description: Translucent spiderlings revealed regular bouts of moving retinas, twitching limbs and curled legs—a striking pattern resembling REM sleep.
 category: Behaviour & cognition
 posted_date: 2026-10-16
@@ -13,7 +15,7 @@ source_name: PNAS
 <h2>A window into a sleeping spider</h2>
 
 <p>
-  Jumping spiders cannot move the lenses of their principal eyes. Instead, they aim their gaze by moving long retinal tubes inside the head. In newly emerged spiderlings, the exoskeleton is temporarily translucent—allowing those hidden movements to be filmed from outside.
+  Jumping spiders cannot move the lenses of their principal eyes. Instead, they aim their gaze by moving long retinal tubes inside the head. In newly emerged spiderlings, the exoskeleton is temporarily translucent—allowing those hidden movements to be filmed from outside. Our <a href="/spider-anatomy.html#front-end">spider anatomy guide</a> explains how eyes differ from other mouthpart and sensory structures.
 </p>
 
 <p>

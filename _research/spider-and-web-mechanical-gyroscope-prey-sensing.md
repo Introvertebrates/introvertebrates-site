@@ -8,6 +8,21 @@ summary: Experiments, mechanical tests and simulations involving adult female Ar
 why_it_matters: The result reframes an orb web as more than a passive trap or enlarged vibration sensor. Some useful information may be organized mechanically by the combined spider-web system before the nervous system interprets it.
 source_url: https://doi.org/10.1038/s41598-026-66753-1
 source_name: Scientific Reports
+feature_image: "/assets/media/orb-weaver-web.jpg"
+feature_image_alt: "An orb-weaving spider suspended in its web with several silk strands visible"
+feature_image_caption: "An orb weaver in its web, shown to illustrate web architecture. The photograph is not of the Argiope trifasciata individuals studied."
+feature_image_width: 1600
+feature_image_height: 898
+related_links:
+  - title: "How silk and spinnerets work"
+    url: "/spider-anatomy.html#silk"
+    note: "The structures that produce and place spider silk."
+  - title: "Spider webs as sensory networks"
+    url: "/spider-facts.html#fact-grid"
+    note: "More evidence-backed spider facts about vibration and web mechanics."
+  - title: "Linothele fallax · a different web builder"
+    url: "/species/linothele-fallax.html"
+    note: "Compare an orb web with the silk retreats of a curtain-web spider."
 ---
 
 <h2>A whole-body response to prey</h2>

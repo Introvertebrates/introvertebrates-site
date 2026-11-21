@@ -1300,6 +1300,14 @@
     "sonja-mauremys-reevesii": "sonja"
   };
   const norwegianProfileAnchor = norwegianProfileAnchors[key];
+  const norwegianWeeklyStories = {
+    "ruby-chromatopelma-cyaneopubescens": { slug: "2026-09-06-ruby-vever-et-sansekart", title: "Ruby på nært hold" },
+    "sonja-mauremys-reevesii": { slug: "2026-09-13-sonja-baerer-skallet", title: "Sonjas skall er en del av skjelettet" },
+    "sabrina-brachypelma-hamorii": { slug: "2026-10-18-sabrina-venter-ved-skjulet", title: "Sabrina venter ved skjulestedet" },
+    "linothele-fallax": { slug: "2026-11-01-linothele-bygger-et-sansekart", title: "Linothele bygger et sansekart av silke" },
+    "pachnoda-marginata": { slug: "2026-11-08-rosenbillen-skifter-kropp", title: "Rosenbillen skifter kropp helt" }
+  };
+  const norwegianWeeklyStory = norwegianWeeklyStories[key];
 
   root.innerHTML = `
     <header class="site-header">
@@ -1513,6 +1521,13 @@
             ${norwegianProfileAnchor ? `<a class="button" href="../kryp-artsprofiler.html#${norwegianProfileAnchor}" lang="no">Les profilen på norsk</a>` : ""}
             ${isSpider ? `<a class="button" href="../spider-anatomy.html">Spider anatomy</a><a class="button" href="../spider-facts.html">Amazing spider facts</a><a class="button" href="../spider-health.html">Health &amp; husbandry</a>` : ""}
           </div>
+          ${norwegianWeeklyStory ? `
+            <div class="profile-norwegian-story">
+              <p class="profile-norwegian-story-label">Also in Norwegian · Kryp &amp; Krabater</p>
+              <p><a href="../kryp/ukas-dyr/${norwegianWeeklyStory.slug}/" lang="no" hreflang="no">${escapeProfileHtml(norwegianWeeklyStory.title)} <span aria-hidden="true">→</span></a></p>
+              <p>A short illustrated animal story with an observation activity for children.</p>
+            </div>
+          ` : ""}
         </div>
       </section>
 

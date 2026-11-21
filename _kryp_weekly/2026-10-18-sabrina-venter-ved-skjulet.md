@@ -20,6 +20,13 @@ video_url: "/assets/kryp/video/sabrina.mp4"
 video_mobile_url: "/assets/kryp/video/sabrina-vertical.mp4"
 video_title: "Sabrina beveger seg fram mellom barkbitene. Se etter de oransje feltene ved beinleddene."
 video_poster: "/assets/kryp/sabrina-video-poster.jpg"
+related_links:
+  - title: "Sabrinas art: Brachypelma hamorii (engelsk)"
+    url: "/species/sabrina-brachypelma-hamorii.html"
+    note: "Se flere fotografier og les om skjulesteder, sanser og arten."
+  - title: "Lær om edderkoppens åtte bein"
+    url: "/kryp-edderkoppens-kropp.html"
+    note: "Prøv kroppskartet og finn beina og de andre kroppsdelene."
 ---
 
 ## Venting kan være en jaktstrategi

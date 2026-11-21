@@ -8,6 +8,13 @@ summary: The triangle-weaver Hyptiotes cavatus tightens its web through repeated
 why_it_matters: A spider's web can be an actively powered hunting device. Combining the catapult experiments with later silk research connects behaviour, biomechanics and evolution, while leaving the precise link between silk composition and performance open for testing.
 source_url: https://doi.org/10.1073/pnas.1821419116
 source_name: PNAS
+related_links:
+  - title: "How spiders produce silk"
+    url: "/spider-anatomy.html#silk"
+    note: "The glands and spinnerets behind web construction."
+  - title: "Amazing spider facts: webs as information networks"
+    url: "/spider-facts.html#fact-grid"
+    note: "More examples of silk working as a sensory and mechanical system."
 ---
 
 <h2>Load, hold, release</h2>

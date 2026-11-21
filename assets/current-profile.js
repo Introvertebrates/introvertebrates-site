@@ -1304,7 +1304,7 @@
     "ruby-chromatopelma-cyaneopubescens": { slug: "2026-09-06-ruby-vever-et-sansekart", title: "Ruby på nært hold" },
     "sonja-mauremys-reevesii": { slug: "2026-09-13-sonja-baerer-skallet", title: "Sonjas skall er en del av skjelettet" },
     "sabrina-brachypelma-hamorii": { slug: "2026-10-18-sabrina-venter-ved-skjulet", title: "Sabrina venter ved skjulestedet" },
-    "linothele-fallax": { slug: "2026-11-01-linothele-bygger-et-sansekart", title: "Linothele bygger et sansekart av silke" },
+    "linothele-fallax": { slug: "2026-11-01-linothele-bygger-et-sansekart", title: "Linothele fallax bygger et sansekart av silke" },
     "pachnoda-marginata": { slug: "2026-11-08-rosenbillen-skifter-kropp", title: "Rosenbillen skifter kropp helt" }
   };
   const norwegianWeeklyStory = norwegianWeeklyStories[key];

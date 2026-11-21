@@ -143,8 +143,24 @@
 
   const controls = [...map.querySelectorAll('.internal-key-item')];
   const systems = [...map.querySelectorAll('[data-internal-system]')];
+  const selectionName = document.getElementById('internal-selection-name');
+  const hoverPointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+
+  const names = {
+    whole: 'All systems',
+    nerves: 'Nervous system',
+    venom: 'Venom glands',
+    heart: 'Heart',
+    gut: 'Digestive tract',
+    lungs: 'Respiration',
+    silk: 'Silk glands',
+    reproduction: 'Reproductive organs'
+  };
+
   const selectSystem = (system) => {
+    if (!Object.prototype.hasOwnProperty.call(names, system)) return;
     map.dataset.activeSystem = system;
+    if (selectionName) selectionName.textContent = names[system];
     controls.forEach((control) => {
       const active = control.dataset.system === system;
       control.classList.toggle('is-active', active);
@@ -154,11 +170,20 @@
 
   controls.forEach((control) => {
     control.addEventListener('click', () => selectSystem(control.dataset.system));
-    control.addEventListener('pointerenter', () => selectSystem(control.dataset.system));
+    control.addEventListener('pointerenter', (event) => {
+      if (event.pointerType === 'mouse' && hoverPointer.matches) {
+        selectSystem(control.dataset.system);
+      }
+    });
   });
   systems.forEach((system) => {
-    system.addEventListener('pointerenter', () => selectSystem(system.dataset.internalSystem));
-    system.addEventListener('click', () => selectSystem(system.dataset.internalSystem));
+    system.addEventListener('pointerenter', (event) => {
+      if (event.pointerType === 'mouse' && hoverPointer.matches) {
+        selectSystem(system.dataset.internalSystem);
+      }
+    });
+    system.addEventListener('click', () => {
+      if (hoverPointer.matches) selectSystem(system.dataset.internalSystem);
+    });
   });
-
 })();

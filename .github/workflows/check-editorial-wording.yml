@@ -1,0 +1,49 @@
+name: Check editorial naming and photograph captions
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "*.html"
+      - "species/**"
+      - "_research/**"
+      - "_kryp_weekly/**"
+      - "_kryp_weekly_queue/**"
+      - "_layouts/**"
+      - "assets/current-profile.js"
+      - "assets/homepage.js"
+      - "assets/data/**"
+      - "tools/check-editorial-wording.mjs"
+      - ".github/workflows/check-editorial-wording.yml"
+  pull_request:
+    paths:
+      - "*.html"
+      - "species/**"
+      - "_research/**"
+      - "_kryp_weekly/**"
+      - "_kryp_weekly_queue/**"
+      - "_layouts/**"
+      - "assets/current-profile.js"
+      - "assets/homepage.js"
+      - "assets/data/**"
+      - "tools/check-editorial-wording.mjs"
+      - ".github/workflows/check-editorial-wording.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test editorial wording rules
+        run: node tools/check-editorial-wording.mjs --self-test
+      - name: Check public pages and article sources
+        run: node tools/check-editorial-wording.mjs

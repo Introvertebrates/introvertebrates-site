@@ -35,6 +35,16 @@
   line-height: 1.75;
 }
 
+.kryp-weekly-archive-hero .kryp-weekly-archive-explore {
+  margin-top: 18px;
+  font-size: clamp(0.9rem, 1.7vw, 1rem);
+}
+
+.kryp-refined .kryp-weekly-archive-explore a {
+  color: var(--kryp-moss);
+  text-underline-offset: 4px;
+}
+
 .kryp-weekly-archive-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

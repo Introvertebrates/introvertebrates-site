@@ -20,6 +20,13 @@ video_url: "/assets/kryp/video/ruby.mp4"
 video_mobile_url: "/assets/kryp/video/ruby-vertical.mp4"
 video_title: "Ruby holder et byttedyr mens hun snur seg på silken. Følg de blå beina og de oransje hårene på bakkroppen."
 video_poster: "/assets/kryp/ruby-video-poster.jpg"
+related_links:
+  - title: "Rubys art: Chromatopelma cyaneopubescens (engelsk)"
+    url: "/species/ruby-chromatopelma-cyaneopubescens.html"
+    note: "Bilder, leveområde og flere fakta for eldre lesere."
+  - title: "Utforsk edderkoppens kropp"
+    url: "/kryp-edderkoppens-kropp.html"
+    note: "Finn forkropp, bakkropp, øyne og pedipalper på kroppskartet."
 ---
 
 ## To kroppsdeler

@@ -23,6 +23,10 @@ colouring_image_height: 1402
 colouring_image_alt: "Fargeleggingsark av Damon"
 colouring_label: "Fargelegg Damon"
 colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotografiet brukt i Ukas dyr."
+related_links:
+  - title: "Sammenlign med pedipalpene hos en edderkopp"
+    url: "/kryp-edderkoppens-kropp.html"
+    note: "Damon er en piskedderkopp, ikke en edderkopp. Se hvordan pedipalper kan se ulike ut."
 ---
 
 ## Seks gåbein og to sansebein

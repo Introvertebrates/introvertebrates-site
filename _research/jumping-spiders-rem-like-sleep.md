@@ -10,6 +10,13 @@ summary: Researchers filmed 34 young Evarcha arcuata jumping spiders overnight. 
 why_it_matters: REM-like behaviour in a tiny, distantly related visual hunter could help researchers investigate how active sleep evolved and what it does. The observations are compelling, but they do not establish that spider sleep is physiologically identical to human REM sleep—or that spiders dream.
 source_url: https://doi.org/10.1073/pnas.2204754119
 source_name: PNAS
+related_links:
+  - title: "The 2026 follow-up: two-stage sleep"
+    url: "/research/jumping-spiders-two-stage-sleep/"
+    note: "The later experiments that tested whether the spiders were truly asleep."
+  - title: "How spider eyes work"
+    url: "/spider-anatomy.html#front-end"
+    note: "An illustrated guide to the eyes and other front-end structures."
 ---
 
 <h2>A window into a sleeping spider</h2>

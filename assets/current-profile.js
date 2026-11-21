@@ -1308,6 +1308,25 @@
     "pachnoda-marginata": { slug: "2026-11-08-rosenbillen-skifter-kropp", title: "Rosenbillen skifter kropp helt" }
   };
   const norwegianWeeklyStory = norwegianWeeklyStories[key];
+  const researchConnections = {
+    "siuzi-theraphosa-apophysis": [
+      { slug: "tarantula-navigation", title: "Tarantulas may navigate more flexibly than we assumed", note: "Field observations of wild tarantulas, not a navigation experiment involving Siuzi." },
+      { slug: "tarantulas-urticating-hairs-against-ants", title: "Tarantulas actively use urticating hairs against ants", note: "An experimental tarantula defence study, not evidence of Siuzi behaving this way." }
+    ],
+    "ruby-chromatopelma-cyaneopubescens": [
+      { slug: "tarantulas-urticating-hairs-against-ants", title: "Tarantulas actively use urticating hairs against ants", note: "Ruby illustrates the research article, but was not a participant in the experiment." }
+    ],
+    "sabrina-brachypelma-hamorii": [
+      { slug: "tarantulas-urticating-hairs-against-ants", title: "Tarantulas actively use urticating hairs against ants", note: "A broader tarantula defence study, not a report of Sabrina's behaviour." }
+    ],
+    "clara-psalmopoeus-irminia": [
+      { slug: "tarantula-navigation", title: "Tarantulas may navigate more flexibly than we assumed", note: "Field observations of wild tarantulas provide context for movement and retreats; Clara was not studied." }
+    ],
+    "linothele-fallax": [
+      { slug: "spider-and-web-mechanical-gyroscope-prey-sensing", title: "A spider and its web may work together like a gyroscope", note: "Compare two types of web sensing: this experiment used an orb-weaver, not Linothele fallax." }
+    ]
+  };
+  const relatedResearch = researchConnections[key] || [];
 
   root.innerHTML = `
     <header class="site-header">
@@ -1521,6 +1540,16 @@
             ${norwegianProfileAnchor ? `<a class="button" href="../kryp-artsprofiler.html#${norwegianProfileAnchor}" lang="no">Les profilen på norsk</a>` : ""}
             ${isSpider ? `<a class="button" href="../spider-anatomy.html">Spider anatomy</a><a class="button" href="../spider-facts.html">Amazing spider facts</a><a class="button" href="../spider-health.html">Health &amp; husbandry</a>` : ""}
           </div>
+          ${relatedResearch.length ? `
+            <aside class="profile-research-story" aria-label="Research related to this species">
+              <p class="profile-research-label">Explore the science</p>
+              <ul>
+                ${relatedResearch.map((item) => `
+                  <li><a href="../research/${item.slug}/">${escapeProfileHtml(item.title)} <span aria-hidden="true">→</span></a><p>${escapeProfileHtml(item.note)}</p></li>
+                `).join("")}
+              </ul>
+            </aside>
+          ` : ""}
           ${norwegianWeeklyStory ? `
             <div class="profile-norwegian-story">
               <p class="profile-norwegian-story-label">Also in Norwegian · Kryp &amp; Krabater</p>

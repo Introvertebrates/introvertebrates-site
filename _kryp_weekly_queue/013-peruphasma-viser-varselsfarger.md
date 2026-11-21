@@ -8,7 +8,7 @@ image: "/assets/kryp/peruphasma-schultei.jpg"
 image_width: 2000
 image_height: 1333
 image_alt: "Mørk Peruphasma schultei på grønne blader"
-image_caption: "Peruphasma schultei · arkivfoto"
+image_caption: "Peruphasma schultei"
 link_url: "/kryp-spor-krypenes-verden.html"
 link_label: "Utforsk krypenes verden"
 colouring_url: "/kryp-fargelegging.html#colouring-peruphasma"

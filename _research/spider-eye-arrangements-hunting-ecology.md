@@ -8,6 +8,18 @@ summary: A broad comparative study found that spiders relying more heavily on vi
 why_it_matters: Spider eyes are not just a fixed eight-eye blueprint. Their arrangement carries information about how different lineages interact with the world, and it shows how behaviour can repeatedly shape sensory anatomy.
 source_url: https://www.sciencedirect.com/science/article/pii/S096098222600730X
 source_name: Current Biology
+feature_image: "/assets/collection/alma-acanthoscurria-geniculata.jpg"
+feature_image_alt: "Close macro photograph of Alma, an Acanthoscurria geniculata tarantula, showing the eye region and setae"
+feature_image_caption: "Alma, Acanthoscurria geniculata, photographed in the collection. An anatomy example, not a specimen identified from the comparative study."
+feature_image_width: 1600
+feature_image_height: 898
+related_links:
+  - title: "Explore spider eyes and mouthparts"
+    url: "/spider-anatomy.html#front-end"
+    note: "Compare eyes, fangs and pedipalps in the visual anatomy guide."
+  - title: "Meet Alma · Acanthoscurria geniculata"
+    url: "/species/acanthoscurria-geniculata.html"
+    note: "See the original portrait and a sourced species profile."
 ---
 <h2>What the researchers found</h2>
 

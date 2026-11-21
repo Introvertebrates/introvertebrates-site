@@ -29,6 +29,10 @@ const rules = [
     pattern: /\b(?:photos?|photographs?|pictures?|images?|portraits?)\s+(?:from|in|of)\s+(?:the\s+)?archive\b/gi,
   },
   {
+    label: "Avoid photo-archive labels for ordinary animal photographs",
+    pattern: /\b(?:photo|photograph|picture|image)\s+archive\b/gi,
+  },
+  {
     label: "Avoid Norwegian photo archive labels in animal captions",
     pattern: /\b(?:arkivfoto(?:grafi)?|arkivfotos|arkivbilder?|arkivert(?:e)?\s+(?:foto(?:grafi)?|bilde(?:r)?))\b/gi,
   },
@@ -38,7 +42,7 @@ const rules = [
   },
   {
     label: "Do not use genus Linothele as a personal name",
-    pattern: /\bLinothele(?:'s|’s|\s+·)\b/gi,
+    pattern: /\bLinothele(?:'s|’s|\s+·)(?=\W|$)/gi,
   },
   {
     label: "Use Linothele fallax rather than Linothele alone as a heading",
@@ -55,7 +59,7 @@ if (process.argv.includes("--self-test")) {
   const failExamples = [
     "archived photograph", "archival ventral view", "archived collection photos",
     "From the photo archive", "arkivfoto", "Fargelegg Linothele",
-    "Meet Linothele", "Linothele’s web", "<h3>Linothele</h3>",
+    "Meet Linothele", "Linothele’s web", "Linothele · Linothele fallax", "<h3>Linothele</h3>",
   ];
   const allowedExamples = [
     "Linothele fallax", "Meet Linothele fallax", "genus Linothele",

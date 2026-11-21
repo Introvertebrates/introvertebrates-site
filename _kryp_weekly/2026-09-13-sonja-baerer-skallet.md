@@ -16,6 +16,10 @@ colouring_url: "/kryp-fargelegging.html#colouring-sonja"
 colouring_image: "/assets/kryp/colouring/sonja-mauremys-reevesii-original.png"
 colouring_image_alt: "Fotografibasert fargeleggingsark av Sonja"
 colouring_label: "Fargelegg Sonja"
+related_links:
+  - title: "Sonjas art: Mauremys reevesii (engelsk)"
+    url: "/species/sonja-mauremys-reevesii.html"
+    note: "Se flere fotografier og les om skjell, leveområde og atferd."
 ---
 
 ## Skall og skjelett hører sammen

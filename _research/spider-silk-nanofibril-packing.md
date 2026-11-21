@@ -10,7 +10,7 @@ source_url: https://www.nature.com/articles/s41467-026-70477-1
 source_name: Nature Communications
 feature_image: "/assets/learn/archive/orb-web-structure-2026.jpg"
 feature_image_alt: "A spider suspended among radial and curved strands of an orb web"
-feature_image_caption: "An orb web from the Introvertebrates photo archive. Illustrative only: the study measured microscopic fibre structure, not this web."
+feature_image_caption: "An orb web photographed for Introvertebrates. Illustrative only: the study measured microscopic fibre structure, not this web."
 feature_image_width: 882
 feature_image_height: 882
 related_links:

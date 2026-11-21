@@ -1,5 +1,7 @@
 ---
 title: Experiments confirm two-stage sleep in jumping spiders
+seo_title: Jumping Spider Sleep: Evidence for Two Stages
+seo_description: Researchers tested Portia fimbriata and found circadian rhythms, reduced responses during REM-like sleep and rebound after disruption. Here is what they found.
 description: Tests of Portia fimbriata found circadian timing, reduced responsiveness and rebound after disruption—evidence that its REM-like episodes occur within regulated sleep.
 category: Behaviour & cognition
 posted_date: 2026-11-13

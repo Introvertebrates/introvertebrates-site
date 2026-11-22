@@ -1,4 +1,6 @@
 ---
+date: 2026-11-22 10:00:00 +0100
+date_label: "Uke 47 · 22. november 2026"
 colouring_release: "peruphasma"
 title: "Peruphasma viser fram en advarsel"
 description: "Oppdag hvordan Peruphasma schultei kombinerer mørk kropp, røde detaljer og kjemisk forsvar."

@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   publish:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.run_started_at >= '2026-11-27T07:00:00Z' && github.run_started_at < '2026-11-27T08:00:00Z' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || startsWith(github.run_started_at, '2026-11-27') }}
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}

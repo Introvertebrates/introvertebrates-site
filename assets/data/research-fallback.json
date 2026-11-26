@@ -1,5 +1,19 @@
 [
   {
+    "title": "A tarantula's legs may filter vibration noise before the nervous system hears it",
+    "description": "Laser measurements across a living Grammostola pulchra suggest that flexible legs dampen body resonance, helping sensors near the feet receive a cleaner external signal.",
+    "category": "Behaviour & cognition",
+    "posted_date": "27 November 2026",
+    "source_date": "17 June 2026",
+    "summary": "Researchers measured vertical motion at 50 points across a living Grammostola pulchra while brief vibrations passed through an aluminium platform. The distal leg segments tracked the platform closely, while the body and upper legs resonated differently. The authors propose that flexible legs mechanically separate external substrate vibrations from the spider's own body resonance.",
+    "why_it_matters": "Some sensory processing may begin in the spider's physical structure before neurons interpret anything. By damping the body's internal ringing near sensors at the feet, leg biomechanics could improve the signal-to-noise ratio for detecting prey, predators and courtship signals.",
+    "source_url": "https://doi.org/10.1098/rspb.2026.0915",
+    "source_name": "Proceedings of the Royal Society B",
+    "slug": "tarantula-legs-filter-vibration-noise",
+    "url": "research/tarantula-legs-filter-vibration-noise/",
+    "has_body": true
+  },
+  {
     "title": "Sydney funnel-web burrows are shaped by hidden anchors underground",
     "description": "Field surveys and plaster casts reveal how Atrax robustus builds twisting burrows along rocks and tree roots—and why not every funnel-web home has an obvious funnel.",
     "category": "Behaviour & cognition",

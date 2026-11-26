@@ -1,0 +1,71 @@
+name: Publish selected Friday research
+
+on:
+  schedule:
+    # 08:00 Europe/Oslo on 27 November 2026 (07:00 UTC)
+    - cron: '0 7 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  publish:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.run_started_at >= '2026-11-27T07:00:00Z' && github.run_started_at < '2026-11-27T08:00:00Z' }}
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPOSITORY: Introvertebrates/introvertebrates-site
+      PR_NUMBER: "14"
+      EXPECTED_HEAD: 5949ecaae71ff97fde64fdfc6b2cd3fa03ceb39a
+      LIVE_URL: https://introvertebrates.com/research/tarantula-legs-filter-vibration-noise/
+    steps:
+      - name: Verify queued research pull request
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh pr view "$PR_NUMBER" --repo "$REPOSITORY"             --json state,isDraft,mergeable,headRefOid,baseRefName,files > pr.json
+          python - <<'PY'
+          import json, os, sys
+          data = json.load(open("pr.json", encoding="utf-8"))
+          expected_files = {
+              "_research/tarantula-legs-filter-vibration-noise.md",
+              "assets/data/research-fallback.json",
+          }
+          actual_files = {item["path"] for item in data["files"]}
+          checks = {
+              "state is OPEN": data["state"] == "OPEN",
+              "not a draft": not data["isDraft"],
+              "mergeable": data["mergeable"] == "MERGEABLE",
+              "base is main": data["baseRefName"] == "main",
+              "head SHA matches": data["headRefOid"] == os.environ["EXPECTED_HEAD"],
+              "changed files match": actual_files == expected_files,
+          }
+          failed = [label for label, passed in checks.items() if not passed]
+          if failed:
+              print("Publication stopped: " + "; ".join(failed), file=sys.stderr)
+              print(json.dumps(data, indent=2), file=sys.stderr)
+              raise SystemExit(1)
+          print("Queued research PR verified.")
+          PY
+
+      - name: Publish research feature
+        run: |
+          gh pr merge "$PR_NUMBER" --repo "$REPOSITORY" --squash             --subject "Publish tarantula vibration-filtering research feature"
+
+      - name: Verify live article
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in {1..20}; do
+            if page="$(curl --fail --silent --show-error --location "$LIVE_URL")" &&
+               grep -Fq "A tarantula's legs may filter vibration noise" <<<"$page"; then
+              echo "Research feature is live: $LIVE_URL"
+              exit 0
+            fi
+            echo "Waiting for GitHub Pages deployment (attempt $attempt/20)..."
+            sleep 30
+          done
+          echo "The merge succeeded, but the expected live article was not verified within 10 minutes." >&2
+          exit 1

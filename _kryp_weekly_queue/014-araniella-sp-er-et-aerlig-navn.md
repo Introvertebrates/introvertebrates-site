@@ -1,8 +1,8 @@
 ---
 colouring_release: "araniella"
-title: "Araniella sp. er et ærlig navn"
-description: "Lær hvorfor en edderkopp noen ganger får et sikkert slektsnavn, men ikke et usikkert artsnavn."
-intro: "Det grønne utseendet peker mot slekten Araniella. Men flere arter kan ligne på hverandre, og et fotografi viser ikke alltid detaljene som skiller dem."
+title: "Når vi ikke vet akkurat hvilken edderkopp det er"
+description: "Bli kjent med agurkedderkoppene og lær hvorfor det ikke alltid er lett å finne ut hvilken art vi har sett."
+intro: "Denne lille grønne edderkoppen er bestemt til slekten Araniella, som vi på norsk kaller agurkedderkopper. Men hvilken art er det? Flere arter ligner så mye på hverandre at et fotografi ikke alltid er nok til å finne svaret."
 question: "Hvilke trekk kan du beskrive uten å måtte gjette hvilken art det er?"
 image: "/assets/kryp/araniella-sp.png"
 image_width: 1600
@@ -20,15 +20,17 @@ colouring_description: "En forenklet strekillustrasjon med utgangspunkt i fotogr
 
 ## Hva betyr sp.?
 
-*Araniella* er slektsnavnet. Forkortelsen «sp.» betyr at dyret er plassert i slekten, men at den nøyaktige arten ikke er bestemt. Det er ikke et mangelfullt navn. Det viser presist hvor langt identifikasjonen kan forsvares.
+En slekt er en gruppe nært beslektede arter. Ulven og gullsjakalen tilhører for eksempel begge slekten *Canis*, men er forskjellige arter.
+
+*Araniella* er slektsnavnet til agurkedderkoppene. Når vi skriver *Araniella* sp., betyr det at vi har bestemt slekten, men ikke hvilken art det er. Det viser hva vi vet, og hva vi ennå ikke vet.
 
 ## Farge er ikke alltid nok
 
-Flere arter i slekten kan ha en tydelig grønn bakkropp. Lys, alder og variasjon mellom individer kan også endre hvordan fargen ser ut. Artsbestemmelse kan derfor kreve nærbilder eller anatomiske detaljer som ikke finnes i dette fotografiet.
+Flere arter av agurkedderkopper har grønn bakkropp, men grønnfargen alene er ikke nok til å bestemme slekten eller arten. Lys, alder og forskjeller mellom individer kan også påvirke hvordan fargen ser ut. Noen ganger må forskere undersøke bitte små kroppsdeler, som kjønnsorganene hos voksne edderkopper, under et mikroskop for å skille artene fra hverandre.
 
 ## Vitenskap tåler et åpent svar
 
-Det er bedre å skrive *Araniella* sp. enn å velge en art bare fordi den ligner. Nye bilder eller undersøkelser kan gi et sikrere svar senere, uten at den første observasjonen blir misvisende.
+Det er bedre å si at vi ikke vet hvilken art det er, enn å gjette. Kanskje kan nye bilder eller undersøkelser hjelpe oss med å finne svaret senere. Det er slik vi lærer mer om naturen!
 
 ## Prøv selv
 
